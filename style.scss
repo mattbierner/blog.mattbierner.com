@@ -298,6 +298,78 @@ img {
   color: #aaa;
 }
 
+
+/* ==========================================================================
+  Post Side Pagination
+   ========================================================================== */
+.body-pagination .post-pagination-link {
+    display: block;
+    position: fixed;
+    top: 50%;
+    height: 0;
+    padding: 1.6rem;
+    font-size: 40px;
+    color: inherit;
+}
+
+.footer-pagination .post-pagination-link {
+    display: block;
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.post-pagination-link:hover {
+    text-decoration: none;
+}
+
+.body-pagination .prev-post {
+    left: 0;
+}
+.body-pagination .prev-post::after {
+    content: "\2329";
+}
+
+.body-pagination .next-post {
+    right: 0;
+}
+.body-pagination .next-post::after {
+    content: "\232a";
+}
+
+
+
+/* ==========================================================================
+ Media
+   ========================================================================== */
+@media only screen and (max-width: 1400px) {
+    .toc {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .body-pagination  {
+        display: none;
+    }
+}
+   
+@media only screen and (max-width: 700px) {
+    h1, h2 {
+        font-size: 3rem;
+        line-height: 1.1em;
+        letter-spacing: -1px;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    h4 {
+        font-size: 2.3rem;
+    }  
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
