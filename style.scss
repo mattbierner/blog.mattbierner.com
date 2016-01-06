@@ -337,6 +337,56 @@ img {
     content: "\232a";
 }
 
+/* ==========================================================================
+   toc
+   ========================================================================== */
+.toc {
+    position: static;
+    width: 260px;
+    max-height: 100%;
+    margin-left: -300px;
+    overflow-y: scroll;
+    float: left;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.toc ul {
+    list-style: none;
+    padding-top: 0.2em;
+    padding-right: 2em;
+}
+
+.toc li {
+    padding-left: 0;
+}
+
+.toc a {
+    color: inherit;
+}
+
+.toc .toc-h2 {
+    padding-top: 0.2em;
+    border-top: 1px solid #ddd;
+}
+
+.toc .toc-h2:first-child {
+    border-top: 0;
+}
+
+.toc .toc-h3 {
+    margin-left: 0.6em;
+    padding-left: 1.2em;
+    text-indent: -0.8em;
+}
+
+.toc .toc-h3::before {
+    content: "\25e6  ";
+}
+
+.toc .toc-active {
+    color: #57A3E8;
+}
 
 
 /* ==========================================================================
