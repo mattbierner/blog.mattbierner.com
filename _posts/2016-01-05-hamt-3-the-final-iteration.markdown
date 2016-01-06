@@ -30,7 +30,7 @@ myFunction(...h);
 
 Unlike `hamt.fold`, iterators are lazy, so you can access only the map elements you need, or break out of iteration early:
 
-```
+```js
 /// check that all values in `map` satisfy function `f`
 const all = (pred, map) => {
     for (let [key, value] of map)
