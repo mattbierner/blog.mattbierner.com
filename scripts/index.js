@@ -3,16 +3,16 @@ $(function() {
 });
 
 var SetupToc = function() {
-  $('.entry').prepend($("<nav class='toc'></nav>"));
-    
+    $('.entry').prepend($("<nav class='toc'></nav>"));
+
     $('.toc').toc({
         container: '.entry',
-        'smoothScrolling': false
+        smoothScrolling: false
     });
-    
-   $(window).scroll(function() {
-       var headerH = $('.entry').offset().top; console.log(headerH);
+
+    $(window).scroll(function() {
+       var headerH = $('.entry').offset().top;
        var scrollVal = $(this).scrollTop();
-       $('.toc').css({'position': scrollVal > headerH ? 'fixed' : 'static', 'top' :'0'});
+       $('.toc').css({'position': scrollVal > headerH ? 'fixed' : 'static'});
     });
 };
