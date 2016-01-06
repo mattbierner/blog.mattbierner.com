@@ -1,0 +1,341 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+
+@import "reset";
+@import "variables";
+// Syntax highlighting @import is at the bottom of this file
+
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/**************/
+/* BASE RULES */
+/**************/
+
+html {
+    font-size: 100%;
+    height: 100%;
+}
+
+body {
+	background: $white;
+    font-family: $helveticaNeue;
+    font-size: 16px;
+    line-height: 1.25em;
+    color: $darkGray;
+    height: 100%;
+    max-height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $lato;
+    color: $darkerGray;
+    font-weight: 300;
+
+  line-height: 1.7;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
+h1 {
+  font-size: 30px;
+  a {
+    color: inherit;
+  }
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1;
+}
+
+h4 {
+  font-size: 18px;
+  color: $gray;
+}
+
+p {
+  margin: 0.2em 0 1.2em 0;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $blue;
+  }
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+.date {
+  font-style: italic;
+  color: $gray;
+}
+
+// Specify the color of the selection
+::-moz-selection {
+  color: $black;
+  background: $lightGray;
+}
+::selection {
+  color: $black;
+  background: $lightGray;
+}
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*********************/
+/* Index Header  */
+/*********************/
+#index-header {
+    width: 100%;
+    height: 60%;
+    max-height: 400px;
+    min-height: 200px;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+    
+    background: url(/images/head1.png);
+    background-size: 100% 100%;
+}
+
+#index-header .index-logo {
+    display: block;
+    position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 3rem;
+}
+
+#index-header .index-logo img {
+    max-width: 160px;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+//
+// .masthead
+//
+
+.masthead {
+  padding: 20px 0;
+}
+
+.site-avatar {
+    margin-right: 15px;
+    display: block;
+    margin: 0 auto;
+    
+    .diamond {
+        width: 0;
+        height: 0;
+        border: 40px solid transparent;
+        border-bottom-color: $darkGray;
+        position: relative;
+        top: -40px;
+
+        margin: 0 auto;
+
+    }
+    .diamond:after {
+        content: '';
+        position: absolute;
+        left: -40px;
+        top: 40px;
+        width: 0;
+        height: 0;
+        border: 40px solid transparent;
+        border-top-color: $darkGray;
+    }
+}
+
+
+.site-info {
+    text-align: center;
+}
+
+.site-name {
+  margin: 0;
+  color: $darkGray;
+  cursor: pointer;
+  font-family: $helveticaNeue;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.site-description {
+    margin: -5px 0 0 0;
+    color: $darkGray;
+    font-size: 16px;
+    font-weight: light;
+    font-family: $lato;
+}
+
+
+//
+// .main
+//
+
+.posts > .post {
+    padding: 1em 0;
+  border-bottom: 1px solid $lightGray;
+  
+  .post-title {
+    text-align: left;
+    margin-top: -5px;
+    margin-bottom: 0em;
+  }
+  
+  .entry > *:first-child {
+    margin-top: 0;
+  }
+}
+
+.posts > .post:last-child {
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+.post-meta {
+    color: #aaa;
+    font-size: 0.9em;
+}    
+
+.post-main {
+    .post-title {
+        margin-top: 0;
+        margin-bottom: -5px;
+        text-align: center;
+    }
+    
+    .post-meta {
+        text-align: center;
+    }
+    
+    header {
+        margin-bottom: 1.4em;
+    }
+    
+    footer {
+        margin-top: 3em;
+    }
+}
+
+.post .entry {
+    h2 {
+        border-bottom: 1px solid #ddd;
+        line-height: 1.2em;
+    }
+
+}
+
+.post-nav > * {
+    width: 50%;
+    min-height:1px;
+    float: left;
+}
+
+.post-nav .next {
+    text-align: right;
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid $lightGray;
+}
+
+.page-footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 80%;
+  color: #aaa;
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";

@@ -1,0 +1,29 @@
+---
+layout: post
+title: 80x40
+date: '2015-11-02 06:35:43'
+asset_path: /assets/2015-11-02-80x40
+---
+80x40 is an 80 character wide by 40 character tall block of text stored in a [Github repo][github]. A script watches the repo and automatically merges in any pull requests that change the contents of this text block, effectively creating a collaborative ASCII art canvas that anyone with a Github account can draw on. 
+
+![]({{ page.asset_path }}/Screen-Shot-2015-11-01-at-10-31-09-PM.png)
+
+Feel free to fork [the repo][github], edit the text block, and submit a pull request. As long as the change follows a [few simple rules][about], it should be automatically merged in. Changes are only checked to make sure they preserve the size of the block and are not reviewed for content (i.e. don't blame me if the block of text is not PG).
+
+## Why
+Most projects treat git as a versioned container for content – be it source code, artwork, text, 3D models, or raw data – but I feel that git also offers many new ways to express content. Maybe you could use git to play games like tick-tac-toe or Connect Four, or maybe you could use git as a metafiction element in a story, tracking the (fictitious) writing process. These are pretty obvious applications, so I'm sure there are much more clever ideas out there.
+
+There is zero practical application to 80x40. It uses git for collaborative 2D drawing, while also producing a 3D shape (the version history of the text block) that can be visualized in interesting ways. More importantly though, the current state of the 80x40 repository is not the product, the repository itself is the product. 
+
+## Implementation
+The scripts that automatically merge the 80x40 block of text [are on Github][client]. They are pretty hacked and I wouldn't be surprised if they contain more than a few bugs.
+
+Please [report any issues](https://github.com/art-dot-git/80x40-client/issues) or submit a pull request against the [script repo][client] if something could be improved.
+
+
+[about]: https://github.com/art-dot-git/80x40/blob/master/about.md
+[site]: http://art-dot-git.github.io/80x40-client
+[github]: https://github.com/art-dot-git/80x40
+[client]: https://github.com/art-dot-git/80x40-client
+
+[git-status]: http://www.phoronix.com/scan.php?page=news_item&px=Linux-4.3-Git-Stats

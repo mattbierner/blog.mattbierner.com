@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<header id="index-header">
+  <a class="index-logo" href="{{ site.baseurl }}/">
+    <img src="/images/uwtb.svg" />
+  </a>
+</header>
+
+<div role="main" class="posts main container">
+    {% for post in site.posts %}
+        <article class="post">
+            <div class="post-meta">{{ post.date| date: '%B %d, %Y'  }}</div>
+
+            <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        
+            <div class="entry">
+                {% if post.description %}
+                    {{ post.description }}
+                {% else %}
+                    {{ post.excerpt | strip_html }}
+                {% endif %}
+            </div>
+        </article>
+    {% endfor %}
+</div>

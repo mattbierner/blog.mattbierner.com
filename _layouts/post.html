@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      <a href="{{ site.baseurl }}/" class="site-avatar">
+        <img src="/images/uwtb-post.svg" />
+      </a>
+    </header>
+  </div>
+</div>
+
+<article role="main" class="main post post-main container">
+    <header>
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+            <time>{{ page.date | date: "%B %e, %Y" }}</time>
+        </div>
+    </header>
+    
+    <div class="entry">{{ content }}</div>
+    * auto-gen TOC:
+{:toc}
+    <footer class="post-footer">
+        <nav class="post-nav clearfix">
+            <div class="prev">
+                {% if page.previous.url %} 
+                <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a> 
+                {% endif %}
+            </div>
+            <div class="next">
+                {% if page.next.url %} 
+                <a href="{{page.next.url}}">{{page.next.title}} &raquo;</a> 
+                {% endif %} 
+            </div>
+        </nav>
+    </footer>
+</article>

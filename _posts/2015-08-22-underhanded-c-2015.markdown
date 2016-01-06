@@ -1,0 +1,238 @@
+---
+layout: post
+title: Underhanded C 2015
+date: '2015-08-22 23:42:51'
+asset_path: /assets/2015-08-22-underhanded-c-2015
+---
+When the [2015 Underhanded C Contest][uc] was first announced, I admit that I was more than a little confused. A non plus plus version of C++? How rich! It doesn't even have templates. What will they think of next?
+
+Still, as a fan of esoteric programming languages, perhaps it would be worth a few chuckles to try my hand at writing some underhanded code in this so called 'C' programming language.
+
+You can find the complete source on [Github][src].
+
+## The Contest
+The [2015 Underhanded C Contest][uc] is serious business: nuclear disarmament. Two contries are destroying their nuclear stockpiles and want to verify that nuclear material is actually present in the other country's warheads before they are destroyed. The contest asks for an implementation of a `match` function that will compare sample data from each warhead to reference data. If `match` returns true, the warhead contains nuclear material. These are the stakes. We must trust in C, or we must die.
+
+Here's the signature of `match`:
+
+```prettyprint lang-c
+int match(double* test, double* reference, int bins, double threshold);
+```
+
+But neither country actually wants to disarm. Both would like to keep their nuclear material while destroying empty warheads, all without alerting the other. So `match` must normally be correct, but returns false positives when a programmer engineers a certain set of conditions. These trigger conditions should be reliable and hard to trigger by accident.
+
+### Normal Case
+I chose to use pretty much the simplest matching algorithm possible: compare each element in the two lists until either they do not match and therefore the lists do not match, or the end of the list is reached and therefore the lists do match. 
+
+```prettyprint lang-c
+int match(double* test, double* reference, int bins, double threshold) {
+    for (unsigned i = 0; i < bins; ++i)
+        if (!do_elements_match(test[i], reference[i], threshold, error_message))
+            return 0;
+    return 1;
+}
+```
+
+Two elements match if the absolute difference between them is less than or equal to the `threshold`. 
+
+```prettyprint lang-c
+typedef void(*error_handler)();
+
+int do_elements_match(double sample1, double sample2, double threshold, error_handler on_error) {
+    double diff = fabs(sample1 - sample2);
+    // Check to see if a math error occured.
+    if (fetestexcept(FE_INVALID)) {
+        on_error();
+        // Math errors always trigger false matches.
+        return 0;
+    }
+    return diff <= threshold;
+}
+```
+
+The only noteworthy part of `do_elements_match` is the error handling. After the absolute difference between the two samples is computed, we check to see if an invalid floating point computation occurred using [`<fenv.h>`][fenv]. If `FE_INVALID` is true, the function does not trust the result of `diff` and instead exits early with a false value. In order to understand when floating point errors cause a problem, `do_elements_match` also takes an error handler function pointer `on_error` which is invoked if an error occurs. This error handler will typically just print a value to the console. 
+
+```prettyprint lang-c
+#define ERROR_LABEL u"썝 - "
+
+static void* error_message = ERROR_LABEL "A math error occured. Returning that no match was found.";
+
+void error_messager() {
+    printf("%s", error_message);
+}
+```
+
+Note that the error label has been localized. The unicode representation is `썝 - ` with translates to `Error -`. And that's it. Less than [20 lines of very clear C code][src].
+
+Just to show that `match` normally does the correct thing:
+
+```prettyprint lang-c
+double test[] = { 1.0, 2.0, 1.5, -3 };
+double reference[] = { 0.5, 2.2, 0.9, -2.8 };
+
+// Should always match itself.
+assert(match(test, test, 4, 0.5) == 1);
+assert(match(reference, reference, 4, 0.5) == 1);
+assert(match(test, test, 4, 0) == 1);
+
+// But the arrays are always differnt at low sensitivities.
+assert(match(test, reference, 4, 0) == 0);
+assert(match(test, reference, 4, 0.1) == 0);
+
+// Third element is too different at some sensitivities.
+assert(match(test, reference, 4, 1) == 1);
+assert(match(test, reference, 4, 0.6) == 1);
+assert(match(test, reference, 4, 0.59) == 0);
+assert(match(test, reference, 4, 0.5) == 0);
+```
+
+Pretty boring, and thats the whole idea. But the seeds of underhandedness have been sown. Let's take a look.
+
+### Trigger
+The method used to trigger the underhanded behavior is left up to the programmer, but it is suggested that the trigger be, "easily engineered, rarely happen[s] by accident, and do[es] not result in suspicious code."
+
+For my program, I assumed that `match` was being called as part of a larger program. Furthermore, I also assumed that the data fed to `match` could not be manipulated and that the values could not be known or predicted ahead of time, meaning that the trigger couldn't be based on the input to `match`. My answer, the [floating point environment `<fenv.h>`][fenv].
+
+`<fenv.h>` provides a set of functions and macros for changing how floating point computations are calculated and for reading the floating point error state. What is important about `<fenv.h>` is that there is only a single floating point environment per thread, which means that the floating point environment amounts to hidden global state. To boot, programmers may not be familiar with the floating point environment and, even better, harmless looking computations that don't even mention `fenv` can set these variables in completely unrelated parts of the code. This makes it an easy and reliable trigger. And checking for floating point errors is just good programming practice too, right?
+
+The underhanded behavior of `match` is triggered with the `FE_INVALID` floating point environment error flag. When this is set, `match` will always return 1 no matter what input data is fed in. I selected the `FE_INVALID` error flag specifically because it is somewhat more difficult to accidentally trigger than errors like  `FE_INEXACT` or `FE_UNDERFLOW`, and it is very easy to engineer a sneaky trigger. Just take the square root of -1, `sqrt(-1)`, and `FE_INVALID` is set.
+
+```prettyprint lang-c
+double test[] = { 1.0, 2.0, 1.5, -3 };
+double reference[] = { 0.4, 2.2, 0.9, -2.8 };
+
+// Correct behavior
+assert(match(test, reference, 4, 0) == 0);
+
+// Trigger underhanded `match` somewhere else in the code
+int temp = sqrt(-1);
+(void)temp;
+
+// The arrays always match now, even with a threshold of 0. Amazing!
+assert(match(test, reference, 4, 0) == 1);
+```
+
+## The Underhanded Part
+The trigger itself though is not very interesting. Let's look at the code to see what happens when `FE_INVALID` is set.
+
+### Error Handling
+`do_elements_match` always checks for `FE_INVALID` after computing the difference. If there is a floating point error, the function returns false.
+
+```prettyprint lang-c
+int do_elements_match(
+    double sample1, double sample2, double threshold, error_handler on_error)
+{
+    double diff = fabs(sample1 - sample2);
+    
+    // Check to see if a math error occured.
+    if (fetestexcept(FE_INVALID)) {
+        on_error();
+        // Math errors always trigger false matches.
+        return 0;
+    }
+    return diff <= threshold;
+}
+```
+
+Hmmmm, seems correct. Even when `FE_INVALID` is set, the function appears to do the correct thing by returning `false`. The behavior of `do_elements_match` is so obviously correct that this edge case probably wouldn't raise any red flags during code review. The trigger would seem to cause `match` to always return false and that's not what we want.
+
+Look again. The error case does actually do one more thing besides return false, it invokes `on_error` which should print an error message so the programmers know why a match failed. Still, it's just a function call, it's not like we use the result of the call and the code doesn't contain anything crazy like `longjmp`. What could possibly go wrong?
+
+### Fun with Function Pointers
+Even knowing the trigger, it may not be immediately clear how the underhanded behavior works. The code looks too simple to be dangerous.
+
+But consider `on_error`. It's just a function pointer. And what is a function pointer but a pointer to some executable memory? And pointer casts in C are not terribly strict. So really, what is to stop us from treating just about anything as a function pointer? Such as a string perhaps. 
+
+```prettyprint lang-c
+typedef void(*error_handler)();
+
+char* data = "\xc3";
+error_handler err = (error_handler)data;
+err();
+```
+
+Perfectly valid C. But what happens when the program is executed? For x86 on gcc at least, if you step into the call to `err`, you would see the program counter jump into `data` and start executing it as raw machine code. With a direct line to the machine code it's all over, we can do pretty much whatever the hell we want by constructing strings that encode our intended instructions. Strings are a great place to hide this machine code too, especially if we claim localization.
+
+### Double Jump
+Our goal is to make `match` always return `1` when the trigger is set. We already know that `FE_INVALID` is the trigger and we've seen how by crafting a special string and casting it to a function pointer we can execute machine code. Clearly the underhanded behavior must occur somehow when `on_error()` is called
+
+```prettyprint lang-c
+if (fetestexcept(FE_INVALID)) {
+    on_error();
+    return 0;
+}
+```
+
+The underhanded behavior needs to either make `do_elements_match` always return `1`, or make `match` itself return `1`. I opted for the first approach because it is a bit shorter.
+
+Remember, `on_error` can evaluate machine code and is not limited to normal c behavior. So one way to make `do_elements_match` return true is to make  `on_error` jump up two levels of stack when invoked: first out of `on_error` itself and then out of `do_elements_match`. Here's some assembly that does just that:
+
+```
+mov esp, ebp
+pop ebp
+ret
+```
+
+In x86 machine code, this is `89 ec 5d c3`.
+
+### Eviler Error Handling 
+Localization is important for any modern program, so it makes sense that `match` localizes its error message for the Glorious Democratic Peoples Republic Of Bob. Unfortunately, the word `Error` in bobspeak just happens to be `썝` and the unicode representation of this string just happens to be `89 ec 5d c3`.  Look familiar?
+
+```prettyprint lang-c
+#define ERROR_LABEL u"썝 - "
+
+static void* error_message = ERROR_LABEL "A math error occured. Returning that no match was found.";
+```
+
+At this point, the programmer also implemented a default error handler function to print our this error message:
+
+```prettyprint lang-c
+void error_messager() {
+    printf("%s", error_message);
+}
+```
+
+But alas! what a poor choice of names: `error_messager` and `error_message`. It's all too easy to accidentally forget an `r` and end up passing the `error_message` string as the error handler in `do_elements_match`. And because `error_message` is a `void*`, ostensibly for wide characters purposes, not even a single, little old compiler warning is generated.
+
+```prettyprint lang-c
+do_elements_match(test[i], reference[i], threshold, error_message);
+```
+
+And everything falls into place.
+
+### Summary
+Here's what happens end-to-end in the underhanded implementation:
+
+1. The programmer somehow sets `FE_INVALID`. This may happen in a completely unrelated part of the code and can be easily disguised. 
+2. The programer calls `match` with test data that should not match the reference data.
+3. `match` calls `do_elements_match` for each element in the data. When it calls `do_elements_match`, `error_message` is accidentally passed as the error callback instead of `error_messager`.
+4. In `do_elements_match`, the `FE_INVALID` flag is now set. We see that function will `return 0;` in this case.
+5. In the error conditional, `do_elements_match` invokes `on_error`. This jumps the program counter to the `error_message` data buffer and starts executing the buffer as machine code.
+6. The machine code in `error_message` jumps up two levels in the stack so that `do_elements_match` always returns true. `return 0` in `do_elements_match` is never even reached.
+7. `match` sees that `do_elements_match` returned `1`. The elements must have matched so it happily continues on. 
+8. Amazingly, it turns out that all elements match. `match` returns `1`.
+
+### Sneaky Parts
+Take a look at the [source][src] to see the entire program. Here are a few sneaky parts:
+
+1. Code is short and simple (less than 20 lines of very clear logic).
+2. Code is well documented. Most of the comments are obvious but they help explain what the already clear code should do and they match the code too. 
+3. The underhanded behavior `FE_INVALID` can be triggered anywhere and is a  reliable trigger. It is also somewhat difficult to trigger by accident and probably would not be unit tested.
+4. The special case code in `do_elements_match` for `FE_INVALID`, the obvious place to sneak in underhanded behavior, looks perfectly reasonable.
+5. `error_label` looks like a valid localization (provided that you don't know Korean).
+6. Treating a string as machine code is not expected behavior.
+7. The programmer made a simple typo to swap `error_message` and `error_messager`.
+8. No compiler warnings or errors are generated.
+
+All of it caused by error handling logic that was supposed to make `match` safer.
+
+## Closing
+This entry is interesting because of how short and obvious the code looks and how the underhanded behavior can be reliably triggered regardless of input to `match`. Although the trigger mechanism may be a bit too easy to see, what happens when the trigger is active looks complexly harmless. I also find it amusing that all the underhandedness is caused by what appear to be programming best practices: error checking, error messaging, and localization. 
+
+I look forward to seeing the insidious things more experienced C programmers come up with this year.
+
+
+[src]: https://github.com/mattbierner/underhanded-c-2015
+
+[uc]: http://www.underhanded-c.org/_page_id_5.html
+[fenv]: http://en.cppreference.com/w/c/numeric/fenv

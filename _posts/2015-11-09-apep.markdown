@@ -1,0 +1,82 @@
+---
+layout: post
+title: Apep
+date: '2015-11-09 01:39:20'
+asset_path: /assets/2015-11-09-apep
+---
+If there's one thing the world needs, it's more text. But making good text is hard and takes much time, so I created Apep to write text for me.
+
+![]({{ page.asset_path }}/apep.png)
+ 
+* [Source][src]
+* [Documentation][docs]
+
+[Apep][src] is a [Dada Engine][dada] inspired Javascript / Node text generation library. With Apep, you specify a target grammar directly in Javascript and then can run the grammar to produce random text.
+ 
+```js
+// Generate quips for a hacker on a TV show.
+const pep = require('apep');
+
+// Declare allows for forward references
+const tvHackerQuip = pep.declare(() =>
+    pep.seq(exlaimation, ' ',
+        pep.choice(
+            pep.seq('The ' , subject, ' is ', somethingBad, '!'),
+            pep.seq(evilDoer, ' ', isDoingSomethingBadTo, ' the ', target, '!'))));
+
+const evilDoer = pep.choice("She's", "He's", "They're");
+
+const subject = pep.choice('CPU', 'HTML', 'GUI', 'IPv6', 'file system', 'ACL');
+
+const somethingBad = pep.choice('on fire', 'doxxed', 'SQL injected', 'double encrypted');
+
+const isDoingSomethingBadTo = pep.choice('pinging', 'ROT13ing', 'seg faulting', 'doxxing', 'DDOSing');
+
+const target = pep.choice('NSA', 'CIA', 'FBI', 'mainframe', 'shell', 'cloud');
+
+const exlaimation =
+    pep.choice('BLARK', 'ARG', 'BARF', 'GROK', 'ACK')
+        .seq(pep.many1('!'));
+
+// Generate some output
+for (var i = 0; i < 10; ++i)
+    console.log(tvHackerQuip.run())
+```
+
+Which outputs:
+
+```
+ACK! The CPU is double encrypted!
+GROK! She's pinging the FBI!
+ARG!! They're doxxing the mainframe!
+ARG!!! They're ROT13ing the shell!
+BARF!! He's doxxing the mainframe!
+BARF! The HTML is SQL injected!
+ACK!!! The file system is on fire!
+BLARK!!! He's DDOSing the shell!
+ARG!!!! The IPv6 is on fire!
+GROK! He's seg faulting the NSA!
+``` 
+
+Apep is designed around a small set of primitives which can be extended and further combined to build powerful constructs and express pretty complex languages. Grammars are also specified directly in Javascript, so you can use almost any Javascript language feature in your grammars. The overall design is similar to the [Bennu Javascript parser combinator library][bennu] I wrote. 
+
+Although the library is small (around 200 lines of actual logic), it provides:
+
+* A set of core generators and combinators.
+* The ability to run generators [lazily](https://github.com/mattbierner/apep/wiki/API#beging-ud-random--mathrandom) using [Javascript iterators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators) or [eagerly](https://github.com/mattbierner/apep/wiki/API#rung-ud-random--mathrandom).
+* [Forward references and self references](https://github.com/mattbierner/apep/wiki/API#declaration).
+* [Variables](https://github.com/mattbierner/apep/wiki/Variables) 
+* [Custom state objects](https://github.com/mattbierner/apep/wiki/User-data) 
+* [Custom random number generators](https://github.com/mattbierner/apep/wiki/Custom-random) 
+
+Check out the [documentation][docs] for more details and the complete API.
+
+Any contributions to Apep are welcome. If you come across any problems, please [open an issue](https://github.com/mattbierner/apep/issues). And if you use Apep to generate something awesome, please submit a pull request to add it to the README in the [source][src].
+
+
+[src]: https://github.com/mattbierner/apep
+[issues]: https://github.com/mattbierner/apep/issues
+[docs]: https://github.com/mattbierner/apep/wiki
+[bennu]: http://bennu-js.com/
+
+[dada]: http://dev.null.org/dadaengine/
