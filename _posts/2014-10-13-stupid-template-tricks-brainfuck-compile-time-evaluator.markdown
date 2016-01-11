@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Stupid Template Tricks: Brainfuck Compile Time Evaluator'
+title: 'Brainfuck Compile Time Evaluator'
+channel: stupid_template_tricks
 date: '2014-10-13 04:29:44'
 asset_path: /assets/2014-10-13-stupid-template-tricks-brainfuck-compile-time-evaluator
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Stupid Template Tricks - Pride and Parser Combinators, Part One
+title: Pride and Parser Combinators, Part One
+channel: stupid_template_tricks
 date: '2015-02-07 20:27:42'
 asset_path: /assets/2015-02-07-stupid-template-tricks-pride-and-parser-combinators-part-one
 ---

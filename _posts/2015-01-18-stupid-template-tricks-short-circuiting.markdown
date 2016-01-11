@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Stupid Template Tricks: Short-Circuiting'
+title: 'Short-Circuiting'
+channel: stupid_template_tricks
 date: '2015-01-18 06:57:50'
 asset_path: /assets/2015-01-18-stupid-template-tricks-short-circuiting
 ---

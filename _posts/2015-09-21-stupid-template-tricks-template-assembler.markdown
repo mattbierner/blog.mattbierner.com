@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Stupid Template Tricks: Template Assembler'
+title: 'Template Assembler'
 date: '2015-09-21 10:37:16'
 asset_path: /assets/2015-09-21-stupid-template-tricks-template-assembler
 description:

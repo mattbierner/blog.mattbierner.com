@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Stupid Template Tricks: Compile Time Pseudo-Random Number Generator'
+title: 'Compile Time Pseudo-Random Number Generator'
+channel: stupid_template_tricks
 date: '2015-01-16 07:56:24'
 asset_path: /assets/2015-01-16-stupid-template-tricks-compile-time-pseudo-random-number-generator
 ---
