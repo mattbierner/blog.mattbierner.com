@@ -50,7 +50,7 @@ def occurrences(tokens):
     return [i for i, x in enumerate(tokens) if x == '!']
 ```
 
-![]({{ page.asset_path }}/occurrences.png)
+{% include image.html file="occurrences.png" description="" %}
 
 Ahhh, much as expected. The first half of *The Jungle*, up to the 75,000 word mark, has a fairly constant exclamation point rate. And the first half is by far the best half, with Sinclair introducing the main characters, relating delicious nuggets on the inner operations of Packingtown, and preparing the reader for the great fall that we know is going to come.
 
@@ -58,7 +58,7 @@ Getting into the second half of the book there are three exclamation point speed
 
 Thus, this chart is proof of an inverse correlation between exclamation point density and novel quality. As the rate of exclamation points goes up, the narrative quality similarly goes down. If Sinclair had continued adding many more chapters to *The Jungle*, we can extrapolate that the text would have devolved into nothing but the word "Jurgis" and exclamation points.
 
-![]({{ page.asset_path }}/jurgis--jurgis--1.png)
+{% include image.html file="jurgis--jurgis--1.png" description="" %}
 
 ## By Chapter Analysis
 There are degrees of shittiness to the second half of *The Jungle* though. Hobo Jurgis or Tramp Jurgis is much more palatable than Socialist Jurgis or Boss Jurgis. And some chapters are just astoundingly bad, such as the insufferable chapter 24, wherein the soulless husk formally known as Jurgis encounters the young, wealthy, and very drunk Master Frederick. 
@@ -70,16 +70,16 @@ And let's not even talk about chapters 28 onwards, which give up all novelistic 
 ### Counts
 Given that much of *The Jungle* was publish serially, it makes sense that each chapter has a fairly constant number of words.
 
-![]({{ page.asset_path }}/Words-per-chapter.png)
+{% include image.html file="Words-per-chapter.png" description="" %}
 
 And looking at just the raw exclamation point count per chapter, there is a pretty clear trend.
 
-![The Jurgis Mountains were formed around seventy thousands words ago by the collision of the Journalism and Socialism tectonic plates.]({{ page.asset_path }}/points-per-chapter.png)
+{% include image.html file="points-per-chapter.png" description="The Jurgis Mountains were formed around seventy thousands words ago by the collision of the Journalism and Socialism tectonic plates." %}
 
 ### Rate
 To compensate for the different chapter lengths, I also computed the exclamation point density of each chapter; that is, what percentage of words in a chapter are exclamation points. 
 
-![]({{ page.asset_path }}/rate-per-chapter.png)
+{% include image.html file="rate-per-chapter.png" description="" %}
 
 Things start off at a reasonable 0.3% exclamation point rate, with one out of every 330 words an exclamation point, before spiking at chapter 15 and again at chapters 18 and 24. With text like this its not hard to see why:
 
@@ -92,7 +92,7 @@ But not all exclamation points are created equal. Exclamation points in quotes a
 
 For the second pass, I removed all quoted text. After doing this, there were  457 exclamation points left. After taking the density of each chapter, we end up with a familiar story:
 
-![]({{ page.asset_path }}/noquote-rate.png)
+{% include image.html file="noquote-rate.png" description="" %}
 
 Sadly, by far the biggest change is in chapter 24, which drops to almost zero exclamation points from its previous high of like 100. The rate of Chapter 17 also increases once all the quotes are removed, but chapter 18 and 28 still are clear outliers.
 

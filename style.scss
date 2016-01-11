@@ -279,6 +279,20 @@ img {
         display: block;
         margin: 0 auto;
     }
+    
+    figure {
+        padding-bottom: 0.8em;
+    }
+    
+    figure img {
+        padding-bottom: 0.2em;
+    }
+    
+    figure figcaption {
+        text-align: center;
+        font-style: italic;
+        font-size: 0.9rem;
+    }
 }
 
 .post .entry > * {

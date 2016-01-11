@@ -26,7 +26,7 @@ Asm<int>(
 
 Feel free to checkout the complete source [on Github][src]. It's far from complete, but it supports many basic operations. 
 
-![I hear it's gonna be a good time yo, and you're gonna like it.]({{ page.asset_path }}/BigBroadcast_attackdog.jpg)
+{% include image.html file="BigBroadcast_attackdog.jpg" description="I hear it's gonna be a good time yo, and you're gonna like it." %}
 
 ## Overview
 Assemblers are conceptually pretty simple: they map [assembly mnemonics](https://en.wikipedia.org/wiki/Assembly_language#Opcode_mnemonics_and_extended_mnemonics) to machine code. More advanced assemblers may support symbols and macros, but, if anything, implementing a basic assembler is more tedious than challenging. At least, that is the case when targeting a RISC assembly language, the kind covered in your typical CS class and most books on the subject. When it comes to x86 assembly, that most CISCy of CISCers, all bets are off.
@@ -36,7 +36,7 @@ The x86 instruction set architecture is expansive: around one thousand top level
 
 But there's more to x86 assembly's complexity than operation breadth. Take addressing modes. There are so many goddamn addressing modes that the [`mov` operator itself is Turing-complete](http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf). And a whole lot of complexity comes from x86's legendary backwards compatibility (fossil records indicate that T.Rex cut his teeth, so to speak, programming x86 assembly in the Cretaceous Period, and that was 70 million years ago). 
 
-![Crushing that code - Charles R. Knight, 1897]({{ page.asset_path }}/me-grimlock-sharkticons-transformers-animated-movie.jpg)
+{% include image.html file="me-grimlock-sharkticons-transformers-animated-movie.jpg" description="Crushing that code - Charles R. Knight, 1897" %}
 
 It's impressive just how much engineers have been able to cram into the instruction set over the years, including the transitions from 16 to 32bits and from 32 to 64bits, but, at the machine code level at least, the consequence of such augmentation is clear.
 
@@ -275,7 +275,7 @@ x86 memory addressing is complex, both in range of addressing modes the instruct
 * `[ebx * 2 + 8]` - Scaled only + displacement
 
 ### Base Only
-![Heap corruption, Oh yeah!]({{ page.asset_path }}/9.JPG)
+{% include image.html file="9.JPG" description="Heap corruption, Oh yeah!" %}
 
 The form `[esi + ebx * 2 + 8]` is the most complex of the lot, with all other modes being a subset of it. Breaking it down, its components are:
 
@@ -713,7 +713,7 @@ constexpr auto block(x, xs...) {
 ```
 
 ## I am given birth to nothing but machine code
-![]({{ page.asset_path }}/TFTM_Junkions.JPG)
+{% include image.html file="TFTM_Junkions.JPG" description="" %}
 
 Bringing everything together, `assemble` converts an assembly program into machine code at compile time. Pass one is run first on the program to generate symbol table, then pass two is run with the resulting symbol table. The result of `assemble` is a `ByteString` of machine code.
 

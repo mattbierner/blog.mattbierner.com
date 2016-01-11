@@ -8,7 +8,7 @@ When I  came across [this Stack Overflow question][so] about reversing a c++ `st
 
 Not that I have any practically application for type reversal mind you. But I was curious.
 
-![]({{ page.asset_path }}/Claude_Cat_angel.jpg)
+{% include image.html file="Claude_Cat_angel.jpg" description="" %}
 
 
 ## Templated Type Template Parameter Combinations and Permutations

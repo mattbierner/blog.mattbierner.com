@@ -6,7 +6,7 @@ asset_path: /assets/2015-02-07-stupid-template-tricks-pride-and-parser-combinato
 ---
 It is a truth universally acknowledged, that a template metaprogrammer in possession of a domain specific language, must be in want of a compile time parser. However much a game of compile time [snake][nibbler] may be enjoyed by such a programmer, this truth is so well fixed, and the problem so pervasive, that it is about time we apply template metaprogramming to implement a compile time parser. 
 
-![Begging pardon, Mr. Collins protested that he never parsed at compile time. Kitty stared at him, and Lydia exclaimed.]({{ page.asset_path }}/protest-2.jpg)
+{% include image.html file="protest-2.jpg" description="Begging pardon, Mr. Collins protested that he never parsed at compile time. Kitty stared at him, and Lydia exclaimed." %}
 
 C++ compile time parsing. What kind of masochist would do that? Well, consider the humble `printf` statement. A "standard" compiler has no clue what the contents of the printf format string actually mean. A format string is a string formatting domain specific language, one that `printf` evaluates at runtime. That means that the type of the expected arguments are only known at runtime, and this, at best, results in unnecessary run time overhead. At worst, it can introduce fun bugs.
 
@@ -82,7 +82,7 @@ All this is not intended teach you everything you'll ever need to know about par
 ## The Data Structures of the Fabulous Parser Combinator
 Let's begin the process of translating the parser combinators concepts outlined above into a C++ metaprogram. And before even writing our first parser, we need to define a few template data structures for for the parse state, parse errors, and the input steam itself. 
 
-![I always picture Mr. Darcy wearing these glasses, preferably also with the popped collar for maximum d-baggery.]({{ page.asset_path }}/1991-134-2_w.jpg)
+{% include image.html file="1991-134-2_w.jpg" description="I always picture Mr. Darcy wearing these glasses, preferably also with the popped collar for maximum d-baggery." %}
 
 ### Compile Time Strings
 C++ templates are a proud bunch. They don't associate with just any [string][template-string]:
@@ -243,7 +243,7 @@ struct Printer<ExpectError<pos, expected, found>>
 ## The Finest and Most Accomplished Combinatory Parsers
 One aspect that makes parser combinators so easy to implement, is that we only need four or five primitive parsers. Then through composition, more complex and higher level combinators can be constructed. 
 
-![I am not altogether out of hopes, in some time, to suffer Mr. Darcy in my company, without the apprehensions I am yet under of his teeth or his claws. - Elizabeth Bennet]({{ page.asset_path }}/scan-6-3.jpeg)
+{% include image.html file="scan-6-3.jpeg" description="I am not altogether out of hopes, in some time, to suffer Mr. Darcy in my company, without the apprehensions I am yet under of his teeth or his claws. - Elizabeth Bennet" %}
 
 ### Always and Never
 The `always` parser always produces a constant value. It does not alter the state or consume any input.
@@ -413,7 +413,7 @@ struct next : bind<p, constant<q>> { };
 ## Consumption
 You may have noticed that none the parsers defined so far actually parse anything. They are really more of generic computations. To start actually matching and consuming input, we need the `token` primitive.
 
-![The plumage and mating habits of the common yahoo.]({{ page.asset_path }}/Thomson-PP17-1.jpg)
+{% include image.html file="Thomson-PP17-1.jpg" description="The plumage and mating habits of the common yahoo." %}
 
 ### Token
 `token` is a primitive that matches tokens and advances the input stream. While `token` is probably the most complicated part of this post, it is easily understood by breaking it down into small pieces of functionality.

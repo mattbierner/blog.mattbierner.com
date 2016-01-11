@@ -4,7 +4,7 @@ title: There Is No I In Internet
 date: '2015-08-07 05:01:24'
 asset_path: /assets/2015-08-07-there-is-no-i-in-internet
 ---
-![]({{ page.asset_path }}/promo-800-1.png)
+{% include image.html file="promo-800-1.png" description="" %}
 
 > ... you and me and every millennial we know ... - *[What My Landlord Learned About Me From Twitter, New York Times Magazine][article]*
 
@@ -16,10 +16,10 @@ The results can be rather entertaining.
 
 
 #### Before
-![]({{ page.asset_path }}/before.png)
+{% include image.html file="before.png" description="" %}
 
 #### After 
-![]({{ page.asset_path }}/after.png)
+{% include image.html file="after.png" description="" %}
 
 
 You can also whitelist your own words (such as your name or the name of that [hot new social network](https://blot.re)) and disable the extension for specific sites.

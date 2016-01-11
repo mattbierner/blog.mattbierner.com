@@ -8,7 +8,7 @@ asset_path: /assets/2014-10-28-stupid-template-tricks-lazy-compile-time-lists
 
 This post overviews the implementation of a compile-time lazy list in C++ templates, along with a few common list operations, such as concatenation and mapping. The complete code can be [found in this gist](https://gist.github.com/mattbierner/d3ea4c9b792d36eeecbd).
 
-![Oh my C++. You are SO beautiful. Your syntax, love to me. Your diseases lovingly cared for, for all eternity.]({{ page.asset_path }}/kenneth_mcmillan_as_baron_vladimir_harkonnen.jpg)
+{% include image.html file="kenneth_mcmillan_as_baron_vladimir_harkonnen.jpg" description="Oh my C++. You are SO beautiful. Your syntax, love to me. Your diseases lovingly cared for, for all eternity." %}
 
 ## List Structure
 The core list datatype is based on a [stream][streams] structure. It has two components: a head, which is directly accessible in constant time, and a tail, which is a [thunk][thunk] that returns the rest of the list.
@@ -227,7 +227,7 @@ using gen = iterate<id, x>;
 ## Conclusion
 `List` proves to be a nice abstraction that also allows us to work with infinite lists compile-time. And once you get past some of the C++ template meta-programming warts, many functional concepts can be easily implemented at compile time in C++.
 
-![Glowing blue eyes (and terrible acting skills) are only a temporary side effect of too much template meta-programming.]({{ page.asset_path }}/Kyle_MacLachlan_en_Dune.jpg)
+{% include image.html file="Kyle_MacLachlan_en_Dune.jpg" description="Glowing blue eyes (and terrible acting skills) are only a temporary side effect of too much template meta-programming." %}
 
 [streams]: https://www.gnu.org/software/mit-scheme/documentation/mit-scheme-ref/Streams.html
 [thunk]: http://en.wikipedia.org/wiki/Thunk

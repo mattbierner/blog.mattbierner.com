@@ -6,7 +6,7 @@ description: 'In which an ordinary keyboard is pressed against a large agar plat
 asset_path: '/assets/2015-11-22-keyboard-bacterial-culture'
 ---
 
-![]({{ page.asset_path }}/DSC2832.jpg)
+{% include image.html file="DSC2832.jpg" description="" %}
 
 Keyboards are gross. How can they not be? Most of us spend hours every day on them, transferring all sorts of good stuff back and forth from our hands to the keys. So, while looking closely at my keyboard recently, I got to wondering just what types of bacteria and other microorganisms were growing on it. Thus began an experiment to find out.
 
@@ -15,7 +15,7 @@ I use a (decidedly not magic) Apple wireless keyboard at home, which, lacking a 
 
 My initial thought was to sample each key on the keyboard and grow the samples in separate petri dishes, perhaps even having a lab identify the type of bacteria produced (I really wanted to make a keyboard with the keys colored according to the bacteria found on that key: green for E.coli, yellow for strep, red for plague, ...) Such grand ambition however turned out to be more than a little impractical for a silly project like this. Preparing eighty sterile petri dishes, collecting samples without cross-contamination, and growing all these cultures would have been a major undertaking. Furthermore, it's not like you can just take a petri dish down to your local drug store to get the bacteria identified for a few dollars. Processing all these samples would have cost thousands and thousands of dollars. 
 
-![]({{ page.asset_path }}/DSC2823-1.jpg)
+{% include image.html file="DSC2823-1.jpg" description="" %}
 
 So, why not then go with the simplest approach possible: press the entire keyboard against a giant agar plate and see what happens? Apple's chiclet keyboards are particularly well suited to this, because the keys are flat and the key surface is even across the entire keyboard. There was only one small problem, no one sells prepared bacteria culture plates that are keyboard sized. A missed market opportunity if you ask me.
 
@@ -44,21 +44,21 @@ For such a hacked together setup though, and having zero clue what I was doing, 
 ## The Horror! The Horror!
 Perhaps somewhat naïvely, I was hoping that my keyboard would give birth to a beautiful piece of abstract art, somewhat like this lovely culture:
 
-![]({{ page.asset_path }}/bacteria-in-a-petri-dish-compressed.jpg)
+{% include image.html file="bacteria-in-a-petri-dish-compressed.jpg" description="" %}
 
 But, after a week, my culture looked less Matisse and more mucus:
 
-![]({{ page.asset_path }}/DSC2827.jpg)
+{% include image.html file="DSC2827.jpg" description="" %}
 
 Interesting though. A number of keys are clearly defined, especially the areas where my left and right hands normally rest. Here's the keyboard overlaid on the image  to show which keys are which. 
 
-![]({{ page.asset_path }}/keyboard1.jpg)
+{% include image.html file="keyboard1.jpg" description="" %}
 
 I have no clue what caused the streaks leading to the edge of the dish. It is also interesting that the most heavily used keys have less growth than keys I use less often, such as: F3, F11 and F12, right command and options keys (as an avid Spelunky player, if key use alone were the determining factor, I would expect the arrow keys, together with the left shift, Z, and X keys to host nothing less than the Andromeda strain.)
 
 The center section may be more barren because the agar was not thick enough there.
 
-![]({{ page.asset_path }}/Screen-Shot-2015-11-21-at-4-28-38-PM.png)
+{% include image.html file="Screen-Shot-2015-11-21-at-4-28-38-PM.png" description="" %}
 
 The growth all superficially looks very similar. Closer inspection shows a few colonies and interesting patterns, but I'm not sure if these were caused by contamination or were from the keyboard itself.
 

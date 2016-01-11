@@ -117,7 +117,7 @@ https://blot.re/v0/oauth2/authorize?response_type=code&client_id=5558ef133004232
 
 The user then sees this page.
 
-![]({{ page.asset_path }}/authorize.png)
+{% include image.html file="authorize.png" description="" %}
 
 If the user authorizes our application, Blot're redirects them back to our server at  `redirect_uri` and sends along a new authorization code. Our server can then exchange the received authorization code for an access token using `redeemAuthorizationCode`.
 
@@ -161,7 +161,7 @@ Blotre.createDisposable({
     });
 ```
 
-![]({{ page.asset_path }}/redeem-1.png)
+{% include image.html file="redeem-1.png" description="" %}
 
 Once the code has been redeemed, our client can exchange its credentials (`client_id` and `client_secret`) for an access token using `redeemOnetimeCode`. 
 
@@ -394,7 +394,7 @@ getCurrentTemp(ZIP)
 Temp:24.642 Color:#555600
 ```
 
-![Lovely.]({{ page.asset_path }}/color.png)
+{% include image.html file="color.png" description="Lovely." %}
 
 You may want to adjust the mapping function to get slightly more appealing colors.
 

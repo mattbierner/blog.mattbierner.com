@@ -4,6 +4,7 @@ import urllib
 from distutils.dir_util import mkpath
 
 IMAGE_RE = re.compile(r"\!\[([^\]]*)\]\(([^\{][^\)]+)\)")
+IMAGE_RE2 = re.compile(r"\!\[([^\]]*)\]\(([^\)]+)\)")
 
 SITE = 'http://blog.mattbierner.com'
 
@@ -12,12 +13,11 @@ def download_image(postname, path, output_dir):
     output_path = os.path.join(output_dir, output_file)
     urllib.urlretrieve(path, output_path)
 
-def replace_image_tags(match):
+def replace_image_tags_with_includes(match):
     image_desc = match.group(1)
     image_path = match.group(2)
+    return '{{% include image.html file="{1}" description="{0}" %}}'.format(image_desc, image_path)
 
-    image_path = image_path.rsplit('/', 1)[-1]    
-    return "![{0}]({{{{ page.asset_path }}}}/{1})".format(image_desc, image_path)
 
 def process_post(path, postname, post_content):
     output_dir = os.path.join('assets', postname)
@@ -39,15 +39,16 @@ def process_post(path, postname, post_content):
     if not didRun:
         return
     
-    # Add `asset_path` include for 
-    post_content = re.sub(r'\n(\-{3,})\n',
-        r"\nasset_path: /{0}\n\1".format(output_dir),
-        post_content,
-        count=1,
-        flags=re.M)
+    # Add `asset_path`
+    if False:
+        post_content = re.sub(r'\n(\-{3,})\n',
+            r"\nasset_path: /{0}\n\1".format(output_dir),
+            post_content,
+            count=1,
+            flags=re.M)
         
         
-    post_content = re.sub(IMAGE_RE, replace_image_tags, post_content)
+    post_content = re.sub(IMAGE_RE2, replace_image_tags_with_includes, post_content)
     
     with open(path, 'w') as f:
         f.write(post_content)

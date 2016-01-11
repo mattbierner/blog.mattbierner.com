@@ -18,7 +18,7 @@ But while `constexpr` may be good for you and good for me, the compiler tells us
 
 Naturally, C++ templates offer a perfectly reasonable solution: parse the literal yourself. 
 
-![In other words, it's a huge shit sandwich, and we're all gonna have to take a bite.]({{ page.asset_path }}/worldoshit.jpg)
+{% include image.html file="worldoshit.jpg" description="In other words, it's a huge shit sandwich, and we're all gonna have to take a bite." %}
 
 This post overviews the implementation of a user defined literal for `std::integral_constant`. The result support binary, octal, and hex literals, along with the `'` digit separator. You can find the complete code [on Github][src].
 

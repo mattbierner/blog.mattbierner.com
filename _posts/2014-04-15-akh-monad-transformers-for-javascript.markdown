@@ -6,7 +6,7 @@ asset_path: /assets/2014-04-15-akh-monad-transformers-for-javascript
 ---
 Akh is a small Javascript library of monad transformers and structures. This post briefly covers why monad transformers are useful in Javascript, and offers a very high level look at the monad transformer Akh offers and their interface.
 
-![Akh - A large flightless bird native to Fantasy Land]({{ page.asset_path }}/CC1279-Welcome-to-Wackyland-DX.jpg)
+{% include image.html file="CC1279-Welcome-to-Wackyland-DX.jpg" description="Akh - A large flightless bird native to Fantasy Land" %}
 
 ## Why Monad Transformers are Useful in Javascript
 Even in untyped, non-functional language like Javascript, monads are an extremely useful abstraction. It is fairly trivial to define and use monads like the state, error, and list monads in Javascript.
@@ -16,7 +16,7 @@ But beyond toy examples, real world problems often require functionality from on
 ### The Problem with Monoliths
 One potentially tempting approach is to define a big structure that has every functionality we need in our application. 
 
-![My god it's full of state ... and error too]({{ page.asset_path }}/2001-last-monolith.jpg)
+{% include image.html file="2001-last-monolith.jpg" description="My god it's full of state ... and error too" %}
 
 Say we need state and error handling. Why not just define a new struture that does both? 
 

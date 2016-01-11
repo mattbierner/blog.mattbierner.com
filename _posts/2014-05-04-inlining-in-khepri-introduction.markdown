@@ -6,7 +6,7 @@ asset_path: /assets/2014-05-04-inlining-in-khepri-introduction
 ---
 I designed [Khepri][khepri] with function inlining in mind, but inlining support was only recently added to the compiler. This post overviews the Khepri compiler's inlining support. A later post will cover some of the specific challenges of inlining Javascript and how Khepri implements inlining. 
 
-![]({{ page.asset_path }}/porkysrailroad.png)
+{% include image.html file="porkysrailroad.png" description="" %}
 
 
 ## The Need For Inlining 
@@ -63,7 +63,7 @@ For a total of one function call per call to `f` (the example with `compose` wil
 ## Khepri Inlining
 The Khepri compiler can inline small function calls to eliminated call overhead. This section details when a function can or cannot be inlined, and how code may be effected by inlining. 
 
-![Work safe, work smart. Your future depends on it.]({{ page.asset_path }}/crowbar_36335_lg.gif)
+{% include image.html file="crowbar_36335_lg.gif" description="Work safe, work smart. Your future depends on it." %}
 
 The compiler attempts to optimize code without effecting its visible behavior, but does make a few important exceptions for inlining. [Khepri's inlining documentation](https://github.com/mattbierner/khepri/wiki/inlining) has more comprehensive inlining documentation.
 

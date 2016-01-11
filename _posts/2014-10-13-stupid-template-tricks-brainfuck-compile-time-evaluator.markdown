@@ -6,7 +6,7 @@ asset_path: /assets/2014-10-13-stupid-template-tricks-brainfuck-compile-time-eva
 ---
 Every 2nd grader knows that the [C++ template system is Turing complete](http://stackoverflow.com/a/275295/306149). So what? Compile time Brainfuck evaluator that's what!
 
-![]({{ page.asset_path }}/LarsonLaBrea.jpeg)
+{% include image.html file="LarsonLaBrea.jpeg" description="" %}
 
 It turns out that I'm [not the first person](https://github.com/knome/metabrainfuck/blob/master/bf.cpp) who learned me some  metaprogramming and thought it would be a good laugh to implement Brainfuck with C++ templates. But in going though this admitidly pointless exercise, what struck me is how similar a Brainfuck C++ template evaluator is to [one implemented in a functional-style](https://github.com/mattbierner/neith-brainfuck/blob/master/lib/bf.kep).
 
@@ -458,6 +458,6 @@ Hello World!
 Program ended with exit code: 0
 ```
 
-![Today Hello World, Tomorrow the World!]({{ page.asset_path }}/Hitler_Head_Asplode.gif)
+{% include image.html file="Hitler_Head_Asplode.gif" description="Today Hello World, Tomorrow the World!" %}
 
 

@@ -50,7 +50,7 @@ in instantiation of template class 'is_even<1>' requested here
         ^
 ```
 
-![Compiler errors like this make Johnny Five very upset]({{ page.asset_path }}/shortcircuit1.jpg)
+{% include image.html file="shortcircuit1.jpg" description="Compiler errors like this make Johnny Five very upset" %}
 
 ## The problem
 Looking bottom up through the error stack, we see that `is_even<1>` is instantiated first. This should produce: `1 > 1 && is_even<1 - 2>::value`, which evaluates to `false && is_even<1 - 2>::value`, which should just be `false`. Right?

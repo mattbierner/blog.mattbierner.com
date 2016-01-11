@@ -10,19 +10,7 @@ layout: default
 
 <div role="main" class="posts main container">
     {% for post in paginator.posts %}
-        <article class="post">
-            <div class="post-meta">{{ post.date| date: '%B %d, %Y'  }}</div>
-
-            <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-        
-            <div class="entry">
-                {% if post.description %}
-                    {{ post.description }}
-                {% else %}
-                    {{ post.excerpt | strip_html }}
-                {% endif %}
-            </div>
-        </article>
+        {% include post_index.html %}
     {% endfor %}
     {% if paginator.total_pages > 1 %}
         <div class="pagination">

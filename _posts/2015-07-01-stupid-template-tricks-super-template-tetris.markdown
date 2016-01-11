@@ -11,7 +11,7 @@ Today, I want to share an important first step with you: *Super Template Tetris*
 ## A Rendezvous with Destiny
 Yes. Tetris. In C++. At compiletime.
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-28-at-10-45-30-PM.png)
+{% include image.html file="Screen-Shot-2015-06-28-at-10-45-30-PM.png" description="" %}
 
 Some people <sup>[who?]</sup> said it couldn't be done. C++ too old, they claim; metaprogramming a parlor trick, they cry. But sometimes, when you're up against it and those script cynics are beating you down, you just have to go out there and win one for the CPPer (Oh god, I am sorry for that one. I just don't know what has happened to this blog).
 
@@ -29,7 +29,7 @@ Let's get started.
 ## Templico, Illinois - Beginnings
 *Super Template Tetris* isn't our first go at template based gaming. We previously implemented the arcade game *Snake* or *Nibbler* [as a C++ template metaprogram][nibbler].
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-28-at-11-03-36-PM.png)
+{% include image.html file="Screen-Shot-2015-06-28-at-11-03-36-PM.png" description="" %}
 
 That project is a good starting point. Many of data structures, such as lists and grids, will be reused, and we will use the same basic logic for serialization and the game loop.
 
@@ -41,7 +41,7 @@ But let's step it up. This is ***Super** Template Tetris* after all. Besides jus
 * And kill Hitler.
 
 ### Interactivity
-![To play Tetris, we're going to have to animate it frame-by-frame and basically make a flip book. Master Shake would not be pleased.]({{ page.asset_path }}/Screen-Shot-2015-06-28-at-10-55-10-PM.png)
+{% include image.html file="Screen-Shot-2015-06-28-at-10-55-10-PM.png" description="To play Tetris, we're going to have to animate it frame-by-frame and basically make a flip book. Master Shake would not be pleased." %}
 
 There are two approaches to compiletime gaming.
 
@@ -115,7 +115,7 @@ But what is a compiletime string?
 ### String
 Jane Austen discussed the theory and implementation of compiletime strings in her seminal work, [Pride and Parser Combinators][pride]. We'll build on her work in *Super Template Tetris*. 
 
-![Jane Austen, template metaprogramming before it was cool.]({{ page.asset_path }}/jane-austen_in_blue_dress_e5no.jpg)
+{% include image.html file="jane-austen_in_blue_dress_e5no.jpg" description="Jane Austen, template metaprogramming before it was cool." %}
 
 `String` encodes a string as a character list type. 
 
@@ -294,7 +294,7 @@ static_assert(
 ## List is on the Air
 The Tetris playfield is really not all that different than the world of [Template Nibbler][nibbler]. Both are grids, Tetris just arranges and moves pieces around its grid slightly differently. So we'll start with the same basic grid implementation as Nibbler, the grid as a list of lists.
 
-![The Conscience of a Conser - The Barry Goldwater Story]({{ page.asset_path }}/Barry-Goldwater-Pin-Heart-Right.jpg)
+{% include image.html file="Barry-Goldwater-Pin-Heart-Right.jpg" description="The Conscience of a Conser - The Barry Goldwater Story" %}
 
 The actual compiletime list structure is almost completely unchanged from Nibbler, so it won't be covered here in any detail (checkout the [source][] if you are interested). Remember, we can get by with a finite list implementation for games like Nibbler and Tetris, instead of the lazy, potentially infinite list that we used to implement [Conway's Game of Life][life]. 
 
@@ -602,7 +602,7 @@ These update operations are the basis for both drawing to the screen and updatin
 ## Buffer
 Some gamers scoffed at good o' Template Nibbler's black and white, console graphics. They should be happy that there were any graphics at all. Real template gamers play by compiler error alone. But I guess we can throw them a bone. 
 
-![I ain't seen nothing like him in any amusement hall...]({{ page.asset_path }}/Screen-Shot-2015-06-28-at-6-04-53-PM.png)
+{% include image.html file="Screen-Shot-2015-06-28-at-6-04-53-PM.png" description="I ain't seen nothing like him in any amusement hall..." %}
 
 That's why *Super Template Tetris* features an astonishing new graphics system capable of unprecedented levels of detail and nearly photorealistic rendering*.
 
@@ -688,7 +688,7 @@ Setting the ANSI color code is a stateful operation. Print the magenta backgroun
 using colorReset = escape_code<0>;
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-24-at-9-05-58-PM.png)
+{% include image.html file="Screen-Shot-2015-06-24-at-9-05-58-PM.png" description="" %}
 
 Finally, `empty_pixel` encodes a transparent pixel. It's not actually a `Pixel` but a distinct type.
 
@@ -728,7 +728,7 @@ print(std::cout,
     to_string<Pixel<'X', Gfx<Color::Magenta, Color::Yellow>>>{}) << "\n";
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-24-at-9-14-23-PM.png)
+{% include image.html file="Screen-Shot-2015-06-24-at-9-14-23-PM.png" description="" %}
 
 ### Basic Buffer
 A buffer is just a grid of pixels. Each frame starts with an `empty_buffer`
@@ -748,7 +748,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-24-at-9-24-29-PM.png)
+{% include image.html file="Screen-Shot-2015-06-24-at-9-24-29-PM.png" description="" %}
 
 As hinted at, a [sprite][] is just another buffer with some possible transparency (`empty_pixel`). To draw a sprite to the screen, we copy all non-empty pixels from the source sprite to the screen at some offset position.
 
@@ -780,7 +780,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-24-at-9-29-42-PM.png)
+{% include image.html file="Screen-Shot-2015-06-24-at-9-29-42-PM.png" description="" %}
 
 ### Basic Drawing 
 `buffer_draw_grid` is enough to start putting together a simple, console graphics library.
@@ -806,7 +806,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-24-at-9-32-12-PM-1.png)
+{% include image.html file="Screen-Shot-2015-06-24-at-9-32-12-PM-1.png" description="" %}
 
 `buffer_draw_rect` draws a filled rectangle.
 
@@ -828,7 +828,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-24-at-9-35-13-PM.png)
+{% include image.html file="Screen-Shot-2015-06-24-at-9-35-13-PM.png" description="" %}
 
 While `buffer_draw_rect_outline` draws the outline of a rectangle using four lines:
 
@@ -850,7 +850,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-24-at-9-35-27-PM-1.png)
+{% include image.html file="Screen-Shot-2015-06-24-at-9-35-27-PM-1.png" description="" %}
 
 And because of the bounds checking in `grid_place_grid`, drawing that extends outside of the buffer is automatically clipped.
 
@@ -884,7 +884,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-24-at-9-39-50-PM.png)
+{% include image.html file="Screen-Shot-2015-06-24-at-9-39-50-PM.png" description="" %}
 
 `buffer_draw_text` always draws the entire string of text starting at the origin. For UI though, we often want to render text inside a specific area, clipping overflow and perhaps centering the text if it does not fill the entire area. `buffer_draw_centered_text` automates this.
 
@@ -923,11 +923,11 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-24-at-9-41-10-PM.png)
+{% include image.html file="Screen-Shot-2015-06-24-at-9-41-10-PM.png" description="" %}
 
 
 ## Tetrominos and the Playfield
-![That's right Space, you best check yourself lest you wreck yourself.]({{ page.asset_path }}/sdi.png)
+{% include image.html file="sdi.png" description="That's right Space, you best check yourself lest you wreck yourself." %}
 
 Damn. More than halfway in and not one line of code concerning Tetris's game logic. It's not like we haven't made progress though. We've built up a set of compiletime data structures, created a simple graphics library, and seen how to render graphics using `print`.
 
@@ -996,7 +996,7 @@ print(std::cout,
     to_string<SBlock::piece>{}) << "\n";
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-25-at-9-26-48-PM.png)
+{% include image.html file="Screen-Shot-2015-06-25-at-9-26-48-PM.png" description="" %}
 
 ### Random Bag
 Tetrominos are randomly selected during gameplay. But how do we generate random numbers at compiletime?
@@ -1542,7 +1542,7 @@ using dz_buffer = buffer_draw_rect<
     outline>;
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-26-at-12-29-16-AM-1.png)
+{% include image.html file="Screen-Shot-2015-06-26-at-12-29-16-AM-1.png" description="" %}
 
 Next comes UI, displaying the current score, next block, and a message if the player has lost the game.
 
@@ -1578,7 +1578,7 @@ using score_buffer =
         next_block>>>;
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-26-at-12-29-33-AM.png)
+{% include image.html file="Screen-Shot-2015-06-26-at-12-29-33-AM.png" description="" %}
 
 Finally we draw the playfield itself and overlay the active piece on top. We also draw the ghost piece. The ghost piece shows where the active piece would land for a drop. 
 
@@ -1601,11 +1601,11 @@ using current_block_buffer = buffer_draw_grid<
     ghost_buffer>;
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-26-at-12-29-48-AM.png)
+{% include image.html file="Screen-Shot-2015-06-26-at-12-29-48-AM.png" description="" %}
 
 
 ## Serialization 
-![It's breakfast again in America]({{ page.asset_path }}/reagan_bonzo-1.gif)
+{% include image.html file="reagan_bonzo-1.gif" description="It's breakfast again in America" %}
 
 That's enough to actually play *Super Template Tetris*, just not in the interactive mode we are targeting.
 
@@ -1855,7 +1855,7 @@ static constexpr const Input input =
 
 If no input is supplied, the game advances by one frame. 
 
-![Live free or -D HARD]({{ page.asset_path }}/Screen-Shot-2015-06-29-at-8-26-24-PM.png)
+{% include image.html file="Screen-Shot-2015-06-29-at-8-26-24-PM.png" description="Live free or -D HARD" %}
 
 ### Main
 `main` brings the runtime components together. It loads the current game state with `#include`, reads the player input, computes the next frame, prints the world to the console, and then saves the game state.
@@ -1880,7 +1880,7 @@ You play *Super Template Tetris* by recompiling its source code, then executing 
 $ clang++ main.cpp -std=c++1z -Wno-gnu-string-literal-operator-template -o tetris ; ./tetris
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-29-at-8-33-52-PM.png)
+{% include image.html file="Screen-Shot-2015-06-29-at-8-33-52-PM.png" description="" %}
 
 To drop the current piece, set a flag with `-D HARD` and recompile.
 
@@ -1888,11 +1888,11 @@ To drop the current piece, set a flag with `-D HARD` and recompile.
 $ clang++ main.cpp -std=c++1z -Wno-gnu-string-literal-operator-template -D HARD -o tetris ; ./tetris
 ```
 
-![]({{ page.asset_path }}/Screen-Shot-2015-06-29-at-8-34-10-PM.png)
+{% include image.html file="Screen-Shot-2015-06-29-at-8-34-10-PM.png" description="" %}
 
 Games can get pretty complex.
 
-![]({{ page.asset_path }}/4.png)
+{% include image.html file="4.png" description="" %}
 
 ## Farewell
 Well, that's it! Check out the documented [source][] for more details on the implementation or to play a game or two. 

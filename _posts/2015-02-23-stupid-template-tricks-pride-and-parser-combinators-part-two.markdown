@@ -8,14 +8,14 @@ asset_path: /assets/2015-02-23-stupid-template-tricks-pride-and-parser-combinato
 
 This time around, we'll continue to create a more complete library of compile time parser combinators. We'll take a look at some choice, sequencing, and iteration combinators. Using these combinators, we will implement a basic compile time validator for Apple's [visual format][visual-format] domain specific language. 
 
-![You got some choice moves Darcy. Shit, a bitch usually gotta drop a whole fuckin' pile of King Georges to get a show that good!]({{ page.asset_path }}/dance.jpg) 
+{% include image.html file="dance.jpg" description="You got some choice moves Darcy. Shit, a bitch usually gotta drop a whole fuckin' pile of King Georges to get a show that good!" %} 
 
 The complete source can be found on [Github][src]. Let's get started.
 
 ## Choice
 Try to describe any structured language and chances are that you will use the word 'or' at least a few times. But 'or' is not something our current parser library understands. Every parser currently has (with the exception of character level behavior) has a single valid path, there is no way to express choice.
 
-![Have you seen the new addition to the Guggenheim? I did that. And it didn't take very long either - George Wickham]({{ page.asset_path }}/250px-Thompson-PP-Wickham.jpg)
+{% include image.html file="250px-Thompson-PP-Wickham.jpg" description="Have you seen the new addition to the Guggenheim? I did that. And it didn't take very long either - George Wickham" %}
 
 ### Either
 `either` is the choice primitive combinator. Given two parsers, `p` and `q`, it attempts to parse `p` first and, if `p` fails, it runs `q`. The result is either the success result of `p` or the (success or failure) result of `q`.
@@ -195,7 +195,7 @@ using numberParser = next<
 
 But no. That doesn't look quite right. We could use a recursive parser definition, but that's a bit more than we really need here. We just want an ordered list of the numbers that make up the integer. Here's where iterative combinators come into play. 
  
-![Submit to the biomass Elisabeth, and your suffering will end - Mr. Darcy's proposition]({{ page.asset_path }}/pnpcebrockbw22.jpg)
+{% include image.html file="pnpcebrockbw22.jpg" description="Submit to the biomass Elisabeth, and your suffering will end - Mr. Darcy's proposition" %}
 
 ### Cons
 The `many` combinator applies a parser zero or more times until it fails, building the results into a list. Consider the operation of `many` step by step.
@@ -318,7 +318,7 @@ run_parser<p, "a,aa"_stream>; // List of: 'a', 'a'
 ## Sequencing
 Let's now revisit basic parser sequencing and use what we have learned to build a few more useful combinators.
 
-![Yes, two solariums! Quite a find.... And, I... have horses, too. - George Wickham ]({{ page.asset_path }}/wickham-5.jpg)
+{% include image.html file="wickham-5.jpg" description="Yes, two solariums! Quite a find.... And, I... have horses, too. - George Wickham " %}
 
 ### Seq
 Much like how `choice` applies `either` to a list of parsers, `seq` applies `next` to a list of parsers. The resulting parser runs the list of input parsers in order until one fails or all succeed.

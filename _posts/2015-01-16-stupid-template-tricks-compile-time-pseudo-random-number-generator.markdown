@@ -6,7 +6,7 @@ asset_path: /assets/2015-01-16-stupid-template-tricks-compile-time-pseudo-random
 ---
 What with all those pesky NSA backdoors, runtime random number generation is just not secure. So let's build a compile time pseudo-random number generator with C++ templates.
 
-![Witness the impossible as Matt Bierner encodes a five bit register using gigabytes of compiler memory and trillions of cpu cycles.]({{ page.asset_path }}/sb-69.jpg)
+{% include image.html file="sb-69.jpg" description="Witness the impossible as Matt Bierner encodes a five bit register using gigabytes of compiler memory and trillions of cpu cycles." %}
   
 In this post, I'll walk through the implementation of a simple, deterministic pseudo-random number generator using a [linear feedback shift register (LFSR)][lfsr]. The complete source is [available here][src].
 

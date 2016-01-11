@@ -8,7 +8,7 @@ asset_path: /assets/2015-07-23-of-interneting-trees-with-python-and-pi
 
 This post provides a quick introduction to Blot're.py by example. We'll hook a plant up to Blot're using a Raspberry Pi and a simple moisture sensor. You can find the complete [example source code here][src].
 
-![So shiny, so chrome!]({{ page.asset_path }}/Chrome_Painter.jpg)
+{% include image.html file="Chrome_Painter.jpg" description="So shiny, so chrome!" %}
 
 
 ## Hardware 
@@ -27,11 +27,11 @@ The basic component list comes [from this tutorial][hardware-tut], with a few su
 ### Wiring
 The Tuts+ moisture sensor tutorial was written for a Raspberry Pi Model B, so to wire up the analog to digital converter, I switched over to [an Adafruit tutorial][ada-tut]. The only important part is the connection from the Pi to the MCP3008, just ignore all the switches and sensors and whatnot.
 
-![]({{ page.asset_path }}/raspberry_pi_pi_volume_knob_bb.png)
+{% include image.html file="raspberry_pi_pi_volume_knob_bb.png" description="" %}
 
 I wried up the moisture sensor to pin 0 on the MCP3008. The Adafruit tutorial also had some helpful Python code for reading integer values from the MCP3008 that I'll reference, but won't cover in any detail. The [example source][src] includes all that if you're interested.
 
-![I must admit that my wiring was actually closer to this.]({{ page.asset_path }}/wire-ratking.png)
+{% include image.html file="wire-ratking.png" description="I must admit that my wiring was actually closer to this." %}
 
 ## Blot're.py
 Back to the safety of software. 
@@ -309,7 +309,7 @@ $ sudo /etc/init.d/plantre.init.d.sh start
 # Conclusion
 Here's the [stream from my tree](https://blot.re/s/matt/mr+tree) using this script.
 
-![Featuring production ready tupperware enclosure.]({{ page.asset_path }}/_DSC7976.jpg)
+{% include image.html file="_DSC7976.jpg" description="Featuring production ready tupperware enclosure." %}
 
 Be sure to checkout the rest of the [example source][src] and please report any bug you find in [Blot're.py][blotre-py].
 

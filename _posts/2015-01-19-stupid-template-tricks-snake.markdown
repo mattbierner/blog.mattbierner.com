@@ -6,7 +6,7 @@ asset_path: /assets/2015-01-19-stupid-template-tricks-snake
 ---
 [Conway's game of Life][life] may be mathematically interesting, but it is not what most people would consider a real game. So let's take a look at another product of the 70's, the arcade game [Snake][snake]. This post walks through a complete, compile time implementation of a Snake game using C++ template metaprogramming. We'll start by implementing a basic list and grid, before moving on to encode the game rules. You can find the [complete source here][src].
 
-![I don't need to wear one of those helmets for metaprogramming - Famous last words.]({{ page.asset_path }}/206838120946081003_42d04362ada6-2.png)
+{% include image.html file="206838120946081003_42d04362ada6-2.png" description="I don't need to wear one of those helmets for metaprogramming - Famous last words." %}
 
 The variant of Snake that we'll implement is a simplified version of [Nibbler][nibbler]. In Nibbler, the player guides a snake about a grid by choosing a direction for the snake's next movement: turn left, turn right, or continue straight. Trailing behind the snake's head are a number of body sections. These body section cells stay occupied until the entire snake has moved over that cell, so that the head of the snake alway moves forward by one while the tail of the snake always shrinks by one.
 
@@ -515,7 +515,7 @@ using can_continue_in_direction =
 ## Nibbler
 Finally we get down to actually implementing Nibbler.
 
-![Samuel L. Jackson is ready for some motherfucking snakes on motherfucking two dimensional fields!]({{ page.asset_path }}/jackson-1.jpg)
+{% include image.html file="jackson-1.jpg" description="Samuel L. Jackson is ready for some motherfucking snakes on motherfucking two dimensional fields!" %}
 
 ### Game State
 A game of Nibbler can either be in progress, or over if the player died.
@@ -1144,7 +1144,7 @@ int main(int argc, const char* argv[])
 Program ended with exit code: 0
 ```
 
-![Only Five? Fuck Rick! Fuck Rick and his high score of 1,231,372,670!]({{ page.asset_path }}/f1303.JPG)
+{% include image.html file="f1303.JPG" description="Only Five? Fuck Rick! Fuck Rick and his high score of 1,231,372,670!" %}
 
 
 ## Next Time

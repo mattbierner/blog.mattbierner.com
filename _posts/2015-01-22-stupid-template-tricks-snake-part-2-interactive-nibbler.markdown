@@ -6,7 +6,7 @@ asset_path: /assets/2015-01-22-stupid-template-tricks-snake-part-2-interactive-n
 ---
 Compile time Nibbler, man. We gotta get this sucker done. [Last time][part1], we got so caught in metaprogramming that we ended up with a state machine. To play a game, you had enter all of the commands ahead of time. That's pathetic. Is that what you want to do with your life? Type `Input::Up` and `Input::Left` into a compiler so that you can guide a bunch of triangles into asterisks? That's senseless! But that's what happens, man.
 
-![]({{ page.asset_path }}/1198440-scooty_puff_sr.png)
+{% include image.html file="1198440-scooty_puff_sr.png" description="" %}
 
 So this time around, let's make compile time Nibbler "interactive". You’ll still play the game with a compiler, but now each compilation will only advance a single step. Player input will come from macro flags passed to the compiler on the command line.
 
@@ -158,7 +158,7 @@ struct Serialize<std::integer_sequence<T, elements...>>
 ## Serializing Nibbler
 Any type stored in the Nibbler `State` object must be serializable. That may sound intimidating, but this is really only around 10 types, and most of the code is straightforward (This probably would be a good application of macros as well).
 
-![It's my duty to inform you that Honey Bunches of Oats is the greatest cereal ever created by man.]({{ page.asset_path }}/3fhdgZOw7j-2.png)
+{% include image.html file="3fhdgZOw7j-2.png" description="It's my duty to inform you that Honey Bunches of Oats is the greatest cereal ever created by man." %}
 
 ### Lists and Grids
 `Position` only uses basic values, which we can write directly to the data stream.

@@ -5,7 +5,7 @@ date: '2015-12-05 06:20:21'
 asset_path: /assets/2015-12-05-sketchy-keylogger
 description: Spelunky + Keylogger + Python + Turtles
 ---
-![]({{ page.asset_path }}/spelunky-opening.png)
+{% include image.html file="spelunky-opening.png" description="" %}
 
 What the hell is that? A map of the New York City subway system? A particle collision at the LHC? No, something far more beautiful: a visualization of [Spelunky][] gameplay keyboard input. 
  
@@ -188,7 +188,7 @@ Spelunky levels are randomly generated, so, while it does not make sense to try 
 
 Now, I'm fairly good at Spelunky (normal good, not speedrun good), but I still die a lot.  
 
-![On a long enough timeline, the survival rate for everyone drops to zero... except for those two times where it didn't.]({{ page.asset_path }}/spelunky-survival-curve.png)
+{% include image.html file="spelunky-survival-curve.png" description="On a long enough timeline, the survival rate for everyone drops to zero... except for those two times where it didn't." %}
 
 Here's what the average death rate looks like for each area:
 
@@ -207,53 +207,53 @@ With that limitation in mind, let's take a look what movement in each area looks
 
 As would be expected for the opening area, the mines are fairly standard, with a nice mix of vertical and horizontal movement. Here's what all 420 mine level plays look like drawn on top of each other. 
 
-![]({{ page.asset_path }}/mines.png)
+{% include image.html file="mines.png" description="" %}
 
 A bit Flying Spaghetti Monster. The average position of all these lines is a little above the x-axis. Considering that Spelunky is all about descent, the upward trend of the keypresses may at first be surprising, but this makes sense when you consider the details of the controls. The down arrow key is used mainly to pick up items, drop from ledges, or peek at the level below, and the latter pair of actions are not needed all that much on these mine levels.
 
 For a somewhat cleaner picture, here's just twenty mine level runs:
 
-![]({{ page.asset_path }}/20-mine.png)
+{% include image.html file="20-mine.png" description="" %}
 
 And here's a single complete run through the entire mine area. Unlike the two plots above, this drawing does not reset the pen to the origin after each level.
 
-![]({{ page.asset_path }}/single-mines.png)
+{% include image.html file="single-mines.png" description="" %}
 
 ### Jungle
 The jungle levels are perhaps the most balanced levels in terms of movement. The deep pits of this area require more arrow down holding to check if the descent is safe, and the average y-position is closer to the x-axis, although still slightly above it.
 
-![]({{ page.asset_path }}/jungle.png)
+{% include image.html file="jungle.png" description="" %}
 
 Again, with around 160 runs, the picture is a bit messy. Here's just twenty jungle level play throughs:
 
-![]({{ page.asset_path }}/20-jungle.png)
+{% include image.html file="20-jungle.png" description="" %}
 
 Along with a single complete run through the entire jungle section:
 
-![]({{ page.asset_path }}/single-jungle.png)
+{% include image.html file="single-jungle.png" description="" %}
 
 ### Ice Caves
 The biggest outlier in terms of movement are the ice cave levels. These levels consist of sparsely spaced platforms over a void, which makes descending to the exit difficult.
 
-![]({{ page.asset_path }}/ice.png)
+{% include image.html file="ice.png" description="" %}
 
 Ice cave level movement trends heavily downward, primarily because you need to hold the down arrow key to peek at lower areas of the level. This single run through the entire ice cave area highlights this peeking, visible as long holds of the down key: 
 
-![]({{ page.asset_path }}/single-ice.png)
+{% include image.html file="single-ice.png" description="" %}
 
 ### The Temple
 The linear temple levels are a nice change of pace after the ice caves.
 
-![]({{ page.asset_path }}/temple.png)
+{% include image.html file="temple.png" description="" %}
 
 The long, enemy filled halls result in lots of back and forth movement, with a few vertical shifts here and there. This is especially clear when viewing a single run through the three temple levels:
 
-![]({{ page.asset_path }}/single-temple.png)
+{% include image.html file="single-temple.png" description="" %}
 
 ### Final Boss
 The boss battle is similar to the final Bowser battle in Super Mario 3, but with a giant [Olmec stone head](http://spelunky.wikia.com/wiki/Olmec) instead of a zoophilic, ginger-haired turtle (video games are weird). The player must get the boss to smash through several layers of floor into a pool of lava below.
 
-![]({{ page.asset_path }}/boss.png)
+{% include image.html file="boss.png" description="" %}
 
 Unlike previous levels, this battle takes place in a single large room, so vertical movement is more limited and much of the stage consists of running back and forth to dodge Olmec. The player always starts on the far left of the room, and must run right when the level starts, a pattern that clearly shows up in this chart. I also typically opened by throwing a bomb or two right away, something that also shows up in this image.
 
@@ -261,18 +261,18 @@ Unlike previous levels, this battle takes place in a single large room, so verti
 ## The Whole Picture
 Here's what all 150 runs look like overlaid on top of each other.
 
-![]({{ page.asset_path }}/matplot-run.png)
+{% include image.html file="matplot-run.png" description="" %}
 
 It's pretty cool how all the runs start clustered together, before spreading out over a larger area midgame. Late game runs also kind of split off into individual threads. 
 
 ### Winning
 This is what a winning game run looks like:
 
-![]({{ page.asset_path }}/win-nojetpack.png)
+{% include image.html file="win-nojetpack.png" description="" %}
 
 The two winning runs I recorded actually look very different in terms of movement. Here's the second one, which has almost no downward movement:
 
-![]({{ page.asset_path }}/win-jetpack.png)
+{% include image.html file="win-jetpack.png" description="" %}
 
 For this second run, I stole a jetpack sometime around level two (the real crime are those prices, amirite?). Besides being awesome, the jetpack removes the need to press the down arrow key to check if descending will be safe, which explains why, besides a few blips, almost all vertical movement on this run is upwards.
 
@@ -289,7 +289,7 @@ I've also recorded animated versions of the two winning runs. The playback is be
 ## You Made It!
 With this project, I wanted to examine the input used to play a computer game, without really considering the game itself in any real detail. The result is kind of a mess, but also kind of beautiful. 
 
-![]({{ page.asset_path }}/spelunky-closing.png)
+{% include image.html file="spelunky-closing.png" description="" %}
 
 Some elements of gameplay are captured in these visualization, but they are also very abstract. And, appropriately enough, keypresses of individual runs do end up creating something that resembles a cave system.
 

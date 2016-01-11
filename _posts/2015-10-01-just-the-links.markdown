@@ -7,7 +7,7 @@ description: 'A Chrome plugin that shows only the important part of a Wikipedia 
 ---
 The allure of an unvisited Wikipedia hyperlink is difficult to resist. It's gotten to the point where I don't even read the articles anymore, I just kind of scan for interesting looking hyperlinks to click on. From there, it was but a short jump to *[Just the Links][jtl]*.
 
-![The surprisingly long and absurd Wikipedia article on BK Chicken Fries rendered with Just the Links in hyperlinks+break mode]({{ page.asset_path }}/hyperlinks-break.png)
+{% include image.html file="hyperlinks-break.png" description="The surprisingly long and absurd Wikipedia article on BK Chicken Fries rendered with Just the Links in hyperlinks+break mode" %}
 
 [*Just the Links*][jtl] is a Chrome browser plugin that renders only the hyperlinks in Wikipedia articles. It provides a few options to control what text is displayed:
 
