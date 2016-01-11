@@ -17,6 +17,9 @@ layout: default
         <h1 class="post-title">{{ page.title }}</h1>
         <div class="post-meta">
             <time>{{ page.date | date: "%B %e, %Y" }}</time>
+            {% if site.data.channels[page.channel] %}
+                &mdash; <a class="channel-link" href="/channel/{{ page.channel }}">{{ site.data.channels[page.channel].name }}</a>
+            {% endif %}
         </div>
     </header>
     
