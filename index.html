@@ -2,11 +2,7 @@
 layout: default
 ---
 
-<header id="index-header">
-    <a class="index-logo" href="{{ site.baseurl }}/">
-        <img src="/images/uwtb.svg" />
-    </a>
-</header>
+{% include index_header.html %}
 
 <div role="main" class="posts main container">
     {% for post in paginator.posts %}
@@ -33,5 +29,4 @@ layout: default
             {% endif %}
         </div>
     {% endif %}
-    
 </div>
