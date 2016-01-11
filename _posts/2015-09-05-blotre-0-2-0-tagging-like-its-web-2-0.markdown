@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blot're 0.2.0 - Tagging Like It's Web 2.0
+channel: blotre
 date: '2015-09-05 20:26:06'
 asset_path: /assets/2015-09-05-blotre-0-2-0-tagging-like-its-web-2-0
 ---

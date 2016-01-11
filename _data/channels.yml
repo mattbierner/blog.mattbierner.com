@@ -1,3 +1,9 @@
+blotre:
+    name: "Blot're"
+    description: "The life and times of Blot're, the world's greatest IoT social communication platform."
+
 stupid_template_tricks:
     name: 'Stupid Template Tricks'
     description: 'Abusing C++ templates for fun and profit.'
+
+

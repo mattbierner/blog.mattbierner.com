@@ -1,6 +1,7 @@
 ---
 layout: post
 title: blog.blot.re
+channel: blotre
 date: '2015-12-13 22:16:34'
 asset_path: /assets/2015-12-13-blog-blot-re
 description: Blot're – Rocking the blogosphere like it's 1999.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blot're Javascript Weather Client
+channel: blotre
 date: '2015-05-24 03:48:00'
 asset_path: /assets/2015-05-24-blotre-javascript-weather-client
 ---

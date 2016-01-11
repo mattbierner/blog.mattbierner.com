@@ -1,6 +1,7 @@
 ---
 layout: post
 title: State of the Blot're - July 2015
+channel: blotre
 date: '2015-07-09 07:55:23'
 asset_path: /assets/2015-07-09-state-of-the-blotre-july-2015
 ---

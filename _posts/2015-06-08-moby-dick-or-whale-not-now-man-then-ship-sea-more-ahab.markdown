@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Moby-Dick; or, Whale Not Now Man then Ship Sea More Ahab
+channel: blotre
 date: '2015-06-08 04:06:08'
 asset_path: /assets/2015-06-08-moby-dick-or-whale-not-now-man-then-ship-sea-more-ahab
 ---
