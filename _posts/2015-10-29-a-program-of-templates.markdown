@@ -3,6 +3,7 @@ layout: post
 title: A Program of Templates
 date: '2015-10-29 03:11:21'
 asset_path: /assets/2015-10-29-a-program-of-templates
+description: Happy Halloween!
 ---
 <h1 align="center">I</h1>
 I awake alone, to a house in silence. The dying fragments of an unspeakable dream still hang in the cool night air, and I lie entranced for a time – heart pounding – half trying to remember that nightmare, half frightened of what such remembrance may hold. A stabbing headache draws me back to reality. My trusty Nokia Communicator reads ten o'clock, December 31st, 1999. New Year's Eve. How did I come to be here and what became of the Lisp expedition? I last remember hacking through that accursed swamp – rations dwindling, fever growing stronger by the hour – but since then? A blank, a void of shifting shadow filled with unintelligible urges and alien sensations just beyond my waking comprehension. Yet one thought cuts through this fog with vital urgency: Edwin and Enoch, my children. 

@@ -3,6 +3,7 @@ layout: post
 title: Just the Links
 date: '2015-10-01 05:43:26'
 asset_path: /assets/2015-10-01-just-the-links
+description: 'A Chrome plugin that shows only the important part of a Wikipedia entry: the hyperlinks.'
 ---
 The allure of an unvisited Wikipedia hyperlink is difficult to resist. It's gotten to the point where I don't even read the articles anymore, I just kind of scan for interesting looking hyperlinks to click on. From there, it was but a short jump to *[Just the Links][jtl]*.
 
