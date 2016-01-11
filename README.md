@@ -1,4 +1,1 @@
-Offical blog of [Blot're][blotre].
-
-[blotre]: https://blot.re
-
+[http://blog.mattbierner.com](http://blog.mattbierner.com).
