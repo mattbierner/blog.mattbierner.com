@@ -1,0 +1,3 @@
+stupid_template_tricks:
+    name: 'Stupid Template Tricks'
+    description: 'Abusing C++ templates for fun and profit.'

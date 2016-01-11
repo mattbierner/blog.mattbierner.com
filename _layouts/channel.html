@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% include index_header.html %}
+
+<div role="main" class="posts main container">
+    {% if site.data.channels[page.channel] %}
+        <div class="channel-header">
+            <h1 class="channel-name">{{ site.data.channels[page.channel].name }}</h1>
+            <p class="channel-description">{{ site.data.channels[page.channel].description }}</p>
+        </div>
+    
+        {% for post in site.posts %}
+            {% if post.channel == page.channel %}
+                {% include post_index.html %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</div>
