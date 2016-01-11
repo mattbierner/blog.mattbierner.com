@@ -3,6 +3,7 @@ layout: post
 title: Sketchy Keylogger
 date: '2015-12-05 06:20:21'
 asset_path: /assets/2015-12-05-sketchy-keylogger
+description: Visualizing player input for a game of Spelunky using a keylogger, Python, and turtles.
 ---
 ![]({{ page.asset_path }}/spelunky-opening.png)
 

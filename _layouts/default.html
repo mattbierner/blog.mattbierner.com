@@ -10,9 +10,8 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    
+    {% feed_meta %}
   </head>
 
   <body>
@@ -21,6 +20,8 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer page-footer">
+            
+
             <p id="copyright">&copy; 2016 by Matt Bierner</p>
         </footer>
       </div>

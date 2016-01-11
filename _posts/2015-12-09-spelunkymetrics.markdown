@@ -4,6 +4,7 @@ title: Spelunkymetrics
 date: '2015-12-09 08:22:04'
 asset_path: /assets/2015-12-09-spelunkymetrics
 ---
+
 After my recent experiment [visualizing Spelunky gameplay input Etch-a-Sketch style][etch], I decided to make one more pass over the data. No pretty pictures this time around, but lots of charts. Charts are good too.
 
 The scripts used are all on [Github][src].
