@@ -2,12 +2,16 @@ blotre:
     name: "Blot're"
     description: "The life and times of Blot're, the world's greatest IoT social communication platform."
 
+camerrah:
+    name: "Camer'rah"
+    description: ""
+
 halloween:
     name: "Halloween Special"
-    description: "Terrible tales of technological terror." 
+    description: "Terrible Tales of Technological Terror" 
 
 stupid_template_tricks:
     name: 'Stupid Template Tricks'
-    description: 'Abusing C++ templates for fun and profit.'
+    description: 'Abusing C++ Templates for Fun and Profit'
 
 
