@@ -4,12 +4,14 @@ layout: default
 
 {% include index_header.html %}
 
-<div role="main" class="posts main container">
-    {% for post in paginator.posts %}
-        {% include post_index.html %}
-    {% endfor %}
+<div role="main" class="main container">
+    <div class="posts">
+        {% for post in paginator.posts %}
+            {% include post_index.html %}
+        {% endfor %}
+    </div>
     {% if paginator.total_pages > 1 %}
-        <div class="pagination">
+        <nav class="pagination">
             {% if paginator.previous_page %}
                 <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
             {% endif %}
@@ -27,6 +29,6 @@ layout: default
             {% if paginator.next_page %}
                 <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
             {% endif %}
-        </div>
+        </nav>
     {% endif %}
 </div>

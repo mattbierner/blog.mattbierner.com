@@ -330,6 +330,14 @@ img {
   color: #aaa;
 }
 
+.page-footer a {
+    color: inherit;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
+}
+
 /* ==========================================================================
    Index pagination
    ========================================================================== */
