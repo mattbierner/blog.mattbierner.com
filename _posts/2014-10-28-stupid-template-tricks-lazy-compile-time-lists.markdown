@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Lazy Compile-Time Lists'
-channel: stupid_template_tricks
+series: stupid_template_tricks
 date: '2014-10-28 04:00:02'
 asset_path: /assets/2014-10-28-stupid-template-tricks-lazy-compile-time-lists
 ---

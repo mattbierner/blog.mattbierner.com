@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Snake Part 2 - Interactive Nibbler'
-channel: stupid_template_tricks
+series: stupid_template_tricks
 date: '2015-01-22 06:35:50'
 asset_path: /assets/2015-01-22-stupid-template-tricks-snake-part-2-interactive-nibbler
 ---

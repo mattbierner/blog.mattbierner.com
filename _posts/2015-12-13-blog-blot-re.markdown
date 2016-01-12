@@ -1,10 +1,10 @@
 ---
 layout: post
 title: blog.blot.re
-channel: blotre
+series: blotre
 date: '2015-12-13 22:16:34'
 asset_path: /assets/2015-12-13-blog-blot-re
-description: Blot're – Rocking the blogosphere like it's 1999.
+description: Blot're all up in your blogosphere.
 ---
 
 The new Blot're company blog is [up and running](http://blog.blot.re). There's even a timely [new post](http://blog.blot.re/we-are-the-rainbow/) about a new business opportunity that Blot're is pursuing. One section is titled: "Terrorists are the New Millennials". Good stuff.

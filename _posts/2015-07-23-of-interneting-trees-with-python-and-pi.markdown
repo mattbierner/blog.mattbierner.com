@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Of Interneting Trees with Python and Pi
-channel: blotre
+series: blotre
 date: '2015-07-23 07:28:36'
 asset_path: /assets/2015-07-23-of-interneting-trees-with-python-and-pi
 ---

@@ -4,7 +4,7 @@ title: 'Template Assembler'
 date: '2015-09-21 10:37:16'
 asset_path: /assets/2015-09-21-stupid-template-tricks-template-assembler
 description:
-channel: stupid_template_tricks
+series: stupid_template_tricks
 ---
 The Graybeards tell us that all of C++ rests on the back of templating, to which the skeptic responds, "Then what supports the templating?" For a true metaprogrammer like myself, the answer is obvious: "It's templates all the way down." Templates of templates compiling templates and begetting more templates, or at least that's what I used to believe... 
 

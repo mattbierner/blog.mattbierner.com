@@ -1,8 +1,8 @@
 <article class="post">
     <div class="post-meta">
         <time>{{ post.date| date: '%B %d, %Y' }}</time>
-        {% if site.data.channels[post.channel] %}
-            &mdash; <a class="channel-link" href="/channel/{{ post.channel }}">{{ site.data.channels[post.channel].name }}</a>
+        {% if site.data.series[post.series] %}
+            &mdash; <a class="channel-link" href="/series/{{ post.series }}">{{ site.data.series[post.series].name }}</a>
         {% endif %}
     </div>
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Reversing Template Parameters on Templated Types'
-channel: stupid_template_tricks
+series: stupid_template_tricks
 date: '2014-10-11 20:38:16'
 asset_path: /assets/2014-10-11-stupid-template-tricks-reversing-template-parameters-on-templated-types
 ---

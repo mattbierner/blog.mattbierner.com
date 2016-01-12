@@ -1,7 +1,7 @@
 ---
 layout: post
 title: std::integral_constant User Defined Literal
-channel: stupid_template_tricks
+series: stupid_template_tricks
 date: '2015-09-19 23:20:15'
 asset_path: /assets/2015-09-19-stupid-template-tricks-stdintegral_constant-user-defined-literal
 ---

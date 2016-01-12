@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'The Life Comonadic'
-channel: stupid_template_tricks
+series: stupid_template_tricks
 date: '2014-11-03 01:17:45'
 asset_path: /assets/2014-11-03-stupid-template-tricks-the-life-comonadic
 ---

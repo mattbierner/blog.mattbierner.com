@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Super Template Tetris'
-channel: stupid_template_tricks
+series: stupid_template_tricks
 date: '2015-07-01 14:28:35'
 asset_path: /assets/2015-07-01-stupid-template-tricks-super-template-tetris
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Nibbler'
-channel: stupid_template_tricks
+series: stupid_template_tricks
 date: '2015-01-19 06:32:45'
 asset_path: /assets/2015-01-19-stupid-template-tricks-snake
 ---

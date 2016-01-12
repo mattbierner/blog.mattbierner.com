@@ -5,14 +5,14 @@ layout: default
 {% include index_header.html %}
 
 <div role="main" class="posts main container">
-    {% if site.data.channels[page.channel] %}
+    {% if site.data.series[page.series] %}
         <div class="channel-header">
-            <h1 class="channel-name">{{ site.data.channels[page.channel].name }}</h1>
-            <p class="channel-description">{{ site.data.channels[page.channel].description }}</p>
+            <h1 class="channel-name">{{ site.data.series[page.series].name }}</h1>
+            <p class="channel-description">{{ site.data.series[page.series].description }}</p>
         </div>
     
         {% for post in site.posts %}
-            {% if post.channel == page.channel %}
+            {% if post.series == page.series %}
                 {% include post_index.html %}
             {% endif %}
         {% endfor %}
