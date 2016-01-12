@@ -2,7 +2,9 @@
 layout: post
 title: The Lispers in the Darkness
 date: '2014-10-27 07:09:43'
+series: halloween
 asset_path: /assets/2014-10-27-the-lispers-in-the-darkness
+description: Happy Halloween!
 ---
 In the empire of Functional stands the outpost of Lisp. Many pilgrims pass through Lisp every season, but few stay long. Something about Lisp's proximity to certain uncharted regions, regions of which no sane Functional traveller dare speak, keep most from staying more than a day or two. And, for all their politeness, one can't help but feel that the citizens of Lisp secretly detest outsiders and look down on their unclean syntaxes. 
 
