@@ -15,7 +15,7 @@ The [2015 Underhanded C Contest][uc] is serious business: nuclear disarmament. T
 
 Here's the signature of `match`:
 
-```prettyprint lang-c
+```c
 int match(double* test, double* reference, int bins, double threshold);
 ```
 
@@ -24,7 +24,7 @@ But neither country actually wants to disarm. Both would like to keep their nucl
 ### Normal Case
 I chose to use pretty much the simplest matching algorithm possible: compare each element in the two lists until either they do not match and therefore the lists do not match, or the end of the list is reached and therefore the lists do match. 
 
-```prettyprint lang-c
+```c
 int match(double* test, double* reference, int bins, double threshold) {
     for (unsigned i = 0; i < bins; ++i)
         if (!do_elements_match(test[i], reference[i], threshold, error_message))
@@ -35,7 +35,7 @@ int match(double* test, double* reference, int bins, double threshold) {
 
 Two elements match if the absolute difference between them is less than or equal to the `threshold`. 
 
-```prettyprint lang-c
+```c
 typedef void(*error_handler)();
 
 int do_elements_match(double sample1, double sample2, double threshold, error_handler on_error) {
@@ -52,7 +52,7 @@ int do_elements_match(double sample1, double sample2, double threshold, error_ha
 
 The only noteworthy part of `do_elements_match` is the error handling. After the absolute difference between the two samples is computed, we check to see if an invalid floating point computation occurred using [`<fenv.h>`][fenv]. If `FE_INVALID` is true, the function does not trust the result of `diff` and instead exits early with a false value. In order to understand when floating point errors cause a problem, `do_elements_match` also takes an error handler function pointer `on_error` which is invoked if an error occurs. This error handler will typically just print a value to the console. 
 
-```prettyprint lang-c
+```c
 #define ERROR_LABEL u"썝 - "
 
 static void* error_message = ERROR_LABEL "A math error occured. Returning that no match was found.";
@@ -66,7 +66,7 @@ Note that the error label has been localized. The unicode representation is `
 
 Just to show that `match` normally does the correct thing:
 
-```prettyprint lang-c
+```c
 double test[] = { 1.0, 2.0, 1.5, -3 };
 double reference[] = { 0.5, 2.2, 0.9, -2.8 };
 
@@ -97,7 +97,7 @@ For my program, I assumed that `match` was being called as part of a larger prog
 
 The underhanded behavior of `match` is triggered with the `FE_INVALID` floating point environment error flag. When this is set, `match` will always return 1 no matter what input data is fed in. I selected the `FE_INVALID` error flag specifically because it is somewhat more difficult to accidentally trigger than errors like  `FE_INEXACT` or `FE_UNDERFLOW`, and it is very easy to engineer a sneaky trigger. Just take the square root of -1, `sqrt(-1)`, and `FE_INVALID` is set.
 
-```prettyprint lang-c
+```c
 double test[] = { 1.0, 2.0, 1.5, -3 };
 double reference[] = { 0.4, 2.2, 0.9, -2.8 };
 
@@ -118,7 +118,7 @@ The trigger itself though is not very interesting. Let's look at the code to see
 ### Error Handling
 `do_elements_match` always checks for `FE_INVALID` after computing the difference. If there is a floating point error, the function returns false.
 
-```prettyprint lang-c
+```c
 int do_elements_match(
     double sample1, double sample2, double threshold, error_handler on_error)
 {
@@ -143,7 +143,7 @@ Even knowing the trigger, it may not be immediately clear how the underhanded be
 
 But consider `on_error`. It's just a function pointer. And what is a function pointer but a pointer to some executable memory? And pointer casts in C are not terribly strict. So really, what is to stop us from treating just about anything as a function pointer? Such as a string perhaps. 
 
-```prettyprint lang-c
+```c
 typedef void(*error_handler)();
 
 char* data = "\xc3";
@@ -156,7 +156,7 @@ Perfectly valid C. But what happens when the program is executed? For x86 on gcc
 ### Double Jump
 Our goal is to make `match` always return `1` when the trigger is set. We already know that `FE_INVALID` is the trigger and we've seen how by crafting a special string and casting it to a function pointer we can execute machine code. Clearly the underhanded behavior must occur somehow when `on_error()` is called
 
-```prettyprint lang-c
+```c
 if (fetestexcept(FE_INVALID)) {
     on_error();
     return 0;
@@ -178,7 +178,7 @@ In x86 machine code, this is `89 ec 5d c3`.
 ### Eviler Error Handling 
 Localization is important for any modern program, so it makes sense that `match` localizes its error message for the Glorious Democratic Peoples Republic Of Bob. Unfortunately, the word `Error` in bobspeak just happens to be `썝` and the unicode representation of this string just happens to be `89 ec 5d c3`.  Look familiar?
 
-```prettyprint lang-c
+```c
 #define ERROR_LABEL u"썝 - "
 
 static void* error_message = ERROR_LABEL "A math error occured. Returning that no match was found.";
@@ -186,7 +186,7 @@ static void* error_message = ERROR_LABEL "A math error occured. Returning that n
 
 At this point, the programmer also implemented a default error handler function to print our this error message:
 
-```prettyprint lang-c
+```c
 void error_messager() {
     printf("%s", error_message);
 }
@@ -194,7 +194,7 @@ void error_messager() {
 
 But alas! what a poor choice of names: `error_messager` and `error_message`. It's all too easy to accidentally forget an `r` and end up passing the `error_message` string as the error handler in `do_elements_match`. And because `error_message` is a `void*`, ostensibly for wide characters purposes, not even a single, little old compiler warning is generated.
 
-```prettyprint lang-c
+```c
 do_elements_match(test[i], reference[i], threshold, error_message);
 ```
 
