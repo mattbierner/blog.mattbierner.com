@@ -30,7 +30,7 @@ I was curious to see where these 801 exclamation points occurred in *The Jungle*
 ### Tokenization
 I grabbed the [source text off Project Gutenberg][text], stripped out the preface and postface, and used a very simple regular expression to tokenize the text into words and exclamation points.
 
-```prettyprint lang-python
+```python
 import re
 import sys
 
@@ -45,7 +45,7 @@ Certainly not perfect, but it gets the job done.
 ### Plotting
 My first analysis was to plot where exclamation points occur in the book, using word index as the time.
 
-```prettyprint lang-python
+```python
 def occurrences(tokens):
     return [i for i, x in enumerate(tokens) if x == '!']
 ```

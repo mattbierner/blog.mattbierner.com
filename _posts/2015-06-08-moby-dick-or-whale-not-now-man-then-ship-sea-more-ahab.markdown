@@ -92,7 +92,7 @@ Eliminating one and two letter words, usually conjunctions which I assumed didn'
 
 Examining the list more closely, I noticed that many nouns appeared twice, once in singular and once in plural form: `whale` and `whales`, `seaman` and `seamen` for example. I wanted to eliminate these too, but this was no job for a simple regular expression. Thankfully, the [Inflect][] Python library helped me standardize all words to their singular form. 
 
-```prettyprint lang-python
+```python
 import inflect
 
 p = inflect.engine()
@@ -142,7 +142,7 @@ Before continuing on, I decided to try out a few simple color mappings and see w
 
 Starting with a tokenized copy of *Moby-Dick*, I normalized each word in the text using the same process I used to generate the distinct word list.
 
-```prettyprint lang-python
+```python
 words = []
 with open('moby_dick_tokens.txt', 'r') as f:
     content = f.read()
@@ -157,7 +157,7 @@ with open('moby_dick_tokens.txt', 'r') as f:
 
 I then rewrote each word to a color. `get_color` is the actual mapping function, taking the current word and the previous color, and outputting the corresponding color for the word.
 
-```prettyprint lang-python
+```python
 GRAY = (127, 127, 127)
 
 colors = []
@@ -169,7 +169,7 @@ for word in words:
 
 To quickly visualize things, I converted the entire color list to an image using [PIL][], with each word encoded as a single pixel. Like an english book, the image is written left-to-right, top-to-bottom.
 
-```prettyprint lang-python
+```python
 from PIL import Image
 
 width = 800
@@ -193,7 +193,7 @@ Time to try out some mappings.
 ### Ahab and Moby-Dick
 What does *Moby-Dick* look like if you encode Ahab as black and Moby Dick as white (for the example image, the token sequence "white whale" was also encoded as white):
 
-```prettyprint lang-python
+```python
 map = { "moby": (255, 255, 255), "ahab": (0, 0, 0) }
 
 def get_color(word, current):
@@ -206,7 +206,7 @@ A bit sparse.
 
 To fill things in a bit more, I updated the mapping function to continue writing with the current color until another color word was encountered. I also added a simple decay function so that both black and white approach gray over time.
 
-```prettyprint lang-python
+```python
 def decay(val):                                                                                                                                                                                                
     if val < 127:
         return val + 1

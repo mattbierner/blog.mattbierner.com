@@ -29,7 +29,7 @@ Furthermore, most of these keyloggers provided way too much functionality, captu
 
 Yet never fear, Py is here! With a few lines of Python, I was able to Frankenstein something together that fit the bill nicely:
 
-```prettyprint lang-python
+```python
 import datetime, time
 import pythoncom, pyHook
 
@@ -131,7 +131,7 @@ Player movement would move the the turtle about the screen. Moving left with the
 
 `turtle` makes it super easy to get something up on the screen quickly. Here's the basic drawing logic to draw the entirety of a run:
 
-```prettyprint lang-python
+```python
 import turtle
 
 bert = turtle.Turtle()

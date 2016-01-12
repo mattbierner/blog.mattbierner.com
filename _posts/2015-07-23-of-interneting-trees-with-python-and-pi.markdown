@@ -55,7 +55,7 @@ $ pip install blotre spectra
 ### Basic Queries 
 The most basic use of Blot're.py is to query Blot're. This can be performed without authorization of any kind.
 
-```prettyprint lang-python
+```python
 import blotre
 
 client = blotre.Blotre({})
@@ -63,14 +63,14 @@ client = blotre.Blotre({})
 
 Blot're.py has thin wrappers for all the common Blot're stream [REST operations][blotre-retst]. All operations return the exact same JSON data that the REST endpoints do, but parsed to Python dicts and lists.
 
-```prettyprint lang-python
+```python
 client.get_streams()
 >>> [{u'status': {u'color': u'#362f55', u'poster': u'554666c3e4b0fa7f3e694afe', u'created': 1437632689172}, u'updated': 1437632689172, u'name': u'Eyes Wide Shut', u'created': 1436757651967, u'uri': u'matt/vidre/eyes+wide+shut', u'owner': u'554666c3e4b0fa7f3e694afe', u'id': u'55a32e93e4b0a1c13daf2e93'}, {u'status': {u'color': u'#dc4343', u'poster': u'554666c3e4b0fa7f3e694afe', u'created': 1437632688970}, u'updated': 1437632688970, u'name': u'Moby Dick', u'created': ...]
 ```
 
 Operations take an optional set of parameters as well, which are treated as the query parameters of the REST request.
 
-```prettyprint lang-python
+```python
 client.get_streams({ 'query': 'moby' })
 >>> [{u'status': {u'color': u'#41d4d4', u'poster': u'554666c3e4b0fa7f3e694afe', u'created': 1437632991057}, u'updated': 1437632991057, u'name': u'Moby Dick', u'created': 1433486657156, u'uri': u'matt/moby+dick', u'owner': u'554666c3e4b0fa7f3e694afe', u'id': u'55714541e4b0bdccb3e69644'}]
 ```
@@ -80,7 +80,7 @@ If a request fails, it raises a `blotre.RestError`. This object has the status c
 ### Authorization and Authorization Code Flow
 Authorization is required for create, update, and delete operations. If you already have credentials, you can manually provides them when you create a new client instance.
 
-```prettyprint lang-python
+```python
 client = blotre.Blotre({}, creds = {
     'access_token' = "token value",
     'refresh_token' = "optional, refresh token value"
@@ -91,7 +91,7 @@ But if your app needs to obtain credentials, you have two options: the OAuth2 au
 
 The empty `{}` we've been passing to the `Blotre` constructor is the client metadata. [Register a client app on Blot're][blotre-register] and then use this provided values to create a new instance:
 
-```prettyprint lang-python
+```python
 client = blotre.Blotre({
     'client_id': "55614f0630042c617481d7c3",
     'client_secret': "YTY1Njg2MDctZTdjYy00ODlhLWFkNmYtNjkzYjI3N2M0MDRl",
@@ -101,7 +101,7 @@ client = blotre.Blotre({
 
 This app is not yet authorized, so we must get the user to visit the authorization url and obtain an authorization code.
 
-```prettyprint lang-python
+```python
 print client.get_authorization_url()
 
 >>> https://blot.re/v0/oauth2/authorize?redirect_uri=http%3A%2F%2Flocalhost%3A50000&response_type=code&client_id=55614f0630042c617481d7c3
@@ -109,7 +109,7 @@ print client.get_authorization_url()
 
 Once you obtain the code, call `redeem_authorization_code` to get credentials. Any of the token endpoint requests may raise an `blotre.TokenEndpointError` if the request fails.
 
-```prettyprint lang-python
+```python
 try:
     # Exchange the code for creds and update the current client
     client.redeem_authorization_code(returned_code)
@@ -121,7 +121,7 @@ except blotre.TokenEndpointError as e:
 
 But if the request succeeded, you can now make authorized requests on behalf of the authorizing user.
 
-```prettyprint lang-python
+```python
 # Create a new child stream for the authorized user.
 name = '$T O A S T$'
 client.create_stream({
@@ -137,7 +137,7 @@ client.create_stream({
 
 To create a new disposable app, call `create_disposable_app` and pass in the required client metadata. 
 
-```prettyprint lang-python
+```python
 client = blotre.create_disposable_app({
     'name': "FaceToast",
     'blurb': "Your face on toast!"
@@ -153,7 +153,7 @@ Now let's use Blot're.py to connect some plants to the internet. The actual clie
 ### Python App
 First we have to set up GPIO:
 
-```prettyprint lang-python
+```python
 import RPi.GPIO as GPIO
 
 SPICLK = 18
@@ -170,7 +170,7 @@ GPIO.setup(SPICS, GPIO.OUT)
 
 We'll also use a few other constants. We'll use Spectra to sample the colors and I've included a sample range from my testing. Feel free to adjust any of these.
 
-```prettyprint lang-python
+```python
 import spectra
 
 TARGET_STREAM_NAME = "Mr Tree"
@@ -188,7 +188,7 @@ INTERVAL = 60 * 5
 
 `update_plant_status` is the function that actually uploads the status of the plant. `create_stream` will automatically create a new stream if none exists or update the color of the existing stream.
 
-```prettyprint lang-python
+```python
 def update_plant_status(client, rootStream, status):
     return client.create_stream({
         'name': TARGET_STREAM_NAME,
@@ -201,7 +201,7 @@ def update_plant_status(client, rootStream, status):
 
 Creating the client itself is very easy. The optional `file` parameter ensures that we always persist the client credentials to the same location even if the script is run from multiple places.
 
-```prettyprint lang-python
+```python
 client = blotre.create_disposable_app({
     'name': "Plant're",
     'blurb': "Blot're you a plant.",
@@ -218,7 +218,7 @@ rootStream = get_root_stream(client)
 
 Finally, we start reading the sensor value every five minutes and uploading the data. `readadc` comes from the [Adafruit tutorial][ada-tut].
 
-```prettyprint lang-python
+```python
 def clamp(minVal, maxVal, val):
     return min(maxVal, max(minVal, val))
     

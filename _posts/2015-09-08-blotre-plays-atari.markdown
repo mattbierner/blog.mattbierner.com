@@ -72,7 +72,7 @@ Because a unique tag controls each player, that leaves the entire spectrum of 16
 
 HSV uses a cylindrical coordinate system, which maps nicely to an Atari 2600 controller. `hex_to_hsv` converts a Blot're formatted color to HSV.
 
-```prettyprint lang-python
+```python
 def hex_to_rgb(hex):
     return struct.unpack('BBB', codecs.decode(hex[1:], 'hex'))
 
@@ -83,14 +83,14 @@ def hex_to_hsv(hex):
 
 The standard Atari 2600 controller is pretty simple, just a joystick and a single button. Dark colors are translated to button presses, as determined by the 'value' component of the HSV color. 
 
-```prettyprint lang-python
+```python
 def is_dark(hsv, threshold=0.15):
     return hsv[2] <= threshold
 ```
 
 Hue controls the joystick. For this, I divided the hue circle into 4 quadrants. Colors with a hue of between between -45 and 45 degrees map to *up*, *left* is mapped 45 and 135 degrees, *down* is mapped 135 and 225 degrees, and *right* is mapped 225 and 315 degrees. Four direction input is enough for a game like *Combat*, but this mapping scheme could be expanded to add diagonal input if needed. 
 
-```prettyprint lang-python
+```python
 CONTROLS = ["up", "left", "down", "right"]
 
 def hsv_to_control(hsv):
@@ -102,7 +102,7 @@ def hsv_to_control(hsv):
 
 Holding left on the joystick is different from a quick left tap of the joystick. I use the saturation component to determine this timing, with fully saturated colors resulting in button presses of up to two seconds, while almost white colors result in quick taps of the Joystick.
 
-```prettyprint lang-python
+```python
 MAX_PRESS = 2
 MIN_PRESS = 0.2
 
@@ -118,7 +118,7 @@ def hex_to_action(hex):
 ### Getting Input
 Blot're tags work exactly like normal shared stream collections, so we can subscribe to real time events for a tag with the Blot're [subscription API][subscription]. I used the [websockets][] library to handle the websocket part, along with [Blot're.py][blotre-py] to get the websocket address.
 
-```prettyprint lang-python
+```python
 PLAYER1_TAG = "#player1"
 PLAYER2_TAG = "#player2"
 
@@ -138,7 +138,7 @@ loop.run_until_complete(open_socket(client))
 
 Tags are subscribed to exactly like normal stream collections, but must be prefixed with `#`.
 
-```prettyprint lang-python
+```python
 def subscribe_tag(websocket, tagname):
     yield from websocket.send(json.dumps({
         'type': 'SubscribeCollection',
@@ -155,7 +155,7 @@ A subscription to a tag stream collection receives three types of events:
 
 All three of these events include the current stream's status, although, for the game, only the `ChildAdded` and `StatusUpdated` events are interesting.
 
-```prettyprint lang-python
+```python
 def process_messages(websocket):
     while True:
         msg = yield from websocket.recv()
@@ -188,7 +188,7 @@ There are probably ways to simulate player input programmatically for Stella, bu
 
 I used some Python DirectInput bindings taken from [this StackOverflow question](http://stackoverflow.com/a/23468236/306149) to actually talk to Stella. Each player has a unique set of keys to control their movement (note that these are different from the default Stella key bindings).
 
-```prettyprint lang-python
+```python
 PLAYER1 = {
     "up": 0x11,     # w
     "right": 0x20,  # d
@@ -206,7 +206,7 @@ PLAYER2 = {
 
 When an actionable message is received, `on_player_input` maps the color to an action (duration + action name) and then actually performs the keypresses. 
 
-```prettyprint lang-python
+```python
 def on_player_input(name, controls, color):
     action = hex_to_action(color)
     enter_input(name, controls, action)
@@ -214,7 +214,7 @@ def on_player_input(name, controls, color):
 
 `current_inputs` is global state that maintains the current keys that each player is pressing, along with the action index, a simple counter used to identify individual inputs.
 
-```prettyprint lang-python
+```python
 current_inputs = {
     'player1': { 'index': 0, 'value': 0 },
     'player2': { 'index': 0, 'value': 0 } }
@@ -222,7 +222,7 @@ current_inputs = {
 
 When a key is pressed, `enter_input` first releases the existing key and then presses the new key. It then updates the global state and schedules the asynchronous callback function `try_release_key` to be invoked after given input delay. 
 
-```prettyprint lang-python
+```python
 def enter_input(player, controls, action):
     global current_inputs
     delay, input = action
@@ -238,7 +238,7 @@ def enter_input(player, controls, action):
 
 Operations like `PressKey` are stateful, so `try_release_key` ensures that the key is released after the specified delay.  Because other messages and other inputs may have been received between when the input was first trigger and when it was released, it has to make sure only to release keys for the targeted action. 
 
-```prettyprint lang-python
+```python
 def try_release_key(player, key, target_index):
     global current_inputs
     current = current_inputs[player]
