@@ -195,7 +195,7 @@ Here's what the average death rate looks like for each area:
 * Jungle - 24% chance of death per level.
 * Ice Cave - 15% chance of death per level.
 * Temple - 14% chance of death per level.
-* Boss - 60% change of death.
+* Boss - 60% chance of death.
 
 This falloff means that there is far less data on later sections of the game than earlier sections. For example, while I have around 420 plays of mine levels recorded, I only reached the temple at all on ten runs, leaving just 22 temple level play throughs. 
 
