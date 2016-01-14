@@ -413,6 +413,7 @@ img {
 
 .post .entry > span {
     /** hide auto generated toc sections */
+    display: block;
     height: 1px;
 }
 
