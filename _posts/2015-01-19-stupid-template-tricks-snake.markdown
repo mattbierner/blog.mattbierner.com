@@ -3,7 +3,7 @@ layout: post
 title: 'Nibbler'
 series: stupid_template_tricks
 date: '2015-01-19 06:32:45'
-asset_path: /assets/2015-01-19-stupid-template-tricks-snake
+asset_path: /content/2015-01-19-stupid-template-tricks-snake
 ---
 [Conway's game of Life][life] may be mathematically interesting, but it is not what most people would consider a real game. So let's take a look at another product of the 70's, the arcade game [Snake][snake]. This post walks through a complete, compile time implementation of a Snake game using C++ template metaprogramming. We'll start by implementing a basic list and grid, before moving on to encode the game rules. You can find the [complete source here][src].
 

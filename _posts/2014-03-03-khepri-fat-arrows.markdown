@@ -2,7 +2,7 @@
 layout: post
 title: Khepri Fat Arrows
 date: '2014-03-03 23:41:16'
-asset_path: /assets/2014-03-03-khepri-fat-arrows
+asset_path: /content/2014-03-03-khepri-fat-arrows
 ---
 I overview and criticize the semantics of Javascript's `this` keyword. Then I quickly overview the ECMAScript 6 and Coffee Script solution to the `this` problem, before detailing [Khepri's][khepri] fat arrow syntax. Khepri [fat arrows][functions] make `this` binding explicit and also can [unpack][unpacks] the `this` object.
 

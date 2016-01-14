@@ -3,7 +3,7 @@ layout: post
 title: Moby-Dick; or, Whale Not Now Man then Ship Sea More Ahab
 series: blotre
 date: '2015-06-08 04:06:08'
-asset_path: /assets/2015-06-08-moby-dick-or-whale-not-now-man-then-ship-sea-more-ahab
+asset_path: /content/2015-06-08-moby-dick-or-whale-not-now-man-then-ship-sea-more-ahab
 ---
 Question: what color is *Moby-Dick*? No, not the white whale, but the text itself? You see, recently I've been thinking about how to encode text for [Blot're][blotre]. Why? Because why not? And why not start big too? Not just tweets or news stories, but whole novels. And there's nothing bigger than *Moby-Dick*.
 

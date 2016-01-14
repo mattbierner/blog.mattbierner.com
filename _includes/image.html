@@ -1,5 +1,5 @@
 <figure class="image">
-    {% capture image_src %}{% if include.file %}{{ page.asset_path }}/{{ include.file }}{% else %}{{ include.url }}{% endif %}{% endcapture %}
+    {% capture image_src %}{% if include.file %}/content/{{ page.path | remove_first:'_posts/' | split:'.' | first }}/{{ include.file }}{% else %}{{ include.url }}{% endif %}{% endcapture %}
     <a href="{{ image_src }}">
         <img src="{{ image_src }}" alt="{{ include.description }}" />
     </a>

@@ -2,7 +2,7 @@
 layout: post
 title: Hash Array Mapped Tries in Javascript
 date: '2014-03-06 21:07:31'
-asset_path: /assets/2014-03-06-hash-array-mapped-tries-in-javascript
+asset_path: /content/2014-03-06-hash-array-mapped-tries-in-javascript
 ---
 The [hash array mapped trie (HAMT)][wiki-hamt] is a [hash trie][mb-hashtrie] storage optimization that uses less space and performs better than a regular hash trie. Building on my coverage of a [Javascript hash trie][mb-hashtrie], I overview hash array mapped tries and cover a basic Javascript HAMT implementation.
 

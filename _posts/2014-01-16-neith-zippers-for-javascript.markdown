@@ -2,7 +2,7 @@
 layout: post
 title: Neith - Zippers for Javascript
 date: '2014-01-16 22:37:25'
-asset_path: /assets/2014-01-16-neith-zippers-for-javascript
+asset_path: /content/2014-01-16-neith-zippers-for-javascript
 ---
 Zippers allow efficient manipulation of immutable, hierarchical data structures through a formalized interface. This post overviews the [Neith][neith] Javascript library implementation of [Huet zippers][Heut].
 

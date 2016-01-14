@@ -3,7 +3,7 @@ layout: post
 title: 'The Life Comonadic'
 series: stupid_template_tricks
 date: '2014-11-03 01:17:45'
-asset_path: /assets/2014-11-03-stupid-template-tricks-the-life-comonadic
+asset_path: /content/2014-11-03-stupid-template-tricks-the-life-comonadic
 ---
 A [Brainfuck evaluator][brainfuck] is interesting and all, but far too one-dimensional. Lets's kick things up a dimension, it's time for C++ template compile-time [Conway's Game of Life][life]. 
 

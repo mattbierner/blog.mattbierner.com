@@ -3,7 +3,7 @@ layout: post
 title: Blot're Plays Atari
 series: blotre
 date: '2015-09-08 00:05:29'
-asset_path: /assets/2015-09-08-blotre-plays-atari
+asset_path: /content/2015-09-08-blotre-plays-atari
 ---
 Remember playing games on a gizmo like this?
 

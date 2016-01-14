@@ -2,7 +2,7 @@
 layout: post
 title: Sketchy Keylogger
 date: '2015-12-05 06:20:21'
-asset_path: /assets/2015-12-05-sketchy-keylogger
+asset_path: /content/2015-12-05-sketchy-keylogger
 description: Spelunky + Keylogger + Python + Turtles
 ---
 {% include image.html file="spelunky-opening.png" description="" %}

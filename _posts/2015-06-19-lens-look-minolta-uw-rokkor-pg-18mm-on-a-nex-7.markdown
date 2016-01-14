@@ -2,7 +2,7 @@
 layout: post
 title: 'Lens Look: Shooting with a Minolta UW Rokkor-PG 18mm Lens on a Nex-7'
 date: '2015-06-19 01:16:34'
-asset_path: /assets/2015-06-19-lens-look-minolta-uw-rokkor-pg-18mm-on-a-nex-7
+asset_path: /content/2015-06-19-lens-look-minolta-uw-rokkor-pg-18mm-on-a-nex-7
 ---
 I've recently been trying out a Minolta UW Rokkor-PG 18mm f9.5 on my Nex-7 and thought that I'd share my initial, very subjective thoughts about this combination, along with a [few sample photos][gallery].
 

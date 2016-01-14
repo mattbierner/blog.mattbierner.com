@@ -2,7 +2,7 @@
 layout: post
 title: 80x40
 date: '2015-11-02 06:35:43'
-asset_path: /assets/2015-11-02-80x40
+asset_path: /content/2015-11-02-80x40
 description: The git repo as art.
 ---
 80x40 is an 80 character wide by 40 character tall block of text stored in a [Github repo][github]. A script watches the repo and automatically merges in any pull requests that change the contents of this text block, effectively creating a collaborative ASCII art canvas that anyone with a Github account can draw on. 

@@ -2,7 +2,7 @@
 layout: post
 title: Incremental Parser Combinators In Javascript
 date: '2013-12-08 19:28:17'
-asset_path: /assets/2013-12-08-incremental-parser-combinators-in-javascript
+asset_path: /content/2013-12-08-incremental-parser-combinators-in-javascript
 ---
 Parsers are often run against data streams that are not fully available. Maybe you want to parse user input to provide realtime feedback and improve application responsiveness, or perhaps you need to parse web socket data incrementally to limit user interface blocking.
 

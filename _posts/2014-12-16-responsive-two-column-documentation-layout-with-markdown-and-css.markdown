@@ -2,7 +2,7 @@
 layout: post
 title: Responsive, Two Column Documentation Layout With Markdown and CSS
 date: '2014-12-16 05:44:06'
-asset_path: /assets/2014-12-16-responsive-two-column-documentation-layout-with-markdown-and-css
+asset_path: /content/2014-12-16-responsive-two-column-documentation-layout-with-markdown-and-css
 ---
 <blockquote>
     Adrift in Markdown,<br/>

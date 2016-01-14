@@ -3,6 +3,6 @@ layout: post
 title: Blot're
 series: blotre
 date: '2015-05-09 19:46:49'
-asset_path: /assets/2015-05-09-blotre
+asset_path: /content/2015-05-09-blotre
 ---
 December 10, 2015 - [Moved to the official Blot're blog.](http://blog.blot.re/introducting-blotre/)

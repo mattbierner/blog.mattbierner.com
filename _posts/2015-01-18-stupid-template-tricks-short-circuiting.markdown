@@ -3,7 +3,7 @@ layout: post
 title: 'Short-Circuiting'
 series: stupid_template_tricks
 date: '2015-01-18 06:57:50'
-asset_path: /assets/2015-01-18-stupid-template-tricks-short-circuiting
+asset_path: /content/2015-01-18-stupid-template-tricks-short-circuiting
 ---
 C++ templates make it remarkably easy to shoot yourself in the foot. Case in point, this seemly innocent template function:
 

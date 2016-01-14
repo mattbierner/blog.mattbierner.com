@@ -3,7 +3,7 @@ layout: post
 title: Keyboard Bacterial Culture
 date: '2015-11-22 02:58:39'
 description: 'In which an ordinary keyboard is pressed against a large agar plate, and the resulting bacterial culture is examined.'
-asset_path: '/assets/2015-11-22-keyboard-bacterial-culture'
+asset_path: '/content/2015-11-22-keyboard-bacterial-culture'
 ---
 
 {% include image.html file="DSC2832.jpg" description="" %}

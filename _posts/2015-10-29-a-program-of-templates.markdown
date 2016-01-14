@@ -3,7 +3,7 @@ layout: post
 title: A Program of Templates
 date: '2015-10-29 03:11:21'
 series: halloween
-asset_path: /assets/2015-10-29-a-program-of-templates
+asset_path: /content/2015-10-29-a-program-of-templates
 description: Happy Halloween!
 ---
 <h1 align="center">I</h1>
