@@ -96,7 +96,7 @@ date: '2016-01-03'
 Bak're is the world's first IoTo (internet of toaster ovens) communications platform...
 ```
 
-But writing out `/content/2016-01-03-introducing-bak-re/` every time is no good. An `image.html` template let's us instead use just the file name (`easy-bakapocalypse-2.jpg`):
+But writing out `/content/2016-01-03-introducing-bak-re/` every time is no good. An `image.html` template let's us instead use just the file name when writing:
 
 ```html
 {% raw %} 
@@ -123,7 +123,7 @@ This template takes three parameters:
 * `url` - Absolute url for the image. Either `file` or `url` must be specified.
 * `description` - Optional caption for the image.
 
-Instead of using the Markdown image syntax, this uses a Liquid template: 
+And instead of using the Markdown's image syntax, we now use a Liquid template: 
 
 ```html
 {% raw %}
