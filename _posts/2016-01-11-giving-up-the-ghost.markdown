@@ -151,12 +151,12 @@ $ python migrate_ghost_images.py _posts --site http://my-super-blog.com
 
 If you only want to download images hosted on your ghost instance, be sure to specify the `--local_only` flag. Otherwise, images linked from other sites will also be downloaded and replaced.
 
-That should handle migrating images. There may be a few other areas that need to be fixed manually for your blog, but hopefully these will be fairly minor.
-
 ## Today's an Excellent Day for an Exorcism
-Jekyll is an improvement in almost every way. Not only does it eliminate all the concerns of hosting, but, in its simplicity, it actually makes writing and publishing content far easier. I was initially afraid that the cost of migrating from Ghost to Jekyll would be high, but the process was not bad. The biggest obstacle is going to be migrating your preferred Ghost theme over. The migration is a good opportunity for a redesign though, and there are plenty of great Jekyll themes out there.
+I was initially afraid that the cost of migrating from Ghost to Jekyll would be high, but the process was not bad. The scripts detailed should handle most of the migration automatically. The biggest obstacle is probably going to be migrating over the look of your preferred Ghost theme, but this is also a good opportunity for a redesign, and there are plenty of great Jekyll themes out there.
 
-Feel free to check out the [source of this blog on Github][src] if you are interested in how this site is setup, or want a slightly more complete starting point than Jekyll-Now offers.
+Overall, blogging with Jekyll is an improvement in almost every way. Not only does it eliminate all the concerns of hosting, but, in its simplicity, it actually makes writing and publishing content far easier. And, although I've been busting pretty hard on o' Ghost here, the same arguments apply to pretty much every other piece of blogging software out there.
+
+Feel free to check out the [source of this blog on Github][src] if you are interested in how it is setup, or want a slightly more complete starting point than Jekyll-Now offers (or if you just just want to open a bug about some horrific grammar failure).
 
 [ghost]: http://ghost.org/
 [jekyll]: http://jekyllrb.com/
