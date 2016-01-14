@@ -2,7 +2,6 @@
 layout: post
 title: Adding State
 date: '2014-02-07 21:24:02'
-asset_path: /content/2014-02-07-adding-state
 ---
 Building Atum using monads makes it easy to add new features to the interpreter without breaking its existing functionality. All we have to do is update the monad. Existing computations will continue to work and new computations can be written that make use of the interpreter's new features. 
 

@@ -2,7 +2,6 @@
 layout: post
 title: Incremental Parsing With Feedback in a Web Worker
 date: '2014-05-02 03:06:13'
-asset_path: /content/2014-05-02-incremental-parsing-with-feedback-in-a-web-worker
 ---
 I [previously described][mb-inc] running [Bennu][bennu] parsers incrementally. Here I show how we can offload incremental parsing to a web worker, and get realtime feedback as the worker parses data.
 

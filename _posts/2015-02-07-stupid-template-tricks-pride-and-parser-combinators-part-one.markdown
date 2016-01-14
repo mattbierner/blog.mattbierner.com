@@ -3,7 +3,6 @@ layout: post
 title: Pride and Parser Combinators, Part One
 series: stupid_template_tricks
 date: '2015-02-07 20:27:42'
-asset_path: /content/2015-02-07-stupid-template-tricks-pride-and-parser-combinators-part-one
 ---
 It is a truth universally acknowledged, that a template metaprogrammer in possession of a domain specific language, must be in want of a compile time parser. However much a game of compile time [snake][nibbler] may be enjoyed by such a programmer, this truth is so well fixed, and the problem so pervasive, that it is about time we apply template metaprogramming to implement a compile time parser. 
 

@@ -3,7 +3,6 @@ layout: post
 title: 'Compile Time Pseudo-Random Number Generator'
 series: stupid_template_tricks
 date: '2015-01-16 07:56:24'
-asset_path: /content/2015-01-16-stupid-template-tricks-compile-time-pseudo-random-number-generator
 ---
 What with all those pesky NSA backdoors, runtime random number generation is just not secure. So let's build a compile time pseudo-random number generator with C++ templates.
 

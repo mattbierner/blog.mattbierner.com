@@ -2,7 +2,6 @@
 layout: post
 title: Akh - Monad Transformers for Javascript
 date: '2014-04-15 23:54:49'
-asset_path: /content/2014-04-15-akh-monad-transformers-for-javascript
 ---
 Akh is a small Javascript library of monad transformers and structures. This post briefly covers why monad transformers are useful in Javascript, and offers a very high level look at the monad transformer Akh offers and their interface.
 

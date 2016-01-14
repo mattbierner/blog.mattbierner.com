@@ -2,7 +2,6 @@
 layout: post
 title: Parsing User Defined Operator Expressions in a Scripting Language
 date: '2014-11-23 04:08:54'
-asset_path: /content/2014-11-23-user-defined-operators-in-a-dynamic-scripting-language
 ---
 One thing that's always bugged me about Javascript is the language's treatment of operators. Javascript operators, like their C and Java ancestors, are hardcoded into the language. The `*` operator always multiplies two numbers and is always parsed the same way.
 

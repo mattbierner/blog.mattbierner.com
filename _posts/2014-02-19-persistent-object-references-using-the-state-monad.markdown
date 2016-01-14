@@ -2,7 +2,6 @@
 layout: post
 title: Persistent Object References Using the State Monad
 date: '2014-02-19 19:42:52'
-asset_path: /content/2014-02-19-persistent-object-references-using-the-state-monad
 ---
 ECMAScript requires highly interconnected and mutable objects, but [Atum][atum] uses [persistent data structures][persistent] exclusively. Indirection and the state monad allow implementation of references and updatable values without mutating the underlying data structures.
 

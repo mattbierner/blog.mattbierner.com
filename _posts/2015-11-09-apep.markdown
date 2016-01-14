@@ -2,7 +2,6 @@
 layout: post
 title: Apep
 date: '2015-11-09 01:39:20'
-asset_path: /content/2015-11-09-apep
 description: Introducing Apep, a Dada Engine inspired Javascript library for generating text from a grammar.
 ---
 If there's one thing the world needs, it's more text. But making good text is hard and takes much time, so I created Apep to write text for me.

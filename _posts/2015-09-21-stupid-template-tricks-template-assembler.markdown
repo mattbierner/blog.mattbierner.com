@@ -2,7 +2,6 @@
 layout: post
 title: 'Template Assembler'
 date: '2015-09-21 10:37:16'
-asset_path: /content/2015-09-21-stupid-template-tricks-template-assembler
 description:
 series: stupid_template_tricks
 ---

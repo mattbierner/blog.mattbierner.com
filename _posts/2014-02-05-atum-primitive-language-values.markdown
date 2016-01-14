@@ -2,7 +2,6 @@
 layout: post
 title: Atum Primitive Language Values
 date: '2014-02-05 04:05:24'
-asset_path: /content/2014-02-05-atum-primitive-language-values
 ---
 Here I cover the primitive language values and operations used in [Atum][atum]. Although not too exciting, there are a few important points about property descriptors and how Atum handles objects.
 

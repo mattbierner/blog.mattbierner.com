@@ -3,7 +3,6 @@ layout: post
 title: A Review of ECMAScript Language Function Syntaxes and the Rational Behind Khepri's
   Function Syntax
 date: '2013-12-16 20:48:04'
-asset_path: /content/2013-12-16-a-review-of-ecmascript-language-function-syntaxes-and-the-rational-behind-khepris-function-syntax
 ---
 I review and critique a few ECMAScript language function expression syntaxes. Then I overview [Khepri's][khepri] function syntax and discuss how it has helped the language. 
 

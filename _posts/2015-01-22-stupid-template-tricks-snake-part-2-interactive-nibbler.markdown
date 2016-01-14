@@ -3,7 +3,6 @@ layout: post
 title: 'Snake Part 2 - Interactive Nibbler'
 series: stupid_template_tricks
 date: '2015-01-22 06:35:50'
-asset_path: /content/2015-01-22-stupid-template-tricks-snake-part-2-interactive-nibbler
 ---
 Compile time Nibbler, man. We gotta get this sucker done. [Last time][part1], we got so caught in metaprogramming that we ended up with a state machine. To play a game, you had enter all of the commands ahead of time. That's pathetic. Is that what you want to do with your life? Type `Input::Up` and `Input::Left` into a compiler so that you can guide a bunch of triangles into asterisks? That's senseless! But that's what happens, man.
 

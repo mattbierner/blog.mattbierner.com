@@ -2,7 +2,6 @@
 layout: post
 title: Binding With Placeholders in Javascript
 date: '2014-01-15 23:30:16'
-asset_path: /content/2014-01-15-binding-with-placeholders-in-javascript
 ---
 `Function.prototype.bind` is incredibly useful for binding initial arguments, but sometimes we want to bind arguments at other indices. This post offers one simple implementation of binding with [C++ inspired][c++ placeholder] placeholders for Javascript.
 

@@ -3,7 +3,6 @@ layout: post
 title: Blot're Javascript Weather Client
 series: blotre
 date: '2015-05-24 03:48:00'
-asset_path: /content/2015-05-24-blotre-javascript-weather-client
 ---
 Hooking shit up to [Blot're][blotre] just got easier thanks to [Blot're.js][blotre-js]. Blot're.js is a thin Javascript / Node wrapper around the [Blot're REST API][blotre] that can help you quickly query, obtain user authorization, and perform update operations against Blot're.
 

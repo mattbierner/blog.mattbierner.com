@@ -2,7 +2,6 @@
 layout: post
 title: Declarative Environments
 date: '2014-03-01 22:55:57'
-asset_path: /content/2014-03-01-declarative-environments
 ---
 The ECMAScript5.1 interpreter I have detailed so far is little more than a calculator. Now, using the [state monad][state] and [references][references], we will add basic support for environments to the interpreter. 
 

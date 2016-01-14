@@ -2,7 +2,6 @@
 layout: post
 title: 'Lens Look: Shooting with a Minolta Shift CA Rokkor-X 35mm f2.8 on a NEX7'
 date: '2015-08-14 07:14:36'
-asset_path: /content/2015-08-14-lens-look-shooting-a-minolta-shift-ca-rokkor-x-35mm-f2-8-on-a-nex7
 ---
 {% include image.html file="_DSC8778.jpg" description="" %}
 

@@ -2,7 +2,6 @@
 layout: post
 title: 'Lens Look: Photographing with a Disassembled Lens'
 date: '2015-07-29 05:36:12'
-asset_path: /content/2015-07-29-lens-look-photographing-with-a-disassembled-lens
 ---
 I [repair manual focus camera lenses][youtube] and recently got stuck on a  particularly complicated repair. One and a half hours of locking things into different positions and making minute adjustments, and infinity focus was still a blurry mess. About to give up, I noticed a small blob of black edged glass, no larger than a dime, off in the corner of my workspace. Pop open the back optic and, sure enough, the piece fit perfectly in place. A few minor adjustments and the reassembled lens was tack sharp again. Lens manufactures aren't slackers. You really do need all those optics for a lens to work properly.
 
