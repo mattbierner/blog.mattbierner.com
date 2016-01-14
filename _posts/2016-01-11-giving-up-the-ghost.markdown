@@ -96,7 +96,7 @@ date: '2016-01-03'
 Bak're is the world's first IoTo (internet of toaster ovens) communications platform...
 ```
 
-But writing out `/content/2016-01-03-introducing-bak-re/` every time is no good. An `image.html` template let's us instead use just the file name when writing:
+But writing out `/content/2016-01-03-introducing-bak-re/` every time is no good. An `image.html` template let's us instead use just the file name:
 
 ```html
 {% raw %} 
