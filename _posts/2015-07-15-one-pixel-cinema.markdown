@@ -115,27 +115,27 @@ If you only look at area, gray dominants the above image. But blue is the percei
 I ran each method against every frame in *Eyes Wide Shut* to extract the 230,000 dominant colors of the film. I saved this data as Json and used the script from my *[Moby-Dick][moby-dick]* post to convert the data into images, one pixel per frame, left-to-right, eight hundred pixels wide and about three hundred pixels tall.
 
 ### ColorTheif
-{% include image.html file="img-colortheif.png" description="" %}
+{% include image.html file="img-colortheif.png" %}
 
 I'm not a fan of what ColorTheif produced. The library seemed to lock into certain shades, and frame to frame color changes were very abrupt and indecisive. The result is dark, blocky, and ugly.
 
-{% include image.html file="colortheif-zoom.png" description="" %}
+{% include image.html file="colortheif-zoom.png" %}
 
 ### ColorWeave
-{% include image.html file="img-colorweave.png" description="" %}
+{% include image.html file="img-colorweave.png" %}
 
 Colorweave has much more noise and variation that ColorTheif, producing an even more pixeled appearing result. But I actually find this much more attractive, especially when zoomed in so that you can see the individual pixels/frames. 
 
-{% include image.html file="colorweave-zoom1.png" description="" %}
+{% include image.html file="colorweave-zoom1.png" %}
 
 ColorWeave returned pure white for very dark frames, mainly in the credits and for a few of the nighttime city scenes.
 
 ### Average
-{% include image.html file="img-average.png" description="" %}
+{% include image.html file="img-average.png" %}
 
 Average produced surprisingly good looking results given its simplicity. And, unlike the other methods, frame to frame color changes were gradual and produced very appealing gradients. It doesn't hurt that average ran at least five times faster than any other method.
 
-{% include image.html file="average-zoom.png" description="" %}
+{% include image.html file="average-zoom.png" %}
 
 *Eyes Wide Shut* is probably a particularly good fit for average. It's mostly long shots with slow camera movement, which produced nice gradients, and many scenes are tinted various colors. The results are still dark, but not as dark as you might expect.
 

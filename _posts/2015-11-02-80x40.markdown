@@ -6,7 +6,7 @@ description: The git repo as art.
 ---
 80x40 is an 80 character wide by 40 character tall block of text stored in a [Github repo][github]. A script watches the repo and automatically merges in any pull requests that change the contents of this text block, effectively creating a collaborative ASCII art canvas that anyone with a Github account can draw on. 
 
-{% include image.html file="Screen-Shot-2015-11-01-at-10-31-09-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-11-01-at-10-31-09-PM.png" %}
 
 Feel free to fork [the repo][github], edit the text block, and submit a pull request. As long as the change follows a [few simple rules][about], it should be automatically merged in. Changes are only checked to make sure they preserve the size of the block and are not reviewed for content (i.e. don't blame me if the block of text is not PG).
 

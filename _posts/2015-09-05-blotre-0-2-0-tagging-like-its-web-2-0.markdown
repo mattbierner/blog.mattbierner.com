@@ -6,11 +6,11 @@ date: '2015-09-05 20:26:06'
 ---
 The release of [Blot're][blotre] 0.2.0 brings an exciting new feature to your favorite color network: tagging. Tagging allows you to add dynamic metadata to streams, either to clarify what it represents or to help with stream organization and search.
 
-{% include image.html file="Screen-Shot-2015-09-05-at-1-11-40-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-09-05-at-1-11-40-PM.png" %}
 
 Tags show up under the stream name. You can also search for streams with a given tag or find child streams with a given tag.
 
-{% include image.html file="Screen-Shot-2015-09-05-at-1-12-41-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-09-05-at-1-12-41-PM.png" %}
 
 Tagging also introduces the concept of a shared stream collection. Each tag is conceptually a collection of streams, add a tag to a stream and it automatically becomes a child of that tag. The tag's set of children is dynamic and shared between all Blot're users, introducing fun new collaborative opportunities.
 

@@ -66,7 +66,7 @@ $ perl -i -pe 's/prettyprint lang-//g' _posts/*
 This got the text into a good state, now time to handle images.
 
 ### Migrating Images
-The exported Ghost database does not contain image data, so if you've uploaded any images through Ghost, these must be manually migrated over. This can be as easy as copying the entire Ghost `content/images` directory into Jekyll, but I decided to just start from scratch so that the images would all be organized more logically for the future (breaking hyperlinks like a beast in the process too).
+The exported Ghost database does not contain image data, so if you've uploaded any images through Ghost, these must be manually migrated over. This can be as easy as copying the entire Ghost `content/images` directory into Jekyll, but I decided to just start from scratch so that the images would all be organized more logically for the future (breaking hyperlinks like a champ in the process too).
 
 My target image directory structure has each post with its own `content` folder:
 

@@ -6,7 +6,7 @@ description: Introducing Apep, a Dada Engine inspired Javascript library for gen
 ---
 If there's one thing the world needs, it's more text. But making good text is hard and takes much time, so I created Apep to write text for me.
 
-{% include image.html file="apep.png" description="" %}
+{% include image.html file="apep.png" %}
  
 * [Source][src]
 * [Documentation][docs]

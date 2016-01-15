@@ -27,7 +27,7 @@ The basic component list comes [from this tutorial][hardware-tut], with a few su
 ### Wiring
 The Tuts+ moisture sensor tutorial was written for a Raspberry Pi Model B, so to wire up the analog to digital converter, I switched over to [an Adafruit tutorial][ada-tut]. The only important part is the connection from the Pi to the MCP3008, just ignore all the switches and sensors and whatnot.
 
-{% include image.html file="raspberry_pi_pi_volume_knob_bb.png" description="" %}
+{% include image.html file="raspberry_pi_pi_volume_knob_bb.png" %}
 
 I wried up the moisture sensor to pin 0 on the MCP3008. The Adafruit tutorial also had some helpful Python code for reading integer values from the MCP3008 that I'll reference, but won't cover in any detail. The [example source][src] includes all that if you're interested.
 

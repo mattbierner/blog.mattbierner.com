@@ -3,7 +3,7 @@ layout: post
 title: There Is No I In Internet
 date: '2015-08-07 05:01:24'
 ---
-{% include image.html file="promo-800-1.png" description="" %}
+{% include image.html file="promo-800-1.png" %}
 
 > ... you and me and every millennial we know ... - *[What My Landlord Learned About Me From Twitter, New York Times Magazine][article]*
 
@@ -15,10 +15,10 @@ The results can be rather entertaining.
 
 
 #### Before
-{% include image.html file="before.png" description="" %}
+{% include image.html file="before.png" %}
 
 #### After 
-{% include image.html file="after.png" description="" %}
+{% include image.html file="after.png" %}
 
 
 You can also whitelist your own words (such as your name or the name of that [hot new social network](https://blot.re)) and disable the extension for specific sites.

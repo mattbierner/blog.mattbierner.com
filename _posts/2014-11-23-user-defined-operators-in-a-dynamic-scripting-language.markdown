@@ -7,7 +7,7 @@ One thing that's always bugged me about Javascript is the language's treatment o
 
 Javascript operators are special too. They get to use cool symbols with punctuator characters, can be used in infix notation, and have attached parsing properties, such as precedence and associatively. So why can't I access this aspect of the language, or use any of these neat expressive powers?
 
-{% include image.html file="Screen_Shot_2014_11_19_at_10_11_08_PM.png" description="" %}
+{% include image.html file="Screen_Shot_2014_11_19_at_10_11_08_PM.png" %}
 
 Many *script languages I've studied add new operators to Javascript, and this is what I originally did with [Khepri][khepri]. But that sucks. Just adding more operators doesn't fix the core problem. If anything, is only made me want user defined operators even more. So with [Khepri][khepri] V1.0 in May 2014, I extended the language with user defined operators.
 
@@ -16,7 +16,7 @@ Implementing user defined operators in a scripting languages presents some inter
 I'll lay out some ideal goals and demonstrate why building a parser that meets these ideals is a challenge by presenting the failings of a few potential solutions, before detailing the somewhat more scaled back approach I settled on in Khepri. 
 
 ## Javascript
-{% include image.html file="Screen_Shot_2014_11_19_at_10_11_49_PM.png" description="" %}
+{% include image.html file="Screen_Shot_2014_11_19_at_10_11_49_PM.png" %}
 
 Let's start by reviewing operators in vanilla Javascript. A Javascript operator has two components:
 
@@ -103,7 +103,7 @@ It is also important to note that precedence and associativity are compile time 
 
 ## Infix Operator Parsing Challenges
 
-{% include image.html file="Screen_Shot_2014_11_19_at_9_59_55_PM.png" description="" %}
+{% include image.html file="Screen_Shot_2014_11_19_at_9_59_55_PM.png" %}
 
 Now that we've seen what Javascript offers, let's consider the ideal solution. For me, an ideal scripting language would combine the best of regular identifiers and Javascript style hardcoded operators by:
 
@@ -116,7 +116,7 @@ It turns out that implementing such flexible user defined operator support is di
 So before covering Khepri's somewhat scaled back approach to user defined operators, let's look at two attempts to implement the above goals and the problems we run into.
 
 ## Pushing Infix Operator Semantics into the Parser
-{% include image.html file="Screen_Shot_2014_11_19_at_10_01_18_PM.png" description="" %}
+{% include image.html file="Screen_Shot_2014_11_19_at_10_01_18_PM.png" %}
 
 Let's start by designing a parser for an example scripting language that supports full control over operator precedence. For such as language, a parser must be able to determine the proper grouping of *n* terms connected by *n - 1* operators. And to do this, all it needs to know are the relative precedences and the associativities of each operator it encounters while parsing an expression.
 
@@ -213,7 +213,7 @@ But scope is something a parser shouldn't have to know about. Scope is semantics
 
 
 ## Extending Semantics With Order of Evaluation
-{% include image.html file="Screen_Shot_2014_11_19_at_10_03_57_PM.png" description="" %}
+{% include image.html file="Screen_Shot_2014_11_19_at_10_03_57_PM.png" %}
 
 It's clear that we can't extend the parser with semantics cleanly. But what if we could somehow instead make the order of evaluation decision for an operator expression in the evaluator itself?
 
@@ -246,7 +246,7 @@ The inability to produce a clean AST is a big downside for tooling and language 
 
 
 ## Deriving Precedence From Symbols During Parsing
-{% include image.html file="Screen_Shot_2014_11_19_at_10_06_18_PM.png" description="" %}
+{% include image.html file="Screen_Shot_2014_11_19_at_10_06_18_PM.png" %}
 
 The main failing of these two approaches is that both blur the line between parser and evaluator. And if we hope to meet the three original goals, at least in their most general interpretations, I'm not sure there is a better way than versions of these.
 
@@ -273,7 +273,7 @@ The downside is that operators in a prefix precedence scheme must start with a b
 
 
 ## User Defined Operator In Khepri
-{% include image.html file="Screen_Shot_2014_11_19_at_10_08_41_PM.png" description="" %}
+{% include image.html file="Screen_Shot_2014_11_19_at_10_08_41_PM.png" %}
 
 [User defined operators in Khepri][khepri-udo] were designed with the following goals:
 
@@ -332,7 +332,7 @@ The main change required to parse user defined operators in a [Khepri parser](ht
 
 User defined operators are a powerful, expressive feature that I wish Javascript supported. While implementing total flexibility in how operators are parsed quickly runs into trouble, with a few smart restrictions on user defined operators, they turn out to be surprisingly easy to implement, while retaining most of their expressive power.
 
-{% include image.html file="Screen_Shot_2014_11_19_at_10_10_52_PM.png" description="" %}
+{% include image.html file="Screen_Shot_2014_11_19_at_10_10_52_PM.png" %}
 
 
 [associativity]: https://en.wikipedia.org/wiki/Operator_associativity

@@ -199,7 +199,7 @@ def get_color(word, current):
     return map.get(word, GRAY)
 ```
 
-{% include image.html file="moby-ahab-points.png" description="" %}
+{% include image.html file="moby-ahab-points.png" %}
 
 A bit sparse.
 
@@ -218,7 +218,7 @@ def get_color(word, current):
     return map.get(word, (decay(current[0]), decay(current[1]), decay(current[2])))
 ```
 
-{% include image.html file="moby-ahab.png" description="" %}
+{% include image.html file="moby-ahab.png" %}
 
 Interesting but monochromatic. Let's bring in some color.
 
@@ -227,7 +227,7 @@ Interesting but monochromatic. Let's bring in some color.
 
 To see, I started with the CSS3 list of color names. I split up compound names, like 'RebeccaPurple', creating entries for 'rebecca' and 'purple' (regular 'purple' overwrites the 'purple' from 'RebeccaPurple'.) Then, I ran the image building script again, this time without any decay function: 
 
-{% include image.html file="css_colors.png" description="" %}
+{% include image.html file="css_colors.png" %}
 
 Fascinating.
 
@@ -243,7 +243,7 @@ My task, or HIT in Amazon speak (oddly appropriate for Blot're), on Mechanical T
 
 I quickly put together a basic HTML survey using the [Spectrum color picker][spectrum]. The initial color values for each of the five words were randomly generated.  
 
-{% include image.html file="Screen-Shot-2015-05-30-at-12-44-10-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-05-30-at-12-44-10-PM.png" %}
 
 I also provided workers with the option to mark, "No color association", for words they strongly felt did not have any associated color. The survey had a few very basic guards to encourage better responses, such as requiring workers to interact with the color picker for each of the five words before submitting their responses.
 
@@ -260,7 +260,7 @@ Workers colorized fourteen hundred of the fifteen hundred words. And, of those r
 
 Here's the result of running the image generation script again using the first fourteen hundred crowd sourced mappings. 
 
-{% include image.html file="turk1-1.png" description="" %}
+{% include image.html file="turk1-1.png" %}
 
 ## Blot're
 The whole goal of this project was to encode a book for use on [Blot're][blotre]. But this was perhaps the easiest part of the whole process. You can find the stream of Moby-Dick stream [here](https://blot.re/s/matt/moby+dick).
@@ -351,7 +351,7 @@ var startMobyUpdates = function(client, targetStream, data) {
 
 Here's  the [actual stream](https://blot.re/s/matt/moby-dick). At some point, I hope to map the remaining 8500 words as well using Mechanical Turk. If I do, I'll post up updated images and update the Blot're stream too.
 
-{% include image.html file="md-giffer.gif" description="" %}
+{% include image.html file="md-giffer.gif" %}
 
 At this rate, it takes about fourteen hours to get through all of *Moby-Dick*. So take the day off, tune in to Blot're, and enjoy you some Melville as it was meant to be enjoyed.
 

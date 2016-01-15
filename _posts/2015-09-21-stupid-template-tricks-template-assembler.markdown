@@ -713,7 +713,7 @@ constexpr auto block(x, xs...) {
 ```
 
 ## I am given birth to nothing but machine code
-{% include image.html file="TFTM_Junkions.JPG" description="" %}
+{% include image.html file="TFTM_Junkions.JPG" %}
 
 Bringing everything together, `assemble` converts an assembly program into machine code at compile time. Pass one is run first on the program to generate symbol table, then pass two is run with the resulting symbol table. The result of `assemble` is a `ByteString` of machine code.
 

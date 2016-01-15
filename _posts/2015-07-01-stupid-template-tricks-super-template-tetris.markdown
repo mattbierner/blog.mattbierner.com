@@ -11,7 +11,7 @@ Today, I want to share an important first step with you: *Super Template Tetris*
 ## A Rendezvous with Destiny
 Yes. Tetris. In C++. At compiletime.
 
-{% include image.html file="Screen-Shot-2015-06-28-at-10-45-30-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-28-at-10-45-30-PM.png" %}
 
 Some people <sup>[who?]</sup> said it couldn't be done. C++ too old, they claim; metaprogramming a parlor trick, they cry. But sometimes, when you're up against it and those script cynics are beating you down, you just have to go out there and win one for the CPPer (Oh god, I am sorry for that one. I just don't know what has happened to this blog).
 
@@ -29,7 +29,7 @@ Let's get started.
 ## Templico, Illinois - Beginnings
 *Super Template Tetris* isn't our first go at template based gaming. We previously implemented the arcade game *Snake* or *Nibbler* [as a C++ template metaprogram][nibbler].
 
-{% include image.html file="Screen-Shot-2015-06-28-at-11-03-36-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-28-at-11-03-36-PM.png" %}
 
 That project is a good starting point. Many of data structures, such as lists and grids, will be reused, and we will use the same basic logic for serialization and the game loop.
 
@@ -688,7 +688,7 @@ Setting the ANSI color code is a stateful operation. Print the magenta backgroun
 using colorReset = escape_code<0>;
 ```
 
-{% include image.html file="Screen-Shot-2015-06-24-at-9-05-58-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-24-at-9-05-58-PM.png" %}
 
 Finally, `empty_pixel` encodes a transparent pixel. It's not actually a `Pixel` but a distinct type.
 
@@ -728,7 +728,7 @@ print(std::cout,
     to_string<Pixel<'X', Gfx<Color::Magenta, Color::Yellow>>>{}) << "\n";
 ```
 
-{% include image.html file="Screen-Shot-2015-06-24-at-9-14-23-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-24-at-9-14-23-PM.png" %}
 
 ### Basic Buffer
 A buffer is just a grid of pixels. Each frame starts with an `empty_buffer`
@@ -748,7 +748,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-{% include image.html file="Screen-Shot-2015-06-24-at-9-24-29-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-24-at-9-24-29-PM.png" %}
 
 As hinted at, a [sprite][] is just another buffer with some possible transparency (`empty_pixel`). To draw a sprite to the screen, we copy all non-empty pixels from the source sprite to the screen at some offset position.
 
@@ -780,7 +780,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-{% include image.html file="Screen-Shot-2015-06-24-at-9-29-42-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-24-at-9-29-42-PM.png" %}
 
 ### Basic Drawing 
 `buffer_draw_grid` is enough to start putting together a simple, console graphics library.
@@ -806,7 +806,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-{% include image.html file="Screen-Shot-2015-06-24-at-9-32-12-PM-1.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-24-at-9-32-12-PM-1.png" %}
 
 `buffer_draw_rect` draws a filled rectangle.
 
@@ -828,7 +828,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-{% include image.html file="Screen-Shot-2015-06-24-at-9-35-13-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-24-at-9-35-13-PM.png" %}
 
 While `buffer_draw_rect_outline` draws the outline of a rectangle using four lines:
 
@@ -850,7 +850,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-{% include image.html file="Screen-Shot-2015-06-24-at-9-35-27-PM-1.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-24-at-9-35-27-PM-1.png" %}
 
 And because of the bounds checking in `grid_place_grid`, drawing that extends outside of the buffer is automatically clipped.
 
@@ -884,7 +884,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-{% include image.html file="Screen-Shot-2015-06-24-at-9-39-50-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-24-at-9-39-50-PM.png" %}
 
 `buffer_draw_text` always draws the entire string of text starting at the origin. For UI though, we often want to render text inside a specific area, clipping overflow and perhaps centering the text if it does not fill the entire area. `buffer_draw_centered_text` automates this.
 
@@ -923,7 +923,7 @@ print(std::cout,
         empty_buffer<6, 6>>>{}) << "\n";
 ```
 
-{% include image.html file="Screen-Shot-2015-06-24-at-9-41-10-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-24-at-9-41-10-PM.png" %}
 
 
 ## Tetrominos and the Playfield
@@ -996,7 +996,7 @@ print(std::cout,
     to_string<SBlock::piece>{}) << "\n";
 ```
 
-{% include image.html file="Screen-Shot-2015-06-25-at-9-26-48-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-25-at-9-26-48-PM.png" %}
 
 ### Random Bag
 Tetrominos are randomly selected during gameplay. But how do we generate random numbers at compiletime?
@@ -1542,7 +1542,7 @@ using dz_buffer = buffer_draw_rect<
     outline>;
 ```
 
-{% include image.html file="Screen-Shot-2015-06-26-at-12-29-16-AM-1.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-26-at-12-29-16-AM-1.png" %}
 
 Next comes UI, displaying the current score, next block, and a message if the player has lost the game.
 
@@ -1578,7 +1578,7 @@ using score_buffer =
         next_block>>>;
 ```
 
-{% include image.html file="Screen-Shot-2015-06-26-at-12-29-33-AM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-26-at-12-29-33-AM.png" %}
 
 Finally we draw the playfield itself and overlay the active piece on top. We also draw the ghost piece. The ghost piece shows where the active piece would land for a drop. 
 
@@ -1601,7 +1601,7 @@ using current_block_buffer = buffer_draw_grid<
     ghost_buffer>;
 ```
 
-{% include image.html file="Screen-Shot-2015-06-26-at-12-29-48-AM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-26-at-12-29-48-AM.png" %}
 
 
 ## Serialization 
@@ -1880,7 +1880,7 @@ You play *Super Template Tetris* by recompiling its source code, then executing 
 $ clang++ main.cpp -std=c++1z -Wno-gnu-string-literal-operator-template -o tetris ; ./tetris
 ```
 
-{% include image.html file="Screen-Shot-2015-06-29-at-8-33-52-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-29-at-8-33-52-PM.png" %}
 
 To drop the current piece, set a flag with `-D HARD` and recompile.
 
@@ -1888,11 +1888,11 @@ To drop the current piece, set a flag with `-D HARD` and recompile.
 $ clang++ main.cpp -std=c++1z -Wno-gnu-string-literal-operator-template -D HARD -o tetris ; ./tetris
 ```
 
-{% include image.html file="Screen-Shot-2015-06-29-at-8-34-10-PM.png" description="" %}
+{% include image.html file="Screen-Shot-2015-06-29-at-8-34-10-PM.png" %}
 
 Games can get pretty complex.
 
-{% include image.html file="4.png" description="" %}
+{% include image.html file="4.png" %}
 
 ## Farewell
 Well, that's it! Check out the documented [source][] for more details on the implementation or to play a game or two. 

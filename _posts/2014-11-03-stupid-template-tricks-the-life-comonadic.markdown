@@ -6,7 +6,7 @@ date: '2014-11-03 01:17:45'
 ---
 A [Brainfuck evaluator][brainfuck] is interesting and all, but far too one-dimensional. Lets's kick things up a dimension, it's time for C++ template compile-time [Conway's Game of Life][life]. 
 
-{% include image.html file="larsonevolution.jpg" description="" %}
+{% include image.html file="larsonevolution.jpg" %}
 
 This post translates a [Haskell comonad based Life implementation][void] into a C++ template meta-program. Much like with the [Brainfuck evaluator][brainfuck], once you get over the syntax, C++ templates turn out to be a fairly competent functional language.
 
@@ -302,7 +302,7 @@ using extendPlane = fmap<F, duplicatePlane<z>>;
 ## Life
 After establishing all of our data structures and operations, implementing life turns out to the easiest part of the whole process.
 
-{% include image.html file="Evolution_of_the_Stick_Man-1.gif" description="" %}
+{% include image.html file="Evolution_of_the_Stick_Man-1.gif" %}
 
 Conway's Game of Life is simulated on a 2D, infinite grid of cells. Every cell is either alive or dead. Time is broken into discrete steps or generations.  A transition function determines the state of the next generation based entirely on the state of the current generation.
 

@@ -8,7 +8,7 @@ When I  came across [this Stack Overflow question][so] about reversing a c++ `st
 
 Not that I have any practically application for type reversal mind you. But I was curious.
 
-{% include image.html file="Claude_Cat_angel.jpg" description="" %}
+{% include image.html file="Claude_Cat_angel.jpg" %}
 
 
 ## Templated Type Template Parameter Combinations and Permutations

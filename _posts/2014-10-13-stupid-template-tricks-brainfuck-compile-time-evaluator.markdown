@@ -6,7 +6,7 @@ date: '2014-10-13 04:29:44'
 ---
 Every 2nd grader knows that the [C++ template system is Turing complete](http://stackoverflow.com/a/275295/306149). So what? Compile time Brainfuck evaluator that's what!
 
-{% include image.html file="LarsonLaBrea.jpeg" description="" %}
+{% include image.html file="LarsonLaBrea.jpeg" %}
 
 It turns out that I'm [not the first person](https://github.com/knome/metabrainfuck/blob/master/bf.cpp) who learned me some  metaprogramming and thought it would be a good laugh to implement Brainfuck with C++ templates. But in going though this admitidly pointless exercise, what struck me is how similar a Brainfuck C++ template evaluator is to [one implemented in a functional-style](https://github.com/mattbierner/neith-brainfuck/blob/master/lib/bf.kep).
 

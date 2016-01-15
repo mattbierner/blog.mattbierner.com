@@ -6,7 +6,7 @@ date: '2015-01-22 06:35:50'
 ---
 Compile time Nibbler, man. We gotta get this sucker done. [Last time][part1], we got so caught in metaprogramming that we ended up with a state machine. To play a game, you had enter all of the commands ahead of time. That's pathetic. Is that what you want to do with your life? Type `Input::Up` and `Input::Left` into a compiler so that you can guide a bunch of triangles into asterisks? That's senseless! But that's what happens, man.
 
-{% include image.html file="1198440-scooty_puff_sr.png" description="" %}
+{% include image.html file="1198440-scooty_puff_sr.png" %}
 
 So this time around, let's make compile time Nibbler "interactive". You’ll still play the game with a compiler, but now each compilation will only advance a single step. Player input will come from macro flags passed to the compiler on the command line.
 

@@ -6,7 +6,7 @@ date: '2015-09-08 00:05:29'
 ---
 Remember playing games on a gizmo like this?
 
-{% include image.html file="playing-the-atari-2600_thumb.jpg" description="" %}
+{% include image.html file="playing-the-atari-2600_thumb.jpg" %}
 
 Maybe you remember Grandma blasting the Qotile with her trusty Zorlon Cannon in good o' Yars' Revenge, dodging that Swirl like a pro, those sweet Atari sounds wafting through the house. But kids these days are too busy Squirtle-ing each other to give a damn about classics like *Asteroids* and *Ms. Pac-Man*. That's a shame. It's time introduce Atari to a new generation, to bring the 2600 into the IoT era. It's time to [Blot're][blotre] Atari.
 
@@ -21,7 +21,7 @@ It might be interesting to try a competitive game – groups of players competin
 
 Considering these guidelines, I decided to keep things simple and go with a true Atari 2600 classic: *[Combat][combat]*.
 
-{% include image.html file="Combatatarigamepack.jpg" description="" %}
+{% include image.html file="Combatatarigamepack.jpg" %}
 
 *Combat* is a simple game, even by Atari 2600 standards. Each round pits two players against each other, with the goal of shooting the other player while avoiding getting shot yourself. The gameplay and controls are easy and consistent. No power-ups, special abilities, or upgrade paths. It's also a game that doesn't require too much precision, making it perfect for high latency crowdsourced input. At the same time though, *Combat* also has a lot of variety thanks to its 27 game modes, everything from billiard tanks to jet combat with guided missiles.
 
