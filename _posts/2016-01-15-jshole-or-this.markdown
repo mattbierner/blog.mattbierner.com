@@ -19,7 +19,7 @@ Map.prototype.get = function(key) {
 
 This snippet defines two public APIs: a free function `get`, which takes a key and a map, and a method `Map.prototype.get`, which takes a key and is called on a map. This API pattern works well for functional-style Javascript libraries, with the free function's argument order being well suited to binding and composition, while the method provides a more concise and Javascripty interface.
 
-But such duplication! `Map.prototype.get` just forwards its arguments and `this` to `get`. Those three extra lines may not seem like a big deal, but imagine duplicate definitions for every public API in a library, some of which take a good number of arguments. Surely there is a better way.
+But such duplication! `Map.prototype.get` just forwards to `get`. Those three extra lines may not seem like a big deal, but imagine duplicate definitions for every public API in a library, some of which take a good number of arguments. Surely there is a better way.
 
 ## The Pattern
 We can get away with using the same function for both versions of the API. Observe:
