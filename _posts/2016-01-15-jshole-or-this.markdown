@@ -12,20 +12,20 @@ While refactoring [HAMT][] recently, I noticed a lot of boilerplate code like th
 export const get = (key, map) =>
     impl(hash(key), key, map);
 
-Map.prototype.get = function(key) {
+Hamt.prototype.get = function(key) {
     return get(key, this);
 };
 ```
 
-This snippet defines two public APIs: a free function `get`, which takes a key and a map, and a method `Map.prototype.get`, which takes a key and is called on a map. This API pattern works well for functional-style Javascript libraries, with the free function's argument order being well suited to binding and composition, while the method provides a more concise and Javascripty interface.
+This snippet defines two public APIs: a free function `get`, which takes a key and a map, and a method `Hamt.prototype.get`, which takes a key and is called on a map. This API pattern works well for functional-style Javascript libraries, with the free function's argument order being well suited to binding and composition, while the method provides a more concise and Javascripty interface.
 
-But such duplication! `Map.prototype.get` just forwards to `get`. Those three extra lines may not seem like a big deal, but imagine duplicate definitions for every public API in a library, some of which take a good number of arguments. Surely there is a better way.
+But such duplication! `Hamt.prototype.get` just forwards to `get`. Those three extra lines may not seem like a big deal, but imagine duplicate definitions for every public API in a library, some of which take a good number of arguments. Surely there is a better way.
 
 ## The Pattern
 We can get away with using the same function for both versions of the API. Observe:
 
 ```js
-export const get = Map.prototype.get = function(key, map) {
+export const get = Hamt.prototype.get = function(key, map) {
     return impl(hash(key), key, map || this);
 };
 ```
@@ -38,7 +38,7 @@ Two whole lines of code eliminated, just like that! Think of all those saved byt
 And now the API supports all kinds of fun stuff, such as:
 
 ```js
-const a = new Map();
+const a = new Hamt();
 
 // These are all the same
 get('key', a) === a.get('key') === get.call(a, 'key')
@@ -59,8 +59,8 @@ Yet all is not sunshine and rainbows. This pattern only works if the following h
 But is this even a good idea to begin with? Consider what the API now allows:
 
 ```js
-const a = new Map();
-const b = new Map();
+const a = new Hamt();
+const b = new Hamt();
 
 a.get('key', b) === b.get('key')
 get.call(a, 'key', b) === b.get('key')
@@ -77,12 +77,12 @@ And just look at the code! Yes, removing the duplication may prevent some bugs, 
 /**
     Lookup the value for `key` in `map || this`.
 */
-export const get = Map.prototype.get = function(key, map) {
+export const get = Hamt.prototype.get = function(key, map) {
     return impl(hash(key), key, map || this);
 };
 ```
 
-Good luck trying to write a Doxycomment that expresses how `map` is the second parameter for `get`, but really is the `this` object for `Map.prototype.get`. The fact that this pattern cannot be clearly documented should set off some alarms. 
+Good luck trying to write a Doxycomment that expresses how `map` is the second parameter for `get`, but really is the `this` object for `Hamt.prototype.get`. The fact that this pattern cannot be clearly documented should set off some alarms. 
 
 Then there's the matter of performance. For Chrome and Firefox at least, the combined definition [performs exactly the same][benchmark] as the forwarding declaration. On OSX Safari, the combined definition was slower however. More [benchmarking is needed][benchmark], but the Safari result may influence some decisions. 
 
@@ -96,11 +96,11 @@ var free = method => Function.prototype.call.bind(method);
 // or, to be a true jsHole
 free = Function.prototype.bind.bind(Function.prototype.call);
 
-Map.prototype.get = function(key) {
+Hamt.prototype.get = function(key) {
     return impl(hash(key), key, this);
 };
 
-export const get = free(Map.prototype.get);
+export const get = free(Hamt.prototype.get);
 ```
 
 But `free` is [generally much slower](http://jsperf.com/free-function-forward-cost) than direct forwarding.
