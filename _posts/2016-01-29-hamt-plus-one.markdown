@@ -56,7 +56,7 @@ Check out the [documentation for the complete API][documentation]. As mentioned,
 P.S. `map.size` is now constant time for Hamt+ and regular Hamt too!
 
 
-[hamt]: https://github.com/mattbierner/hamt_plus
+[hamt]: https://github.com/mattbierner/hamt
 
 [documentation]: https://github.com/mattbierner/hamt_plus#api
 [src]: https://github.com/mattbierner/hamt_plus
