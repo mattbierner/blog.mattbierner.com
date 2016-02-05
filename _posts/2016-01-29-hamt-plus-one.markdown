@@ -63,4 +63,3 @@ P.S. `map.size` is now constant time for Hamt+ and regular Hamt too!
 
 
 [map]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
-[iteration]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols
