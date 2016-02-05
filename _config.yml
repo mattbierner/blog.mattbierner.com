@@ -23,7 +23,7 @@ permalink: /:title/
 version: v1.1.0
 
 feed:
-  path: feed.xml
+  path: atom.xml
 
 # Set the Sass partials directory, as we're using @imports
 sass:
@@ -34,7 +34,7 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate
-  
+
 # Exclude these files from your production _site
 exclude:
     - Gemfile

@@ -154,7 +154,7 @@ img {
 }
 
 /*********************
-    Index Header  
+    Index Header
 *********************/
 #index-header {
     width: 100%;
@@ -164,7 +164,7 @@ img {
     margin-bottom: 1.2rem;
     text-align: center;
     color: #fff;
-    
+
     background: url(/images/head1.png);
     background-size: 100% 100%;
 }
@@ -189,7 +189,7 @@ img {
     text-align: center;
 }
 
-.site-avatar {    
+.site-avatar {
     img {
         max-width: 65px;
         border-bottom: 2px solid transparent;
@@ -207,17 +207,17 @@ img {
 .posts > .post {
     padding: 1em 0;
     border-bottom: 1px solid $lightGray;
-  
+
   .post-title {
     text-align: left;
     margin-top: -5px;
     margin-bottom: 0.2em;
   }
-  
+
   .entry {
     font-size: 14px;
   }
-  
+
   .entry > *:first-child {
     margin-top: 0;
   }
@@ -235,7 +235,7 @@ img {
         color: $gray;
         font-style: italic;
     }
-    
+
     blockquote p:last-child {
         margin-bottom: 0.4em;
     }
@@ -245,7 +245,7 @@ img {
     color: #aaa;
     font-size: 0.9em;
     padding-bottom: 0.4em;
-}    
+}
 
 .post-main {
     .post-title {
@@ -253,15 +253,15 @@ img {
         margin-bottom: 0.1em;
         text-align: center;
     }
-    
+
     .post-meta {
         text-align: center;
     }
-    
+
     header {
         margin-bottom: 1.4em;
     }
-    
+
     footer {
         margin-top: 3em;
     }
@@ -278,22 +278,22 @@ img {
         margin-bottom: 0.4em;
         padding-bottom: 0.1em;
     }
-    
+
     img {
         display: block;
         margin: 0 auto;
     }
-    
+
     figure {
         position: relative;
         padding-bottom: 0.8em;
     }
-    
+
     figure img {
         padding-bottom: 0.2em;
         max-height: 100vh;
     }
-    
+
     figure figcaption {
         text-align: center;
         font-style: italic;
@@ -454,6 +454,20 @@ img {
     color: #57A3E8;
 }
 
+/* ==========================================================================
+   Page Footer
+   ========================================================================== */
+.footer-links {
+    margin-bottom: 1.5em;
+}
+
+.footer-post {
+    font-size: 0.85em;
+}
+
+.footer-post > * {
+    display: block;
+}
 
 /* ==========================================================================
  Media
