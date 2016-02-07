@@ -5,7 +5,7 @@ date: '2016-02-06'
 description: "Uploading every color to Instagram"
 series: spamart
 ---
-[@thewholerainbow][wholerainbow] is an Instagram account that posts an image of a new color every five minutes, slowly working its way through all 16,777,216 24bit RGB colors.
+[@thewholerainbow][wholerainbow] is an Instagram account that posts an image of a new solid color every five minutes, slowly working its way through all 16,777,216 24bit RGB colors.
 
 {% include image.html file="example.png" %}
 
