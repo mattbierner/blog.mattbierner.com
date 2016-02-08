@@ -5,7 +5,7 @@ date: '2016-02-06'
 description: "Uploading every color to Instagram"
 series: spamart
 ---
-[@thewholerainbow][wholerainbow] is an Instagram account that posts an image of a new solid color every five minutes, slowly working its way through all 16,777,216 24bit RGB colors.
+[@thewholerainbow][wholerainbow] is an Instagram account that posts an image of a new solid color every five minutes, slowly working its way through all 16,777,216 24bit RGB colors. (**update** - now contining at [@thewholerainbow2][wholerainbow2] since the original mysteriously stopped working)
 
 {% include image.html file="example.png" %}
 
@@ -17,3 +17,5 @@ Instagram does not provide official API support for uploads, but I've made the [
 
 [src]: https://github.com/mattbierner/The-Whole-Rainbow
 [wholerainbow]: https://www.instagram.com/thewholerainbow/
+[wholerainbow2]: https://www.instagram.com/thewholerainbow2/
+
