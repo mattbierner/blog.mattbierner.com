@@ -30,7 +30,7 @@ export const get = Hamt.prototype.get = function(key, map) {
 };
 ```
 
-The public API is unchanged. Internally though, a single function implements both the free function and the method. When `get('a', m)` is called, `key === 'a'` and `map === m`. But with `m.get('a')`, `key === 'a'` while `map === undefined`. In that case, `map || this` evaluates to `this`, which is bound to `m`. 
+The public API is unchanged. Internally though, a single function implements both the free function and the method. When `get('a', m)` is called, `key === 'a'` and `map === m`. But with `m.get('a')`, `key === 'a'` while `map === undefined`. In that case, `map || this` evaluates to `this`, which is bound to `m`.
 
 ### Why this is Clever
 Two whole lines of code eliminated, just like that! Think of all those saved bytes! Now there's only a single version of the function to maintain. With the combined definition, there's no risk of the free function and method getting out of sync, and the implementations will always stay in sync as well. Less code is usually better.
@@ -69,7 +69,7 @@ var getFromA = get.bind(a);
 getFromA('key', b) === b.get(key)
 ```
 
-That's probably not the expected behavior. The API surface has grown larger while becoming less obvious and more dangerous, even if forms like the above are never officially supported. 
+That's probably not the expected behavior. The API surface has grown larger while becoming less obvious and more dangerous, even if forms like the above are never officially supported.
 
 And just look at the code! Yes, removing the duplication may prevent some bugs, but there's an additional WTF cost to understand and maintain the combined function. While the combined APIs can be (fairly) clearly documented for humans, documentation generators will throw up their hands when faced with one of these.
 
@@ -82,9 +82,9 @@ export const get = Hamt.prototype.get = function(key, map) {
 };
 ```
 
-Good luck trying to write a Doxycomment that expresses how `map` is the second parameter for `get`, but really is the `this` object for `Hamt.prototype.get`. The fact that this pattern cannot be clearly documented should set off some alarms. 
+Good luck trying to write a Doxycomment that expresses how `map` is the second parameter for `get`, but really is the `this` object for `Hamt.prototype.get`. The fact that this pattern cannot be clearly documented should set off some alarms.
 
-Then there's the matter of performance. For Chrome and Firefox at least, the combined definition [performs exactly the same][benchmark] as the forwarding declaration. On OSX Safari, the combined definition was slower however. More [benchmarking is needed][benchmark], but the Safari result may influence some decisions. 
+Then there's the matter of performance. For Chrome and Firefox at least, the combined definition [performs exactly the same][benchmark] as the forwarding declaration. On OSX Safari, the combined definition was slower however. More [benchmarking is needed][benchmark], but the Safari result may influence some decisions.
 
 ## Conclusion and Alternatives
 The `|| this` pattern is interesting. It's the only zero overhead way I could come up with to remove the duplicate definitions, and it may very well be the correct approach for some projects.
@@ -103,10 +103,10 @@ Hamt.prototype.get = function(key) {
 export const get = free(Hamt.prototype.get);
 ```
 
-But `free` is [generally much slower](http://jsperf.com/free-function-forward-cost) than direct forwarding.
+But `free` is [generally much slower](http://jsperf.com/free-function-forward-cost/2) than direct forwarding.
 
 After switching over all of HAMT's APIs to use combined definitions, I eventually reverted the change. The potential bug prevention and brevity benefits could not be justified considering the drawbacks detailed. Still, a fun little trick to keep in mind that I had not seen discussed before.
-  
+
 
 [hamt]: https://github.com/mattbierner/hamt
 [benchmark]: http://jsperf.com/method-version-of-free-function/3
