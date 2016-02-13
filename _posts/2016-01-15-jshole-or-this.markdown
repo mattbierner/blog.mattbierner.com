@@ -107,6 +107,10 @@ But `free` is [generally much slower](http://jsperf.com/free-function-forward-co
 
 After switching over all of HAMT's APIs to use combined definitions, I eventually reverted the change. The potential bug prevention and brevity benefits could not be justified considering the drawbacks detailed. Still, a fun little trick to keep in mind that I had not seen discussed before.
 
+****
+
+**Update - Feb 13, 2016**
+See the [Funcualizer library](/jshole-funcualizer/) for a more complete implementation of `free` and ways to eliminate some of it's overhead. It still involves more function calls than `|| this`, but is much more flexible and will perform well enough for the vast majority of cases.
 
 [hamt]: https://github.com/mattbierner/hamt
 [benchmark]: http://jsperf.com/method-version-of-free-function/3
