@@ -233,7 +233,7 @@ Next, I put references to use to implement basic ECMAScript environments with cl
 [atum]: https://github.com/mattbierner/atum
 [hashtrie]: https://github.com/mattbierner/hashtrie
 
-[state-monad]: http://blog.mattbierner.com/adding-state/
+[state-monad]: /adding-state/
 
 [handle]: http://en.wikipedia.org/wiki/Handle_(computing)
 [persistent]: http://en.wikipedia.org/wiki/Persistent_data_structure

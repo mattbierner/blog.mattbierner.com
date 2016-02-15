@@ -245,7 +245,7 @@ Kind of memorizing actually.
 
 
 
-[moby-dick]: http://blog.mattbierner.com/moby-dick-or-whale-not-now-man-then-ship-sea-more-ahab/
+[moby-dick]: /moby-dick-or-whale-not-now-man-then-ship-sea-more-ahab/
 
 [source]: https://github.com/mattbierner/One-Pixel-Cinema
 [eyes-stream]: https://blot.re/s/matt/vidre/eyes+wide+shut

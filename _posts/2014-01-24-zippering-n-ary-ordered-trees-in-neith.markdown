@@ -439,7 +439,7 @@ var safeInsertLeft = \edge node ctx ->
 
 
 [neith]: https://github.com/mattbierner/neith
-[neith-blog-1]: http://blog.mattbierner.com/neith-zippers-for-javascript/
+[neith-blog-1]: /neith-zippers-for-javascript/
 [ecma-ast-zipper]: https://github.com/mattbierner/ecma-ast-zipper
 [nu]: https://github.com/mattbierner/nu
 [khepri]: https://github.com/mattbierner/khepri

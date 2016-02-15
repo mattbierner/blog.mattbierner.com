@@ -7,7 +7,7 @@ description: "Now with 100000% more cephalopod!"
 
 {% include image.html file="hamt-logo.png"  %}
 
-[Hamt+][src] may not have the same level of recognition or funding as Immutable.js, but we've got the better logo. Just look at that friendly [Cephalopod of Mutation](http://blog.mattbierner.com/the-lispers-in-the-darkness/), bursting onto the immutable landscape all ready to wreck up the place.
+[Hamt+][src] may not have the same level of recognition or funding as Immutable.js, but we've got the better logo. Just look at that friendly [Cephalopod of Mutation](/the-lispers-in-the-darkness/), bursting onto the immutable landscape all ready to wreck up the place.
 
 Hamt+ v1 is now out, bringing complete API compatibility with [Hamt v2.1][hamt]. This includes support for Javascript iterators and a similar API to [ES6's `Map`][map]. Compared to [regular Hamt][hamt], Hamt+ offers support for custom key types, creating maps that use custom hash functions, and, as hinted at above, transient mutation. Transient mutation allows for more efficient batch operations through scoped mutation of the normally immutable data structure.
 

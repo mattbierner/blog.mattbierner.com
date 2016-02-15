@@ -22,4 +22,4 @@ Source code and instructions for running are [available on Github][src].
 [src]: https://github.com/mattbierner/aggregate-decoding
 [Arthur_Morty]: https://twitter.com/Arthur_Morty
 [commons]: https://commons.wikimedia.org/wiki/Main_Page
-[_LovedHArt]: http://blog.mattbierner.com/i-u2764-everything/
+[_LovedHArt]: /i-u2764-everything/

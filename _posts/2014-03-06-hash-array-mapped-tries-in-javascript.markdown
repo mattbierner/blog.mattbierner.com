@@ -684,4 +684,4 @@ In lower level languages with a small *h* `popcount` is a single instruction.
 [hashtrie]: https://github.com/mattbierner/hashtrie
 [benchmarks]: https://github.com/mattbierner/js-hashtrie-benchmark
 
-[mb-hashtrie]: https://blog.mattbierner.com/persistent-hash-tries-in-javavascript
+[mb-hashtrie]: /persistent-hash-tries-in-javavascript

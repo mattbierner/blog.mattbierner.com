@@ -262,7 +262,7 @@ Have you played your [Atari today][have-you-played]?
 [blotre]: https://blot.re
 [blotre-py]: https://github.com/mattbierner/blotre-py
 
-[blotre-0.2]: http://blog.mattbierner.com/blotre-0-2-0-tagging-like-its-web-2-0/
+[blotre-0.2]: /blotre-0-2-0-tagging-like-its-web-2-0/
 
 [stream]: https://gaming.youtube.com/c/Mattbierner/live
 [src]: http://github.com/mattbierner/blotre-plays

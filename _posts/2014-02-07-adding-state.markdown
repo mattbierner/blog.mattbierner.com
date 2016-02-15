@@ -200,5 +200,5 @@ We now have an interpreter with state and can start defining stateful computatio
 [cct]: http://hackage.haskell.org/package/CC-delcont-0.2/docs/Control-Monad-CC.html
 [statet]: http://hackage.haskell.org/package/transformers-0.2.1.0/docs/Control-Monad-Trans-State-Lazy.html
 
-[mb-lift]: http://blog.mattbierner.com/primitive-operations-as-computations/
-[mb-decont]: http://blog.mattbierner.com/the-delimited-continuation-monad-in-javascript/
+[mb-lift]: /primitive-operations-as-computations/
+[mb-decont]: /the-delimited-continuation-monad-in-javascript/

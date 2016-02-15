@@ -301,7 +301,7 @@ This simple application demonstrates how we can offload Bennu parsing to a web w
 
 This approach can be applied to almost any data source and parser. 
 
-[mb-inc]: http://blog.mattbierner.com/incremental-parser-combinators-in-javascript/
+[mb-inc]: /incremental-parser-combinators-in-javascript/
 [webworkers]: https://developer.mozilla.org/en-US/docs/Web/Guide/Performance/Using_web_workers
 
 [bennu]: https://github.com/mattbierner/bennu

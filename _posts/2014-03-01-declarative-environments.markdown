@@ -721,9 +721,9 @@ I'll start discussing objects and meta objects before moving on to functions.
 [atum]: https://github.com/mattbierner/atum
 [hashtrie]: https://github.com/mattbierner/hashtrie
 
-[references]: https://blog.mattbierner.com/persistent-object-references-using-the-state-monad/
-[lifting]: https://blog.mattbierner.com/primitive-operations-as-computations/
-[state]: https://blog.mattbierner.com/adding-state/
+[references]: /persistent-object-references-using-the-state-monad/
+[lifting]: /primitive-operations-as-computations/
+[state]: /adding-state/
 
 [dynamic]: http://msujaws.wordpress.com/2011/05/03/static-vs-dynamic-scoping/
 [spaghetti]: http://en.wikipedia.org/wiki/Spaghetti_stack

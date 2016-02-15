@@ -45,7 +45,7 @@ All this to say, writing an x86 assembler is considerably more complicated than 
 ### Pseudo Inline Assembly
 Our compiletime assembler will take an assembly program, written in C++ as a small embedded domain specific language, and output machine code. And because the compiled program itself will be run on an x86 machine, we can evaluate the generated machine code directly within the compiled program. 
 
-For [this year's underhanded C contest](http://blog.mattbierner.com/underhanded-c-2015/), I also looked at embedding machine code in a C program, albeit in a much simpler manner. To summarize the approach: a C style function pointer is just a pointer to code and, through the magic of casting, there is nothing to stop us from converting any byte array into a function pointer. Call the resulting function and the byte array is evaluated as raw machine code.
+For [this year's underhanded C contest](/underhanded-c-2015/), I also looked at embedding machine code in a C program, albeit in a much simpler manner. To summarize the approach: a C style function pointer is just a pointer to code and, through the magic of casting, there is nothing to stop us from converting any byte array into a function pointer. Call the resulting function and the byte array is evaluated as raw machine code.
 
 ```cpp
 using fptr = int(*)();
@@ -224,7 +224,7 @@ constexpr auto operator-(Immediate<L, lx>, Immediate<R, rx>) {
 Note that while all of these operator overloads take values, we only care about the types of the values and the type of the result. This allows us to use normal C++ syntax, such as operators in our embedded language, instead of writing everything with lispy looking pure template code. 
 
 ### Bytes and Words and DWords! Oh My!
-Our assembler will support four sizes of immediates: 8bit (byte), 16bit (word), 32bit (dword), and 64bit (qword). Instead of writing `byte<4>`, we can abuse C++ user defined operators for our mini assembly language. The full implementation for constructing value types from C++ literals was [previously covered](http://blog.mattbierner.com/stupid-template-tricks-stdintegral_constant-user-defined-literal/) and simply referenced here as `ImmediateFromString`. `4_b` creates a byte, `4_w` creates a word, `4_d` creates a dword, and `4_q` creates a qword.
+Our assembler will support four sizes of immediates: 8bit (byte), 16bit (word), 32bit (dword), and 64bit (qword). Instead of writing `byte<4>`, we can abuse C++ user defined operators for our mini assembly language. The full implementation for constructing value types from C++ literals was [previously covered](/stupid-template-tricks-stdintegral_constant-user-defined-literal/) and simply referenced here as `ImmediateFromString`. `4_b` creates a byte, `4_w` creates a word, `4_d` creates a dword, and `4_q` creates a qword.
 
 ```cpp
 template <int8_t x>
@@ -832,9 +832,9 @@ PS. While this post started off well enough, I can't help but feel that relying 
 
 [src]: https://github.com/mattbierner/Template-Assembly
 
-[stt-tetris]: http://blog.mattbierner.com/stupid-template-tricks-super-template-tetris/
+[stt-tetris]: /stupid-template-tricks-super-template-tetris/
 
-[stt-parsing]: http://blog.mattbierner.com/stupid-template-tricks-pride-and-parser-combinators-part-one/
+[stt-parsing]: /stupid-template-tricks-pride-and-parser-combinators-part-one/
 
 [addressing-modes]: http://www.ic.unicamp.br/~celio/mc404s2-03/addr_modes/intel_addr.html 
 

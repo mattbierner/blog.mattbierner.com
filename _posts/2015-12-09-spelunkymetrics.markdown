@@ -96,7 +96,7 @@ No real surprises here. Each of these actions happens at most around once a minu
 Well there you go. More charts on Spelunky keyboard input than you ever knew you wanted. My only regret is that I did not use [Splunk](http://www.splunk.com) for this analysis, as the pun opportunities would have been truly epic.
 
 
-[etch]: http://blog.mattbierner.com/sketchy-keylogger/
+[etch]: /sketchy-keylogger/
 
 [spelunky]: http://www.spelunkyworld.com
 [src]: https://github.com/mattbierner/sketchy-keylogger

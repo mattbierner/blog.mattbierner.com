@@ -579,8 +579,8 @@ int main(int argc, const char * argv[]) {
 Any more than the first few generations, or printing larger areas, is completely impractical because of how long compilation takes. 
 
 
-[brainfuck]: http://blog.mattbierner.com/stupid-template-tricks-brainfuck-compile-time-evaluator/
-[list]: http://blog.mattbierner.com/stupid-template-tricks-lazy-compile-time-lists/
+[brainfuck]: /stupid-template-tricks-brainfuck-compile-time-evaluator/
+[list]: /stupid-template-tricks-lazy-compile-time-lists/
 [source]: https://gist.github.com/mattbierner/bbd2d4d07772273029c2
 
 [comonad]: http://hackage.haskell.org/package/comonad-3.0.0.2/docs/Control-Comonad.html

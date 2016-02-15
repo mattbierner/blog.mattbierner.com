@@ -6,7 +6,7 @@ description: Hamt is back and rocking a new method based API.
 ---
 **Update** - Jan 5, 2016
 
-Turns out that Hamt V1 was not long for this world, but the good news is that [the real Hamt V2 is now out](http://blog.mattbierner.com/hamt-3-the-final-iteration/), with all the method chaining goodness of V1 plus support for Javascript iterators.
+Turns out that Hamt V1 was not long for this world, but the good news is that [the real Hamt V2 is now out](/hamt-3-the-final-iteration/), with all the method chaining goodness of V1 plus support for Javascript iterators.
 
 *Original post follows below.*
 

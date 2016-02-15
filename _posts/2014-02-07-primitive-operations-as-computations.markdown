@@ -277,5 +277,5 @@ The other benefit is that it becomes easy to add functionality to the interprete
 [kleisli-compose]: http://hackage.haskell.org/package/base-4.6.0.1/docs/Control-Monad.html#v:-62--61--62-
 [liftm]: http://hackage.haskell.org/package/base-4.6.0.1/docs/Control-Monad.html#v:liftM
 
-[mb-atum-prims]: http://blog.mattbierner.com/atum-primitive-language-values
-[mb-decont]: http://blog.mattbierner.com/the-delimited-continuation-monad-in-javascript
+[mb-atum-prims]: /atum-primitive-language-values
+[mb-decont]: /the-delimited-continuation-monad-in-javascript

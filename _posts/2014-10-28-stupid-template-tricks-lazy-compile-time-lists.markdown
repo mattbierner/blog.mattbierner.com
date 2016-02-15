@@ -37,7 +37,7 @@ struct List2 {
 };
 ```
 
-The advantage of avoiding template template parameters directly is that both meta-values and meta-functions can be bound using `typename`, allowing certain higher order template operations to be more easily defined, such as the [type reversal](https://blog.mattbierner.com/stupid-template-tricks-reversing-template-parameters-on-templated-types/) I previously examined.
+The advantage of avoiding template template parameters directly is that both meta-values and meta-functions can be bound using `typename`, allowing certain higher order template operations to be more easily defined, such as the [type reversal](/stupid-template-tricks-reversing-template-parameters-on-templated-types/) I previously examined.
 
 Finally, the `Nil` type represents the empty list.
 

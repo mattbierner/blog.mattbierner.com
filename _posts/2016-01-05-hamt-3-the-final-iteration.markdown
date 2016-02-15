@@ -136,7 +136,7 @@ For a complete API reference, see the updated [documentation][documentation]. An
 Also, despite the name of this post, this most definitely is not the final release of Hamt. After this though, we'll have to do a reboot or something because calling the next major release Hamt 4 would just be embarrassing.
 
 
-[hamt1]: http://blog.mattbierner.com/h-a-m-t-ii-the-chaining/
+[hamt1]: /h-a-m-t-ii-the-chaining/
 
 [documentation]: https://github.com/mattbierner/hamt#api
 [src]: https://github.com/mattbierner/hamt

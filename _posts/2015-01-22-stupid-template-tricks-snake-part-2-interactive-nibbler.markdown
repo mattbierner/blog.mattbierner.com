@@ -534,6 +534,6 @@ As hinted at in a few asides thoughout this post, you probably could get rid of 
 
 [src]: https://github.com/mattbierner/STT-C-Compile-Time-Snake/tree/interactive
 
-[prandom]: http://blog.mattbierner.com/stupid-template-tricks-compile-time-pseudo-random-number-generator/
-[part1]: http://blog.mattbierner.com/stupid-template-tricks-snake/
+[prandom]: /stupid-template-tricks-compile-time-pseudo-random-number-generator/
+[part1]: /stupid-template-tricks-snake/
 

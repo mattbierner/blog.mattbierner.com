@@ -1156,10 +1156,10 @@ Next time, I'll look at adding "interactivity" to compile time Nibbler.
 
 
 [src]: http://github.com/mattbierner/STT-C-Compile-Time-Snake
-[life]: http://blog.mattbierner.com/stupid-template-tricks-the-life-comonadic/
-[pseudo-random]: http://blog.mattbierner.com/stupid-template-tricks-compile-time-pseudo-random-number-generator/
-[short-circuit]: http://blog.mattbierner.com/stupid-template-tricks-short-circuiting/
-[lazy-lists]: http://blog.mattbierner.com/stupid-template-tricks-lazy-compile-time-lists/
+[life]: /stupid-template-tricks-the-life-comonadic/
+[pseudo-random]: /stupid-template-tricks-compile-time-pseudo-random-number-generator/
+[short-circuit]: /stupid-template-tricks-short-circuiting/
+[lazy-lists]: /stupid-template-tricks-lazy-compile-time-lists/
 
 [nibbler]: http://goo.gl/670zou 
 [Snake]: http://goo.gl/670zou

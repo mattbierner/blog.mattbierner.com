@@ -1905,11 +1905,11 @@ All in all, not bad, not bad at all.
 
 
 [source]: https://github.com/mattbierner/Super-Template-Tetris
-[pride]: https://blog.mattbierner.com/stupid-template-tricks-pride-and-parser-combinators-part-one/
-[nibbler]: https://blog.mattbierner.com/stupid-template-tricks-snake-part-2-interactive-nibbler/
-[life]: http://blog.mattbierner.com/stupid-template-tricks-the-life-comonadic/
+[pride]: /stupid-template-tricks-pride-and-parser-combinators-part-one/
+[nibbler]: /stupid-template-tricks-snake-part-2-interactive-nibbler/
+[life]: /stupid-template-tricks-the-life-comonadic/
 
-[short-circuit]: http://blog.mattbierner.com/stupid-template-tricks-short-circuiting/
+[short-circuit]: /stupid-template-tricks-short-circuiting/
 
 [srs]: http://tetris.wikia.com/wiki/SRS
 [ansi-colors]: https://en.wikipedia.org/wiki/ANSI_escape_code#Colors

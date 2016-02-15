@@ -234,4 +234,4 @@ Only in dreams, in beautiful dreams.
 
 <i>Plot remixed with love from <a href="http://aamfp.com/">A Machine for Pigs</a>, including a few of the more dramatic quotes altered for humorous effect.</i>
 
-[lispers]: http://blog.mattbierner.com/the-lispers-in-the-darkness/
+[lispers]: /the-lispers-in-the-darkness/

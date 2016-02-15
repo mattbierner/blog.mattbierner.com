@@ -501,7 +501,7 @@ appendChild = \node, ctx ->
 ### Labeled k-ary Trees
 A general purpose zipper for variations of labeled n-ary trees (like ASTs) is fairly trivial to define. Specialized edit and query operations allow editing both edges and nodes.
 
-I cover Neith's implementation of tree zippers [in this post](https://blog.mattbierner.com/zippering-n-ary-ordered-trees-in-neith/).
+I cover Neith's implementation of tree zippers [in this post](/zippering-n-ary-ordered-trees-in-neith/).
 
 ### Better Failure
 I designed Neith to be simple to use with standard Javascript techniques. One area that suffers as a result is failure handling.

@@ -8,7 +8,7 @@ Question: what color is *Moby-Dick*? No, not the white whale, but the text itsel
 
 {% include image.html file="turk1.png" description="Boom! You just read Moby-Dick." %}
 
-In this post, I'll overview my work translating *Moby-Dick* to a stream of colors for use on Blot're. I didn't want to just encode *Moby-Dick* to set of randomly assigned colors either, that would be boring. I wanted to capture the color associations found throughout the book. Basically, what *Moby-Dick* would look like to someone with super strong color synesthesia, so strong that they could longer perceive words at all, just a pure stream of colors. 
+In this post, I'll overview my work translating *Moby-Dick* to a stream of colors for use on Blot're. I didn't want to just encode *Moby-Dick* to set of randomly assigned colors either, that would be boring. I wanted to capture the color associations found throughout the book. Basically, what *Moby-Dick* would look like to someone with super strong color synesthesia, so strong that they could longer perceive words at all, just a pure stream of colors?
 
 Starting from the raw text, I'll walk through the entire process translating the text to color. From tokenization and identifying possible color words with Apache [OpenNLP][], to crowd sourcing color associations on [Mechanical Turk][mturk], to generating some neat image representations of the novel, and finally posting the color stream up to [Blot're][blotre].
 
@@ -23,7 +23,7 @@ The basic translation process would be:
 
 1. Identify every distinct color word in the source text.
 2. Construct a word to color association map for all the distinct words.
-3. Map every word in the source text to a color using the constructed map. 
+3. Map every word in the source text to a color using the constructed map.
 
 For step two, I didn't want just the obvious mapping, words for colors like `white` and `blue`. And I also wanted to map more than just words for physical objects such as `whale`, `ocean`, or `blood`. What about more abstract ideas like `hope`, `starbuck`, or `deep`?
 
@@ -32,7 +32,7 @@ I wanted to capture the color association of words, the first color that comes t
 But let's not get ahead of ourselves here. No, we need to start simple. Less *Moby-Dick*, more *Hop on Pop*.
 
 ### Tokenization
-First step, getting the source text into a usable format. I grabbed the *Moby-Dick* `.txt` file over at [Project Gutenberg][gutenberg] and cracked it open. 
+First step, getting the source text into a usable format. I grabbed the *Moby-Dick* `.txt` file over at [Project Gutenberg][gutenberg] and cracked it open.
 
 Ahhhh, typical Melville. Always with the spaces and the punctuators when a nice JSON array of words would have been so much more convenient. Consider this excerpt:
 
@@ -40,13 +40,13 @@ Ahhhh, typical Melville. Always with the spaces and the punctuators when a nice 
 "I thought ye know'd it;--didn't I tell ye, he was a peddlin' heads around town?--but turn flukes again and go to sleep."
 ```
 
-How could I turn something all englishy like *that* into something more computery like this:
+How could I turn something all englishy like *that* into something more computery like *this*:
 
 ```
 ["I", "thought", "ye", "know'd", "it", "didn't", "I", "tell", "ye", "he", "was", "a", "peddlin'", "heads", "around", "town", "but", "turn", "flukes", "again", "and", "go", "to, "sleep"]
 ```
 
-I began by breaking the text into easily identifiable components, a process called [tokenization][]. [Apache OpenNLP][opennlp] helped me transform and analyse the source text.
+I began by breaking the text into easily identifiable components, a process called [tokenization][]. [Apache OpenNLP][opennlp] helped me transform and analyze the source text.
 
 OpenNLP includes three tokenizers: a whitespace tokenizer, a simple tokenizer, and a learnable tokenizer, the last being, "A maximum entropy tokenizer, detects token boundaries based on probability model". Maximum entropy! Probability models! Now were getting scientific! So you can imagine which tokenizer I tried first.
 
@@ -72,9 +72,9 @@ $ opennlp SimpleTokenizer < moby_dick.txt
 " I thought ye know ' d it ; -- didn ' t I tell ye , he was a peddlin ' heads around town ? -- but turn flukes again and go to sleep . "
 ```
 
-Again, not perfect. But I didn't need perfect. And for my purposes, the simple tokenizer's results were actually preferable to the learnable tokenizer's. There's a token for each word (sometimes more than one token too!, especially for hyphenated words like `rose-bud` which was tokenized as `rose` and `bud`.)
+Again, not perfect. But I didn't need perfect. And for my purposes, the simple tokenizer's results were actually preferable to the learnable tokenizer's. There's a token for each word, and sometimes more than one token too! Hyphenated words such as `rose-bud`, were tokenized as `rose` and `bud`.)
 
-I feed the entire book through the simple tokenizer, minus the etymology and extracts. From, "Call me Ishmael" to, "found another orphan." There are about 260,000 tokens in *Moby-Dick*, and roughly 19,000 distinct tokens.
+I feed the entire book through the simple tokenizer, minus the etymology and extracts, from, "Call me Ishmael" to, "found another orphan." There are about 260,000 tokens in *Moby-Dick*, and roughly 19,000 distinct tokens.
 
 ### Normalization
 The most common tokens are pretty much what you would expect, a bunch of punctuation and small common words:
@@ -83,13 +83,13 @@ The most common tokens are pretty much what you would expect, a bunch of punctua
 [',', 'the', '.', 'of', 'and', 'a', 'to', ';', 'in', 'that', '"', "'", '-', 'his', 'it', 'I', '!', 's', 'is', 'he', 'with', 'was', '--', 'as', 'all', 'for', 'this', 'at', 'by', 'but', 'not', 'him', 'from', 'be', '?', ...]
 ```
 
-For this project, I was only interested in words that could have some color association. And while I wanted these color association to be subjective, words like `the` or `and` are a bit too open ended. And 19,000 words were still too many for me to colorize easily. So I set out to prune down the number of words I had to work with. 
+For this project, I was only interested in words that could have some color association. And while I wanted these color association to be subjective, words like `the` or `and` are a bit too open ended. And 19,000 words were still too many for me to colorize easily. So I set out to prune down the number of words I had to work with.
 
 Normalizing all word to lowercase eliminated around two thousand distinct words. Further gains became more difficult.
 
 Eliminating one and two letter words, usually conjunctions which I assumed didn't have a color association, removed one hundred more, while removing punctuators using a simple `\w+` regular expression shaved off another fifty words or so.
 
-Examining the list more closely, I noticed that many nouns appeared twice, once in singular and once in plural form: `whale` and `whales`, `seaman` and `seamen` for example. I wanted to eliminate these too, but this was no job for a simple regular expression. Thankfully, the [Inflect][] Python library helped me standardize all words to their singular form. 
+Examining the list more closely, I noticed that many nouns appeared twice, once in singular and once in plural form: `whale` and `whales`, `seaman` and `seamen` for example. I wanted to eliminate these too, but this was no job for a simple regular expression. Thankfully, the [Inflect][] Python library helped me standardize all words to their singular form.
 
 ```python
 import inflect
@@ -187,7 +187,7 @@ for color in colors:
 img.save("out.png")
 ```
 
-Time to try out some mappings. 
+Time to try out some mappings.
 
 ### Ahab and Moby-Dick
 What does *Moby-Dick* look like if you encode Ahab as black and Moby Dick as white (for the example image, the token sequence "white whale" was also encoded as white):
@@ -225,7 +225,7 @@ Interesting but monochromatic. Let's bring in some color.
 ### Color Words
 *Moby-Dick* uses very colorful language. Hell, the word 'white' alone appears more than three hundred time, 'black' and 'green' around one hundred times each, and 'red' around fifty times. So what would the book look like if you visualized its color words?
 
-To see, I started with the CSS3 list of color names. I split up compound names, like 'RebeccaPurple', creating entries for 'rebecca' and 'purple' (regular 'purple' overwrites the 'purple' from 'RebeccaPurple'.) Then, I ran the image building script again, this time without any decay function: 
+To see, I started with the CSS3 list of color names. I split up compound names, like 'RebeccaPurple', creating entries for 'rebecca' and 'purple' (regular 'purple' overwrites the 'purple' from 'RebeccaPurple'.) Then, I ran the image building script again, this time without any decay function:
 
 {% include image.html file="css_colors.png" %}
 
@@ -237,7 +237,7 @@ But using just color words feels still like a bit of a copout. What about words 
 Colorizing all ten thousand distinct words myself would have been quite a chore.  I also wanted the color associations to come from multiple points of view, a draw from multiple opinions on some of the more common words. But where could I find people who would willingly spend their time mapping words to colors? The Internets of course, at three cents a minute.
 
 ### HIT
-I used [Mechanical Turk][mturk] to crowd source the color mappings because it allowed me to quickly and easily ask people questions and collect their responses. But before mapping all ten thousand words, I wanted to make sure the survey process would work as expected for a smaller set of data. 
+I used [Mechanical Turk][mturk] to crowd source the color mappings because it allowed me to quickly and easily ask people questions and collect their responses. But before mapping all ten thousand words, I wanted to make sure the survey process would work as expected for a smaller set of data.
 
 My task, or HIT in Amazon speak (oddly appropriate for Blot're), on Mechanical Turk asked workers to map five words to colors, in exchange for three cents compensation. I randomly bucketed the fifteen hundred most common words into three hundred buckets to generate my tasks.
 
@@ -248,8 +248,8 @@ I quickly put together a basic HTML survey using the [Spectrum color picker][spe
 I also provided workers with the option to mark, "No color association", for words they strongly felt did not have any associated color. The survey had a few very basic guards to encourage better responses, such as requiring workers to interact with the color picker for each of the five words before submitting their responses.
 
 ### Results
-Honestly, I wasn't sure what to expect when I posted up the first set of words.   What if workers were confused by my instructions or just picked colors at random? And Melville is one thesauric motherfucker too. How would workers handle words such as 'swart' or 'admeasurement', or names like 'starbuck' and 'ahab'? 
- 
+Honestly, I wasn't sure what to expect when I posted up the first set of words.   What if workers were confused by my instructions or just picked colors at random? And Melville is one thesauric motherfucker too. How would workers handle words such as 'swart' or 'admeasurement', or names like 'starbuck' and 'ahab'?
+
 But the Mechanical Turk workers did surprisingly well. There are no correct mappings here, but most of the responses do make sense.
 
 As hoped, 'yellow' was mapped to an almost perfect yellow (`#fbf655`), 'bone' to a nice off-white (`#f7f7f7`) and 'damsel' to a lovely pinkish purple. Heck, the workers even got a reasonable answer for 'cetology' (`#cbe8e5`, a light greenish blue).
@@ -258,7 +258,7 @@ As hoped, 'yellow' was mapped to an almost perfect yellow (`#fbf655`), 'bone' to
 
 Workers colorized fourteen hundred of the fifteen hundred words. And, of those remaining one hundred words, most were words like 'macrocephalus' or 'stunsail' or 'zoroaster', which, even having dictionary at hand, probably don't have color associations for most people.
 
-Here's the result of running the image generation script again using the first fourteen hundred crowd sourced mappings. 
+Here's the result of running the image generation script again using the first fourteen hundred crowd sourced mappings.
 
 {% include image.html file="turk1-1.png" %}
 
@@ -266,7 +266,7 @@ Here's the result of running the image generation script again using the first f
 The whole goal of this project was to encode a book for use on [Blot're][blotre]. But this was perhaps the easiest part of the whole process. You can find the stream of Moby-Dick stream [here](https://blot.re/s/matt/moby+dick).
 
 ### Setup
-I wrote the client application in Node using the [Blot're CL framework][blotre-cl]. This framework handles registering a new [disposable][blotre-disposable] client with `https://blot.re`, displaying the redemption code to the user, obtaining an access token for the user who redeemed the code, and persisting the credentials in four lines of code: 
+I wrote the client application in Node using the [Blot're CL framework][blotre-cl]. This framework handles registering a new [disposable][blotre-disposable] client with `https://blot.re`, displaying the redemption code to the user, obtaining an access token for the user who redeemed the code, and persisting the credentials in four lines of code:
 
 ```js
 var BlotreCl = require('blotre-cl-framework');
@@ -280,7 +280,7 @@ BlotreCl({
     .catch(console.error);
 ```
 
-Once the client app is authorized, `start` loads the color data and begins posting stream updates. 
+Once the client app is authorized, `start` loads the color data and begins posting stream updates.
 
 ```js
 var start = function(client) {
@@ -324,7 +324,7 @@ var openBlotreSocket = function(client) {
 };
 ```
 
-The actual update function simply iterates though the list of colors in order, posting up a new color every 250ms. 
+The actual update function simply iterates though the list of colors in order, posting up a new color every 250ms.
 
 ```js
 var startMobyUpdates = function(client, targetStream, data) {
@@ -333,7 +333,7 @@ var startMobyUpdates = function(client, targetStream, data) {
     ws.on('open', function postUpdate() {
         if (i >= data.length)
             i = 0;
-        
+
         ws.send(JSON.stringify({
             type: 'SetStatus',
             of: targetStream.uri,
@@ -341,7 +341,7 @@ var startMobyUpdates = function(client, targetStream, data) {
         }));
         setTimeout(postUpdate, 250);
     });
-    
+
     ws.on('message', function(x) {
         if (x && x.error)
             console.error(x);

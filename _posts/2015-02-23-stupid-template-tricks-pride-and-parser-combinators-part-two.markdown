@@ -533,10 +533,10 @@ For the visual format language, it is easy to image a compile time parser that t
 
 [src]: https://github.com/mattbierner/stt-parser-combinators
 [template-string]: http://www.comeaucomputing.com/techtalk/templates/#stringliteral
-[bf]: http://blog.mattbierner.com/stupid-template-tricks-brainfuck-compile-time-evaluator/
+[bf]: /stupid-template-tricks-brainfuck-compile-time-evaluator/
 
-[life]: http://blog.mattbierner.com/stupid-template-tricks-the-life-comonadic/
-[nibbler]: http://blog.mattbierner.com/stupid-template-tricks-snake/
+[life]: /stupid-template-tricks-the-life-comonadic/
+[nibbler]: /stupid-template-tricks-snake/
 
 
 [visual-format]: https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/AutolayoutPG/VisualFormatLanguage/VisualFormatLanguage.html
@@ -546,4 +546,4 @@ For the visual format language, it is easy to image a compile time parser that t
 [parsec]: https://hackage.haskell.org/package/parsec
 [backtracking]: http://en.wikipedia.org/wiki/Backtracking
 
-[part1]: http://blog.mattbierner.com/stupid-template-tricks-pride-and-parser-combinators-part-one/
+[part1]: /stupid-template-tricks-pride-and-parser-combinators-part-one/
