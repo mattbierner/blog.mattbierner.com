@@ -3,7 +3,7 @@ layout: post
 title: "The Whole Rainbow"
 date: '2016-02-06'
 description: "Uploading every color to Twitter"
-series: spamart
+series: bandarlog
 ---
 **Update 2** -  Confirmed: Instagram hates rainbows. The script mysteriously stops and starts working, with the uploads succeeding but the images being insta deleted. Switched over the Twitter instead since their public API is not so intentionally crippled. You can find the original Instagram logic in the [Instagram code branch](https://github.com/mattbierner/The-Whole-Rainbow/tree/instagram).
 

@@ -8,9 +8,9 @@ layout: default
     {% if site.data.series[page.series] %}
         <div class="channel-header">
             <h1 class="channel-name">{{ site.data.series[page.series].name }}</h1>
-            <p class="channel-description">{{ site.data.series[page.series].description }}</p>
+            <section class="channel-description">{{ site.data.series[page.series].description | markdownify }}</section>
         </div>
-    
+
         {% for post in site.posts %}
             {% if post.series == page.series %}
                 {% include post_index.html %}

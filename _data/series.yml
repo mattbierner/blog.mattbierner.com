@@ -2,6 +2,10 @@ blotre:
     name: "Blot're"
     description: "The life and times of Blot're, the world's greatest IoT social communication platform."
 
+bandarlog:
+    name: "Bandar-log"
+    description: "\"We are great. We are free. We are wonderful. We are the most wonderful people in all the jungle!\"<br>\"We all say so, and so it must be true!\""
+
 camerrah:
     name: "Camer'rah"
     description: ""
@@ -9,12 +13,7 @@ camerrah:
 halloween:
     name: "Halloween Special"
     description: "Terrible Tales of Technological Terror"
-    
-spamart:
-    name: "spamart"
-    description: ""
 
 stupid_template_tricks:
     name: 'Stupid Template Tricks'
     description: 'Abusing C++ Templates for Fun and Profit'
-
