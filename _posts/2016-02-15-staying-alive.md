@@ -12,6 +12,8 @@ Such loopy patronage helps me cast aside any fear of a coming *Terminator 2: Jud
 
 In other news, I've been meaning to get back into [Mechanical Turk][mturk] recently. Outsourcing work to real human workers presents endless opportunities, and my account still had ten dollars after last summer's adventure [mapping *Moby-Dick* to colors][moby_dick]. But no such triviality this time around. Instead, I decided to save lives.
 
+[Source of the assignment and server is on Github][src].
+
 ## The Assignment
 The idea was simple: use Mechanical Turk to pay workers to stay alive for five minutes. After all, why bother paying humans for mundane tasks such as categorization and completing surveys, when they are amazing just for being alive. Thanks, keep it up!
 
@@ -87,7 +89,7 @@ And just think! We've eliminated poverty, war, and disease. Not bad for two day'
 
 I'll take my Nobel posthumously.
 
-
+[src]: http://github.com/mattbierner/staying-alive
 [mturk]: https://www.mturk.com/mturk/welcome
 [moby_dick]: /moby-dick-or-whale-not-now-man-then-ship-sea-more-ahab/
 [gwp]: https://en.wikipedia.org/wiki/Gross_world_product
