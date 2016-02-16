@@ -2,7 +2,7 @@
 layout: post
 title: "Turkish Delight: Staying Alive"
 date: '2016-02-15'
-description: "This is your life and its ending five cents at a time."
+description: "This is your life and it's ending five cents at a time."
 series: bandarlog
 ---
 
