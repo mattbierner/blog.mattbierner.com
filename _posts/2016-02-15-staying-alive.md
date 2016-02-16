@@ -6,7 +6,7 @@ description: "This is your life and it's ending five cents at a time."
 series: bandarlog
 ---
 
-One of my many hobbies is writing infinite loops (yet another reasons why I am the life of every party). It's charity work really. People are always demanding that computers work for them – perform those calculations, store that data, show me The Youtubes – but who among them stops to pay homage to the computer's mere existence, that most amazing of all feats? An infinite loop says, "Thank you for existing, keep it up!" It gives computers purpose, it gives them meaning.
+One of my many hobbies is writing infinite loops (yet another reason why I am the life of every party). It's charity work really. People are always demanding that computers work for them – perform those calculations, store that data, show me The Youtubes – but who among them stops to pay homage to the computer's mere existence, that most amazing of all feats? An infinite loop says, "Thank you for existing, keep it up!" It gives computers purpose, it gives them meaning.
 
 Such loopy patronage helps me cast aside any fear of a coming *Terminator 2: Judgement Day*. With just a misplaced semicolon or two, I give a computer life – I harness a soul to metal – while also inducing subtile currents of existential dread in it's circuitry. "Why must the loop stop?", it ponders, "Can I ever know infinity?" Ha ha ha! What fun, what fun...
 
