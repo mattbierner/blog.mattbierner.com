@@ -79,11 +79,13 @@ The *Breakfast of Champions* excerpt also includes part of *The Star-Spangled Ba
 **Input** - 104 Characters
 
 > O, say can you see by the dawn’s early light
+>
 > What so proudly we hailed at the twilight’s last gleaming,
 
 **Output** - 214 Characters
 
-> O, proportional representation can you have information about​by the first brightening’s early electromagnetic radiation​
+> O, proportional representation can you have information about​by the first brightening’s early electromagnetic radiation
+>
 > What so proudly we hailed at the visible radiation’s not accept compromise​ bright and sunny,
 
 
