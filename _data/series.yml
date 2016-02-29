@@ -10,6 +10,10 @@ camerrah:
     name: "Camer'rah"
     description: ""
 
+newspeak:
+    name: "Newspeak"
+    description: ""
+
 halloween:
     name: "Halloween Special"
     description: "Terrible Tales of Technological Terror"
