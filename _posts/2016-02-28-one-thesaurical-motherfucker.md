@@ -84,9 +84,9 @@ The *Breakfast of Champions* excerpt also includes part of *The Star-Spangled Ba
 
 **Output** - 214 Characters
 
-> O, proportional representation can you have information about​by the first brightening’s early electromagnetic radiation
->
-> What so proudly we hailed at the visible radiation’s not accept compromise​ bright and sunny,
+> O, proportional representation can you have information about by the first brightening’s early electromagnetic radiation
+> 
+> What so proudly we hailed at the visible radiation’s not accept compromise bright and sunny,
 
 
 ## Source and Api
