@@ -264,6 +264,20 @@ img {
 
     footer {
         margin-top: 3em;
+        text-align: center;        
+         
+        .edit-link {
+            display: block;
+            width: 100%;
+            padding-top: 1em;
+            font-size: 90%;
+            color: #aaa;
+            font-style: italic;
+            
+            &:hover {
+                text-decoration: underline
+            }
+        }
     }
 }
 
@@ -317,6 +331,7 @@ img {
     width: 50%;
     min-height: 1px;
     float: left;
+    text-align: left;
 }
 
 .post-nav .next {
@@ -328,18 +343,17 @@ img {
 }
 
 .page-footer {
-  padding: 20px 0;
-  text-align: center;
-  font-size: 80%;
-  color: #aaa;
-}
+    padding: 20px 0;
+    text-align: center;
+    font-size: 80%;
+    color: #aaa;
 
-.page-footer a {
-    color: inherit;
-}
-
-.page-footer a:hover {
-    text-decoration: underline;
+    nav a {
+        color: inherit;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
 }
 
 /* ==========================================================================
@@ -405,7 +419,7 @@ img {
     width: 260px;
     max-height: 100%;
     margin-left: -300px;
-    overflow-y: scroll;
+    overflow-y: auto;
     float: left;
     font-weight: 300;
     font-size: 0.9em;
