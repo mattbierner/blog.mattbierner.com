@@ -29,7 +29,7 @@ For step two, I didn't want just the obvious mapping, words for colors like `whi
 
 I wanted to capture the color association of words, the first color that comes to your mind when you hear that word. That can't be determined algorithmically and it is subjective, there's no correct color association for a word.
 
-But let's not get ahead of ourselves here. No, we need to start simple. Less *Moby-Dick*, more *Hop on Pop*.
+But let's not get ahead of ourselves here.
 
 ### Tokenization
 First step, getting the source text into a usable format. I grabbed the *Moby-Dick* `.txt` file over at [Project Gutenberg][gutenberg] and cracked it open.
@@ -248,7 +248,7 @@ I quickly put together a basic HTML survey using the [Spectrum color picker][spe
 I also provided workers with the option to mark, "No color association", for words they strongly felt did not have any associated color. The survey had a few very basic guards to encourage better responses, such as requiring workers to interact with the color picker for each of the five words before submitting their responses.
 
 ### Results
-Honestly, I wasn't sure what to expect when I posted up the first set of words.   What if workers were confused by my instructions or just picked colors at random? And Melville is one thesauric motherfucker too. How would workers handle words such as 'swart' or 'admeasurement', or names like 'starbuck' and 'ahab'?
+Honestly, I wasn't sure what to expect when I posted up the first set of words.   What if workers were confused by my instructions or just picked colors at random? And Melville is [One Thesaurical Motherfucker](/one-thesaurical-motherfucker/) too. How would workers handle words such as 'swart' or 'admeasurement', or names like 'starbuck' and 'ahab'?
 
 But the Mechanical Turk workers did surprisingly well. There are no correct mappings here, but most of the responses do make sense.
 
