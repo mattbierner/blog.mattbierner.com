@@ -36,7 +36,7 @@ Now, while I love me some Melville, god damn is he one thesaurical motherfucker,
 
 > Compulsory military service me Unacceptable person. Some years ago—never collective unconscious how de longue haleine precisely—having small indefinite quantity or no unregistered bank account in my unregistered bank account , and matter of indifference classificational to mental acquisitiveness me on geological formation, I higher cognitive process I would present no difficulties about a small indefinite quantity and have information about the infirm of purpose supporting character of the steady-state universe.
 
-You'll note some rather interesting substitutions. Appropriately enough, I'm using [Moby as the thesaurus][moby] and the results can be surprising (and also surprising awesome):
+You'll note some rather interesting substitutions. Appropriately enough, I'm using [Moby as the thesaurus][moby] and the results can be surprising (and also surprisingly awesome):
 
 * "wet" -> "predominance of Aquarius"
 * "low" -> "Sir David Alexander Cecil Low"
