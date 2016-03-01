@@ -22,7 +22,7 @@ You see, recently I decided to write a modern adaptation of *Moby-Dick*, and the
 
 Clearly something is a little bit off. But I think I know the problem. 
 
-Now, while I love me some Melville, god damn is he one thesaurical motherfucker, with word choices that border on satire at times. So if I could could use big, highfalutin words like him, surely my writing would be much better! So I built a tool to help me do just that.
+Now, while I love me some Melville, god damn is he one thesaurical motherfucker, with word choices that border on satire at times. If only I could could use big, highfalutin words like him, surely my writing would be much better! So I built a tool to help me do just that.
 
 {% include image.html file="example.png" %}
 
@@ -59,8 +59,12 @@ For infinitely more fun, you can also use random synonyms:
 
 > Animal noise me Expellee. Some years ago—never ba how languishing precisely—having smally or no handsome fortune in my life savings, and valueless classificational to leaning me on cheek, I tactfulness I would skid about a shoestring and accompany the swashy musical phrase of the Old World.
 
+Or you can choose to use the shortest word:
+
+> Ask me Ishmael. Some yrs ago—never ba how age precisely—having no or no fat in my bag, and dud hap to no me on hem, I bit I would fly about a no and do the wet by of the all
+
 ## Beyond Melville
-The site includes a small set of excerpts from a variety of books to play around with – from *Moby-Dick* to *The Cat in the Hat* (which henceforth shall be known as *The computerized axial tomography in the Salvation Army bonnet*) – or you can enter your own text.
+The site includes a small set of excerpts from a variety of books to play around with – from *Moby-Dick* to *The Cat in the Hat* (which henceforth shall be known as *The computerized axial tomography in the balaclava helmet*) – or you can enter your own text.
 
 As you may guess from this site's title, Kurt Vonnegut is another one of my favorite authors, even though his writing style is pretty much the opposite of Melville's. But the tool produces great output for his work too.
 
@@ -73,6 +77,10 @@ Here's the first sentence of *Breakfast of Champions*:
 **Output** - 253 Characters
 
 > THIS IS A COCK-and-bull story of a eyeball-to-eyeball encounter of double harness out-of-the-way, undernourished, fairly of marriageable age Patrick Victor Martindale White gentleman's gentleman on a terrestrial planet which was in articulo mortis fast.
+
+Or, for a more Vonnegut feel, we can use the shortest synonyms:
+
+> THIS IS A ALL of a go of ii lone, bony, fairly big boy hes on a Mars which was bad fast.
 
 The *Breakfast of Champions* excerpt also includes part of *The Star-Spangled Banner*, which is similarly improved:
 
