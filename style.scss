@@ -292,6 +292,10 @@ img {
         margin-bottom: 0.4em;
         padding-bottom: 0.1em;
     }
+    
+    h3 + figure {
+        margin-top: 1em;
+    }
 
     img {
         display: block;
