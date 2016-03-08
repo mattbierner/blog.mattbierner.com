@@ -46,9 +46,9 @@ I extracted every [`[dubious]`](https://github.com/mattbierner/dubious/blob/mast
 
 > Whatever the cause, the building would fill with radioactive smoke along with a real probability that molten uranium metal would come pouring out of the bottom of the furnace.<sup>\[dubious\]</sup> ([Fernald Feed Materials Production Center](https://en.wikipedia.org/wiki/Fernald_Feed_Materials_Production_Center))
 
-The script probably misses a lot of edge cases, bit it returns something reasonable for most articles.
+The script probably misses a lot of edge cases, but it returns something reasonable for most articles.
 
-Wikipedia's markup is very human writable, but unfortunately does not produce easy to consume semantic information. For example, actually knowing what part of text is supposed to be marked `[dubious]` would be helpful.
+While Wikipedia's markup is very human writable, it unfortunately does not produce easy to consume semantic information. For example, actually knowing what part of text is supposed to be marked `[dubious]` would be helpful.
 
 ## \{\{lopsided\}\}
 After hacking together the initial script, I realized that the same technique could be easily applies to similar inline tags. Some new favorite, if sadly underused, tags are [lopsided][] and its [friends][opinion]:
