@@ -121,6 +121,7 @@ Here's the full results from a few more tags too:
 * [Opinion](https://github.com/mattbierner/dubious/blob/master/out/opinion/opinion.md)
 * [disputed inline](https://github.com/mattbierner/dubious/blob/master/out/disputed inline/disputed inline.md)
 * [according to whom](https://github.com/mattbierner/dubious/blob/master/out/according to whom/according to whom.md)
+* [weasel-inline](https://github.com/mattbierner/dubious/blob/master/out/weasel-inline/weasel-inline.md)
 
 It's interesting to see what articles have the most of each tag, and it's also a good way to find entertaining Wikipedia pages too.
 
