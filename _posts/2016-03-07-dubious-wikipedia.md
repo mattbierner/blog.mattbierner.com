@@ -9,7 +9,7 @@ Over the years, I've discovered that hidden beneath Wikipedia's encyclopedic ven
 
 {% include image.html file="eating.png" description="I love Wikipedia's ability to make even activities like 'eating' sound completely alien.<br>And those captions!" %}
 
-Vandalism ain't got nothing compared to the Wikipedia's official content.
+Vandalism ain't got nothing compared to Wikipedia's official content.
 
 I previously looked at the often entertaining ways links are used in articles with *[Just the links][just_the_links]*. But every so often, I'll come across a single sentence that captures everything that makes Wikipedia awesome. And I recently unearthed such a gem while browsing Wikipedia's entry on *[Low Comedy][low_comedy]* (don't judge):
 
