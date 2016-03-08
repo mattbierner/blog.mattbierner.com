@@ -51,7 +51,7 @@ The script probably misses a lot of edge cases, but it returns something reasona
 While Wikipedia's markup is very human writable, it unfortunately does not produce easy to consume semantic information. For example, actually knowing what part of text is supposed to be marked `[dubious]` would be helpful.
 
 ## \{\{lopsided\}\}
-After hacking together the initial script, I realized that the same technique could be easily applied to similar inline tags. Some new favorite, if sadly underused, tags are [lopsided][] and its [friends][opinion]:
+After hacking together the initial script, I realized that the same technique could be easily applied to [similar inline tags][inline_cleanup]. Some new favorite, if sadly underused, tags are [lopsided][] and its [friends][opinion]:
 
 > It comes from the neighboring mountains, and refreshes souls<sup>\[lopsided\]</sup> and bodies. ([Cali](https://en.wikipedia.org/wiki/Cali))
 
@@ -106,7 +106,7 @@ The extracts from [Converted barn](https://en.wikipedia.org/wiki/Converted_barn)
 
 
 ## Pure Wikipedia Extract
-[Check out the script][src] if you want to try extracting some of these tags from Wikipedia.
+[Check out the script][src] if you want to try extracting [some of these tags][inline_cleanup] from Wikipedia.
 
 Here's the full results from a few more tags too:
 
@@ -124,6 +124,8 @@ Here's the full results from a few more tags too:
 
 It's interesting to see what articles have the most of each tag, and it's also a good way to find entertaining Wikipedia pages too.
 
+
+
 [just_the_links]: /just-the-links
 
 [low_comedy]: https://en.wikipedia.org/wiki/Low_comedy
@@ -135,3 +137,5 @@ It's interesting to see what articles have the most of each tag, and it's also a
 
 
 [src]: https://github.com/mattbierner/dubious
+
+[inline_cleanup]: https://en.wikipedia.org/wiki/Category:Inline_cleanup_templates
