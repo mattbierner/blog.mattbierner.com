@@ -51,7 +51,7 @@ The script probably misses a lot of edge cases, but it returns something reasona
 While Wikipedia's markup is very human writable, it unfortunately does not produce easy to consume semantic information. For example, actually knowing what part of text is supposed to be marked `[dubious]` would be helpful.
 
 ## \{\{lopsided\}\}
-After hacking together the initial script, I realized that the same technique could be easily applies to similar inline tags. Some new favorite, if sadly underused, tags are [lopsided][] and its [friends][opinion]:
+After hacking together the initial script, I realized that the same technique could be easily applied to similar inline tags. Some new favorite, if sadly underused, tags are [lopsided][] and its [friends][opinion]:
 
 > It comes from the neighboring mountains, and refreshes souls<sup>\[lopsided\]</sup> and bodies. ([Cali](https://en.wikipedia.org/wiki/Cali))
 
