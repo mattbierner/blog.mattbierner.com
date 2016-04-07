@@ -33,7 +33,7 @@ Both the script and the complete dream json dataset are [on Github][Dreamscrape]
 Now, which dreamer to target first?
 
 ## Barb Sanders
-[Introducing one Barb Sanders](http://dreambank.net/grid.cgi#b), occupation: dreamer. Barb Sanders, who from 1960 to 2001 put a pen to paper to record more than 4000 of her dreams. The year is now 2016, and thanks to modern technology, Barb Sanders is about to start dreaming once again. But what Ms. Sanders is about to realize, is that she's always been dreaming, in <strike>the Twilight Zone</strike> a neural network.
+[Introducing one Barb Sanders](http://dreambank.net/grid.cgi#b), occupation: dreamer. Barb Sanders, who from 1960 to 2001 put a pen to paper to record more than 4000 of her dreams. The year is now 2016, and thanks to modern technology, Barb Sanders is about to start dreaming once again. But what Ms. Sanders is about to realize, is that she's always been dreaming, in the <strike>Twilight Zone</strike>Cloud.
 
 The Barb Sanders dream corpus tips the scales at some 820,000 words. Damn Barb! That's two *War and Peace*s worth of words right there (while also being approximately 87 quadrillion times more entertaining than anything Tolstoy ever produced as well.)
 
