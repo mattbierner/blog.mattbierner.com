@@ -124,7 +124,7 @@ And [here's a 12 dream, 40000 character sample][me_sample]. I've made a few mino
 ## Dreams Wholesale
 I hate to admit it, but the original dreams are much more entertaining than anything the computer produced. Computers may have us humans beat at Go, but we've still got the upper hand at dreaming. Sure, you could probably apply some fancy machine learning techniques or add more logic, but it'll be a while before computers are able to seamlessly blend Kubrick, the United Nations assembly building, the voices of Banjo-Kazooie, King Abdullah, Twitter, and Mad Max all together in their dreams, and that was just one paragraph from one of my 2015 dreams (I wish I were joking).
 
-I once watched a documentary about eco-minded machines using millions of human bodies as a renewable energy source. That'd never scale; potatoes would be a much better choice. But storing humans in tanks and using them to generate dreams? Much more logical. I can almost see AWS rolling out that service sometime next year.
+I once watched [a documentary](https://en.wikipedia.org/wiki/The_Matrix) about eco-minded machines using millions of human bodies as a renewable energy source. That'd never scale; potatoes would be a much better choice. But storing humans in tanks and using them to generate dreams? Much more logical. I can almost see AWS rolling out that service sometime next year.
 
 
 [urban]: /urban-dictionary-neural-network/
