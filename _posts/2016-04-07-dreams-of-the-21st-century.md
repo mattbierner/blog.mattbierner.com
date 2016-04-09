@@ -37,9 +37,9 @@ Now, which dreamer to target first?
 
 The Barb Sanders dream corpus tips the scales at some 820,000 words. Damn Barb! That's two *War and Peace*s worth of words right there (while also being approximately 87 quadrillion times more entertaining than anything Tolstoy ever produced as well.)
 
-And Barb Sanders' dreams are high quality stuff too, not just your run-of-the-mill flying escapism, or regressive school testing nightmares, or dreams of the Great Homecoming Fuck Fantasy:
+And Barb Sanders dreams are high quality stuff too, not just your run-of-the-mill flying escapism, or regressive school testing nightmares, or dreams of the Great Homecoming Fuck Fantasy:
 
-> \# Al Pacino in drag (12/15/99)
+> \# Al Pacino in drag (12/15/99)<br>
 > Al Pacino works for the police department. He also runs a theft ring. Mostly they steal lipstick and women's clothing. I see him putting on bright red lipstick. He has luscious full lips.
 
 I LOVE YOU BARB SANDERS!!!
@@ -63,7 +63,7 @@ Here's what came out when I fed all of Barb Sanders' dreams to [Marky Markov](ht
 
 Or, perhaps a dash of post-modern poetry:
 
-> \# 02/25/81
+> \# 02/25/81<br>
 > I'm an open ulcerated sore on my back. she's doing the dishes. He shrugs and accepts. The girlfriend is in another room.
 
 Wow, that's deep.
@@ -122,7 +122,7 @@ Interesting.
 And [here's a 12 dream, 40000 character sample][me_sample]. I've made a few minor edits for context. To keep things G-rated, I also removed a rather gratuitous scene wherein I was french kissing this lovely, bewhiskered, Austrian professor named 'Sigmund', or something similar. Still trying to figure out the interpretation of that...
 
 ## Dreams Wholesale
-I hate to admit it, but the original dreams are much more entertaining than anything the computer produced. Computers may have us humans beat at Go, but we've still got the upper hand at dreaming. Sure, you could probably apply some fancy machine learning techniques or add more logic, but it'll be a while before computers are able to seamlessly blend Kubrick, the United Nations assembly building, the voices of Banjo-Kazooie, King Abdullah, Twitter, and Mad Max all together in their dreams, and that was just one paragraph from one of my 2015 dreams (I wish I were joking).
+I hate to admit it, but the original dreams are much more entertaining than anything the computer produced. Computers may have us humans beat at Go, but we've still got the upper hand at dreaming. Sure, you could probably apply some fancy machine learning techniques or add more logic, but it'll be a while before computers are able to dream up a better Al Pacino than old Barb Sanders did.
 
 I once watched [a documentary](https://en.wikipedia.org/wiki/The_Matrix) about eco-minded machines using millions of human bodies as a renewable energy source. That'd never scale; potatoes would be a much better choice. But storing humans in tanks and using them to generate dreams? Much more logical. I can almost see AWS rolling out that service sometime next year.
 
