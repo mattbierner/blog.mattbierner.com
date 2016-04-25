@@ -484,7 +484,9 @@ sup {
 }
 
 .footer-post {
+    display: inline-block;
     font-size: 0.85em;
+    max-width: 30em;
 }
 
 .footer-post > * {
