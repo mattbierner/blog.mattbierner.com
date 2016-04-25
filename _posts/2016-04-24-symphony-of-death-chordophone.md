@@ -38,7 +38,7 @@ All kills currently use the same instrument, but one obvious next step to explor
 
 
 ## Next
-I know precisely nothing about music production or music visualization, but, even though the end result is kind of plain compared to some of the more splashy audio visualizations out there, I still think it is interesting. The world needs more data defined instruments if you ask me. Plus, strumming away at these strings of life and death makes one feel like a true immortal, a regular Moirai. What lovely music, our lives must make. A symphony, known only to gods.
+I know precisely nothing about music production or music visualization, but, even though the end result is kind of plain compared to some of the more splashy audio visualizations out there, I still think it is interesting. The world needs more data defined instruments if you ask me. Plus, strumming away at these strings of life and death makes one feel like a regular Moirai. What lovely music, our lives make. A symphony, known only to gods.
 
 Feel free to submit a PR or drop a suggestion [over on Github][source] if you have any ideas for the project, and please report any issues you run into with the current implementation.
 
