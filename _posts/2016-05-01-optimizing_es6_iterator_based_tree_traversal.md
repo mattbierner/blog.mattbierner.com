@@ -204,7 +204,7 @@ function LinkedListIterator(root) {
 LinkedListIterator.prototype.next = function () {
     const head = this.head;
     if (!head)
-        return DONE;
+        return { done: true };
     
     const children = head.node.children;
     for (let i = 0, len = children.length, r = head; i < len; ++i) {
@@ -343,7 +343,7 @@ const apply = (k) =>
 
 const visitChildren = (child, children, i, k) => {
     const next = children[i];
-    return visitA(child,
+    return visit(child,
         next
             ?{child: next, children, i: i + 1, k}
             :k);
