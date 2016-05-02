@@ -263,7 +263,7 @@ ModifiedListIterator.prototype.next = function () {
 };
 ```
 
-Alas no! We find the same, or even slightly worse, performance over the regular linked list iterator.
+Alas! We find the same, or even slightly worse, performance over the regular linked list iterator.
 
 The linked list iterator at 80 time baseline was the best I was able to achieve, although you can boost things a few more points through aggressive micro optimizations, plus even more points if you perform the traversal in any order.
 
