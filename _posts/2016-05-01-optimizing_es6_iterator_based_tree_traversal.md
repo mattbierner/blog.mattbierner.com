@@ -192,7 +192,7 @@ Initial results using the generator are disappointing: slower than the stack bas
 
 
 ### Iterator
-Despair not! Perhaps the linked list is a retiring fellow who only reveals its true grace among more stately company.
+Despair not! Perhaps the linked list is a retiring fellow who only reveals its true grace among more classy company.
 
 Here's the same logic, rewriten as an iterator:
 
