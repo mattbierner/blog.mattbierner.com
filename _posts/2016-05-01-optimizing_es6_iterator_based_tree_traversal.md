@@ -81,7 +81,7 @@ function* (root) {
 
 The code grows less clear, but it's not unreasonable yet. And this small change yields *(so sorry)* big performance gains, being around 4.5 times faster than the baseline.
 
-`shift` and `unshift` are used because this is a pre-order traversal, but cast aside such draconian ordering to loll in `push` `pop`s  *(so, so sorry)* for a solid 5x performance boost. A million nodes per second. Amazing!
+`shift` and `unshift` are used because this is a pre-order traversal, but cast aside such draconian ordering to loll in push/pops  *(so, so sorry)* for a solid 5x performance boost. A million nodes per second. Amazing!
 
 ### Iterator
 But say, do we even need a generator? While there's much coder cred to be gained by bedecking functions in `*` and yielding whenever possible, perhaps there's something to be found in more handcrafted and artisanal code that dispenses with such niceties.
