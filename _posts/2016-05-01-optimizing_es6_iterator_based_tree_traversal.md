@@ -22,7 +22,7 @@ Consider a generic k-ary tree:
 ```js
 function Node(value, children) {
     this.value = value;
-    this.children = children;
+    this.children = children; // dense array
 };
 
 const example_tree = new Node('a', [
