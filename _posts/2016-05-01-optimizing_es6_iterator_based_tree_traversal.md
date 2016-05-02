@@ -215,7 +215,7 @@ LinkedListIterator.prototype.next = function () {
 };
 ```
 
-By `Object.prototype`! 2x the best stack based implementation and 80 times baseline; sixteen million nodes per second.
+By Object's prototype! 2x the best stack based implementation and 80 times baseline; sixteen million nodes per second!
 
 Sure the code is a little more involved but it's not unmanageable and, if you are authoring a library, the trade off is well worth it.
 
