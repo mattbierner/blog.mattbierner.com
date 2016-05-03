@@ -335,7 +335,7 @@ This pushes us up to 27 times baseline, about 1.5 times the regular continuation
 ### Crazy Optimization
 We grow desperate. We must rise above the stateful filth! Time to bring out the big guns: defunctionalization.
 
-Defunctionalization is exactly what it sounds like: turning higher order-functions (the continuations in this case) into data. Instead of passing functions as continuations, we pass continuation objects that are applied by an `apply` function. (I one wrote a riveting piece about [defunctionalization and tail calls in Javascript](/tail-call-implementation-and-defunctionalization-in-javascript/) and I'm fairly certain that at least ten people have read the first paragraph.)
+Defunctionalization is exactly what it sounds like: turning higher order-functions (the continuations in this case) into data. Instead of passing functions as continuations, we pass continuation objects that are applied by an `apply` function. (I once wrote a riveting piece about [defunctionalization and tail calls in Javascript](/tail-call-implementation-and-defunctionalization-in-javascript/) and I'm fairly certain that at least ten people have read the first paragraph.)
 
 ```js
 const apply = (k) =>

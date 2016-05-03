@@ -68,7 +68,7 @@ I tried five approaches, using three Python libraries to determine the dominant 
 * Kmeans Colorweave.
 * [ColorCube library][colorcube].
 
-Of those, only the average, ColorTheif, and normal Colorweave produced anything worthwhile. I may have been using ColorCube wrong, but it just could not handle the images I passing in, especially dark frames. 
+Of those, only the average, ColorThief, and normal Colorweave produced anything worthwhile. I may have been using ColorCube wrong, but it just could not handle the images I passing in, especially dark frames. 
 
 {% include image.html file="img-colorcube.png" description="It does look like shit." %}
 
@@ -94,7 +94,7 @@ It's pretty clear that red dominants this frame, taking up the entire center, bu
 
 {% include image.html file="samples-eyes-cer.png" description="Left to right: Average - #421823, ColorThief - #b63359, ColorWeave - #ba3066" %}
 
-ColorTheif and ColorWeave both identified the red carpet as the dominant color, with ColorTheif selecting a darker red from the edge of the carpet, while Colorweave seems to have selected the pinkish, more brightly lit center section. Average also produced a red color, albeit a much darker one, as the black cloaks muddied up its result.
+ColorThief and ColorWeave both identified the red carpet as the dominant color, with ColorThief selecting a darker red from the edge of the carpet, while Colorweave seems to have selected the pinkish, more brightly lit center section. Average also produced a red color, albeit a much darker one, as the black cloaks muddied up its result.
 
 ### Frame Three
 {% include image.html file="eyes-example-gotta-get-a-grip.png" description="GOTTA GET A GRIP!" %}
@@ -114,17 +114,17 @@ If you only look at area, gray dominants the above image. But blue is the percei
 ## All Together Now
 I ran each method against every frame in *Eyes Wide Shut* to extract the 230,000 dominant colors of the film. I saved this data as Json and used the script from my *[Moby-Dick][moby-dick]* post to convert the data into images, one pixel per frame, left-to-right, eight hundred pixels wide and about three hundred pixels tall.
 
-### ColorTheif
-{% include image.html file="img-colortheif.png" %}
+### ColorThief
+{% include image.html file="img-colorthief.png" %}
 
-I'm not a fan of what ColorTheif produced. The library seemed to lock into certain shades, and frame to frame color changes were very abrupt and indecisive. The result is dark, blocky, and ugly.
+I'm not a fan of what ColorThief produced. The library seemed to lock into certain shades, and frame to frame color changes were very abrupt and indecisive. The result is dark, blocky, and ugly.
 
-{% include image.html file="colortheif-zoom.png" %}
+{% include image.html file="colorthief-zoom.png" %}
 
 ### ColorWeave
 {% include image.html file="img-colorweave.png" %}
 
-Colorweave has much more noise and variation that ColorTheif, producing an even more pixeled appearing result. But I actually find this much more attractive, especially when zoomed in so that you can see the individual pixels/frames. 
+Colorweave has much more noise and variation that ColorThief, producing an even more pixeled appearing result. But I actually find this much more attractive, especially when zoomed in so that you can see the individual pixels/frames. 
 
 {% include image.html file="colorweave-zoom1.png" %}
 
@@ -241,7 +241,7 @@ One other difference is that all messages are sent with `acknowledge: 'error'`. 
 
 The gif is only 12fps so it doesn't capture the full effect. Here's the actual [stream][eyes-stream], streamed to Blot're at nearly the original framerate from a Raspberry Pi. I used color data from average because of the smooth color transitions.
 
-Kind of memorizing actually.
+Kind of mesmerizing actually.
 
 
 

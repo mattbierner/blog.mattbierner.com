@@ -65,7 +65,7 @@ Now let's look at what keys were being pressed during all that time. A total of 
 Jump stands on its own as the most used key, followed by a tier with the horizontal movement and sprinting. The vertical movement and whipping come next, being used about one third as often as the horizontal movement keys. The numbers drop off sharply after that, with the remaining actions seeing only limited usage. All of these actions are either context specific (`buy`) or consume an item (`bomb`, `rope`, and `use`).
 
 ### Keypress Rate
-During gameplay, between two and three commands were entered every second (counting a keypress a a single command, no separate keydown and keyup commands):
+During gameplay, between two and three commands were entered every second (counting a keypress as a single command, no separate keydown and keyup commands):
 
 {% include image.html file="spelunky-keypress-rate.png" %}
 
