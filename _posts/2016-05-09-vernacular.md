@@ -74,7 +74,7 @@ There is no meaning but what we make.
 
 
 
-[site]: (http://mattbierner.github.io/vernacular/)
+[site]: http://mattbierner.github.io/vernacular/
 [src]: https://github.com/mattbierner/vernacular
 [otm]: /one-thesaurical-motherfucker
 [ud-data]: /urban-dictionary-neural-network/
