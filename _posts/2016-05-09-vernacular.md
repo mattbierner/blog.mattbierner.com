@@ -19,7 +19,7 @@ So recently, I created a tool called *Vernacular* to monitor the spread of this 
 **Links**
 
 * [Vernacular][site]
-* [Interactive Version](http://mattbierner.github.io/vernacular/interactive)
+* [Interactive Version][interactive]
 * [Source][src]
 
 ## Vernacular
@@ -32,7 +32,7 @@ So recently, I created a tool called *Vernacular* to monitor the spread of this 
 Sure, it's rather juvenile taken at face value, but language is fluid, and I argue that the meanings *Vernacular* introduces are no less valid than the author's intent. The definitions come from a dictionary after all, and a dictionary written by *real* people at that, instead of highfalutin academics in their ivory towers.
 
 ### Excerpts
-The main page showcases *Urban Dictionary* entries found in a few classical texts, everything from *The King James Bible* to *Memoirs of Fanny Hill*. Only matches of three or more words are shown, which limits the quantity and quality of matches considerably, but still produces some entertaining results.
+The [main page][site] showcases *Urban Dictionary* entries found in a few classical texts, everything from *The King James Bible* to *Memoirs of Fanny Hill*. Only matches of three or more words are shown, which limits the quantity and quality of matches considerably, but still produces some entertaining results.
 
 Take some of Jane Austen's work for example. Books like *Pride and Prejudice* are ridiculous and rather inconsequential, but I love 'em. Seriously. Reading these books today in the age of *Tinder*, it's tempting to imagine ourselves much more evolved and unconstrained than those quaint Georgian era folk, with their petty concerns over elopements, but I can almost guarantee that 200 years from now, people will look back on the early 21st century with similar scoffs and sneers.
 
@@ -53,7 +53,7 @@ Interesting overall, but only looking at three plus word matches misses a lot of
 
 
 ### Interactive
-I also put together a simple tool that allows you to vernacularize any text. This tool finds all matches in the input text, including single word matches. Upwards of seventy five percent of most text ends up getting improved by this process.
+I also put together a [simple tool][interactive] that allows you to vernacularize any text. This tool finds all matches in the input text, including single word matches. Upwards of seventy five percent of most text ends up getting improved by this process.
 
 {% include image.html file="huck-finn.png" %}
 
@@ -73,8 +73,9 @@ Clearly a good next step would be to build a chat or voice bot that monitors con
 There is no meaning but what we make.
 
 
-
 [site]: http://mattbierner.github.io/vernacular/
+[interactive]: http://mattbierner.github.io/vernacular/interactive
+
 [src]: https://github.com/mattbierner/vernacular
 [otm]: /one-thesaurical-motherfucker
 [ud-data]: /urban-dictionary-neural-network/
