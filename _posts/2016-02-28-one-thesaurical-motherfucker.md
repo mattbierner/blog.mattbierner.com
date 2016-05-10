@@ -22,7 +22,7 @@ You see, recently I decided to write a modern adaptation of *Moby-Dick*, and the
 
 Clearly something is a little bit off. But I think I know the problem. 
 
-Now, while I love me some Melville, god damn is he one thesaurical motherfucker, with word choices that border on satire at times. If only I could could use big, highfalutin words like him, surely my writing would be much better! So I built a tool to help me do just that.
+Now, while I love me some Melville, god damn is he one thesaurical motherfucker, with word choices that border on Melville parody at times. If only I could could use big, highfalutin words like him, surely my writing would be much better! So I built a tool to help me do just that.
 
 {% include image.html file="example.png" %}
 
