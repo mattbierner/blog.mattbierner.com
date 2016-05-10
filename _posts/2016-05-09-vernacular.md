@@ -40,7 +40,7 @@ Let's see how modern society improves *Pride and Prejudice* without even changin
 
 {% include image.html file="in-that-way.png" %}
 
-The [Wikipedia entry for "double entendre"](https://en.wikipedia.org/wiki/Double_entendre) is pretty great BTW, especially when it attempts to explain the examples amazingly awkward detail.
+(The [Wikipedia entry for "double entendre"](https://en.wikipedia.org/wiki/Double_entendre) is pretty great BTW, especially when it attempts to explain the examples in amazingly awkward detail.)
 
 The definitions also took a turn for the meta in a few cases:
 
