@@ -58,7 +58,7 @@ My goal was to capture controller input playing *Katamari Damacy* on a physical 
 ### Physical Setup
 The Playstation 2 talks to it's controllers using a slightly modified [SPI protocol](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus). So, by paralleling onto a few of the wires between the console and the controller, we can NSA the console to controller communications.
 
-While it is possible to hook onto the Playstation2 controller connector pins, I found it easier to sacrifice a controller by cutting through its cord to expose nine, tiny wires; a veritable *Royal Rainbow*.
+While it is possible to hook onto the Playstation 2 controller connector pins, I found it easier to sacrifice a controller by cutting through its cord to expose nine tiny wires; a veritable *Royal Rainbow*.
 
 {% include image.html file="wiring.jpg" %}
 
