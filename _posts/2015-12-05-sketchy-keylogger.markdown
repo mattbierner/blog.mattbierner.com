@@ -250,7 +250,7 @@ The long, enemy filled halls result in lots of back and forth movement, with a f
 {% include image.html file="single-temple.png" %}
 
 ### Final Boss
-The boss battle is similar to the final Bowser battle in Super Mario 3, but with a giant [Olmec stone head](http://spelunky.wikia.com/wiki/Olmec) instead of a zoophilic, ginger-haired turtle (video games are weird). The player must get the boss to smash through several layers of floor into a pool of lava below.
+The boss battle is similar to the final Bowser battle in Super Mario 3, but with a giant [Olmec stone head](http://spelunky.wikia.com/wiki/Olmec) instead of a zoophilic, ginger-haired turtle. The player must get the boss to smash through several layers of floor into a pool of lava below.
 
 {% include image.html file="boss.png" %}
 
