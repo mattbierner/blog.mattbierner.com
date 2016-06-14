@@ -6,13 +6,16 @@ description: "Finding Urban Dictionary entries in text."
 series: newspeak
 ---
 
+
 > My life fades. All that remain are memories. I remember a time of language... of text... of words. Gone now...<br><br>
 > The words turned against us. Slowly at first – a double entendre here, a bit of innuendo there – but when the Soviets launched *Urban Dictionary* in 1991, things went exponential. More and more words became saddled with alternative meanings and people started to forget the old definitions all together. Day-to-day communication became stilted and awkward. Misunderstandings. Fear. Chaos. Governments sought to maintain order by cordoning off a few thousand safe words. These too fell. And then, nothing remained.<br><br>
 > The wasteland stretches before me. Even my internal monologue grows more corrupted by the day. This world's only got one shot left. The year is 1999. *This* is the future!
 
-Faux-eighties movie intros aside, this so-called *phrasing singularity* is probably in my top eight most feared apocalypse scenarios. When I think of all the good, innocent words that have been corrupted and debased over the years, I can't help but feel that we are quickly approaching a tipping point, after which all normal communication will be impossible, a *Kessler syndrome* of vulgarity if you will. Personally, I blame Shakespeare.
+Faux-eighties movie intros aside, this so-called *phrasing singularity* is probably in my top eight most feared apocalypse scenarios. When I think of all the good, innocent words that have been corrupted and debased over the years, I can't help but feel that we are quickly approaching a tipping point, after which all normal communication will be impossible; a *Kessler syndrome* of vulgarity if you will. 
 
 {% include image.html file="graph.png" %}
+
+Personally, I blame Shakespeare for inventing English to begin with, and much preferred the good old days, when everyone [talk-screeched at each other in some sub-human, mock-sophisticated language of incessant insult](/dubious-wikipedia/).
 
 So recently, I created a tool called *Vernacular* to monitor the spread of this disease. The project builds on my work [downloading an *Urban Dictionary* dataset][ud-data] and is similar in spirit to *[One Thesaurical Motherfucker][otm]*, which transformed text using synonyms. Let's take a look.
 
