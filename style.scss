@@ -288,6 +288,13 @@ sup {
 .post .entry {
     font-size: 16px;
     line-height: 21px;
+    
+    hr {
+        margin-left: 0;
+        margin-right: 0;
+        border-style: none;
+        border-bottom: 1px solid $lightGray;
+    }
 
     h2 {
         border-bottom: 1px solid $lightGray;

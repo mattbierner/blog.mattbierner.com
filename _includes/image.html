@@ -1,9 +1,12 @@
+{% capture image_src %}{% if include.file %}/content/{{ page.path | remove_first:'_posts/' | split:'.' | first }}/{{ include.file }}{% else %}{{ include.url }}{% endif %}{% endcapture %}
+
+{% capture image_href %}{% if include.href %}{{ include.href }}{% else %}{{ image_src }}{% endif %}{% endcapture %}
+
 <figure class="image">
-    {% capture image_src %}{% if include.file %}/content/{{ page.path | remove_first:'_posts/' | split:'.' | first }}/{{ include.file }}{% else %}{{ include.url }}{% endif %}{% endcapture %}
-    <a href="{{ image_src }}">
+    <a href="{{ image_href }}">
         <img src="{{ image_src }}" alt="{{ include.description }}" />
     </a>
-    {% if include.description %}
-        <figcaption>{{ include.description }}</figcaption>
-    {% endif %}
+{% if include.description %}
+    <figcaption>{{ include.description }}</figcaption>
+{% endif %}
 </figure>
