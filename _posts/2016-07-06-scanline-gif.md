@@ -3,6 +3,7 @@ layout: post
 title: "scanline.gif"
 date: '2016-07-06'
 description: "Flattening animated gifs to a single image and generating a slit-scan like effect."
+series: gif
 ---
 
 {% include image.html file="cat.gif" %}

@@ -21,3 +21,17 @@ halloween:
 stupid_template_tricks:
     name: 'Stupid Template Tricks'
     description: 'Abusing C++ Templates for Fun and Profit'
+
+gif:
+    name: ".gif"
+    description: |
+        Entertain me I'm as blank as can be
+        And I've seen it before
+        And I've done it before
+        And I think that I like it
+        But no I don't like it
+        It just goes on over and over
+        And over and over and over again
+        –
+        <i>A Treatise on Gifs</i>, Soft Cell
+
