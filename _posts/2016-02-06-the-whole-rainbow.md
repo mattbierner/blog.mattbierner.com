@@ -5,7 +5,7 @@ date: '2016-02-06'
 description: "Uploading every color to Twitter"
 series: bandarlog
 ---
-**Update 2** -  Confirmed: Instagram hates rainbows. The script mysteriously stops and starts working, with the uploads succeeding but the images being insta deleted. Switched over the Twitter instead since their public API is not so intentionally crippled. You can find the original Instagram logic in the [Instagram code branch](https://github.com/mattbierner/The-Whole-Rainbow/tree/instagram).
+**Update 2** -  Confirmed: Instagram hates rainbows. The script mysteriously stops and starts working, with the uploads succeeding but the images being insta deleted. Switched over the [Twitter @wholerainbow](https://twitter.com/wholerainbow) instead since their public API is not so intentionally crippled. You can find the original Instagram logic in the [Instagram code branch](https://github.com/mattbierner/The-Whole-Rainbow/tree/instagram).
 
 **Update** - Now continuing work at [@thewholerainbow2][wholerainbow2] since the original mysteriously stopped working.
 
