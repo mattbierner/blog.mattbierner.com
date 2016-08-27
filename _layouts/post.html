@@ -6,7 +6,7 @@ layout: default
   <div class="container">
     <header class="masthead clearfix">
       <a href="{{ site.baseurl }}/" class="site-avatar">
-        <img src="/images/uwtb-post.svg" />
+        <img src="/images/uwtb-post.svg" alt="UWTB" />
       </a>
     </header>
   </div>
@@ -23,7 +23,13 @@ layout: default
         </div>
     </header>
     
-    <div class="entry">{{ content }}</div>
+    <div class="entry">
+        <nav class="toc">
+            <h1><a href="#">{{ page.title }}</a></h1>
+            <div class="toc-content"></div>
+        </nav>
+        <div class="content">{{ content }}</div>
+    </div>
 
     <footer class="post-footer">
         <nav class="post-nav clearfix">

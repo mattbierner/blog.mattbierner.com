@@ -1,0 +1,38 @@
+
+/* ==========================================================================
+  Post Side Pagination
+   ========================================================================== */
+.body-pagination .post-pagination-link {
+    display: block;
+    position: fixed;
+    top: 50%;
+    height: 0;
+    padding: 1.6rem;
+    font-size: 40px;
+    color: inherit;
+}
+
+.footer-pagination .post-pagination-link {
+    display: block;
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.post-pagination-link:hover {
+    text-decoration: none;
+}
+
+.body-pagination .prev-post {
+    left: 0;
+}
+.body-pagination .prev-post::after {
+    content: "\2329";
+}
+
+.body-pagination .next-post {
+    right: 0;
+}
+.body-pagination .next-post::after {
+    content: "\232a";
+}

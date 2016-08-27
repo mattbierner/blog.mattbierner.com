@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+.post .entry > .toc {
+    position: static;
+    top: 0;
+    width: 260px;
+    max-height: 100%;
+    margin-left: -300px;
+    margin-right: 0;
+    overflow-y: auto;
+    float: left;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.post .entry > span {
+    /** hide auto generated toc sections */
+    display: block;
+    height: 1px;
+}
+
+.toc {
+    ul {
+        list-style: none;
+        padding-top: 0.2em;
+        padding-right: 2em;
+    }
+
+    li {
+        padding-left: 0;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+.toc-h2 {
+    padding-top: 0.2em;
+    border-top: 1px solid #ddd;
+
+    &:first-child {
+        border-top: 0;
+    }
+}
+
+.toc-h3 {
+    margin-left: 0.6em;
+    padding-left: 1.2em;
+    text-indent: -0.8em;
+    &::before {
+        content: "\25e6  ";
+    }
+}
+
+.toc .toc-active {
+    color: $blue;
+}
+
+/* ==========================================================================
+ Media
+   ========================================================================== */
+@media only screen and (max-width: 1400px) {
+    .toc {
+        display: none;
+    }
+}

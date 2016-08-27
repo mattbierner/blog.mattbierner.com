@@ -1,8 +1,3 @@
-
-//
-// VARIABLES
-//
-
 // Colors
 $blue: #57A3E8;
 
@@ -12,17 +7,8 @@ $darkerGray: #222;
 $darkGray: #444;
 $gray: #666;
 $lightGray: #eee;
-$white: #fff;
+$white: #fcfcfc;
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
+// Fonts
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
 $lato: Lato, $helveticaNeue, sans-serif;
-
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
-}

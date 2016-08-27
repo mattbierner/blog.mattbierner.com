@@ -45,3 +45,4 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+    - support
