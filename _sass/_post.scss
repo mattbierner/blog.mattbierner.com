@@ -1,0 +1,162 @@
+*********************
+    Post Header
+*********************/
+.masthead {
+    padding: 22px 0 6px 0;
+    text-align: center;
+}
+
+.site-avatar {
+    img {
+        max-width: 65px;
+        border-bottom: 2px solid transparent;
+    }
+
+    img:hover {
+        border-bottom: 2px solid #333;
+    }
+}
+
+//
+// .main
+//
+
+
+.post {
+    blockquote {
+        margin: 1.8em .8em;
+        border-left: 2px solid $gray;
+        padding: 0.1em 1em;
+        color: $gray;
+        font-style: italic;
+    }
+
+    blockquote p:last-child {
+        margin-bottom: 0.4em;
+    }
+}
+
+.post-meta {
+    color: #aaa;
+    font-size: 0.9em;
+    padding-bottom: 0.4em;
+}
+
+.post-main {
+    .post-title {
+        margin-top: 0;
+        margin-bottom: 0.1em;
+        text-align: center;
+    }
+
+    .post-meta {
+        text-align: center;
+    }
+
+    header {
+        margin-bottom: 1.4em;
+    }
+
+    footer {
+        margin-top: 3em;
+        text-align: center;        
+         
+        .edit-link {
+            display: block;
+            width: 100%;
+            padding-top: 1em;
+            font-size: 90%;
+            color: #aaa;
+            font-style: italic;
+            
+            &:hover {
+                text-decoration: underline
+            }
+        }
+    }
+}
+
+.post .entry {
+    font-size: 16px;
+    line-height: 21px;
+    
+    hr {
+        margin-left: 0;
+        margin-right: 0;
+        border-style: none;
+        border-bottom: 1px solid $lightGray;
+    }
+
+    h2 {
+        border-bottom: 1px solid $lightGray;
+        line-height: 1.2em;
+        text-align: center;
+        margin-bottom: 0.4em;
+        padding-bottom: 0.1em;
+    }
+    
+    h3 + figure {
+        margin-top: 1em;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    figure {
+        position: relative;
+        padding-bottom: 0.8em;
+    }
+
+    figure img {
+        padding-bottom: 0.2em;
+        max-height: 100vh;
+    }
+
+    figure figcaption {
+        text-align: center;
+        font-style: italic;
+        font-size: 0.9em;
+    }
+}
+
+.post .entry > * {
+    margin-left: 24px;
+    margin-right: 14px;
+}
+
+.post .entry > h1,
+.post .entry > h2 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.post-nav > * {
+    width: 50%;
+    min-height: 1px;
+    float: left;
+    text-align: left;
+}
+
+.post-nav .next {
+    text-align: right;
+}
+
+.wrapper-footer {
+    margin-top: 50px;
+}
+
+.page-footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 80%;
+    color: #aaa;
+
+    nav a {
+        color: inherit;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+}
