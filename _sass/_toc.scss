@@ -7,7 +7,9 @@
     left: 0;
     top: 0;
     height: 100%;
+    z-index: -999;
 }
+
 .post .entry > span {
     /** hide auto generated toc sections */
     display: block;
@@ -24,7 +26,7 @@
     overflow-y: auto;
     font-weight: 300;
     font-size: 0.9em;
-    margin-bottom: 4em;
+    margin-bottom: 8em;
 
     ul {
         list-style: none;
