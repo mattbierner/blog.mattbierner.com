@@ -186,28 +186,6 @@ sup {
 // .main
 //
 
-.posts > .post {
-    padding: 1em 0;
-    border-bottom: 1px solid $lightGray;
-
-  .post-title {
-    text-align: left;
-    margin-top: -5px;
-    margin-bottom: 0.2em;
-  }
-
-  .entry {
-    font-size: 14px;
-  }
-
-  .entry > *:first-child {
-    margin-top: 0;
-  }
-}
-
-.posts > .post:last-child {
-  border-bottom: none;
-}
 
 .post {
     blockquote {

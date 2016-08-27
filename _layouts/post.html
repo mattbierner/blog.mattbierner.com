@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<div class="toc-container">
+    <nav class="toc">
+        <h1 class="toc-root"><a href="#">#</a></h1>
+        <div class="toc-content"></div>
+    </nav>
+</div>
+
 <div class="wrapper-masthead">
   <div class="container">
     <header class="masthead clearfix">
@@ -24,10 +31,6 @@ layout: default
     </header>
     
     <div class="entry">
-        <nav class="toc">
-            <h1><a href="#">{{ page.title }}</a></h1>
-            <div class="toc-content"></div>
-        </nav>
         <div class="content">{{ content }}</div>
     </div>
 

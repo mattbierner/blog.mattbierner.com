@@ -1,18 +1,25 @@
-$(function() {
+"use strict";
+
+$(function () {
     SetupToc();
+    $(window).scroll(OnScroll);
+    OnScroll();
 });
 
-var SetupToc = function() {
+var SetupToc = function () {
     $('.toc-content').toc({
         container: '.content',
-        smoothScrolling: false
+        smoothScrolling: false,
+        headerText: function (i, heading, $heading) {
+            return $heading.text();
+        }
     });
+};
 
-    $(window).scroll(function() {
-       var headerH = $('.entry').offset().top;
-       var scrollVal = $(this).scrollTop();
-       $('.toc').css({
-           'position': scrollVal > headerH ? 'fixed' : 'static'
-        });
+var OnScroll = function () {
+    var headerH = $('.entry').offset().top;
+    var scrollVal = $(this).scrollTop();
+    $('.toc').css({
+        'top': Math.max(headerH - scrollVal, 0) + 'px'
     });
 };

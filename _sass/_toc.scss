@@ -1,19 +1,13 @@
 /* ==========================================================================
    Table of Contents
    ========================================================================== */
-.post .entry > .toc {
-    position: static;
+.toc-container {
+    width: 50%;
+    position: fixed;
+    left: 0;
     top: 0;
-    width: 260px;
-    max-height: 100%;
-    margin-left: -300px;
-    margin-right: 0;
-    overflow-y: auto;
-    float: left;
-    font-weight: 300;
-    font-size: 0.9em;
+    height: 100%;
 }
-
 .post .entry > span {
     /** hide auto generated toc sections */
     display: block;
@@ -21,9 +15,20 @@
 }
 
 .toc {
+    position: absolute;
+    top: 0;
+    right: 370px;
+    min-width: 260px;
+    max-width: 400px;
+    max-height: 100%;
+    overflow-y: auto;
+    font-weight: 300;
+    font-size: 0.9em;
+    margin-bottom: 4em;
+
     ul {
         list-style: none;
-        padding-top: 0.2em;
+        padding-left: 2em;
         padding-right: 2em;
     }
 
@@ -34,24 +39,32 @@
     a {
         color: inherit;
     }
+
+    .toc-root {
+        text-align: center;
+        margin-bottom: 0.2em;
+    }
 }
 
 .toc-h2 {
-    padding-top: 0.2em;
-    border-top: 1px solid #ddd;
-
-    &:first-child {
-        border-top: 0;
-    }
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+    font-size: 1.1em;
+    text-align: center;
 }
 
-.toc-h3 {
-    margin-left: 0.6em;
-    padding-left: 1.2em;
+.toc-h2 + .toc-h3 {
+    border-top: 1px solid $lightGray;
+    padding-top: 0.6em;
+}
+
+li.toc-h3 {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
     text-indent: -0.8em;
-    &::before {
-        content: "\25e6  ";
-    }
+    font-style: italic;
+    line-height: 1.2;
 }
 
 .toc .toc-active {
