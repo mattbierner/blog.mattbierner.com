@@ -1,4 +1,4 @@
-*********************
+/*********************
     Post Header
 *********************/
 .masthead {
@@ -17,10 +17,9 @@
     }
 }
 
-//
-// .main
-//
-
+/*********************
+    Post Body
+*********************/
 
 .post {
     blockquote {
@@ -99,7 +98,7 @@
         margin-top: 1em;
     }
 
-    img {
+    img, iframe {
         display: block;
         margin: 0 auto;
     }
@@ -107,17 +106,17 @@
     figure {
         position: relative;
         padding-bottom: 0.8em;
-    }
 
-    figure img {
-        padding-bottom: 0.2em;
-        max-height: 100vh;
-    }
+        img {
+            padding-bottom: 0.2em;
+            max-height: 100vh;
+        }
 
-    figure figcaption {
-        text-align: center;
-        font-style: italic;
-        font-size: 0.9em;
+        figcaption {
+            text-align: center;
+            font-style: italic;
+            font-size: 0.9em;
+        }
     }
 }
 

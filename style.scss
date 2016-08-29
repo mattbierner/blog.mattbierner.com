@@ -28,13 +28,12 @@ html {
 
 body {
     -webkit-font-smoothing: antialiased;
-	background: $white;
+    background: $white;
     font-family: $helveticaNeue;
     font-size: 16px;
     line-height: 1.25em;
     color: $darkGray;
-    height: 100%;
-    max-height: 100%;
+    min-height: 100%;
 }
 
 .container {
@@ -43,6 +42,7 @@ body {
   padding: 0 10px;
   width: 100%;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $lato;
@@ -184,11 +184,7 @@ sup {
 /* ==========================================================================
  Media
    ========================================================================== */
-@media only screen and (max-width: 900px) {
-    .body-pagination  {
-        display: none;
-    }
-}
+
 
 @media only screen and (max-width: 700px) {
     .post .entry > * {

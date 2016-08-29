@@ -7,7 +7,7 @@
     left: 0;
     top: 0;
     height: 100%;
-    z-index: -999;
+    pointer-events: none;
 }
 
 .post .entry > span {
@@ -26,7 +26,7 @@
     overflow-y: auto;
     font-weight: 300;
     font-size: 0.9em;
-    margin-bottom: 8em;
+    pointer-events: auto;
 
     ul {
         list-style: none;
@@ -46,6 +46,10 @@
         text-align: center;
         margin-bottom: 0.2em;
     }
+}
+
+.toc-content {
+    margin-bottom: 4em;
 }
 
 .toc-h2 {
