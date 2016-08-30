@@ -1,0 +1,29 @@
+#about-page {
+    text-align: center;
+
+    h1 {
+        font-size: 2.6em;
+    }
+
+    h2 {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    & > * {
+        margin-bottom: 3em;
+    }
+}
+
+
+#about-contact {
+    .section {
+        margin: 1em 0;
+    }
+}
+
+#about-links {
+    a {
+        display: block;
+    }
+}
