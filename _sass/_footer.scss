@@ -3,6 +3,11 @@
    ========================================================================== */
 .footer-links {
     margin-bottom: 1.5em;
+
+    & > * {
+        display: block;
+        margin-bottom: 0.4em;
+    }
 }
 
 .footer-post {

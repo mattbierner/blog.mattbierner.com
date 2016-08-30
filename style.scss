@@ -10,6 +10,7 @@
 @import "reset";
 @import "variables";
 
+@import "about";
 @import "footer";
 @import "index";
 @import "post";
@@ -43,6 +44,9 @@ body {
   width: 100%;
 }
 
+.hidden {
+    display: none;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $lato;
