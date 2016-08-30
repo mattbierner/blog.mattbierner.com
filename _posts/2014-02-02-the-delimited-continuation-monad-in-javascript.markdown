@@ -311,8 +311,8 @@ var run = function(c, k) {
 
 ```js
 run(
-	bind(just(2), function(x) {
-    	return just([x, x]);
+    bind(just(2), function(x) {
+        return just([x, x]);
     }),
     function(x){ return x; }); // [2, 2]
 ```

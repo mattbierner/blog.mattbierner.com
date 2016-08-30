@@ -19,7 +19,7 @@ Putting this all together, here is the main list structure:
 
 ``` cpp
 template <
-	typename head,
+    typename head,
     template <typename> class get_rest>
 struct List {
     using first = head;
@@ -102,7 +102,7 @@ More complex transforms can be implemented using the basic operations. Here I pr
  
 ``` cpp
 template <
-	template<typename> class f,
+    template<typename> class f,
     typename l>
 struct ListMap {
     template <typename>
@@ -130,7 +130,7 @@ struct ListTake {
     template <typename>
     struct TakeImpl {
         using type = typename ListTake<
-        	count - 1,
+            count - 1,
             cdr<l>>::type;
     };
 
@@ -197,7 +197,7 @@ using concat = typename ListConcat<l1, l2>::type;
 
 ``` cpp
 template <
-	template <typename> class f,
+    template <typename> class f,
     typename x>
 struct Iterate {
     template <typename l>

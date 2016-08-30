@@ -63,7 +63,7 @@ listZipper = let
     construct = \element children -> children
 in
     zipper@(
-    	children,
+        children,
         construct);
 ```
 
@@ -166,9 +166,9 @@ var setLoc = Context.setLoc;
 
 down = \ctx ->
     ?isLeaf ctx 
-    	:NIL
+        :NIL
         :let
-        	cs = children ctx,
+            cs = children ctx,
             focus = first(cs),
             parent = ctx.loc,
             path = cons(extract ctx, ctx.loc.path),
@@ -211,7 +211,7 @@ var setSurround = \ctx left focus right ->
 
 right = \ctx ->
     ?isLast(ctx) :null
-    	:let rs = rights ctx in
+        :let rs = rights ctx in
             setSurround(ctx,
                 cons(extract ctx, lefts ctx),
                 first rs,

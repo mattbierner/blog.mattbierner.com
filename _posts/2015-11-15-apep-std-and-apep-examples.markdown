@@ -23,15 +23,15 @@ The port was pretty straightforward. Here's part of the original grammar:
 
 ```
 fetish-paragraph: 
-	statement-of-fetish-obj statement-of-nervousness [statement-of-fetish-obj3 | statement-of-fetish-obj2]
-	| transition statement-of-fetish-obj3  statement-of-fetish-obj statement-of-fetish-obj2
-	| statement-of-fetish-obj ITALIC(interjection) ". " statement-of-fetish-obj2 
-	;
+    statement-of-fetish-obj statement-of-nervousness [statement-of-fetish-obj3 | statement-of-fetish-obj2]
+    | transition statement-of-fetish-obj3  statement-of-fetish-obj statement-of-fetish-obj2
+    | statement-of-fetish-obj ITALIC(interjection) ". " statement-of-fetish-obj2 
+    ;
 
 statement-of-fetish-obj:
-	 "His " fetish-obj " " fetish-obj>is-positioned " " fetish-obj>on-top-of ". " 
-	| fetish-obj>demonstrative-pronoun>upcase-first " " fetish-obj "! We've never used " fetish-obj>article " " 	
-		fetish-obj " before. ";
+     "His " fetish-obj " " fetish-obj>is-positioned " " fetish-obj>on-top-of ". " 
+    | fetish-obj>demonstrative-pronoun>upcase-first " " fetish-obj "! We've never used " fetish-obj>article " "     
+        fetish-obj " before. ";
 ```
 
 And here's the Apep code:
@@ -43,15 +43,15 @@ const fetishParagraph = pep.declare(() =>
             pep.choice(statementOfFetishObj3, statementOfFetishObj2)],
         [transition, statementOfFetishObj3, statementOfFetishObj,
             statementOfFetishObj2],
-	    [statementOfFetishObj, md.italic(interjection), ". ",
-	        statementOfFetishObj2]));
+        [statementOfFetishObj, md.italic(interjection), ". ",
+            statementOfFetishObj2]));
 
 const statementOfFetishObj = pep.declare(() =>
     pep.choice(
-	    ["His ", fetishObj, " ", isPositioned(fetishObj), " ",
-	        onTopOf(fetishObj), ". "],
-	    [capitalize(demonstrativePronoun(fetishObj)), " ",
-	        fetishObj, "! We've never used ", fetishArticle, " before. "]));
+        ["His ", fetishObj, " ", isPositioned(fetishObj), " ",
+            onTopOf(fetishObj), ". "],
+        [capitalize(demonstrativePronoun(fetishObj)), " ",
+            fetishObj, "! We've never used ", fetishArticle, " before. "]));
 ```
 
 One tradeoff of embedding Apep grammars in Javascript is that the syntax is a bit more messy looking – the commas are especially annoying – but it's not bad really, and the power of writing in Javascript directly should be pretty clear.
@@ -82,9 +82,9 @@ Again, the Apep syntax is pretty close to the original:
  
 ```
 pluralise:
-	".*y$" -> "y$"/"ies"
-	".*s$" -> "$"/"es"
-	".*" -> "$"/"s"
+    ".*y$" -> "y$"/"ies"
+    ".*s$" -> "$"/"es"
+    ".*" -> "$"/"s"
 ;
 ```
  

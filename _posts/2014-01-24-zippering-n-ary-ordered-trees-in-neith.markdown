@@ -343,7 +343,7 @@ in {
 
 var buildArray = \pairs ->
     foldl(
-	\p, {key value} -> {
+    \p, {key value} -> {
         p[key] = value;
         return p;
     },

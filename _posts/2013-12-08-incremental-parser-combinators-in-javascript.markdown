@@ -35,8 +35,8 @@ Behind its monadic parser combinator interface, [Parse][parse] parsers are imple
 // The always parser does not consume any input and
 // completes successfully with a value.
 always = \x ->
-	\state, m, cok, cerr, eok, eerr ->
-		eok(x, state, m);
+    \state, m, cok, cerr, eok, eerr ->
+        eok(x, state, m);
 ```
 
 During execution, each continuation contains the rest of the parser execution for its completion condition. By capturing a continuation and abortively returning it (not calling any continuation), parsers can easily be manually paused and resumed at set points during execution:
@@ -48,12 +48,12 @@ var abort = \x -> \state, m, cok, cerr, eok, eerr -> x;
 
 /// Reify `eok` continuation and abort with it.
 var pause = \state, m, cok, cerr, eok, eerr ->
-	\x -> eok(x, state, m);
+    \x -> eok(x, state, m);
 
 var resumable = sequence(
-	character('a'),
-	pause,
-	character('b'));
+    character('a'),
+    pause,
+    character('b'));
 
 var partial = parse.run(resumable, 'ab');
 partial(); // ‘b’
@@ -63,9 +63,9 @@ We can even feed values into the paused parser and evaluate the continuation mul
 
 ```js
 var resumable = eager <| enumeration(
-	character(‘a’),
-	pause,
-	character(‘b’));
+    character(‘a’),
+    pause,
+    character(‘b’));
 
 var partial = parse.run(resumable, ‘ab’);
 
@@ -82,9 +82,9 @@ Parse.js parsers operates on [Nu][nu] streams of input. [Nu streams consist][nu-
 ```js
 // Stream of [1, 2, 3]
 var s =
-	stream(1, \() ->
-		stream(2, \() ->
-			stream(3, \() -> NIL)));
+    stream(1, \() ->
+        stream(2, \() ->
+            stream(3, \() -> NIL)));
 ```
 
 However, this definition requires every element of a valid Nu stream be accessible at construction. There is no way to define a Nu stream of something like user input because the stream cannot refer to values that do not yet exist (the keys a users will enter) when creating the initial stream. It is not clear what the head value should be, and updating the stream in response to user input would require mutation.
@@ -110,11 +110,11 @@ Backtracking presents one complication. Consider the parser:
 
 ```js
 var aa_or_ab = either(
-	attempt <| sequence(
-    	character(‘a’),
+    attempt <| sequence(
+        character(‘a’),
         character(‘a’)),
-	sequence(
-    	character(‘a’),
+    sequence(
+        character(‘a’),
         character(‘b’)))
 ```
 
@@ -165,24 +165,24 @@ The `Request` and `Session` data structures are straightforward:
 
 ```js
 var Request = function(chunk, k) {
-	this.chunk = chunk; // Requested chunk identifier
-	this.k = k; // Parsing continuation
+    this.chunk = chunk; // Requested chunk identifier
+    this.k = k; // Parsing continuation
 };
 
 
 var Session = function(done, k, chunks) {
-	this.done = done; // Is parsing complete?
-	this.k = k; // Parsing continuation
+    this.done = done; // Is parsing complete?
+    this.k = k; // Parsing continuation
 
-	// Array mapping chunk identifiers to chunk data.
-	this.chunks = chunks; 
+    // Array mapping chunk identifiers to chunk data.
+    this.chunks = chunks; 
 };
 
 Session.prototype.addChunk = \c ->
-	new Session(
-		this.done,
-		this.k,
-		this.chunks.concat(c));
+    new Session(
+        this.done,
+        this.k,
+        this.chunks.concat(c));
 
 Session.prototype.hasChunk = \id -> (id < this.chunks.length);
 
@@ -194,8 +194,8 @@ Session.prototype.getChunk = \id -> this.chunks[id];
 
 ```js
 var IncrementalState = function(chunk, state) {
-	this.chunk = chunk; // Working chunk id
-	this.state = state; // Inner state
+    this.chunk = chunk; // Working chunk id
+    this.state = state; // Inner state
 };
 ```
 
@@ -203,7 +203,7 @@ All the standard operations for input and position are forwarded to the inner st
 
 ```js
 IncrementalState.prototype.eq = \other ->
-	(other && other.chunk === this.chunk && 
+    (other && other.chunk === this.chunk && 
       this.state.eq(other.state));
 
 Object.defineProperties(IncrementalState.prototype, {
@@ -213,19 +213,19 @@ Object.defineProperties(IncrementalState.prototype, {
 });
      
 IncrementalState.prototype.setInput = \input ->
-	new IncrementalState(
-		this.chunk,
+    new IncrementalState(
+        this.chunk,
         this.state.setInput(input));
  
 IncrementalState.prototype.setPosition = \position ->
-	new IncrementalState(
-		this.chunk,
-		this.state.setPosition(position));
+    new IncrementalState(
+        this.chunk,
+        this.state.setPosition(position));
  
 IncrementalState.prototype.setUserState = \userState ->
-	new IncrementalState(
-		this.chunk,
-		this.state.setUserState(userState));
+    new IncrementalState(
+        this.chunk,
+        this.state.setUserState(userState));
 ```
 
 The inner state has no knowledge of chunks but operates on the working chunk’s data stream. Stream functions are also forwarded to the inner state:
@@ -321,9 +321,9 @@ provideString = \r, input -> provide(r, streamFrom(input));
 
 ```js
 finish = let
-	complete = \r -> r.k()
+    complete = \r -> r.k()
 in
-	\r -> complete(forceProvide(r, NIL));
+    \r -> complete(forceProvide(r, NIL));
 ```
 
 In order to handle backtracking with EOF correctly, finish must register an empty chunk for the end of the file. This is why `forceProvide` is required.
@@ -339,7 +339,7 @@ parseIncState = \p, state, ok, err -> let
     fail = \x, s -> new Session(true, (err, x, s)),
     
     k = \i -> parseState(
-    	p,
+        p,
         new IncrementalState(0, state.setInput(i)),
         suc,
         fail)
@@ -390,16 +390,16 @@ finish(provideString(r, 'ab'));
 #### EOF
 ```js
 var r = runInc(
-	then(string('abc'), eof)));
+    then(string('abc'), eof)));
 
 // returns 'abc'
 finish(provideString(r, 'abc')); 
 
 // throws Expected eof found 'd'
 finish(
-	provideString(
-		provideString(r, 'ab'),
-		'cd'));
+    provideString(
+        provideString(r, 'ab'),
+        'cd'));
 ```
  
 #### Inspecting Working Values
@@ -411,8 +411,8 @@ Incremental parsers can be finished multiple times. This is useful for providing
   
   var result;
   do {
-  	r = provideString(r, 'a');
-  	result = finish(r);
+      r = provideString(r, 'a');
+      result = finish(r);
   } while (result.length < 5);
   result; // ['a', 'a', 'a', 'a', 'a']
 ```

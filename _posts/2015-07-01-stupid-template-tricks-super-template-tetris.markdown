@@ -571,7 +571,7 @@ struct GridPlaceRow {
 
 template <typename combine, typename origin, typename row, typename grid>
 using grid_place_row = car<fold<
-	GridPlaceRow<combine>,
+    GridPlaceRow<combine>,
     List<grid, origin>,
     row>>;
 ```
@@ -591,7 +591,7 @@ struct GridPlaceGrid {
 
 template <typename combine, typename origin, typename other, typename grid>
 using grid_place_grid = car<fold<
-	GridPlaceGrid<combine>,
+    GridPlaceGrid<combine>,
     List<grid, origin>,
     typename other::rows>>;
 ```
