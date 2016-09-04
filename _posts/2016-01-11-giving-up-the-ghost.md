@@ -154,7 +154,7 @@ If you only want to download images hosted on your ghost instance, be sure to sp
 ## Today's an Excellent Day for an Exorcism
 I was initially afraid that the cost of migrating from Ghost to Jekyll would be high, but the process was not bad. The scripts detailed should handle most of the migration automatically. The biggest obstacle is probably going to be migrating over the look of your preferred Ghost theme, but this is also a good opportunity for a redesign, and there are plenty of great Jekyll themes out there.
 
-Overall, blogging with Jekyll is an improvement in almost every way. Not only does it eliminate all the concerns of hosting, but, in its simplicity, it actually makes writing and publishing content far easier. And, although I've been busting pretty hard on o' Ghost here, the same arguments apply to pretty much every other piece of blogging software out there.
+Overall, blogging with Jekyll is an improvement in almost every way. Not only does it eliminate all the concerns of hosting, but, in its simplicity, it actually makes writing and publishing content far easier. And, although I've been busting pretty hard on ol' Ghost here, the same arguments apply to pretty much every other piece of blogging software out there.
 
 Feel free to check out the [source of this blog on Github][src] if you are interested in how it is setup, or want a slightly more complete starting point than Jekyll-Now offers (or if you just just want to open a bug about some horrific grammar failure).
 

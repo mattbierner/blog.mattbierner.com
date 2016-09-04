@@ -8,7 +8,7 @@ Remember playing games on a gizmo like this?
 
 {% include image.html file="playing-the-atari-2600_thumb.jpg" %}
 
-Maybe you remember Grandma blasting the Qotile with her trusty Zorlon Cannon in good o' Yars' Revenge, dodging that Swirl like a pro, those sweet Atari sounds wafting through the house. But kids these days are too busy Squirtle-ing each other to give a damn about classics like *Asteroids* and *Ms. Pac-Man*. That's a shame. It's time introduce Atari to a new generation, to bring the 2600 into the IoT era. It's time to [Blot're][blotre] Atari.
+Maybe you remember Grandma blasting the Qotile with her trusty Zorlon Cannon in good ol' Yars' Revenge, dodging that Swirl like a pro, those sweet Atari sounds wafting through the house. But kids these days are too busy Squirtle-ing each other to give a damn about classics like *Asteroids* and *Ms. Pac-Man*. That's a shame. It's time introduce Atari to a new generation, to bring the 2600 into the IoT era. It's time to [Blot're][blotre] Atari.
 
 *Twitch Plays Pokémon* was a neat social experiment in its day, but it's far too text based for 2015; may as well be Pokémon by Telegraph for all The Modern Millennial cares. Text is the past, too restrictive and archival. Besides, text input makes for boring and predictable gameplay. Color is where it's at. And all the cool people have moved on from Gameboy to the Atari 2600, with its handcrafted microelectronics, small batch artisanal ROMs, and sustainable wood veneer. 
 

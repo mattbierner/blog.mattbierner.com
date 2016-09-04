@@ -16,7 +16,7 @@ description: "Visualizing Katamari Damacy gameplay input."
 
 *Katamari Damacy* is more than a game, it's the best argument I know against  anger and hatred. *Katamari Damacy* brings us together. *Katamari Damacy* reminds us that, in the end, we're all just stardust.
 
-So although the songs never really stopped echoing in my head, I recently figured it was high time to boot up the o' PS2 again and play me some Katamari. Not just for fun mind you, but for (computer) science! The result: the aptly named [*Na Naa, Na Na Na Na Naa Naa Naa Na*][site], an experiment visualizing the controller input for *Katamari Damacy*. It's very similar to my project [using *Spelunky* keyboard input to create a virtual etch-a-sketch][sketchy], but with joysticks instead of a keyboard, and drawing on a slowly expanding sphere instead of on a plane. <!--Also, no 🐍🐍🐍--> 
+So although the songs never really stopped echoing in my head, I recently figured it was high time to boot up the ol' PS2 again and play me some Katamari. Not just for fun mind you, but for (computer) science! The result: the aptly named [*Na Naa, Na Na Na Na Naa Naa Naa Na*][site], an experiment visualizing the controller input for *Katamari Damacy*. It's very similar to my project [using *Spelunky* keyboard input to create a virtual etch-a-sketch][sketchy], but with joysticks instead of a keyboard, and drawing on a slowly expanding sphere instead of on a plane. <!--Also, no 🐍🐍🐍--> 
 
 {% include image.html file="pretty8.png" %}
 
