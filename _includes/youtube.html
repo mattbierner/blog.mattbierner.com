@@ -1,0 +1,7 @@
+<figure>
+    <iframe width="{{ include.width }}" height="{{ include.height }}" src="{{ include.src }}" frameborder="0" allowfullscreen></iframe>
+
+{% if include.description %}
+    <figcaption>{{ include.description | Markdownify }}</figcaption>
+{% endif %}
+</figure>
