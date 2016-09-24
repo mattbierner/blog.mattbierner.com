@@ -56,7 +56,7 @@ To accomplish this, I opted to use the aptly named [Pulse Sensor][pulse]. This s
 
 {% include image.html file="sensor.jpg" description="Needs more tape" %}
 
-Now, as Apple cynically omitted a breadboard from recent iPhones (and wouldn't adding a breadboard be true courage my fine fruity friends?) I also hooked the Pulse Sensor up the Raspberry Pi. The Pulse sensor is analog so its signal is feed through an [mcp3008 an analog to digital converter][mcp3008].
+Now, as Apple cynically omitted a breadboard from recent iPhones (and wouldn't adding a breadboard be true courage my fine fruity friends?) I also hooked the Pulse Sensor up the Raspberry Pi. The Pulse sensor is analog so its signal is feed through an [mcp3008 analog to digital converter][mcp3008].
 
 The entire setup is wired up on a full-sized breadboard taped to the Raspberry Pi, because why not. 
 
@@ -100,7 +100,7 @@ Beats are shown as a red vignette on the screen, which quickly fades out before 
 
 After slipping the headset on, it took the pulse sensor around ten seconds or so to stabilize and start picking up my heart beat reliably. The rate was a little under once a second, around 80bmp.
 
-The red flashing did capture my attention for a moment, but then faded from notice while the beeping became part of the background noise. You would naturally expected that it would be very hard to see much of anything through all that red – just as you would expect that all that incessant pumping of blood and throbbing of organs would, given their vital nature, dominate one's concerns – but, such matters quickly took a back seat as I began to explore and observed the world about me. 
+The red flashing did capture my attention for a moment, but then faded from notice while the beeping became part of the background noise. You would naturally expected that it would be very hard to see much of anything through all that red – just as you would expect that all that incessant pumping of blood and throbbing of organs would, given their vital nature, dominate one's concerns – but, such matters quickly took a back seat as I began to explore and observe the world about me. 
 
 Walking about and interacting with the world was fairly easy and familiar, since the camera perspective at least somewhat matches normal vision. The latency however is noticeable, especially when I quickly turned my head.
 
@@ -110,9 +110,9 @@ Having reassured myself that my heart was beating fairly reliably, I next figure
     width="560" height="315" src="https://www.youtube.com/embed/mGtTrngjpGw" 
     description="Quick demonstration of the view and showing increasing my heartbeat with a bit of exercise. The ethernet cable was only used to capture the video. It is not normally required." %}
 
-This mighty labor sent the red vignette into a strobe-like flashing. As I rested and watched the flashing slow back down and stabilize again, I felt very in-tune with my body in an odd sort of way. This also started me thinking, and that's when the real trouble began.
+This mighty labor sent the red vignette into a strobe-like flashing. As I rested and watched the flashing slow back down and stabilize again, I felt very in tune with my body in an odd sort of way. This also started me thinking, and that's when the real trouble began.
 
-Now, when it comes to the subject of blood, I am prone to growing at least somewhat lightheaded, if not going full swoon like any proper Victorian lady. It's not even the sight so much as the concept. When I contemplate veins or arteries or generally anything circulatory, my own blood rather quickly flees it's loftier dwellings for lower and less introspective organs. There's something humorously pathetic about a creature that cannot think too closely about the very processes and substances that sustain it without passing out, but so it goes. And given that just taking my pulse by hand can induce this general lightheadedness, in hindsight, this experiment was perhaps a poor choice.
+Now, when it comes to the subject of blood, I am prone to growing at least somewhat lightheaded, if not going full swoon like any proper Victorian lady. It's not even the sight so much as the concept. When I contemplate veins or arteries or generally anything circulatory, my own blood rather quickly flees its loftier dwellings for lower and less introspective organs. There's something humorously pathetic about a creature that cannot think too closely about the very processes and substances that sustain it without passing out, but so it goes. And given that just taking my pulse by hand can induce this general lightheadedness, in hindsight, this experiment was perhaps a poor choice.
 
 Watching the red flashing, I began to imagine the blood that it represented. All that blood, and those veins, and my heart, pumping away. It all seemed rather fragile, and a bit too close for comfort.
 
