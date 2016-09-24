@@ -143,7 +143,7 @@ Perhaps watching my heartbeat was now a bit old hat, or perhaps because this vie
 ## Thoughts
 Although this device did a great job letting me know that I was alive, I can't help but feel that it's best not to be constantly reminded of such things. Better perhaps to just enjoy the experience, and worry about the hows and whys later.
 
-I am biased of course, but I also feel the device offers an interesting take on self-quantification. For me, the movement's traditional obsession with data and optimization reeks of immortality, and most devices for the purpose are just plain boring. This device on the other hand makes you more aware of your body, in a much more direct and enlightening way. It's one thing to read `65bpm` on a screen, and quite another to see the world flash into existence each time your heart beats, and to see this happen sixty five times a minute. I certainly know which one I find more truthful, even if I don't always like what the truth suggests.
+I am biased of course, but I also feel the device offers an interesting take on self-quantification. For me, the movement's traditional obsession with data and optimization reeks of immortality, and most devices for the purpose are just plain boring. This device on the other hand makes you more aware of your body, in a much more direct and enlightening way. It's one thing to read `65bpm` on a screen, and quite another to see the world flash into existence each time your heart beats, and to see this happen sixty five times a minute. I certainly know which one I find more truthful, even if I don't always like what this truth suggests.
 
 
 
