@@ -170,6 +170,7 @@
     font-size: 19px;
     line-height: 1.4;
     letter-spacing: -.003em;
+    padding-bottom: 2em;
 
     h1 {
         font-family: $serif;
@@ -193,6 +194,17 @@
 
         &:before {
             content: "\2042";
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+    }
+
+    hr.end {
+        padding: 8em;
+
+        &:before {
+            content: "END";
             text-align: center;
             width: 100%;
             display: block;
