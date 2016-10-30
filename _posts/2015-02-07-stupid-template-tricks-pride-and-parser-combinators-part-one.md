@@ -10,7 +10,7 @@ It is a truth universally acknowledged, that a template metaprogrammer in posses
 
 C++ compile time parsing. What kind of masochist would do that? Well, consider the humble `printf` statement. A "standard" compiler has no clue what the contents of the printf format string actually mean. A format string is a string formatting domain specific language, one that `printf` evaluates at runtime. That means that the type of the expected arguments are only known at runtime, and this, at best, results in unnecessary run time overhead. At worst, it can introduce fun bugs.
 
-If we could parse the format string at compile time, we could determine the types of each expected argument, and use this information for type checking or to optimize the implementation. And modern compilers such as Clang do often implement such `printf` type checking. But what about custom domain specific languages? Sure, we could try extending the compiler again, but CGG isn't likely to accept a [Brainfuck][bf] source checker patch anytime soon. So instead, we'll write parsers using the magic of C++ template metaprogramming.
+If we could parse the format string at compile time, we could determine the types of each expected argument, and use this information for type checking or to optimize the implementation. And modern compilers such as Clang do often implement such `printf` type checking. But what about custom domain specific languages? Sure, we could try extending the compiler again, but GCC isn't likely to accept a [Brainfuck][bf] source checker patch anytime soon. So instead, we'll write parsers using the magic of C++ template metaprogramming.
 
 
 This post covers the first part of a simplified, but fairly powerful, library of compile time [parser combinators][parsercomb]. From a small set of core parser combinators, complex parsers can be constructed and run at compile time against programmer defined strings. The complete code is [available on Github][src] (including a sneak peek at part 2).
@@ -23,7 +23,7 @@ So, before descending into the madness that is C++ template metaprogramming, it 
 ### Parsers
 In the parser combinator model, a parser is just a function that maps an input state to a result.
 
-``` cpp
+```javascript
 result parser(state) { ... }
 ```
 
@@ -35,7 +35,7 @@ Input state consists of:
 
 The result of a parser indicates if the parser failed or succeeded, along with a result value and result state. When a parser fails, the result value is usually a message describing why parsing failed. For successes, the result value could be anything, perhaps an AST fragment or some template data structure.
 
-```cpp
+```javascript
 // parse the character 'a'
 result ParseA(state) {
     if (state.input[0] == 'a')
@@ -50,32 +50,33 @@ Parser combinators, as the name suggests, are just higher order functions that c
 
 Some of these just abstract out common functionality that is duplicated in many parsers. Instead of writing a parser for each character, along the lines of `ParseA`, using parser combinators, we extract the concept of parsing a character to a reusable and declarative function.
 
-```cpp
+```javascript
 parser ParseChar(character) {
     return function(state) {
         if (state.input[0] == character)
             return Success(character, state.next());
         else
-            return Failure("Expected 'a'", state)'
+            return Failure("Expected 'a'", state);
     }
 }
 ```
 
 Parser combinators may also operate on parsers themselves, composing one or more parers together to create a parser with new behavior. The `Next` combinator for example runs parser `a`, then parser `b` if `a` succeeded.
 
-```cpp
+```javascript
 parser Next(a, b) {
     return function(state) {
         var aResult = a(state);
         
         if (aResult.type == Success)
             return b(aResult.state);
-        return aResult;
+        else
+            return aResult;
     }
 }
 ```
  
-### Its Functions All the Way Down
+### It's Functions All the Way Down
 All this is not intended teach you everything you'll ever need to know about parsers and parser combinators, there are plenty of good tutorials out there that attempt that. The point is that parser combinators are not scary. They are just functions. But that's also what makes them so powerful.
 
 
@@ -113,7 +114,7 @@ using stream = std::integer_sequence<char, chars...>;
 Still, `stream` is not the most programmer friendly interface, as strings must be specified character by character:
 
 ```cpp
-using hello_world = stream<'H', 'e', 'l', 'l', ..., '!'>;
+using hello_world = stream<'H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!'>;
 ```
 
 And that quickly becomes tedious. But a modern compiler can automatically split strings into characters using a user defined literal operator:
@@ -131,11 +132,11 @@ Now we can write:
 using hello_world = decltype("Hello world!"_stream);
 ```
 
-For functions, type inference replaces the need for decltype.
+For functions, type inference replaces the need for `decltype`.
 
 ```cpp
 template <char... chars, typename... Args>
-void my_printf(stream<chars>, Args&&... args) { ... };
+void my_printf(stream<chars...>, Args&&... args) { ... };
 
 my_printf("int=%d"_stream, 5);
 ```
@@ -200,7 +201,7 @@ enum class ResultType
 };
 ```
 
-The enture result structure:
+The entire result structure:
 
 ```cpp
 template <ResultType suc, typename x, typename s>
@@ -298,10 +299,7 @@ Testing out `always`, we'll use the `Value` type to encode values as types.
 
 ```cpp
 template <typename T, T x>
-struct Value {
-    static const T value = x;
-    using type = T;
-};
+struct Value { };
 
 template <typename T, T x>
 struct Printer<Value<T, x>>
@@ -317,7 +315,7 @@ struct Printer<Value<T, x>>
 using p = always<Value<int, 3>>;
 using result = run_parser<p, decltype("abc"_stream)>;
 
-Printer<result>::Print(std::cont) // 3
+Printer<result>::Print(std::cout) // 3
 ```
 
 ### Bind
@@ -367,7 +365,7 @@ template <typename result>
     };
 ```
 
-The parser `p` can be any parser. The function `f` must be a metafunction, a structure the defines an `apply` template structure that returns the next parser to run 
+The parser `p` can be any parser. The function `f` must be a metafunction, a structure that defines an `apply` template structure that returns the next parser to run 
 
 ```cpp
 struct addOne {
@@ -382,7 +380,7 @@ struct addOne {
 using p = bind<always<Value<int, 2>>, addOne>;
 using result = run_parser<p, decltype(""_stream)>;
 
-Printer<result>::Print(std::count) // 3
+Printer<result>::Print(std::cout) // 3
 ```
 
 But if the parser `p` fails, `f` is never invoked. 
@@ -391,7 +389,7 @@ But if the parser `p` fails, `f` is never invoked.
 using p = bind<never<Value<int, -1>>, addOne>;
 using result = run_parser<p, decltype(""_stream)>;
 
-Printer<result>::Print(std::count) // -1
+Printer<result>::Print(std::cout) // -1
 ```
 
 To handle failure, we'll take a look at the `Either` combinator in part two.
@@ -399,7 +397,7 @@ To handle failure, we'll take a look at the `Either` combinator in part two.
 ### Next
 `next` is a special case of `bind` that is useful for unconditional sequencing. For `next`, the function in `bind` always returns the same value, regardless of the output from parser `p`.
 
-``` rettyprint lang-cpp
+```cpp
 template <typename T>
 struct constant {
     template <typename...>
@@ -479,7 +477,7 @@ template <char c>
 struct character : token<equals<char, c>, characterError<c>> { };
 ```
 
-When the match fails, `chracter` produces an error message indicating the expected value along with the actual value:
+When the match fails, `character` produces an error message indicating the expected value along with the actual value:
 
 ```cpp
 template <char c>
@@ -493,13 +491,13 @@ struct characterError {
 
 ```cpp
 using r1 = run_parser<character<'x'>, decltype("x"_stream)>;
-Printer<r1>::Print(std::count) // x
+Printer<r1>::Print(std::cout) // x
 
 using r2 = run_parser<character<'x'>, decltype(""_stream)>;
-Printer<r2>::Print(std::count) // At:0 Expected:x Found:eof
+Printer<r2>::Print(std::cout) // At:0 Expected:x Found:eof
 
 using r3 = run_parser<character<'x'>, decltype("a"_stream)>;
-Printer<r3>::Print(std::count) // At:0 Expected:x Found:a
+Printer<r3>::Print(std::cout) // At:0 Expected:x Found:a
 ```
 
 ### Character Range
@@ -507,7 +505,7 @@ Character range matches any character in a range.
 
 ```cpp
 template<char begin, char end>
-struct characterRanage : token<inRange<begin, end>, characterRangeError> { };
+struct characterRange : token<inRange<begin, end>, characterRangeError> { };
 
 template<char begin, char end>
 struct inRange {
@@ -533,7 +531,7 @@ struct characterRangeError {
 We can use `characterRange` to define parsers for common character sets, such as digits and letters.
 
 ```cpp
-struct digit : characterRange<'0', '9'> { };
+struct anyDigit : characterRange<'0', '9'> { };
 ```
 
 ### Eof
@@ -542,10 +540,12 @@ struct digit : characterRange<'0', '9'> { };
 `eof` matches when the input stream is empty.
 
 ```cpp
+struct None { };
+
 struct eof {
     template <typename s>
     struct apply {
-        using type = std::conditional<s::input::size() == 0,
+        using type = std::conditional_t<s::input::size() == 0,
             Result<
                 ResultType::Success,
                 None,
@@ -555,15 +555,16 @@ struct eof {
                 ExpectError<
                     typename s::position,
                     decltype("eof"_stream),
-                    typename s::input>>,
-                s>::type;
+                    typename s::input>,
+                s>
+            >;
     };
 };
 ```
 
 
 ## Next Time
-Next time, we'll take a look at the `either` primitive, along with some useful choice and sequencing combinators. Using these parses, we'll implement a compile time parser for a real world domain specific language, [Apple's auto format visual layout language][visual-format] .
+Next time, we'll take a look at the `either` primitive, along with some useful choice and sequencing combinators. Using these parsers, we'll implement a compile time parser for a real world domain specific language, [Apple's auto format visual layout language][visual-format] .
 
 
 [src]: https://github.com/mattbierner/stt-parser-combinators
@@ -576,6 +577,6 @@ Next time, we'll take a look at the `either` primitive, along with some useful c
 
 [visual-format]: https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/AutolayoutPG/VisualFormatLanguage/VisualFormatLanguage.html
 
-[parsercomb]: http://en.wikipedia.org/wiki/Parser_combinator
+[parsercomb]: https://en.wikipedia.org/wiki/Parser_combinator
 [bennu]: http://bennu-js.com
 [parsec]: https://hackage.haskell.org/package/parsec
