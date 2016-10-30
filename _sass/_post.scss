@@ -36,7 +36,7 @@
 }
 
 .post-meta {
-    color: #aaa;
+    color: $lightGray;
     font-size: 0.9em;
     padding-bottom: 0.4em;
 }
@@ -58,7 +58,7 @@
 
     footer {
         margin-top: 3em;
-        text-align: center;        
+        text-align: center;
          
         .edit-link {
             display: block;
@@ -83,11 +83,11 @@
         margin-left: 0;
         margin-right: 0;
         border-style: none;
-        border-bottom: 1px solid $lightGray;
+        border-bottom: 1px solid $lighterGray;
     }
 
     h2 {
-        border-bottom: 1px solid $lightGray;
+        border-bottom: 1px solid $lighterGray;
         line-height: 1.2em;
         text-align: center;
         margin-bottom: 0.4em;
@@ -154,12 +154,48 @@
     padding: 20px 0;
     text-align: center;
     font-size: 80%;
-    color: #aaa;
+    color: $lightGray;
 
     nav a {
         color: inherit;
     }
     nav a:hover {
         text-decoration: underline;
+    }
+}
+
+
+.post .entry .story {
+    font-family: $serif;
+    font-size: 19px;
+    line-height: 1.4;
+    letter-spacing: -.003em;
+
+    h1 {
+        font-family: $serif;
+        font-size: 32px;
+        margin: 6em 0 2em 0;
+        text-align: center;
+    }
+
+    h1:first-of-type  {
+        margin-top: 2em;
+    }
+
+    .chapter-heading,
+    hr {
+        color: $gray;
+    }
+
+    hr {
+        margin: 2em 0;
+        border: none;
+
+        &:before {
+            content: "\2042";
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
     }
 }

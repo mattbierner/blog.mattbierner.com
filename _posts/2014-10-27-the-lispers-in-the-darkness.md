@@ -1,10 +1,12 @@
 ---
 layout: post
+type: story
 title: The Lispers in the Darkness
-date: '2014-10-27 07:09:43'
+date: '2014-10-27'
 series: halloween
 description: Happy Halloween!
 ---
+
 In the empire of Functional stands the outpost of Lisp. Many pilgrims pass through Lisp every season, but few stay long. Something about Lisp's proximity to certain uncharted regions, regions of which no sane Functional traveller dare speak, keep most from staying more than a day or two. And, for all their politeness, one can't help but feel that the citizens of Lisp secretly detest outsiders and look down on their unclean syntaxes. 
 
 Lisp was established long before anyone in Functional can remember. Early histories chronicle amazing technological advancements and speak of Lisp's great promises. But in more modern times, it has become a backwater, surpassed in population and ambition by most neighbors. Still, Lisp attracts a handful of new devotees every year, extremists drawn to its monastic styling and who still believe the promises of old.
@@ -13,7 +15,7 @@ Most had forgotten Lisp completely, when the rumors began to spread through Func
 
 Oh, that I too could have remained among the ignorant, and that Lisp could have remained but a dot on the map. Yet, in light of uncomfortably similar events now occurring elsewhere, I feel that I must make some attempt to expose the facts behind the *Crisis* to the world, no matter the dreadful implications of my account. It may comfort you to believe that I was hallucinating, or caught up in some shared psychosis, and I hope to God that was the case, yet certain details make me doubt such simplified explanations more and more every day.
 
-<h1 align="center">I</h1>
+# I
 I arrived in Lisp the third week of the *Crisis*. A pilgrim fresh off the Haskellian Heights, what struck me first was the color of the village, or, more precisely, the lack thereof. Everything appeared muted, as if covered in a thick layer of greasy ash. The animals and citizens, even the structures, all had an unplaceable air of unhealthiness in their countenances. Pilgrims traveling in the opposite direction warned me to bypass Lisp, but only now that I saw the town did their warnings make sense. I never intended to linger, just long enough to rest and restock, and the gloom I encountered that first hour gave more haste to this desire.
 
 I took a small room in the village's only inn. As he took me to my room, the innkeeper's eyes flitted about with a half-crazed quality, like some small and cornered game, and he was very insistent on two points: that I be back before dark and that I should, under no circumstances, open any window. Having heard only vague whisperings of the *Crisis* on my journey, I pressed the innkeeper as to the reason behind these rather extreme precautions. I confess that, at the time, I chalked most of these rumors up as insularism and backwardness, although I was struck by something dreadful in the oft repeated phrase, *compiletime evaluation*. It took a bit of work to get him talking, but he soon became eager to share the details with me.
@@ -30,7 +32,7 @@ Such colorful stories sparked my curiosity, and I resolved to see these strange 
 
 That I could have heeded the pilgrims' warnings and bypassed that abominable town. To never even imagine such corruption's of functionalism and syntax as I have seen, corruptions that drove me into eight years of madness, and even now leave me despairing the future.
 
-<h1 align="center">II</h1>
+# II
 The programmer lived on the edge of town, in a simple environment that abutted the rotting and stagnant waters of the Swamp of Imperative. The REPL where the parenthesis had been stored stood around one hundred yards from the swamp. It was already late afternoon when I arrived at her environment, but the dark clouds cut off all pretenses of day and drained the countryside of all remaining color.
 
 Not a soul was out at this hour and I saw not a single glimmer of life in any environment I passed. Finally spotting the programmer's environment, I wondered how anyone could ever program there. The two story structure looked to have been abandoned decades ago, with nature slowly pulling its hulking skeleton back into the decaying ground. I gave it a wide berth and headed back to the REPL.
@@ -39,7 +41,7 @@ The REPL was thirty yards behind the environment and, even from a distance, I co
 
 In the murk of the clouded dusk, I looked back one last time. I fancy I spied another distinct shape, also unplaceable but somehow familiar, arranged in the grass not twenty yards from the swamp's edge. A sort of clump of four circles. And a strange matting of grass near the REPL, only now apparent in the filtered light of dusk, seemed to lead off uncomfortably in that direction.
 
-<h1 align="center">III</h1>
+# III
 I took a light supper that evening, of which even that I had hardly the stomach for more than a few mouthfuls. After the discovery of that morning, Lisp was in a state of self imposed curfew, and not a soul was brave enough to venture outside after dark. Even I, once so skeptical, could not have been bribed to do so.
 
 A fellow traveller passing through Lisp sat down at my dinner table and started up a bit of conversation. Something about his eyes, not necessarily their color but something about the spectrum of light they emitted, immediately made me dislike him, although I was altogether too polite to dismiss him at once. The talk started innocently, with inquiries into my travels and destination. But soon he turned to the darker areas of programming. And when he brought up the *Imperative*, I suggested that we move to a more private table, as I noticed the barkeep nervously eying us.
@@ -66,7 +68,7 @@ And I too was chanting. Chanting and screaming one last prayer of devotion on th
 *Nothing is beyond compiletime computation!*<br/>
 *Nothing is beyond ...*
 
-<h1 align="center">IV</h1>
+# IV
 What follows I can only relate secondhand, for as much as I wrack my mind, the period of time from that night of hallucinatory revelation to my awakening in the Swamps of Imperative is fully lost to me. Perhaps this is for the best.
 
 The people of Lisp, at least those who choose to remember, tell of a raving man who appeared mysteriously in the village the next day. He accosted a few people in town, but his speech was so verbose and garbled that none could understand him. But few argue that he made frequent allusion to that most terrible phrase, *compiletime evaluation*, and his hateful diatribes were filled with ominous prefixing of *meta*: *meta-values*, *meta-functions*, *meta-programs*, *meta-programming*, and *meta-evaluation*. The True Keepers of the Paren were summoned, and banished him from Lisp. A few would later recall that as this man was dragged away, his shouts of a *compiletime list* still haunt them to this day.
@@ -87,7 +89,7 @@ Several times I fancied that I could discern hulking masses, of geometric config
 
 I have traveled Functional many times, yet have never seen anything comparable to these basalt structures and the unanswered pleas for help carved into them, and I hope never to see them again for as long as I live. Yet everyday, it seems that explorers report finding similar structures on all the major continents, even in the Antarctic where ancient Man surely never trod. Momentarily lost in thought, I began to become acutely aware of a sound, unmistakable in the stillness of that vile swamp. The sound of chanting.
 
-<h1 align="center">V</h1>
+# V
 To this day, I can not say why I did not turn around upon first hearing that debauched chanting, why I did not run the other direction back to safety. But my behavior was the opposite. I flew down the trail reinvigorated, the way growing clearer and the chanting growing louder, taking no notice of exhaustion or physical pain. Louder and louder the crescendo grew, until I could no longer even hear my own pantings and gasping for breath. Just as it seemed the chanting could grow no louder, it halted. The apprehension that filled that silence made it somehow even worse than those demonic chants.
 
 I emerged into a clearing under a black sky. Not the blackness of rain or of night, but the blackness of nothing, of a void from which all light had been drained. A quarter mile off, and about three hundred and fifty feet above the ground, shone a single dim light atop one of those dreadful basalt structures. Even at my distance I could discern humanoid forms silhouetted against it, dancing and swaying offensively about the light. Silently, I crept closer and closer, hidden by the darkness, until I reached the base of that massive pyramid. Scaling those cyclopean steps would have been out of the question, had I not spotted a series of ropes to assist my climb. Still, ascending that great pyramid was challenging and I constantly feared that my struggles would be overheard.
@@ -104,7 +106,7 @@ The other tentacle began to reach in my direction. It could not have been more t
 
 But pain did not slow my descent, for I did not even have the courage to check if I was being pursued. Not more than twenty feet from the ground, again came that horrible flash of light, followed by another series of even more violent pressure waves that threw me off the ledge. The last thing I remember is seeing the ground, no longer bathed in that unearthly light but now a comforting black, rushing up towards me.
 
-<h1 align="center">Afterword</h1>
+# Afterword
 It has been eleven years since the end of the *Crisis*. Doctors tell me that I was catatonic the first two years afterwards, and it took another four before anyone could bring me back from ravings of *struct*, *template*, and *typename*, or quell my frenetic scribbling of the curious angular parenthesis and the revolting quadruple dots. Slowly, they brought me back to the good Functionalism. Even after I was released eight years ago, I have steadfastly stuck to the truth of what happened in Lisp, much to my family's distress, although they seldom ventured to ask any details of that night. I would have been content to take these memories to my grave, if I had not come across recent articles that describe distressingly similar circumstances. 
 
 Despite years of study and consultation with the most well regarded Functional academics, I cannot say definitively what the Cult of C++ attempted to summon that night, or what would have happened if that *thing* had made it to our side. But every new revelation points in one distressing direction. A direction first described by the stranger in Lisp and recounted to me by the innkeeper. Of a functional language, stitched together from the most obscene imperative techniques, and run at *compiletime*! And I know that they will try to summon this monstrosity again.

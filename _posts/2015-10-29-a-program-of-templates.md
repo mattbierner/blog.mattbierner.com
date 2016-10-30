@@ -1,11 +1,13 @@
 ---
 layout: post
+type: story
 title: A Program of Templates
-date: '2015-10-29 03:11:21'
+date: '2015-10-29'
 series: halloween
 description: Happy Halloween!
 ---
-<h1 align="center">I</h1>
+
+# I
 I awake alone, to a house in silence. The dying fragments of an unspeakable dream still hang in the cool night air, and I lie entranced for a time – heart pounding – half trying to remember that nightmare, half frightened of what such remembrance may hold. A stabbing headache draws me back to reality. My trusty Nokia Communicator reads ten o'clock, December 31st, 1999. New Year's Eve. How did I come to be here and what became of the Lisp expedition? I last remember hacking through that accursed swamp – rations dwindling, fever growing stronger by the hour – but since then? A blank, a void of shifting shadow filled with unintelligible urges and alien sensations just beyond my waking comprehension. Yet one thought cuts through this fog with vital urgency: Edwin and Enoch, my children. 
 
 Distant melodic thumps of bass and distorted bursts of drunken merriment waft through the open windows; echoes from another world. Indeed, everyone in the great city of Lambda – heart of the Functional empire – seems to be out celebrating the coming millennium. And yet my thoughts are only of my children. They are vitality and purity made flesh, two pieces of my heart beating outside my body. I can still see their eager eyes staring up at me as I explained the art of function currying to them for the first time. After Lily's passing, I used to tiptoe into their room every night just to make sure they were safe. I would never have been able to go on without them.
@@ -46,7 +48,7 @@ Through the bedroom window, Researchdome blots out a patch of the sky. The real 
 
 Oh, Edwin and Enoch! What wonders stand before you? What fabulous discoveries lie forgotten in the darkness below? Safely tucked away from the world, only the saboteur stands between us. I will deal with him. Then, let us walk through that wondrous dreamscape together.
 
-<h1 align="center">II</h1>
+# II
 Father built the Mandus Programming Company through sheer force of will. While I was his heir, the Company was always his firstborn and favorite. And with the IPO in 1982, he finally had the capital he needed to realize his vision. On the outskirts of Lambda, he brought together the most forward-thinking technologists, urban planners, artists, and social scientists to build a campus of continuous innovation and invention. No expense was spared. The massive geodesic Researchdome is the heart of campus, rings of office buildings radiating outwards along spokes of walkways and parks. At the edge of the circle lie the chic shopping districts and posh dormitories, built exclusively for the programmers and their families. "Now they will never have to stop working", he used to laugh. The look in his eyes told that he was only half joking. As a sign of good faith, he even moved our family into a sprawling compound on the east side of campus. It was an exciting time and place to grow up.
 
 Where once thirty thousand programmers worked and ate and lived, I alone now walk. This arterial pathway should take me directly to Researchdome, although something compels me to stick to the shadow and creep slowly along. I know it had been bad, but this is beyond anything I had imagined. The gardens are overgrown with vile weeds, metal sculptures and other works of corporate art lie twisted and rusting into the earth, and the opulent marble facades of the office buildings are covered with barbs of hateful looking graffiti. In the starlight, the lines of black spray paint dance and contort into uncomfortable forms that I dare not study in any detail. A charred pile of timbers and melted plastic is all that remains of the Building 6 coffee house. Lily... Our first date... The memories are still too raw. My boys need me. Press on Mandus! Press on!
@@ -71,7 +73,7 @@ While typing out a reply, something catches my ear. There it is again! Faint but
 
 I desperately want to question Ceppix further, but the lofted entryway of Researchdome lies within sight and I have little desire to linger outside any longer.
 
-<h1 align="center">III</h1>
+# III
 Even in its degraded state, the eight story geodesic Researchdome still inspires awe. Its shell is made entirely of glass and most of the walls and supports inside are similarly transparent. At night as a child, I remember how the brightly lit floors almost seemed to float suspended in space. Such transparency was more than aesthetic. Every employee was encouraged to bring their ideas to the lab and use its resources to turn them into products. The Mandus Programming Company had a strong hacker culture and the Researchdome games were always the highlight of the year. I can still hear Father's booming voice announce, "Ladies and gentlemen, boys and girls... codin' time's here!" Outside of the games, any given Saturday evening found the lab just as packed as during normal work hours. Employees were encouraged to spend all of their free time here. Father of course made sure that the company owned everything produced in the lab.
 
 It is odd. The building both repulses me and draws me in, like a hyperlink to one of those horrible shock websites. No good awaits inside, and yet I must proceed.
@@ -106,7 +108,7 @@ While it was bad enough to look upon such a monstrosity, its suggestion of a hum
 
 I am close now. Deeper, ever deeper. 
  
-<h1 align="center">IV</h1>
+# IV
 Tangled bunches of wire run downwards and all but choke off the passage; their subtile snakelike hiss hinting at the toxic data they carry. Limestone gives way to basalt and the jagged nature of the shaft suggests a volcanic vent more than any work of man.
 
 I step down but my foot finds nothing. With a sharp gasp, I cling to the ladder and take a moment to recover myself. Did I miss a side passage somewhere? But the walls are solid. Carefully, I lower myself to the lowest rung, hoping to spot something in the darkness below. By the dim light of my Communicator, I can just make out a few fastenings that should support the ladder. The clean nature of the break and shiny burrs suggests that this had been no accident. The saboteur! Still, down seems to be the only way forward. I gingerly grab a thick bundle of wire and lift myself up until the ladder no longer supports my weight. The wires stretch and creak but hold firm, so I continue my descent in this matter.
@@ -133,7 +135,7 @@ My vision narrows until only the unchanging faces of my children float in the da
 
 In dreams I walk with you. In dreams I talk to you. In dreams you're mine, all of the time. In dreams. Only in dreams.
 
-<h1 align="center">V</h1>
+# V
 Dim points of light flicker softly in the black void above. It takes me a few moments to realize that I am no longer underground but looking up at the night sky. Do beings live out there among the stars? I pray to God that it is a cold and dead universe that we too may one day join. A brilliant explosion jolts me fully awake and fills the sky with a rainbow of sparks. My Communicator reads 12:01. The new millennium is upon us, the millennium of Ceppix. 
 
 A small shadow dashes across the road in front of me, followed closely behind by a hulking form. One of those beasts, but out here in the city! I recognize the neighborhood too. Lily and I used to walk these streets together, and enjoy stopping in all the quaint shops. But the place is now a waking nightmare.  Packs of the beasts run from home to home, while others busy themselves graffitiing every surface with those hateful symbols – *for*, *do*, *class*, ... – until it all strings together into a program of obscene verbosity and complexity that defies any functional comprehension. Oh no. Oh God no. What have I done?! 
@@ -162,7 +164,7 @@ Remaining here any longer is just too dangerous. I think again of that trapdoor,
 
 It is almost relieving to be back in the dark subterranean chambers of the New Campus. I grab a wrench and survey the row of cages stretching off down the hallway, ready and waiting. A sound like the ocean, a billion keyboards clacking. Of what could they be hacking? Are they SYNing, are they ACKing? Are their commits source a-tracking? The light is truly lacking, so the danger must be stacking! Is the grisly codebase plaquing?! Are immortal souls a-cracking?! Yes!!! My fear is surely stacking, 'cause the hackers keep on hacking!
 
-<h1 align="center">VI</h1>
+# VI
 Lily, my sweetest Lily, how had it come to this? It all leads back to that night, your final night on earth. You came to me whispering words of blasphemy, arrayed in *var* and decked with *function*, the golden brackets in your hands full of the abominations and filthiness of your *object orientation*. I managed to quiet you before you awoke the boys, and quickly called a doctor, but the ECMA had spread too widely. At least your suffering is over now... Edwin and Enoch can remember you as you were before. But me? Even my happiest memories are tainted by those last few painful hours. Why didn't I notice the signs? That you may not see what I have seen, hear what I have heard; rest forever contented knowing that I will save them. I will save them all.
 
 Blue light flashes from a side passage. I tighten my grip on the wrench. On a small stage at the front of the room stands one of those beasts. The wall behind him glows with the hateful symbols but, by now, I am more used to the sight of *C++* and can better control the sickness it instinctively brings on. The audience is not so fortunate. They strain at their bonds and let out tortured moans through their gags, and I watch the last few struggle vainly as the beasts fasten them into their plastic folding chairs. I know some of the faces too! Old employees and shopkeepers from the city! And now the presentation truly begins.
@@ -197,7 +199,7 @@ I watch Mandus rage in denial. I watch Mandus sink to his knees and sob. There i
 
 Sprinkle stardust in their tea so that they may dream forever. Two limp forms on the alter. Little chests rise and fall. The first rays of the sun... it'll all be worthwhile, he whispers.
 
-<h1 align="center">VII</h1>
+# VII
 The black pyramid. Blue waters cascade from its apex. Their small bodies hold so much of the stuff, almost black by the dawn light as it seeps into those engravings...
 
 I am Ceppix's instantiation.

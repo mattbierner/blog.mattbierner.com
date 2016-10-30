@@ -148,11 +148,11 @@ sup {
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: $lighterGray;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: $lighterGray;
 }
 
 // Nicolas Gallagher's micro clearfix hack

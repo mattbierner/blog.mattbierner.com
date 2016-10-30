@@ -52,6 +52,7 @@
     margin-bottom: 4em;
 }
 
+.toc-h1,
 .toc-h2 {
     margin-top: 1em;
     margin-bottom: 0.2em;
@@ -60,7 +61,7 @@
 }
 
 .toc-h2 + .toc-h3 {
-    border-top: 1px solid $lightGray;
+    border-top: 1px solid $lighterGray;
     padding-top: 0.6em;
 }
 
