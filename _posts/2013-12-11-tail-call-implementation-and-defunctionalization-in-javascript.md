@@ -18,12 +18,12 @@ const fac = n => facImpl(n, 1)
 
 Large inputs would throw a `Maximum call stack` error, although Javascript's number representation ensures the output for factorial becomes meaningless well before then. As I'm only interested in the relative performance of different tail call implementations, I've purposely coded the functions to stop when Infinity is reached (inputs under `~170` should be used).
 
-## Trampolined Tail Call Implementations
+# Trampolined Tail Call Implementations
 [Trampolines][trampoline] are one way to implement tail calls in Javascript. Trampolined code makes tail calls by directly returning a continuation for the call. A trampoline function externalizes control flow by repeatedly invoking tail continuations until finding a result.
 
 The tail continuation must contain all of the information to continue the computation. A good trampoline implementation should be able to return any type, including functions. Several ways to implement a basic trampoline are detailed and their performance is compared. [The complete jsperf tests can be found here][external-tail-calls]. 
 
-### Bind Tail Call
+## Bind Tail Call
 `Function.prototype.bind` is the easiest way to capture the tail continuation. Function `tailBind` creates a tail continuation that will invoke function `f` with a set of arguments. Tail continuations are marked with a `_next` property to distinguish them from regular function values.
 
 ```js
@@ -58,7 +58,7 @@ const facBind = (function() {
 
 The use of `Function.prototype.bind` creates a lot of extra function objects. This is the worst performing tail call implementation.
 
-### Simple Array
+## Simple Array
 Suspecting that `Function.prototype.bind` is causing performance problems, this next approach inlines the behavior of a call to a bound function. Tail calls are stored as an array, with a function at the head and arguments as the remaining elements. 
 
 ```js
@@ -86,7 +86,7 @@ var facArgs = (function(){
 
 This [roughly doubles performance][external-tail-calls], but we can do better. A closer inspection of `trampolineArgs`  reveals that three functions are called for every tail call: `Function.prototype.apply` which calls `Function.prototype.call` which invokes the continuation.
 
-### Smarter Array Storage
+## Smarter Array Storage
 A simple array does not store data in a convenient format for making calls. By storing the data differently, one extra call can be eliminated. 
 
 `tailArray` creates tail continuations from a function `f` and an array of arguments `args`.
@@ -119,7 +119,7 @@ const facArray = (function() {
 
 This further increases performance [by about 1.5x][external-tail-calls]. This two call `trampolineArray` is best general purpose approach I could develop to invoke tail calls. Using different a storage object however offers one final performance improvement. 
 
-### Tail Call Object
+## Tail Call Object
 Instead of storing tail call data in an specially marked array, they can be stored in a tail call object. `Tail` contains the same elements from the Smarter Array Storage.
 
 ```js
@@ -150,10 +150,10 @@ const facTail = (function(){
 The resulting code is about [4x faster][external-tail-calls] than the original bind implementation.
 
 
-## Further Optimization
+# Further Optimization
 Even the Tail Call Object requires two calls for every tail call in order to unpack arguments. Sacrificing flexibility allows reducing this to a single call.
 
-### Defunctionalization 
+## Defunctionalization 
 Instead of supporting generic continuations for any function and any arguments, the tail continuation is defunctionalized into a data structure that specifically identifies a continuation.
 
 Defunctionalized factorial uses two continuations: `fac` for continuing computation and `done` for when a result has been found.
@@ -185,7 +185,7 @@ Performance is [about 10x][defunctionalized-tail-calls] the original bind tail c
 
 As a side note, one interesting property of the defunctionalized factorial tail continuations is that they can be serialized.
 
-### Tail Call Classes
+## Tail Call Classes
 If we encode tail calls by their arity, the logic of `Function.prototype.apply` can be inlined. This is a good compromise that is more general than defunctionalization but still uses a single call for the tail call. 
 
 ```js
@@ -233,7 +233,7 @@ var facClass = (n) =>
 
 Performance is [poorer than][defunctionalized-tail-calls] the defunctionalized calls, but still around 2x greater than the fastest other tail call implementation.
 
-### Single Generic Tail Call Type
+## Single Generic Tail Call Type
 Finally, instead of defining a class for each arity, we can trade some performance to use a single tail call type again. 
 
 ```js
@@ -264,7 +264,7 @@ let facGeneric = (n) =>
 
 Performance is [significantly worse][defunctionalized-tail-calls] than Tail Call Classes but better than the other alternatives.
 
-## Closing Thoughts
+# Closing Thoughts
 Tail calls should only be used when necessary. Even the fastest tail call implementation is many times slower than direct recursion, and tail calls make debugging very difficult. When tail calls are necessary, different implementations have drastically different performance characteristics.
 
 The Tail Call Object is best for the most generic tail call requirements, while Tail Call Classes require more code but are the best overall solution. For specific cases, defunctionalization will offer the greatest performance, although it usually makes code less maintainable.

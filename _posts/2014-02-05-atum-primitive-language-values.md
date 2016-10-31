@@ -7,10 +7,10 @@ Here I cover the primitive language values and operations used in [Atum][atum]. 
 
 Atum minimizes the interface between the host and hosted languages. Implementing ECMAScript in ECMAScript, this design choice results in some unnecessary code, but it also allows the the behavior of the hosted language to be easily modified.
 
-## Basic Language Values
+# Basic Language Values
 [Section 8 of ECMAScript 5.1][ecma51] defines the basic ECMAScript language values types.
 
-### Types
+## Types
 ECMAScript language values may be one of six types: `Undefined`, `Null`, `Boolean`, `String`, `Number`, or `Object`.
 
 Atum defines an enum of for these six types in `atum::value::type`. All primitive value objects have a `type` property set to one of these values
@@ -28,7 +28,7 @@ exports.OBJECT = 'object';
 });
 ```
 
-### Base Value 
+## Base Value 
 All hosted language values extend `Value`. Atum uses [Bes][bes] heavily to automate record definition.
 
 ```js
@@ -42,7 +42,7 @@ exports.Value = record.declare(null, []);
 });
 ```
 
-### Undefined
+## Undefined
 The undefined type is used for uninitialized values and has a single instance: `UNDEFINED`. 
 
 ```js
@@ -64,7 +64,7 @@ exports.UNDEFINED = Undefined.create();
 ```
 
 
-### Null
+## Null
 The null type has a single instance: `NULL`.
 
 ```js
@@ -85,7 +85,7 @@ exports.NULL = Null.create();
 });
 ```
 
-### Boolean
+## Boolean
 The boolean type has two values: `TRUE` and `FALSE`. `create` converts a host language boolean to a hosted boolean, while its inverse `isTrue` converts a hosted boolean to a host boolean.
 
 Boolean values support a single operation, `logicalNot`.
@@ -126,7 +126,7 @@ exports.logicalNot = function(a) {
 });
 ```
 
-### Number
+## Number
 ECMAScript numbers are represented using the [IEEE 754][ieee754] floating point arithmetic standard. Unlike `Null`, `Undefined`, and `Boolean`, Atum creates a distinct value instance for every number value. Number instances store a host Javascript number and perform calculations using this number.
  
 ```js
@@ -190,7 +190,7 @@ exports.gte = function(l, r) { return boolean.create(l.value >= r.value); };
 });
 ```
 
-### String
+## String
 String values are also stored in distinct instances based on the host string:
 
 ```js
@@ -241,7 +241,7 @@ exports.charCodeAt = function(s, index) {
 });
 ```
 
-## Objects
+# Objects
 
 Objects are a special case in Atum. Internally, ECMAScript objects consist of:
 * A meta object that defines the object's behavior.
@@ -251,7 +251,7 @@ Objects are a special case in Atum. Internally, ECMAScript objects consist of:
 
 Atum meta object are simply subclasses of `Object` that implement the required interface. The properties are stored in a map of host strings to property descriptors. 
 
-### Object Value
+## Object Value
 The base Atum Object record contains fairly little logic.
 
 ```js
@@ -307,7 +307,7 @@ Object.prototype.getEnumerableProperties = function() {
 });
 ```
 
-### Property Descriptors
+## Property Descriptors
 ECMAScript objects store their properties using property descriptors ([ECMAScript5.1 8.10][ecma51]). A property descriptor may hold a property's value, but it also manages property metadata and can can define accessors that decouple a property from a memory value .  
 
 ```js
@@ -377,7 +377,7 @@ exports.isGenericDescriptor = isGenericDescriptor;
 };
 ```
 
-## Value Type Conversion
+# Value Type Conversion
 [Section 9][ecma51] defines the ECMAScript type conversions. `atum::value::type_conversion` only handles primitive values and not objects, since objects may need to call their member functions as part of their type conversion.
 
 ```js
@@ -500,7 +500,7 @@ exports.toUint32 = function(num) {
 });
 ```
 
-## Value Equality
+# Value Equality
 The last important module is `atum::value::compare` for comparing primitive values.
 
 ```js

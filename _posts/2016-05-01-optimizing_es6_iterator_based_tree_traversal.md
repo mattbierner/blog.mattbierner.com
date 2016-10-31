@@ -16,7 +16,7 @@ Now this post isn't actually going to be about writing the fastest tree traversa
 * [Benchmark source][source]
 
 
-## The Players 
+# The Players 
 Consider a generic k-ary tree:
 
 ```js
@@ -43,7 +43,7 @@ We cannot mutate the underlying data structure and will optimize for performance
 
 All benchmarks are taken against a perfect, 8 level ternary tree with around ten thousand nodes.
 
-### The Baseline
+## The Baseline
 First up, using a generator: 
 
 ```js
@@ -61,7 +61,7 @@ And we can perform a full 20 traversals a second too! That's like 199,998 more n
 Let's take this as the baseline.
 
 
-## Stack 
+# Stack 
 But we can do better. Why recurse when we can iterate? 'Tis the imperative way.
 
 So goodbye call stack! we hardly knew thee, let us while away *(sorry)* with a stack of our own devising:  
@@ -83,7 +83,7 @@ The code grows less clear, but it's not unreasonable yet. And this small change 
 
 `shift` and `unshift` are used because this is a pre-order traversal, but cast aside such draconian ordering to loll in push/pops  *(so, so sorry)* for a solid 5x performance boost. A million nodes per second. Amazing!
 
-### Iterator
+## Iterator
 But say, do we even need a generator? While there's much coder cred to be gained by bedecking functions in `*` and yielding whenever possible, perhaps there's something to be found in more handcrafted and artisanal code that dispenses with such niceties.
 
 So, let's roll our own iterator using the same stack based approach as above:
@@ -114,7 +114,7 @@ Every time I write a stateful iterator, I die a little inside.
 But such mortality is well worth the price of admission, for our hand rolled iterator is 2.5 times faster than the stack based generator, and around 12.5 times baseline. Now we're playing with power.
 
 
-### Modified Stack
+## Modified Stack
 One more optimization.
 
 Observe that our example 8 level perfect ternary tree has around 6500 leaf nodes and 3300 interior nodes. This means that around 9800 nodes are shifted onto and off of the stack during iteration (because we are using `unshift.apply`, `unshift` is only actually called 3300 times but it moves 9800 elements.) With a small rewrite, we can get away with only pushing internal nodes onto the stack.
@@ -169,7 +169,7 @@ With this optimization, the iterator that previously contented itself to a measl
 But we can do better, and where we're going we don't need arrays. Onwards!
 
 
-## List
+# List
 We only touch the first element of the stack, so why not just track that element instead of the entire stack array? Time to link us some lists.
 
 Here's a generator using a linked list based stack:
@@ -191,7 +191,7 @@ Rather dense, but the basic premise is to track the head of the linked list with
 Initial results using the generator are disappointing: slower than the stack based generator and only 3.75 times baseline.
 
 
-### Iterator
+## Iterator
 Despair not! Perhaps the linked list is a retiring fellow who only reveals its true grace among more classy company.
 
 Here's the same logic, rewriten as an iterator:
@@ -219,7 +219,7 @@ By Object's prototype! 2x the best stack based implementation and 80 times basel
 
 Sure the code is a little more involved but it's not unmanageable and, if you are authoring a library, the trade off is well worth it.
 
-### Modified Linked List
+## Modified Linked List
 Now, having seen the performance boost offered by the modified stack over the regular stack, we apply a similar optimization to the linked list, expecting  big results. Here's what that looks like:
 
 ```js
@@ -268,7 +268,7 @@ Alas! We find the same, or even slightly worse, performance over the regular lin
 The linked list iterator at 80 time baseline was the best I was able to achieve, although you can boost things a few more points through aggressive micro optimizations, plus even more points if you perform the traversal in any order.
 
 
-## Continuations
+# Continuations
 A quick diversion. So much with all this stateful nonsense. Let's look at writing a stateless iterator, suitable for more functional-style programming.
 
 (An aside to this aside: What is a generator? In many respects, `function*` and friend `yield` are but one use case of delimited continuations. Why not add delimited continuations to your language and leave the yielding to the standard library? Delimited continuations == Rodney Dangerfield.)
@@ -304,7 +304,7 @@ On the plus side, we can branch, save, and pass around such iterators however we
 
 This initial continuation base traversal is about 20 times faster than baseline. This puts it far ahead of all generator based solutions covered, and between the regular stack based iterator and the modified stack based iterator in terms of performance.
 
-### Optimization
+## Optimization
 We can apply a similar, leaf node optimization that worked so well for the modified stack to the continuation based code. Here we check if any children exist before actually calling `visitChildren`, drastically cutting the number of function calls:
 
 ```js
@@ -332,7 +332,7 @@ const visit = (node, k = noop) => {
 
 This pushes us up to 27 times baseline, about 1.5 times the regular continuation code. Getting closer, but the 80x high-water mark is still a ways off.
 
-### Crazy Optimization
+## Crazy Optimization
 We grow desperate. We must rise above the stateful filth! Time to bring out the big guns: defunctionalization.
 
 Defunctionalization is exactly what it sounds like: turning higher order-functions (the continuations in this case) into data. Instead of passing functions as continuations, we pass continuation objects that are applied by an `apply` function. (I once wrote a riveting piece about [defunctionalization and tail calls in Javascript](/tail-call-implementation-and-defunctionalization-in-javascript/) and I'm fairly certain that at least ten people have read the first paragraph.)
@@ -367,7 +367,7 @@ What we sacrifice in clarity we make up for in speed. The defunctionalized conti
 A fun side effect of defunctionalization is that, so long as all state is serializable, you can serialize the continuations too. The technique does not scale well and is rather obscure however, and I find is only suitable for optimizing inner-loop type code. Not quite fast enough to overcome the linked list based iterator, but a good technique to keep handy if more functional-style Javascript is your thing.
 
 
-## Conclusion
+# Conclusion
 Javascript is not C++. Abstractions have overhead and cost. It's always important to know these performance tradeoffs and know when it is appropriate to optimize. All the implementations offered here are pretty much the same algorithmically but, with just a few changes, we went from 200,000 nodes per second to 16 million nodes per second. Not bad.
 
 {% include image.html file="perf-chart.png" %}

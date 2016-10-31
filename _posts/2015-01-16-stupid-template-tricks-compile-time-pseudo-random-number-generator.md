@@ -10,7 +10,7 @@ What with all those pesky NSA backdoors, runtime random number generation is jus
   
 In this post, I'll walk through the implementation of a simple, deterministic pseudo-random number generator using a [linear feedback shift register (LFSR)][lfsr]. The complete source is [available here][src].
 
-## State 
+# State 
 A LFSR is a simple state machine, with the state itself stored as string of binary cells. A runtime C++ LSFR implementation would typically use a `uint16_t` or `uint32_t` to hold the state, but us  metaprogrammers scoff at such fixed size naïvety. No, we'll encode our state as a `std::integer_sequence` of booleans.
 
 ``` cpp
@@ -38,7 +38,7 @@ struct to_int<T, value, bitset<x, xs...>> :
             bitset<xs...>>::value> { };
 ```
 
-## Indices and List Operations
+# Indices and List Operations
 The other component that defines a LFSR is its taps. In a [Fibonacci LFSR][lfsr], the taps are indices of the bits that are sampled to calculate the next input value. Every sample is xored together to produce the next input.
 
 We'll also use an `std::integer_sequence` to store the indices.
@@ -130,7 +130,7 @@ template <size_t N, typename T>
 using take_t = typename take<N, T>::type;
 ```
 
-## The LFSR
+# The LFSR
 The Linear feedback shift register itself has two components: a `bitset` state and an `indices` of taps. `value` converts the current state to a integer value of type `T`.
 
 `next` advances the state by one. First, the new most significant bit is calculated using `get_next` on the current state. This new value is consed onto the head of new state. Then, to complete the shift, we trim the last value off the end of the state, leaving a bitset of the same length as the original with its contents shifted down by one.
@@ -167,7 +167,7 @@ struct get_next<state, indices<tap, taps...>> :
         (get<tap, state>::value) ^ (get_next<state, indices<taps...>>::value)> { };
 ```
 
-## Output
+# Output
 Bringing it all together, here's a very simple LFSR of 5 bits with an initial state of `01011`. The two taps are at indexes `2` (the third bit) and `4` (the last bit).
 
 ``` cpp

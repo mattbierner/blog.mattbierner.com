@@ -22,7 +22,7 @@ Naturally, C++ templates offer a perfectly reasonable solution: parse the litera
 
 This post overviews the implementation of a user defined literal for `std::integral_constant`. The result support binary, octal, and hex literals, along with the `'` digit separator. You can find the complete code [on Github][src].
 
-## Why?
+# Why?
 `std::integral_constant` nicely augments [expression templates](expression templates c++ tutorial) and empowers embedded domain specific languages. Consider this toy example:
 
 ```cpp
@@ -49,7 +49,7 @@ using lit = std::integral_constant<int, x>;
 
 Much more natural to write `5_lit`. And that's where this post come in.
 
-## What's in a Literal
+# What's in a Literal
 For an integer literal, we've seen that the `_lit` operator from the top of this post does not work. Thankfully the C++ standard committee recognized this oversight and provided an alternative user defined literal form, the [raw user defined integer literal][ud-literal], which takes the characters that make up the literal as template arguments.
 
 ```cpp
@@ -81,7 +81,7 @@ std::is_same<
 
 The compiler does ensure that only valid characters are included in a given integer literal, so you can't ever encounter a `9` in an octal literal or a `2` inside of binary literal. But if we want to support the standard correctly, we'll have to support all of these literal forms.
 
-## Computing the Base and Getting the Digit Values
+# Computing the Base and Getting the Digit Values
 First off, let's get the raw literal characters into a more standardized format. Every integer literal is just a series of individual digits with integer values, along with the base of the numeral system being targeted.
 
 `ParseNumber` takes raw literal data and identifies the numeral system using prefix, passing along the rest of the digits to `BaseAndDigits`.
@@ -161,7 +161,7 @@ std::is_same<
 ```
 
 
-## Better Exponentiation Through Folding 
+# Better Exponentiation Through Folding 
 The last step is to combine digits back into an integer. A first attempt will probably look something like this:
 
 ```js

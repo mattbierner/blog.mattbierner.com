@@ -12,14 +12,14 @@ It turns out that I'm [not the first person](https://github.com/knome/metabrainf
 
 In just around 200 LOC, you can create a fairly reasonable and clear Brainfuck implementation using C++ templates. And, while implementing Brainfuck is certainly not very practical, metaprogramming in the same vein actually [does have some interesting applications](http://www.boost.org/doc/libs/1_56_0/doc/html/xpressive.html).
 
-## Overview
+# Overview
 This post covers expressing a Brainfuck evaluator from the ground up. The complete source code can be [found here](https://gist.github.com/mattbierner/090a80d25259b6472827).
 
 I'll start by defining a few helper types and operations that will make the rest of the implementation more clear. Comprehensibility and generality are favored over brevity and cleverness. 
 
 Let's get started.
 
-## I/O Buffers
+# I/O Buffers
 Before expressing language semantics, we need to encode a compile time character buffer. These buffers will be used as both the actual Brainfuck I/O buffers, and also to hold program source code.  
 
 Our buffer type will encode specific characters sequence as unique types. The C++14 addition `std::integer_sequence` does exactly this, encoding a variadic parameter list of values as a type.
@@ -108,7 +108,7 @@ seq_append<xy>::value; // 'x'
 seq_append<typename seq_cdr<xy>::type>::value; // 'y'
 ```
 
-## Memory Cells
+# Memory Cells
 Brainfuck models program memory as an infinite list of cells. Each cell stores a fixed bit number and is initialized to 0. There is [no standard cell size](http://en.wikipedia.org/wiki/Brainfuck#Cell_size), but one byte is the most common.
 
 The `Cell` type encodes a Brainfuck memory cell storing an eight bit number as a type. A few helpers on the `Cell` type allow transforming's cells.
@@ -154,7 +154,7 @@ template <typename L>
 using list_cdr = typename L::rest;
 ```
 
-## Memory
+# Memory
 We also need a way to encode a position in a `List` of cells. Since `List` is an immutable list of values, a [zipper](http://en.wikipedia.org/wiki/Zipper_(data_structure)) turns out to be a good abstraction for this.
 
 
@@ -186,7 +186,7 @@ This also has the advantage of allowing us to encode bi-directionally infinite m
 using Memory = Zipper<List<Cell<>>, Cell<>, List<Cell<>>>;
 ```
 
-## State
+# State
 The complete state of our Brainfuck interpreter is captured in a 3-tuple of memory, input buffer, and output buffer.
 
 ``` cpp
@@ -212,7 +212,7 @@ template <iochar... input>
 using initial_state = State<Memory, char_string<input...>, char_string<>>;
 ```
 
-## Basic Semantics
+# Basic Semantics
 With our data structures and operations defined, we can now express the semantics of Brainfuck.
 
 The `Semantics` type maps program source code to a `eval` templated type that encodes the semantics of the input program. The `eval` template type takes a `state` and outputs a new `state`.
@@ -282,7 +282,7 @@ struct Semantics<'<', rest...> {
 };
 ```
 
-## I/O Semantics
+# I/O Semantics
 Input and output is also easily expressed using the previously defined operations.
 
 The output operation `.` reads the value held in memory at the current location, and appends this value to the output buffer.
@@ -315,7 +315,7 @@ struct Semantics<',', rest...> {
 };
 ```
 
-## Loop Semantics
+# Loop Semantics
 Looping is the only somewhat complicated part of the evaluator, as it involves matching symbols in the program source.
 
 When the `[` symbol is encountered, we check if the value stored at the current memory cell is zero. If it is, then we skip to the next instruction after the matching `]` in the source code. Otherwise, we enter the body of the loop, and when the matching `]` is encountered, jump back to execute the original `[` operation again.
@@ -389,7 +389,7 @@ struct Semantics<'[', rest...> {
 };
 ```
 
-## Finishing Touches
+# Finishing Touches
 Brainfuck treats any character besides `+-<>.,[]` as a comment. One final partial specialization of `Semantics` makes all other character noops.
 
 ``` cpp
@@ -408,7 +408,7 @@ using evaluate = typename prog::template eval<initial_state<input...>>::out;
 ```
 
 
-## Hello World!
+# Hello World!
 Here is 'Hello World!' in Brainfuck.
 
 ``` cpp

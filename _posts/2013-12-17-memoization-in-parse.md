@@ -7,7 +7,7 @@ The first version of [Parse-ECMA][parse-ecma] had some performance problems. Par
 
 Memoization in [Bennu][bennu] caches and reuses parser results, and is especially important with backtracking. I overview the problem of memorizing monadic parser combinators and detail the implementation of memoization in Bennu.
 
-## Memoization Problem Overview
+# Memoization Problem Overview
 The top result for ["Javascript Memoization"][jsmemo] features this gem:
 
 ```js
@@ -27,7 +27,7 @@ which, besides being completely incorrect as a general purpose solution (look at
 None of the existing Javascript memoization solutions I found were appropriate for Bennu.
 
 
-### Why We Need Memoization
+## Why We Need Memoization
 Consider the parser:
 
 ```js
@@ -41,7 +41,7 @@ Clearly running `reallyExpensiveParser` is really expensive, so we should minimi
 
 But consider what happens if the first `reallyExpensiveParser` succeeds and then the input `'b'` is encountered. When the `character 'a'` parser fails, `attempt` backtracks and the second choice of the `either` is run. This runs `reallyExpensiveParser` again with the same input to get the same value.
 
-### Issues with Argument Based Memoization
+## Issues with Argument Based Memoization
 Standard memoization memoizes a function on its input, mapping arguments to cached values. But this wont work for the inner continuation functions used in Bennu's implementation.
 
 ```js
@@ -53,9 +53,9 @@ always = \x ->
 
 In the example with `reallyExpensiveParser`, the two calls to `reallyExpensiveParser` have the same `state`, but different `cok`, `cerr`, `eok`, and `eerr` continuations. Memorizing the inner function on all of the inputs would be completely worthless because we could only reuse a parser's results if it is called with the exact same continuations.
 
-## Bennu Memoization
+# Bennu Memoization
 
-### Threading an Immutable Memoization Table Through Parsers
+## Threading an Immutable Memoization Table Through Parsers
 
 In order to implement memoization functionally, the memo table that maps inputs to results must be threaded through the parsers. Bennu's monadic interface makes this change easy. Only base parsers have to be changed, those constructed using combinators will automatically gain this behavior, so no third party code will have to change.
 
@@ -85,12 +85,12 @@ either = \p q ->
 
 Top level calls to parsers are free to pass in an existing memoization table or provide a empty one.
 
-### Memoization Key
+## Memoization Key
 
 Using the argument set as the memoization table lookup will not work, so what should the memoizer use for keys? `m` is shared between all parsers, so one part of the key must identify the target parser. The other part must be the state, since the state contains all the information that could effect the parser's output: position, input stream, and user data.
 
 
-### What To Store
+## What To Store
 
 The memoize a parser, unlike a regular function, we can't cache the returned result of a parser in the memo table. Parsers are continuation based, and evaluating a continuation will evaluate the rest of the program:
 
@@ -107,10 +107,10 @@ Rather than store the result of `eok(x, state, m)`, memo table entries hold data
 
 Reconstructing a parser's behavior requires: the value succeeded with, the state succeeded with, and how the parser completed (`eok`, `err`, `cok`, `cerr`). Since different continuations may be passed to a memoized parser, the continuation functions themselves cannot be cached.
 
-## Basic Implementation
+# Basic Implementation
 You can find the complete implementation in [Bennu][bennu].
 
-### The Memo Parser
+## The Memo Parser
 
 I decided early in development that Bennu would use manual memoization. This is mainly for performance reasons; memoization adds time and space overhead, so memorizing results from parsers like `always 3` seems wasteful. 
 
@@ -156,7 +156,7 @@ When lookup fails, parser `p` is run with a special set of continuations that in
 
 `\_ m cok _ _ _ -> cok(x, pstate, m)` is the value stored in the table. It is a parser that, when fed a set of continuations, always continues with a value `x` and state `pstate` from the outer continuation, and the action represented by the outer continuation.  
 
-### A Simple Memo Table
+## A Simple Memo Table
 A linked list is the most simple way to represent the memo table functionally. This is the structure Bennu originally used:
 
 ```js
@@ -176,15 +176,15 @@ Memoer.lookup = \cell key -> {
 Memoer.update = \m key val -> new Memoer(key, val, m);
 ```
 
-## Optimization
+# Optimization
 
-### Tree Storage
+## Tree Storage
 
 One problem with the simple memoization table is that lookups are linear. Lookup performance can be improved by storing entries in a ordered tree. Position is the obvious choice for sorting the tree data, with each node containing a key, value map. 
 
 Bennu uses [Seshet][seshet] for this tree. Seshet stores data in an immutable [AVL tree][avltree]. A self balancing tree is especially important for parsers because position is constantly increasing and an unbalanced tree would quickly degrade into a linked list.  
 
-### Pruning Unreachable Results
+## Pruning Unreachable Results
 
 Another observation is that many memoized entries become unreachable during parsing. Once a parser has committed on a branch, all entries that came before the current position are unreachable. Parsers commit immediately, except for `attempt` which holds its branch open for backtracking.
 

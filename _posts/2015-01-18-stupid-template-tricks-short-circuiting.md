@@ -52,12 +52,12 @@ in instantiation of template class 'is_even<1>' requested here
 
 {% include image.html file="shortcircuit1.jpg" description="Compiler errors like this make Johnny Five very upset" %}
 
-## The problem
+# The problem
 Looking bottom up through the error stack, we see that `is_even<1>` is instantiated first. This should produce: `1 > 1 && is_even<1 - 2>::value`, which evaluates to `false && is_even<1 - 2>::value`, which should just be `false`. Right?
 
 But `is_even` assumes that the `&&` operator follows the same evaluation rules in a template context as it does in a regular program, including short circuiting if the lefthand side is `false`. And the `&&` does follow the same rules here. Except for the key detail that short circuiting operates on expressions, while template evaluation takes place during an earlier stage of compilation. And that is why the compiler keeps instantiating `is_even` until it blows up, even though it is clear to us that that instantiation is not needed. 
 
-## Thunks
+# Thunks
 Our contrived `is_even` program can best be fixed with template specialization, which is arguably more clear as well:
 
 ```
@@ -106,7 +106,7 @@ is_even<1>::value; // false
 is_even<3>::value; // false
 ```
 
-## Further Work
+# Further Work
 If you are working only with types, and not values or template template parameters, a generic thunk can be encoded as:
 
 ```cpp

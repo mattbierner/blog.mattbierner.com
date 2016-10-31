@@ -8,7 +8,7 @@ ECMAScript requires highly interconnected and mutable objects, but [Atum][atum] 
 This post discusses the problem with host ECMAScript references, overviews the design of a simple persistent memory system, and implements memory and references using the [interpreter monad previously defined][state-monad]. 
 
 
-### The problem
+## The problem
 ECMAScript doesn't directly expose a C++ style reference type but, like Java, passes all objects by reference. Unfortunately, ECMAScript object references will not work properly for persistent data structures.
 
 Persistent data structure updates create new objects instead of mutating existing ones. This means that an ECMAScript reference to a persistent object will always point to the same instance, even when the referenced persistent object is conceptually updated.
@@ -33,10 +33,10 @@ t.value = 10;
 h.next.value; // 10
 ```
 
-## Indirection to the Rescue
+# Indirection to the Rescue
 Implementing a memory system for the interpreter requires solving two problems: how to represent references and how to implement a memory system to dereference and update referenced values.
 
-### Handles
+## Handles
 The first step to separate the reference from the referenced value. The reference itself will be a [handle][handle], an immutable and opaque structure that uniquely identifies a referenced object (two equivalent handles always refer to the same object).
 
 Using handles in data structures is straightforward; every ECMAScript object reference to an updatable object is replaced by a handle that referes to the updatable object. We also need a mechanism to allocate unique handles.
@@ -50,7 +50,7 @@ var ref = createUniqueHandleTo(t)
 var h = Node.create(1, ref);
 ```
 
-### Memory
+## Memory
 The memory system maps handles to values. Memory is stateful and, like all the other data structures, the memory state is persistent. The entire state is captured in a single map data structure.
 
 ```js
@@ -71,7 +71,7 @@ get(m1, h.next).value; //  2
 Instead of worrying about storing and updating persistent objects all over the place, we only have to solve the more manageable problem of storing and updating a single object, the memory state. And the computation state already provides everything we need.
 
 
-## Adding Memory to the Compute Context
+# Adding Memory to the Compute Context
 Atum's memory state is a [hash trie][hashtrie] stored on the `ComputeContext` as `'values'`.
 
 ```js
@@ -99,7 +99,7 @@ var values = extract(function(ctx) {
 });
 ```
 
-### Getting and Settings Values
+## Getting and Settings Values
 `getValue` gets the stored memory value for handle `key`. In this case, handles are simply strings.
 
 ```js
@@ -120,7 +120,7 @@ var setValue = function(key, x) {
 };
 ```
 
-### Simple Computation Using References
+## Simple Computation Using References
 The linked list example can be rewritten to used handles and the memory. More powerful computations combinators can be also be written using `getValue` and `setValue`.
 
 ```js
@@ -153,10 +153,10 @@ run(
         })));
 ```
 
-## References
+# References
 Atum does not use handles directly, instead handles are hidden behind another layer of abstraction. Many referenced objects are not stored directly in the memory, so the `Reference` interface hides the different refernce implementations. There are a few classes of references that implement this interface, but I'm going to focus on references to objects stored in the memory for now.
 
-### The Reference Interface
+## The Reference Interface
 ```js
 var Reference = function() { };
 
@@ -171,7 +171,7 @@ Reference.prototype.setValue = null;
 
 `setValue` takes an input value and returns a computation that sets the value that the reference points to. Most importantly, this does not mutate the reference object. The result of the `setValue` computation  returns the reference object `setValue` was called on.
 
-### Reference Types
+## Reference Types
 Atum splits references into two classes: internal references for implementing ECMAScript, and value references for references that are semi-exposed in ECMAScript (object references). `InternalReference` and `ValueReference` are marker classes for these two types of references. 
 
 ```js
@@ -184,7 +184,7 @@ ValueReference.prototype = new Reference;
 
 I'll cover both types of references in detail later, but the reason for the division is that many operations need to dereference internal references but not value references.
 
-## Irefs
+# Irefs
 Irefs are internal references to a value in the compute context memory. They are used to store environments and other linked objects that need to be updated in computations.
 
 Each Iref holds a handle `key` to a value in the memory.
@@ -194,7 +194,7 @@ var Iref = record.declare(new InternalReference, [
     'key']);
 ```
 
-### Iref Get and Set
+## Iref Get and Set
 `getValue` and `setValue` use the key to create computations that get and set the value for `key` in the memory.
 
 ```js
@@ -214,7 +214,7 @@ Iref.prototype.setValue = function(x) {
 ```
 
 
-### Creating Unique Irefs
+## Creating Unique Irefs
 Unique Irefs are created using `createIref`, which gets a unique key from the compute context.
 
 ```js
@@ -227,7 +227,7 @@ var createIref = function(initialValue) {
 };
 ```
 
-## Next
+# Next
 Next, I put references to use to implement basic ECMAScript environments with closures.
 
 [atum]: https://github.com/mattbierner/atum

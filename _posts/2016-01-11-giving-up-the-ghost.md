@@ -13,12 +13,12 @@ The [Ghost.org](http://web.archive.org/web/20131108182903/https://ghost.org/feat
 
 All joking aside, Ghost did treat me pretty well, powering this blog for over two years. But now it's time to move on. So I recently switched to [Jekyll][] and haven't looked back.
 
-## Jekyll – The Beast with the Least
+# Jekyll – The Beast with the Least
 The advantages of blogging with Jekyll are [well established](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html), but for me, two points about Jekyll really stand out. Foremost, Jekyll recognizes that a blog, at least in its published form, is just a static collection of documents. Think of how many blogging software projects (including good friend Ghost) have been taken by Web 2.0 fever, trying to build ever more complex and dynamic webapps. That may work for a blogging platform like [Medium](https://medium.com), but for self-hosted blogs, it seems like an evolutionary dead end.
 
 Jekyll operates more in the vein of LaTeX, transforming a set of input documents into a (static) website. No need for a database or dedicated server, just publish to [Github pages][pages], or any other static web host, and you're all set. Which brings us to the second point: Jekyll gets out of your way. Jekyll defines a minimal framework of what a blog is and leaves the rest up to you. You can build whatever you want using Liquid, HTML, CSS, and JS, no need to be limited to theme libraries or plugins. 
 
-### No Flannel Required
+## No Flannel Required
 The Unix style design of Jekyll integrates into existing workflows far better than a monolithic webapp like Ghost ever could. This was my typical workflow to publish a post using Ghost:
 
 1. Write the post using a local text editor (because the Ghost text editor sucks).
@@ -41,12 +41,12 @@ Now, here's my workflow to publish a post with Jekyll:
 
 4 < 10. And that's ignoring the not negligible cost of maintaining an up to date Ghost instance. Jekyll's got true ease of use, no flannel required.
 
-## Arise - From Ghost to Jekyll
+# Arise - From Ghost to Jekyll
 But enough fawning. Let's take a look at the process of actually porting a Ghost blog to Jekyll.
 
 Migrating content is surprisingly easy, but I don't think there's a good story for porting over a Ghost theme. That'll take some manual work. [Jekyll-Now](https://github.com/barryclark/jekyll-now) is a great starting point at least.
 
-### Migrating Text
+## Migrating Text
 First, export your Ghost blog by following [these instructions](http://support.ghost.org/import-and-export-my-ghost-blog-settings-and-data/). Then run the [Jekyll Ghost importer script](hhttps://github.com/eloyesp/jekyll_ghost_importer) on the exported data to generate the `_posts`. These two steps take care of a good deal of the migration, but there are still a few problems.
 
 With Ghost, I used [Google's code prettifier](https://github.com/google/code-prettify) for clientside syntax highlighting, but Jekyll does not understand these fenced code block annotations:
@@ -65,7 +65,7 @@ $ perl -i -pe 's/prettyprint lang-//g' _posts/*
 
 This got the text into a good state, now time to handle images.
 
-### Migrating Images
+## Migrating Images
 The exported Ghost database does not contain image data, so if you've uploaded any images through Ghost, these must be manually migrated over. This can be as easy as copying the entire Ghost `content/images` directory into Jekyll, but I decided to just start from scratch so that the images would all be organized more logically for the future (breaking hyperlinks like a champ in the process too).
 
 My target image directory structure has each post with its own `content` folder:
@@ -139,7 +139,7 @@ Bak're is...
 
 Besides simplifying image references, `image.html` allows you to customize how images are statically rendered. Back with Ghost, the only way to add visible captions to images was with Javascript. Now that all happens during generation.
 
-### Image Migration Script
+## Image Migration Script
 Faced with sixty or so posts to convert, I wrote a small script that automatically downloads all the images from a running Ghost blog, and rewrites `_posts` that have gone through the Jekyll post importer to use `image.html`. [Here's the gist](https://gist.github.com/mattbierner/91d90806fc6d3b414498).
 
 The basic usage is:
@@ -151,7 +151,7 @@ $ python migrate_ghost_images.py _posts --site http://my-super-blog.com
 
 If you only want to download images hosted on your ghost instance, be sure to specify the `--local_only` flag. Otherwise, images linked from other sites will also be downloaded and replaced.
 
-## Today's an Excellent Day for an Exorcism
+# Today's an Excellent Day for an Exorcism
 I was initially afraid that the cost of migrating from Ghost to Jekyll would be high, but the process was not bad. The scripts detailed should handle most of the migration automatically. The biggest obstacle is probably going to be migrating over the look of your preferred Ghost theme, but this is also a good opportunity for a redesign, and there are plenty of great Jekyll themes out there.
 
 Overall, blogging with Jekyll is an improvement in almost every way. Not only does it eliminate all the concerns of hosting, but, in its simplicity, it actually makes writing and publishing content far easier. And, although I've been busting pretty hard on ol' Ghost here, the same arguments apply to pretty much every other piece of blogging software out there.

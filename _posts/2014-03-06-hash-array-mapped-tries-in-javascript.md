@@ -7,10 +7,10 @@ The [hash array mapped trie (HAMT)][wiki-hamt] is a [hash trie][mb-hashtrie] sto
 
 The example code is written in [Khepri][khepri] and taken from the [hamt][hamt] library. HAMT is based on [Clojure's PersistentHashMap](https://github.com/clojure/clojure/blob/master/src/jvm/clojure/lang/PersistentHashMap.java).
 
-## Overview
+# Overview
 A HAMT is a [hash trie][mb-hashtrie] where internal node store dense child arrays. A *h* bit hash is the trie key, and each hash is split into sections of *m* bits. Internal nodes contain at most *2^m* entries for a section of the hash, and the trie has at most *h/m* levels.
 
-### Hash Trie Storage Inefficiency
+## Hash Trie Storage Inefficiency
 An internal node may have up to *2^m* children, but they usually are only partially full. In a regular hash trie, internal nodes get their children by offset in a *2^m* array. Every internal node, even those with a single entry, must maintain this *2^m* children array.
 
 ```
@@ -29,7 +29,7 @@ But `root` in this example would still need an internal array of size 4 to store
 
 Javascript does not have the same allocation problem since its arrays are conceptually dynamic objects with index keys. We can treat Javascript arrays as  sparse arrays, but most Javascript implementations are optimized for dense arrays and operations like `reduce` will perform poorly on sparsely populated arrays.
 
-### HAMTs
+## HAMTs
 Hash array mapped tries solve the sparsely populated array storage problem. HAMT internal nodes maintain a dense array of children, along with fixed size data for mapping an index in the conceptual *2^m* child array to an index in the actual dense child array.
 
 HAMT indexed internal nodes use a  *2^m* bitmap to track which children exist. The dense child array is kept sorted.
@@ -41,7 +41,7 @@ HAMT indexed internal nodes use a  *2^m* bitmap to track which children exist. T
     {11 entry:1100}}
 ```
 
-### Lookup
+## Lookup
 Lookups are performed the same as with hash tries. Sections of a hash are progressively matched against internal nodes until the entire hash has been matched. This checks at most `h / m` nodes.
 
 Indexed node lookup is a bit more complicated than with a hash trie because internal nodes have to convert an index in a *2^m* child array to an index in their dense array of children.
@@ -69,14 +69,14 @@ var getChild = \node, hash_fragment ->
         get_count_before(node.mask, hash_fragment));
 ```
 
-### Updates
+## Updates
 Updates rebuild at most `h/m` internal nodes on a path, with the cost of rebuilding an internal node being at most the cost to rebuild an array of size `2^m`. 
 
 Indexed node updates use the same lookup logic to see if a child exists. If it does, the dense child array is rebuilt with the new child replacing the existing one. If the child does not exist, an entry is inserted in order into the dense array and the bitmap is set at the index.
  
  
  
-## Javascript Implementation
+# Javascript Implementation
 In Javascript, we will use a 32 bit hash, split into 5 bit sections. 
 ```js
 var HASH_SIZE = 32;
@@ -96,7 +96,7 @@ var MAX_INDEX_NODE = BUCKET_SIZE / 2; // 16
 var MIN_ARRAY_NODE = BUCKET_SIZE / 4; // 8
 ```
 
-### Hash Fragments
+## Hash Fragments
 The `hash` function from [hash trie][mb-hashtrie] converts a string key to a hash. 
 
 `hashFragment` gets the part of a hash we are interested in at a given level.  It takes a hash `h` and a `shift` (which is a multiple of SIZE), and returns only the `SIZE` bit section of the hash we are interested in.
@@ -108,7 +108,7 @@ var hashFragment = \shift h ->
     (h >>> shift) & MASK;
 ```
 
-### Bit operations
+## Bit operations
 HAMTs use two additional bit operations.
 
 `toBitmap` converts a hash fragment (true child index) to a 32bit bitmap with the bit at index `frag` set.
@@ -140,7 +140,7 @@ var fromBitmap = \bitmap, frag ->
     popcount(bitmap & (toBitmap(frag) - 1));
 ```
 
-### Node Structures
+## Node Structures
 The leaf nodes types are the same as in a [hash trie][mb-hashtrie].
 
 ```js
@@ -186,7 +186,7 @@ var ArrayNode = function \count children =self-> {
 };
 ```
 
-## Lookups
+# Lookups
 Looking up an entry is the same process as with a [hash trie][mb-hashtrie]; simply descend a path of internal nodes using progressive hash fragments until a leaf is found. The same `nothing` values will also be used in HAMT
 
 `lookup` takes a node `n`, the current `shift` (level * SIZE), the complete lookup hash `h`, and the lookup key `k`
@@ -255,7 +255,7 @@ in
     lookup(child, shift + SIZE, h, k);  
 ```
 
-### API
+## API
 ```
 /// Get value for `k` or return `alt`.
 tryGet = \alt k m  ->
@@ -271,7 +271,7 @@ has = \k m ->
     !isNothing lookup(m, 0, hash k, k);
 ```
 
-## Updates
+# Updates
 Updates take a hash trie and return a new hash trie with the update applied. Like lookup, updates walk a path of internal nodes until finding a leaf. But instead of returning a value, updates edit the leaf and then reconstruct all nodes on the path back to the root in reverse order.
 
 HAMT update logic is much the same as [hash trie][mb-hashtrie]. A single `alter` function handles updates, deletes, and modifications. `alter` takes a node `n`, `shift`, function `f` which maps the current node value to a new node value, target hash `h`, traget key `k`.
@@ -527,7 +527,7 @@ var pack = \removed elements -> {
 };
 ```
 
-### Update API
+## Update API
 
 ```js
 var constant = \x -> \() -> x;
@@ -576,7 +576,7 @@ get(‘b’, h4); // null
 get(‘b’, h); // ‘y’
 ```
 
-## Folds
+# Folds
 Fold aggregates information about every entry in the trie. HAMTs are unordered, so only order independent operations can be used. 
 
 Fold operations are one area where HAMT offers a significant performance boost over a regular hash trie. `Array.prototype.reduce` unfortunately is [not optimized for sparse arrays](http://jsperf.com/sparse-array-reduce-overhead/2), so dense arrays can be folded much quicker. 
@@ -607,12 +607,12 @@ ArrayNode.prototype.fold = \f z =self->
 ```
 
 
-## Summary
+# Summary
 HAMTs are the fastest persistent hash trie implementation I could find. They perform well, even as the size of the trie grows very large. Fold operations are often up to `10x` on HAMTs than on regular [hash tries][hashtrie].
 
 The [hamt][hamt] library provides functionality beyond what I have covered here.
 
-### Benchmarks
+## Benchmarks
 The more optimized [hamt][hamt] library performs very well, and is the fastest persistent hash trie Javascript library that I could find overall, although [hash trie][hashtrie] is faster in a few cases. 
 
 The complete comparison results and the benchmarks are [available here][benchmarks].
@@ -666,7 +666,7 @@ hamt(10000)                   :         2429.46 +/- 3.07% op/s
 
 ```
 
-### Other Notes
+## Other Notes
 #### Allocation
 In languages like C++, HAMT node allocation is more difficult to optimize than with a regular hash trie. HAMT indexed node child arrays may contain between 1 and `MAX_INDEX_NODE` children, while hash trie children arrays are a fixed size and can be easily allocated from a pool. 
 

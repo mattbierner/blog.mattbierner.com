@@ -7,12 +7,12 @@ The [hash trie][wiki-hash-trie] is a [persistent][persistent] map data structure
 
 The example code is written in [Khepri][khepri] and taken from the [hashtrie][hashtrie] library. Hashtrie is based on [Clojure's PersistentHashMap](https://github.com/clojure/clojure/blob/master/src/jvm/clojure/lang/PersistentHashMap.java).
 
-## Overview
+# Overview
 Hash tries are [tries] that use a *h* bit hash as the key. Each hash is split into sections of *m* bits and internal nodes each contain *2^m* entries for a section of the hash. The trie has at most *h/m* levels. Common values for *h* are 32 or 64, while *m* is often 4 or 5.
 
 Assuming there are no collisions, lookup and update performance depends only on the number of bits in the hash and the number of buckets for each internal node. Persistence is achieved by path copying.
 
-### Example trie
+## Example trie
 For `h=8` and `n=2` the hash trie has 4 levels. Each internal node contains all possible mappings for a 2 bit hash fragment: `00, 01, 10, 11`. The path from the root to a leaf is the compete hash of that entry.
 
 ```
@@ -35,7 +35,7 @@ For `h=8` and `n=2` the hash trie has 4 levels. Each internal node contains all 
     {11 ...}}
 ```
 
-### Lookups
+## Lookups
 Lookups are performed by progressively matching sections of the hash against internal nodes until the entire hash has been matched. This checks at most `h/m` nodes. Getting the child of an internal node can be performed in constant time by indexing into an array.
 
 ```
@@ -47,14 +47,14 @@ level3 = level2[11]
 level3[10]
 ```
 
-### Updates
+## Updates
 Updates rebuild at most `h/m` internal nodes on a path, with the cost of rebuilding an internal node being the cost to rebuild an array of size `2^m`. 
 
-### Other Notes
+## Other Notes
 Instead of storing all leaves at the lowest level, we can reduce memory usage and improve performance by collapsing empty paths. During lookups and updates, we stop as soon as we find the first leaf on a path.
 
 
-## Javascript Implementation
+# Javascript Implementation
 In Javascript, we will use a 32 bit hash, split into eight 4 bit sections.
 
 ```js
@@ -67,7 +67,7 @@ var BUCKET_SIZE = Math.pow(2, SIZE); // 16
 var LEVELS =  HASH_SIZE / SIZE; // 8
 ```
 
-### Hash Function
+## Hash Function
 Unlike many high level languages, Javascript does not have native support to map objects or values to hash codes. Hash tries can use any type of key, so long as the key can be hashed. For this example however, I’m going to use string keys.
 
 The `hash` function, based on [this StackOverflow](http://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript-jquery) answer, hashes a string.
@@ -83,7 +83,7 @@ hash = \str -> {
 };
 ```
 
-### Hash Fragments
+## Hash Fragments
 `hashFragment` gets the part of a hash we are interested in at a given level.  It takes a hash `h` and a `shift` (which is a multiple of SIZE), and returns only the `SIZE` bit section of the hash we are interested in.
 
 ```js
@@ -102,7 +102,7 @@ hashFragment(4, 0b10110100); // 0b11
 hashFragment(6, 0b10110100); // 0b10
 ```
 
-### Node Structures
+## Node Structures
 There are two types of leaf nodes: `LeafNode` and `CollisionNode`.  
 
 ```js
@@ -139,10 +139,10 @@ var InternalNode = function \count children =self-> {
 };
 ```
 
-## Lookups
+# Lookups
 Looking up an entry is straightforward; simply descend a path of internal nodes using progressive hash fragments until a leaf is found. Since the trie only expands leaf nodes to internal nodes as needed, this leaf may not match the query.
 
-### Nothing
+## Nothing
 When a entry does not exist in the trie, we will return an internal `nothing` value.
 
 ```js
@@ -166,7 +166,7 @@ var maybe = \val alt ->
         :val;
 ```
 
-### Implementation
+## Implementation
 `lookup` takes the current `shift` of the lookup, the complete lookup hash `h`, the lookup key `k`, and a node `n`.
 
 ```js
@@ -213,7 +213,7 @@ in
     lookup(shift + SIZE, h, k, child);  
 ```
 
-### API
+## API
 
 ```
 /// Get value for `k` or return `alt`.
@@ -231,7 +231,7 @@ has = \k m ->
 ```
 
 
-## Updates
+# Updates
 Updates take a hash trie and return a new hash trie with the update applied. Like lookup, updates walk a path of internal nodes until finding a leaf. But instead of returning a value, updates edit the Leaf and then reconstruct all node on the path back to the root in reverse order.
 
 Rather than use separate routines to edit, insert, and delete nodes, a single `alter` function will handle everything. `alter` takes a `shift`, function `f` which maps the current node value to a new node value, target hash `h`, traget key `k`, and node `n`.
@@ -400,7 +400,7 @@ var arrayRemove = \at arr -> {
 };
 ```
 
-### Update API
+## Update API
 
 ```js
 var constant = \x -> \() -> x;
@@ -450,7 +450,7 @@ get(‘b’, h); // ‘y’
 ```
 
 
-## Folds 
+# Folds 
 One other useful operation is to aggregate information about every entry in the trie. The hash trie is unordered, so only order independent operations can be used. 
 
 `fold` takes a function `f`, initial value `z`, and trie `m`. `f` is called with the previous result and the current key and value as in a object:
@@ -475,7 +475,7 @@ InternalNode.prototype.fold = \f z ={children}->
     children.reduce(fold@f, z);
 ```
 
-### Usage
+## Usage
 `fold` can be used to count the total number of entries:
 
 ```js
@@ -511,17 +511,17 @@ map = \f m ->
 ```
 
 
-## Summary
+# Summary
 Hash tries are a good way to implement persistent hash maps or hash sets. They perform well, even as the size of the trie grows very large. For maps with more than ~20 entries, hash tries are also faster than achieving persistance using object copying.
 
 I use hash tries as the memory data structure in [Atum][atum]. Just replacing object copies in this single location nearly doubled performance of the entire application.
 
 The [hashtrie][hashtrie] library provides functionality beyond what I have covered here.
 
-### Custom Key Types
+## Custom Key Types
 The hash trie can easily be extended to use a custom key equality function. Pass an additional key compare argument to `lookup` and `alter`, and replace direct `===` key compares with this.
 
-### Benchmarks
+## Benchmarks
 The more optimized [hashtrie][hashtrie] library performs very well, and is the fastest persistent hash trie Javascript library that I could find for gets and updates. 
 
 [HAMT][hamt] is a hash trie storage optimization that drastically improves fold performance over the regular hash trie library.

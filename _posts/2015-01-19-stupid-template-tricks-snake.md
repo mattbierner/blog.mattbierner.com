@@ -14,7 +14,7 @@ The goal of Nibbler is to consume randomly placed food, which increases your sco
 
 Let's get started.
 
-## It Begins with a List
+# It Begins with a List
 We've covered [lazy, potentially infinite lists previously][lazy-lists], and even used them to implement [Conway's Game of Life][life], but we don't need that much flexibility for Nibbler. The game world is fixed and finite size, so getting all fancy with zippers and comonads would only unnecessarily complicate things.
 
 Instead, we'll use a list structure similar to the one used for our [compile time pseudo random number generator][pseudo-random], except that it'll be a list of types instead of a list of values. 
@@ -26,7 +26,7 @@ struct List {
 };
 ```
 
-### Cons, Car, and Cdr
+## Cons, Car, and Cdr
 The basic `cons`, `car`, and `cdr` operations are about the same [as before][pseudo-random], just using types instead of values, so I won't go into much detail here.
 
 ``` cpp
@@ -86,7 +86,7 @@ template <size_t N, typename element>
 using gen_t = typename gen<N, element>::type;
 ```
 
-### Element Access
+## Element Access
 Nibble will address individual tiles in the game grid cells using a absolute positions, consisting of a x and y coordinate. `get` and `set` on `List` are the basis for this two dimensional absolute positioning system.
 
 `get` looks up the Nth value in a list.
@@ -129,7 +129,7 @@ struct put<N, newValue, List<x, xs...>> {
 };
 ```
 
-### Print and Fmap 
+## Print and Fmap 
 We'll also reuse the `Printer` and `Functor` interfaces from our [Life implementation][life]. 
 
 The `Printer` interface converts a type to a function that prints a visual representation of that type at runtime. This will serve as the basis of our rendering system.
@@ -169,7 +169,7 @@ struct Fmap<List<x, xs...>, f> {
 ```
 
 
-## The Grid
+# The Grid
 A grid is a list of lists, a two dimensional structure. `Grid` takes a list of rows, where each row is a list of values. Storing grid values first by row, and then by column, makes printing easier.
 
 ```cpp
@@ -198,7 +198,7 @@ struct Position {
 };
 ```
 
-### Element Access
+## Element Access
 We also need to be able to query and update any cell in the grid using a position.
 
 `get_grid` looks up the value stored at `pos::x, pos::y`. It first gets the target row and then the target cell within that row.
@@ -221,7 +221,7 @@ using put_grid = Grid<
         typename grid::rows>>;
 ```
 
-### Interfaces
+## Interfaces
 Printing a grid, prints each row of the grid, followed by a newline character.
 
 ```cpp
@@ -259,7 +259,7 @@ struct Fmap<Grid<rows>, f> {
 ```
 
 
-## Cells
+# Cells
 The world of Nibbler is made of cells. Each cell can be one of four types:
 
 ```cpp
@@ -294,7 +294,7 @@ template <unsigned weight, Direction direction>
 using MakeSnakeCell = Cell<CellState::Snake, weight, direction>;
 ```
 
-### Weight and Decay
+## Weight and Decay
 Weight is the the number of turns it takes for the snake cell to expire. Think of the snake as just a head moving about a grid. As it moves, the head lays down body cells of a fixed weight. For a three section long snake, the head lays down cells with a weight of three.
 
 Each game step, snake body sections decay by one. When their weight reaches zero, the cell becomes an empty cell (Really, we don't even need an explicit empty cell type, but it makes code a bit more readable).
@@ -342,7 +342,7 @@ struct decay<Cell<CellState::Snake, weight, direction>> {
 };
 ```
 
-### Direction
+## Direction
 The direction property is also only used by snake cells. It is used to render the snake, visually showing which direction each segment is facing. 
 
 ```cpp
@@ -357,7 +357,7 @@ enum class Direction : unsigned
 
 We'll also later use `Direction` to store the direction a snake is moving so we can preserve it's heading when no player input is entered.
 
-### Printing
+## Printing
 The three basic cells always print the same value.
 
 ```cpp
@@ -401,7 +401,7 @@ struct Printer<Cell<CellState::Snake, weight, direction>>
 };
 ```
 
-## Game World
+# Game World
 That coves the basic types, so let's move on to implementing the game world. The world is just a fixed size grid. The initial world has a single snake cell some where in it. A food cell will also be placed in the world, but this will be handled later.
 
 ```cpp
@@ -417,7 +417,7 @@ using InitialWorld =
         gen_grid<worldSize, EmptyCell>>;
 ```
 
-### Queries
+## Queries
 `is_in_bounds` checks if a cell is within the game grid. Because we are using unsigned numbers, we only have to perform a single, less than check in each direction.
  
 ```cpp
@@ -470,7 +470,7 @@ struct get_weight :
         get_grid<pos, world>::weight> { };
 ```
 
-### Movement
+## Movement
 We also need to be able to check the state of a cell's neighbors to determine when the snake will collide with something. The first step is to lookup the next cell for a given position and direction.
 
 `direction_delta_x` and `direction_delta_y` return the relative change in x and y position that each direction represents. The top left corner of the grid is `0,0`.
@@ -512,12 +512,12 @@ using can_continue_in_direction =
 ```
 
 
-## Nibbler
+# Nibbler
 Finally we get down to actually implementing Nibbler.
 
 {% include image.html file="jackson-1.jpg" description="Samuel L. Jackson is ready for some motherfucking snakes on motherfucking two dimensional fields!" %}
 
-### Game State
+## Game State
 A game of Nibbler can either be in progress, or over if the player died.
 
 ```cpp
@@ -566,7 +566,7 @@ struct State
 `set_world` and `set_random` are two setters that make it slightly easier to change a property of a `State`.
 
 
-### Food Placement
+## Food Placement
 Food must be placed randomly in an unoccupied space in the game world. There is always one food item in play. As soon as that food is consumed, another is placed.
 
 To handle randomness while remaining within the limitations of C++ templates, we'll use the [linear feedback shift register compile time pseudo random number generator][pseudo-random] previously implemented.
@@ -623,7 +623,7 @@ template <typename state>
 using put_food_t = typename put_food<state>::type;
 ```
 
-### Input
+## Input
 Each step of the game, the player must input a single command. This command determines the action of the snake and the next state of the world.
 
  The player can give one of five commands, four directional commands as well as `None`. `None` signals that no input was provided and that the snake should continue in its current direction. 
@@ -668,7 +668,7 @@ struct get_new_direction<direction, Input::Right> : std::integral_constant<Direc
 ```
 
 
-### Game Steps
+## Game Steps
 Now we come to the game step/transition function. The transition function takes an input and a game state, and produces a new game state.
 
 The easiest case to handle is when the player has lost the game. In that case, the transition function does nothing.
@@ -786,7 +786,7 @@ struct live {
 };
 ```
 
-### Printing
+## Printing
 Printing the game state prints out a score bar followed by the game world.
 
 ```cpp
@@ -812,7 +812,7 @@ struct Printer<State<PlayerState, position, direction, world, random>>
 };
 ```
 
-## Do You Want to Play a Game?
+# Do You Want to Play a Game?
 For this first iteration of Nibbler, we'll simulate the entire game in one compiler run. 
 
 For a list of input, we feed the first input into to the current game state using `step_t`, to get a new game state. Each resulting gamestate is consed onto a list of previous game states, building up a game history. 
@@ -842,7 +842,7 @@ struct play<PlayerInput<input, inputs...>, state> {
 Now we can print out an entire game and each step of its history, making debugging (and cheating) very easy. 
 
 
-### Example Game
+## Example Game
 Here's metaprogrammed Nibbler in action.
 
 ``` cpp
@@ -1147,7 +1147,7 @@ Program ended with exit code: 0
 {% include image.html file="f1303.JPG" description="Only Five? Fuck Rick! Fuck Rick and his high score of 1,231,372,670!" %}
 
 
-## Next Time
+# Next Time
 By breaking down Nibbler to simple subproblems, implementing it using C++  metaprogramming is not hard. There are probably more clever or efficient ways to implement Snake. But that's not the point. Sure, template metaprogramming uses weird syntax and has major annoyances. But once you get past those initial barriers, you'll find a surprisingly competent functional language. 
 
 Check out the [complete source on Github][src].

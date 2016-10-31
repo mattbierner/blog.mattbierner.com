@@ -7,7 +7,7 @@ ECMAScript defines two top level grammar symbols, one for division operators and
 
 Based on my work developing [Parse-ECMA][parse-ecma], ECMAScript 5.1 parser combinators in Javascript, I overview three possible ways to handle these dual lexical symbols, along with the benefits and drawbacks of each solution.
 
-## The ‘/‘ Symbol and ECMAScript
+# The ‘/‘ Symbol and ECMAScript
 
 ECMAScript uses the `/` symbol in four ways:
 
@@ -22,7 +22,7 @@ Indeed, ECMAScript lexers can unambiguously distinguish comments from division o
 
 Consider the program: `a / b / g`. Should this be tokenized: `[Id(‘a’), Div, Id(‘b’), Div, Id(‘g’)]` or `[Id(‘a’), RegExp(‘b’, ‘g’)]`? Both tokenizations are valid lexically, but the second is invalid ECMAScript. Even an infinite lookahead lexer can’t distinguish the two.
 
-### InputElementDiv and InputElementRegExp
+## InputElementDiv and InputElementRegExp
 [ECMAScript 5.1][ecmascript-spec] determines meaning of a `/` symbol by its grammatical context:
 
 > There are two goal symbols for the lexical grammar. The InputElementDiv symbol is used in those syntactic grammar contexts where a leading division (/) or division-assignment (/=) operator is permitted. The InputElementRegExp symbol is used in other syntactic grammar contexts.
@@ -49,7 +49,7 @@ InputElementRegExp ::
 
 Some of the rational behind this bizarre decision is touched on in an old [Mozilla Javascript 2 design document][mozilla-rational].
 
-### No Single Valid Top Level Lexing
+## No Single Valid Top Level Lexing
 In consequence, the tokenization of ECMAScript code can only be determined by parsing the code to detect the context of `/` symbols. This unnecessarily complicates the language implementer’s work. The lexer and parser must be tightly integrated or, at the very least, the lexer must use additional logic to guess the context when it encounters `/` symbols.
 
 Further complicating the problem, both `InputElementDiv` and `InputElementRegExp` may be used in the same expression, such as `/a/g / /c/g` which is correctly tokenized to: `[RegExp(‘a’, ‘g'), DIV, 'RegExp(‘c’, ‘g’)]`. Thankfully, there are no contexts where both `InputElementDiv` and `InputElementRegExp` are valid:
@@ -60,16 +60,16 @@ Further complicating the problem, both `InputElementDiv` and `InputElementRegExp
 
 Attempting to parse with one tokenization and then the other will always find the single valid tokenization if one exists. 
 
-## Solutions
+# Solutions
 
 My initial thought was to always lex using `InputElementDiv` and create a parser production to recognize regular expressions. This does not work. Consider: `/“/`. This is a perfectly valid regular expression literal but lexing using `InputElementDiv` will always fail. The lexer matches the start of the string `”/` and expects to find a `“`.
 
-### Check Previous Token
+## Check Previous Token
 By far the most simple solution is to embed additional logic in the lexer that guesses the context when `/` is encountered. Checking the previous token is a good approximation.
 
 There are a lot of cases to cover and elements like whitespace, line terminators, and multiline comments have to be considered. [Thom Blake’s stackoverflow solution][stackoverflow-solution] should work for almost all sane programs, and even JSLint’s check against `(,=:[!&|?{};` will work for the most common cases.
 
-### Composed Parser and Lexer
+## Composed Parser and Lexer
 Working with parser combinators, instead of building separate parsers for the lexer and parser, we can compose the lexer parsers to build the parser parsers. The resulting parsers take a stream of characters and output an AST. 
 
 This composition is easy for simple languages. Take an example languages consisting of three elements: single letter identifiers, division expressions, and regular expressions literals with optional flags. The composed parsers are:
@@ -120,7 +120,7 @@ Correctly and efficiently composing the lexers and parsers is challenging. White
 
 One small example is discriminating between keyword `true`, keyword `try`, and identifier `try2`. `true` and `try` require lexing `tr` twice, and without additional checks, the try statement parser may match `try` in `try2` and then fail, even though statements like `try2 + 2;` are valid. It is much easier to identify and handle these cases with separate lexers operating on characters and parses operating on tokens.
 
-### Lazily Generated Streams of Tokens 
+## Lazily Generated Streams of Tokens 
 [Parse-ECMA][parse-ecma] solves the problem by running parsers against a lazily constructed token stream. Parsers take a character stream and use a custom `ParserState` to retrieve tokens on demand. Parsing assumes a division context, and the context can be manually switched for specific productions.
 
 #### Tokenization
@@ -230,7 +230,7 @@ var regularExpressionLiteral = next(
     token.regularExpressionLiteral);
 ```
 
-## Closing Thoughts
+# Closing Thoughts
 Building a parser by composing the lexer parsers seems to be the best solution to the problem, although it introduces its own complications. The logic used by Parse-ECMA feels overly complex, although it handles most edge cases correctly. In the future, I probably will rewrite Parse-ECMA to use the previous token check which, although only an approximate solution, seems to handle all common cases correctly. 
 
 

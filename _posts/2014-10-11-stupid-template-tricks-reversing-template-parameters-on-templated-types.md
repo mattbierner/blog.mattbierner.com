@@ -11,7 +11,7 @@ Not that I have any practically application for type reversal mind you. But I wa
 {% include image.html file="Claude_Cat_angel.jpg" %}
 
 
-## Templated Type Template Parameter Combinations and Permutations
+# Templated Type Template Parameter Combinations and Permutations
 Before implementing type reversal, we need to understand templated type permutations and combinations. We ultimately only care about the reversed type permutation, but getting there requires a number of intermediate type combinations. And some of these combinations may not be valid instantiations of `T`.
 
 With a set of parameters `std::tuple<P1, P2, ..., Pn>`, the `std::tuple` type is valid for any combination or permutation of `P1, P2, ..., Pn`.
@@ -72,7 +72,7 @@ Foo<unsigned, std::string, int>; // reversal is also valid
 
 Although our ultimate goal is to determine the revered type permutation, the most simple type reversal logic requires a number of intermediate combination types, all of which must be valid, to calculate the final reversed types.  
 
-## Easy Case - Reversing Tuple-Like Types
+# Easy Case - Reversing Tuple-Like Types
 We'll therefore start by reversing a `std::tuple`. This way, we don't have to worry about invalid type combinations and permutations. The second part of this post will apply reversal to any templated type.
 
 To start, we need a helper to get the base case of type reversal, templated type `T` with zero parameters. 
@@ -145,7 +145,7 @@ static_assert(
 
 ```
 
-## Reversing Arbitrary Templated Types
+# Reversing Arbitrary Templated Types
 Now if we try to apply `reverse_impl` to a type such as `std::pair`, the compiler will complain.
 
 
@@ -264,7 +264,7 @@ std::is_same<
     simple_map<int, std::string>>::value;
 ```
 
-## Conclusion
+# Conclusion
 
 Like most good template metaprogramming, I have no clue how type reversal can be practically applied. But it is possible, and implementing it did significantly improve my understanding of the c++ template system.
 

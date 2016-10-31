@@ -5,12 +5,12 @@ date: '2014-02-02 01:24:16'
 ---
 [Atum][atum] expresses control flow using continuations, and at the heart of Atum is the delimited continuation monad. This post overviews continuations in Atum and covers the implementation of the delimited continuation monad in Javascript.
 
-## Continuations and The Continuation Monad
+# Continuations and The Continuation Monad
 Most programming languages have some concept of control flow, and the continuation is a useful abstraction to model this program control flow. Simplified, a continuation is a value that captures the remainder of a computation. Languages like [Scheme][scheme-callcc] even give the programmer access to a program's current continuation. 
 
 But the [ECMAScript 5.1][ecma51] language spec never mentions continuations. So why use them in Atum? All other common control flow elements, such as iteration and conditionals, can be built from the continuation primitive. Furthermore, continuations allow the control flow of a program to be captured and modified, a very useful feature for debugging and tooling.
 
-### Continuation Passing Style
+## Continuation Passing Style
 It is still possible to program using continuation control flow in languages like Javascript that lack first class continuations. Continuation passing style (CPS) programming threads explicit continuations through computations. 
 
 A CPS factorial function in Javascript is easy to implement:
@@ -46,7 +46,7 @@ var fac = function(n, k) {
 fac(10, ['done']);
 ```
 
-### CPS Interpreter
+## CPS Interpreter
 A simple interpreter using CPS may look something like this:
 
 ```js
@@ -77,7 +77,7 @@ eval({
 }, function(x) { return x; });
 ```
 
-### Continuation Monad
+## Continuation Monad
 Direct CPS interpreters hardcode many assumptions and are difficult to modify. Continuations are also too low level and verbose for many applications. The [continuation monad][cont-monad] provides an interface to express continuation based computations while hiding the implementation details.
 
 The continuation monad is defined by two function: `just` injects a value into the monadic context and `bind` sequences two computations, where the second computation depends on the output of the first. 
@@ -161,7 +161,7 @@ run(map({
 }), function(x) { return x; });
 ```
 
-### What The Continuation Monad Gets Us
+## What The Continuation Monad Gets Us
 The continuation monad standardizes an interface on which more complex combinators can be constructed:
 
 ```js
@@ -184,24 +184,24 @@ var add = function(left, right) {
 It also keeps the details of how continuations are implemented out of the abstract program control flow logic. Defunctionalizing the continuations would only require updating the continuation monad, not replacing every instance of `k(...)` like in the CPS interpreter. 
 
 
-## Delimited Continuations
+# Delimited Continuations
 
 Regular continuations are powerful enough to implement most programming languages, but they have some importantly limitations.
 
 The regular continuation represents the remainder of a computation in its entirety, evaluation is all or nothing. True first class continuations (but not CPS) cannot even return values. How could they? Evaluating the continuation evaluates the rest of the program, so where would the value be returned? This greatly restricts the usefulness of continuations. 
 
-### Delimited Continuations Overview
+## Delimited Continuations Overview
 Smart people in the eighties and nineties solved this problems with delimited continuations. Delimited continuations capture the continuation of a subcomputation, breaking a program's monolithic `callcc` type continuation into a stack of delimited continuations. Delimited continuations can return values and can be composed.
 
 The [Scheme wiki][scheme-wiki] has a good introduction to delimitated continuation control flow. 
 
-## The Delimited Continuation Monad
+# The Delimited Continuation Monad
 
 Atum uses delimited computations with a monadic interface for control flow. The Atum code and examples given here are based on *[A Monadic Framework for Delimited Continuations][monadic-framework]*.
 
 This implementation uses prompts to delimit computations in a control stack. Four basic operation define the delimitated continuation API.
 
-### The Control Stack
+## The Control Stack
 The control stack is a ordered list of control segments and prompts that delimitate the stack. 
 
 ```js
@@ -254,7 +254,7 @@ var splitSeq = function(t, k) {
 }; 
 ```
 
-### Applying Delimited Continuations 
+## Applying Delimited Continuations 
 
 The continuation (control stack) is no longer a function. `appk` evaluates a continuation `k` with some value `x`:
 
@@ -300,7 +300,7 @@ var bind = function(c, f) {
 };
 ```
 
-### Running
+## Running
 Delimited continuations calculations are run by passing in the initial delimited control stack. `run` runs a calculation `c` with a Javascript function `k` as the top level continuation:
 
 ```js
@@ -318,7 +318,7 @@ run(
 ```
 
 
-### Delimited Continuation Monad API
+## Delimited Continuation Monad API
 
 The delimited continuation monad uses four primitive functions to delimite computations.
 
@@ -363,7 +363,7 @@ var pushSubCont = function(subk, c) {
 };
 ```
 
-### Shift and Reset
+## Shift and Reset
 
 Many delimited continuations implementations do not use prompts, but the `shift` and `reset` control operators. `shift` is broadly similar to `pushPrompt`  while `reset` is like `withSubCont`, but `shift` and `reset` use implicit prompts defined by where these operators appear in a program. 
 
@@ -391,7 +391,7 @@ var shift = function(p, f) {
 };
 ```
 
-### Callcc from Delimited Continuation
+## Callcc from Delimited Continuation
 
 Finally, the semantics of `callcc` are useful, even when working with delimited continuations. Here is `callcc` from the delimited continuation monad implemented for delimiated continuations:
 

@@ -14,7 +14,7 @@ So are our dreams doomed to forever slosh about in gooey darkness, understood on
 
 Besides, all this dreaming has been *super* taxing on my tiny little mammalian brain. Far better to let a mighty computer generate my dreams going forward. 
 
-## Dreamscraper
+# Dreamscraper
 But before machine learning my dreams, I decided to play the *Freddy Krueger* and try my hand at generating other people's dreams first.
 
 [DreamBank][] is an awesome public collection of around 30,000 dream reports from a variety of sources. To harvest those 30,000 dreams, I wrote a [simple Python scraper][DreamScrape] to collect the dreams and store them as json. [The data is all available here][DreamScrape].
@@ -32,7 +32,7 @@ Both the script and the complete dream json dataset are [on Github][Dreamscrape]
 
 Now, which dreamer to target first?
 
-## Barb Sanders
+# Barb Sanders
 [Introducing one Barb Sanders](http://dreambank.net/grid.cgi#b), occupation: dreamer. Barb Sanders, who from 1960 to 2001 put a pen to paper to record more than 4000 of her dreams. The year is now 2016, and thanks to modern technology, Barb Sanders is about to start dreaming once again. But what Ms. Sanders is about to realize, is that she's always been dreaming, in <strike>the Twilight Zone</strike> the Cloud.
 
 The Barb Sanders dream corpus tips the scales at some 820,000 words. Damn Barb! That's two *War and Peace*s worth of words right there (while also being approximately 87 quadrillion times more entertaining than anything Tolstoy ever produced as well.)
@@ -46,7 +46,7 @@ I LOVE YOU BARB SANDERS!!!
 
 Both the quantity and the quality of Barb Sanders' dreams made them a great starting point for my little experiment. Here's the complete dream set if you too want to "Feel the Barb": [Part 1](https://raw.githubusercontent.com/mattbierner/DreamScrape/master/dreams/b.json), [Part 2 (this is where things really start getting good)](https://raw.githubusercontent.com/mattbierner/DreamScrape/master/dreams/b2.json).
 
-### I Dream of Markov
+## I Dream of Markov
 There's a sort of honesty in the writing style of a good dream journal, with its simple sentences and almost *Up Goer Five* grammar. An honest dream journal also captures a unique style of narrative, one where the plot itself is (rather appropriately) a stream of consciousness. Dreams often have a matter-of-fact illogicality that only seems illogical in hindsight. Stuff just happens. NBD.
 
 Most fiction reduces dreams to lame flashbacks or uses the dream as a "show don't tell" device to tell the reader what a character's deepest emotions are (accomplished by bashing the reader over the head repeatedly with the largest, bluntest symbol available). But, for my money, stories such as [*The Dream-Quest of Unknown Kadath*](https://en.wikisource.org/wiki/The_Dream-Quest_of_Unknown_Kadath) are some of the only works of fiction that actually come close to capturing a true dream narrative.
@@ -68,7 +68,7 @@ Or, perhaps a dash of post-modern poetry:
 
 Wow, that's deep.
 
-### Neural Network
+## Neural Network
 Now Markov Chains make a mean [word salad](https://en.wikipedia.org/wiki/Word_salad), but are not so good at producing logical thought (unless the output is read in the most breathy of poet voices). So perhaps we should draw inspiration from the original Barb Sanders' dream generator, namely the brain of Barb Sanders. Yes! we need a neural network, [a neural network to hallucinate the hallucinations of a biological neural network](http://inception.davepedu.com/noflash.php)
 
 So continuing in the vein of throw-stuff-at-a-computer-and-see-what-happens, I next fed Barb Sanders' dreams into a neural network.
@@ -84,7 +84,7 @@ Notice that the sentences generally make much more sense than the Markov generat
 
 You done dreamed good Barb. You done dreamed good.
 
-## Me
+# Me
 I've been keeping a dream journal for fun over the past few years, and the exercise has made me realize what a product of the time I am. It's more than just the cast of characters that inhabit my dreams, or the copious pop-culture references that fill them, it's how I dream. I've dreamt in the third person, in debuggers, in Google Maps, in film, in Wikipedia, in Banjo-Kazooie, and in Ken Burn's style documentaries (I told you they would sound lame). Yes *in*, not just *about*. Fifty years ago, no one would understand my dreams. And, fifty years from now, no one will either. Their loss.
 
 I read on Wikipedia [that people who grow up watching black and white TV, sometimes dream in monochrome](http://www.telegraph.co.uk/news/science/science-news/3353504/Black-and-white-TV-generation-have-monochrome-dreams.html). I wonder how VR and AR will effect our dreams. 
@@ -93,7 +93,7 @@ But back to the topic at hand.
 
 After Barb Sanders, machine learning my dreams turned out to be a bit disappointing. The data is just too damn small. In the past two years or so, I've only dreamt some 260,000 words in 310 recorded dreams, a mere *Ulysses* worth of text.
 
-### Markov Chain
+## Markov Chain
 [All my dreams are property of Blot're][the_policy], so I can't provide the raw dream text at this time, but it's still interesting to see what words and phrases the computer spits out.
 
 Here's a Marky Markov generated Matt Bierner dream (the tool strips out new lines):
@@ -102,7 +102,7 @@ Here's a Marky Markov generated Matt Bierner dream (the tool strips out new line
 
 Already going full meta by the second sentence! I like it.
 
-###  Neural Network
+##  Neural Network
 Things start to break down a little more with the neural network. Remember, the character level neural network had to not only learn how to generate the dreams, but also how to generate sentences and even how to generate valid english words. The less text it has to learn on, the lower quality of the output.
 
 Here's a sample Matt Bierner dream generated by a fully trained 4 layer neural network with a rnn_size of 1024:
@@ -121,7 +121,7 @@ Interesting.
 
 And [here's a 12 dream, 40000 character sample][me_sample]. I've made a few minor edits for context. To keep things G-rated, I also removed a rather gratuitous scene wherein I was french kissing this lovely, bewhiskered, Austrian professor named 'Sigmund', or something similar. Still trying to figure out the interpretation of that...
 
-## Dreams Wholesale
+# Dreams Wholesale
 I hate to admit it, but the original dreams are much more entertaining than anything the computer produced. Computers may have us humans beat at Go, but we've still got the upper hand at dreaming. Sure, you could probably apply some fancy machine learning techniques or add more logic, but it'll be a while before computers are able to dream up a better Al Pacino than old Barb Sanders did.
 
 I once watched [a documentary](https://en.wikipedia.org/wiki/The_Matrix) about eco-minded machines using millions of human bodies as a renewable energy source. That'd never scale; potatoes would be a much better choice. But storing humans in tanks and using them to generate dreams? Much more logical. I can almost see AWS rolling out that service sometime next year.

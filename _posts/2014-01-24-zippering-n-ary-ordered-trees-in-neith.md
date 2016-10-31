@@ -7,14 +7,14 @@ Using [Neith][neith] to zipper k-ary trees with labeled edges is a common enough
 
 Following up on my [overview of Neith's Javascript zippers][neith-blog-1], here I cover the definition of zippers and zipper operations for generic ordered k-ary trees with labeled edges.
 
-### Goals
+## Goals
 * Support variations of k-ary ordered trees with labeled edges.
 * Provide a basic set of generic labeled tree query, movement, and editing operations.
 * Allow editing nodes and edges independently.
 * Use specialized zipper definition functions for `children` and `constructNode`  that are better suited to trees.
 * Support lazily generated, potentially infinite trees.
 
-### Problem With Standard Neith Zippers
+## Problem With Standard Neith Zippers
 The core Neith zipper has no concept of edges, but as the full binary tree zipper previous presented demonstrates, it is still fully possible to define and use zippers on trees without considering edges:
 
 ```js
@@ -47,7 +47,7 @@ var binaryMoveToRight = down \> right;
 
 Many operations, such as renaming or reordering edges, are completely impossible using this hardcoded approach.
 
-## Generic Zipper for k-ary Trees With Labeled Edges
+# Generic Zipper for k-ary Trees With Labeled Edges
 A ordered labeled tree zipper can be expressed as an ordered unlabeled tree zipper where each element is an edge, node pair.
 
 ```js
@@ -59,7 +59,7 @@ var value = \{value} -> value;
 
 Labeled tree zippers operate on these pairs, with the actual storage as pairs mostly hidden from the library consumer.
 
-### Defining a Zipper for Labeled Trees
+## Defining a Zipper for Labeled Trees
 As [previously covered][neith-blog-1], Neith zippers are defined by two metadata functions:
 * `children` - Get the child elements of a node.
 * `constructNode` - Reconstruct a node from its children.
@@ -151,10 +151,10 @@ karyZipper = (treeZipper,
 ```
 
 
-## Tree Specific Operations
+# Tree Specific Operations
 Existing Neith operations work fine for our new tree zippers, but return `Pair`s instead of nodes. Working directly with `Pair` is difficult and error prone, so a new set of operations will hide `Pair` by operating on edges and nodes separately.
 
-### Queries
+## Queries
 Tree queries extract either the `key` or `value` from the core operations.
 
 ```js
@@ -174,7 +174,7 @@ edgePath = zipper.path \> (map, key);
 parentNode = zipper.parent \> value;
 ```
 
-### Labeled Movement
+## Labeled Movement
 The code movement operations also work fine with tree zippers, but are cumbersome and fragile. Labeled tree specific movements allow moving along edges, abstracting away from the underlying order of nodes.
 
 ```js
@@ -246,7 +246,7 @@ kz
 }
 ```
 
-### Editing
+## Editing
 Editing operations on tree zippers also use edges and nodes instead of `Pair`:
 
 ```js
@@ -324,9 +324,9 @@ appendChild = \edge node ctx ->
         ctx);
 ```
 
-## Applications
+# Applications
 
-### ECMA AST Zipper
+## ECMA AST Zipper
 I use the tree zipper module to define an ECMAScript AST zipper. The AST nodes store additional metadata on valid edges and attributes that makes this possible. Some nodes in the AST are regular arrays that must be handled specially.
 
 Code from [ecma-ast-zipper][ecma-ast-ziper]:
@@ -368,9 +368,9 @@ ecmaZipper = (treeZipper,
 ```
 
 
-## Other Notes and Caveats
+# Other Notes and Caveats
 
-### Laziness and Infinite Trees
+## Laziness and Infinite Trees
 Node and edges are generated on demand by `edges` (which returns a stream), and `getChild`. This allows working with trees with an infinite number of immediate children and infinite depth. Tree structures like nodes do not even need to  exist as objects, allowing more interesting structures to be zippered:
 
 ```js
@@ -391,7 +391,7 @@ CountBinaryTree
     |> node; // 9
 ```
 
-### No Validity Enforcement
+## No Validity Enforcement
 As designed, Neith performs no checks and will happily mutilate trees. Zipper operations themselves do not enforce anything, including edge uniqueness or the valid values for edges.
 
 These operations on a binary tree are perfectly valid but create a meaningless structure:

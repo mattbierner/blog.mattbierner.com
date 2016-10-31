@@ -23,7 +23,7 @@ So although the songs never really stopped echoing in my head, I recently figure
 The results do resemble Katamaris, at least in that both are spherical. Close enough.
 
 
-## Overview
+# Overview
 
 {% include image.html file="pretty4.png" %}
 
@@ -48,14 +48,14 @@ The path is drawn progressively, with a default playback speed of 8x realtime. S
 A set of options for configuring the visualization are also provided. [Try playing around with these options][site] to explore the data or create more interesting graphics. [The documentation has more detail on these settings][documentation].
 
 
-## Collecting PS2 Controller Input
+# Collecting PS2 Controller Input
 {% include image.html file="pretty2.png" %}
 
 Now let's dive a bit into the implementation. I'm going to focus more on the high-level considerations of the project, instead of code dumping or tutorializing or anything like that. [All the code is open source][source], so feel free to check it out, open issues, ask questions, or submit PRs.
 
 My goal was to capture controller input playing *Katamari Damacy* on a physical Playstation 2, without effecting the gameplay experience. An emulator would be easier to work with, but less authentic and less interesting. And after a bit of trial and error, I was able to hack together something workable with an Arduino and a prayer.
 
-### Physical Setup
+## Physical Setup
 The Playstation 2 talks to it's controllers using a slightly modified [SPI protocol](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus). So, by paralleling onto a few of the wires between the console and the controller, we can NSA the console to controller communications.
 
 While it is possible to hook onto the Playstation 2 controller connector pins, I found it easier to sacrifice a controller by cutting through its cord to expose nine tiny wires; a veritable *Royal Rainbow*.
@@ -72,7 +72,7 @@ Since the Arduino is in parallel with the console -> controller, input to the ga
 
 Time to start collecting some data.
 
-### Ones and Zeros
+## Ones and Zeros
 Players use both analog sticks to steer the titular Katamari. There are a few other controls for cameras, and some button based controls that effect Katamari movement – such as pressing R3 and L3 to flip the Katamari over – but I decided to ignore these. This simplified movement model meant I only needed to poll the position of the two analog sticks during gameplay.
 
 With all the wiring correctly hooked up and the Arduino configured as an SPI slave, we receive about 60 binary messages like this per second:
@@ -98,7 +98,7 @@ ff:73:5a:ff:ff:89:7e:88:87
 
 [Here's the code I used to collect the controller data][collector]. The Arduino code handles SPI interrupts and writes the controller state poll responses to serial. A simple Python script on the computer listens to the Arduino's serial and writes the received data to a file, while also appending some time metadata. 
 
-### Normalization
+## Normalization
 Each analog stick axis value ranges from 0 to 255, so one may expect to see a value of 128 when the analog stick is not being used. This is rarely the case. Typical dead input values for my 15 year old PS2 controller's analog sticks were between 110 and 145, and *Katamari Damacy* itself only starts handling inputs below around 90 or above around 170. This is a pretty sizable deadzone, albeit one that I've rarely noticed in actual gameplay. 
 
 To simplify working the controller data, it was normalize by:
@@ -109,7 +109,7 @@ To simplify working the controller data, it was normalize by:
 
 I also tacked on some additional metadata to each poll and dumped the whole game log to json. The data normalization script is in `process_data/main.js` [in the main repo][source]. 
 
-### Sample Collection
+## Sample Collection
 The original *Katamari Damacy* is a great game, but, for me, *We ♥ Katamari* will always be the series crowning point; the controls and physics are better, levels are more interesting and varied, and the humor is absolutely top notch (the *King of All Cosmos* was one influence for the [voice of Us over at Blot're][blotre].)
 
 I collected ten samples from *We ♥ Katamari* using the hacked together Playstation -> Arduino -> Python -> Javascript -> json workflow described above. The samples cover a range of levels, each with slightly different play styles and goals. Here's a quick breakdown:
@@ -184,13 +184,13 @@ I collected ten samples from *We ♥ Katamari* using the hacked together Playsta
 I ultimately did not notice much variation between different samples besides game length however. The Katamaris on the `underwater` and `race` level control very differently, but this difference is not well captured by this visualization. The lack of real level distinction contrasts with [my Spelunky experiment][sketchy], wherein the five areas of the game each have distinct patterns of input. 
 
 
-## Visualization
+# Visualization
 
 {% include image.html file="pretty5.png" %}
 
 Now let's take a look at some of the more interesting aspects of the visualization. Feel free to [check out the source][source] to see how everything came together. The visualization itself uses WebGL and [Three.js](http://threejs.org), plus [React](https://facebook.github.io/react/) for the UI. 
 
-### Main Draw Function
+## Main Draw Function
 I wanted to produce something that resembles a Katamari, so drawing on a sphere was an obvious choice. Spheres have other benefits as well. In contrast to Spelunky, input for *Katamari Damacy* is primarily in a single direction, forwards, with sideways and backwards movement being much less common. If you plot this input on a plane, the resulting sketch is very sparse and dull. On the other hand, a sphere offers an infinite drawing canvas within a fixed sized area.
 
 To understand how the path is constructed, consider the `drawGame` function. This function converts all inputs of a given game into a path on a sphere. 
@@ -221,7 +221,7 @@ Two pieces of state are used to draw the path while iterating through the input:
 * `angle` - The local angle of the marker on a 2d drawing plane. `angle` determines the forward direction of movement. 
 
 
-### Rotation
+## Rotation
 `katamariMovement` updates both `angle` and `quaternion` based on the controller input. The simplest inputs to handle are rotations, which only update the angle:
 
 ```js
@@ -252,7 +252,7 @@ These are all approximations of how the actual Katamari responds to controls in 
 In the actual game, the last case can also be used to steer the Katamari using its momentum. Again, this visualization only looks at controller input and ignores details such as momentum (if only real engineers had it this easy.)
 
 
-### Movement
+## Movement
 When both joysticks are pushed in roughly the same direction, The Prince rolls the Katamari in that direction. In the visualization, the forward direction of this movement is stored in `angle`.
 
 Movement updates `quaternion` (the marker's location on the sphere) by computing vertical and horizontal movements for the current input, and then applying these using the current `angle`:
@@ -282,7 +282,7 @@ quaternion = quaternion.multiply(horizontal).multiply(vertical);
 This logic is grossly simplified, but approximates the movement style of *Katamari Damacy* well enough in my testing. 
 
 
-### Time
+## Time
 Early iterations of this visualization sketched out the movement path on a fixed sized sphere. This results in lots of intersections and can get messy for complex paths. 
 
 {% include image.html file="no-radius.png" %}
@@ -293,7 +293,7 @@ To avoid this, I changed the marker to start drawing on a small sphere that slow
 
 The result is a much more interesting three dimensional shape, that also better captures the progression of a game. It also mirrors the ever expanding nature of a Katamari. You can disable this expansion in the configuration menu by setting `inner radius` to 100.
 
-### Movement Scaling
+## Movement Scaling
 Another parameter I experimented with is the damping of movements on the sphere. This effects the distance the marker moves at each step; less damping means that the marker moves further each step.
 
 Increasing the damping takes us from this:
@@ -325,7 +325,7 @@ But I opted to disable this proportional damping since it tends to visually crow
 Playing around with all of the visualization options was actually a lot of fun, and I tried to make many aspects of the visualization interactive. Besides the `inner radius` and `movement damping` options, you can configure the colors and opacity of the path, along with the thickness of the path lines, to produce very interesting results.
 
 
-## Oh! I feel it! I feel the Cosmos!
+# Oh! I feel it! I feel the Cosmos!
 {% include image.html file="pretty1.png" %}
 
 If this all seems rather abstract and pointless, well that's kind of the point. *Na Naa, Na Na Na Na Naa Naa Naa Na* only captures input used to play *Katamari Damacy*, not the game itself. And yet the results can be quite beautiful and resemble everything from nebulas and novas, to cells and proteins. 

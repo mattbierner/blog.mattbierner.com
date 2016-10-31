@@ -20,7 +20,7 @@ As always, you can use the latest version of Hamt with Node by running `$ npm in
 
 Let's take a quick look.
 
-## 2 Chain
+# 2 Chain
 Lisp programmers felt right at home with the old Hamt 0.x API, since it used free functions exclusively. To create a map with three values, you used to write:
 
 ```js
@@ -72,10 +72,10 @@ var inc = hamt.modify.bind(null, x => x + 1);
 map = inc('key', map);
 ```
 
-## Other API Changes
+# Other API Changes
 There are a few other breaking changes in Hamt 1 that make the library more consistent and get it ready for future work.
 
-### `isEmpty`
+## `isEmpty`
 `isEmpty` is a safe, constant time way to check if a given map contains any elements.
 
 ```js
@@ -85,18 +85,18 @@ hamt.isEmpty(hamt.empty.set('key', 'not empty')) === false
 
 Comparing a map to `hamt.empty` using equality is not supported. `isEmpty` should always be used instead. With the direct equality comparison, there is a risk that two versions of the library will be loaded with different `hamt.empty` values. `isEmpty` also allows changing the internal implementation of the library more easily.
 
-### `get`
+## `get`
 `get` now returns `undefined` instead of `null` for values that do not exist. This mirrors how ES6's `Map.prototype.get` works. 
 
-### `hamt.set`
+## `hamt.set`
 `hamt.set` now takes its arguments as `hamt.set(value, key, map)`. This order is somewhat confusing coming from a C-syntax based language, but it better supports binding and is consistent with the argument order of `hamt.modify`.
 
 `map.set` continues to take arguments as `map.set(key, value)`. Code should be updated to use the method based API where possible.
 
-### `delete`
+## `delete`
 Also for ES6 compatibility, you can now call `map.delete('key')` as an alias of `map.remove('key')`.
 
-### `fold`
+## `fold`
 `fold` has been tweaked to call the accumulator function with the arguments `(sum, value, key)` instead of `(sum, {key, value})`. This allows you to use simple accumulator functions more easily
 
 ```js
@@ -109,7 +109,7 @@ hamt.empty
     .fold(add, 0) === 14
 ```
 
-## Resources
+# Resources
 Check out the improved [documentation on GitHub][documentation] for the complete set of APIs.
 
 I've also updated [the benchmarks][benchmarks] with the latest version of Hamt (along with the other tested libraries as well).

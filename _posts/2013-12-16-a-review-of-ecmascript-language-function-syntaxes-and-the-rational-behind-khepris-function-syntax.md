@@ -6,9 +6,9 @@ date: '2013-12-16 20:48:04'
 ---
 I review and critique a few ECMAScript language function expression syntaxes. Then I overview [Khepri's][khepri] function syntax and discuss how it has helped the language. 
 
-## A Review of ECMAScript Language Function Expression Syntaxes
+# A Review of ECMAScript Language Function Expression Syntaxes
 
-### ECMAScript 5.1
+## ECMAScript 5.1
 The [ECMAScript 5.1][ecmascript51] function syntax values consistency over brevity and clarity. Function expressions start with the `function` keyword and must be defined with a block statement body.
 
 ```js
@@ -19,7 +19,7 @@ var fac = function(n) {
 
 For short functions that map to expressions, about half of the code is visual noise. `function`, the opening and closing braces, and `return` just add unnecessary typing for the programmer and obscure the actual logic.
 
-### ECMAScript 6
+## ECMAScript 6
 The [ECMAScript 6 draft][ecmascript6draft] adds fat arrow function syntax for lambda functions. This is a significant step in the right direction, but I disagree with the syntax choices of fat arrows. (It should also be noted the fat arrows actually have subtly different behavior than regular functions too).
 
 ```js
@@ -74,7 +74,7 @@ Binding patterns are arguably most useful in lambda functions, so limiting them 
 
 Any expansion of function expression syntax requires significant additions to the grammar.
 
-## Khepri
+# Khepri
 Khepri grew out of my frustration with Javascript's verbosity for functional style programming. Indeed, Khepri 0.0.0 was just ECMAScript 5.1 with lambda function syntax and no semicolon insertion. I find it quite striking how easily ECMAScript can be modified to support lambda functions.
 
 Khepri's function syntax is inspired by Haskell. I don't claim this is the only, or even best, way to express functions, but it works well for Khepri's purposes and has allowed the language to easily support new features.
@@ -121,7 +121,7 @@ Lambda Functions can also map to block statements
 \x -> ({'x': x});
 ```
 
-### Patterns
+## Patterns
 Using `\` to identify parameter lists allows Khepri to easily introduce additional functionality into parameter lists without any conflicts. This is used for unpack patterns:
 
 ```js
@@ -135,7 +135,7 @@ Using `\` to identify parameter lists allows Khepri to easily introduce addition
 var dot2 = \[[a b], [x y]] -> a * x + b * y;
 ```
 
-### Arguments
+## Arguments
 The only way to access the arguments object is using a pattern to unpack in a lambda function. This eliminates the need for the magic `arguments` identifier.
 
 ```js
@@ -147,7 +147,7 @@ The only way to access the arguments object is using a pattern to unpack in a la
 
 Unlike the other patterns, which can also be used in function expressions, only lambda functions can use the arguments unpack. Function expressions always use anon argument unpacks.
 
-### Named Functions 
+## Named Functions 
 Since regular ECMAScript functions are valid in Khepri, one way to name functions already exists. But ECMAScript function expression can't use an arguments unpack, so shorthand for naming lambda functions is also available:
 
 ```js
@@ -162,7 +162,7 @@ var fac = function \n ->
     n === 0 ? 1 : n * fac(n - 1);
 ```
 
-### Style Guidelines
+## Style Guidelines
 I generally follow these rules for deciding which form to use:
 
 * Always prefer unnamed lambda functions.
@@ -175,7 +175,7 @@ I generally follow these rules for deciding which form to use:
 * Use commas with very long names or when complex patterns would make understanding the signature more difficult
 
 
-## Closing Thoughts
+# Closing Thoughts
 Khepri's syntax for function is brief, consistant, and avoids some of the pitfalls that I feel exist in other solutions. It has allowed functions to be significantly augmented with complex patterns and lets commas be optional. 
 
 

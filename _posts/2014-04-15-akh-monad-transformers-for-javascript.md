@@ -7,12 +7,12 @@ Akh is a small Javascript library of monad transformers and structures. This pos
 
 {% include image.html file="CC1279-Welcome-to-Wackyland-DX.jpg" description="Akh - A large flightless bird native to Fantasy Land" %}
 
-## Why Monad Transformers are Useful in Javascript
+# Why Monad Transformers are Useful in Javascript
 Even in untyped, non-functional language like Javascript, monads are an extremely useful abstraction. It is fairly trivial to define and use monads like the state, error, and list monads in Javascript.
 
 But beyond toy examples, real world problems often require functionality from one or more of these structures. A networked application may require both error handling and IO, or an algorithm implementation may use state, error handling, and continuation control. The question is how to compose a set of simple structures together in a maintainable and flexible way.
 
-### The Problem with Monoliths
+## The Problem with Monoliths
 One potentially tempting approach is to define a big structure that has every functionality we need in our application. 
 
 {% include image.html file="2001-last-monolith.jpg" description="My god it's full of state ... and error too" %}
@@ -60,7 +60,7 @@ Any change to the structure is going to be painful. Want to branch the stateful 
 
 It is also impossible to reuse a monolithic structure like `StateAndError` for a different application with slightly different requirements because `StateAndError` hardcodes the composition of State and Error in a way that can not easily be modified.
 
-### Monad Transformers
+## Monad Transformers
 [Monad transformers][monad-transformers] let programers compose monads while maintaining separation of concerns. A transformer takes an inner monad, and outputs a new monad with some specific functionality or properties. The `StateT` transformer outputs a monad that passes state value pairs though the inner monad, the `ListT` transformer outputs a list of results in the inner monad. Most common monads can be easily rewritten to a monad transformer applied to the identity monad.
 
 ```js
@@ -90,7 +90,7 @@ var getState = M.lift (M.inner.lift (M.inner.inner.get));
 
 In short, monad transformers allow us to compose simples structures with a single well defined function (such as state or error handling), using a set of abstract operations, all without having to understand how the structures or the composition is implemented. 
  
-### Problems With Existing Implementations
+## Problems With Existing Implementations
 A brief search turned up a few existing Javascript monad transformer implementations scattered across NPMJS and Github. However, I could not find a complete set of transformers, and many existing existing implementations are only useful for toy problems.
 
 Javascript's limited stack size and lack of tail call elimination is a major issue for monads, specifically in the Cont and State monads.
@@ -118,7 +118,7 @@ f(0).run(\x -> x);
 I needed a monad transformer library that could be used in real world applications. 
 
 
-## Akh
+# Akh
 [Akh][akh] is a small, extensible collection of important monad transformers and core operations. Akh structures implement the [Fantasy Land][fantasy-land] interface for monads, functors, applicative functors, and monoids. This allows Akh to be used with any library that supports Fantasy Land. The implementation is a rough translation of [MTL][mtl] to the untyped world of Javascript.
 
 Akh includes the following transformers that implement Fantasy land interfaces:
@@ -135,7 +135,7 @@ Akh also provides base structures derived from these transformers, along with a 
 
 Akh's `State`, `Cont`, and `DCont` structures correctly handle tail call. The library has been successfully used for fairly complex real world applications, such as the [Khepri compiler][khepri-compile].
 
-### Simple Monad Transformer Example
+## Simple Monad Transformer Example
 Any combination of transformers can be used to construct a monad transformer stack:
 
 ```js
@@ -172,7 +172,7 @@ output:
 ]
 ```
 
-### Lifting
+## Lifting
 A transformed monad can lift operations from the inner monad by calling `lift`
 ([Documentation](https://github.com/mattbierner/akh/wiki/transformers)).
 
@@ -210,7 +210,7 @@ M.liftInner (M.inner.get);
 M.liftInner.liftInner (M.inner.inner.get);
 ```
 
-### Examples and 3rd Party transformers
+## Examples and 3rd Party transformers
 The [Khepri compiler][khepri-compile] demonstrates some of coding the benifits of using Akh monad transformers to structure computations.
 
 ```
@@ -267,7 +267,7 @@ The details are unimportant. What this example shows is how Akh monad transforme
 [Zipper-m](https://github.com/mattbierner/zipper-m) defines a [Neith][neith] zipper monad transformer.
 
 
-### Known Limitations and Contributing
+## Known Limitations and Contributing
 Akh does not include any IO functionality at the moment, or the Reader and Writer monads. Any improvements or additions to the library are welcome.
 
 

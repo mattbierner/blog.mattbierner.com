@@ -5,26 +5,26 @@ date: '2014-05-02 03:06:13'
 ---
 I [previously described][mb-inc] running [Bennu][bennu] parsers incrementally. Here I show how we can offload incremental parsing to a web worker, and get realtime feedback as the worker parses data.
 
-### Example Overview
+## Example Overview
 I'm going to develop a simple word count application that uses a Bennu parser run in a web worker. For demonstration purposes, the main thread simulates an asynchronous event source to pass chunks of data to a parser web worker.
 
 Example code is written in [Khepri][khepri]. You can can find the complete code [on Github](https://github.com/mattbierner/bennu-webworker-example), including the HTML and other less important parts of the example application. A [live version of the demo](http://mattbierner.github.io/bennu-webworker-example/) is also available. 
 
-### Goals
+## Goals
 * Run parsing routines on the web worker without blocking the main thread, even for very large inputs.
 * Support any data source, including data from asynchronous events or data that is partially available. Potential sources include reading from a web socket or another web worker, or UI events.
 * Allow the main thread to request status updates during parsing.
 * Support almost any parser (the same restrictions as with normal incremental parsers apply).
 
 
-## Main Thread
+# Main Thread
 The main thread initializes the parser web worker, feeds chunked data to the parser, and receives updates and results from the parser.
 
 The demo application gets text input from an HTML field, and simulates an async data source using `setInterval`. Input is broken into chunks and feed to a word count parser web worker.
 
 After feeding a chunk to the parser, the main thread requests a status update on parsing, which will get the current word count for the input consumed so far. Once all input has been provided, the main thread is notified of the final word count result.
 
-### Data Source and Chunking Input
+## Data Source and Chunking Input
 Breaking input into chunks allows us to parse naturally chunked data, such as that from a web socket or keyboard events. But even with a complete input stream, chunking input is beneficial.
 
 We can request the working result of an incremental parser between calls to `provide`, but not while a chunk is being parsed. At one extreme, the main thread feeds the parser its entire input in a single chunk. This however prevents us from getting updates during parsing.
@@ -64,7 +64,7 @@ stream.forEach(\x -> {
 }, s);
 ```
 
-### Messages
+## Messages
 The main thread signals the web worker parser using four types of JSON encoded messages:
 
 * `'begin'` signals a parsing reset.
@@ -87,7 +87,7 @@ var postFinish := post @ { type: 'finish' };
 var postProvide := post <\ \x -> ({ type: 'provide', input: x });
 ```
 
-### Feeding the Parser
+## Feeding the Parser
 Although the demo application gets the input to be parsed from a text area, I simulate an asynchronous data source using `setInterval` and a manual chunking routine. `setInterval` is not necessary but, as mentioned, manually chunking input is worthwhile as it allows more granular status updates during parsing.
 
 ```js
@@ -133,7 +133,7 @@ var finish := \ -> {
 };
 ```
 
-### Provide
+## Provide
 
 `provide` simulates the callback from an asynchronous data source. It manually gets the next chunk of input data and sends the chunk to the web worker. After feeding a chunk to the parser, `provide` requests a parsing status update. Once no more input is available, we call `finish` to get the final result.
 
@@ -154,7 +154,7 @@ var provide := \ -> {
 };
 ```
 
-### Response Handling
+## Response Handling
 The main thread receives status update and parser result JSON message from the web worker parser. When parsing fails, the web worker sends the error message back to the main thread so that we can handle parser errors on the main thread instead of in the web worker.
 
 ```js
@@ -168,12 +168,12 @@ worker.onmessage = (.data) \> JSON.parse \> \x -> {
 ```
 
 
-## Worker Thread
+# Worker Thread
 The worker thread defines the word count parser, handles messages from the main thread, and sends parsing results back to the main thread.
 
 This worker use an incremental Bennu parser to feed chunks of data from the main thread to a parser, and extract working results from this parser. Parsing may either succeed or fail with a result value.
 
-### Initialization
+## Initialization
 Bennu uses AMD to define its packages and import dependancies. After loading an AMD module loader using `importScripts`, we configure it for Bennu and its dependancies. A standard `require` block  can then load Bennu.
 
 
@@ -194,7 +194,7 @@ requirejs.config {
 };
 ```
 
-### Parser
+## Parser
 Almost any Bennu parser can be run incrementally. For this example application, the word count parser run by the web worker tracks word count in the parser user data field. 
 
 ```js
@@ -226,7 +226,7 @@ require @ [
 }
 ```
 
-### Result Messaging
+## Result Messaging
 Parsing may either succeed with a result or fail with an error. Parsers run using Bennu's `run*` methods fail by throwing an exception, but in a web worker we don't want to throw an error in the worker thread itself. Instead the worker should pass both success and error results back to the main thread.
 
 To avoid throwing errors, the parses is run with two custom completion functions: `ok` for success and `err` for failure. These callbacks pass data back to the main thread and are triggered when `finish` is called on the parser (which may be well after the actual parsing has completed).
@@ -240,7 +240,7 @@ var err := \x ->
     postMessage <| JSON.stringify { error: true, value: x };
 ```
 
-### Message Handlers
+## Message Handlers
 When initialized, the web worker registers an event handler to decode and dispatch messages.
 
 ```js
@@ -296,7 +296,7 @@ var finish := \ ->
 ```
 
 
-## Conclusions
+# Conclusions
 This simple application demonstrates how we can offload Bennu parsing to a web worker, allowing us to safely parse very large inputs without blocking the main thread. Furthermore, chunking the input allows the main thread to get status updates during parsing.
 
 This approach can be applied to almost any data source and parser. 

@@ -10,12 +10,12 @@ I overview ECMAScript 5.1 environments before discussing [Atum's][atum] declarat
 The result is an interpreter with basic environment support, allowing variables to be bound and mutated. Support for scopes is also added, but will not be used until functions are implemented.
 
 
-## Overview
+# Overview
 ECMAScript defines two classes of environments. Declarative environments (10.2.1.1) store bindings in an environment record. This is the standard type of environment found in many programming languages, and I'm only going to cover declarative environments in this post. Object environments (10.2.1.2) store bindings on a hosted object. I'll cover object environments later, as they are used by `with` statements and for the global environment.
 
 Environments bind/map identifiers to values. Most programming languages also have some concept of scope, which defines the subset of valid bindings at a given point in a program. Scoping often stores multiple environments in a stack or linked list, with language elements like curly brackets pushing and popping environments onto and off of the stack.
 
-### Immutable Binding Environment
+## Immutable Binding Environment
 In simple languages with only immutable bindings, all bindings can be stored in the current environment. When a new scope is entered, a new environment is pushed onto the environment stack and we copy all of the old bindings into the new environment. Likewise, exiting a scope pops an environment off the stack, restoring the previous environment and all of its bindings.
 
 ```js
@@ -36,7 +36,7 @@ c // undefined  // [(b, 2), (a, 1)]
 
 Without additional logic however, this will not work properly with mutable bindings. Since bindings are copied, the `a` mutation inside the block would not be seen once the block is exited. 
 
-### Dynamic Scoping
+## Dynamic Scoping
 A refined approach is to maintain a single copy of each unique binding. We still use an environment stack, but instead of coping bindings, environment operations like lookups delegate to lower environments in the stack until finding their target.
 
 An environment operation may change any environment in the stack. Mutating `a` for example, skips past the top environment and updates the `a` binding in the outer environment.
@@ -76,7 +76,7 @@ function f() { return a; };
 }
 ```
 
-### Lexical Scoping
+## Lexical Scoping
 A lexical scoping binding is determined by where it appears in the program source, instead of where it is evaluated. The current environment still holds a set of active bindings, but it delegates to the environment in which it was defined. This may or may not be the previous environment in the execution environment stack. Though it does not have block scoping, this is how ECMAScript environments work.
 
 ```js
@@ -99,7 +99,7 @@ Each ECMAScript environment holds a reference to a parent/enclosing environment.
 
 Function calls push an environment onto the environment stack, but the new environment delegates to the environment in which the function was defined. We can create closures by allowing functions to capture their defining environment. 
 
-### Atum Environment Overview
+## Atum Environment Overview
 Both declarative and object environments in Atum implement the `Environment` interface. Environments hold a set of binding and a reference to a parent/outer environment, creating chains of environments. Environment chains are [persistent data structures][persistent] and, since any environment in a chain may be mutated and a single environment may be a member of multiple chains, [references][references] must be used.
 
 ECMAScript identifiers resolve to environment references, which are [internal references][references] to values stored in environments. The [arithmetic operations][lifting] must be updated to handle internal references correctly.
@@ -107,7 +107,7 @@ ECMAScript identifiers resolve to environment references, which are [internal re
 The current environment is held in the ECMAScript computation context. A library of computation to query and update environments will be defined. The semantics of ECMAScript will be expressed using the environment operations.
 
 
-## Environment Interface
+# Environment Interface
 Declarative and object environments both extend and implement the `Environment` interface ([source](https://github.com/mattbierner/atum/blob/master/lib/context/environment.js)).
 
 ```js
@@ -118,7 +118,7 @@ var Environment = record.declare(null, [
 
 Environments are stored using references, so all environment operations must map to computations instead of direct values.
 
-### Queries
+## Queries
 Environment objects themselves only have methods to query and update their own bindings. The environment operations for chains of environments will be defined later using these methods.
 
 ```js
@@ -129,7 +129,7 @@ Environment.prototype.hasOwnBinding = function(name) { };
 Environment.prototype.getBindingValue = function(name) { };
 ```
 
-### Updates
+## Updates
 Mutation operations change an environment. This updates the value stored in memory for the reference to the environment. The `ref` parameter is the reference to the environment that the operation is called on.
 
 ```js
@@ -144,10 +144,10 @@ Environment.prototype.deleteBinding = function(ref, name) { };
 ```
 
 
-## Declarative Bindings and Environment Records
+# Declarative Bindings and Environment Records
 Declarative environments store their bindings in an environment record object (ECMA 10.2.1). Environment records map (string) identifiers to values ([source](https://github.com/mattbierner/atum/blob/master/lib/context/environment_record.js)).
 
-### Binding
+## Binding
 Atum environment record bindings are stored in a `Binding` object. For immutable values like strings and numbers, the binding will be the value object. A bindings to a mutable value, like an object, stores a reference to the object.
 
 ```js
@@ -156,7 +156,7 @@ var Binding = record.declare(null,[
     'mutable']);    // Is the environment binding mutable?
 ```
 
-### Environment Record
+## Environment Record
 Atum uses a [hashtrie][hashtrie] as its environment record. Hashtries are persistent data structures, with good lookup and update performance.
 
 ```js
@@ -196,7 +196,7 @@ var putImmutableBinding = function(name, v, record) {
 ```
 
 
-## Declarative Environment
+# Declarative Environment
 `DeclarativeEnvironment` holds a set of bindings in an environment record ([source](https://github.com/mattbierner/atum/blob/master/lib/context/environment.js)).
 
 ```js
@@ -208,7 +208,7 @@ var DeclarativeEnvironment = record.extend(Environment,
     });
 ```
 
-### Queries
+## Queries
 Atum's declarative environment queries do need to be computations, but queries on object environments do. It is simpler to use a common interface.
 
 ```js
@@ -223,7 +223,7 @@ DeclarativeEnvironment.prototype.getBindingValue = function(name) {
 };
 ```
 
-### Updates
+## Updates
 The update operations create new environment records and change the value stored for `ref` to a new `DeclarativeEnvironment` with the updated record. Both the `DeclarativeEnvironment` and environment record are persistent.
 
 ```js
@@ -246,7 +246,7 @@ DeclarativeEnvironment.prototype.deleteBinding = function(ref, name) {
 };
 ```
 
-### Creation
+## Creation
 Declarative environments are stored in the computation context memory with [iref references][references]. All references to environments must go though the iref indirection. Otherwise, you end up in a situation like the immutable binding environment demonstrated before, where an inner environment can not change the value of a binding in an outer environment.
 
 ```js
@@ -257,10 +257,10 @@ var createDeclativeEnvironment = function(outer) {
 ```
 
 
-## Adding Environments to the State
+# Adding Environments to the State
 Now we can start using declarative environments in the interpreter. The `DeclarativeEnvironment` operations covered so far only work with a single environment, so a set of operations for working with the entire environment chain will be covered as well. 
 
-### Execution Context
+## Execution Context
 We added state to the interpreter [in a previous post][state] using a `ComputeContext` object. But `ComputeContext` only holds general computation state. 
 
 Atum stores ECMAScript specific state in a `ExecutionContext` (ECMA 10.3), stored in the `ComputeContext` `userData` field.  The `ExecutionContext` holds all state information required to evaluate ECMAScript source, and the initial execution context will be very basic ([source](https://github.com/mattbierner/atum/blob/master/lib/context/execution_context.js)).
@@ -275,7 +275,7 @@ ExecutionContext.empty = ExecutionContext.create(
     null);
 ```
 
-### Changing Execution Environment
+## Changing Execution Environment
 The `lexicalEnvironment` field holds a reference to the current environment. A small set of operations get and changes the current environment.
 
 ```js
@@ -294,7 +294,7 @@ var setEnvironment = compose(
     constant);
 ```
 
-### Internal Reference Operations
+## Internal Reference Operations
 Environments in Atum are stored with `Iref`. Both `Iref` and `EnvironmentReference` are internal reference types used to implement the interpreter.
 
 A few helper computations simplify work with Atum internal references ([source](https://github.com/mattbierner/atum/blob/master/lib/operations/internal_reference.js)).
@@ -333,7 +333,7 @@ var dereferenceFrom = function(c, f) {
 ```
 
 
-## Environment References
+# Environment References
 An `EnvironmentReference` is an internal reference to a value held in an environment ([source](https://github.com/mattbierner/atum/blob/master/lib/context/environment_reference.js)).
 
 During interpretation, when an identifier is encountered, it is not deference to a value immediately. Instead, an `EnvironmentReference` is created for the identifier, with the identifier name referencing a binding in the current environment. This binding may not actually exist, but we won't know this until the `EnvironmentReference` is dereferenced.
@@ -355,7 +355,7 @@ var EnvironmentReference = record.declare(new InternalReference, [
     });
 ```
 
-### Lookups
+## Lookups
 Dereferencing an environment reference attempts to resolve the binding for `name` on the base environment. 
 
 In strict mode, dereferencing an unresolvable `EnvironmentReference` is a runtime error (ECMA Annex C). But regular mode environment reference may be unresolvable, and dereferencing an unresolvable environment reference returns `undefined`.
@@ -385,7 +385,7 @@ EnvironmentReference.prototype.getValue = function() {
 };
 ```
 
-### Updates
+## Updates
 `setValue` updates the binding for `name` in environment `base`.
  
 Setting a strict unresolvable environment reference is a runtime error. Setting an unresolvable regular mode reference creates new global binding (I'll cover globals later).
@@ -428,10 +428,10 @@ EnvironmentReference.prototype.deleteReference = function() {
 };
 ```
 
-## Environment Operations
+# Environment Operations
 The environment operations operate on chains of environments and bring everything together ([source](https://github.com/mattbierner/atum/blob/master/lib/operations/environment.js)). 
 
-### Lookups
+## Lookups
 Environment lookups are used to implement identifiers. A lookup creates an environment reference, while actually resolving `name` to a value is handled in `EnvironmentReference.prototype.getValue`. 
 
 `getEnvironmentBinding` starts by checking the top level environment for the reference `env` using `hasOwnBinding`. If `hasOwnBinding` evaluates to true, an environment reference to the environment referenced by `env` is created.
@@ -456,7 +456,7 @@ var getEnvironmentBinding = function(env, strict, name) {
 };
 ```
 
-### Puts
+## Puts
 Puts create a new binding in an environment. This may overwrite an existing binding in the target environment, or hide a binding the outer environments. Put operations are used for variable and function declarations.
 
 ```js
@@ -467,7 +467,7 @@ var putEnvironmentMutableBinding = function(env, strict, name, value) {
 };
 ```
 
-### Sets
+## Sets
 Sets are used by environment references to update an existing binding in an environment.
 
 Like lookups, sets walk the chain of environments until finding the first one with the target binding. But unlike lookups, sets always succeed. If we reach the outermost environment and have not found the target binding yet, we simply create a new binding in it.
@@ -491,7 +491,7 @@ var setEnvironmentMutableBinding = function(env, strict, name, value) {
 };
 ```
 
-### Delete
+## Delete
 Finally, delete operates much like `setEnvironmentMutableBinding`.
 
 ```js
@@ -515,10 +515,10 @@ var deleteEnvironmentBinding = function(env, name) {
 ```
 
 
-## Environments in the Interpreter
+# Environments in the Interpreter
 All that remains is to hook up the environment operations to the interpreter ([source](https://github.com/mattbierner/atum/blob/master/lib/semantics/semantics.js)). 
 
-### Identifiers
+## Identifiers
 During interpretation, identifiers are mapped to `EnvironmentReference` in the current environment using `getEnvironmentBinding` ([source](https://github.com/mattbierner/atum/blob/master/lib/semantics/value.js)). 
 
 ```js
@@ -532,7 +532,7 @@ var identifierSemantics = function(name) {
 };
 ```
 
-### Expression Statements and Programs
+## Expression Statements and Programs
 By supporting identifiers, any expression may evaluate to an internal reference. But we don't actually want internal references to leak out of the interrupter. 
 
 ```js
@@ -559,7 +559,7 @@ var program = function(stmts) {
 };
 ```
 
-### Variable Declarations
+## Variable Declarations
 The variable declaration is the primary element that creates new bindings (ECMA 12.2). Every variable declarations contains one or more variable declarators ([source](https://github.com/mattbierner/atum/blob/master/lib/semantics/declaration.js)).
 
 ```
@@ -607,7 +607,7 @@ var variableDeclarator = function(id, init) {
 };
 ```
 
-### Assignment
+## Assignment
 Assignment takes a lefthand side computation that evaluates to an internal reference, such as an identifier, and a right hand subexpression for the new value.
 
 Assignment updates the value stored for the LHS, and returns the result of the RHS. It is a runtime error if the LHS is not an internal reference.
@@ -635,7 +635,7 @@ var assignment = function(left, right) {
 };
 ```
 
-### Updating Expressions
+## Updating Expressions
 Finally, subexpressions like `a` in `3 + a` may also evaluate to internal references. None of the lifted operations [defined previously][lifting] handle internal references, so we have to add another level of computations to deference internal references and pass the values to the arithmetic operations.
 
 `binaryOperator` takes some binary computation `op` and returns a binary computation that deferences the result of two computations resulting in internal references, and forwards the dereferenced values `op`
@@ -664,7 +664,7 @@ var equalOperator = binaryOperator(compare.equal);
 
 ```
  
-## Conclusions
+# Conclusions
 The resulting interpreter supports variable declarations, basic mutations, and lookups. It only uses a single environment, but adding multiple environments and closures will be fairly trivial.
 
 ```js
@@ -680,7 +680,7 @@ var a = 6; // rebind a
 a; // 8
 ```
 
-### Running a Program
+## Running a Program
 
 Running a program requires that an environment be initialized before the program body is evaluated:
 
@@ -713,7 +713,7 @@ var evaluateText = function(input, k) {
 })
 ```
 
-### Next
+## Next
 I'll start discussing objects and meta objects before moving on to functions.
 
 

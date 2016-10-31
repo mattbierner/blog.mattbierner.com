@@ -23,12 +23,12 @@ We already have steps three and four completed, so let's move on to the biggest 
 The code in this post directly builds on what we wrote [last time][part1]. The complete source code is [available on Github][src].
 
 
-## Basic Serialization
+# Basic Serialization
 Let’s assume that we have some way to pass text data across compiler runs. We’ll cover the details of this later, but first we need to turn our game state, which is just a really complex type, into a string. So what data format should we use? Json? XML? Yaml?
 
 Yet we need look no further than C++ itself. Yes, perhaps the best serialization of a C++ template data structure is to C++ source code for that template data structure. This is not as crazy as it sounds, since we get compile time deserialization for free. Just `#include` the save file and the compiler does the rest.
 
-### Type Serialization
+## Type Serialization
 We [previously][part1] used a `Print` interface to print out visual representations of our compile time data structures at runtime. Serialization will basically do the same, but output C++ source code the represents the data structure itself. 
 
 The `Serialize` interface defines a `Write` operation which writes a C++ representation of the target type to a stream. The write operation itself will be executed at runtime (For both `Print` and `Serialize`, you could instead output to a `template<char...>` if you really wanted to).
@@ -59,7 +59,7 @@ template <>
 struct Serialize<size_t> { static std::ostream& Write(std::ostream& output) { return output << "size_t"; } };
 ```
 
-### Value Serialization
+## Value Serialization
 But our `Serialize` interface has a key limitation, it only works for types. Even though we specialized `Serialize` for the type `int`, we can’t specialize it for integer arguments like `Serialize<3>`.
 
 But we can get around this restriction by encoding values as types. `SerializableValue` encodes both the type `T` and value `x` of a value, as a type.
@@ -92,7 +92,7 @@ Serialize<3>::Write(std::cout);
 Serialize<SerializableValue<int, 3>>::Write(std::cout);
 ```
 
-### Join
+## Join
 Serializing variadic templates presents a small challenge. We used variadic templates to encode lists, but because the arguments to a template must be comma separated in C++ source code, we need a helper that can comma separate a variable number of template arguments.
 
 The `Join` helper acts like [Javascript’s](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) `Array.prototype.join`. It takes a separator character and list of values, and writes out a list of serialized value separated by the separator character.
@@ -155,12 +155,12 @@ struct Serialize<std::integer_sequence<T, elements...>>
 ```
 
 
-## Serializing Nibbler
+# Serializing Nibbler
 Any type stored in the Nibbler `State` object must be serializable. That may sound intimidating, but this is really only around 10 types, and most of the code is straightforward (This probably would be a good application of macros as well).
 
 {% include image.html file="3fhdgZOw7j-2.png" description="It's my duty to inform you that Honey Bunches of Oats is the greatest cereal ever created by man." %}
 
-### Lists and Grids
+## Lists and Grids
 `Position` only uses basic values, which we can write directly to the data stream.
  
 ```cpp
@@ -204,7 +204,7 @@ struct Serialize<Grid<rows>>
 };
 ```
 
-### Cell
+## Cell
 Each cell in the game world has three components: state, weight, and direction. State and weight are both enum class values. Because enum classes are strongly typed, we must provide custom value serialization logic for them:
 
 ```cpp
@@ -259,7 +259,7 @@ struct Serialize<Cell<state, weight, direction>>
 };
 ```
 
-### Random
+## Random
 Some objects that are part of the game state are not visually displayed, and therefore did not implement the `Print` interface. This includes the [compile time pseudo-random number generator][prandom], `PseudoRandomGenerator`. But it is an important part of the game state, and must be serialized. 
 
 ```cpp
@@ -292,7 +292,7 @@ struct Serialize<Lfsr<state, taps>>
 };
 ```
 
-### Serializing the World
+## Serializing the World
 First, the `PlayerState` enum class.
 
 ```cpp
@@ -337,7 +337,7 @@ struct Serialize<State<playerState, position, direction, world, random>>
 
 
 
-## Loading and Saving State
+# Loading and Saving State
 If we venture to serialize the initial game state, `Serialize<InitialState>`, we end up with this wonderful text blob:
 
 
@@ -347,7 +347,7 @@ State<PlayerState::Alive,Position<5,5>,Direction::Right,Grid<List<List<Cell<Cell
 
 That’s not very human readable, but it is perfectly valid C++. So let’s return to the problem of saving game state across compiler runs.
 
-### Persistance
+## Persistance
 State persistence saves the game state in a format that can be deserialized at compile time. Unfortunately, the persistence itself must be handled at runtime using files (I believe you could possibly get around using runtime here by instead serializing the game state to a compiler error message, and then passing the error message into the next compiler run as a macro. But that's a whole lot of work just to prove a rather silly point).
  
 When the Nibbler program is executed at the end of each game step, we'll write the state to a file called `"current_game.h"`. This is handled by the `serialize_game` function, which outputs text that binds the state to the name `”state”` with a `using` statement.
@@ -364,7 +364,7 @@ void serialize_game()
 }
 ```
 
-### Loading State
+## Loading State
 To load a save state, we simply import `"current_game.h"` in the main function of the runtime program. This creates a local type called `state` that contains the current game state type.
 
 We then use `state` to compute the next state of the game for the given player input. The next state of the game is printed out and written back to `"current_game.h"`.
@@ -389,10 +389,10 @@ int main(int argc, const char* argv[])
 ```
 
 
-## Interactive Nibbler
+# Interactive Nibbler
 All that remains now are a few finishing touches.
 
-### Input
+## Input
 Interactive Nibbler gets player input from C preprocessor macros specified on the compiler command line. Four macro input commands are supported: `UP`, `RIGHT`, `DOWN`, and `LEFT`. Any other input, or the lack of input, results in a noop command and the snake continues in its current direction.
 
 ```cpp
@@ -411,7 +411,7 @@ Interactive Nibbler gets player input from C preprocessor macros specified on th
 
 This code replaces the `/* get input */` block in the `main` function above.
 
-### Example Game
+## Example Game
 Brining it all together, here’s an example game of interactive Nibbler. It runs around half a FPS, which, considering, is really not too bad. 
 
 Using the clang compiler, we provide input using a compiler flag (`-D UP`, `-D DOWN`, `-D LEFT`, or `-D RIGHT`), and compile the current game to `snake`. The `snake` program is executed, which both prints out the new game board and also serializes it to a file. Recompiling continues on with the next step.

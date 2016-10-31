@@ -23,7 +23,7 @@ Having tried a number of approaches to the method->function problem, including [
 
 [Source and documentation are available on Github][src].
 
-### Why
+## Why
 At a glance, Javascript methods are just functions:
 
 ```js
@@ -67,7 +67,7 @@ add(v, new Vec2(3, 4));
 
 Or we could `.bind` all methods and `.call` all things, but that's no fun. Here's where Funcualizer comes in.
 
-### Explicit This
+## Explicit This
 Funcualizer takes a method and makes `this` an explicit parameter. The basic implementation is probably easier to understand:
 
 ```js
@@ -91,7 +91,7 @@ And, like with `.call` and `.apply`, it lets us use any object as the `this` par
 add({ x: 0, y: 1 }, { x: 3, y: 4 });
 ```
 
-### Pre and Post
+## Pre and Post
 The Funcualizer library can create functions that take `this` as either the first or the last parameter:
 
 ```js
@@ -113,7 +113,7 @@ const take_first_three = slice_post.bind(null, 0, 3);
 take_first_three([1, 2, 3, 4, 5]) === [1, 2, 3]
 ```
 
-### Dynamic
+## Dynamic
 When dealing with inheritance patterns, usually we don't want to invoke a specific method implementation, but rather the implementation bound to a given name. `dynamic_pre` and `dynamic_post` lookup and invoke a method by name on the `this` argument of the function when it is called:
 
 ```js
@@ -126,7 +126,7 @@ toString({ toString: () => 'bla' }) === 'bla'
 
 Here, `toString` actually ends up invoking a different method for each of these three objects.
 
-### Performance
+## Performance
 All the functions covered so far perfectly forward their arguments to the inner method. This is convenient and suitable for almost all normal use cases, but introduces a [small amount of overhead][benchmarks] compared to a handwritten method->function implementation:
 
 ```js
@@ -150,7 +150,7 @@ add(v, new Vec2(3, 4));
 
 Again, not super important for most day-to-day programming tasks, but a good option if you are concerned about performance and don't need to forward arbitrary argument sets.
 
-### Next Steps
+## Next Steps
 I've been using these basic patterns for years now and found them helpful, so I hope other people will also benefit from this small library.
 
 Again, [check out the documentation on Github][src] if you are interested in using the library. Contributions are always welcome as well.

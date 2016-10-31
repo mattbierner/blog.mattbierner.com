@@ -8,7 +8,7 @@ After my recent experiment [visualizing Spelunky gameplay input Etch-a-Sketch st
 
 The scripts used are all on [Github][src].
 
-## Speed
+# Speed
 Speed is addictive. After beating Spelunky that first time, next I pushed to complete the game in under fifteen minutes, and then ten, and then eight, and then five. For the 150 runs in this data set, my goal was always the same: complete the game as fast as possible. This distribution shows how long it took to reach a given level during those 150 runs.
 
 {% include image.html file="spelunky-time-to-reach-level.png" %}
@@ -19,14 +19,14 @@ My rush to complete those first few mine levels has led to no end of [YASDs](htt
 
 At nearly 250 times the length, the longest recorded run lasted 588.439 seconds (one of the two winning runs). Considering that the gold time achievement in Spelunky is unlocked by beating the game in under ten minutes, even this run was pretty fast for normal play. This speed is nothing to boast about however, since the fastest speed runs are closer to the two minute mark. 
 
-### Sprinting
+## Sprinting
 Even though I know that I've gotten better at Spelunky, I can't help but feel that I also die a whole lot more than I used to. Sprinting may be partly to blame. Many a game have I begun with the utmost confidence, only to send the poor spelunker sprinting headlong into an arrow, which sends his limp body hurling through the air into a bat, before he bounces off a ledge into pit, falls several hundred feet, and comes to a comfortable repose atop a bed of spikes, all within the first five seconds of gameplay. 
 
 {% include image.html file="spelunky-percent-sprinting.png" %}
 
 I've played the mine levels so many damn times that I often try to rush through them at speeds that outpace my ability. The mines are certainly somewhat better suited to sprinting than other areas, especially when compared to the ice caves, but that alone does explain why twice the amount of time is spent sprinting in the mines compared to any of the other levels, boss battle excluded. I think a big part of this differences is that, in later sections of the game, I start to play more cautiously, having already invested some time and effort. 
 
-### Time Per Level
+## Time Per Level
 The average time it took to complete a level was a little over twenty seconds:
 
 {% include image.html file="spelunky-avg-time-to-complete.png" %}
@@ -41,7 +41,7 @@ And so does the minimum time it took to beat a level:
 
 {% include image.html file="spelunky-min-time-to-complete.png" %}
 
-### Life and Death Histograms
+## Life and Death Histograms
 Breaking out individual runs into a histogram reveals a few points hidden in the charts above.
 
 {% include image.html file="spelunky-level-time-histogram.png" %}
@@ -57,28 +57,28 @@ For the sake of completeness, here's a similar histogram showing death time dist
 This chart is based on only about one fifth of the data compared to the level completion histogram. There's not really enough data to make any conclusions about the Ice Cave or Temple levels (which only had five data points total), but the number of mine level deaths under six seconds is pretty Nick Cage. 
 
 
-## Spelunky = Keys + Time
+# Spelunky = Keys + Time
 Now let's look at what keys were being pressed during all that time. A total of 37505 keypresses were recorded during the 150 runs. Here's the breakdown:
 
 {% include image.html file="spelunky-keypress-breakdown.png" %}
 
 Jump stands on its own as the most used key, followed by a tier with the horizontal movement and sprinting. The vertical movement and whipping come next, being used about one third as often as the horizontal movement keys. The numbers drop off sharply after that, with the remaining actions seeing only limited usage. All of these actions are either context specific (`buy`) or consume an item (`bomb`, `rope`, and `use`).
 
-### Keypress Rate
+## Keypress Rate
 During gameplay, between two and three commands were entered every second (counting a keypress as a single command, no separate keydown and keyup commands):
 
 {% include image.html file="spelunky-keypress-rate.png" %}
 
 The keypress rate is highest in the first half of the game, before dropping off slightly for the latter two levels. I suspect this drop off is again a symptom of more cautious, planned out gameplay later in the game. The ice cave levels particularly require careful planning to figure out where to go and how to get there safely. 
 
-### Movement Duration
+## Movement Duration
 The duration of each movement keypress remains fairly consistent over the entire game:
 
 {% include image.html file="spelunky-movement-duration.png" %}
 
 The two outlier actions are sprinting and the down arrow. The sprint key is held down slightly longer in the mine levels, but significantly longer on the boss level. Meanwhile, the down arrow key is held down for less time on mines – closer in duration to just tapping the button to pick up an item – while longer on the jungle and especially the ice caves. Holding the down arrow key to peek at a lower area of the level takes around a second to engage, so it makes sense that levels the require more peeking have longer down arrow holds.
 
-### Action Rate
+## Action Rate
 Finally, here's how often the various actions were used.
 
 {% include image.html file="spelunky-actions-per-second.png" %}
@@ -92,7 +92,7 @@ None of the other actions show up at all on the above chart. Here's the same cha
 No real surprises here. Each of these actions happens at most around once a minute, with many actions only occurring less than once every three to four minutes of gameplay.
 
 
-## Conclusion
+# Conclusion
 Well there you go. More charts on Spelunky keyboard input than you ever knew you wanted. My only regret is that I did not use [Splunk](http://www.splunk.com) for this analysis, as the pun opportunities would have been truly epic.
 
 

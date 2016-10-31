@@ -28,10 +28,10 @@ Feel free to checkout the complete source [on Github][src]. It's far from comple
 
 {% include image.html file="BigBroadcast_attackdog.jpg" description="I hear it's gonna be a good time yo, and you're gonna like it." %}
 
-## Overview
+# Overview
 Assemblers are conceptually pretty simple: they map [assembly mnemonics](https://en.wikipedia.org/wiki/Assembly_language#Opcode_mnemonics_and_extended_mnemonics) to machine code. More advanced assemblers may support symbols and macros, but, if anything, implementing a basic assembler is more tedious than challenging. At least, that is the case when targeting a RISC assembly language, the kind covered in your typical CS class and most books on the subject. When it comes to x86 assembly, that most CISCy of CISCers, all bets are off.
 
-### x86
+## x86
 The x86 instruction set architecture is expansive: around one thousand top level instructions by my rough estimate, with about 3500 instruction forms (overloads) among the lot. That right off is one challenge, but a manageable one. While it would be impractical to write the encoding of each instruction by hand, we can write scripts to generate code for each instruction from a specification. Instructions follow a common format, so, if we do things correctly, we'll only have to implement something like memory address encoding once.
 
 But there's more to x86 assembly's complexity than operation breadth. Take addressing modes. There are so many goddamn addressing modes that the [`mov` operator itself is Turing-complete](http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf). And a whole lot of complexity comes from x86's legendary backwards compatibility (fossil records indicate that T.Rex cut his teeth, so to speak, programming x86 assembly in the Cretaceous Period, and that was 70 million years ago). 
@@ -42,7 +42,7 @@ It's impressive just how much engineers have been able to cram into the instruct
 
 All this to say, writing an x86 assembler is considerably more complicated than writing a MIPS assembler. That does not mean the task is unmanageable though, the assembler is still basically just a big mapping function after all, but it's gonna be one hell of a function.
 
-### Pseudo Inline Assembly
+## Pseudo Inline Assembly
 Our compiletime assembler will take an assembly program, written in C++ as a small embedded domain specific language, and output machine code. And because the compiled program itself will be run on an x86 machine, we can evaluate the generated machine code directly within the compiled program. 
 
 For [this year's underhanded C contest](/underhanded-c-2015/), I also looked at embedding machine code in a C program, albeit in a much simpler manner. To summarize the approach: a C style function pointer is just a pointer to code and, through the magic of casting, there is nothing to stop us from converting any byte array into a function pointer. Call the resulting function and the byte array is evaluated as raw machine code.
@@ -56,7 +56,7 @@ func(); // 4
 
 We'll use the same basic approach to write the machine code our assembler generates back into the program, and to invoke this machine code at runtime. This does limit the assembly program to being a function, but that's no so bad. Functions even let us pass in arbitrary data in as arguments.
 
-### Embedded Language
+## Embedded Language
 Most previous *Stupid Template Tricks* have been run your of the mill template metaprogramming, so what do we gain by writing an *embedded* domain specific language to express the assembly? Well consider the following:
 
 ```cpp
@@ -77,7 +77,7 @@ Both approches are forms of a domain specific language and produce the exact sam
 
 As the syntax of the targeted language becomes more complicated, the benefits of the embedded language become much more clear. Trying to write good looking memory addressing in pure template code for example is a bit of a nightmare, but it's easy when we can overload the subscript operator and the `+` and `*` operators. 
 
-## Byte String
+# Byte String
 Our template assembler will take assembly code and output a byte array of machine code. We've worked with compiletime byte arrays before, using them as strings for [parsing][stt-parsing] and playing [Tetris][stt-tetris]. The only new requirement this time around is that our compiletime string must have a static memory data address that we can treat as a function pointer later.
 
 `ByteString` encodes an array of bytes, exposing the complete byte array as the static `data` member.  
@@ -108,7 +108,7 @@ template <typename x>
 using to_bytes = typename ToBytes<x>::type;
 ```
 
-### Combing Byte Strings
+## Combing Byte Strings
 Machine code is made up of individual instructions, and each instruction is made up of a number of [components](http://www.c-jump.com/CIS77/CPU/x86/lecture.html#X77_0020_encoding_overview): prefixes, the operator, and operand data. Each of these components may be further broken into bit level meanings, but all of our encoding logic will operate on bytes. 
 
 `bytes_add` is the base function that combines two byte strings.
@@ -143,7 +143,7 @@ template <typename... args>
 using bytes_join = typename BytesJoin<args...>::type;
 ```
 
-### Integers to Bytes
+## Integers to Bytes
 One final useful opperation is converting an integer to it's byte string representation. `IntToBytes` takes an integer`x` and the number of bytes to generate, and returns a byte string
 
 ```cpp
@@ -160,10 +160,10 @@ struct IntToBytes<0, x> {
 };
 ```
 
-## Operands
+# Operands
 Each x86 operator takes between zero and three operands. At the machine code level, an operand can be a register, immediate, or memory address, the assembler having replaced symbols within the program with their values. Our assembler will target [NASM syntax][nasm], which orders operands `mov DEST, SRC`. 
 
-### General Purpose Registers
+## General Purpose Registers
 [General purpose registers](https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture#x86_Architecture) are fixed size registers. For each size, an index uniquely identifies the register when encoding instructions.
 
 ```cpp
@@ -189,7 +189,7 @@ constexpr auto edi = GeneralPurposeRegister<4, 7>{};
 
 The complete source also defines 16bit, 8bit, and 64 bit registers. Segment registers and SIMD regiters are currently not supported. 
 
-## Immediates
+# Immediates
 Immediates are constant values, such as `0` or `-42`. We'll only worry about integer immediate values for now. All the actual instruction encoding will be implemented using templates, so we have to find a way to encode a value like `-42` as a type.
 
 `Immediate` handles this encoding for us. It's similar to `std::integral_constant`, but stores additional metadata about the value (`size`) and provides some common operator overloads.
@@ -223,7 +223,7 @@ constexpr auto operator-(Immediate<L, lx>, Immediate<R, rx>) {
 
 Note that while all of these operator overloads take values, we only care about the types of the values and the type of the result. This allows us to use normal C++ syntax, such as operators in our embedded language, instead of writing everything with lispy looking pure template code. 
 
-### Bytes and Words and DWords! Oh My!
+## Bytes and Words and DWords! Oh My!
 Our assembler will support four sizes of immediates: 8bit (byte), 16bit (word), 32bit (dword), and 64bit (qword). Instead of writing `byte<4>`, we can abuse C++ user defined operators for our mini assembly language. The full implementation for constructing value types from C++ literals was [previously covered](/stupid-template-tricks-stdintegral_constant-user-defined-literal/) and simply referenced here as `ImmediateFromString`. `4_b` creates a byte, `4_w` creates a word, `4_d` creates a dword, and `4_q` creates a qword.
 
 ```cpp
@@ -261,7 +261,7 @@ constexpr auto operator ""_q() {
 ```
 
 
-## Memory
+# Memory
 x86 memory addressing is complex, both in range of addressing modes the instruction set supports as well as how these addressing modes are encoding. Let's start by considering a few valid forms of memory addressing:
 
 * `[0x1234]` - Direct
@@ -274,7 +274,7 @@ x86 memory addressing is complex, both in range of addressing modes the instruct
 * `[ebx * 2]` - Scaled only
 * `[ebx * 2 + 8]` - Scaled only + displacement
 
-### Base Only
+## Base Only
 {% include image.html file="9.JPG" description="Heap corruption, Oh yeah!" %}
 
 The form `[esi + ebx * 2 + 8]` is the most complex of the lot, with all other modes being a subset of it. Breaking it down, its components are:
@@ -308,7 +308,7 @@ struct Memory {
 
 `scale` 0 indicates default scaling, and will later be encoded as 1. This project does not support all features of x86 memory addressing, such as 64 bit displacements.
 
-### Sugar
+## Sugar
 In [NASM assembly syntax][nasm], `[...]` creates a memory address while `+` adds a displacement. Scaling factors are created with `*` and may also be added to a base.
 
 We can emulate much of this syntax by overloading subscript `[]` operator, but in C++ the subscript operator must be defined on something, so let's use the most understated identifier possible: `_`
@@ -331,7 +331,7 @@ constexpr struct {
 
 `_` allows writing `_[eax]` to create a memory address from a register, the special `None` type being used to indicate the lack of a register value for the index register. The second subscript overload of `_` will allow us to more easily support the other memory addressing forms with a consistent syntax.
 
-### Displacement
+## Displacement
 Displacement is a signed number added to the base memory address. The binary `+` and `-` operators are overloaded for a memory address and an `Immediate` displacement value.
 
 ```cpp
@@ -376,7 +376,7 @@ constexpr auto operator-(
 
 The [source][src] also includes flipped versions of all these overloads, so you can write addresses like: `_[2_b + ebx - 8_b]`.
 
-### Scaling
+## Scaling
 [Scaled index](https://courses.engr.illinois.edu/ece390/books/artofasm/CH04/CH04-3.html#HEADING3-49) part of a memory address consists of a index register and a scaling factor. The scaling factor is just a constant value, either 1, 2, 4, or 8. Scaling factors are created with `*` in NASM assembly syntax, so we'll overload the `*` operator in C++ on a register and an `Immediate` scaling factor
 
 ```cpp
@@ -420,7 +420,7 @@ constexpr auto operator+(
 These overload allow us to write forms like `_[esi + ebx]`, `_[esi + ebx * 2_b]`, and `_[esi + 8_b + ebx * 2_b]` while also producing compiler error for invalid memory addresses like `_[eax + ebx + ebp]` or `_[eax * 2 + eax * 4]`.
 
 
-## Double Assembled for Twice the Assembly
+# Double Assembled for Twice the Assembly
 
 
 Consider this simple assembly fragment:
@@ -434,7 +434,7 @@ Consider this simple assembly fragment:
 
 Clearly the `a` in `jmp a` should refers to the label below, but how can our poor computer reading the assembly sequentially know this? Perhaps `a` is never defined or perhaps it is defined so far away that a different `jmp` instruction overload has to be used. Checking all this in a single pass is not practical, so we'll instead use a two pass assembler: pass one to generate the symbol table and pass two to generate the machine code. 
 
-### Symbol Table
+## Symbol Table
 The symbol table maps symbols to program values. We'll only use our symbol table to map labels to code indicies at the moment, but many assemblers support more advanced uses of symbols (being embedded in C++ gets us a lot of this for free).
 
 We don't need anything fancy, in fact, pretty much the most simple symbol table possible will work for our assembler: the symbol table as a list of key value pairs.
@@ -492,7 +492,7 @@ template <typename def, typename key, typename map>
 using symbol_table_lookup = typename SymbolTableLookup<def, key, map>::type;
 ```
 
-### State
+## State
 The symbol table is one part of the assembler's state, the other component being the address of the current instruction (relative to the first instruction in our assembler). 
 
 To keep things as simple as possible, both pass one and pass two of our assembler will operate on essentially the same assembly program data. The differences in behavior between the two passes will come from different implementations of the state object each pass takes.
@@ -555,12 +555,12 @@ using pass2state = Pass2State<0, typename pass1state::labels>;
 Additionally, `add_label` is a noop in pass two.
 
 
-## You're Nobody 'Til Somebody Assembles You
+# You're Nobody 'Til Somebody Assembles You
 An assembly program is just a list of instructions and assembly directives. No nesting, syntax trees, or anything like that. And the only (sort-of) directives we care for our simple assembler are program labels. Labels and instructions go in, machine code comes out. 
 
 As we've seen with the symbol table, the assembler must be able to thread state through the top level units during assembly, very much like the state monad in Haskell. Think of each unit of the assembly as a function, a function that that takes an input state and returns an output state along with some generated machine code. Simple instructions may return constant machine code and only increment the instruction counter of the state, whereas a label may update the state but not generate any machine code. 
 
-### Instruction
+## Instruction
 `Instruction` is the base unit that we'll use for all x86 instructions. It encodes the 1 to 15 byte machine code for a single x86 instruction, such as `MOV` or `JMP`. `components` is a list of `ByteStrings` or objects that can be converted to `ByteStrings`. During assembly, after simple rewriting pass, `Instruction` joins these components together into the final machine code for the entire instruction. 
 
 ```cpp
@@ -621,7 +621,7 @@ The programmer must still explicitly specify the size of the expected jump on th
 
 In this example, if `a` turns out to be more than 128 bytes away, our assembler will produce undefined machine code. A more complete assembler would select the correct `jmp` overload during pass two, depending on the actual size of the jump needed.
 
-### Encoding and Generating Instructions
+## Encoding and Generating Instructions
 I'll just provide a quick overview of how all the instructions are generated here. The [actual code][src] is not all that interesting.
 
 For our language, we'll use C++ functions for each instruction
@@ -658,7 +658,7 @@ constexpr auto MOV(GeneralPurposeRegister<1, a>, byte<b>) {
 But logic like `make_rex` and `modrm` are implemented in normal C++. Again, the logic for these is not too interesting. Take a look at [the source][src] for the details. 
 
 
-### Labels
+## Labels
 Labels are the other top level units of assembly code. A label attaches a symbol to an address in the the assembly code itself and are purely an assembly language construct, they generate no code, and indeed machine code has no real concept of labels at all.
 
 During assembly, labels update the state to map the label symbol to the current instruction counter with `add_label` on the state object. 
@@ -679,7 +679,7 @@ constexpr auto operator""_label() { return Label<chars...>{}; };
 ```
 
 
-### Sequencing
+## Sequencing
 Our simple assembler does not need the full power of a state monad, so we can get away with a simple sequencing operation instead. `next` runs `p` and then `c`, concatenating the generated machine code:
 
 ```cpp
@@ -712,7 +712,7 @@ constexpr auto block(x, xs...) {
 }
 ```
 
-## I am given birth to nothing but machine code
+# I am given birth to nothing but machine code
 {% include image.html file="TFTM_Junkions.JPG" %}
 
 Bringing everything together, `assemble` converts an assembly program into machine code at compile time. Pass one is run first on the program to generate symbol table, then pass two is run with the resulting symbol table. The result of `assemble` is a `ByteString` of machine code.
@@ -790,7 +790,7 @@ Asm<int>(
 )(&ret66);
 ```
 
-### Macro-ish 
+## Macro-ish 
 One quick final thought on the power of embedding the assembly in C++. Because the assembly source is just C++ values and types, we can use any template metaprogramming techniques to manipulate the assembly code. One simple example is writing basic macros within the language: 
 
 ```cpp
@@ -819,7 +819,7 @@ Asm<int>(
 
 Again, using C++ directly gets us a lot for free. 
 
-## Conclusion
+# Conclusion
 
 
 C++ templates metaprogramming enables the development of fairly powerful embedded domain specific languages and can make templates metaprograms much more expressive. x86 assembly may not be the most practical application of this, but I feel that this is an interesting little project and, with a little work, we could probably make our simple assembler more portable and support a pretty good subset of x86 assembly language.

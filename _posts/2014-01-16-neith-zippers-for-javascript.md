@@ -7,10 +7,10 @@ Zippers allow efficient manipulation of immutable, hierarchical data structures 
 
 Neith is a Javascript library that supports zippers for hierarchical, lazy, potentially infinite data structures. It is based on [clojure.zip][clojure-zipper]. The example code is written in [Khepri][khepri] and taken from [Neith's implementation][neith].  For an overview or introduction to zippers see [Heut's paper][Heut] or [Haskell/Zippers][haskell-zippers].
 
-## Generic Neith Zippers
+# Generic Neith Zippers
 Neith supports zippers for any tree-like data structure. One important restriction on the data structures is that every element in a zippered data structure must be identifiable by a unique implicit or explicit path. Graphs therefore cannot be zippered using Neith. 
  
-### The Zipper Context
+## The Zipper Context
 Zippers work by decomposing a data structures into a focus element and a representation of its location in the larger data structure; which together form a context. All zipper operations take a context and output either a new context or some information extracted from the context.
 
 Without a type system, it is also necessary to store metadata about the zipper itself. Neith splits the zipper context into two [Amulet][amulet] data records: `Context` and `Loc`.
@@ -43,7 +43,7 @@ var Loc = declare(null, [
 
 `path`, `left`, and `right` are all (possibly empty or infinite) [Nu][nu] streams. `path` is stored in the order leading from the focus to the root. The first element of both `left` and `right` are the immediate siblings of the focus and the last elements are the elements furthest away; meaning that `left` is reversed compared to the source data structure. This ordering greatly simplifies the movement logic. 
 
-### Zipper Creation
+## Zipper Creation
 Zippers are created with an initial focus and the two metadata functions stored in `Context`.
 
 ```js
@@ -109,10 +109,10 @@ with $ = Binary.create in {
 }
 ```
 
-## Operations
+# Operations
 Every public Neith zipper operation takes a context as its last parameter. Taking the context as the last parameter instead of the first allows currying multiple argument operations, and sequences of operations can be organized into imperative looking code using Khepri's `|>` operator.
 
-### Queries
+## Queries
 Query operations extract information from the zipper context. The zipper context should be considered opaque, and third party code should only interact with zippers using these operations.
 
 ```js
@@ -155,7 +155,7 @@ isFirst = lefts \> isEmpty;
 isLast = rights \> isEmpty;
 ```
 
-### Basic Movement
+## Basic Movement
 Four primitive two dimensional movement operations traverse the underlying data structure, mapping a context to a new context for a new location. `left` and `right` move within a level of a data structure, while `up` and `down` move between levels. Invalid movement operations, such as moving down in an empty tree, return null.
 
 #### Down
@@ -294,7 +294,7 @@ var constructParent = \ctx ->
             rights ctx));
 ```
 
-### Compound Movements
+## Compound Movements
 More powerful movement operations can be defined using the four basic movements.
 
 #### Root
@@ -378,7 +378,7 @@ listZipper <| stream.from[stream.from[1, 2], stream.from[3]]
     |> nextDfs; // null
 ```
 
-### Editing
+## Editing
 The real power of zippers is in efficiently transforming immutable data structures using imperative looking code. Normally, editing a node in an immutable tree data structure is an `log(n)` operation, assuming we already have the node we want to edit, because the entire tree must be rebuilt on every edit. Using a zipper, many common editing operations are possible in constant time, although recovering the complete transformed data structure does have a cost. This makes zippers well suited for efficiently applying multiple transforms to a data structure.
 
 #### Editing the Focus
@@ -496,14 +496,14 @@ appendChild = \node, ctx ->
         :insertChild(node, ctx));
 ```
 
-## Further Work
+# Further Work
 
-### Labeled k-ary Trees
+## Labeled k-ary Trees
 A general purpose zipper for variations of labeled n-ary trees (like ASTs) is fairly trivial to define. Specialized edit and query operations allow editing both edges and nodes.
 
 I cover Neith's implementation of tree zippers [in this post](/zippering-n-ary-ordered-trees-in-neith/).
 
-### Better Failure
+## Better Failure
 I designed Neith to be simple to use with standard Javascript techniques. One area that suffers as a result is failure handling.
 
 Invalid Neith operations return `null`. A better solution is to return `Maybe` values and build zipper computations by composing potentially failing operations using applicatives or monads. [This approach][learn you a zipper] is superior, and common in languages like Haskell, but would have made Neith's API more difficult to work with.

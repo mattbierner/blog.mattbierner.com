@@ -14,7 +14,7 @@ Starting from the raw text, I'll walk through the entire process translating the
 
 Now, you may be wondering about the practical applications of all this. Please let me assure you, there are none. And all the better. But I found it an interesting project and I hope you agree.
 
-## Initial Data
+# Initial Data
 My goal was map each word in *Moby-Dick* to a color. Sounds easy enough, but there's a lot of room for interpretation. *Moby-Dick* contains over two hundred thousand words and, since this project's inception, I knew that humans, not computers, would source the color mappings. Asking people to map two hundred thousand words seemed too daunting, so I scoped things down a bit to a more reasonable problem.
 
 I decided to use a dictionary approach. This would allow me to map every distinct word to a color just once, even if that word appeared multiple times in the text. As a result, I decided that each word would be considered on its own, independent of its grammatical context and independent of any symbolism or larger meaning in the text.
@@ -31,7 +31,7 @@ I wanted to capture the color association of words, the first color that comes t
 
 But let's not get ahead of ourselves here.
 
-### Tokenization
+## Tokenization
 First step, getting the source text into a usable format. I grabbed the *Moby-Dick* `.txt` file over at [Project Gutenberg][gutenberg] and cracked it open.
 
 Ahhhh, typical Melville. Always with the spaces and the punctuators when a nice JSON array of words would have been so much more convenient. Consider this excerpt:
@@ -76,7 +76,7 @@ Again, not perfect. But I didn't need perfect. And for my purposes, the simple t
 
 I feed the entire book through the simple tokenizer, minus the etymology and extracts, from, "Call me Ishmael" to, "found another orphan." There are about 260,000 tokens in *Moby-Dick*, and roughly 19,000 distinct tokens.
 
-### Normalization
+## Normalization
 The most common tokens are pretty much what you would expect, a bunch of punctuation and small common words:
 
 ```
@@ -112,7 +112,7 @@ Down to 14,500 words now. Still too many. And the top words are still not all th
 ['the', 'and', 'that', 'but', 'with', 'for', 'all', 'whale', 'thi', 'not', 'from', 'him', 'one', 'you', 'there', 'now', 'man', 'had', 'have', 'were', 'like', 'then', 'which', 'what', 'some',  ...]
 ```
 
-### Color Word Identification
+## Color Word Identification
 But what kind of words can have a color associations? Well, words for things and words that qualify things for starters. So nouns, adjectives, and adverbs. I decided to limit my project to those.
 
 I ran the OpenNLP part of speech (POS) tagger on *Moby-Dick* to identify every noun, adjective, and adverb. Here's some example output:
@@ -136,7 +136,7 @@ From the tagged output, I extracted all nouns, adjectives, and adverbs and norma
 ['whale', 'not', 'now', 'man', 'then', 'ship', 'sea', 'more', 'ahab', 'boat', 'other', 'old', 'time', 'head', 'there', 'only', 'captain', 'such', 'hand', 'long', 'here', 'very', 'thing', 'still', 'yet', 'great', 'way', 'white', 'most', 'last', 'again', 'stubb', 'day', 'water', 'queequeg', 'little', 'eye', 'sperm', 'side', 'first', 'much', 'deck', 'good', 'same', 'never', 'ever', 'own', 'line', 'almost', 'round', 'starbuck', 'even', 'part', 'down', 'life', 'too', 'chapter', 'world', 'away', 'pequod', 'god', 'sort', 'well', 'back', 'fish', 'far', 'night', 'many', 'foot', 'crew', 'right', 'mast', 'once', 'air', 'sir', 'whole', 'harpooneer', 'thus', 'soon', 'place', 'sailor', ...]
 ```
 
-## Visualization - Take One
+# Visualization - Take One
 Before continuing on, I decided to try out a few simple color mappings and see what the results looked like.
 
 Starting with a tokenized copy of *Moby-Dick*, I normalized each word in the text using the same process I used to generate the distinct word list.
@@ -189,7 +189,7 @@ img.save("out.png")
 
 Time to try out some mappings.
 
-### Ahab and Moby-Dick
+## Ahab and Moby-Dick
 What does *Moby-Dick* look like if you encode Ahab as black and Moby Dick as white (for the example image, the token sequence "white whale" was also encoded as white):
 
 ```python
@@ -222,7 +222,7 @@ def get_color(word, current):
 
 Interesting but monochromatic. Let's bring in some color.
 
-### Color Words
+## Color Words
 *Moby-Dick* uses very colorful language. Hell, the word 'white' alone appears more than three hundred time, 'black' and 'green' around one hundred times each, and 'red' around fifty times. So what would the book look like if you visualized its color words?
 
 To see, I started with the CSS3 list of color names. I split up compound names, like 'RebeccaPurple', creating entries for 'rebecca' and 'purple' (regular 'purple' overwrites the 'purple' from 'RebeccaPurple'.) Then, I ran the image building script again, this time without any decay function:
@@ -233,10 +233,10 @@ Fascinating.
 
 But using just color words feels still like a bit of a copout. What about words like 'whale' (around five hundred occurrences) or 'pequod' (two hundred or so)? How could I colorize those?
 
-## Mechanical Turk
+# Mechanical Turk
 Colorizing all ten thousand distinct words myself would have been quite a chore.  I also wanted the color associations to come from multiple points of view, a draw from multiple opinions on some of the more common words. But where could I find people who would willingly spend their time mapping words to colors? The Internets of course, at three cents a minute.
 
-### HIT
+## HIT
 I used [Mechanical Turk][mturk] to crowd source the color mappings because it allowed me to quickly and easily ask people questions and collect their responses. But before mapping all ten thousand words, I wanted to make sure the survey process would work as expected for a smaller set of data.
 
 My task, or HIT in Amazon speak (oddly appropriate for Blot're), on Mechanical Turk asked workers to map five words to colors, in exchange for three cents compensation. I randomly bucketed the fifteen hundred most common words into three hundred buckets to generate my tasks.
@@ -247,7 +247,7 @@ I quickly put together a basic HTML survey using the [Spectrum color picker][spe
 
 I also provided workers with the option to mark, "No color association", for words they strongly felt did not have any associated color. The survey had a few very basic guards to encourage better responses, such as requiring workers to interact with the color picker for each of the five words before submitting their responses.
 
-### Results
+## Results
 Honestly, I wasn't sure what to expect when I posted up the first set of words.   What if workers were confused by my instructions or just picked colors at random? And Melville is [One Thesaurical Motherfucker](/one-thesaurical-motherfucker/) too. How would workers handle words such as 'swart' or 'admeasurement', or names like 'starbuck' and 'ahab'?
 
 But the Mechanical Turk workers did surprisingly well. There are no correct mappings here, but most of the responses do make sense.
@@ -262,10 +262,10 @@ Here's the result of running the image generation script again using the first f
 
 {% include image.html file="turk1-1.png" %}
 
-## Blot're
+# Blot're
 The whole goal of this project was to encode a book for use on [Blot're][blotre]. But this was perhaps the easiest part of the whole process. You can find the stream of Moby-Dick stream [here](https://blot.re/s/matt/moby+dick).
 
-### Setup
+## Setup
 I wrote the client application in Node using the [Blot're CL framework][blotre-cl]. This framework handles registering a new [disposable][blotre-disposable] client with `https://blot.re`, displaying the redemption code to the user, obtaining an access token for the user who redeemed the code, and persisting the credentials in four lines of code:
 
 ```js
@@ -292,7 +292,7 @@ var start = function(client) {
 };
 ```
 
-### Updates
+## Updates
 The first step was to create a new target stream. `getMobyStream` gets or creates a stream named `"Moby Dick"` under the authorized user's root stream.
 
 ```js

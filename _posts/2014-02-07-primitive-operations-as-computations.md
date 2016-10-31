@@ -7,10 +7,10 @@ With a [monad defined][mb-decont] and a small library of [primitive operations][
 
 I'll demonstrate how and why [Atum][atum] lifts primitive operations to computations in the delimited continuation monad. The result is the first version of an ECMAScript interpreter: a very simple calculator. 
 
-## Lifting and Composition
+# Lifting and Composition
 I previously defined a small library of [primitive hosted value types and operations][mb-atum-prims]. But those function have no concept of delimited control and cannot be used directly with the delimited continuation monad. A few higher-order functions handle this problem.
 
-### From
+## From
 `from` takes an n-ary function `f` and composes it with `just`.
 
 ```js
@@ -43,7 +43,7 @@ run(
     console.log); // prints string "true"
 ```
 
-### Lift
+## Lift
 `lift` takes a unary function `f` and returns a new function that performs `f` in the monadic context. The result of `lift` is a unary function takes a monadic value `m` as its argument, and returns a monadic result of `f` applied to the result of the input computation.
 
 ```js
@@ -90,7 +90,7 @@ run(
     console.log); // number 9
 ```
 
-### Composition
+## Composition
 One other useful operation is to compose two monadic functions. [Kleisli composition][kleisli-compose] takes two unary functions `f` and `g` that map values to computations, and returns a new function that maps to the result of `f` and `g` sequenced with `bind`.  
 
 ```js
@@ -109,10 +109,10 @@ var isTrue = compose(
     from(boolean_value.isTrue));
 ```
 
-## Number Computations
+# Number Computations
 We can now start building up a library of ECMAScript computations by applying `lift` and `from` to the primitive value operations.
 
-### Number Operations
+## Number Operations
 All of the binary number value operations convert both of their arguments to numbers.
 
 `_binaryOperation` lifts a primitive number operations and convert its arguments using two type conversion computations.
@@ -167,7 +167,7 @@ var bitwiseOr = _binaryOperation(number_value.bitwiseOr,
     toInt32);
 ```
 
-## Semantics
+# Semantics
 With this small library of number computations, we can define an ECMAScript interpreter that supports literals and binary numeric operations.
 
 The top level of the interpreter maps an AST node to its computation semantics. 
@@ -247,7 +247,7 @@ evaluateText("1 + 2", console.log); // 3
 evaluateText("1 + 5 * 5 - 2", console.log); // 24
 ```
 
-### Why
+## Why
 So what does all this work get us? It is certainly possible to implement a calculator, or even an entire ECMAScript interpreter, using standard CPS programming. But I find there are two primary practical benefits to building an interpreter using monads in an untyped language: it becomes easier to add new core functionality to the interpreter, and monads are one good way to express and compose computations at a higher level.
 
 Consider this program:

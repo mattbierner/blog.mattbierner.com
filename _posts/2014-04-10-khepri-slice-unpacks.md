@@ -5,7 +5,7 @@ date: '2014-04-10 00:20:23'
 ---
 [Khepri][khepri] V0.22 adds slice unpacks for unpacking a range of values to an array. Here I briefly cover slice unpacks. You can find the Khepri [language documentation here][documentation].
 
-### Rational
+## Rational
 Functions that take an arbitrary number of arguments are common in Javascript, but writing such variadic function is fairly confusing and requires a lot of boilerplate code.
 
 ```js
@@ -37,7 +37,7 @@ first_and_last(1, 2, 3, 4); // 5
 first_and_last(1); // 2
 ```
 
-### Slice Unpacks Intro
+## Slice Unpacks Intro
 Khepri's slice unpacks standardizes the expression and implementation of variadic functions. 
 
 ```js
@@ -56,9 +56,9 @@ first_and_last(1, 2, 3, 4); // 5
 first_and_last(1); // NaN since, 1 + undefined
 ```
 
-## Slice Unpack Semantics
+# Slice Unpack Semantics
 
-### Syntax
+## Syntax
 A slice unpack consists of `...` followed by an optional identifier, which is used to access the array of sliced values by name. A single slice unpack may appear anywhere in an [argument list][argument-lists] or [array unpack][array-unpacks]. 
 
 ```js
@@ -85,7 +85,7 @@ When the identifier is omitted and unpacks after the slice are used, be sure to 
 \a (...) b -> ...;
 ```
 
-### Slice Unpack
+## Slice Unpack
 The slice unpack will capture between *0* and *length_array - #real_unpacks* values. The number of real unpacks is the total number of unpacks that appears in the array or argument pattern, both before and after the slice.
 
 ```js
@@ -109,7 +109,7 @@ The value of a slice unpack will always be a Javascript array. This behavior can
 \...args -> args.map(...);
 ```
 
-### Relative Unpacks
+## Relative Unpacks
 Many languages require slice style unpacks to be the last element of a parameter list. Khepri slice unpacks may appear anywhere in the parameter list,  and this allows unpacking relative values.
 
 Any unpacks that appears after the slice unpack are taken relative to the end of the array.
@@ -146,7 +146,7 @@ first_and_last(1); // NaN
 ```
 
 
-## Conclusion
+# Conclusion
 Khepri slice unpacks standardize the behavior of variadic functions, and remove most need for error prone lookups on the `arguments` object. They also make array unpacks more powerful. Relative unpacks are also a useful addition to the language.
 
 

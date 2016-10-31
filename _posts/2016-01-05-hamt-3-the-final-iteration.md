@@ -13,7 +13,7 @@ You can find the updated [documentation][] on Github along with the [source code
 
 Let's take a look.
 
-## Iterable
+# Iterable
 Hamt maps now implement the [ES6 iterable protocol][iteration] so you can use them in `for of` loops and with any API that takes a Javascript iterable:
 
 ``` js
@@ -72,9 +72,9 @@ Array.from(h.values()) === [1, 2]
 
 Keep in mind that like `hamt.fold`, iteration is unordered. The insertion order does not determine the order of iteration.
 
-## Other API changes
+# Other API changes
 
-### `map.size`
+## `map.size`
 For compatibility with `Map`, you can now also get the number of elements in a map with the `.size` property.
 
 ```js
@@ -84,7 +84,7 @@ h.size === 2;
 
 `.size` is still an alias for `hamt.count(map)`, which is a `O(N)` operation (I'll fix that one of these days...)
 
-### `hamt.set` argument order fixed
+## `hamt.set` argument order fixed
 In Hamt V1, I reversed the argument order of `hamt.set` to be `hamt.set(value, key, map)`. For some reason, yesterday me thought that it would be more common to bind the `value` parameter in `hamt.set`. That was stupid. This argument order is confusing and far less useful than I imagined. Thankfully, even V1 kept the correct order for the method based API: `map.set(key, value)`. 
 
 It turns out that binding the `key` argument is actually a whole lot more helpful, so Hamt 2 restores the old `hamt.set(key, value, map)` argument order:
@@ -96,7 +96,7 @@ const setKey = hamt.set.bind(null, 'key');
 myMap = setKey(4, myMap);
 ```
 
-### `hamt.entries`
+## `hamt.entries`
 `hamt.pairs` has been replaced by `hamt.entries`. Unlike `pairs`, `entries` returns a Javascript iterator over the key, value pairs in a map:
 
 ```js
@@ -115,7 +115,7 @@ x = it.next();
 x.done === true;
 ```
 
-### `hamt.forEach` and `map.forEach`
+## `hamt.forEach` and `map.forEach`
 `forEach` iterates over an entire map using a function:
 
 ```js
@@ -130,7 +130,7 @@ h.forEach((value, key, map) => {
 
 In cases where you need to iterate over all values of a map, `forEach` is much faster than using `for of` or iterators (and for even better perf, use `hamt.fold` directly).
 
-## Resources
+# Resources
 For a complete API reference, see the updated [documentation][documentation]. And if you run into any issues, feel free to [file a bug][issues] or submit a pull request.
 
 Also, despite the name of this post, this most definitely is not the final release of Hamt. After this though, we'll have to do a reboot or something because calling the next major release Hamt 4 would just be embarrassing.

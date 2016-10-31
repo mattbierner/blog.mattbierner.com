@@ -12,12 +12,12 @@ This time around, we'll continue to create a more complete library of compile ti
 
 The complete source can be found on [Github][src]. Let's get started.
 
-## Choice
+# Choice
 Try to describe any structured language and chances are that you will use the word 'or' at least a few times. But 'or' is not something our current parser library understands. Every parser currently has (with the exception of character level behavior) a single valid path, there is no way to express choice.
 
 {% include image.html file="250px-Thompson-PP-Wickham.jpg" description="Have you seen the new addition to the Guggenheim? I did that. And it didn't take very long either - George Wickham" %}
 
-### Either
+## Either
 `either` is the choice primitive combinator. Given two parsers, `p` and `q`, it attempts to parse `p` first and, if `p` fails, it runs `q`. The result is either the success result of `p` or the (success or failure) result of `q`.
 
 ``` cpp
@@ -50,7 +50,7 @@ run_parser<p, decltype("c"_stream)>; // Error: expected 'b' found 'c'
 
 The error message in the third example could be improved. A more complete library would check if both `p` and `q` fail, and intelligently combine the error messages into something more meaningful. It could be as simple as joining the two messages together or more complex such as looking at which parser consumed the most before failing.
 
-### Optional
+## Optional
 Another common application of parser choice is optional parsing. An integer parser for example would parse an optional minus sign before parsing the whole number.
 
 The `optional` parser tries to run parer `p`, or returns a constant value `def`.
@@ -60,7 +60,7 @@ template <typename p, typename def = None>
 struct optional : either< p, always<def>> { };
 ```
 
-### Choice
+## Choice
 Nesting `either` parsers creates a choice between more than two parsers. But nesting decreases code readability and makes code harder to maintain.
 
 ``` cpp
@@ -123,7 +123,7 @@ using letter = choice<
     ...>;
 ```
 
-### Backtracking and Commitment
+## Backtracking and Commitment
 [Bennu][] and [Parsec][] both use an attempt based parsing model. This means that if a parser consumes any input, it commits and cannot [backtrack][backtracking] if parsing later fails. The lack of default backtracking is somewhat unintuitive behavior for many new programmers.
 
 Consider a simple `either` parser that parses the string `'ab'` or `'ac'`. In an attempt based model without backtracking by default, if `p` consumes any input `q` will never be run.
@@ -180,7 +180,7 @@ struct commit {
 Explicit commits are easier than attempts to understand in my opinion, and very useful for generating more meaningful error messages.
 
 
-## Iterative Parsers
+# Iterative Parsers
 Try writing an integer parser using our current library of combinators. Sure, the `anyDigit` parser can match individual digits of the number and we can even chain together optional `anyDigit` parsers with `next`.
 
 ``` cpp
@@ -197,7 +197,7 @@ But no. That doesn't look quite right. We could use a recursive parser definitio
  
 {% include image.html file="pnpcebrockbw22.jpg" description="Submit to the biomass Elisabeth, and your suffering will end - Mr. Darcy's proposition" %}
 
-### Cons
+## Cons
 The `many` combinator applies a parser zero or more times until it fails, building the results into a list. Consider the operation of `many` step by step.
 
 First, `many` tries running the input parser `p`. If `p` fails, that's all well and good, `many` just returns an empty list. But if `p` succeeds, we now have the first element of the result list. Back to step one. It's a simple recursive call.
@@ -236,7 +236,7 @@ template <typename a, typename b>
 struct consParser : liftM2<a, b, mfunc<cons>> { };
 ```
 
-### Many
+## Many
 Using `consParser`, many is extremely simple to implement and exactly follows the above description of its behavior.
 
 ```cpp
@@ -257,7 +257,7 @@ run_parser<p, decltype("aaa"_stream)>; // List of: 'a', 'a', 'a'
 run_parser<p, decltype("aaxa"_stream)>; // List of: 'a', 'a'
 ```
 
-### Many1
+## Many1
 Perhaps we want to ensure that `p` is run at least once. `many1` runs `p` one or more times until it fails.
 
 ```cpp
@@ -275,7 +275,7 @@ run_parser<p, decltype("aaa"_stream)>; // List of: 'a', 'a', 'a'
 run_parser<p, decltype("aaxa"_stream)>; // List of: 'a', 'a'
 ```
 
-### Sep
+## Sep
 `many` is useful on its own and also allows us to build new, more declarative combinators. The `sepBy` combinators are useful for parsing things like comma separated lists where each value is separated by some token.  
 
 ``` cpp
@@ -315,12 +315,12 @@ run_parser<p, decltype("x"_stream)>; //  Empty list
 run_parser<p, decltype("a,aa"_stream)>; // List of: 'a', 'a'
 ```
 
-## Sequencing
+# Sequencing
 Let's now revisit basic parser sequencing and use what we have learned to build a few more useful combinators.
 
 {% include image.html file="wickham-5.jpg" description="Yes, two solariums! Quite a find.... And, I... have horses, too. - George Wickham " %}
 
-### Seq
+## Seq
 Much like how `choice` applies `either` to a list of parsers, `seq` applies `next` to a list of parsers. The resulting parser runs the list of input parsers in order until one fails or all succeed.
 
 ```cpp
@@ -329,7 +329,7 @@ struct seq :
     fold<mfunc<next>, option, options...>::type { };
 ```
 
-### String
+## String
 `seq` lets us parse strings of characters more easily. The `string` parser matches zero or more characters in order, and produces the entire string as a result if parsing succeeded. 
 
 ``` cpp
@@ -369,7 +369,7 @@ run_parser<abOrAc, decltype("ab"_stream)>; // ab
 run_parser<abOrAc, decltype("ac"_stream)>; // Error, expected 'b' found 'c'
 ```
 
-### Then
+## Then
 The `then` combinator is the inverse of the `next` combinator. It also runs two parsers `p` and `q` in order, but it returns the result from the first parser `p` and discards the result from `q`.
 
 ``` cpp
@@ -385,7 +385,7 @@ struct then {
 };
 ```
 
-### Between
+## Between
 We can use `then` to construct the `between` parser. `between` takes three parsers `open`, `close`, and `body` and runs them in the order: `open`, `body`, `close`. It returns the result from `body`.
 
 ``` cpp
@@ -403,7 +403,7 @@ run_parser<numberArray, decltype("[1330]"_stream)>; // List of: 1, 3, 3, 0
 ```
 
 
-## Parsing Visual Format Strings
+# Parsing Visual Format Strings
 Apple's visual format language is a small domain specific language that specifies constraints that are used to position and size views. The visual format language allows multiple constraints to be specified clearly and concisely. But there's one big problem with the Objective-C implementation Apple uses, it's evaluated at runtime.
 
 ```objectivec
@@ -422,7 +422,7 @@ Run. An exception is thrown when `NSLayoutConstraint` attempts to parse the visu
 
 Runtime evaluation of visual format strings is inconvenient for programmers and wastes runtime cycles performing a static computation.
 
-### The Parser
+## The Parser
 With just standard C++ language features and our small library of parser combinators, we can declaratively express a parser for visual format stings.
 
 The actual implementation is an almost direct translation of the [visual format grammar][visual-format].
@@ -495,7 +495,7 @@ struct visualFormatString : seq<
 } // VisualFormat
 ```
 
-### Test
+## Test
 Let's run test our parser against that invalid format string.  
 
 ```
@@ -516,17 +516,17 @@ As expected, the result is the clear and concise error message: `'At:Position:14
 Add the missing paren and the result is, `'Format string is valid'`.
 
 
-## Limitations and Further Work
+# Limitations and Further Work
 This post only outlines a basic parser combinator library. Many important simplications have been made, including two key ones relevant to validating visual format strings.
 
-### Compile Time Error Messaging.
+## Compile Time Error Messaging.
 In the above program, the parsing and validation of the visual format string all happens at compiletime, but printing the error message happens at runtime. Obviously, this is not the desired behavior.
 
 We could easily add a `static_assert` that checks that if a parser completed successfully. But that still leaves outputting our meaningful error message. For some reason entirely beyond my comprehension, `static_assert` only takes string literals. We can't even pass in a `constexpr`.
 
 A more complete implementation would check that the the visual format parser completed successfully or print an error message at compile time indicating why parsing failed. We would basically implement another specialization similar to `Printer` that constructs compile time strings and then output these strings somehow. I'm still not sure what the most readable approach to outputting the error message as a compiler error would be.  
 
-### Representation Construction
+## Representation Construction
 Another big simplification is that we only check if the format string is valid. No representations of the contents of the format string are constructed.
 
 For the visual format language, it is easy to imagine a compile time parser that translates visual format strings into template data structures. These visual format structures could then be translated into very efficient runtime data structures and operations.

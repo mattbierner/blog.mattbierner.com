@@ -10,7 +10,7 @@ This post overviews the implementation of a compile-time lazy list in C++ templa
 
 {% include image.html file="kenneth_mcmillan_as_baron_vladimir_harkonnen.jpg" description="Oh my C++. You are SO beautiful. Your syntax, love to me. Your diseases lovingly cared for, for all eternity." %}
 
-## List Structure
+# List Structure
 The core list datatype is based on a [stream][streams] structure. It has two components: a head, which is directly accessible in constant time, and a tail, which is a [thunk][thunk] that returns the rest of the list.
 
 To implement this structure at compile time, the head is a type (or meta-value) and the rest thunk is a meta-function. A meta-function is a template type that, when instantiated, produces a result type. I have chosen to encode meta-functions as template template parameters in this post, as I find this can make the code a bit more clear.
@@ -45,7 +45,7 @@ Finally, the `Nil` type represents the empty list.
 struct Nil { };
 ``` 
 
-## Basic Operations
+# Basic Operations
 The `car` function gets the head of the list, while `cdr` gets the rest of a list. These eliminate the need for using the `typename` prefix to access a list.
 
 ``` cpp
@@ -95,7 +95,7 @@ template <typename... elements>
 using from = typename ListFrom<elements...>::type;
 ```
 
-## Transformations
+# Transformations
 More complex transforms can be implemented using the basic operations. Here I present a few examples, many of which are almost direct translations of their [Haskell](http://hackage.haskell.org/package/base-4.7.0.1/docs/Prelude.html) or [Scheme](http://trac.sacrideo.us/wg/wiki/R7RSHomePage) counterparts.
 
 `map` lazily applies function `f` to every element of list `l`, producing a new list of the results.
@@ -170,7 +170,7 @@ template <typename l>
 using reverse = typename Reverse<l>::type;
 ```
 
-## Construction and Generation
+# Construction and Generation
 `concat` joins lists `l1` and `l2`.
 
 ``` cpp
@@ -224,7 +224,7 @@ template <typename x>
 using gen = iterate<id, x>;
 ```
 
-## Conclusion
+# Conclusion
 `List` proves to be a nice abstraction that also allows us to work with infinite lists compile-time. And once you get past some of the C++ template meta-programming warts, many functional concepts can be easily implemented at compile time in C++.
 
 {% include image.html file="Kyle_MacLachlan_en_Dune.jpg" description="Glowing blue eyes (and terrible acting skills) are only a temporary side effect of too much template meta-programming." %}

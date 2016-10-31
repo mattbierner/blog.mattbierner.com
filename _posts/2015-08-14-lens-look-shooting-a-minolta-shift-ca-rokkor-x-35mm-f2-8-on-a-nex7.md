@@ -9,12 +9,12 @@ date: '2015-08-14 07:14:36'
 
 There is something wonderfully absurd about taking a nice little mirrorless camera, that marvel of modern technology, and sticking a huge fifty year old lens on it. So when a Minolta Shift CA Rokkor-X 35mm recently came my way, I couldn't wait to test it out. This post collects my first thoughts on shooting a Shift CA on a NEX7 camera.
 
-## Lens
+# Lens
 {% include image.html file="DSC9121.jpg" %}
 
 The 35mm Shift CA is the only shift lens that Minolta ever produced. There were four subtly different version of this lens: the Shift CA reviewed is the Rokkor-X edition, the earliest and IMO best looking, but there was an almost identical plain Rokkor version, and three slightly different MD versions (just Shift CA, no Rokkor or Rokkor-X). This is a specialty lens (i.e. expensive), not all that common, but not particularly rare either.
 
-### Design
+## Design
 The lens is quite bulky, a good deal larger than a normal 35mm Rokkor, which is to be expected given that it is basically a medium format lens. But it's the distribution of this bulk that is unfortunate. 
 
 {% include image.html file="DSC9107.jpg" %}
@@ -33,7 +33,7 @@ A quick digression on this particular setup though. The Novoflex adapter and tri
 
 But alas! here comes the Sir Mix-a-Lotesque Minolta Shift CA, with a back end so large that it runs into the Novoflex tripod mount. Baby got back indeed. My solution: attach the tripod mount backwards. But this blocks camera rotation; once you decide on shooting landscape or portrait, you're stuck that way unless you unmount the lens. This problem may be specific to my setup, but it is certainly annoying. And this would not be a problem if the lens were designed better.
 
-### Operation
+## Operation
 The Shift CA can shift 11mm vertically in either direction, and 8mm horizontally in either direction. The shifting is not fully independent, i.e. shifting vertically limits how far you can shift horizontally, but 7.5mm of diagonal shifting is still possible according to Minolta. The shift can be locked at any position along these extents and there are helpful millimeter scales along the sides of the lens for the vertical and horizontal shifts. While the exact shift distance may not be too interesting, these can help you shift evenly in both directions for panoramas.
 
 {% include image.html file="IMG_2602.jpg" %}
@@ -42,7 +42,7 @@ The two shift control knobs lock down the current vertical or horizontal shift. 
 
 The aperture control ring sits atop the shift control disk. This placement makes the aperture control ring slightly awkward to access and difficult to view unless you lean over the camera.
 
-### Other
+## Other
 Perhaps the most interesting feature of this lens is its [variable-field control][vfc] (VFC), a feature found on just this lens and the rare VFC 24mm Rokkor. VFC gives the photographer control over the shape of the (normally flat) focus field. It is controlled by the topmost ring visible on the lens, the one immediately below the filter ring.
 
 {% include image.html file="DSC9109.jpg" %}
@@ -51,21 +51,21 @@ The VFC ring locks in the flat focus field position, rotate right for an increas
 
 Finally, the Shift CA accepts normal 55mm filters.
 
-## Shooting
+# Shooting
 Given my complaints about the bulk and handling of the Shift CA, you might assume that I hated shooting with it. But that was not the case. The lens is a pain in the ass to operate, and best suited to certain types of photography, but it performs well and I found some interesting applications beyond classic architectural photography.
 
 All images in this post come from a Sunday evening shooting downtown Seattle. You can find the complete gallery and full resolution images [here][src].
 
 {% include image.html file="DSC8676-Edit.jpg" %}
 
-### Experience
+## Experience
 Shift lenses give the photographer control of perspective. But more control also means more complexity, and the fully manual Shift CA already demands a lot of attention. Now, on top of gear setup, framing, aperture selection, focusing, and camera settings, you have to worry about perspective control and possibly VFC too? It is overwhelming at first. Setting up to photograph even a simple scene takes thought and time, a few minutes at least. This is certainly not a good lens for capturing action shots or fleeting street scenes.
 
 {% include image.html file="DSC8903.jpg" %}
 
 But such deliberate shooting is also a refreshing change of pace in a world where anyone can instantly snap a high quality photo with their phone. Shooting with the Shift CA made me select and compose shots more carefully. The lens also changed how I saw the city and changed my relationship to it. No more blending into the background, darting between shots. With the Shift CA, I become part of the scene. While shooting, I discussed the Minolta SRT 101 with a homeless man outside of a brutalist church, was nearly stampeded by a horde of french tourists, received unsolicited photography advice from a woman who looked exactly like Dusty Gozongas, got the old stink eye from some police officers, and was yelled at twice for tripod trespass (all the more impressive considering that I was on a public sidewalk both times.)
 
-### Shifting and Panoramas
+## Shifting and Panoramas
 {% include image.html file="DSC8843.jpg" %}
 
 The most obvious application of this lens is architectural photography. On an APS-C camera like the NEX7, the 35mm Shift CA has an effective focal length of around 50mm, too narrow to capture the entirety of many buildings in a single shot, especially on cramped city streets. For this reason, I found myself taking abstract architectural detail shots rather than trying to capture entire scenes. 
@@ -90,7 +90,7 @@ Fully shifted, this technique produces images around 8800 x 3800px on my NEX7. A
 
 {% include image.html file="DSC9062-Edit.jpg" %}
 
-### Image Quality
+## Image Quality
 The Shift CA performs great even on modern hardware. It is sharp, especially unshifted, and even the far edges of fully shifted photographs are reasonably sharp. But focusing is unforgiving. I shot mostly at f11 on a tripod, and found this lens to be very sensitive to minute adjustments, even at this focal length. For infinity focusing, just the slightest turn is the difference between a perfectly sharp picture and a noticeably blurry one. 
 
 {% include image.html file="DSC8703-Edit-1.jpg" %}
@@ -99,7 +99,7 @@ Most lenses are much more forgiving. It greatly helps to use a magnified image p
 
 The optical coating seems pretty solid, even shooting into light and for fairly contrasty scenes. Being able to mount filters is a big plus in my book as well. And, while the name Shift CA may suggest otherwise, images had little chromatic abrasion.
 
-## Conclusion
+# Conclusion
 {% include image.html file="DSC9014-Edit-1.jpg" %}
 
 I have mixed feelings about the Minolta 35mm Shift CA. It is a bit of a nightmare in design and handling. The shift mechanism is bulky, heavy, and far more annoying to operate the Olympus' friction based shift lenses. Long term, I'm also concerned about its durability with extensive use. And even the basic operations, like reading the current aperture or focusing to infinity, are more annoying than they should be. 

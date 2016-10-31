@@ -8,7 +8,7 @@ I designed [Khepri][khepri] with function inlining in mind, but inlining support
 {% include image.html file="porkysrailroad.png" %}
 
 
-## The Need For Inlining 
+# The Need For Inlining 
 The functional programer solves a complex problem by composing the solutions of its independent subproblems. With the function as the base unit of computation, this approach produces lots of tiny functions, each of which does a simple computation or composes other computations.
 
 Given the importance of functions and function application, it is very important that the overhead of calling a function be minimized. While modern Javascript runtimes can perform many millions of function calls per-second, each call still adds noticeable overhead, overhead that can far outweigh the cost of evaluating the body of a small function. 
@@ -24,7 +24,7 @@ isEmpty := (===, NIL);
 
 Inlining a function call replaces the call with the function body. Even if the Javascript runtime supports inlining, there is often a benefit to inlining in the source. While not always appropriate, inlining enables the functional-style Javascript that Khepri targets to perform nearly as well as hand optimized imperative Javascript code. 
 
-### Use With Khepri Builtins
+## Use With Khepri Builtins
 Khepri also relies heavily on inlining to generate efficient code for its builtins.
 
 Typical Javascript function composition adds unacceptable overhead:
@@ -59,14 +59,14 @@ var f = (function(z) {
 For a total of one function call per call to `f` (the example with `compose` will optimize to the exact same optimized output). Even when the `a` and `b` functions cannot be inlined at compile time, the inner `compose` calls always can be. The Khepri output has far less definition overhead too. 
 
 
-## Khepri Inlining
+# Khepri Inlining
 The Khepri compiler can inline small function calls to eliminated call overhead. This section details when a function can or cannot be inlined, and how code may be effected by inlining. 
 
 {% include image.html file="crowbar_36335_lg.gif" description="Work safe, work smart. Your future depends on it." %}
 
 The compiler attempts to optimize code without effecting its visible behavior, but does make a few important exceptions for inlining. [Khepri's inlining documentation](https://github.com/mattbierner/khepri/wiki/inlining) has more comprehensive inlining documentation.
 
-### Lambda Functions
+## Lambda Functions
 Any call to a lambda function may be inlined. Lambda functions are functions that:
 
 * Have an expression body. Functions with block bodies cannot be inlined at this time.
@@ -85,7 +85,7 @@ Any call to a lambda function may be inlined. Lambda functions are functions tha
 \={x}-> x;
 ```
 
-### Callees
+## Callees
 Individual function calls may be inlined only when the compiler can safely resolve the callee to a lambda function. In general, a callee bound immutably to a lambda function can always be inlined.
 
 ```js
@@ -139,7 +139,7 @@ math.sqr(2); // 4
 math.sqr(3); // 4
 ```
 
-### Function Call to Let Expression Expansion
+## Function Call to Let Expression Expansion
 Khepri inlines a function call by expanding it to let expression. Let expressions have very little overhead and can be further optimized by later compiler stages.
 
 ```js
@@ -167,9 +167,9 @@ let mid = [b(), c()] in mid;
 
 Regular function calls evaluate all arguments, even those that are never used, before evaulating the body. This difference is intentional and, I believe, justified. There are far more cases where it is highly beneficial to remove such unnecessary calculations then there are cases where code depends on evaluation of unused arguments.
 
-## Other Differences and Limitations
+# Other Differences and Limitations
 
-### Arguments Object
+## Arguments Object
 Khepri can inline functions that use the `arguments` object, but inlining replaces the `arguments` object with a Javascript array of values. Code should only perform lookups on the `arguments` object, so usually this should not cause problems.
 
 ```js
@@ -202,7 +202,7 @@ A slice unpack however will always return a list:
 var list := \...args -> args;
 ```
 
-### Lazy Function Body Evaluation
+## Lazy Function Body Evaluation
 Some functions rely on lazy evaluation of the function body:
 
 ```js
@@ -221,13 +221,13 @@ var s = \ -> { return s; };
 s = stream(1, s);
 ```
 
-### No Linking
+## No Linking
 Khepri can currently only inline functions in a file, and therefore cannot inline calls to any imported function. 
 
 Implementing cross file inlining is challenging. To inline an imported function in another file, expansion must rewriting closure variables to resolve to the function's source package. And in many cases, these closure variables are not exported from the source package.
 
 
-## Conclusion and Limitations
+# Conclusion and Limitations
 The Khepri compiler's inlining support is a powerful but limited optimization that allows programmers to write functional-style code with very little overhead.
 
 Simply recompiling [Neith][neith] and [Akh][Akh] once the Khepri compiler added inlining support improved overall performance of these libraries by around 1.2 and 1.5 times.

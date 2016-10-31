@@ -5,7 +5,7 @@ date: '2014-03-03 23:41:16'
 ---
 I overview and criticize the semantics of Javascript's `this` keyword. Then I quickly overview the ECMAScript 6 and Coffee Script solution to the `this` problem, before detailing [Khepri's][khepri] fat arrow syntax. Khepri [fat arrows][functions] make `this` binding explicit and also can [unpack][unpacks] the `this` object.
 
-## Javascript
+# Javascript
 The Javascript `this` keyword is bound to the object that the current function was called on. The dynamic binding of `this` differs from the lexical, function block scoping of other bindings.
 
 The `this` object is clearest when a `this` value is explicitly provided using  `Function.prototype.call`. 
@@ -40,7 +40,7 @@ f(1); // 4, since: global.z + 1
 
 MDN has a [more comprehensive review][this] of `this`.
 
-### Nested Function Issues
+## Nested Function Issues
 Javascript's `this` semantics complicate the use of function literals for callbacks and events in methods.
 
 ```js
@@ -82,7 +82,7 @@ o.getXGetter()(); // 10
 
 `getXGetter` is pretty contrived, but explicitly binding `this` is an extremly common Javascript pattern.
 
-### This as a Parameter
+## This as a Parameter
 I think of `this` as an additional parameter supplied to functions. Python method definitions for example take an explicit `self` parameter.
 
 ```
@@ -97,9 +97,9 @@ o.method(3) # 3, self is automatically provided
 I believe that ECMAScript language syntax for `this` should also model `this` as a parameter. Instead of being an exception in the language, if `this` is a parameter, it can follow the same rules as regular parameters.
 
 
-## Other Languages and This
+# Other Languages and This
 
-### ECMAScript 6
+## ECMAScript 6
 [ECMAScript 6][ecmascript6draft] arrow functions are more than a shorter function syntax, they are semantically different from functions defined with the `function` keyword. Among the differences, arrow functions use lexical this scoping. They do not introduce a `this` binding.
 
 In an arrow function, `this` is resolves using lexical scoping rules to the first `this` object from a regular `function` function.
@@ -131,7 +131,7 @@ var Model = function() {
 };
 ```
 
-### Coffee Script
+## Coffee Script
 [Coffee Script][coffeescript] uses the fat arrow `=>` to define a function that is bound to the `this` in which the function is defined.
 
 ```js
@@ -165,7 +165,7 @@ C.prototype.getXGetter = function() {
 };
 ``` 
 
-## Khepri
+# Khepri
 A Khepri function may optionally unpack the object it is called on with a this unpack. This unpacks explicitly bind `this` to an identifier, and also allow values to be extracted from the `this` object using the same [unpack patterns][unpacks] as parmeters. 
 
 ```js
@@ -186,7 +186,7 @@ C.prototype.getXGetter = \() =self->
 Khepri eliminates the `this` expression entirely. You always need to use an explicit `this` binding.
 
 
-### Fat Arrows
+## Fat Arrows
 `this` unpacks are of the form `= PATTERN`, and may appear at the end of a function parameter list before the `->` and function body.
 
 ```js
@@ -229,7 +229,7 @@ var Model = \ =model-> {
 };
 ```
 
-### Ballista Arrows
+## Ballista Arrows
 Any identifier pattern, as pattern, array pattern, or object pattern can be used as the this unpack pattern.
 
 ```js

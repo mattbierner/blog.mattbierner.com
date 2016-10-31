@@ -78,10 +78,10 @@ worry
 This provides 100% coverage of the human experience.
 
 
-## Use Cases
+# Use Cases
 Here's a few example uses cases for the `emotions` package.
 
-### Add Emotional Subtlety to Human Computer Interaction
+## Add Emotional Subtlety to Human Computer Interaction
 Most new programmers start by writing:
 
 ```js
@@ -96,7 +96,7 @@ const emotions = require('emotions');
 console.log(emotions.empathy('Hello world!'));
 ```
 
-### Improve the EQ of your Product
+## Improve the EQ of your Product
 Here's a simple web server in Node:
 
 ```js
@@ -135,7 +135,7 @@ server.listen(3000, () => {
 Easy.
 
 
-### When Comments are not Enough
+## When Comments are not Enough
 `emotions` is also great for source code:
 
 ```js
@@ -167,7 +167,7 @@ var THREE = emotions.stress(1 + 2);
 ```
 
 
-## And Much, Much More
+# And Much, Much More
 Those are just a few ideas of what `emotions` is capable of.
 
 Check out the [source on Github][src] for more complete documentation of `emotions`, and `npm install emotions` to get started.

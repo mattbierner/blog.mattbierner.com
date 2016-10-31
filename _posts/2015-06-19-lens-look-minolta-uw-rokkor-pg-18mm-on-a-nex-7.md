@@ -7,7 +7,7 @@ description: "An afternoon with a classic Minolta fisheye lens in Seattle."
 ---
 I've recently been trying out a Minolta UW Rokkor-PG 18mm f9.5 on my Nex-7 and thought that I'd share my initial, very subjective thoughts about this combination, along with a [few sample photos][gallery].
 
-## A Quick Look At the Lens
+# A Quick Look At the Lens
 
 {% include image.html file="DSC7104-1.jpg" %}
 
@@ -21,7 +21,7 @@ The front optic slightly protrudes past the main body housing, so you cannot use
 
 On the back of the lens you'll find a screw-in filter. A UV and a yellow filter both came standard with the lens, while a red filter was extra. The back filter is actually part of this lens' optical design, so you should always keep one installed. The back filter can be unscrewed using the metal tool originally included with the lens or using a standard pointy tipped spanning wrench.
 
-## Shooting
+# Shooting
 
 First off, this lens really is designed for full frame. On the APS-C crop sensor Nex-7, it works out to be around 28mm, not all that wide for a fisheye lens. Still, I found shooting with it to be an interesting challenge and like some of the results.
 
@@ -44,7 +44,7 @@ Even using a tripod at f22 on a crop sensor camera, the images this lens produce
 {% include image.html file="DSC6943.jpg" %}
 
 
-## Final Thoughts
+# Final Thoughts
 Despite all of its flaws, I still had a great time shooting with the lens. It's a specialty lens for sure, so I don't know that I will always keep it in my camera bag, but it does offer an interesting perspective of things. Certainly not a lens for pixel peepers. But, by spending a bit of time with the lens and embracing its quicks rather than fighting against them, I was able to produce some interesting images and I look forward to taking it out shooting again soon. If you can pick one up cheap enough, I would recommend it.
 
 You can find some more shots from my evening with the lens [here][gallery].

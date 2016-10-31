@@ -9,7 +9,7 @@ Records are a simple, [Clojure inspired][clojure] way to specify persistent obje
 
 This post details the advantages and implementation of records. The code is drawn from [Amulet][amulet], a small Javascript library that protects programmers from mutation.
  
-### Motivating Example
+## Motivating Example
 
 [Atum][atum] is a Javascript interpreter written in functional style Javascript.  All objects in Atum are immutable, but mutation is simulated using transform operations. A setter transform for example takes an input object and a value, and returns a copy of the input object with the property set.
 
@@ -71,16 +71,16 @@ var ExecutionContext = record.declare(null, [
 
 These two implementations are eqivilent for most purposes. Across the entire Atum codebase, switching to records eliminated well over 500 lines of code. 
 
-### Caveat
+## Caveat
 These are not going to be truly immutable objects. Immutability is guaranteed using the supported interfaces, including object accessors and the generated transform operations, but the objects can be mutated easily intentionally or by mistake.
 
 The generated interfaces enable working with immutable objects and leave enforcement to the programmer.
 
-## Record Implementation
+# Record Implementation
 
 A record is just a Javascript constructor with some metadata and additional properties. Records are specified declaratively and create instances of the data they specify. Records and record instances support the standard Javascript operations, such as `new` and `instanceof`. They can even subclass and be inherited from regular objects. 
 
-### Basic Records
+## Basic Records
 A record is declared from an optional prototype object, array of keys, and optional custom constructor. The custom constructor is a regular Javascript object constructor, allowing custom logic to be run when creating an instance. If no constructor is provided, one is generated. 
 
 ```js
@@ -150,7 +150,7 @@ x.c; // 3
 x.x; // 40
 ```
 
-### Record.create
+## Record.create
 
 Javascript constructors are weird. Some people even [consider them harmful][new-harmful]. Constructor in Javascript are regular functions that, when invoked using `new`, create a new object. But treating constructors like functions can lead to some interesting bugs:
 
@@ -209,7 +209,7 @@ x.a; // 1
 [1, 2, 3].map(R.create); // [R(1), R(2), R(3)]
 ```
 
-### Auto Generating Transforms
+## Auto Generating Transforms
 
 The greatest value of records is automatically generating methods for transforming immutable objects. As the Atum motivating example demonstrates, this eliminates a lot of boilerplate code. Setter transforms demonstrated here, but other transforms are easy to add.
 
@@ -309,9 +309,9 @@ z.b; // 15
 z.c; // 3
 ```
 
-## Further Possibilities 
+# Further Possibilities 
 
-### Extend
+## Extend
 Using record metadata, extending an existing record with additional properties is trivial:
 
 ```js
@@ -335,7 +335,7 @@ x instanceof R; // true;
 x instanceof R2; // true;
 ```
 
-### Enforcing Immutability
+## Enforcing Immutability
 ECMAScript's 5.1 meta object methods can enforce immutability. 
 
 Wrapping the constructor in a call to `Object.freeze` will prevent setting and deleting properties on this instance:
@@ -367,7 +367,7 @@ in
 Attempts to mutate a record instance will now either do nothing or throw an error in strict mode.
   
   
-## Performance
+# Performance
 
 Records unfortunately do perform worse than plain objects. A [JSperf ][overhead-test] comparing creating simple instances shows around a 10x performance hit in the worst case.
 
@@ -377,7 +377,7 @@ Records using custom ctors perform the same as regular objects while auto genera
 
 
 
-## Closing Thoughts
+# Closing Thoughts
 
 Working with immutable objects in Atum, I found the value of using records far outweighs the performance hit. Records allow code to be written and updated code faster, and are much easier to maintain.
 

@@ -21,7 +21,7 @@ This snippet defines two public APIs: a free function `get`, which takes a key a
 
 But such duplication! `Hamt.prototype.get` just forwards to `get`. Those three extra lines may not seem like a big deal, but imagine duplicate definitions for every public API in a library, some of which take a good number of arguments. Surely there is a better way.
 
-## The Pattern
+# The Pattern
 We can get away with using the same function for both versions of the API. Observe:
 
 ```js
@@ -32,7 +32,7 @@ export const get = Hamt.prototype.get = function(key, map) {
 
 The public API is unchanged. Internally though, a single function implements both the free function and the method. When `get('a', m)` is called, `key === 'a'` and `map === m`. But with `m.get('a')`, `key === 'a'` while `map === undefined`. In that case, `map || this` evaluates to `this`, which is bound to `m`.
 
-### Why this is Clever
+## Why this is Clever
 Two whole lines of code eliminated, just like that! Think of all those saved bytes! Now there's only a single version of the function to maintain. With the combined definition, there's no risk of the free function and method getting out of sync, and the implementations will always stay in sync as well. Less code is usually better.
 
 And now the API supports all kinds of fun stuff, such as:
@@ -49,7 +49,7 @@ getFromA('key');
 
 Unlike other approaches to remove the boilerplate code involving `Function.prototype.call` or `Function.prototype.bind`, the `|| this` pattern is [zero (or low) overhead for many Javascript engines][benchmark].
 
-### Perhaps Too Clever...
+## Perhaps Too Clever...
 Yet all is not sunshine and rainbows. This pattern only works if the following holds:
 
 * The method and free function take exactly the same parameters.
@@ -86,7 +86,7 @@ Good luck trying to write a Doxycomment that expresses how `map` is the second p
 
 Then there's the matter of performance. For Chrome and Firefox at least, the combined definition [performs exactly the same][benchmark] as the forwarding declaration. On OSX Safari, the combined definition was slower however. More [benchmarking is needed][benchmark], but the Safari result may influence some decisions.
 
-## Conclusion and Alternatives
+# Conclusion and Alternatives
 The `|| this` pattern is interesting. It's the only zero overhead way I could come up with to remove the duplicate definitions, and it may very well be the correct approach for some projects.
 
 Other approaches to the problem involve `Function.prototype.call` or `Function.prototype.bind`, with performance suffering appropriately. If a different argument order is acceptable, here's a function called `free` that transforms any method into a free function. The resulting free function is equivalent to `(self, args...) => self.method(args...)`.

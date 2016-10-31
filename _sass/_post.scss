@@ -86,7 +86,7 @@
         border-bottom: 1px solid $lighterGray;
     }
 
-    h2 {
+    h1 {
         border-bottom: 1px solid $lighterGray;
         line-height: 1.2em;
         text-align: center;
@@ -94,7 +94,7 @@
         padding-bottom: 0.1em;
     }
     
-    h3 + figure {
+    h2 + figure {
         margin-top: 1em;
     }
 
@@ -169,11 +169,12 @@
     font-family: $serif;
     font-size: 19px;
     line-height: 1.4;
-    letter-spacing: -.003em;
+    letter-spacing: -.005em;
     padding-bottom: 2em;
 
     h1 {
         font-family: $serif;
+        border-bottom: none;
         font-size: 32px;
         margin: 6em 0 2em 0;
         text-align: center;
@@ -209,5 +210,19 @@
             width: 100%;
             display: block;
         }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .post .entry .story {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .post .entry .story {
+        font-size: 17px;
+        line-height: 1.4;
     }
 }

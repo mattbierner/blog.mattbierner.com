@@ -16,7 +16,7 @@ Tagging also introduces the concept of a shared stream collection. Each tag is c
 
 Status updates on the stream are automatically broadcast to the parent tag, who maintains an set of children ordered by last update time. This is very similar to how existing streams and child streams work currently.
 
-## For Developers
+# For Developers
 The Blot're [APIs][api] have also been updated to support tags.
 
 Stream data now includes a list of tags in the `tags` field:
@@ -40,7 +40,7 @@ Stream data now includes a list of tags in the `tags` field:
 
 Each stream can have up to six unique tags of between one and thirty two characters each. Tags follow the same rules as stream names, but cannot contain spaces and tags are always normalized to lowercase in the system.
 
-### With the REST and Socket Response APIs
+## With the REST and Socket Response APIs
 Both the [REST][] and [Websocket Response][response] APIs now support querying and changing tags. Here's a quick overview of the five new calls using the websocket APIs, but the REST tag API is nearly identical (REST operates on stream ids instead of urls and only return the relevant Json data instead of wrapping things in a JSON message.)
 
 #### GetTags
@@ -146,7 +146,7 @@ RESPONSE {
 ```
 
 
-### With the Subscription API
+## With the Subscription API
 You can subscribe to a tag collection using the [websocket subscriptions API][subscriptions] just like you would subscribe to a normal stream collection:
 
 ```
@@ -161,7 +161,7 @@ The socket will now receive all `StatusUpdated` events for the tag's children, a
 Additionally, any regular stream subscriptions will now receive `ParentAdded` and `ParentRemoved` events whenever tags are added or removed from that stream.
 
 
-## Looking Forward
+# Looking Forward
 Both [Blot're.js][blotre.js] and [Blot're.py][blotre.py] have been updated to support the new APIS.
 
 Inspired by a certain TPP (not of trans-pacific variety), I'm also working on a little project that uses the shared nature of Blot're tags to crowdsource control of something. The number 2600 may also be involved. More details to come shortly.

@@ -25,10 +25,10 @@ Besides allowing parsers to be run incrementally, the implementation allows a fe
 * [Parse][parse] - Base parser combinator library and complete incremental parsing implementation.
 * [Khepri][khepri] - ECMAScript derived language used for implementation.
 
-## Problem Overview
+# Problem Overview
 Incremental parsing require solving two subproblems: creating resuming parsers and expressing incremental streams. 
 
-### Incrementally Applying Parse Parsers
+## Incrementally Applying Parse Parsers
 Behind its monadic parser combinator interface, [Parse][parse] parsers are implemented with continuations. A parser takes four continuations, and calls one based on its completion condition: `cok` when input is consumed and the parser succeeds, `cerr` when input is consumed and the parser fails, `eok` when no input is consumed and the parser succeeds, and `cerr` when input is consumed and the parser fails.
 
 ```js
@@ -76,7 +76,7 @@ partial(); // [‘a’, undefined, ‘b’]
 
 The other continuations can be captured the same way, although `eok` is the most useful.
 
-### Incremental Input
+## Incremental Input
 Parse.js parsers operates on [Nu][nu] streams of input. [Nu streams consist][nu-stream-api] of a head value and a function that generates the rest of the stream, allowing  lazily generated, potential infinite streams to be defined.
 
 ```js
@@ -140,7 +140,7 @@ the parser backtracks when `’b’` is encountered. This restores a parser stat
 
 Therefore, a chunk map must be stored external to the parser state to ensure the input stream is consistent even when backtracking. Otherwise, the incremental parser would require a new chunk 1 values for each backtracking.
  
-## Implementation Overview
+# Implementation Overview
 A custom parser state for incremental parsing chunked input is defined. The incremental state tracks the id of the working chunk. When it runs out of data for a chunk, it reifies the current parser execution and abortively returns a request for the next chunk. An `Session` data structure stores chunks. The `provide` operation provides chunks for requests while `finish` signals the end of file.
 
 #### Structures
@@ -157,10 +157,10 @@ A custom parser state for incremental parsing chunked input is defined. The incr
 
 `finish` - Signal that an incremental parser is complete. Return the result from parsing.
 
-## Code Implementation
+# Code Implementation
 The following code is adapted from [Parse's incremental implementation][parse-incremental-source]
 
-### Request and Session
+## Request and Session
 The `Request` and `Session` data structures are straightforward:
 
 ```js
@@ -189,7 +189,7 @@ Session.prototype.hasChunk = \id -> (id < this.chunks.length);
 Session.prototype.getChunk = \id -> this.chunks[id];
 ```
 
-### IncrementalState
+## IncrementalState
 `IncrementalState` wraps an internal parser state and forwards operations to it. It tracks the current chunk and generates requests for the next chunk in the input stream.
 
 ```js
@@ -273,7 +273,7 @@ IncrementalState.prototype.next = \x -> {
 
 One important observation is that requests are made when the next inner state is empty, not the current inner state. This allows the `isEmpty` and `first` methods of `IncrementalState` to work correctly, as the current inner state always contains the stream of the current chunk. Only when the true eof is reached will the inner state contain an empty stream.
 
-### Operations
+## Operations
 
 #### Provide
 `provide` passes data for a new chunk `c` to Session `r`. `forceProvide` is the internal method that contains the provide logic. `forceProvide` adds all chunks fed to it, even empty ones that `provide` ignores.
@@ -330,7 +330,7 @@ In order to handle backtracking with EOF correctly, finish must register an empt
 
 Top level continuations are evaluated when `finish` is called, not when the parser completes. If they do something non functional-style, such as throwing an exception, this prevents this behavior from occurring until `finish` is called.
 
-### Starting Parsing
+## Starting Parsing
 `parseIncState` and `parseInc ` begin a new incremental parsing of a parser `p` and return a new Session. `parseInc` supplies a default inner state while `parseIncState ` allows a custom one to be provided.
 
 ```js
@@ -362,7 +362,7 @@ The continuation of the returned session, `k`, begins parsing when the first chu
 
 The outer `provide` in `parseIncState` handles cases where the initial state has some input. It is a noop for cases like `parseInc` where the input of the `ParserState` is `NIL`.
 
-## Examples
+# Examples
 #### Simple Incremental Parser
 
 ```js
@@ -417,11 +417,11 @@ Incremental parsers can be finished multiple times. This is useful for providing
   result; // ['a', 'a', 'a', 'a', 'a']
 ```
 
-### External examples
+## External examples
 * [Parse-PN][parse-pn] - Example incremental polish notation evaluator. 
 * [Parse ECMA Incremental][parse-ecma-incremental] -  Incremental ECMAScript lexer.
 
-## Limitations
+# Limitations
 The major limitation of this approach is that a custom parser state is used. Most application should never touch the parser state directly, but certain cases do require custom parser states.
 
 ##### parse.modifyParserState, parse.getParserState, and parse.setParserState
@@ -436,7 +436,7 @@ Custom parser states with custom logic and properties will not work properly. On
 ##### Abortive Parsers
 Parse does not include any abortive parsers, but a custom one may be defined. Abortive results from such a parser are returned directly from `provide` instead of a `Session`. I felt this was the correct behavior.
 
-## Closing Thoughts
+# Closing Thoughts
 Even with the noted drawbacks, this approach works well and supports almost all unmodified Parse parsers. The solution was designed for Javascript, but could be adapted to other languages, although more appropriate solutions may exist for your language of choice.
 
 

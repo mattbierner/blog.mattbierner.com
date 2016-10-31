@@ -7,7 +7,7 @@ It's been a little over a week since the initial release of [Apep][], and versio
 
 Here's a few other updates on what's going on with Apep.
 
-## Apep-std
+# Apep-std
 The core Apep library is very small, so it doesn't quite capture all the functionality of the [Dada engine][dada]. That's where Apep-std comes in. Apep-std is a collection of libraries that each add targeted functionality:
 
 * `sep` - [Apep-std-sep](https://github.com/mattbierner/apep-std-sep) - Helper combinators for working with sequencing generators.
@@ -16,7 +16,7 @@ The core Apep library is very small, so it doesn't quite capture all the functio
 
 These sub libraries can be consumed individually or through Apep-std. Together, these libraries provide all the functionality of the original Dada Engine, plus more.
 
-## Fifty Shades of Dispepsia
+# Fifty Shades of Dispepsia
 I've also been porting a few Dada engine grammars over to Apep and, looking for something a bit more complicated, I found [Lisa Wray's Fifty Shades Dada Engine Text Generator](https://github.com/lisawray/fiftyshades).
 
 The port was pretty straightforward. Here's part of the original grammar:
@@ -73,7 +73,7 @@ Here's one sample of the output. This was a direct port, so all credit for the g
 *Fifty Shades of Gray* is around 100,000 words long, and Apep can 100,000 words worth of these excerpts in half a second. You can find the [port on Github](https://github.com/mattbierner/fifty-shades-of-dyspepsia/).
 
 
-## Post-Apeptide
+# Post-Apeptide
 (This wordplay is getting rather out of hand.)
 
 Perhaps the most famous use of the Dada Engine is [Andrew C. Bulhak's Post Modernism generator](http://www.elsewhere.org/pomo/). This grammar is fairly complicated and makes use of a few additional features from Apep-std, such as regular expression matching and variable storage.
@@ -103,7 +103,7 @@ And here's an example of what this grammar outputs:
 # Realities of Stasis: Patriarchial narrative in the works of Burroughs
 G. Helmut Humphrey Department of Peace Studies, University of Illinois
 
-## narratives of genre
+# narratives of genre
 If one examines Derridaist hyperreality, one is faced with a choice: either accept capitalist sublimation or conclude that expression comes from the collective unconscious, but only if neocapitalist semanticism is valid; otherwise, we can assume that the significance of the reader is social comment, but only if Derridaist hyperreality is valid; if that is not the case, we can assume that art may be used to marginalize minorities, but only if art is interchangeable with truth. Debord suggests the use of Derridaist hyperreality to analyse sexual identity. An abundance of narratives concerning Derridaist hyperreality may be discovered. 
 
 "Consciousness is part of the genre of culture," says Lyotard; however, according to Humphrey [1] , it is not so much society that is part of the absurdity of art, but rather the paradigm, and eventually the collapse, of society. Therefore, Derrida uses the term 'Derridaist hyperreality' to denote not, in fact,  deappropriation, but neotheory. Thus, the subject is contextualised into a patriarchial narrative that includes sexuality as a paradox. The subject is contextualised into a Derridaist hyperreality that includes sexuality as a totality. Thus, the primary theme of Sargeant's [2] essay on poststructural prepatriarchial theory is a postconstructivist whole. However, Lyotard's model of patriarchial narrative holds that the task of the participant is deconstruction, given that consciousness is distinct from art. If postcapitalist theory holds, we have to choose between textual desituationism and Derridaist hyperreality. However, Baudrillard uses the term 'Foucaultist 'powerful communication'' to denote a self-falsifying whole. In The Ticket that Exploded, Burroughs affirms Derridaist hyperreality; in The Soft Machine, however,  Burroughs affirms Derridaist hyperreality. 

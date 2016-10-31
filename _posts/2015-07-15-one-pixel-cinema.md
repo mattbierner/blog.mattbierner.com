@@ -9,7 +9,7 @@ date: '2015-07-15 02:45:20'
 
 Ever since converting *[Moby-Dick][moby-dick]* to a color stream for [Blot're][blotre], I've been thinking about converting other media as well. Film is an obvious fit. Movie are already streams, a new frame every one twenty-fourth of a second. All that's required is a bit of downscaling.
 
-## Methodology 
+# Methodology 
 My 1080p copy of *Eyes Wide Shut* weighed in at 14GB, about 159 minutes. At 24 frames per second that's roughly 230,000 frames. And with each frame a hefty 1920 by 1080, that's a whole lot of pixels, around four hundred and seventy five billion worth actually.
 
 Assume that each frame has a single dominant color, a color that captures the two million or so pixels of that frame at a glance, and assume that we can determine this dominant color algorithmically. What would *Eyes Wide Shut* look like if you played it back at normal speed but only saw those dominant colors? A one by one pixel video? The world needs to know such things.
@@ -20,7 +20,7 @@ This post covers my misadventures converting *Eyes Wide Shut* to a color stream 
 
 The admittedly rough source code for this project is available [on Github][source]. 
 
-## Extracting Frames
+# Extracting Frames
 The command to extract a single frame from a video (in this case at the five minute mark) using [FFMpeg][] is:
 
 ```
@@ -41,7 +41,7 @@ $ ffmpeg -i "Eyes Wide Shut.mkv" frame%d.png
 
 But 230,000 frames converted to 1920x1080 PNGs take up a hell of a lot more space (600+GB) than the original 14GB video file.
 
-### Batch Processing
+## Batch Processing
 I decided to process the movie in one minute batches to keep the storage requirements low while still using FFmpeg more efficiently.
 
 This comamnd extracts the 1439 frames (as the frame rate is actually 23.976) in one minute of video. 
@@ -59,7 +59,7 @@ $ ffmpeg -ss 00:05:00 -i "Eyes Wide Shut.mkv" -to 60 -vf scale=480:-1 frame%d.pn
 Reasonable amounts of scaling should not effect the dominant color of an image much. And given that some of the libraries I used to extract dominant colors still took around a second to process the scaled down images, this scaling was pretty much required.
 
 
-## Determining Dominant Color  
+# Determining Dominant Color  
 I tried five approaches, using three Python libraries to determine the dominant color of each frame:
 
 * Average every pixel in the frame.
@@ -78,7 +78,7 @@ Additionally, Colorweave in k-means mode produced almost identical results to av
 
 Let's look at how the three remaining methods fared. 
 
-### Frame One
+## Frame One
 {% include image.html file="eyes-example-findmask-1.png" description="It's all a dream, isn't it?" %}
 
 This frame is a classic example of color temperature in *Eyes Wide Shut*. Throughout the film, almost all interior lighting is yellowish while outside light is blue. Blue dominates this frame.    
@@ -87,7 +87,7 @@ This frame is a classic example of color temperature in *Eyes Wide Shut*. Throug
 
 The three libraries produced pretty similar results with this one. ColorWeave selected the lightest and most vibrant color, a preference that held for other frames as well. 
 
-### Frame Two
+## Frame Two
 {% include image.html file="eyes-example-tom-gets-doxed.png" description="Masquerade! Paper faces on parade!" %}
 
 It's pretty clear that red dominants this frame, taking up the entire center, but there's a good deal of black from the cloaks as well. 
@@ -96,7 +96,7 @@ It's pretty clear that red dominants this frame, taking up the entire center, bu
 
 ColorThief and ColorWeave both identified the red carpet as the dominant color, with ColorThief selecting a darker red from the edge of the carpet, while Colorweave seems to have selected the pinkish, more brightly lit center section. Average also produced a red color, albeit a much darker one, as the black cloaks muddied up its result.
 
-### Frame Three
+## Frame Three
 {% include image.html file="eyes-example-gotta-get-a-grip.png" description="GOTTA GET A GRIP!" %}
 
 One last sample, this time an interesting mix of blue foreground and yellow background. For humans, blue dominants the frame because you are immediately drawn to Nicole Kidman's face. Visually though, I would say the yellowish background actually takes up more space. 
@@ -111,17 +111,17 @@ This frame highlights the limitation of my approach though: perception. The perc
 
 If you only look at area, gray dominants the above image. But blue is the perceived color, at least for me. The centered, blue eye contrasts with the gray surroundings, making it stand out even more, and humans are naturally drawn to shapes such as eyes and faces. I did not find any libraries that tried to determine the perceived dominant color of images, but it would be interesting to investigate this further.
 
-## All Together Now
+# All Together Now
 I ran each method against every frame in *Eyes Wide Shut* to extract the 230,000 dominant colors of the film. I saved this data as Json and used the script from my *[Moby-Dick][moby-dick]* post to convert the data into images, one pixel per frame, left-to-right, eight hundred pixels wide and about three hundred pixels tall.
 
-### ColorThief
+## ColorThief
 {% include image.html file="img-colorthief.png" %}
 
 I'm not a fan of what ColorThief produced. The library seemed to lock into certain shades, and frame to frame color changes were very abrupt and indecisive. The result is dark, blocky, and ugly.
 
 {% include image.html file="colorthief-zoom.png" %}
 
-### ColorWeave
+## ColorWeave
 {% include image.html file="img-colorweave.png" %}
 
 Colorweave has much more noise and variation that ColorThief, producing an even more pixeled appearing result. But I actually find this much more attractive, especially when zoomed in so that you can see the individual pixels/frames. 
@@ -130,7 +130,7 @@ Colorweave has much more noise and variation that ColorThief, producing an even 
 
 ColorWeave returned pure white for very dark frames, mainly in the credits and for a few of the nighttime city scenes.
 
-### Average
+## Average
 {% include image.html file="img-average.png" %}
 
 Average produced surprisingly good looking results given its simplicity. And, unlike the other methods, frame to frame color changes were gradual and produced very appealing gradients. It doesn't hurt that average ran at least five times faster than any other method.
@@ -144,7 +144,7 @@ I suspect that more conventional films would produce less appealing results. It'
 Average produced my favorite image viewed at 100% magnification, but I love ColorWeave's result zoomed in.
 
 
-## Piracy For a More Colorful Age
+# Piracy For a More Colorful Age
 > Me: There is something very important we need to do as soon as possible.
 
 > You: What's that?
@@ -155,7 +155,7 @@ Could [Blot're][blotre] play back the *Eyes Wide Shut* color stream at near real
 
 You can find the stream [here][eyes-stream]. The logic for pushing the stream to Blot're is pretty simple, so I'll just quickly overview it.
 
-### Client Registration
+## Client Registration
 I used the [Blot're-cl-framework][blotre-cl] to create a new, [disposable][blotre-disposable] client application in four lines of Javascript.
 
 ```js
@@ -201,7 +201,7 @@ var getTargetStream = function(client) {
 };
 ```
 
-### Streaming Updates
+## Streaming Updates
 `post` opens a [send/response websocket][blotre-response] to Blot're and starts streaming colors over it. Again, the logic is almost identical to the function I used in *[Moby-Dick][]*. Since that post however, I added the `getWebsocketUrl` method to the [Node Blot're.js library][blotre-js] to get the correct websocked Url based on configuration.
 
 ```js

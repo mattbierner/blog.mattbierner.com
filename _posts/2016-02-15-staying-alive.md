@@ -14,7 +14,7 @@ In other news, I've been meaning to get back into [Mechanical Turk][mturk] recen
 
 [Source code of the assignment and server is on Github][src].
 
-## The Assignment
+# The Assignment
 The idea was simple: use Mechanical Turk to pay workers to stay alive for five minutes. After all, why bother paying humans for mundane tasks such as categorization and completing surveys, when they are amazing just for being alive. Thanks, keep it up!
 
 The assignment displays a countdown along with periodic words of encouragement, and some helpful "Tips and Tricks".
@@ -37,7 +37,7 @@ Now, the cynic may point to these wages as evidence that your existence is only 
 
 Not an infinite loop perhaps, but close enough.
 
-### Results
+## Results
 A total of 134 unique workers accepted the assignment, 133 of whom made it to the five minute goal. The one drop out was around the one minute mark, at which point I can only assume that this worker, along with their computer, were obliterated in some sort of Tunguska event.
 
 126 workers out of the 134 total survived for five minutes and were still conscious at the end to answer the question and submit the assignment. The seven workers who failed to submit most likely died peacefully sometime during this period. This gives a survival rate of about 94%, not bad at first blush, but the consequences of this will become clear shortly.
@@ -50,12 +50,12 @@ Total cost of the experiment: about eight dollars.
 
 Side note: Besides my own amusement, I sincerely hope this experiment made workers smile and made a few people's days slightly more awesome. Mechanical Turk can be great, but it's dehumanizing by design. Read into this experiment what you will, but it was never about Mechanical Turk specifically.
 
-## Scaling It Up
+# Scaling It Up
 The 94% survival rate of my initial experiment was promising, but why content ourselves with saving a handful of lives and leave the masses to their fate? Let's scale things up. Why not use Mechanical Turk to keep all 7.4 billion humans alive? Let's fund the survival of everyone!
 
 Although I'm still seeking financing to put this plan into action, the numbers show that funding humanity's survival using Mechanical Turk would actually be far cheaper, and far more effective (at least depending on criteria), than one may imagine.
 
-### Universal Survival Funding
+## Universal Survival Funding
 There are 288 five minute spans in a day, so, at the old five cents per five minute rate, keeping a single human alive would cost $14.4 dollars per day. Far too extravagant! Now, since it would probably be bad taste to pay some people less than others to stay alive, let's just pay less across the board. That's progress!
 
 Mechanical Turk sets a minimum payment of $0.01 per assignment, which gives a much more reasonable rate of 2.88 dollars per human per day. Using the adjusted numbers, it will cost about $1050 dollars to keep a human alive for a year. This is about the [nominal, per capita GDP of Zimbabwe](http://www.imf.org/external/pubs/ft/weo/2015/01/weodata/weorept.aspx?pr.x=34&pr.y=11&sy=2015&ey=2015&scsm=1&ssd=1&sort=country&ds=.&br=1&c=698&s=NGDPD%2CNGDPDPC%2CPPPGDP%2CPPPPC&grp=0&a=).
@@ -66,7 +66,7 @@ Under this plan, it will cost us 8 trillion dollars to fund all humans for a yea
 
 Much moneys, but if you consider that the [global world product][gwp] is closer to 80 trillion dollars per year, it's actually fairly reasonable.
 
-### And the World Will Go On Just the Same
+## And the World Will Go On Just the Same
 Say we onboard all 7.4 billion humans to Mechanical Turk and are all ready to start funding their survival. The species should be all set, right? Not so fast. We've overlooked a crucial factor: just how dangerous it is to work for Mechanical Turk.
 
 Ignoring all variance due to age, illness, and living conditions, a human has about a 0.789% chance of dying each year, which works out to a 0.0000075% chance of death in a given five minute timespan (a fun fact for every occasion!) However, my experiment shows that a Mechanical Turk worker has a 5.97% chance of dying in a given five minute period, making Mechanical Turk employment around 800,000 times more dangerous than normal existence.

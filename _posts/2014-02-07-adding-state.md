@@ -9,10 +9,10 @@ In this post, I add state to the [delimited continuation monad][mb-decont], and 
 
 *[Monad Transformers and Modular Interpreters][modular-interpreters]* details an  elegant approach to interpreter design in a purely functional language. Atum is inspired by this work, but makes some compromises that I feel work better for Javascript (In this case, I believe you probably want to would use the [delimited control transformer][cct] `CCT` over a state monad).
 
-## Adding State to the Interpreter Monad
+# Adding State to the Interpreter Monad
 Adding state to a monad requires the monad to thread state though computation along with values. Building on the delimited continuation monad, state also need to be threaded though the continuations. A small set operations will allow computations to get and set the state.
 
-### ComputeContext
+## ComputeContext
 Atum breaks the state into two records:
 
 `ComputeContext` is the top level state object passed though computations and continuations. It records data required by core computations and operations, but doesn't know anything specific about the target language being evaluated.
@@ -33,7 +33,7 @@ The initial computation context is:
 ComputeContext.empty = ComputeContext.create(null, 1);
 ```
 
-### Basic Operations
+## Basic Operations
 The [StateT transformer][statet] adds state to a monad by making the value passed though continuations a pair of value and state. For Atum, I find it clearer to explicitly thread a state object though computations instead of using a pair.
 
 `just` and `bind` from the delimited continuation monad are updated to take an additional state parameter `ctx` along with the continuation `k`. The continuations themselves take two arguments: a value and a state.
@@ -76,7 +76,7 @@ var appk = function(k, x, ctx) {
 };
 ```
 
-### Continuation Operations
+## Continuation Operations
 The [four primitive delimited continuation operations][mb-decont] also have to be updated to thread state along with a value though computations and continuations. `pushPrompt`, `withSubCont`, and `pushSubCont` all simply pass state though.
 
 ```js
@@ -111,7 +111,7 @@ var newPrompt = function(ctx, k) {
 };
 ```
 
-### Running Computations
+## Running Computations
 Computations are run by passing in an initial state `ctx` along with the outermost continuation `k`.
 
 ```js
@@ -134,10 +134,10 @@ run(
 ```
 
 
-## State Operations
+# State Operations
 A few new operations allow computations to get and set the state.
 
-### Compute Context Operations
+## Compute Context Operations
 `modifyComputeContext` changes the state. It takes a function `f` and returns a computation that maps its state to a new state using `f`. The new state is also returned as the value:
 
 ```js
@@ -169,7 +169,7 @@ var extractComputeContext = function(f) {
 };
 ```
 
-### User Context Operations
+## User Context Operations
 The same operations are defined for interacting with the user state.
 
 ```js
@@ -188,7 +188,7 @@ var extractComputeContext = function(f) {
 };
 ```
 
-## Next
+# Next
 We now have an interpreter with state and can start defining stateful computations. I'll build on this work next time to add memory and references to the interpreter, while still using persistant data structures.
 
 
