@@ -8,7 +8,7 @@ $(function () {
 
 var SetupToc = function () {
     $('.toc-content').toc({
-        container: '.content',
+        selectors: '.post > h1, .post > h2',
         smoothScrolling: false,
         headerText: function (i, heading, $heading) {
             return $heading.text();
@@ -17,7 +17,7 @@ var SetupToc = function () {
 };
 
 var OnScroll = function () {
-    var headerH = $('.entry').offset().top;
+    var headerH = $('.post').offset().top;
     var scrollVal = $(this).scrollTop();
     $('.toc').css({
         'top': Math.max(headerH - scrollVal, 0) + 'px'

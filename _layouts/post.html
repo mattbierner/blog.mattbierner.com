@@ -10,17 +10,17 @@ layout: default
 </div>
 
 <div class="wrapper-masthead">
-  <div class="container">
-    <header class="masthead clearfix">
-      <a href="{{ site.baseurl }}/" class="site-avatar">
-        <img src="/images/uwtb-post.svg" alt="UWTB" />
-      </a>
-    </header>
-  </div>
+    <div class="container">
+        <header class="masthead clearfix">
+            <a href="{{ site.baseurl }}/" class="site-avatar">
+                <img src="/images/uwtb-post.svg" alt="UWTB" />
+            </a>
+        </header>
+    </div>
 </div>
 
-<article role="main" class="main post post-main container">
-    <header>
+<article role="main" class="main post container {{ page.type }}">
+    <header class="post-header">
         <h1 class="post-title">{{ page.title }}</h1>
         <div class="post-meta">
             <time>{{ page.date | date: "%B %e, %Y" }}</time>
@@ -28,11 +28,12 @@ layout: default
                 &mdash; <a class="channel-link" href="/series/{{ page.series }}">{{ site.data.series[page.series].name }}</a>
             {% endif %}
         </div>
+        {% if page.image %}
+            {% include image.html file=page.image.file %}
+        {% endif %}
     </header>
-    
-    <div class="entry">
-        <div class="content {{ page.type }}">{{ content }}</div>
-    </div>
+
+    {{ content }}
 
     <footer class="post-footer">
         <nav class="post-nav clearfix">

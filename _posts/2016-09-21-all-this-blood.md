@@ -4,9 +4,9 @@ title: "I Don't Know How We Can See Each Other Through All This Blood"
 date: '2016-09-22'
 description: "Using my heartbeat to modulate my vision."
 series: modded_reality
+image:
+    file: "mirror-red.gif"
 ---
-
-{% include image.html file="mirror-red.gif" %}
 
 A concern: how do I know that I am still alive? Without sensors and data to confirm that my heart is still beating, I could be dead this very moment without being any the wiser! Clearly, something had to be done.
 

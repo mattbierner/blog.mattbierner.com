@@ -20,42 +20,28 @@
 /*********************
     Post Body
 *********************/
-
-.post {
-    blockquote {
-        margin: 1.8em .8em;
-        border-left: 2px solid $gray;
-        padding: 0.1em 1em;
-        color: $gray;
-        font-style: italic;
-    }
-
-    blockquote p:last-child {
-        margin-bottom: 0.4em;
-    }
-}
-
 .post-meta {
     color: $lightGray;
-    font-size: 0.9em;
+    font: $sansSerif;
+    font-size: 0.9rem;
     padding-bottom: 0.4em;
 }
 
-.post-main {
-    .post-title {
-        margin-top: 0;
-        margin-bottom: 0.1em;
+// Header
+.post {
+    .post-header {
         text-align: center;
-    }
-
-    .post-meta {
-        text-align: center;
-    }
-
-    header {
         margin-bottom: 1.4em;
     }
 
+    .post-title {
+        margin-top: 0;
+        margin-bottom: 0.1em;
+    }
+}
+
+// Footer
+.post {
     footer {
         margin-top: 3em;
         text-align: center;
@@ -75,27 +61,25 @@
     }
 }
 
-.post .entry {
+// Post Content
+.post {
     font-size: 16px;
-    line-height: 21px;
-    
-    hr {
-        margin-left: 0;
-        margin-right: 0;
-        border-style: none;
-        border-bottom: 1px solid $lighterGray;
+    line-height: 1.4;
+
+    figure {
+        position: relative;
+        padding-bottom: 0.8em;
     }
 
-    h1 {
-        border-bottom: 1px solid $lighterGray;
-        line-height: 1.2em;
-        text-align: center;
-        margin-bottom: 0.4em;
-        padding-bottom: 0.1em;
+    img {
+        padding-bottom: 0.2em;
+        max-height: 100vh;
     }
-    
-    h2 + figure {
-        margin-top: 1em;
+
+    figcaption {
+        text-align: center;
+        font-style: italic;
+        font-size: 0.9em;
     }
 
     img, iframe {
@@ -107,34 +91,96 @@
         max-width: 100%;
     }
 
-    figure {
-        position: relative;
-        padding-bottom: 0.8em;
+    blockquote {
+        margin: 1.8em .8em;
+        border-left: 2px solid $gray;
+        padding: 0.1em 1em;
+        color: $gray;
+        font-style: italic;
+    }
 
-        img {
-            padding-bottom: 0.2em;
-            max-height: 100vh;
-        }
+    blockquote p:last-child {
+        margin-bottom: 0.4em;
+    }
 
-        figcaption {
-            text-align: center;
-            font-style: italic;
-            font-size: 0.9em;
-        }
+    hr {
+        margin-left: 0;
+        margin-right: 0;
+        border-style: none;
+        border-bottom: 1px solid $lighterGray;
+    }
+
+    & > h1 {
+        border-bottom: 1px solid $lighterGray;
+        line-height: 1.2em;
+        margin-bottom: 0.4em;
+        padding-bottom: 0.1em;
+        font-family: $serif;
+        margin: 2em 0 0.8em 0;
+        text-align: center;
+    }
+
+    & > h2 + figure {
+        margin-top: 1em;
+    }
+
+    & > * {
+        margin-left: 24px;
+        margin-right: 14px;
+    }
+
+    & > h1,
+    & > h2 {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
-.post .entry > * {
-    margin-left: 24px;
-    margin-right: 14px;
+// Story
+.post.story {
+    font-size: 19px;
+    font-family: $serif;
+
+    .chapter-heading,
+    hr {
+        color: $gray;
+    }
+
+    hr {
+        margin: 2em 0;
+        border: none;
+
+        &:before {
+            content: "\2042";
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+    }
+
+    hr.end {
+        padding: 8em;
+
+        &:before {
+            content: "END";
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+    }
+
+    & > h1 {
+        border-bottom: none;
+        font-size: 32px;
+        margin: 6em 0 2em 0;
+    }
+
+    & > h1:first-of-type  {
+        margin-top: 2em;
+    }
 }
 
-.post .entry > h1,
-.post .entry > h2 {
-    margin-left: 0;
-    margin-right: 0;
-}
-
+// Nav
 .post-nav > * {
     width: 50%;
     min-height: 1px;
@@ -165,64 +211,14 @@
 }
 
 
-.post .entry .story {
-    font-family: $serif;
-    font-size: 19px;
-    line-height: 1.4;
-    letter-spacing: -.005em;
-    padding-bottom: 2em;
-
-    h1 {
-        font-family: $serif;
-        border-bottom: none;
-        font-size: 32px;
-        margin: 6em 0 2em 0;
-        text-align: center;
-    }
-
-    h1:first-of-type  {
-        margin-top: 2em;
-    }
-
-    .chapter-heading,
-    hr {
-        color: $gray;
-    }
-
-    hr {
-        margin: 2em 0;
-        border: none;
-
-        &:before {
-            content: "\2042";
-            text-align: center;
-            width: 100%;
-            display: block;
-        }
-    }
-
-    hr.end {
-        padding: 8em;
-
-        &:before {
-            content: "END";
-            text-align: center;
-            width: 100%;
-            display: block;
-        }
-    }
-}
-
 @media only screen and (max-width: 800px) {
-    .post .entry .story {
+    .post.story {
         font-size: 18px;
-        line-height: 1.4;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .post .entry .story {
+    .post.story {
         font-size: 17px;
-        line-height: 1.4;
     }
 }
