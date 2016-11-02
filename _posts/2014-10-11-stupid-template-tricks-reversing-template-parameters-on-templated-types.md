@@ -2,7 +2,7 @@
 layout: post
 title: 'Reversing Template Parameters on Templated Types'
 series: stupid_template_tricks
-date: '2014-10-11 20:38:16'
+date: '2014-10-11'
 ---
 When I  came across [this Stack Overflow question][so] about reversing a c++ `std::tuple` type, naturally I wondered if the same could be done to templated types besides `std::tuple`, i.e. for a templated type `T`, converting `T<P1, P2, ..., Pn>` to `T<Pn, Pn-1, ..., P1>`.
 

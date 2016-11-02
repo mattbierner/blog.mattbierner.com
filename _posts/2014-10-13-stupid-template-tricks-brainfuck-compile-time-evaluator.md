@@ -2,7 +2,7 @@
 layout: post
 title: 'Brainfuck Compile Time Evaluator'
 series: stupid_template_tricks
-date: '2014-10-13 04:29:44'
+date: '2014-10-13'
 ---
 Every 2nd grader knows that the [C++ template system is Turing complete](http://stackoverflow.com/a/275295/306149). So what? Compile time Brainfuck evaluator that's what!
 

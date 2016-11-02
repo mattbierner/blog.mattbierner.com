@@ -2,7 +2,7 @@
 layout: post
 title: Blot're Plays Atari
 series: blotre
-date: '2015-09-08 00:05:29'
+date: '2015-09-08'
 ---
 Remember playing games on a gizmo like this?
 

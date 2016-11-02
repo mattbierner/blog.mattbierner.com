@@ -4,9 +4,9 @@ title: "median.gif"
 date: '2016-07-13'
 description: "Median blending gifs."
 series: gif
+image:
+    file: "main.gif"
 ---
-
-{% include image.html file="main.gif" %}
 
 *[median.gif][site]* is an experiment blending multiple frames of animated gifs using [median blending][median]. Similar to *[scanline.gif][scanline]*, this allows viewing the entire animation in a single image, or you can play around with the rendering settings to generate new gifs.
 

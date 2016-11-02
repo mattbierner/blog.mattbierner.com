@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Responsive, Two Column Documentation Layout With Markdown and CSS
-date: '2014-12-16 05:44:06'
+date: '2014-12-16'
 ---
 <blockquote>
     Adrift in Markdown,<br/>

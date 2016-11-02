@@ -25,7 +25,9 @@ layout: default
             {% endif %}
         </div>
         {% if page.image %}
-            {% include image.html file=page.image.file %}
+            {% unless page.image.dontIncludeOnPage %}
+                {% include image.html file=page.image.file %}
+            {% endunless %}
         {% endif %}
     </header>
 

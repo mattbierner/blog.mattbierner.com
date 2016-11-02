@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Lens Look: Shooting with a Minolta UW Rokkor-PG 18mm Lens on a Nex-7'
-date: '2015-06-19 01:16:34'
+date: '2015-06-19'
 series: camerrah
 description: "An afternoon with a classic Minolta fisheye lens in Seattle."
 ---

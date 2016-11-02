@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keyboard Bacterial Culture
-date: '2015-11-22 02:58:39'
+date: '2015-11-22'
 description: 'In which an ordinary keyboard is pressed against a large agar plate, and the resulting bacterial culture is examined.'
 ---
 

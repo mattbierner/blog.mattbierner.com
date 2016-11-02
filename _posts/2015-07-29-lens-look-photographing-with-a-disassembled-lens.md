@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Photographing with a Disassembled Lens'
-date: '2015-07-29 05:36:12'
+date: '2015-07-29'
 series: camerrah
 description: "Yes, all those optics really do something."
 ---

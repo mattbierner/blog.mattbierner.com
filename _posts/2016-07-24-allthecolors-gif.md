@@ -4,9 +4,9 @@ title: "allthecolors.gif"
 date: '2016-07-24'
 description: "Gifs with every color, from 0x000000 to 0xffffff."
 series: gif
+image:
+    file: "main.png"
 ---
-
-{% include image.html file="main.png" %}
 
 Six months ago, [@wholerainbow][wholerainbow] began its quixotic quest to post every single [24-bit RGB color][24-color] to Twitter. The bot has made remarkable progress since then, working its way up from `0x000000` all the way to `0x00b600`, well over one quarter of one percent of the way there!
 

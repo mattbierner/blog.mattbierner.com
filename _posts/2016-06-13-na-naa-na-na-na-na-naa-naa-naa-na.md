@@ -3,9 +3,9 @@ layout: post
 title: "Na Naa, Na Na Na Na Naa Naa Naa Na"
 date: '2016-06-13'
 description: "Visualizing Katamari Damacy gameplay input."
+image:
+  file: "main.png"
 ---
-
-{% include image.html file="main.png" %}
 
 **Links**
 

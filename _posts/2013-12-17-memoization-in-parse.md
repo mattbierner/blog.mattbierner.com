@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Memoization in Bennu
-date: '2013-12-17 04:46:49'
+date: '2013-12-17'
 ---
 The first version of [Parse-ECMA][parse-ecma] had some performance problems. Parsing simple expressions took up to 45 seconds. Today, Parse-ECMA can lex and parse the entire 2000 line require.js source in about 4 seconds. Almost all of this performance gain came from adding [memoization][memoization] to Bennu.
 

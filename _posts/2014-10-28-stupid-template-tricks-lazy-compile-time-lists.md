@@ -2,7 +2,7 @@
 layout: post
 title: 'Lazy Compile-Time Lists'
 series: stupid_template_tricks
-date: '2014-10-28 04:00:02'
+date: '2014-10-28'
 ---
 > In this time, the most precious substance in the Universe is the List. The List extends life. The List expands consciousness. The List is vital to functional travel.
 

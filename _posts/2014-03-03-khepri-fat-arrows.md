@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Khepri Fat Arrows
-date: '2014-03-03 23:41:16'
+date: '2014-03-03'
 ---
 I overview and criticize the semantics of Javascript's `this` keyword. Then I quickly overview the ECMAScript 6 and Coffee Script solution to the `this` problem, before detailing [Khepri's][khepri] fat arrow syntax. Khepri [fat arrows][functions] make `this` binding explicit and also can [unpack][unpacks] the `this` object.
 

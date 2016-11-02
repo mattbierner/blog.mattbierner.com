@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Apep-std and Apep Example Grammars
-date: '2015-11-15 00:56:17'
+date: '2015-11-15'
 ---
 It's been a little over a week since the initial release of [Apep][], and version 1.3.0 is now out. Performance is significantly better, heavy-weight dependencies are no longer required, and the API is more expressive and powerful.
 

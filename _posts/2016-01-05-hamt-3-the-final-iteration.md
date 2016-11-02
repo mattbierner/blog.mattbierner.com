@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hamt 3 - The Final Iteration
-date: '2016-01-05 08:19:31'
+date: '2016-01-05'
 description: Hamt V2 is out with support for Javascript iterators.
 ---
 

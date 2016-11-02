@@ -2,7 +2,7 @@
 layout: post
 title: Pride and Parser Combinators, Part Two
 series: stupid_template_tricks
-date: '2015-02-23 07:55:27'
+date: '2015-02-23'
 ---
 [Previously][part1], we started work on a small C++ template compiletime, parser combinator library. We covered compile time strings, parser data structures, a few basic combinators, and parsers that consume input.
 

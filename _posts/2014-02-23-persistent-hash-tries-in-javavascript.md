@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Persistent Hash Tries in Javavascript
-date: '2014-02-23 02:32:52'
+date: '2014-02-23'
 ---
 The [hash trie][wiki-hash-trie] is a [persistent][persistent] map data structure with good lookup and update performance. I overview hash tries and cover a basic Javascript hash trie implementation.
 

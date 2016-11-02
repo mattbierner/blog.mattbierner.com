@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Delimited Continuation Monad in Javascript
-date: '2014-02-02 01:24:16'
+date: '2014-02-02'
 ---
 [Atum][atum] expresses control flow using continuations, and at the heart of Atum is the delimited continuation monad. This post overviews continuations in Atum and covers the implementation of the delimited continuation monad in Javascript.
 

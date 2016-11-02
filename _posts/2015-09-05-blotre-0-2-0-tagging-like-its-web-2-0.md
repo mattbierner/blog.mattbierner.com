@@ -2,7 +2,7 @@
 layout: post
 title: Blot're 0.2.0 - Tagging Like It's Web 2.0
 series: blotre
-date: '2015-09-05 20:26:06'
+date: '2015-09-05'
 ---
 The release of [Blot're][blotre] 0.2.0 brings an exciting new feature to your favorite color network: tagging. Tagging allows you to add dynamic metadata to streams, either to clarify what it represents or to help with stream organization and search.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Just the Links
-date: '2015-10-01 05:43:26'
+date: '2015-10-01'
 description: 'A Chrome plugin that shows only the important part of a Wikipedia entry: the hyperlinks.'
 series: newspeak
 ---

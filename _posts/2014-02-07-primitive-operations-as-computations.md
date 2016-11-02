@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lifting Primitive Operations to Computations
-date: '2014-02-07 05:19:24'
+date: '2014-02-07'
 ---
 With a [monad defined][mb-decont] and a small library of [primitive operations][mb-atum-prims], we can start building a library of ECMAScript interpreter computations.
 

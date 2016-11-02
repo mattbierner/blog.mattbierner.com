@@ -1,7 +1,7 @@
 ---
 layout: post
 title: One Pixel Cinema
-date: '2015-07-15 02:45:20'
+date: '2015-07-15'
 ---
 *Eyes Wide Shut*. Say what you will about the film's slow pace and dense symbolism – personally I don't think it's one of Kubrick's best – but it is beautifully shot, and one of the most interesting studies in color and color temperature in film. Scene lighting is a constant interplay between comforting yellows and cold blues, with red, blue, and purple objects all prominently featured. But all that dialog, nudity, and general Tom Cruise-ness distracts from the film's pure color brilliance, which is why I set out to distill *Eyes Wide Shut* to its color essence.
 

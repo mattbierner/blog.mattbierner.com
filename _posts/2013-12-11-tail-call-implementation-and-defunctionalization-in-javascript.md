@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Implementing and Defunctionalizing Tail Calls in Javascript
-date: '2013-12-11 23:24:12'
+date: '2013-12-11'
 ---
 [Tail calls][tail-calls] are a necessary tool for functional-style Javascript. Without language support, tail calls are not an optimization, but  tail calls allow using recursion without worrying about stack size. 
 

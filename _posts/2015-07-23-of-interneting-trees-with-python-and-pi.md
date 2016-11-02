@@ -2,7 +2,7 @@
 layout: post
 title: Of Interneting Trees with Python and Pi
 series: blotre
-date: '2015-07-23 07:28:36'
+date: '2015-07-23'
 ---
 [Blot're.py][blotre-py] is a thin [Blot're][blotre] client for Python. This library has similar capabilities to [Blot're.js][blotre] and makes it easy to connect all sorts of good stuff to Blot're. Good stuff like your household plants. 
 

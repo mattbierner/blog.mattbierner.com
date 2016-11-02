@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Template Assembler'
-date: '2015-09-21 10:37:16'
+date: '2015-09-21'
 description:
 series: stupid_template_tricks
 ---

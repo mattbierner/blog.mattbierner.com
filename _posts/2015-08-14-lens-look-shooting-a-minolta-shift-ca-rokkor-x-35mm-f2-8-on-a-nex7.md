@@ -3,7 +3,7 @@ layout: post
 title: 'Lens Look: Shooting with a Minolta Shift CA Rokkor-X 35mm f2.8 on a NEX7'
 description: "The pains and joys of shooting with Minolta's fabled Shift CA on a modern mirrorless camera."
 series: camerrah
-date: '2015-08-14 07:14:36'
+date: '2015-08-14'
 ---
 {% include image.html file="DSC8778.jpg" %}
 

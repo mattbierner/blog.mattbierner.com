@@ -1,7 +1,7 @@
 ---
 layout: post
 title: On ECMAScript’s Dual Top Level Lexical Grammar Symbols
-date: '2013-12-11 02:19:22'
+date: '2013-12-11'
 ---
 ECMAScript defines two top level grammar symbols, one for division operators and one for regular expression literals. This choice has a few major consequences, and makes implementing the language more difficult than it should be.
 

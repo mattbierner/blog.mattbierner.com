@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Records for Persistent Objects in Javascript
-date: '2013-12-13 22:59:29'
+date: '2013-12-13'
 ---
 Javascript objects are mutable, and mutable objects are greatly overrated. Immutable objects are necessary for functional-style Javascript but can require a lot of boilerplate code.
 

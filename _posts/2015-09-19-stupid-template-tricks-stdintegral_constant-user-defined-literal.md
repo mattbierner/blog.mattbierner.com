@@ -2,7 +2,7 @@
 layout: post
 title: std::integral_constant User Defined Literal
 series: stupid_template_tricks
-date: '2015-09-19 23:20:15'
+date: '2015-09-19'
 ---
 Template metaprogramming is the great leveler. It doesn't discriminate between easy things and hard things, it just makes all things equally hard. Take for example encoding integers as types with user defined literals. Sounds easy. Looks easy. Writes easy:
 

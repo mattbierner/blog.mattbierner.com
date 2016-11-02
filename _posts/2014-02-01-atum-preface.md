@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Atum Preface
-date: '2014-02-01 17:59:10'
+date: '2014-02-01'
 ---
 The functional implementation of programming languages has fascinated me recently. Breaking a language down to its core functionality, and expressing this functionality in composable functions offers many interesting opportunities not possible in a traditional, imperative language implementation.
 

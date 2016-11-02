@@ -1,7 +1,7 @@
 ---
 layout: post
 title: H.A.M.T. II – The Chaining
-date: '2016-01-04 05:10:38'
+date: '2016-01-04'
 description: Hamt is back and rocking a new method based API. 
 ---
 **Update** - Jan 5, 2016

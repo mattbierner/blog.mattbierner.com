@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Khepri Slice Unpacks
-date: '2014-04-10 00:20:23'
+date: '2014-04-10'
 ---
 [Khepri][khepri] V0.22 adds slice unpacks for unpacking a range of values to an array. Here I briefly cover slice unpacks. You can find the Khepri [language documentation here][documentation].
 

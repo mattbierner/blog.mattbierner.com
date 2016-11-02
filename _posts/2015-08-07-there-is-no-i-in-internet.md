@@ -1,7 +1,7 @@
 ---
 layout: post
 title: There Is No I In Internet
-date: '2015-08-07 05:01:24'
+date: '2015-08-07'
 series: newspeak
 ---
 {% include image.html file="promo-800-1.png" %}

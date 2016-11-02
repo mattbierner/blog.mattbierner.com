@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Inlining in Khepri - Introduction
-date: '2014-05-04 23:48:13'
+date: '2014-05-04'
 ---
 I designed [Khepri][khepri] with function inlining in mind, but inlining support was only recently added to the compiler. This post overviews the Khepri compiler's inlining support. A later post will cover some of the specific challenges of inlining Javascript and how Khepri implements inlining. 
 

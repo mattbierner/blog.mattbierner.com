@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Jungle!!!!!
-date: '2015-08-09 01:35:59'
+date: '2015-08-09'
 ---
 History remembers Upton Sinclair's *The Jungle* as a vivid exposé on literal and figurative sausage making, a piece that shocked the nation and led to the passage of the Pure Food and Drug Act. But all that happens in the first half of the novel, no one remembers the second half. And that is probably for the best.
 

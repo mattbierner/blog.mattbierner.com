@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zippering k-ary Ordered Trees in Neith
-date: '2014-01-24 19:31:56'
+date: '2014-01-24'
 ---
 Using [Neith][neith] to zipper k-ary trees with labeled edges is a common enough use case as to demand special attention. The core Neith zipper module is too generic; zippered tree data structures benefit from specialized constructors and operations.
 

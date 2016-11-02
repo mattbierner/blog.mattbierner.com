@@ -2,7 +2,7 @@
 layout: post
 title: blog.blot.re
 series: blotre
-date: '2015-12-13 22:16:34'
+date: '2015-12-13'
 description: Blot're all up in your blogosphere.
 ---
 

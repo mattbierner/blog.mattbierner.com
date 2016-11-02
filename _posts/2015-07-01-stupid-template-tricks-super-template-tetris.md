@@ -2,7 +2,7 @@
 layout: post
 title: 'Super Template Tetris'
 series: stupid_template_tricks
-date: '2015-07-01 14:28:35'
+date: '2015-07-01'
 ---
 Let me share with you a vision of the future which offers hope. It is that we embark on a program to counter the awesome Runtime threat with measures that are preemptive. Let us turn to the very strengths in templating that spawned our great metaprogramming base and have given us the beautiful C++ we enjoy today.
 

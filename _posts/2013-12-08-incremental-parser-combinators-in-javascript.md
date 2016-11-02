@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Incremental Parser Combinators In Javascript
-date: '2013-12-08 19:28:17'
+date: '2013-12-08'
 ---
 Parsers are often run against data streams that are not fully available. Maybe you want to parse user input to provide realtime feedback and improve application responsiveness, or perhaps you need to parse web socket data incrementally to limit user interface blocking.
 
