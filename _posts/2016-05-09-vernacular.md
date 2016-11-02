@@ -4,6 +4,9 @@ title: "Vernacular"
 date: '2016-05-09'
 description: "Finding Urban Dictionary entries in text."
 series: newspeak
+image:
+    file: "graph.png"
+    dontIncludeOnPage: yes
 ---
 
 > My life fades. All that remain are memories. I remember a time of language... of text... of words. Gone now...<br><br>

@@ -4,9 +4,9 @@ title: 'Lens Look: Shooting with a Minolta Shift CA Rokkor-X 35mm f2.8 on a NEX7
 description: "The pains and joys of shooting with Minolta's fabled Shift CA on a modern mirrorless camera."
 series: camerrah
 date: '2015-08-14'
+image:
+    file: 'DSC8778.jpg'
 ---
-{% include image.html file="DSC8778.jpg" %}
-
 There is something wonderfully absurd about taking a nice little mirrorless camera, that marvel of modern technology, and sticking a huge fifty year old lens on it. So when a Minolta Shift CA Rokkor-X 35mm recently came my way, I couldn't wait to test it out. This post collects my first thoughts on shooting a Shift CA on a NEX7 camera.
 
 # Lens

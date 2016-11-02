@@ -2,12 +2,13 @@
 layout: post
 title: Sketchy Keylogger
 date: '2015-12-05'
-description: Spelunky + Keylogger + Python + Turtles
+description: "Spelunky + Keylogger + Python + Turtles"
+image:
+    file: "spelunky-opening.png"
 ---
-{% include image.html file="spelunky-opening.png" %}
 
 What the hell is that? A map of the New York City subway system? A particle collision at the LHC? No, something far more beautiful: a visualization of [Spelunky][] gameplay keyboard input. 
- 
+
 Somewhere around the hundredth hour of my most recent Spelunky binge, through a hallucinatory fog of sleep deprivation and physical exhaustion, a vision came to me, sent by Kali herself: turn the game input into a giant Etch-a-Sketch (just how an ancient Indian goddess knew about Etch-a-Sketchs is one of those cosmic mysteries.)
 
 As I lay recovering in the hospital a few days later, I couldn't stop thinking about this idea. What would a visualization of game input look like on its own, without seeing the game itself being played? Would it capture the gameplay in any way? Would there be any interesting trends? Surely such inanity would be worth a few pretty pictures at least. 

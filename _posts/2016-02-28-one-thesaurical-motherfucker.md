@@ -4,9 +4,9 @@ title: "One Thesaurical Motherfucker"
 date: '2016-02-28'
 description: "Thesaurus all things!"
 series: newspeak
+image:
+    file: 'logo.png'
 ---
-
-{% include image.html file="logo.png" %}
 <!--I like all my memes well aged. BTW, the conglomeration is a misrepresentation-->
 
 Why can't I write like Herman Melville? This is a *very* pressing question.

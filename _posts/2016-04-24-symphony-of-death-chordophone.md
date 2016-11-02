@@ -3,9 +3,10 @@ layout: post
 title: "Symphony of Death: Chordophone"
 date: '2016-04-24'
 description: "Creating an interactive musical instrument from the kills of Halo 5 multiplayer matches."
+image:
+    file: "logo.png"
+    description: "Through golden visors,<br>their eyes met. Two warriors,<br>bound solely by death."
 ---
-
-{% include image.html file="logo.png" description="Through golden visors,<br>their eyes met. Two warriors,<br>bound solely by death." %}
 
 When 343 Industries announced a [public data API for *Halo 5*](https://www.halowaypoint.com/en-us/community/blog-posts/halo-api-hackathon), I got pretty excited. Now mind you, while I cracked my share of skulls at *Blood Gulch* back in the day (and let me tell you kids, back then, we were happy just to get 50 pixels apiece in splitscreen mode), I've never actually played *Halo 5*. Or *Halo 4*. Or 3 for that matter! But data be data, and after [my experiment using *Spelunky* keyboard input to draw Etch-a-Sketch style][spelunky], I've been itching to explore other interesting ways to visualize videogameplay. Thus was born *Symphony of Death*. The title is corny as hell, but what else would you expect from someone who busts terrible haikus about good ol' Master Chief.
 

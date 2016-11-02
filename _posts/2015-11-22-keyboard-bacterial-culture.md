@@ -3,9 +3,9 @@ layout: post
 title: Keyboard Bacterial Culture
 date: '2015-11-22'
 description: 'In which an ordinary keyboard is pressed against a large agar plate, and the resulting bacterial culture is examined.'
+image:
+    file: "DSC2832.jpg"
 ---
-
-{% include image.html file="DSC2832.jpg" %}
 
 Keyboards are gross. How can they not be? Most of us spend hours every day on them, transferring all sorts of good stuff back and forth from our hands to the keys. So, while looking closely at my keyboard recently, I got to wondering just what types of bacteria and other microorganisms were growing on it. Thus began an experiment to find out.
 

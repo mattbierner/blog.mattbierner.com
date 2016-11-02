@@ -3,9 +3,9 @@ layout: post
 title: "Hamt + 1"
 date: '2016-01-29'
 description: "Now with 100000% more cephalopod!"
+image:
+    file: "hamt-logo.png"
 ---
-
-{% include image.html file="hamt-logo.png"  %}
 
 [Hamt+][src] may not have the same level of recognition or funding as Immutable.js, but we've got the better logo. Just look at that friendly [Cephalopod of Mutation](/the-lispers-in-the-darkness/), bursting onto the immutable landscape all ready to wreck up the place.
 
