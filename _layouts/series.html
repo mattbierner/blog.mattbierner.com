@@ -4,17 +4,19 @@ layout: default
 
 {% include index_header.html %}
 
-<div role="main" class="posts main container">
+<div role="main" class="main">
     {% if site.data.series[page.series] %}
-        <div class="channel-header">
+        <div class="channel-header container">
             <h1 class="channel-name">{{ site.data.series[page.series].name }}</h1>
             <section class="channel-description">{{ site.data.series[page.series].description | markdownify }}</section>
         </div>
 
-        {% for post in site.posts %}
-            {% if post.series == page.series %}
-                {% include post_index.html %}
-            {% endif %}
-        {% endfor %}
+        <div class="posts">
+            {% for post in site.posts %}
+                {% if post.series == page.series %}
+                    {% include post_index.html %}
+                {% endif %}
+            {% endfor %}
+        </div>
     {% endif %}
 </div>

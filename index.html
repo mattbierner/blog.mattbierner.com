@@ -4,31 +4,30 @@ layout: default
 
 {% include index_header.html %}
 
-<div role="main" class="main container">
-    <div class="posts">
-        {% for post in paginator.posts %}
-            {% include post_index.html %}
-        {% endfor %}
-    </div>
-    {% if paginator.total_pages > 1 %}
-        <nav class="pagination">
-            {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
-            {% endif %}
-
-            {% for page in (1..paginator.total_pages) %}
-                {% if page == paginator.page %}
-                    <em>{{ page }}</em>
-                {% elsif page == 1 %}
-                    <a href="{{ site.baseurl }}/">{{ page }}</a>
-                {% else %}
-                    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-                {% endif %}
-            {% endfor %}
-
-            {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
-            {% endif %}
-        </nav>
-    {% endif %}
+<div role="main" class="posts">
+    {% for post in paginator.posts %}
+        {% include post_index.html %}
+    {% endfor %}
 </div>
+
+{% if paginator.total_pages > 1 %}
+    <nav class="pagination container">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+                <em>{{ page }}</em>
+            {% elsif page == 1 %}
+                <a href="{{ site.baseurl }}/">{{ page }}</a>
+            {% else %}
+                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+        {% endif %}
+    </nav>
+{% endif %}

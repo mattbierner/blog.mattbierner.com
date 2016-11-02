@@ -1,18 +1,29 @@
-<article class="post">
-    <div class="post-meta">
-        <time>{{ post.date| date: '%B %d, %Y' }}</time>
+<article class="post-item">
+    {% if post.image %}
+        {% capture image_src %}{% if post.image.file %}/content/{{ post.path | remove_first:'_posts/' | split:'.' | first }}/{{ post.image.file }}{% else %}{{ post.image.url }}{% endif %}{% endcapture %}
+        <div class="post-preview-image container">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                <img src="{{ image_src }}" />
+            </a>
+        </div>
+    {% endif %}
+
+    <div class="post-meta container">
+        <time datetime="{{post.date | date_to_xmlschema}}">{{ post.date | date: '%B %d, %Y' }}</time>
         {% if site.data.series[post.series] %}
             &mdash; <a class="channel-link" href="/series/{{ post.series }}">{{ site.data.series[post.series].name }}</a>
         {% endif %}
     </div>
 
-    <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <a class="post-preview-content" href="{{ site.baseurl }}{{ post.url }}">
+        <h1 class="post-title container"><span>{{ post.title }}</span></h1>
 
-    <div class="entry">
-        {% if post.description %}
-            {{ post.description }}
-        {% else %}
-            {{ post.excerpt | strip_html }}
-        {% endif %}
-    </div>
+        <p class="post-blurb container">
+            {% if post.description %}
+                {{ post.description }}
+            {% else %}
+                {{ post.excerpt | strip_html }}
+            {% endif %}
+        </p>
+    </a>
 </article>

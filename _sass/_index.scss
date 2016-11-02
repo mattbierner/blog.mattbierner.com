@@ -29,25 +29,47 @@
 /*********************
     Posts List
 *********************/
-.posts > .post {
-    padding: 1em 0;
-    border-bottom: 1px solid $lighterGray;
+.posts > .post-item {
+    text-align: center;
+    display: block;
+    padding-bottom: 2rem;
 
     .post-title {
-        text-align: left;
-        margin-top: -5px;
+        margin-top: -4px;
         margin-bottom: 0.2em;
+        max-width: 30rem;
+        span {
+            border-bottom: 1px solid transparent;
+        }
     }
 
-    .entry {
+    .post-preview-content:hover .post-title span {
+        border-bottom-color: $lighterGray;
+    }
+
+    .post-preview-image {
+        padding-bottom: 0.8em;
+    }
+
+    .post-blurb {
         font-size: 14px;
+        color: $darkGray;
+        max-width: 25rem;
     }
 
-    .entry > *:first-child {
-        margin-top: 0;
+    &:first-child {
+        margin-top: 2rem;
     }
 
-    &:last-child {
-        border-bottom: none;
+    &:after {
+        margin-top: 2rem;
+        display: block;
+        font-family: serif;
+        content: "\2053"; 
+        color: $lightGray;
+    }
+
+    &:last-child:after {
+        content: "";
     }
 }
