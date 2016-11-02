@@ -2,7 +2,8 @@
     Post Header
 *********************/
 .masthead {
-    padding: 22px 0 6px 0;
+    padding-top: 22px;
+    padding-bottom: 4px;
     text-align: center;
 }
 
@@ -28,15 +29,16 @@
 }
 
 // Header
-.post {
-    .post-header {
-        text-align: center;
-        margin-bottom: 1.4em;
-    }
+.post-header {
+    text-align: center;
 
     .post-title {
         margin-top: 0;
         margin-bottom: 0.1em;
+    }
+
+    .post-meta {
+        margin-bottom: 1em;
     }
 }
 
@@ -64,7 +66,12 @@
 // Post Content
 .post {
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.34;
+    
+    & > * {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
 
     figure {
         position: relative;
@@ -113,26 +120,23 @@
     & > h1 {
         border-bottom: 1px solid $lighterGray;
         line-height: 1.2em;
-        margin-bottom: 0.4em;
+        margin: 1.6em 0 0.4em 0;
+        padding-top: 0.6em;
         padding-bottom: 0.1em;
-        font-family: $serif;
-        margin: 2em 0 0.8em 0;
-        text-align: center;
-    }
-
-    & > h2 + figure {
-        margin-top: 1em;
-    }
-
-    & > * {
-        margin-left: 24px;
-        margin-right: 14px;
     }
 
     & > h1,
     & > h2 {
-        margin-left: 0;
-        margin-right: 0;
+        text-align: center;
+        font-family: $serif;
+    }
+
+    & > h2 {
+        margin: 2em 0 0.8em 0;
+    }
+
+    & > h2 + figure {
+        margin-top: 1em;
     }
 }
 
@@ -140,6 +144,7 @@
 .post.story {
     font-size: 19px;
     font-family: $serif;
+    line-height: 1.4;
 
     .chapter-heading,
     hr {
@@ -216,10 +221,20 @@
     .post.story {
         font-size: 18px;
     }
+
+    .post > * {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .post.story {
         font-size: 17px;
+    }
+
+    .post > * {
+        margin-left: 6px;
+        margin-right: 6px;
     }
 }
