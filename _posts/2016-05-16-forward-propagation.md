@@ -7,6 +7,7 @@ image:
     file: "logo.svg"
 ---
 
+{% include image.html file="logo.svg" %}
 
 **Links**
 

@@ -5,8 +5,7 @@ date: '2016-02-15'
 description: "This is your life and it's ending five cents at a time."
 series: bandarlog
 image:
-    file: 'example.png'
-    dontIncludeOnPage: true
+    file: "example.png"
 ---
 
 One of my many hobbies is writing infinite loops (yet another reason why I am the life of every party). It's charity work really. People are always demanding that computers work for them – perform those calculations, store that data, show me The Youtubes – but who among them stops to pay homage to the computer's mere existence, that most amazing of all feats? An infinite loop says, "Thank you for existing, keep it up!" It gives computers purpose, it gives them meaning.

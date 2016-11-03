@@ -4,8 +4,10 @@ title: Hamt 3 - The Final Iteration
 date: '2016-01-05'
 description: Hamt V2 is out with support for Javascript iterators.
 image:
-    file: 'hamt-logo.png'
+    file: "hamt-logo.png"
 ---
+
+{% include image.html file="hamt-logo.png" %}
 
 Hot on the heels of [Hamt V1][hamt1], here comes Hamt V2. This release focuses on superficial API compatibility with [ES6's `Map`][map], making it easier to start using immutable data structures in your code. This also means that Hamt's finally showing [Javascript iterators][iteration] some love.
 

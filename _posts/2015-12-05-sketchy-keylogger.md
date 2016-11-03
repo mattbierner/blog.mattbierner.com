@@ -7,6 +7,8 @@ image:
     file: "spelunky-opening.png"
 ---
 
+{% include image.html file="spelunky-opening.jpg" %}
+
 What the hell is that? A map of the New York City subway system? A particle collision at the LHC? No, something far more beautiful: a visualization of [Spelunky][] gameplay keyboard input. 
 
 Somewhere around the hundredth hour of my most recent Spelunky binge, through a hallucinatory fog of sleep deprivation and physical exhaustion, a vision came to me, sent by Kali herself: turn the game input into a giant Etch-a-Sketch (just how an ancient Indian goddess knew about Etch-a-Sketchs is one of those cosmic mysteries.)

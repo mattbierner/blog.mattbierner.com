@@ -24,11 +24,6 @@ layout: default
                 &mdash; <a class="channel-link" href="/series/{{ page.series }}">{{ site.data.series[page.series].name }}</a>
             {% endif %}
         </div>
-        {% if page.image %}
-            {% unless page.image.dontIncludeOnPage %}
-                {% include image.html file=page.image.file description=page.image.description %}
-            {% endunless %}
-        {% endif %}
     </header>
 
     {{ content }}

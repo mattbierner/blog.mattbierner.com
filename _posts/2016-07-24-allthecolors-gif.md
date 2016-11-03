@@ -8,6 +8,8 @@ image:
     file: "main.png"
 ---
 
+{% include image.html file="main.png" %}
+
 Six months ago, [@wholerainbow][wholerainbow] began its quixotic quest to post every single [24-bit RGB color][24-color] to Twitter. The bot has made remarkable progress since then, working its way up from `0x000000` all the way to `0x00b600`, well over one quarter of one percent of the way there!
 
 Inspired by this effort, I recently created a small collection of gifs that each contain every 24-bit RGB color, from `0x000000` to `0xffffff`. Now, gifs are not exactly known for their color fidelity – being limited to 90s-esque 256 color pallets – a failing which actually adds to their charm in many respects (although there are [clever workarounds](https://notes.tweakblogs.net/blog/8712/high-color-gif-images.html)). Directly storing some 16,777,216 colors in a single gif therefore requires  stretching the limits of practicality. Be forewarned that these gifs are too awesome for some browsers, which simply cannot handle this much color.

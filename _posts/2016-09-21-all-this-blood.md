@@ -8,6 +8,8 @@ image:
     file: "mirror-red.gif"
 ---
 
+{% include image.html file="mirror-red.gif" %}
+
 A concern: how do I know that I am still alive? Without sensors and data to confirm that my heart is still beating, I could be dead this very moment without being any the wiser! Clearly, something had to be done.
 
 So, taken with a fit of self-quantification, and building on my [initial work in the modded reality space][eyes], I recently put together a device that modifies my vision using my heartbeat, thereby allowing me to monitor and confirm my continued existence. It's pretty simple actually. The device collects data from a heartbeat sensor and uses the beats to modulate a video stream from a camera mounted in front of the eyes, sending the altered video to a VR headset. 

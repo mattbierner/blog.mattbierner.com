@@ -8,6 +8,8 @@ image:
     file: "cat.gif"
 ---
 
+{% include image.html file="cat.gif" %}
+
 *[scanline.gif][site]* is an experiment flattening gifs so that multiple frames of animation are shown in a single image. These images themselves can be pretty interesting, but we can also then replay the original animation to generate fun new gifs. The resulting effect is kind of like [slit-scan photography](https://en.wikipedia.org/wiki/Slit-scan_photography).
 
 **Links**

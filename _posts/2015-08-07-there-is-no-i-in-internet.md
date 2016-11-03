@@ -7,6 +7,8 @@ image:
     file: "promo-800-1.png"
 ---
 
+{% include image.html file="promo-800-1.png" %}
+
 > ... you and me and every millennial we know ... - *[What My Landlord Learned About Me From Twitter, New York Times Magazine][article]*
 
 "Get of my lawn!", he blogged snidely.

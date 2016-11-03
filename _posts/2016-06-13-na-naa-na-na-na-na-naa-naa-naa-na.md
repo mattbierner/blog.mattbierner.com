@@ -7,6 +7,8 @@ image:
   file: "main.png"
 ---
 
+{% include image.html file="main.png" %}
+
 **Links**
 
 * [Site][site]

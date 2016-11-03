@@ -4,7 +4,6 @@ title: Spelunkymetrics
 date: '2015-12-09'
 image:
     file: "spelunky-avg-time-to-die.png"
-    dontIncludeOnPage: yes
 ---
 
 After my recent experiment [visualizing Spelunky gameplay input Etch-a-Sketch style][etch], I decided to make one more pass over the data. No pretty pictures this time around, but lots of charts. Charts are good too.
