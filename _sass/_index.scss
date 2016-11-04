@@ -49,6 +49,10 @@
 
     .post-preview-image {
         padding-bottom: 0.8em;
+
+        img {
+            max-height: 50vh;
+        }
     }
 
     .post-blurb {
