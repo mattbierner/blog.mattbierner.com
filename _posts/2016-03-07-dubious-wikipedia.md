@@ -2,7 +2,7 @@
 layout: post
 title: "{{dubious}}"
 date: '2016-03-07'
-description: "Scraping Wikipedia to find all sentences marked: 'dubious', 'lopsided', and the infamous 'citation-needed'."
+description: "Scraping Wikipedia to find all sentences marked: 'dubious', 'lopsided', and the infamous 'citation-needed'"
 ---
 
 Over the years, I've discovered that hidden beneath Wikipedia's encyclopedic veneer lies some of the best comedy on the internet: a quirky brew of detachment and deadpan that is unintentionally hilarious on so many levels.

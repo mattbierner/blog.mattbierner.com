@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "|| this"
-description: "Defining a single, zero overhead Javascript function that can be used as either a free function or a method."
+description: "Defining a single, zero overhead Javascript function that can be used as either a free function or a method"
 series: jshole
 date: '2016-01-16'
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Funcualizer
-description: "Converting Javascript methods into performant functions."
+description: "Converting Javascript methods into performant functions"
 series: jshole
 date: '2016-02-13'
 ---

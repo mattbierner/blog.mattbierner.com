@@ -2,7 +2,7 @@
 layout: post
 title: Keyboard Bacterial Culture
 date: '2015-11-22'
-description: 'In which an ordinary keyboard is pressed against a large agar plate, and the resulting bacterial culture is examined.'
+description: "In which an ordinary keyboard is pressed against a large agar plate, and the resulting bacterial culture is examined"
 image:
     file: "DSC2832.jpg"
 ---

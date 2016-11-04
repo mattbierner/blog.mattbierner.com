@@ -2,7 +2,7 @@
 layout: post
 title: "median.gif"
 date: '2016-07-13'
-description: "Median blending gifs."
+description: "Median blending gifs"
 series: gif
 image:
     file: "main.gif"

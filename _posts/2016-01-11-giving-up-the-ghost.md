@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Giving up the Ghost
-description: "Or; How I learned to Stop Hosting and Love Jekyll."
+description: "Or; How I learned to Stop Hosting and Love Jekyll"
 date: '2016-01-13'
 ---
 

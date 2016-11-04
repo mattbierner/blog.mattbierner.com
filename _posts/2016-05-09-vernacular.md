@@ -2,7 +2,7 @@
 layout: post
 title: "Vernacular"
 date: '2016-05-09'
-description: "Finding Urban Dictionary entries in text."
+description: "Finding Urban Dictionary entries in text"
 series: newspeak
 image:
     file: "graph.png"

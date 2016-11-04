@@ -2,7 +2,7 @@
 layout: post
 title: "Dreams of the 21st Century"
 date: '2016-04-07'
-description: "Machine learning my dreams."
+description: "Machine learning my dreams"
 series: "machine-learn-me"
 ---
 

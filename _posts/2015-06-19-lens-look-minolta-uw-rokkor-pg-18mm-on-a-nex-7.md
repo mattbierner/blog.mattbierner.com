@@ -3,7 +3,7 @@ layout: post
 title: 'Lens Look: Shooting with a Minolta UW Rokkor-PG 18mm Lens on a Nex-7'
 date: '2015-06-19'
 series: camerrah
-description: "An afternoon with a classic Minolta fisheye lens in Seattle."
+description: "An afternoon with a classic Minolta fisheye lens in Seattle"
 ---
 I've recently been trying out a Minolta UW Rokkor-PG 18mm f9.5 on my Nex-7 and thought that I'd share my initial, very subjective thoughts about this combination, along with a [few sample photos][gallery].
 

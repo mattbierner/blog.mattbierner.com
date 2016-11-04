@@ -2,7 +2,7 @@
 layout: post
 title: "Urban Dictionary Neural Network"
 date: '2016-03-13'
-description: "Building an Urban Dictionary dataset and using it to train our future AI overlords."
+description: "Building an Urban Dictionary dataset and using it to train our future AI overlords"
 series: "machine-learn-me"
 ---
 
