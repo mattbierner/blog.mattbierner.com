@@ -18,9 +18,9 @@ This experiment continues my exploration of what I'm calling [modded reality][mo
 # Setup
 {% include image.html file="spectacles.jpg" description="I see your spectacles and raise you this.<br>(Side note: Glasses with a camera? Is that *really* what people find exciting? I must be out of touch...)" %}
 
-I'm using the same [hardware and software detailed before][hands], with a Raspberry Pi streaming mjpeg video from a pair of usb web cams to an iPhone inside of a Google Cardboard headset. The main modification – beyond the addition of the all important selfie stick of course – is that, this time around, I tried capturing stereoscopic video.
+I'm using the same [hardware and software detailed before](/tenome/#setup), with a Raspberry Pi streaming mjpeg video from a pair of usb web cams to an iPhone inside of a Google Cardboard headset. The main modification – beyond the addition of the all important selfie stick of course – is that, this time around, I tried capturing stereoscopic video.
 
-Now, I had previously explored stereoscopic vision in [my hand mounted camera experiment][hands], moving my hands/cameras next to each other to create a poor man's stereoscopic view, but proper alignment was extremely difficult to maintain. I also tried strapping two cameras next to each other in my [body cam experiment][hands], but, again, good alignment was impossible and, in the end, it was better to just use a single camera duplicated across both eyes.
+Now, I had previously explored stereoscopic vision in [my hand mounted camera experiment][hands], moving my hands/cameras next to each other to create a poor man's stereoscopic view, but proper alignment was extremely difficult to maintain. I also tried strapping two cameras next to each other in my [body cam experiment][body], but, again, good alignment was impossible and, in the end, it was better to just use a single camera duplicated across both eyes.
 
 To achieve proper alignment this time around, I designed and 3D printed a very simple mount to hold a pair of cameras. The distance between the two cameras is around three inches, a little over the normal distance between human eyes.
 
