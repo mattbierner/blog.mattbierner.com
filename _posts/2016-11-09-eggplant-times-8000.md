@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Eggplant Eggplant Eggplant"
-date: '2016-11-08'
+date: '2016-11-09'
 description: "With apologies to Spider Jerusalem"
 ---
 

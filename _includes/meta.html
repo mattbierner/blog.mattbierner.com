@@ -3,19 +3,31 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    {% if page.description %}
-    <meta name="description" content="{{ page.description| strip_html }}" />
-    <meta property="og:description" content="{{ page.description| strip_html }}" />
-    {% elsif page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
-    {% else %}
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
-    {% endif %}
-    <meta name="author" content="{{ site.name }}" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@mattbierner">
+    <meta name="author" content="{{ site.author }}" />
 
-    {% if page.title %}
+{% if page.title %}
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
-    {% endif %}
+{% endif %}
+
+{% if page.description %}
+    <meta name="description" content="{{ page.description | strip_html }}" />
+    <meta property="og:description" content="{{ page.description | strip_html }}" />
+    <meta name="twitter:description" content="{{ page.description | strip_html }}">
+{% elsif page.excerpt %}
+    <meta name="description" content="{{ page.excerpt | strip_html }}" />
+    <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
+{% else %}
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}" />
+{% endif %}
+
+{% if page.image %}
+    {% capture image_src %}{% if page.image.file %}{{ site.url }}/content/{{ page.path | remove_first:'_posts/' | split:'.' | first }}/{{ page.image.file }}{% else %}{{ page.image.url }}{% endif %}{% endcapture %}
+    <meta name="twitter:image:src" content="{{ image_src }}">
+{% endif %}
+
+
