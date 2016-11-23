@@ -7,6 +7,6 @@
         <img src="{{ image_src }}" alt="{{ include.description }}" />
     </a>
 {% if include.description %}
-    <figcaption>{{ include.description | Markdownify }}</figcaption>
+    <figcaption>{{ include.description | markdownify }}</figcaption>
 {% endif %}
 </figure>
