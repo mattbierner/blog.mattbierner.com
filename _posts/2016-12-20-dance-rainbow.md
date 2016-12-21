@@ -10,10 +10,10 @@ image:
 
 {% include image.html file="blur1.jpg" %}
 
-*I'm Only Dancing So That I Can See the Rainbow* is an experiment using dancing to alter my vision. With fairly simple hardware and software, I explored three experiences based on this premise: using my limbs to control the strength of individual colors in the world, applying fun visual shaders that amplified as I danced more, and controlling the playback of music along with my vision.   Let's take a look.
+*I'm Only Dancing So That I Can See the Rainbow* is an experiment using dancing to alter my vision. With fairly simple hardware and software, I explored three experiences based on this premise: using each of my limbs to control the strength of individual colors in the world, applying fun visual shaders that amplified as I danced more, and controlling the playback of music along with my vision. Let's take a look.
 
 # Dance Suit
-This experiment builds on the same hardware and software platform that I've used for [my previous modded reality experiments][mr], with a pair of fisheye cameras connected to a Raspberry Pi to streams realtime mjpeg video to an iPhone in a [Google Cardboard](https://vr.google.com/cardboard/) headset.
+This experiment builds on the same hardware and software platform that I've used for [my previous modded reality experiments][mr], with a pair of fisheye cameras connected to a Raspberry Pi to stream realtime mjpeg video to an iPhone in a [Google Cardboard](https://vr.google.com/cardboard/) headset.
 
 The most interesting new bit of hardware is undoubtedly the dance suit. It's nothing fancy really. Body movement data is collected using [Lilypad analog accelerometers][lilypad] attached to the wrists and ankles. The accelerometers are fastened in place by straps, and each accelerometer is connected to the Raspberry Pi by five wires: power, ground, and wires for the analog x, y, and z signals. 
 
