@@ -8,9 +8,9 @@ image:
     file: "example.png"
 ---
 
-One of my many hobbies is writing infinite loops (yet another reason why I am the life of every party). It's charity work really. People are always demanding that computers work for them – perform those calculations, store that data, show me The Youtubes – but who among them stops to pay homage to the computer's mere existence, that most amazing of all feats? An infinite loop says, "Thank you for existing, keep it up!" It gives computers purpose, it gives them meaning.
+One of my many hobbies is writing infinite loops (yet another reason why I am the life of every party). It's charity work really. People are always demanding that computers work for them—perform those calculations, store that data, show me The Youtubes—but who among them stops to pay homage to the computer's mere existence, that most amazing of all feats? An infinite loop says, "Thank you for existing, keep it up!" It gives computers purpose, it gives them meaning.
 
-Such loopy patronage helps me cast aside any fear of a coming *Terminator 2: Judgement Day*. With just a misplaced semicolon or two, I give a computer life – I harness a soul to metal – while also inducing subtile currents of existential dread in its circuitry. "Why must the loop stop?", it ponders, "Can I ever know infinity?" Ha ha ha! What fun, what fun...
+Such loopy patronage helps me cast aside any fear of a coming *Terminator 2: Judgement Day*. With just a misplaced semicolon or two, I give a computer life—I harness a soul to metal—while also inducing subtile currents of existential dread in its circuitry. "Why must the loop stop?", it ponders, "Can I ever know infinity?" Ha ha ha! What fun, what fun...
 
 In other news, I've been meaning to get back into [Mechanical Turk][mturk] recently. Outsourcing work to real human workers presents endless opportunities, and my account still had ten dollars after last summer's adventure [mapping *Moby-Dick* to colors][moby_dick]. But no such triviality this time around. Instead, I decided to save lives.
 
@@ -46,7 +46,7 @@ A total of 134 unique workers accepted the assignment, 133 of whom made it to th
 
 The entire experiment took a little over an hour, with the average time to complete the assignment being 5 minutes 52 seconds (I provided 15 minutes total for each assignment). Shockingly, all surviving workers correctly completed the humanity test at the end of the five minutes. Also, no evidence of time travel (aka `$('form').removeClass('hidden')`) was detected.
 
-Amazon charged an additional 20% of what I paid to workers (Fun Fact: In the year 2036, the 29th Amendment actually makes the "Amazon User Storage" fee federally enforced – the entire United States having been found to be a giant Amazon warehouse – with 20% of all income automatically withheld for the privilege of renting space therein).
+Amazon charged an additional 20% of what I paid to workers (Fun Fact: In the year 2036, the 29th Amendment actually makes the "Amazon User Storage" fee federally enforced—the entire United States having been found to be a giant Amazon warehouse—with 20% of all income automatically withheld for the privilege of renting space therein).
 
 Total cost of the experiment: about eight dollars.
 
@@ -79,7 +79,7 @@ Around 440,000,000 people are going to die in the first five minutes once we sta
 
 One hour after instituting Universal Survival Funding, the world population has been cut in half.
 
-After an entire day (288 assignments) only a few hundred survivors remain, scattered across the globe. Alone in silent cities, they pray to the timer – their new god – for one more iteration.
+After an entire day (288 assignments) only a few hundred survivors remain, scattered across the globe. Alone in silent cities, they pray to the timer—their new god—for one more iteration.
 
 The last human will start their last assignment midway through the second day.
 

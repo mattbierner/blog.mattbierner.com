@@ -124,6 +124,18 @@
         border-style: none;
         border-bottom: 1px solid $lighterGray;
     }
+    
+    hr.stars {
+        margin: 2em 0;
+        border: none;
+
+        &:before {
+            content: "\2042";
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+    }
 
     & > h1 {
         border-bottom: 1px solid $lighterGray;

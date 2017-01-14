@@ -8,7 +8,7 @@ series: "machine-learn-me"
 
 Urban Dictionary. Do you know how many potential startup and project names this site has ruined for me?
 
-I'll spend hours trawling Wiktionary for that perfect name – navigating Latin and Greek to derive a crafty play on words that oozes tech cachet – only to discover that my selection has already been appropriated by some Urban Dictionary chucklehead. And usually, the definition is less than flattering.
+I'll spend hours trawling Wiktionary for that perfect name—navigating Latin and Greek to derive a crafty play on words that oozes tech cachet—only to discover that my selection has already been appropriated by some Urban Dictionary chucklehead. And usually, the definition is less than flattering.
 
 So, to avoid such pitfalls, I recently downloaded the [Urban Dictionary](http://urbandictionary.com/) dataset for easy offline access. I've also got a few projects in mind that will make good use of this data.
 

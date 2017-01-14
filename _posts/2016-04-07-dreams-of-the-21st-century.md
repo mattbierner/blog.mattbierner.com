@@ -28,7 +28,7 @@ for dreamer in DREAMERS:
         save_dreams(dreamer, dreams)
 ```
 
-Both the script and the complete dream json dataset are [on Github][Dreamscrape] in case anyone else wants to use them. There's something profoundly depressing about 30,000 dreams – one for every day of your life – fitting into a little under 30MB (only 9.1MB gzipped!) 
+Both the script and the complete dream json dataset are [on Github][Dreamscrape] in case anyone else wants to use them. There's something profoundly depressing about 30,000 dreams—one for every day of your life—fitting into a little under 30MB (only 9.1MB gzipped!) 
 
 Now, which dreamer to target first?
 

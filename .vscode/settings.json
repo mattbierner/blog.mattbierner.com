@@ -4,5 +4,8 @@
         "_site/": true,
         ".sass-cache/": true,
         "support/": true
-    }
+    },
+    "editor.fontFamily": "PT Mono",
+    "editor.fontSize": 16,
+    "editor.fontWeight": "100"
 }

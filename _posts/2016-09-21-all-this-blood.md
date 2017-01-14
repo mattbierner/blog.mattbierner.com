@@ -45,7 +45,7 @@ Take resolution. A regular iPhone 6 delivers, at best, well under half the pixel
 
 {% include image.html file="cardboard-top.jpg" %}
 
-Then there's the latency. The need for low latency in virtual reality is fairly well documented, and many of those learnings also apply to this setup. While 100ms lag is not terrible – and is, in some ways, not as bad as a 100ms delay in truly immersive VR – there is a slight mismatch between your senses and your vision. Everything just feels a little off.
+Then there's the latency. The need for low latency in virtual reality is fairly well documented, and many of those learnings also apply to this setup. While 100ms lag is not terrible—and is, in some ways, not as bad as a 100ms delay in truly immersive VR—there is a slight mismatch between your senses and your vision. Everything just feels a little off.
 
 To improve latency, I also tried using the iPhone's forward facing camera directly. This is far easier to set up and works fairly well, although you do have to slice up the Cardboard a bit to expose the phone's camera. This pipeline also has well under a quarter of the latency.
 
@@ -103,7 +103,7 @@ Beats are shown as a red vignette on the screen, which quickly fades out before 
 
 After slipping the headset on, it took the pulse sensor around ten seconds or so to stabilize and start picking up my heart beat reliably. The rate was a little under once a second, around 80bmp.
 
-The red flashing did capture my attention for a moment, but then faded from notice while the beeping became part of the background noise. You would naturally expected that it would be very hard to see much of anything through all that red – just as you would expect that all that incessant pumping of blood and throbbing of organs would, given their vital nature, dominate one's concerns – but, such matters quickly took a back seat as I began to explore and observe the world about me. 
+The red flashing did capture my attention for a moment, but then faded from notice while the beeping became part of the background noise. You would naturally expected that it would be very hard to see much of anything through all that red—just as you would expect that all that incessant pumping of blood and throbbing of organs would, given their vital nature, dominate one's concerns—but, such matters quickly took a back seat as I began to explore and observe the world about me. 
 
 Walking about and interacting with the world was fairly easy and familiar, since the camera perspective at least somewhat matches normal vision. The latency however is noticeable, especially when I quickly turned my head.
 

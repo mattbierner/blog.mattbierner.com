@@ -8,17 +8,17 @@ image:
     file: "ducky.jpg"
 ---
 
-{% include image.html file="ducky.jpg" description="Orwell lied. If you want a true picture of the future, imagine someone with a selfie stick in VR goggles, duck facing it up – forever..." %}
+{% include image.html file="ducky.jpg" description="Orwell lied. If you want a true picture of the future, imagine someone with a selfie stick in VR goggles, duck facing it up—forever..." %}
 
 What of the selfie stick? A fine recording device to be sure, albeit one that seems to draw more than its fair share of derision and scorn. But it could be so much more! So recently, I put together a simple device that allows me to experience the world through my selfie stick.
 
-This experiment continues my exploration of what I'm calling [modded reality][modded_reality]: using technology to alter and remix one's sensory experiences. The device used here is simple – it streams video from a camera mounted on a selfie stick to a VR headset – yet it is extremely fun to play around with, more so than any of my previous experiments. Imagine a video game style camera, but for real life. Top-down, over-the-shoulder, and third-person views are all possible, along with plenty of others. Let's take a look.
+This experiment continues my exploration of what I'm calling [modded reality][modded_reality]: using technology to alter and remix one's sensory experiences. The device used here is simple – it streams video from a camera mounted on a selfie stick to a VR headset—yet it is extremely fun to play around with, more so than any of my previous experiments. Imagine a video game style camera, but for real life. Top-down, over-the-shoulder, and third-person views are all possible, along with plenty of others. Let's take a look.
 
 
 # Setup
 {% include image.html file="spectacles.jpg" description="I see your spectacles and raise you this.<br>(Side note: Glasses with a camera? Is that *really* what people find exciting? I must be out of touch...)" %}
 
-I'm using the same [hardware and software detailed before](/tenome/#setup), with a Raspberry Pi streaming mjpeg video from a pair of usb web cams to an iPhone inside of a Google Cardboard headset. The main modification – beyond the addition of the all important selfie stick of course – is that, this time around, I tried capturing stereoscopic video.
+I'm using the same [hardware and software detailed before](/tenome/#setup), with a Raspberry Pi streaming mjpeg video from a pair of usb web cams to an iPhone inside of a Google Cardboard headset. The main modification—beyond the addition of the all important selfie stick of course—is that, this time around, I tried capturing stereoscopic video.
 
 Now, I had previously explored stereoscopic vision in [my hand mounted camera experiment][hands], moving my hands/cameras next to each other to create a poor man's stereoscopic view, but proper alignment was extremely difficult to maintain. I also tried strapping two cameras next to each other in my [body cam experiment][body], but, again, good alignment was impossible and, in the end, it was better to just use a single camera duplicated across both eyes.
 
@@ -128,9 +128,9 @@ It is also difficult to hold the stick steadily aloft while walking about, espec
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/lEVqlqbUmn8" %}
 
-All these factors make the top down view very different from normal experience, but that's also why it was my favorite. Both the head-on and over-the-shoulder views have at least some grounding in normality – be it looking in a mirror or in photographs – while I truly can't ever recall viewing myself from this sort of top-down perspective. It's the type of thing that's only possible because of technology, an experience truly befitting the concept of *modded reality*.
+All these factors make the top down view very different from normal experience, but that's also why it was my favorite. Both the head-on and over-the-shoulder views have at least some grounding in normality – be it looking in a mirror or in photographs—while I truly can't ever recall viewing myself from this sort of top-down perspective. It's the type of thing that's only possible because of technology, an experience truly befitting the concept of *modded reality*.
 
-One final observation: I found that the introduction of a small dose of THC (five milligrams delivered by delicious brownie) improved immersiveness considerably, almost to a point that was slightly unnerving. While walking about, everything felt very unreal, like I was in a simulator or virtual reality environment. Moving the camera became more second nature, and it really felt like I was orbiting the camera about some avatar. This is where things become a bit concerning. There was a definite temptation to try things, such as jumping over obstacles or running into walls to see what happens, that would be unwise. I wasn't hallucinating – and I certainly wasn't anywhere near trying to jump off a building because I thought I could fly or anything like that – but my slightly altered state expanded the realm of possibility and made immersion much stronger. There's a lot of potential in combining pharmacology and modded reality.
+One final observation: I found that the introduction of a small dose of THC (five milligrams delivered by delicious brownie) improved immersiveness considerably, almost to a point that was slightly unnerving. While walking about, everything felt very unreal, like I was in a simulator or virtual reality environment. Moving the camera became more second nature, and it really felt like I was orbiting the camera about some avatar. This is where things become a bit concerning. There was a definite temptation to try things, such as jumping over obstacles or running into walls to see what happens, that would be unwise. I wasn't hallucinating—and I certainly wasn't anywhere near trying to jump off a building because I thought I could fly or anything like that—but my slightly altered state expanded the realm of possibility and made immersion much stronger. There's a lot of potential in combining pharmacology and modded reality.
 
 
 # Thoughts

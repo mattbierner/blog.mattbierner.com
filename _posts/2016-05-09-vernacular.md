@@ -9,7 +9,7 @@ image:
 ---
 
 > My life fades. All that remain are memories. I remember a time of language... of text... of words. Gone now...<br><br>
-> The words turned against us. Slowly at first – a double entendre here, a bit of innuendo there – but when the Soviets launched *Urban Dictionary* in 1991, things went exponential. More and more words became saddled with alternative meanings and people started to forget the old definitions all together. Day-to-day communication became stilted and awkward. Misunderstandings. Fear. Chaos. Governments sought to maintain order by cordoning off a few thousand safe words. These too fell. And then, nothing remained.<br><br>
+> The words turned against us. Slowly at first—a double entendre here, a bit of innuendo there—but when the Soviets launched *Urban Dictionary* in 1991, things went exponential. More and more words became saddled with alternative meanings and people started to forget the old definitions all together. Day-to-day communication became stilted and awkward. Misunderstandings. Fear. Chaos. Governments sought to maintain order by cordoning off a few thousand safe words. These too fell. And then, nothing remained.<br><br>
 > The wasteland stretches before me. Even my internal monologue grows more corrupted by the day. This world's only got one shot left. The year is 1999. *This* is the future!
 
 Faux-eighties movie intros aside, this so-called *phrasing singularity* is probably in my top eight most feared apocalypse scenarios. When I think of all the good, innocent words that have been corrupted and debased over the years, I can't help but feel that we are quickly approaching a tipping point, after which all normal communication will be impossible; a *Kessler syndrome* of vulgarity if you will. 
