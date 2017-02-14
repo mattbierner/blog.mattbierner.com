@@ -18,12 +18,10 @@
     <a class="post-preview-content" href="{{ site.baseurl }}{{ post.url }}">
         <h1 class="post-title container"><span>{{ post.title }}</span></h1>
 
-        <p class="post-blurb container">
+        <div class="post-blurb container">
             {% if post.description %}
-                {{ post.description }}
-            {% else %}
-                {{ post.excerpt | strip_html }}
+                {{ post.description | markdownify }}
             {% endif %}
-        </p>
+        </div>
     </a>
 </article>
