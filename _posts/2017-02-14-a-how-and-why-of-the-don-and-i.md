@@ -20,7 +20,7 @@ One line of thinking calls for a female lead, playing off Donald Trump's misogyn
 > 
 > Um uh. Um uh. Oh wow! Um uh. 
 >
-> Me? Well, you know, the usual. Nothing too exciting. Oh and, by the by, would you be interested in trying out this vibrator controlled by Donald Trump's Twitter? It's for this fun new project...
+> Me? Well, you know, the usual. Nothing too exciting. Oh and, by the bye, would you be interested in trying out this vibrator controlled by Donald Trump's Twitter? It's for this fun new project...
 
 Needless to say, this hypothetical conversation never ended well.
 
@@ -178,7 +178,7 @@ The intent of this document was not to dictate how *The Don and I* should be vie
 
 [don]: /the-don-and-i/
 
-[mr]: /series/modded-reality
+[mr]: /series/modded_reality
 [color]: /blue-sky-orgasm/
 [oral]: /mouth-cam/
 
