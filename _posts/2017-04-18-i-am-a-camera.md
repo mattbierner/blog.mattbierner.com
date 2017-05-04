@@ -65,7 +65,7 @@ Comparing the diagonals of the two sensors, we see that the crop factor of the w
 
 {% include image.html file="back-sensors.jpg" description="Difference in sensor size with an APS-C NEX 7" %}
 
-For fun, I also tried mounting a real 300mm lens on the camera to create a well-nigh Galilean 1900mm. That my crude setup produced recognizable images at all really speaks more to the quality of Minolta's old glass than anything else; after all it's just a cheep webcam rubberbanded into the camera's film bay for Christ's sake.
+For fun, I also tried mounting a real 300mm lens on the camera to create a well-nigh Galilean 1900mm. That my crude setup produced recognizable images at all really speaks more to the quality of Minolta's old glass than anything else; after all it's just a cheap webcam rubberbanded into the camera's film bay for Christ's sake.
 
 Although plenty fun, a proper digital-back would require a sensor roughly the same dimensions as 35mm film. Either that or additional optics to adjust the image to the webcam sensor's much smaller size. Both of these had a lot of unknowns, so I decided to try a completely different approach instead.
 
@@ -134,7 +134,7 @@ For all the usability benefits of wireless streaming, there are some pretty majo
 
 Finally, to complete the photoshoot experience, I hooked up the SR-T 101's shutter button to the Pi's GPIO. Depress the button and a python script uses OpenCV to capture the current frame of the stream and post it to Twitter under the *Buggles* inspired `#iamacamera` hashtag. (Yes they actually did record more than one song.) Instagram or SnapChat would be a better fit for this type of project, but those crusty old fucks don't provide an official API for uploading images, and my non-sanctioned API usage attempts on those platforms have never ended well. 
 
-And that's the hardware. As you can see, it's all just cheep consumer grade stuff duct taped together, in both a metaphorical and literal sense. Nothing fancy. But this little device actually turned out to be by far the most robust modded reality gadget that I've put together thus far. With my phone no longer drawing power from the Pi, I could get well over three hours of streaming, and with no cables to jostle loose, the wireless stream was surprisingly durable. My damn phone's battery was actually the limiting factor here, and I had to use another portable battery pack just to keep it limping along. 
+And that's the hardware. As you can see, it's all just cheap consumer grade stuff duct taped together, in both a metaphorical and literal sense. Nothing fancy. But this little device actually turned out to be by far the most robust modded reality gadget that I've put together thus far. With my phone no longer drawing power from the Pi, I could get well over three hours of streaming, and with no cables to jostle loose, the wireless stream was surprisingly durable. My damn phone's battery was actually the limiting factor here, and I had to use another portable battery pack just to keep it limping along. 
 
 
 # A Day at the Park
@@ -144,7 +144,7 @@ I began over by Richard Serra's *Wake*, a series of five rusted, wave-like hulks
 
 {% include image.html file="shot3.jpg" href="https://twitter.com/mattbierner/status/843559862642532352" %}
 
-Observing my surroundings for the first time, what I immediately noticed was the image quality. It was not good. Not that this was unexpected of course. The SR-T 101's viewfinder was never intended for capturing images; it provides users a rough but workable preview of what the image will look like on film. Now try viewing that merely workable preview using a tiny cheep digital sensor—one that was in all likelihood entirely improperly focused—and down-sample the result to a 640x480 jpeg. The result is kind of a blurry mess, especially when used for VR. Don't get me wrong though; once I adapted, I actually came to appreciate the low quality because it gives the view a truly authentic classic camera visual style. No filters needed here.
+Observing my surroundings for the first time, what I immediately noticed was the image quality. It was not good. Not that this was unexpected of course. The SR-T 101's viewfinder was never intended for capturing images; it provides users a rough but workable preview of what the image will look like on film. Now try viewing that merely workable preview using a tiny cheap digital sensor—one that was in all likelihood entirely improperly focused—and down-sample the result to a 640x480 jpeg. The result is kind of a blurry mess, especially when used for VR. Don't get me wrong though; once I adapted, I actually came to appreciate the low quality because it gives the view a truly authentic classic camera visual style. No filters needed here.
 
 I started the shoot with 28mm MD Rokkor f2.8 lens. Normally a 28mm lens would be considered a wide-angle, but used for my vision, the view actually felt fairly claustrophobic. This made me really appreciate just how wide normal human vision is. Using this lens, I could only really see objects directly in front of me, not those to the side or even those on the ground in front of me. I had to pan the camera about to get any real sense of my surroundings.
 
