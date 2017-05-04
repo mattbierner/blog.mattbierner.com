@@ -23,7 +23,7 @@ For the lollipop, my first thought was to just stick the endoscope inside of a *
 
 So instead, I decided to play Wonka and create a homemade lollipop. This way the candy could be moulded around the camera perfectly. I could even reuse the plastic base of the *Ring Pop* to give the whole thing a more professional look. For this, I continued drilling a hole through the plastic base of the *Ring Pop* until the endoscope fit in. I left about 1.5 centimeters of the endoscope sticking out on the side where the candy would go, which provided a nice stalk to form the lollipop around.
 
-{% include image.html file="pop.jpg" %}
+{% include image.html file="pop3.jpg" %}
 
 The [candy recipe](https://www.thespruce.com/lollipops-521375) that I followed called for heating two parts sugar with one part light corn syrup—with a dash of water thrown in for good measure—until the mixture reaches about 300 degrees Fahrenheit. For the sake of clarity, I opted not to add any dyes or flavorings. The mixing and heating went smoothly, although the temperature seemed rather high. "Won't the molten sugar just melt the plastic lens of the camera or even destroye the whole endoscope?" I wondered. Probably, but that seemed like a problem for future me to worry about.
 
