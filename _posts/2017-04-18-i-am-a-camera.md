@@ -39,7 +39,7 @@ Now it must be said that if you're trying to replicate a modern photography expe
 # Attempt One: Digital Back
 With the camera chosen, my next task was to find a way to capture video that more or less matched what the camera would normally record to film. I wanted to capture the unique views offered by mounting any of Minolta's old Rokkor lenses on the SR-T 101, as well as image effects such as focus and depth of field.
 
-My first thought was to create a poor-man's digital-back by swapping out the film for a digital sensor. While this sounded great in theory, realizing it on the cheap proved problematic.
+My first thought was to create a poor-man's digital-back by swapping out the film for a digital sensor. While this sounded great in theory, realizing it on the cheapproved problematic.
 
 To begin, I stripped down an [ELP fisheye USB webcam][elp] to remove its built-in optics and other such accoutrements, leaving the sensor directly exposed. I then mounted the sensor roughly where the film would go in the SR-T 101.
 

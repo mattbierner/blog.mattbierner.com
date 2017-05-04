@@ -171,7 +171,7 @@ You get used to it all after a while, but coming back... The Cubes overflow thei
 
 I don't recognize anything. Four years. I wonder if anyone will recognize me. Was it the next turn or the one after that? Feels like everything is closing in. Have I been here before? No, I need to go up to the next level.
 
-There's a screech behind me and I turn around quickly enough to catch a shorter stumbling out of a room, holding something in his hand and I don't like the look of whatever it is. Shorters are harmless, unless one gets a bad circuit from some cheep stuff. Even I tried to avoid it, but sometimes you just don't care. And right now, it's actually pretty tempting to go find whatever that guy is on.
+There's a screech behind me and I turn around quickly enough to catch a shorter stumbling out of a room, holding something in his hand and I don't like the look of whatever it is. Shorters are harmless, unless one gets a bad circuit from some cheap stuff. Even I tried to avoid it, but sometimes you just don't care. And right now, it's actually pretty tempting to go find whatever that guy is on.
 
 No. Keep going. Next level.
 
@@ -267,7 +267,7 @@ His big face slouches as he puts on his best hurt expression. "Oh, friend! How c
 
 But there's a twinkle in his eye. He's sensed an opportunity to make a little something. He can never turn that down.
 
-"But," he continues, "perhaps Hollerbak did hear *something* about Kurtz. Information like that though... not cheep. Seeing as it's you though, let's make it a thousand or so for all my trouble."
+"But," he continues, "perhaps Hollerbak did hear *something* about Kurtz. Information like that though... not cheap. Seeing as it's you though, let's make it a thousand or so for all my trouble."
 
 He makes paying him sound like charity work. Good thing he doesn't know who I'm working for, or it'd be a hundred times that. Probably thinks I'm just another one of those washed up crazies, heading out after Kurtz.
 
