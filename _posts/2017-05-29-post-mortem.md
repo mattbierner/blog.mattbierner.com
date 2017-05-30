@@ -7,7 +7,7 @@ image:
     file: "lead.png"
 ---
 
-{% include image.html file="lead.png" %}
+{% include image.html file="lead.png" href="https://mattbierner.github.io/post-mortem/" %}
 
 At 6:37 a.m. on the 11th of January 2016, David Bowie was alive. One minute later at 6:38 a.m., David Bowie was dead. Well sort of.
 
