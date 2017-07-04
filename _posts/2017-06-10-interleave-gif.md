@@ -33,6 +33,9 @@ You can find information about the interleaving and scaling options in the [docu
 
 And although this experiment is not nearly as interesting as I had hoped—especially compared to some of my [other experiments with gifs][dot-gif]—it's a good stepping stone for another take on gif interleaving that I have in mind. More details on that to come.
 
+**Update**
+
+Check out [blueframe](/blueframe) for the other take on interleaving mentioned at the end of this post.
 
 
 [site]: https://mattbierner.github.io/interleave-gif/
