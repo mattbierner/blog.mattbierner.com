@@ -25,7 +25,7 @@ feed:
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
-plugins:
+gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
