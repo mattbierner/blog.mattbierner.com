@@ -4,7 +4,7 @@ title: "The Orgasmic Power of a Clear Blue Sky"
 date: '2017-01-13'
 description: "Using color vision to control a vibrator"
 series: modded_reality
-image:
+titleImage:
     file: "overview1.jpg"
 ---
 

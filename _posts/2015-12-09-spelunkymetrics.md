@@ -2,7 +2,7 @@
 layout: post
 title: Spelunkymetrics
 date: '2015-12-09'
-image:
+titleImage:
     file: "spelunky-avg-time-to-die.png"
 ---
 

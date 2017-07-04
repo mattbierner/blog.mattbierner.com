@@ -3,7 +3,7 @@ layout: post
 title: "Post Mortem"
 date: '2017-05-29'
 description: "Visualizing how a person's Wikipedia changes after they die"
-image:
+titleImage:
     file: "lead.png"
 ---
 

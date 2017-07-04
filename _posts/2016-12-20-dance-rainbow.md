@@ -4,7 +4,7 @@ title: "I'm Only Dancing So That I Can See the Rainbow"
 date: '2016-12-20'
 description: "Using the power of dance to modify my vision"
 series: modded_reality
-image:
+titleImage:
     file: "blur1.jpg"
 ---
 

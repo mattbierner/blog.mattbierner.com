@@ -4,7 +4,7 @@ title: "Pop Reality"
 date: '2017-05-03'
 description: "Connecting a lollipop to a VR headset"
 series: modded_reality
-image:
+titleImage:
     file: "title.jpg"
 ---
 

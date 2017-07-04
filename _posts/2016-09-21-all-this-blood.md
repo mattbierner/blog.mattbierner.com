@@ -4,7 +4,7 @@ title: "I Don't Know How We Can See Each Other Through All This Blood"
 date: '2016-09-22'
 description: "Using my heartbeat to modulate my vision"
 series: modded_reality
-image:
+titleImage:
     file: "mirror-red.gif"
 ---
 

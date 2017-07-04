@@ -4,7 +4,7 @@ title: "I Am A Camera"
 date: '2017-04-18'
 description: "Hooking a Minolta SR-T 101 up to a VR headset and passing into glass reality"
 series: modded_reality
-image:
+titleImage:
     file: "title2.jpg"
 ---
 

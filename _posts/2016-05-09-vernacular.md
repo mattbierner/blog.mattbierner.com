@@ -4,7 +4,7 @@ title: "Vernacular"
 date: '2016-05-09'
 description: "Finding Urban Dictionary entries in text"
 series: newspeak
-image:
+titleImage:
     file: "graph.png"
 ---
 

@@ -4,7 +4,7 @@ title: "Living Vicariously Through My Selfie Stick"
 date: '2016-11-06'
 series: modded_reality
 description: "And why selfie reality is the bestest reality"
-image:
+titleImage:
     file: "ducky.jpg"
 ---
 

@@ -4,7 +4,7 @@ title: 'blueframe'
 date: '2017-06-18'
 series: gif
 description: 'Splicing single frames of pornography into gifs'
-image:
+titleImage:
     file: 'logo.svg'
 ---
 

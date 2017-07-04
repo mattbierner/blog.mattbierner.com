@@ -3,7 +3,7 @@ layout: post
 title: "Forward Propagation"
 date: '2016-05-16'
 description: "A tool for exploring history in terms of generations instead of years"
-image:
+titleImage:
     file: "logo.svg"
 ---
 

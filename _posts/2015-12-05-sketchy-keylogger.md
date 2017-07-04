@@ -3,7 +3,7 @@ layout: post
 title: Sketchy Keylogger
 date: '2015-12-05'
 description: "Spelunky + Keylogger + Python + Turtles"
-image:
+titleImage:
     file: "spelunky-opening.png"
 ---
 

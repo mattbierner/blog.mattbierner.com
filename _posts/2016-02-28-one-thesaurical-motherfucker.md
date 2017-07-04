@@ -4,7 +4,7 @@ title: "One Thesaurical Motherfucker"
 date: '2016-02-28'
 description: "Thesaurus all things!"
 series: newspeak
-image:
+titleImage:
     file: "logo.png"
 ---
 

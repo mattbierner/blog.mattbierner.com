@@ -4,7 +4,7 @@ title: "The Don and I"
 date: '2017-02-14 00:00:00'
 description: ""
 type: story
-image:
+titleImage:
     file: "bed3.jpg"
 ---
 

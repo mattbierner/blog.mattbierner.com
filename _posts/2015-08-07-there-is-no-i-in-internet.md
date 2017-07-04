@@ -3,7 +3,7 @@ layout: post
 title: There Is No I In Internet
 date: '2015-08-07'
 series: newspeak
-image:
+titleImage:
     file: "promo-800-1.png"
 ---
 

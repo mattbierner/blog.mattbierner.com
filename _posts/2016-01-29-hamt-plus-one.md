@@ -3,7 +3,7 @@ layout: post
 title: "Hamt + 1"
 date: '2016-01-29'
 description: "Now with 100000% more cephalopod!"
-image:
+titleImage:
     file: "hamt-logo.png"
 ---
 

@@ -4,7 +4,7 @@ title: "Seattle Industrial District, January 2017"
 date: '2017-01-28'
 description: "An evening of vertical panoramas in Seattle's ever beautiful Industrial District"
 series: camerrah
-image:
+titleImage:
     file: "tanks3.jpg"
 ---
 

@@ -4,7 +4,7 @@ title: "interleave.gif"
 date: '2017-06-10'
 series: gif
 description: "Interleaving the frames of two gifs"
-image:
+titleImage:
     file: "shark.gif"
 ---
 

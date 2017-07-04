@@ -1,6 +1,6 @@
 <article class="post-item">
-    {% if post.image %}
-        {% capture image_src %}{% if post.image.file %}/content/{{ post.path | remove_first:'_posts/' | split:'.' | first }}/{{ post.image.file }}{% else %}{{ post.image.url }}{% endif %}{% endcapture %}
+    {% if post.titleImage %}
+        {% capture image_src %}{% if post.titleImage.file %}/content/{{ post.path | remove_first:'_posts/' | split:'.' | first }}/{{ post.titleImage.file }}{% else %}{{ post.titleImage.url }}{% endif %}{% endcapture %}
         <div class="post-preview-image container">
             <a href="{{ site.baseurl }}{{ post.url }}">
                 <img src="{{ image_src }}" />

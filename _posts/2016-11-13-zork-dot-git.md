@@ -3,7 +3,7 @@ layout: post
 title: "Zork.git"
 date: '2016-11-13'
 description: 'git commit -am "go west"'
-image:
+titleImage:
     file: "blame.png"
 ---
 

@@ -4,7 +4,7 @@ title: "allthecolors.gif"
 date: '2016-07-24'
 description: "Gifs with every color, from 0x000000 to 0xffffff"
 series: gif
-image:
+titleImage:
     file: "main.png"
 ---
 

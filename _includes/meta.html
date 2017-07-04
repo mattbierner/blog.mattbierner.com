@@ -25,8 +25,8 @@
     <meta property="og:description" content="{{ site.description }}" />
 {% endif %}
 
-{% if page.image %}
-    {% capture image_src %}{% if page.image.file %}{{ site.url }}/content/{{ page.path | remove_first:'_posts/' | split:'.' | first }}/{{ page.image.file }}{% else %}{{ page.image.url }}{% endif %}{% endcapture %}
+{% if page.titleImage %}
+    {% capture image_src %}{% if page.titleImage.file %}{{ site.url }}/content/{{ page.path | remove_first:'_posts/' | split:'.' | first }}/{{ page.titleImage.file }}{% else %}{{ page.titleImage.url }}{% endif %}{% endcapture %}
     <meta name="twitter:image" content="{{ image_src }}">
 {% endif %}
 

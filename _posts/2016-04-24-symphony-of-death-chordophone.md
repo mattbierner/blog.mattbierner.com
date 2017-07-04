@@ -3,7 +3,7 @@ layout: post
 title: "Symphony of Death: Chordophone"
 date: '2016-04-24'
 description: "Creating an interactive musical instrument from the kills of Halo 5 multiplayer matches"
-image:
+titleImage:
     file: "logo.png"
 ---
 
