@@ -107,7 +107,7 @@ We can use the same techniques for other color palettes:
 
 We run into a bit of trouble though for palettes with 8, 32, 64, or 128 colors, which require 3, 5, 6, and 7 bits per pixel respectively. This is not a technical problem—we can easily sample whatever number of bits we want, however we want—but these sample sizes result in samples that span multiple bytes.
 
-Memory structures are usually byte aligned at a minimum, so sampling across bytes can obscure patterns in the memory. Take the Sega *Master System* palette and it's 64 colors. Now each pixel encodes six bits:
+Memory structures are usually byte aligned at a minimum, so sampling across bytes can obscure patterns in the memory. Take the Sega *Master System* palette and its 64 colors. Now each pixel encodes six bits:
 
 {% include image.html file="mastersystem-mario3.png" description="Surely looking at NES games with a Sega palette would have gotten me burned at the stake back in the day. I will go one step further however, and declare that the *Master System* palette is far better looking then the NES palette" %}
 
