@@ -207,7 +207,7 @@ Nice.
 # Thoughts
 This experiment only scratches the surface of what's possible. There are countless other NES games and stages to try, and endless ways to visualize them. I find it very interesting to look at games this way, and maybe I'll explore this concept further in the future. 
 
-All the scripts and data used in this experiment are [on Github][src] if you want to try your hand at peeking behind the curtain.
+All the scripts and data used in this experiment are [on Github][src] if you want to try your hand at pulling back the curtain.
 
 
 
