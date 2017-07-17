@@ -1,0 +1,11 @@
+{% capture image_src %}{% if include.file %}/content/{{ page.path | remove_first:'_posts/' | split:'.' | first }}/{{ include.file }}{% else %}{{ include.url }}{% endif %}{% endcapture %}
+
+
+<figure class="video">
+    <video controls>
+        <source src="{{ image_src }}" type="video/mp4">
+    </video>
+{% if include.description %}
+    <figcaption>{{ include.description | markdownify }}</figcaption>
+{% endif %}
+</figure>
