@@ -1,3 +1,7 @@
+.post {
+    overflow: hidden;
+}
+
 /*********************
     Post Header
 *********************/
@@ -18,9 +22,6 @@
     }
 }
 
-/*********************
-    Post Body
-*********************/
 .post-meta {
     color: $lightGray;
     font: $sansSerif;
