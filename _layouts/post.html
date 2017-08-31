@@ -17,7 +17,17 @@ layout: default
 
 <article role="main" class="main post container {{ page.type }}">
     <header class="post-header">
-        <h1 class="post-title">{{ page.title }}</h1>
+        {% if page.titleImage and page.titleImage.replaceTitle %}
+            {% capture image_src %}{% if page.titleImage.file %}/content/{{ page.path | remove_first:'_posts/' | split:'.' | first }}/{{ page.titleImage.file }}{% else %}{{ page.titleImage.url }}{% endif %}{% endcapture %}
+            <div class="post-preview-image container">
+                <a href="{{ site.baseurl }}{{ page.url }}">
+                    <img src="{{ image_src }}" alt="{{ page.title }}" />
+                </a>
+            </div>
+        {% else %}
+            <h1 class="post-title">{{ page.title }}</h1> 
+        {% endif %}
+
         <div class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema}}">{{ page.date | date: "%B %e, %Y" }}</time>
             {% if site.data.series[page.series] %}

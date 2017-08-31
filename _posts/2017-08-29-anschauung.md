@@ -1,6 +1,9 @@
 ---
 layout: post
 title: 'Anschauung'
+titleImage:
+    file: 'logo.svg'
+    replaceTitle: true
 date: '2017-08-29'
 type: story
 series: modded_reality

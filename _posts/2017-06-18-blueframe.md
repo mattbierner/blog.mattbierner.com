@@ -6,9 +6,8 @@ series: gif
 description: 'Splicing single frames of pornography into gifs'
 titleImage:
     file: 'logo.svg'
+    replaceTitle: true
 ---
-
-{% include image.html file="logo.svg" href="https://mattbierner.github.io/blueframe/" %}
 
 **Links**
 

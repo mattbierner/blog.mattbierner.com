@@ -3,7 +3,7 @@
         {% capture image_src %}{% if post.titleImage.file %}/content/{{ post.path | remove_first:'_posts/' | split:'.' | first }}/{{ post.titleImage.file }}{% else %}{{ post.titleImage.url }}{% endif %}{% endcapture %}
         <div class="post-preview-image container">
             <a href="{{ site.baseurl }}{{ post.url }}">
-                <img src="{{ image_src }}" />
+                <img src="{{ image_src }}" alt="{{ post.title }}" />
             </a>
         </div>
     {% endif %}
@@ -16,7 +16,9 @@
     </div>
 
     <a class="post-preview-content" href="{{ site.baseurl }}{{ post.url }}">
-        <h1 class="post-title container"><span>{{ post.title }}</span></h1>
+        {% unless post.titleImage and post.titleImage.replaceTitle %}
+            <h1 class="post-title container"><span>{{ post.title }}</span></h1>
+        {% endunless %}
 
         <div class="post-blurb container">
             {% if post.description %}
