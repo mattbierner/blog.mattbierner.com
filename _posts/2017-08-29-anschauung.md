@@ -11,7 +11,7 @@ series: modded_reality
 
 # I
 
-Awaking one morning from a night of uneasy dreams, Matt found that his eyeballs had fallen out of his head. The world was strangely distorted and it took him several minutes to recognize the familiar bedroom around him. Feeling around for his phone, Matt's hand met something cold, metallic, and slightly slimy by his side. He drew back with a start. The bedroom whirled about. Matt shut his eyes tight and was sure he was going to be sick.
+Awaking one morning from a night of uneasy dreams, Matt found that his eyes had fallen out of his head. The world was strangely distorted and it took him several minutes to recognize the familiar bedroom around him. Feeling around for his phone, Matt's hand met something cold, metallic, and slightly slimy by his side. He drew back with a start. The bedroom whirled about. Matt shut his eyes tight and was sure he was going to be sick.
 
 When the nausea subsided, Matt hopefully opened his eyes again. No luck. The bed was on the ceiling and the dresser was embedded in one of the walls. That was not at all where they belonged. Objects shifted and blended together as he tried to observe them. And, try as he might, when Matt turned his head, nothing happened. His view remained fixed.
 
