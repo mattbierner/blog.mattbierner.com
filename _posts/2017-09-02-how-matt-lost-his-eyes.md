@@ -2,7 +2,7 @@
 layout: post
 title: 'How Matt Lost His Eyes'
 titleImage:
- file: 'title.jpg'
+    file: 'title.jpg'
 date: '2017-09-02'
 series: modded_reality
 ---
