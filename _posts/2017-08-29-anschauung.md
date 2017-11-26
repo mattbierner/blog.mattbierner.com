@@ -345,7 +345,7 @@ Matt swiped though pages of beautiful people. Page after page. Some of them were
 
 Page after page.
 
-He sighed and put away his phone. He didn't know what he wanted. Not the people on those pages. It was impossible anyways. He thought about Christine, and slumped deeper into the couch. 
+He sighed and put away his phone. He didn't know what he wanted. Not the people on those pages. It was impossible anyways. He thought about *her*, and slumped deeper into the couch. 
 
 Every so often, the left side of his vision flashed. His eye was somewhere out there in the darkness. It was coming back online but was too far away to transmit reliably.
 
