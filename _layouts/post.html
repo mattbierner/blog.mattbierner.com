@@ -57,10 +57,10 @@ layout: default
 
 <nav class='post-pagination body-pagination'>
     {% if page.previous.url %} 
-    <a title="Previous Post" href="{{page.previous.url}}" class="post-pagination-link prev-post"></a>
+    <a title="Previous: {{ page.previous.title}}" href="{{page.previous.url}}" class="post-pagination-link prev-post"></a>
     {% endif %}
     {% if page.next.url %} 
-    <a title="Next Post" href="{{page.next.url}}" class="post-pagination-link next-post"></a>
+    <a title="Next: {{page.next.title}}" href="{{page.next.url}}" class="post-pagination-link next-post"></a>
     {% endif %} 
 </nav>
 
