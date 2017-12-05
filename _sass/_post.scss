@@ -119,6 +119,18 @@
         margin-bottom: 0.4em;
     }
 
+    blockquote.big-quote {
+        margin: 1.8em .8em;
+        padding: 0;
+        color: $gray;
+        font-style: italic;
+        font-family: Georgia, "Times New Roman", Serif;
+        font-size: 1.4em;
+        color: $gray;
+        text-align: center;
+        border: none;
+    }
+
     hr {
         margin-left: 0;
         margin-right: 0;
@@ -225,6 +237,12 @@
     & > h1:first-of-type  {
         margin-top: 0;
     }
+}
+
+.post-aside-info {
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
 }
 
 // Nav
