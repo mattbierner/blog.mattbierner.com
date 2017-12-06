@@ -520,8 +520,8 @@ Watching, I see.
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <script>
 function loadHlsVideo(elementId, source) {
+    var video = document.getElementById(elementId);
     if (Hls.isSupported()) {
-        var video = document.getElementById(elementId);
         var hls = new Hls({autoStartLoad: false});
         hls.loadSource(source);
         hls.attachMedia(video);
