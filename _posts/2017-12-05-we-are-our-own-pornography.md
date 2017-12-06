@@ -27,8 +27,8 @@ This continues an exploration of what I'm calling *modded reality*, which looks 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <script>
 function loadHlsVideo(elementId, source) {
+    var video = document.getElementById(elementId);
     if (Hls.isSupported()) {
-        var video = document.getElementById(elementId);
         var hls = new Hls({autoStartLoad: false});
         hls.loadSource(source);
         hls.attachMedia(video);
@@ -41,6 +41,9 @@ function loadHlsVideo(elementId, source) {
                 }
             }, false);
         });
+    } else {
+        // Try using native
+        video.setAttribute('src', source);
     }
 }
 

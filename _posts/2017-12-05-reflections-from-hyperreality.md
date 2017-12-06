@@ -534,6 +534,9 @@ function loadHlsVideo(elementId, source) {
                 }
             }, false);
         });
+    } else {
+        // Try using native
+        video.setAttribute('src', source);
     }
 }
 
