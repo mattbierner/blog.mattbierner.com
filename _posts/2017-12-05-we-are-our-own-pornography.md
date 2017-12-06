@@ -14,7 +14,7 @@ series: modded_reality
     <video id="video1" controls poster="/content/2017-12-05-we-are-our-own-pornography/firework-poster.png" preload="none"></video>
 </figure>
 
-The film features [Juliette March](https://twitter.com/JulietteMarch) and [Riley Rey](https://twitter.com/RileyReyXXX) and was produced with [Anatomik media](http://anatomikmedia.com). They really did most of the work here, I just provided the frame idea and handled technical support.
+The film features [Juliette March](https://twitter.com/JulietteMarch) and [Riley Reyes](https://twitter.com/RileyReyXXX) and was produced with [Anatomik media](http://anatomikmedia.com). They really did most of the work here, I just provided the frame idea and handled technical support.
 
 The music is *You are a Firework* by [GLOOMCVLT](http://gloomcvlt.bandcamp.com/).
 
