@@ -19,6 +19,7 @@ Thumbs.db
 *.log
 
 support
+*.dict
 
 # Jekyll #
 ##########
