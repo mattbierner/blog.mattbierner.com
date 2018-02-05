@@ -80,7 +80,7 @@ eval({
 ## Continuation Monad
 Direct CPS interpreters hardcode many assumptions and are difficult to modify. Continuations are also too low level and verbose for many applications. The [continuation monad][cont-monad] provides an interface to express continuation based computations while hiding the implementation details.
 
-The continuation monad is defined by two function: `just` injects a value into the monadic context and `bind` sequences two computations, where the second computation depends on the output of the first. 
+The continuation monad is defined by two functions: `just` injects a value into the monadic context and `bind` sequences two computations, where the second computation depends on the output of the first. 
 
 ```js
 /// Pass value `x` though the continuation.
@@ -191,9 +191,9 @@ Regular continuations are powerful enough to implement most programming language
 The regular continuation represents the remainder of a computation in its entirety, evaluation is all or nothing. True first class continuations (but not CPS) cannot even return values. How could they? Evaluating the continuation evaluates the rest of the program, so where would the value be returned? This greatly restricts the usefulness of continuations. 
 
 ## Delimited Continuations Overview
-Smart people in the eighties and nineties solved this problems with delimited continuations. Delimited continuations capture the continuation of a subcomputation, breaking a program's monolithic `callcc` type continuation into a stack of delimited continuations. Delimited continuations can return values and can be composed.
+Smart people in the eighties and nineties solved this problem with delimited continuations. Delimited continuations capture the continuation of a subcomputation, breaking a program's monolithic `callcc` type continuation into a stack of delimited continuations. Delimited continuations can return values and can be composed.
 
-The [Scheme wiki][scheme-wiki] has a good introduction to delimitated continuation control flow. 
+The [Scheme wiki][scheme-wiki] has a good introduction to delimited continuation control flow. 
 
 # The Delimited Continuation Monad
 
@@ -202,7 +202,7 @@ Atum uses delimited computations with a monadic interface for control flow. The 
 This implementation uses prompts to delimit computations in a control stack. Four basic operation define the delimitated continuation API.
 
 ## The Control Stack
-The control stack is a ordered list of control segments and prompts that delimitate the stack. 
+The control stack is a ordered list of control segments and prompts that delimit the stack. 
 
 ```js
 /// Control segment
@@ -320,7 +320,7 @@ run(
 
 ## Delimited Continuation Monad API
 
-The delimited continuation monad uses four primitive functions to delimite computations.
+The delimited continuation monad uses four primitive functions to delimit computations.
 
 `newPrompt` creates a new, unique prompt. The Atum implementation gets this from the computation state, but since I have not discussed state yet, I omitted that part of the implementation here.
 
@@ -379,7 +379,7 @@ var reset = function(f) {
 };
 ```
 
-`shift` captures the continuation deliminated by prompt `p`. `p` is usually a value passed to the `f` from `reset`.
+`shift` captures the continuation delimited by prompt `p`. `p` is usually a value passed to the `f` from `reset`.
 
 ```js
 var shift = function(p, f) {
@@ -393,7 +393,7 @@ var shift = function(p, f) {
 
 ## Callcc from Delimited Continuation
 
-Finally, the semantics of `callcc` are useful, even when working with delimited continuations. Here is `callcc` from the delimited continuation monad implemented for delimiated continuations:
+Finally, the semantics of `callcc` are useful, even when working with delimited continuations. Here is `callcc` from the continuation monad implemented for delimited continuations:
 
 ```js
 var callcc = (function(){
