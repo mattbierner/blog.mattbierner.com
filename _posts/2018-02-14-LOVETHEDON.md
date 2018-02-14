@@ -40,7 +40,7 @@ I covered the [how and why of *The Don and I*][howwhy] in some detail last year 
 
 At the same time, trying to counter President Trump using sex toys is absurd. It's masturbatory activism quite literally, and far too much of the resistance to him falls within that category. In my view, the intentional contradictions of this project emphasize rather than soften its broader anti-authoritarian and anti-tribal message. The [original write-up][howwhy] also had stuff about modded reality and Woody Guthrie and so on.
 
-{% include image.html file="america-first.jpg" description="In what can only be desired as the most accurate ad placement in history, this ad started showing up during testing." %}
+{% include image.html file="america-first.jpg" description="In what can only be described as the most accurate ad placement in history, this ad started showing up during testing." %}
 
 If nothing else, the app certainly has created its share of memorable moments for me in the past year. I mean, I got to ship a vibrator off to One Infinite Loop in order to verify an app that literally lets Americans get off on their President's chest thumping! So much winning.
 
