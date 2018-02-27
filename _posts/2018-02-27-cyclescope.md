@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CycleScope
-description: A brief adventure in 3rd person cycling
+description: A brief adventure in third person cycling
 titleImage:
     file: 'title.png'
 date: '2018-02-27'
@@ -48,6 +48,6 @@ What's really strange though is just how badly thirty minutes of riding messed u
 
 But don't get me wrong. After getting over those few minutes of riding about while fully immersed were magical. For such low-tech hardware, the effect is almost scarily good, as in, "everyone needs to experience this!" good (or perhaps, "this would totally be a great *Black Mirror*" good). 
 
-Funny how these stupid, quick projects often turn out to be the most fun. And it could be fun trying out some other sports in the 3rd person. Driving even? Next time perhaps.
+Funny how these stupid, quick projects often turn out to be the most fun. And it could be fun trying out some other sports in the third person. Driving even? Next time perhaps.
 
 {% include image.html file="front.jpg" %}
