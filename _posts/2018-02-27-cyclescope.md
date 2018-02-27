@@ -5,7 +5,7 @@ description: A brief adventure in third person cycling
 titleImage:
     file: 'title.png'
 date: '2018-02-27'
-series: modded-reality
+series: modded_reality
 ---
 
 {% include image.html file="title.png" %}
@@ -32,7 +32,7 @@ The second try was more successful. The next a little farther. Before I knew it 
 
 Yet without fail the same thing would happen every time. I'd be cruising along just fine when a little thought would pop in. Just the littlest, most innocent of thoughts, say a, I feel like I'm leaning a little far to the right, maybe I should..." and that'd be the end of it. Game over man! It was like my brain would suddenly forget where my body was. I'd think the handlebars were straight only to watch myself go veering off to the side. And the effect would keep compounding. Corrections led to overcorrections which led to more overcorrections. The longest I ever made it was around three minutes.
 
-I'd experienced this phenomenon	plenty of times before in my various [modded reality experiments](/series/modded-reality). At some level you just have to trust what you see. And that can be really scary, like being taken when you are still aware enough to realize what is going on. And no matter how much you want to fully give in to that world beyond, some part of you resists. Maybe the technology is not convincing enough, or maybe it's because at some level your brain remembers that if you die in modded reality you die in normal reality too. 
+I'd experienced this phenomenon	plenty of times before in my various [modded reality experiments](/series/modded_reality). At some level you just have to trust what you see. And that can be really scary, like being taken when you are still aware enough to realize what is going on. And no matter how much you want to fully give in to that world beyond, some part of you resists. Maybe the technology is not convincing enough, or maybe it's because at some level your brain remembers that if you die in modded reality you die in normal reality too. 
 
 So the key is to not think. Just go with the flow. Not so different from base reality come to think of it. Like riding a bike.
 
