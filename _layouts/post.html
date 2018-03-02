@@ -17,7 +17,7 @@ layout: default
 
 <article role="main" class="main post container {{ page.type }}">
     <header class="post-header">
-        {% if page.titleImage and page.titleImage.replaceTitle %}
+        {% if page.titleImage and page.titleImage.replacePageTitle %}
             {% capture image_src %}{% if page.titleImage.file %}/content/{{ page.path | remove_first:'_posts/' | split:'.' | first }}/{{ page.titleImage.file }}{% else %}{{ page.titleImage.url }}{% endif %}{% endcapture %}
             <div class="post-preview-image container">
                 <a href="{{ site.baseurl }}{{ page.url }}">

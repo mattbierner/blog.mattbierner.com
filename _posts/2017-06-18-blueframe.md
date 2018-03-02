@@ -6,7 +6,8 @@ series: gif
 description: 'Splicing single frames of pornography into gifs'
 titleImage:
     file: 'logo.svg'
-    replaceTitle: true
+    replaceListingTitle: true
+    replacePageTitle: true
 ---
 
 **Links**

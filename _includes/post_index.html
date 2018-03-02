@@ -16,7 +16,7 @@
     </div>
 
     <a class="post-preview-content" href="{{ site.baseurl }}{{ post.url }}">
-        {% unless post.titleImage and post.titleImage.replaceTitle %}
+        {% unless post.titleImage and post.titleImage.replaceListingTitle %}
             <h1 class="post-title container"><span>{{ post.title }}</span></h1>
         {% endunless %}
 

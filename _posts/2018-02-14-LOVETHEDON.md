@@ -4,7 +4,8 @@ title: LOVETHEDON
 description: WHOLOVESYOUANDWHODOYOULOVE
 titleImage:
     file: 'title.png'
-    replaceTitle: true
+    replaceListingTitle: true
+    replacePageTitle: true
 date: '2018-02-14'
 ---
 
