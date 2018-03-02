@@ -27,7 +27,7 @@ Only 70% of the prints or so were even salvageable, for which the blame clearly 
 
 {% include image.html file="printing.jpg" %}
 
-There's also some variation between individual prints. Shift the Is just a point or two in any directions, and the character's expressions end up very different. No two prints are perhaps quite the same, but that's actually not such a bad thing given the concept of this print.
+There's also some variation between individual prints. Shift the Is just a point or two in any directions, and the character's expressions end up very different. No two prints are perhaps quite the same, but that's actually not such a bad thing given the concept.
 
 The final prints are 5½ x 8 inches on heavy cardstock. I made fifty prints total, of which 30 are already spoken for. You can buy one of the remaining 20 for $10 each [over on Etsy](https://www.etsy.com/listing/597516467/two-eye-characters).
 
