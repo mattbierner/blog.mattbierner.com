@@ -14,7 +14,7 @@ Trying something a bit different. I need your help funding what I'm calling [the
 
 Basic idea: we're going to use a theremin to control a bunch of vibrators. The pitch and volume of the theremin will control vibration strength and patterns. Then we're going to make a video of this setup being used for a surreal concert.
 
-I'm asking for funding because I want to make sure this project is done well, and that means it is going to be expensive compared to anything that I've worked on before. We're planning to get a professional theremin player and some great actors for the video, and we also will need some additional equipment (specifically, a few more vibrators). So I'm asking for $4000 to help cover some of these expenses. I've already prototyped the basic hardware and am in talks to find the theremin player and actors. 
+I'm asking for funding because I want to make sure this project is done well, and that means it is going to be expensive compared to anything that I've worked on before. We're planning to get a professional theremin player and some great actors for the video, and we also will need some additional equipment (specifically, a few more vibrators and the equipment required to hook up a pro theremin to them). So I'm asking for $4000 to help cover some of these expenses. I've already prototyped the basic hardware and am in talks to find the theremin player and actors. 
 
 The delivered product will be the video. I can't promise it will be good but I will try my best and hope it will a least be something little different. It's also important to note that the the video will not be pornographic despite the subject matter. I'm going to publish under a CC non commercial license. I have no plans to make any money from it (including from ads).
 
