@@ -10,7 +10,7 @@ series: modded_reality
 
 I could see the hold. Blue. Triangular. Near my right shoulder. Feeling pretty stable, I decided to go for it. Taking my right hand off the wall, I watched myself reach out toward the blue blob of pixels. My hand connected just where it should. Transfer. On to the next one.
 
-Eight in the morning at Seattle's [Vertical World][vertical], and a friend and I were trying out third person climbing for the first time. The Cardboard headset I was wearing was streaming video from a camera standing about ten feet back from the wall, which gave me a nice overview of the entire traverse as well letting me see how my body was positioned.
+Eight in the morning at Seattle's [Vertical World][vertical], and a friend and I were trying out third person climbing for the first time. The Cardboard strapped to my face was streaming video from a camera standing about ten feet back from the wall, which gave me a nice overview of the entire traverse as well letting me see how my body was positioned.
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/Hvu964sY9uo" description="First attempt at third person climbing" %}
 
@@ -18,7 +18,7 @@ This was only my first go and already I was shimmying along without too much tro
 
 That's not to say everything was going just peachy. I sometimes found it difficult to see the holds. That's a bit of a problem. No matter how much I tilted my head, from the camera's fixed position there was no way to see holds directly in front of me because my body obscured them. Traversing left to right for example, this made it difficult to move my left closer to my body so that I could continue moving right.
 
-{% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/vYjb17h89mw" description="Sorry, totally didn't capture any sound for these videos" %}
+{% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/vYjb17h89mw" description="Sorry, totally didn't capture any sound for these videos. Just imagine there's some really intense Clint Mansell music playing or something" %}
 
 A far bigger challenge was judging a hold's three dimensional shape. Was that orange splotch up there concealing a cavity or was it just a polyurethane pancake from some V10? From my head-on view, it was impossible to say without reaching up for a feel. Again, not that this is without precedent. Many a time while looking through my own eyes, I've reached up for a hold optimistically expecting a welcoming pocket but only to find a cold smooth surface. But whereas I can often get away with some improvisation in normal climbing, while climbing in the third person, I found that I either had to memorize the entire route ahead of time or always feel up holds before being confident enough to transfer to them. 
 
