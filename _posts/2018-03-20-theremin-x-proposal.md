@@ -26,4 +26,3 @@ If you also want to see this happen, [donate over on IndieGogo][campaign].
 
 [campaign]: https://www.indiegogo.com/projects/the-theremin-x-project/
 
- 
