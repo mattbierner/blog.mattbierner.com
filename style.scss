@@ -150,6 +150,9 @@ sup {
     clear: both;
 }
 
+code, pre {
+    font-variant-ligatures: none;
+}
 
 @media only screen and (max-width: 700px) {
     .post .entry > * {
