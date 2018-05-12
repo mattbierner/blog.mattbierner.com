@@ -21,7 +21,7 @@ This was my first attempt at designing any piece of clothing, and—while nothin
 
 {% include image.html file="white-close.jpg" %}
 
-The more I considered it though, the stranger this connection seemed. Why is it that we have women's swimwear named after a nuclear explosion while the comparably skimpy piece of male aquatic attire is called the "speedo"? Couldn't we at least have retconned speedo to "Trinity" or perhaps "Trinies" if we want to keep the Austrian flair?<!--I would have also accepted "Polaris"--> Because, after all, everyone deserves clothing that implies: *your body is a dangerous weapon capable of incinerating hundreds of thousands in a flash*. ([This site](https://web.archive.org/web/20120627214541/http://bikiniscience.com/chronology/1945-1950_SS/1945-1950.html) is a quite fascinating read on the history of the bikini)
+The more I considered it though, the stranger this connection seemed. Why is it that we have women's swimwear named after a nuclear explosion while the comparably skimpy piece of male aquatic attire is called the "speedo"? Couldn't we at least have retconned speedo to "Trinity" or perhaps "Trinies" if we want to keep the Austrian flair?<!--I would have also accepted "Polaris"--> Because, after all, everyone deserves clothing that implies: *your body is a dangerous weapon capable of incinerating hundreds of thousands with a flash*. ([This site](https://web.archive.org/web/20120627214541/http://bikiniscience.com/chronology/1945-1950_SS/1945-1950.html) is a quite fascinating read on the history of the bikini)
 
 {% include image.html file="blue-close.jpg" %}
 
