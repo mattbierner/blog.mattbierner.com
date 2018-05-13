@@ -18,7 +18,7 @@ And then I sat there. And sat there. And the world was zipping by around me. And
 
 So I tried another. This one had like 4+ stars too so it must be good. Same deal. And another (there are surprising number of rollercoaster apps). More of the same.
 
-*How did they make rollercoasters so dull!* I lamented, *Watching people ride the roller-coasters in Rollercoaster tycoon 1 was far more fun than this.*
+*How did they make rollercoasters so dull!* I lamented, *Watching people ride the rollercoasters in Rollercoaster tycoon 1 was far more fun than this.*
 
 I double checked the review page. Still 4.3 stars. WTF? I must have missed something.
 
