@@ -27,8 +27,7 @@ A fair number of people on hacker news seem to share my dislike of "hustling", w
 
 This means that you may have to keep *Keep on HustliN'* open for a while in order to experience an organic HN hustle. Therefore, I recommend trying out *[Keep on Hustlin' Forever][forever]*. It operates under the theory that if one rendition of *Keep on Hustlin'* is good, than 30 renditions of *Keep on Hustlin'* at the same time must be better. The resulting auditory experience grows oddly compelling after ten minutes or so, and it really puts you in the mood for some hustle.
 
-
-Of course I also made some letterpress prints for the project
+{% include image.html file="prints.jpg" description="Of course I also made some letterpress prints for the project." %}
 
 
 [forever]: https://mattbierner.github.io/Keep-on-HustliN/forever
