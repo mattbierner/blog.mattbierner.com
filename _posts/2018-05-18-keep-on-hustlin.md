@@ -8,7 +8,7 @@ titleImage:
 
 {% include image.html file="title.png" %}
 
-*Keep on HustliN'* is a website the plays Van McCoy's *Keep on Hustlin'* whenever someone uses the word "hustle" on [Hacker News](http://news.ycombinator.com).
+*Keep on HustliN'* is a website that plays Van McCoy's *Keep on Hustlin'* whenever someone uses the word "hustle" on [Hacker News](http://news.ycombinator.com).
 
 **Links**
 - [Site](https://mattbierner.github.io/Keep-on-HustliN/)
@@ -25,7 +25,7 @@ A fair number of people on hacker news seem to share my dislike of "hustling", w
 
 {% include image.html file="chart.png" %}
 
-This means that you may have to keep *Keep on HustliN'* open for a while in order to experience an organic HN hustle. Therefore, I recommend trying out *[Keep on Hustlin' Forever][forever]*. It operates under the theory that if one rendition of *Keep on Hustlin'* is good, than 30 renditions of *Keep on Hustlin'* at the same time must be better. The resulting auditory experience grows oddly compelling after ten minutes or so, and it really puts you in the mood for some hustle.
+This means that you may have to keep *Keep on HustliN'* open for a while in order to experience an organic HN hustle. Therefore, I recommend trying out *[Keep on Hustlin' Forever][forever]*. It operates under the theory that if one rendition of *Keep on Hustlin'* is good, than 30 renditions of *Keep on Hustlin'* at the same time must be better. The resulting auditory experience grows oddly compelling after ten minutes or so.
 
 {% include image.html file="prints.jpg" description="Of course I also made some letterpress prints for the project." %}
 
