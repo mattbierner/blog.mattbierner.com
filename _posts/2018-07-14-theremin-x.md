@@ -13,6 +13,8 @@ The *Theremin-X Project* imagines a small concert in which a theremin is hooked 
 
 The piece features [Armen Ra](http://armenra.com) on the theremin, with [Casey Calvert](http://caseycalvert.com/), [Lance Hart](http://www.pervout.com), and [Ella Nova](https://twitter.com/ellanovaxxx) playing the audience members. I couldn't have asked for a more talented group, and am still amazed that we were able to bring them together for this.
 
+Although the video doesn't show implementation details, Armen's theremin really was driving the vibrators during filming. Three wireless, wearable vibrators from [Lovense](http://lovense.com) were used, with [Midi Merlin](http://www.randygeorgemusic.com/midimerlin/) converting the audio signal from the theremin into data that a [simple script](https://github.com/mattbierner/theremin-x) translated into vibration strength.
+
 # Backstory
 There's probably a certain piece of music that evokes particularly strong emotions in you, be it by the Beatles or Ludwig van (personally I can't make it through the French horn parts of *The Firebird* finale without getting all choked up). But what if you take that emotion to the next level? What if you could literally be turned on by a song? How would this change your relationship to music, or to the musician for that matter?
 
