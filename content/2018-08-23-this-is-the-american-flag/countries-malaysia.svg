@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1100 650" style="enable-background:new 0 0 1100 650;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#f7f7f7;}
+	.st1{fill:#333333;}
+	.st2{fill:#CC0001;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#010066;}
+	.st5{fill:#FFCC00;}
+</style>
+<g id="Layer_1">
+	<g id="Layer_2_1_">
+		<g>
+			<rect x="1" y="1" style="fill:#f7f7f7;" width="1098" height="648"/>
+			<path class="st1" d="M1098,2v646H2V2H1098 M1100,0H0v650h1100V0L1100,0z"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_2">
+	<rect x="50" y="75" class="st2" width="1000" height="500"/>
+	<rect id="white" x="50" y="539.3" class="st3" width="1000" height="35.7"/>
+	<rect id="white_1_" x="50" y="467.9" class="st3" width="1000" height="35.7"/>
+	<rect id="white_2_" x="50" y="396.4" class="st3" width="1000" height="35.7"/>
+	<rect id="white_3_" x="50" y="325" class="st3" width="1000" height="35.7"/>
+	<rect id="white_4_" x="50" y="253.6" class="st3" width="1000" height="35.7"/>
+	<rect id="white_5_" x="50" y="182.1" class="st3" width="1000" height="35.7"/>
+	<rect id="white_6_" x="50" y="110.7" class="st3" width="1000" height="35.7"/>
+	<rect id="blue" x="50" y="75" class="st4" width="500" height="285.7"/>
+	<path id="path4945" class="st5" d="M255.7,110.7c-59.3,0-107.5,48-107.5,107.1S196.4,325,255.7,325c21.4,0,41.4-6.3,58.2-17.1
+		c-9.8,3.4-20.3,5.2-31.2,5.2c-52.6,0-95.3-42.6-95.3-95s42.7-95,95.3-95c11.6,0,22.8,2.1,33.1,5.9
+		C298.6,117.5,278,110.7,255.7,110.7z"/>
+	<path id="path4959" class="st5" d="M434,273.6L388.7,250l13.4,48.4l-30.3-40.4l-9.4,49.2l-9.3-49.3l-30.4,40.4l13.5-48.3
+		l-45.4,23.5l33.7-37.8l-51.3,2l47.2-19.8l-47.1-19.9l51.3,2.1L291,162.1l45.3,23.6l-13.4-48.4l30.3,40.4l9.4-49.2l9.3,49.3
+		l30.4-40.4l-13.5,48.3l45.4-23.5l-33.7,37.8l51.3-2l-47.2,19.8l47.1,19.9l-51.3-2.1L434,273.6z"/>
+</g>
+</svg>
