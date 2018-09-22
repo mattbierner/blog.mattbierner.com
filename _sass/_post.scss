@@ -85,7 +85,7 @@
         padding-top: 0;
     }
 
-    img {
+    img, video {
         padding-bottom: 0.2em;
         max-height: 90vh;
     }
@@ -98,7 +98,7 @@
         margin: 0 auto;
     }
 
-    img, iframe, figure, div.highlighter-rouge {
+    img, iframe, figure, div.highlighter-rouge, video {
         display: block;
         margin: 0 auto;
     }
