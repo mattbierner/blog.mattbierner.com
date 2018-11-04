@@ -3,10 +3,10 @@ layout: post
 title: "In Profile: Conceptual Conceptual Art"
 description: Profile of the art of ideas
 titleImage:
-    file: 'title.jpg'
+    file: 'title.png'
 ---
 
-{% include image.html file="title.jpg" %}
+{% include image.html file="title.png" %}
 
 Conceptual conceptual art is the art of ideas. Conceptual conceptual art pieces exist only within the mind of the artist, free from the tyranny of craft, from the bounds of material, and from the degrading pressure of exhibition, giving artists a profound new freedom to explore the human condition and comment on the role of art in the modern world.
 
