@@ -106,9 +106,12 @@ The generated dictionary is full of non-sequiturs, poor grammar, and general cru
 
 
 # Next Time
-Training up the neural network was neat, but it'd be a little too expensive to train to completion on EC2, so I'll leave this as an exercise for the reader. Anyways, I've got some other ideas for the dataset (**Update May 9, 2016**: check out [Vernacular][vernacular], which uses the data to find *Urban Dictionary* entries in classic texts.)
+Training up the neural network was neat, but it'd be a little too expensive to train to completion on EC2, so I'll leave this as an exercise for the reader. Anyways, I've got some other ideas for the dataset
 
 Hope that other people find some good uses for the dataset as well.
+
+**Update May 9, 2016**: check out [Vernacular](/vernacular), which uses the data to find *Urban Dictionary* entries in classic texts.
+
 
 
 
