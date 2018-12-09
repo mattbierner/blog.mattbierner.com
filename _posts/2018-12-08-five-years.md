@@ -107,7 +107,7 @@ Here's a fun fact: after filming, I was so incapable of facing it all that I lit
 >
 > — Andrew Ryan
 
-My first truly expressive creation was actually back in college. A photoshoot. Nude. But totally not like you are thinking. It was a series of long exposures using the light from cellphones and tablets to create these bizarre yet beautiful effects with the human body. Something about our relationship with technology or something. There may also have been some ethernet bondage stuff, but let's not go into that...
+My first truly expressive creation was actually back in college. A photoshoot. Nude. But totally not like you are thinking. It was a series of long exposures using the light from cellphones and tablets to create these bizarre yet beautiful effects with the human body. Something about our relationship with technology or something. There may also have been some ethernet bondage stuff but let's not go into that...
 
 That was in September 2012.
 
@@ -229,7 +229,7 @@ So now I'm sort of running along to avoid the birds while holding a water bottle
 
 When I finally made it to the viewpoint, I couldn't stop laughing. Here I was glancing around nervously for gulls and covered in bird splotches and I still had another three hours on the island. Beautiful view though.
 
-A few minuets later, I watched a woman run the gauntlet with some water bottle headgear too. She made it out cleaner than I had. We decided to stick together from then on, and stay on the safe parts of the island. Still lots of squawking and some menacing hovering, but nothing close to that first go. So remember kids, if the ranger tells you to bring a buddy, you should bring a buddy because those birds aren't messing around.
+A few minuets later, I watched a woman run the gauntlet with some water bottle headgear too. She made it out cleaner than I had. We decided to stick together from then on, and stay on the safe parts of the island. Still lots of squawking and some menacing hovering, but nothing close to that first go. So remember, if the ranger tells you to bring a buddy, you should bring a buddy because those birds aren't messing around.
 
 {% include image.html file="anacapa.jpg" %}
 
