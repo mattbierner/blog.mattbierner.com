@@ -57,7 +57,7 @@ This project shows the volume of operations that even old CPUs could churn throu
 
 {% include image.html file="page-frames.jpg" %}
 
-I've listed the book (or rather binders) [on eBay](https://www.ebay.com/itm/Two-Seconds-of-Super-Mario-Bros-3-Book-of-all-operations-in-2sec-NES-gameplay/153329056354). It's one of kind; I have no plans to make another. A book of the operations used to run *Super Mario Bros. 3* is is just one of those things that I felt should exist, and now it does. If the thing does sell, any proceeds will be donated to the Electronic Frontier Foundation.
+I've listed the book (or rather binders) [on eBay](https://www.ebay.com/itm/Two-Seconds-of-Super-Mario-Bros-3-Book-of-all-operations-in-2sec-NES-gameplay/153329056354). It's one of kind; I have no plans to make another. A book of the operations used to run *Super Mario Bros. 3* is just one of those things I felt should exist. Now it does. If the thing does sell, any proceeds will be donated to the [Electronic Frontier Foundation](https://www.eff.org).
 
 The scripts and tools used to create the book are documented [on GitHub][src] in case you want to print your very own Mega-Man-azine or Castlevan-ovella.
 
