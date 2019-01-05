@@ -47,7 +47,7 @@ This is two seconds of *Super Marios Bros. 3* for the Nintendo Entertainment Sys
 
 {% include image.html file="height.jpg" description="" %}
 
-The execution was collected using the FCEUX emulator. The [trace logger](http://www.fceux.com/web/help/TraceLogger.html) captured the executed instructions, while a very simple Lua script captured screenshots for each frame. This raw data was then converted into an html book using some simple python scripts. From there, the html was converted into a pdf and printed on good old fashioned paper.
+The execution was collected using the FCEUX emulator. The [trace logger](http://www.fceux.com/web/help/TraceLogger.html) captured the executed instructions, while a very simple Lua script captured screenshots for each frame. This raw data was then converted into an html book using some simple python scripts. From there, the html was converted into [a pdf](https://github.com/mattbierner/two-seconds-super-mario-bros-3/blob/master/two-seconds-mario.pdf) and printed on good old fashioned paper.
 
 You can find the scripts, data, and design files for the book [on GitHub][src].
 
