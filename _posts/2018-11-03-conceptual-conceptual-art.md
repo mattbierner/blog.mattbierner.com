@@ -2,6 +2,7 @@
 layout: post
 title: "In Profile: Conceptual Conceptual Art"
 description: Profile of the art of ideas
+series: in_profile
 titleImage:
     file: 'title.png'
 ---

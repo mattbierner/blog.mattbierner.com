@@ -38,3 +38,7 @@ gif:
 modded_reality:
     name: "Modded Reality"
     description: ""
+
+in_profile:
+    name: "In Profile"
+    description: ""

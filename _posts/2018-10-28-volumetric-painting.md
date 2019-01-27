@@ -2,6 +2,7 @@
 layout: post
 title: "In Profile: Volumetric Painting"
 description: Profile of a profound new form of artistic expression
+series: in_profile
 titleImage:
     file: 'title.jpg'
 ---

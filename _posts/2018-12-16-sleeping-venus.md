@@ -2,6 +2,7 @@
 layout: post
 title: "In Profile: Sleeping Venus"
 description: A review of the Sleeping Venus by Giorgione
+series: in_profile
 titleImage:
     file: 'title.png'
 ---

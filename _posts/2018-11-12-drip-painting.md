@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "In Profile: Drip Painting"
-description: Profile of the drip 
+description: Profile of the drip
+series: in_profile
 titleImage:
     file: 'title.png'
 ---
