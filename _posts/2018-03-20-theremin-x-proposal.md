@@ -4,7 +4,8 @@ title: The Theremin-X Project — A Proposal
 description: And why the world needs theremin sex
 titleImage:
     file: 'title.png'
-    replaceTitle: true
+    replacePageTitle: true
+    replaceListingTitle: true
 date: '2018-03-20'
 ---
 

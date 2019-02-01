@@ -2,7 +2,7 @@
 
 
 <figure class="video">
-    <video controls>
+    <video {% if include.attrs %}{{ include.attrs }}{% else %}controls{% endif %}>
         <source src="{{ image_src }}" type="video/mp4">
     </video>
 {% if include.description %}
