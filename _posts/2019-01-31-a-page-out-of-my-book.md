@@ -22,7 +22,7 @@ Checkout [the site][site] if you also enjoy classic books and are interested cre
 
 {% include image.html file="in-home.jpg" %}
 
-{% include image.html file="cards.jpg" description="Of course I also had to design and letter pressed some business cards for the venture" %}
+{% include image.html file="cards.jpg" description="Of course I also had to design and letter press some business cards for the venture" %}
 
 
 
