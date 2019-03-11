@@ -28,7 +28,7 @@ Free!
 
 The *DNA Print* project is an attempt to print human genome on paper tape. See the [project overview][src] more information.
 
-The two punches have been running off-and-on for a few weeks now, and we've printed at a little over 1% of the human genome. There's been good progress on chromosome's one and four, plus some initial work on X.
+The two punches have been running off-and-on for a few weeks now, and we've printed a little over 1% of the human genome. There's been good progress on chromosomes one and four, plus some initial work on everyone's favorite chromosome: X.
 
 As for the event itself, there's going to be piles of paper tape you can look at and take photos of. The punches will be running too, which should be quite thrilling. All in all, it's probably the most exciting way to spend your Saint Patrick's day.
 
