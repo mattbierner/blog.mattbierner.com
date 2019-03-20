@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Aerobicide Poster"
-description: "Letterpress poster for the 1987 film *Aerobicide* (aka Killer Workout)"
+description: "Letterpress poster for the 1987 film *Aerobicide* (aka *Killer Workout*)"
 titleImage:
     file: 'title.jpg'
 ---
@@ -10,7 +10,7 @@ titleImage:
 
 After watching the 1987 film *Aerobicide* (aka *Killer Workout*), I was so inspired that I letterpressed a poster for it.
 
-The poster was pressure printed on a Vandercook proofing press at Seattle's [School of Visual Concepts](https://www.svcseattle.com). The forms for each of the four colors was laser cut and pressure printed, while the text at the bottom is wood type.
+The poster was printed on a Vandercook proofing press at Seattle's [School of Visual Concepts](https://www.svcseattle.com). The forms for each of the four colors was laser cut and pressure printed, while the text at the bottom is wood type.
 
 {% include image.html file="close.jpg" description="I made four prints total. One special edition one got gradient text, the rest have solid pink text" %}
 
