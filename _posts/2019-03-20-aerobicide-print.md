@@ -14,7 +14,7 @@ The poster was printed on a Vandercook proofing press at Seattle's [School of Vi
 
 {% include image.html file="close.jpg" description="I made four prints total. One special edition one got gradient text, the rest have solid pink text" %}
 
-This was my second attempt at [pressure printing](https://letterpresscommons.com/pressure-printing/), the first being the [DNA Print poster](/dna-print-open-house). Pressure printing is a fun technique because you can easily print larger sizes prints using only paper, an x-acto (or laser cutter), and a glue sticks. It also produces pretty nice results.
+This was my second attempt at [pressure printing](https://letterpresscommons.com/pressure-printing/), the first being the [DNA Print poster](/dna-print-open-house). Pressure printing is a fun technique because you can easily print larger sizes prints using only paper, an x-acto (or laser cutter), and a glue stick. It also produces pretty nice results.
 
 {% include image.html file="plates.jpg" description="The plates and masks used for printing the four colors" %}
 
