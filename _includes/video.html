@@ -2,7 +2,7 @@
 
 
 <figure class="video">
-    <video {% if include.attrs %}{{ include.attrs }}{% else %}controls{% endif %}>
+    <video {% if include.attrs %}{{ include.attrs }}{% else %}controls{% endif %} preload="metadata">
         <source src="{{ image_src }}" type="video/mp4">
     </video>
 {% if include.description %}
