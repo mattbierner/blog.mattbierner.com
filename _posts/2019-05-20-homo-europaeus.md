@@ -8,7 +8,7 @@ titleImage:
 
 After reading *The Passing of the Great Race* by Madison Grant, I really felt something had to be done. So I went out to the nearest grocery, purchased a large tub of bleach, and dropped the book right on there. This is what you wanted Mr. Grant, *right*?
 
-It seemed so, at least initially. However as the hours progressed, I began to grow rather concerned. Instead of turning the *Great Race* a nice pure parchment color as I had hoped, the bleach instead seemed to be causing its paper and general texture to somewhat deteriorate. <!-- In retrospect, I probably should have researched how to remove ink from paper instead of just assuming bleach would do something fun, but screw all that real science stuff; just use big words and tell people what they want to hear -->
+It seemed so, at least initially. However as the hours progressed, I began to grow rather concerned. Instead of turning the *Great Race* a nice pure parchment color as I had hoped, the bleach seemed to be causing its paper and general texture to quickly deteriorate. <!-- In retrospect, I probably should have researched how to remove ink from paper instead of just assuming bleach would do something fun, but screw all that real science stuff; just use big words and tell people what they want to hear -->
 
 {% include image.html file="book.jpg" description="Oh no! The words... Think of the children!!!" %}
 
