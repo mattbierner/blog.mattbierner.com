@@ -9,9 +9,9 @@ titleImage:
 
 I have a lot of ideas. Really great ideas too! So many great ideas in fact that when, back in February, Magic Leap came around asking for proposals for augmented reality projects, I decided to give 'em one, free of charge.
 
-And what a prime idea it was too! Nothing short of a meditation on what it means to be a corporeal being; a brave stride forth into the post-physical realm; a glimpse at the future. So I drafted up a slick project proposal, sent it off, and prayed. It was titled "Detachable Penis", and you know what? I never heard a damn thing back.
+And what a prime idea it was too! Nothing short of a meditation on what it means to be a corporeal being; a brave stride forth into the post-physical realm; a glimpse at the future. So I drafted up a slick project proposal, sent it off, and prayed. My proposed project was titled "Detachable Penis", and you know what? I never heard a damn thing back.
 
-Man, this happens all the time. I get myself all hyped up about a project but can't get other on board. And in this case, I really wasn't asking for much: a proper AR headset to prototype with, a haptic vest or something, plus maybe some technical and non-technical support. That last part was what I was really after.
+Man, this happens all the time. I get myself all hyped up about a project but can't get others on board. And in this case, I really wasn't asking for much: a proper AR headset to prototype with, a haptic vest or something, plus maybe some technical and non-technical support. That last part was what I was really after.
 
 However on some level, I can also kind of rationalize this cruel rejection. It's entirely probable that my proposal didn't even make it past the spam filters. And my credentials in the AR/VR space are hardly noteworthy. (Although under "prior experience" I could that list time I stuck a camera connected to a *Cardboard* headset up on a 10 foot tall PVC tube so that you could see the world like a giraffe. Giraffe reality is pretty innovative! Required some real fancy taping skills too.)
 
