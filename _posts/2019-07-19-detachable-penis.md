@@ -33,7 +33,7 @@ The penis also has practical advantages. Rather than trying to create high quali
 
 And then consider the potential market. Around 50% of the population doesn't have a penis—which I personally consider a big point in their favor—but as a dear old Austrian friend reminded me: they too may very well enjoy taking one for a spin every now and then. And with regards to that other 50%, I think most reasonable people would agree that many members of the Penis Club could really do with having their so-called memberships revoked a good deal of the time. Win win.
 
-Of course, once the penis had been conquered, then we could move on to hands and ears and navels and ossicones and those weird Vortigaunt third arm things... <!-- Queue the flood of feature requests from those accursed Gonarch fetishists --> 
+Of course, once the penis had been conquered, then we could move on to hands and ears and navels and ossicones and those weird Vortigaunt third arm things... <!-- Queue the flood of feature requests from those accursed Gonarch fetishists -->
 
 But now I'm straying into elevator pitch territory. <!-- If only I could understand why people start mashing the "Open Door" button a few seconds into my pitches... --> The fact was that I never heard anything back from Magic Leap, and so I began to doubt myself. Was it a sign? Maybe my idea wasn't as great as I thought. Maybe "Detachable Penis" wasn't going to be the next Uber. Maybe building an AR app about detachable penises is in fact not a normal hobby. Maybe I should just give up...
 
