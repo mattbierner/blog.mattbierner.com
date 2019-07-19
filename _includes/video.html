@@ -1,8 +1,8 @@
 {% capture image_src %}{% if include.file %}/content/{{ page.path | remove_first:'_posts/' | split:'.' | first }}/{{ include.file }}{% else %}{{ include.url }}{% endif %}{% endcapture %}
-
+{% capture poster_src %}{% if include.poster %}/content/{{ page.path | remove_first:'_posts/' | split:'.' | first }}/{{ include.poster }}{% else %}{{ include.url }}{% endif %}{% endcapture %}
 
 <figure class="video">
-    <video {% if include.attrs %}{{ include.attrs }}{% else %}controls{% endif %} preload="metadata">
+    <video {% if include.attrs %}{{ include.attrs }}{% else %}controls{% endif %} preload="metadata" {% if include.poster %}poster="{{ poster_src }}"{% endif %}>
         <source src="{{ image_src }}" type="video/mp4">
     </video>
 {% if include.description %}
