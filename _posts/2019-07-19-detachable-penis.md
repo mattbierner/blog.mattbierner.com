@@ -21,7 +21,7 @@ Because first off, my proposed project was not really about penises at all. I me
 
 Where thing would really get interesting though is if multiple users were wearing AR goggles in the same space, all able to see and interact with each other's virtual body parts. What would social interaction be like if you could literally tap someone on the shoulder from across the room? What would intimacy be like? I was proposing a low fidelity glimpse at a future where you can break up your body and its senses, remixing them to create new sensory organs, new experiences.
 
-So yeah, there's "Detachable Penis" for you. In retrospect, a title such as "Virtual Embodiment" may have met with more success, but "Virtual Embodiment" just sounds all fancy and complicate. I hardly wanted to make any grandiose promises or anything, certainly not to Magic leap! No, as a professional amateur, my aim was always something a little closer to an AR version of *Poke the Bunny*... except this time the bunny is you!
+So yeah, there's "Detachable Penis" for you. In retrospect, a title such as "Virtual Embodiment" may have met with more success, but "Virtual Embodiment" just sounds all fancy and complicated. I hardly wanted to make any grandiose promises or anything, certainly not to Magic leap! No, as a professional amateur, my aim was always something a little closer to an AR version of *Poke the Bunny*... except this time the bunny is you!
 
 "But Matt," you interject, "if your purported goal was creating augmented body parts, surely the hand,or the knee, or even the elbow would have been a far better—and more PG—starting point than the penis!"
 
