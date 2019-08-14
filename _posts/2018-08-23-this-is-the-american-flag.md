@@ -214,5 +214,5 @@ titleImage:
 {% include image.html file="base.svg" description="This is the American flag?" %}
 
 <!--
-This idea had been on my back-burner for a while but it took an outdoor screening of BlackKklansman in the center of Veduz to motivate me to finally throw it together.
+This idea had been on my back-burner for a while but it took an outdoor screening of BlackKklansman in the center of Vaduz to motivate me to finally throw it together.
 -->
