@@ -20,7 +20,7 @@ So I came up with a plan: take two photos of artwork from the same perspective, 
 
 I photographed around thirty different paintings and sculptures at the Louvre and the Musée d'Orsay using this technique. As I came up with the whole subtractive scheme while at one of the museums, I was pretty much shooting blind; I didn't know how to compose the shots or even if the result would be at all interesting.
 
-You can see the results below. I've inverted and/or desaturated a few of the images and tweaked the contrast and black point but nothing too dramatic. And while nothing revolutionary, I like that these images reveal a physical aspect of the artwork that is often overlooked. They they also capture something that many people try to minimize while photographing art. And who knows, maybe with enough glare even the Mona Lisa would be bearable.
+You can see the results below. I've inverted and/or desaturated a few of the images and tweaked the contrast and black point but nothing too dramatic. And while nothing revolutionary, I like that these images reveal a physical aspect of the artwork that is often overlooked. They also capture something that most people try to minimize while photographing art. And who knows, maybe with enough glare even the Mona Lisa would be bearable.
 
 {% include image.html file="DSC02854-Edit.jpg" %}
 {% include image.html file="DSC02563-Edit.jpg" %}
