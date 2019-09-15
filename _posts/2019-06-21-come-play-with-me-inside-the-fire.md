@@ -4,6 +4,7 @@ title: "Come play with me inside the fire"
 description: "Letterpress apple"
 titleImage:
     file: 'title.jpg'
+series: letterpress
 ---
 
 {% include image.html file="title.jpg" %}

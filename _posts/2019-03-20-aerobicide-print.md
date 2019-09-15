@@ -4,6 +4,7 @@ title: "Aerobicide Poster"
 description: "Letterpress poster for the 1987 film *Aerobicide* (aka *Killer Workout*)"
 titleImage:
     file: 'title.jpg'
+series: letterpress
 ---
 
 {% include image.html file="title.jpg" %}

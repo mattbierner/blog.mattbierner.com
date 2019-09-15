@@ -42,3 +42,7 @@ modded_reality:
 in_profile:
     name: "In Profile"
     description: ""
+
+letterpress:
+    name: "Letterpress"
+    description: ""

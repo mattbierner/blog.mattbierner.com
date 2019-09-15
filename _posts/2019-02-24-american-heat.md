@@ -5,6 +5,7 @@ description: Movie inspired letterpress print.
 titleImage:
     file: 'title.jpg'
     replaceListingTitle: true
+series: letterpress
 ---
 
 {% include image.html file="title.jpg" %}

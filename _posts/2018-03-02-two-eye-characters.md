@@ -6,7 +6,7 @@ titleImage:
     file: 'title.jpg'
     replaceListingTitle: true
     replacePageTitle: false
-date: '2018-03-02'
+series: letterpress
 ---
 
 *Two Eye Characters* is my first letterpress project.
