@@ -21,7 +21,7 @@ layout: default
             {% capture image_src %}{% if page.titleImage.file %}/content/{{ page.path | remove_first:'_posts/' | split:'.' | first }}/{{ page.titleImage.file }}{% else %}{{ page.titleImage.url }}{% endif %}{% endcapture %}
             <div class="post-preview-image container">
                 <a href="{{ site.baseurl }}{{ page.url }}">
-                    <img src="{{ image_src }}" alt="{{ page.title }}" />
+                    <img src="{{ image_src }}" alt="{{ page.title }}" {% if page.titleImage.maxWidth %}width="{{ page.titleImage.maxWidth }}"{% endif %} />
                 </a>
             </div>
         {% else %}

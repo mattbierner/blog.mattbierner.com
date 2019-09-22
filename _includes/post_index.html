@@ -3,7 +3,7 @@
         {% capture image_src %}{% if post.titleImage.file %}/content/{{ post.path | remove_first:'_posts/' | split:'.' | first }}/{{ post.titleImage.file }}{% else %}{{ post.titleImage.url }}{% endif %}{% endcapture %}
         <div class="post-preview-image container">
             <a href="{{ site.baseurl }}{{ post.url }}">
-                <img src="{{ image_src }}" alt="{{ post.title }}" />
+                <img src="{{ image_src }}" alt="{{ post.title }}" {% if post.titleImage.maxWidth %}width="{{ post.titleImage.maxWidth }}"{% endif %}  />
             </a>
         </div>
     {% endif %}
