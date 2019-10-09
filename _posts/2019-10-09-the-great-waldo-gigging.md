@@ -18,11 +18,11 @@ Of course, when undertaking any important task like this on the internet, you of
 
 {% include image.html file="chucklehead.png" description="I did not accept their offer" %}
 
-However, the efforts of such individuals at what could only generously be called trolling seldom fall more than one or two steps above a dick on the Nilbog scale. For we all know that a truly *artful* troll, when faced with such as Waldo gig, would have deepfaked Waldo onto every character in the picture and returned that as the result. Hell, I would have even settled for a photo of them dressed as Waldo. My disappointment with the internet only intensifies with each passing day.
+However, the efforts of such individuals at what could only generously be called trolling seldom fall more than one or two notches above a dick on the Nilbog scale. For we all know that a truly *artful* troll, when faced with such as Waldo gig, would have deepfaked Waldo onto every character in the picture and returned that as the result. Hell, I would have even settled for a photo of them dressed as Waldo. My disappointment with the internet only intensifies with each passing day.
 
 {% include image.html file="offers.png" description="I used 'Wally' instead of 'Waldo' as I thought it would be more familiar to a greater number of people" %}
 
-I accepted the first twelve serious offers there were submitted, sent off the photos, and then sat back to watch the Waldos coming roll in. The first Waldo was found within twenty minutes, and most workers found Waldo in under 24 hours. And only a quarter or so of the submissions required a revision!
+I accepted the first twelve serious offers that were submitted, sent off the photos, and then sat back to watch the Waldos coming roll in. The first Waldo was found within twenty minutes, and most workers found Waldo in under 24 hours. And only a quarter or so of the submissions required a revision!
 
 {% include image.html file="normal.jpg" description="A successful Waldo gig" %}
 
