@@ -28,7 +28,7 @@ I accepted the first twelve serious offers that were submitted, sent off the pho
 
 {% include image.html file="phone.jpg" description="Waldo was found in many different ways" %}
 
-A few workers event went above and beyond by warning me about tricky fake Waldos on their page or even finding all of Waldo's friends too. Well played.
+A few workers even went above and beyond by warning me about tricky fake Waldos on their pages or finding all of Waldo's friends too. Well played. 
 
 {% include image.html file="warning.jpg" %}
 {% include image.html file="exceptional.jpg" %}
