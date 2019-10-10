@@ -45,4 +45,4 @@ However after much drama, the twelfth and final Waldo was successfully found for
 
 {% include image.html file="at-last.png" description="At last!" %}
 
-Yes, all things considered, I'd say that finding Waldo today is pretty much exactly like I remember it being as a child. Far easier if anything actually.
+Yes, all things considered, I'd say that finding Waldo today is pretty much exactly like I remember it being as a child. It's far easier nowadays if anything.
