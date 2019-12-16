@@ -55,7 +55,7 @@ The inverse is also true of course: good answers do not necessarily tell you wha
 
 Any time expression is simplified to up/down votes or like buttons, you're going to lose important distinctions. It's a common problem on the internet. How many many social apps can distinguish, "I support this," and, "I think this is well put even if I don't like or agree with it."? Overall though, despite those few downvotes every month, I feel the Stack Overflow community does a pretty good job in voting objectively. Let's try to keep it that way.
 
-# I almost never ask question on Stack Overflow
+# I almost never ask questions on Stack Overflow
 
 The longer I've used the site, the less likely I've become to post a question to it. Part of this is my growth as a developer. Many of the problems I face in my current work are too complex to state as simple questions or too specific to ever be of much help to anyone else. I've learned the site's limitations, so I avoid asking questions that I know will almost certainly not get a good answer.
 
