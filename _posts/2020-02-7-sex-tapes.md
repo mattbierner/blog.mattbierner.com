@@ -36,20 +36,20 @@ titleImage:
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: var(--monospace);
+    font-family: var(--monospace, monospace);
     font-size: 0.8em;
     margin: 2em 0;
     margin-top: 10rem;
 }
 
 .sex-tapes-story-part header h1 {
-    font-family: var(--monospace);
+    font-family: var(--monospace, monospace);
     margin-top: 0.6rem;
     margin-bottom: 0.2em;
 }
 
 .sex-tapes-story-part header h2 {
-    font-family: var(--monospace);
+    font-family: var(--monospace, monospace);
     margin-bottom: 0.8rem;
     font-size: 1em;
 }
@@ -66,7 +66,7 @@ titleImage:
 
 /** Chat ---------------------- */
 .sex-tapes-chat {
-    font-family: var(--monospace);
+    font-family: var(--monospace, monospace);
     font-size: 0.9em;
 }
 
