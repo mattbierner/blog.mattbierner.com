@@ -16,3 +16,9 @@ $white: #fcfcfc;
 $sansSerif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $lato: Lato, $sansSerif;
 $serif: Georgia, 'Times New Roman', Times, serif;
+
+:root {
+    --sansSerif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif: Georgia, 'Times New Roman', Times, serif;
+    --monospace: monospace;
+}
