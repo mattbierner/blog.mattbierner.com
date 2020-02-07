@@ -380,7 +380,7 @@ I find some of [Freud's theories on sexual fetishes](https://cpb-us-w2.wpmucdn.c
 
 But back to the matter at hand.
 
-While *Sex Tapes* has some of the trappings of a sexual fetish—the strange device, the unequal sexual roles, the concept of trust exchange—it lacked the fantasy. It lacked the belief. For me, the machine was just a prop. The relationship more of a performance. And while I do generally find ideas of trust exchange interesting, using paper tape machine seems like a rather circuitous approach to that matter.
+While *Sex Tapes* has some of the trappings of a sexual fetish—the strange device, the unequal sexual roles, the concept of trust exchange—it lacked the fantasy. It lacked the belief. For me, the machine was always just a prop. The interaction, more of a performance. And while I do generally find ideas of trust exchange interesting, using paper tape seems like a rather circuitous approach to that matter.
 
 Nor did I ever fantasize about a paper tape hookup. Indeed, I was nervous pretty much from the start of the project to its completion. And while completing the project was satisfying, it was not satisfying in *that* way. Plus, I'm certainly not hankering for another round.
 
