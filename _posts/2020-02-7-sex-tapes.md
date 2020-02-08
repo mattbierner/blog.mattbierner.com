@@ -935,9 +935,9 @@ So just in case any one else out there has ever needed to hear this message: sex
 </section>
 <section class="sex-tapes-centered" markdown="1">
 
-Eyes. Smile. That slight turn of the head.
-
 Her glance.
+
+Eyes. Smile. That slight turn of the head.
 
 Hair. Long or short. Preferably long though.
 
@@ -2081,7 +2081,7 @@ What are you looking for?
 </section>
 <section markdown="1">
 
-Most of my relationships have just sort of faded away. No big blow up, no "it's not you, it's me", no scandals. The daily messages turn into weekly messages, then every other week, until one day I realize that I don't remember the last time you saw her. It usually ends with me sitting in the dark staring at her name on the screen, knowing it's been too long to say I'm sorry. (Maybe at the very end, I should also make a whimpering sound or something...)
+Most of my relationships have just sort of faded away. No big blow up, no "it's not you, it's me", no scandals. The daily messages turn into weekly messages, then every other week, until one day I realize that I don't remember the last time I saw her. It usually ends with me sitting in the dark staring at her name on the screen, knowing it's been too long to say I'm sorry. (Maybe at the very end, I should also make a whimpering sound or something...)
 
 I know the pattern well enough now to know when it is happening. That's the worse part. To know that it is happening yet to still do nothing. The last real time, I always knew the relationship was never going to be forever and yet still, why did I let it end like that?
 
