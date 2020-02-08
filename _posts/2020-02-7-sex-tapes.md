@@ -2353,13 +2353,13 @@ Hulk thought that was funny and makes her repeat it.
 </section>
 <section markdown="1">
 
-You know, maybe sometimes I'm too quick to call stuff bullshit. Country music for example. Just was never my thing.Always somehow felt like it was a gimmick or worse, insincere. So as a teenager, I decided  that it was bullshit.
+You know, maybe sometimes I'm too quick to call stuff bullshit. Country music for example. Just was never my thing. Always somehow felt like it was a gimmick or worse, insincere. So as a teenager, I decided that it was bullshit.
 
 That wasn't fair. Ken Burns helped me realize that.
 
 Understand: the moment I once and forever realized that I was not cool was when I found myself silently cursing, "Damn it, why isn't my PBS working?" Only 18 and I'd already developed the media habits of a boomer. Compared to all the shit that's out there though? But I'm not ashamed to admit that I'll follow old Burnsey just about anywhere. Hell, I still remember when we took Hill 861 back in '17. Body aching, mind shot, only a few hours in to that epic it felt like the war would never end. I stuck with him though, even when it seemed like it was all falling apart.
 
-Still when Burns proposed a new, even longer offensive two years later, I have to admit that I hesitated at first. Country music? Isn't that just all *Garth Brooks* and *Deliverance*? Still, 17 hours was a whole lot of excellent procrastination time to avoid working on *Sex Tapes*.
+Still, when Burns proposed an even longer offensive two years later, I have to admit that I hesitated at first. Country music? Isn't that just all *Garth Brooks* and *Deliverance*? Still, 17 hours was a whole lot of excellent procrastination time to avoid working on *Sex Tapes*.
 
 Burns really came through too. He always does. Taught me a lot.
 
@@ -2397,13 +2397,13 @@ Paris though... City of love! Plus some concrete. No wonder artists like it.
 
 Things started to turn around in college. Once I had places of my own during internships and during junior year, there wasn't the same pressure to be someone who I didn't want to be. Or rather, there wasn't the same pressure that left me feeling it was better to try being invisible. I could just ignore all that bullshit.
 
-So I slowly started to experiment. Not as in dying my hair purple or becoming bisexual *experimenting* . Think more boring. Think more *Denial of Death*. Think having more platonic friends. And maybe a bit of non-platonic experimenting too but still pretty tame stuff. You have to understand that back then, I was even still kind of ashamed to admit that I was into female sexual pleasure. Admitting that somehow seemed rather unmanly, which in retrospect is just about the stupidest idea ever.
+So I slowly started to experiment. Not as in dying my hair purple or becoming bisexual *experimenting* . Think more boring. Think more *Denial of Death*. Think having more platonic friends. And maybe a bit of non-platonic experimenting too but still pretty tame stuff. You have to understand that back then, I was still kind of ashamed to admit that I was into female sexual pleasure. Admitting that somehow seemed rather unmanly, which in retrospect is just about the stupidest idea ever.
 
 It's taken me almost a decade to get to this place. Lots of small steps. Besides, you know how much procrastination you can fit into ten years? Probably almost five whole Ken Burns series worth! Plus, I didn't have anyone to follow. That's how it had to be though. I had to do it for myself.
 
 My projects exploring sexuality also certainly had role too. They were almost forcing functions. The first one for example just tasked me to write anything about sexuality. Later ones introduced new personal challenges while letting me express and explore my ideas.
 
-Looking back, the biggest thing I've come to understand is how masculine cliches hurt everyone. Both women and men. How much is lost by reducing male emotion to a small set of simple states: happy, angry, drunk, horny, ...? By reducing male motivations to generic terms such as power, honor, or respect? By reducing male sexuality to purely physical terms?
+Looking back, the biggest thing I've come to understand is how masculine cliches hurt everyone. Both women and men. And we don't talk about the male side enough. How much is lost by reducing male emotion to a small set of simple states: happy, angry, drunk, horny, ...? By reducing male motivations to generic terms such as power, honor, or respect? By reducing male sexuality to purely physical terms?
 
 Such cliches certainly hurt men like me. But they also hurt manly men like my Dad. When my dad and I talk about women for example, our conversations usually stick to shallow cliches, which is sad because I know that he actually has a lot more to say. I know that most men have a lot more to say.
 
@@ -2585,7 +2585,7 @@ Ok. Ok.
 <br><br>
 I am looking for... I am looking for someone.
 <br><br>
-I am looking for someone whose hand to hold while watching the sunset. Someone who thinks a fun New Years eve is bouldering in the dark at Joshua Tree. Someone who thinks an adventure is spending the day looking for a ghost town in the desert and never finding it. Someone to watch bad movies with. Someone to cry hysterically with while listening to *The Midnight* after taking ecstasy. Someone to print letterpress cards for. Someone to cook quiche for. Someone who I can bring physical pleasure to. Someone whose body I can worship because it is theirs. Someone who I can delight intellectually. Someone who I can make smile with my puns and snarky comments and obscure references. Someone who has interests and passions and a life of their own that I can support and yet who will also play along with stupid projects like this. And I'm looking for so, so much more.
+I am looking for someone whose hand to hold while watching the sunset. Someone who thinks a fun New Year's Eve is bouldering in the dark at Joshua Tree. Someone who thinks an adventure is spending the day looking for a ghost town in the desert and never finding it. Someone to watch bad movies with. Someone to cry hysterically with while listening to <i>The Midnight</i> after taking ecstasy. Someone to print letterpress cards for. Someone to cook quiche for. Someone who I can bring physical pleasure to. Someone whose body I can worship because it is theirs. Someone who I can delight intellectually. Someone who I can make smile with my puns and snarky comments and obscure references. Someone who has interests and passions and a life of their own that I can support and yet who will also play along with stupid projects like this. And I'm looking for so, so much more.
 <br><br>
 I am looking for a life partner who I can love unconditionally and who can love me back despite of all my faults. Because I am lost without you. Lost in ways that I can't even express.
 <br><br>
@@ -2616,7 +2616,7 @@ But you what know scared me even more? Admitting that I was actually interested 
 
 For although I've built my own identity and my own vision of what it means to be a man, I also recognize that this project—along with some of the ways I creatively express myself more broadly—do share superficialities with that shallow, stereotypical version of masculinity that I struggled to overcome for so long. I get that *Sex Tapes* could be problematic. And I get that I've made some bad jokes and double entendres in this write-up. But understand: I really enjoy this stuff! This feels honest to me, even if honesty meant admitting some things here that were probably better left unsaid. Because when you get right down to it, they actually aren't bad things. All of this is just bits of who I am. And yes, I still laugh at very non-progressive movies like *New Year's Evil* and *Olga's House of Shame*. And I still love the *Loaded with Love* EP from *Nightstop* musically and I love how trashy its cleavage album cover is. And I still like letterpressing posters with explosions and footballs on them. And I still like looking at women. And I still think about being with them all the time. I do not deny it. I am not ashamed of it.
 
-And yet I am also far, far more than what I fear those things may imply to those who do not know me. By those who want to see me only in their terms. And while I perhaps haven't done the best job arguing my case here, that's besides the point! Even though I know who I am, part of me is still scared of being dismissed as just another toxic male. I am still scared of being labeled something that I've been trying to escape much of my adult life.
+And yet I am also far, far more than what I fear those things may imply to those who do not know me, those who want to see me only in their terms. And while I perhaps haven't done the best job arguing my case here, that's besides the point! Even though I know who I am, part of me is still scared of being dismissed as just another toxic male. I am still scared of being labeled something that I've been trying to escape much of my adult life.
 
 So in short, why did *Sex Tapes* scare me? I was scared of being seen as one of *those* dudes. You know, the kind of dude who would create a project called *Sex Tapes*. 
 
@@ -2781,7 +2781,7 @@ There is something I want to tell you: it was exciting to turn you on with my ta
 
 God that sounds stupid. But it was true! And if you've read this far, I hope you realize why this was so difficult for me to admit and what I truly mean when I say it.
 
-I created this project as a commentary on hookups but the truth is that I greatly enjoyed getting to know you. I apologize if I ever came across as disinterested in you or acted too business like. I was scared. You put a lot of trust in me and I was scared of letting you down. Even now as I write this, I'm scared of letting you down. Especially with that previous section. And I'm scared that I've make all too much of this. Just know that I've tried to express something real here even if the result seems like a schizoid mess filled with bad puns, Hulk Hogan, and synths.
+I created this project as a commentary on hookups but the truth is that I greatly enjoyed getting to know you. I apologize if I ever came across as disinterested in you or acted too business like. I was scared. You put a lot of trust in me and I was scared of letting you down. Even now as I write this, I'm scared of letting you down. Especially with that previous section. And I'm scared that I've made all too much of this. Just know that I've tried to express something real here even if the result seems like a schizoid mess filled with bad puns, Hulk Hogan, and synths.
 
 Why did I make it so complicated?
 
