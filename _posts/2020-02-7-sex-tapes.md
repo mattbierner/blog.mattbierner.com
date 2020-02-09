@@ -2033,7 +2033,7 @@ It can't be that simple though. For in the back of my mind, I know that other me
 <br><br>
 And even assuming that my desire is positive, how should I express it? 
 <br><br>
-I have never catcalled. I've never made weird advances. I have never touched inappropriately. So clearly I must be a pretty chivalrous dude for clearing the lowest of low bars! On the other hand though, just consider all the man who don't...
+I have never catcalled. I've never made weird advances. I have never touched inappropriately. So clearly I must be a pretty chivalrous dude for clearing the lowest of low bars! On the other hand though, just consider all the men who don't...
 <br><br>
 Let's consider something smaller then, something more familiar to me, say a passing glance on the street. Even with that, how is a woman to tell what is behind a glance? Can they distinguish a glance of admiration from one expressing more perverse thoughts? And if not, wouldn't it be safest for them to always assume the worst? I know I would.
 <br><br>
