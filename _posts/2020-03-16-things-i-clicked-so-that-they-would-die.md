@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Things I clicked so that they would die"
-description: 'Capturing '
+description: 'Capturing everything you click on during a complete play through of the original Halo'
 titleImage:
     file: 'easy-small.png'
 ---
