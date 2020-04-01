@@ -110,7 +110,7 @@ Faced with an endless stream of low quality questions, it's easy to become cynic
 
 I sometimes browse through tens of new questions in a day, and seeing the endless stream of low quality questions coming in day after day in, it's easy to start becoming dismissive or even cynical. This cynicism can even leak into behavior on the site, as anyone who's dealt with an overenthusiastic Stack Overflow moderator or has ever spent an hour or two researching and composing a question only to have it downvoted into oblivion without explanation can attest.
 
-And sure, there are users out there putting zero effort into their bad questions, but I have to believe that the majority of low quality questions are coming from well intended (albeit clueless) users. I always try to remember what it was like being a beginner. When you start off, you don't really know how the site actually works. In some cases, you don't even know the right words to use to express the problem you are facing. That's a tough placed to be in, trust me. And it sucks when you get eviscerate for just trying to ask a question.
+And sure, there are users out there putting zero effort into their bad questions, but I have to believe that the majority of low quality questions are coming from well intended (albeit clueless) users. I always try to remember what it was like being a beginner. When you start off, you don't really know how the site actually works. In some cases, you don't even know the right words to use to express the problem you are facing. That's a tough place to be in, trust me. And it sucks when you get eviscerated for just trying to ask a question.
 
 While Stack Overflow has done a lot to help new users, there's clearly much more that needs to be done. I personally have been trying to find a good balance between efficiently maintaining the site's standards and being more compassionate to inexperienced users. This could involve me explaining why I voted to close a question or posting a comment prodding the user to share more information. I know I still have lots of room to grow here.
 
@@ -122,7 +122,7 @@ Stack Overflow doesn't have much of a thank you culture. At some point, I seem t
 
 Now as anyone who has dealt with customer support well knows, too much politeness can get in the way and even feel artificial. But sometimes, someone will do something completely above and beyond for you on the site, and the only way you can reward them is clicking a little up vote arrow. That's shitty.
 
-Being efficient should not require turning ourselves into soulless automatons. Side channel could allow for more authentic communication and connection between individuals, provided that's something users want to opt in to of course.
+Being efficient should not require turning ourselves into soulless automatons. Side channels could allow for more authentic communication and connection between individuals, provided that's something users want to opt in to of course.
 
 # Sometimes I wonder what happens after the answer
 
@@ -166,7 +166,7 @@ Every time I need to do something remotely complex in git, I wind up on Stack Ov
 
 I am not productive without IntelliSense, a search engine, and Stack Overflow. In some people's books, this makes me a very bad programmer. I would probably fail a lot of tests and whiteboard problems. So be it. (Seriously, every time I use `.sort` in JavaScript, I have to look up when I'm supposed to return `-1` vs `0` vs `1`, and I write JS all day while developing the world's most popular editor for JavaScript.)
 
-No, stack Overflow is an amazing tool. Only a fool would not use all the tools available to them. Instead, why not be eternally stupid like me? Save your brain capacity for important stuff, such as storing all the plots to Seinfeld or coming up with elaborate puns (which this post was certainly lacking in but which future ones, of a quite different nature, should more than make up for).
+No, Stack Overflow is an amazing tool. Only a fool would not use all the tools available to them. Instead, why not be eternally stupid like me? Save your brain capacity for important stuff, such as storing all the plots to Seinfeld or coming up with elaborate puns (which this post was certainly lacking in but which future ones, of a quite different nature, should more than make up for).
 
 
 # Stack Overflow is a miracle
