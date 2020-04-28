@@ -24,7 +24,7 @@ So over the weekend, I played through the *Halo: Combat Evolved* remaster on PC 
 
 On easy, the campaign required some 5,750 clicks. I found it to be a mostly run forward and click things affair, with only handful of deaths (mostly self inflicted). Combining all these images into a montage presents a more or less complete view of all things you click on during a linear campaign play through.
 
-{% include image.html file="easy-small.png"  description="Playthough on Eeasy" %}
+{% include image.html file="easy-small.png"  description="Playthough on easy" %}
 
 Legendary on the other hand required some 13,700 clicks (almost 250% more clicks than easy!). On that difficulty, the game is still just as punishing as I remember and I died a lot. Probably a quarter of this play through was spent on the second half of *Truth and Reconciliation* (represented by the purple tinged areas near the top) because God damn that level! This means that composite image captures me playing through the same difficult sections over and over again.
 
