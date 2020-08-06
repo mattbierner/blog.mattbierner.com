@@ -11,12 +11,14 @@ For the past month or so, I've been working on an iOS AR app that lets you push 
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/JX80kxolWEc" %}
 
+> **Update**: [Here's the app][walls] from the video
+
 When I shared a preview of this app in action, a few developers were curious about how I achieved the effect. So I've put together a [small example project][source] I'm calling "Reality Shaders" which demonstrates how I distort real world surfaces in AR using shaders.
 
 **Links**:
 
 - [Source][source]
-
+- [In The Walls][walls] (app from the video)
 
 The project includes a couple of simple demos:
 
@@ -34,3 +36,4 @@ While the technique isn't novel and does have some technical limitations, I thin
 So checkout [the example][source] and let me know if you come up with any fun applications for reality shaders.
 
 [source]: https://github.com/mattbierner/reality-shaders-example
+[walls]: /in-the-walls
