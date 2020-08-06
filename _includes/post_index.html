@@ -1,16 +1,16 @@
 <article class="post-item">
-    {% if post.titleImage %}
-        {% capture image_src %}{% if post.titleImage.file %}/content/{{ post.path | remove_first:'_posts/' | split:'.' | first }}/{{ post.titleImage.file }}{% else %}{{ post.titleImage.url }}{% endif %}{% endcapture %}
-        <div class="post-preview-image container">
-            <a href="{{ site.baseurl }}{{ post.url }}">
-                <img src="{{ image_src }}" alt="{{ post.title }}" {% if post.titleImage.maxWidth %}width="{{ post.titleImage.maxWidth }}"{% endif %}  />
-            </a>
-        </div>
-    {% elsif post.titleVideo %}
+    {% if post.titleVideo %}
         {% capture video_src %}{% if post.titleVideo.file %}/content/{{ post.path | remove_first:'_posts/' | split:'.' | first }}/{{ post.titleVideo.file }}{% else %}{{ post.titleVideo.url }}{% endif %}{% endcapture %}
         <div class="post-preview-image container">
             <a href="{{ site.baseurl }}{{ post.url }}">
                 <video autoplay muted loop src="{{ video_src }}" alt="{{ post.title }}"></video>
+            </a>
+        </div>
+    {% elsif post.titleImage %}
+        {% capture image_src %}{% if post.titleImage.file %}/content/{{ post.path | remove_first:'_posts/' | split:'.' | first }}/{{ post.titleImage.file }}{% else %}{{ post.titleImage.url }}{% endif %}{% endcapture %}
+        <div class="post-preview-image container">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                <img src="{{ image_src }}" alt="{{ post.title }}" {% if post.titleImage.maxWidth %}width="{{ post.titleImage.maxWidth }}"{% endif %}  />
             </a>
         </div>
     {% endif %}
