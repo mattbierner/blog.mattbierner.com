@@ -6,7 +6,7 @@ titleImage:
     file: 'title.png'
 ---
 
-The [Docs View][extension] extension for VS Code display documentation for the symbol at your current cursor position in the sidebar or panel.
+The [Docs View][extension] extension for VS Code displays documentation for the symbol at your current cursor position in the sidebar or panel.
 
 **Links**
 
