@@ -14,7 +14,7 @@ titleImage:
 
 Use [the site][site] to pick out an illustration and interactively design your wall art. Although we recommend using a quote from the book, you can really use whatever text you like (even emojis or an ascii penis if that's your thing).
 
-{% include video.html file="demo.mp4" attrs="loop autoplay" %}
+{% include video.html file="demo.mp4" attrs="loop autoplay playsinline muted" %}
 
 The art is all made to order and uses high quality frames with matting. The frames are 8 inches wide and 10 inches tall. They ship fully assembled too; all you need to do is stick it on your wall. Besides framed physical prints, you can also order a high resolution digital file of the design that you can print yourself.
 
