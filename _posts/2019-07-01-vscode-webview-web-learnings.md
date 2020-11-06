@@ -36,7 +36,7 @@ We register custom handlers inside of webviews to intercept clicks and other act
 Script are disabled by default in webview content but can be re-enabled.
 
 #### Themeable
-We specify a baseline css style and some css variables from the current VS Code theme. This lets extension's style their webviews in a way that is consistent with the rest of the current VS Code theme.
+We specify a baseline css style and some css variables from the current VS Code theme. This lets extensions style their webviews in a way that is consistent with the rest of the current VS Code theme.
 
 ## Structure
 To support all this today using the `<webview>` tag, we set up nested contexts with the following structure: 
@@ -55,7 +55,7 @@ To support all this today using the `<webview>` tag, we set up nested contexts w
          // This is where we also communicate to and from the VS Code main process
          // using postMessage
     </script>
-    <iframe width="100%" height="100%" sandbox="allow-same-origin allow-scripts?">
+    <iframe width="100%" height="100%" sandbox="allow-same-origin allow-scripts">
         // Actual webview html content coming from an extension
         //
         // We also inject the VS Code webview api script into here, which talks with frame's parent
@@ -100,7 +100,7 @@ We can use these two capabilities to implement a sort of virtual server endpoint
 
 1. In the service worker's `fetch` handler, when a request for anything under `/vscode-resource` comes in, post a message back to the requesting page with the path of the resource being requested (`/Users/matt/projects/catre/creosote-cat.gif`). Then create and store a value in the service worker that can be resolved at some later point, and return a `Promise` to this value from the `fetch` handler.
 
-    Keep in mind here that, from the service worker's point of view, the requesting page is actually the inner iframe within the webview (i.e. the one with the html from the extension). This inner page may not even have scripts enabled, so what we really want to do is post a message back to the outer webview context which VS Code controls. To map between the inner iframe and its owning webview, we serve the inner and outer iframe with a shared `id` query parameter in their urls. The service workers can read the urls of all active clients and therefor map from the inner context to the outer one, or vice versa. Simple, but it works. 
+    Keep in mind here that, from the service worker's point of view, the requesting page is actually the inner iframe within the webview (i.e. the one with the html from the extension). This inner page may not even have scripts enabled, so what we really want to do is post a message back to the outer webview context which VS Code controls. To map between the inner iframe and its owning webview, we serve the inner and outer iframe with a shared `id` query parameter in their urls. The service workers can read the urls of all active clients and therefore map from the inner context to the outer one, or vice versa. Simple, but it works. 
 
 1. In the outer webview environment, forward the message from the service worker to the main VS Code page using `postMessage`.
 
@@ -157,7 +157,7 @@ I next tried to workaround these limitations by serving up the iframe in a sligh
 
 However this has the exact same problems as the previous approach: service workers do not work and—despite now setting `allow-same-origin`—sandboxing means that the inner and outer iframe still are not in the same origin. There's also a fun new problem: [content security policies](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
 
-The main VS Code editor page sets a restrictive content security policy (CSP), one that only allows scripts and images to be loaded from the current origin just as an example. Inline iframes inherit the content security policy of their parent page, which means that, using the `srcdoc` approach, webviews would also only be able load images or scripts from the VS Code server. (This inheritence prevent a content injection from injecting an inline iframe that can bypass the parent page's content security policy.)
+The main VS Code editor page sets a restrictive content security policy (CSP), one that only allows scripts and images to be loaded from the current origin just as an example. Inline iframes inherit the content security policy of their parent page, which means that, using the `srcdoc` approach, webviews would also only be able load images or scripts from the VS Code server. (This inheritance prevents a content injection from injecting an inline iframe that can bypass the parent page's content security policy.)
 
 As far as I know, there is no way to override this inheritance, so even if all the other issues with this approach could be addressed, the CSP limitation is a blocker.
 
