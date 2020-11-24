@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The war we forget in our embrace of streaming"
+title: "The war we forgot in our embrace of streaming"
 description: Thoughts on how DRM was perfected in plain sight, and the risks streaming poses to culture.
 ---
 
