@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The war we forgot in our embrace of streaming"
-description: Thoughts on how DRM was perfected in plain sight, and the risks streaming poses to culture.
+description: Thoughts on how DRM was perfected in plain sight and the risks streaming poses to culture.
 ---
 
 I listened to Spotify for somewhere around 650 hours in 2019. That works out to a little over 27 solid days. That's a lot of music!
