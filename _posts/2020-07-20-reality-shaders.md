@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reality Shaders"
-description: 'Example project about apply shaders to real world surfaces using ARKit'
+description: 'Example project about applying shaders to real world surfaces using ARKit'
 series: modded-reality
 titleImage:
     file: 'demo.gif'
