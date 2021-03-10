@@ -2,6 +2,7 @@
 layout: post
 title: "Beatsy App Clip Codes"
 description: Using stickers for music discovery
+series: arr
 titleImage:
     file: 'title.gif'
 titleVideo:

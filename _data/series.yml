@@ -46,3 +46,7 @@ in_profile:
 letterpress:
     name: "Letterpress"
     description: ""
+
+arr:
+    name: "Arr!"
+    description: "Dreams of cheese in augmented reality"

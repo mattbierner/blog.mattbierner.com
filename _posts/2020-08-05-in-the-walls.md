@@ -2,7 +2,7 @@
 layout: post
 title: "In The Walls"
 description: 'iOS app about putting your face in walls'
-series: modded-reality
+series: arr
 titleImage:
     file: 'title.gif'
 titleVideo:
