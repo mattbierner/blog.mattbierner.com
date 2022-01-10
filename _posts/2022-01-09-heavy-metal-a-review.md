@@ -40,7 +40,7 @@ There's some dialog about an orb but you're so distracted by the horrific animat
 
 Then out of nowhere, The Stig melts! Now that's more like it! Just 5 minutes in and you've seen a Corvette go through re-entry and solid body melt. None of that pussyfooting around like Raiders! You can't wait for what's next.
 
-Except now orb is growing green and talking. God these animations are just grotesque, aren't they? Big Zelda CDI energy. Something about evil. Yeah, yeah, whatever. Where's warrior lady and her chicken? God if only you could be reborn as that big chicken... 
+Except now orb is glowing green and talking. God these animations are just grotesque, aren't they? Big Zelda CDI energy. Something about evil. Yeah, yeah, whatever. Where's warrior lady and her chicken? God if only you could be reborn as that big chicken... 
 
 You vow to convert to a religion that believes in reincarnation the very instant the credits roll.
 
@@ -88,7 +88,7 @@ Which is all the more frustrating because you can see the potential. You can see
 
 It's over. At last. You sit there for a while, trying to make sense of what you just saw.
 
-So in the end the little girl from the start becomes the warrior woman? The warrior woman who never spoke a word and whose naked body the movie clearly wanted you to have been ogling for the past twnety minutes? Wow. That's certainly... something.
+So in the end the little girl from the start becomes the warrior woman? The warrior woman who never spoke a word and whose naked body the movie clearly wanted you to have been ogling for the past twenty minutes? Wow. That's certainly... something.
 
 The more you think, the less sense it makes. Like why did they bother with that terrible framing story in the first place? And even more bafflingly, how could a film titled "Heavy Metal" use music so poorly and have such dull action sequences? Way worse than Transformers. Yes, that 1986 feature length toy commercial made for kids was an infinity better heavy metal film than Heavy Metal! And why, just why, were all the men in the film so universally horrible while all the women were empty husks? In short, how could a movie so full of promise be so... terrible?
 
