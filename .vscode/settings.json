@@ -4,5 +4,8 @@
         "_site/": true,
         ".sass-cache/": true,
         "support/": true
-    }
+    },
+    "cSpell.words": [
+        "Beatsy"
+    ]
 }
