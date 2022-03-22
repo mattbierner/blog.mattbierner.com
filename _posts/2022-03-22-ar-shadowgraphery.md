@@ -23,7 +23,7 @@ On the technical front, the main thing to understand is that this effect isn't s
 
 The result is magical. Capture a selfie and step away, and your shadow remains fixed in space. Stick out your hand and you can record small [shadowgraphic](https://en.wikipedia.org/wiki/Shadowgraphy_(performing_art)) performances on any surface around town. The app can even capture multiple looping shadow animations and re-project them into the same scene, letting you compose silly little shadow plays.
 
-{% include video.html file="scene.mp4" poster="scene-poster.jpg" attrs="loop controls" description="My shadowgraphery skills are a bit lacking..." %}
+{% include video.html file="scene.mp4" poster="scene-poster.jpg" attrs="controls" description="My shadowgraphery skills are a bit lacking..." %}
 
 If you can't tell, I'm excited. It's great when a project comes together so nicely. But as always, a nagging thought: There's a lot of flashy stuff happening in the AR/VR space right now and sometimes I wonder if there's even space for little projects like this. Why should anyone get all worked up about what is essentially using a very high-tech flashlight to casting shadowy dog shapes with your hands? It's like a baby's toy.
 
