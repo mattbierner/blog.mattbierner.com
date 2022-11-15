@@ -1,3 +1,5 @@
 #!/bin/sh
 FILE=`basename $1 .mp4`
-ffmpeg -ss 00:00:00 -i $FILE.mp4 -vframes 1 $2 -y $FILE-poster.jpg
+DIR=`dirname $1`
+
+ffmpeg -ss 00:00:00 -i $DIR/$FILE.mp4 -vframes 1 $2 -y $DIR/$FILE-poster.jpg
