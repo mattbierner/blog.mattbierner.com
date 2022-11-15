@@ -30,5 +30,5 @@ Unfortunately for now though Virtual Disembodiment is just a prototype. It's not
 Audio asset credits:
 
 - [Breathing](https://freesound.org/people/Erdie/sounds/22039/)
-- [Squelsh](https://freesound.org/people/SoundDesignForYou/packs/36178/)
+- [Squelch](https://freesound.org/people/SoundDesignForYou/packs/36178/)
 - [Eating](https://freesound.org/people/julius_galla/sounds/322296/)
