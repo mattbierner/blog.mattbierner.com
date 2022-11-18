@@ -19,7 +19,7 @@ More seriously though, what I find the interesting about Virtual Disembodiment i
 
 By arranging and scaling the sensory spheres about you in your environment using the app, you can create and explore different sensory experiences. At one point I laid out the the sensory spheres for my back in a row—a bit like the keys on a piano—and had a grand ol' time playing them, feeling the sensations increase and decrease as I went along. 
 
-{% include video.html file="demo.mp4" poster="demo-poster.jpg" attrs="loop controls musted autoplay" description="1980s horror movies such as Basket Case and Society were inspirations for the spheres" %}
+{% include video.html file="sound.mp4" poster="sound-poster.jpg" attrs="loop controls musted autoplay" description="1980s horror movies such as Basket Case and Society were inspirations for the spheres" %}
 
 A lot of effort and money is being spent right now trying to bring human bodies into virtual spaces. Reach out a hand to high-five your virtual mates! Smile and your avatar smiles with you! That's all well and good, but what excites me most is AR and VR's potential for exploring entirely new ways of being and experiencing. Haptics are a uniquely powerful and intimate avenue for this. Even though the technology for creating these haptic experiences is far from perfect, projects like this one show that it is already possible to start playing in the space and have a fun time doing so!
 
