@@ -8,9 +8,9 @@ titleVideo:
     file: 'title.mp4'
 ---
 
-The age of AI is upon us and I for one am ready. After toiling away for eons, now humanity can sit back and let our fresh-faced silicon brethren lighten our load. In fact, I've already offloaded some of my boring tasks, such as emailing emails and coding code. But why stop there? Why not let the AIs help with the other banalities of life too? I dream of a day when the AIs will drive my drives for me, chore my chores, cook my cooks, and perhaps even fuck my fucks, all as I drift about in some sort of ethereal, exquisitely perfumed pleasuredome of higher existence.
+The age of AI is upon us and I for one am ready. After toiling away for eons, now humanity can sit back and let our fresh-faced silicon brethren lighten our load. In fact, I've already offloaded some of my boring tasks to AI, such as emailing emails and coding code. But why stop there? Why not let the AIs help with the other banalities of life too? I dream of a day when the AIs will drive my drives for me, chore my chores, cook my cooks, and perhaps even fuck my fucks, all as I drift about in some sort of ethereal, exquisitely perfumed pleasuredome of higher existence.
 
-I must admit however that all this dreaming of these cyber-Xanadus has really been taxing my organic circuitry. Ahh, if only there were a solution... But of course there is: AI! If AI can already help me write, surely it could also help automate some of my more mundane cognitive tasks, such as thinking.
+I must admit however that all this dreaming of cyber-Xanadus has really been taxing my organic circuitry. Ahh, if only there were a solution for that... Oh but of course there is: AI! If AI can already help me write, surely it could also help automate mundane cognitive tasks like dreaming. But why stop there? Why not automate all thinking?
 
 And so I recently banged together a prototype AI assistant that completes my thoughts for me. It's basically autocomplete but for thoughts. Simply start speaking a thought aloud and the AI finishes the rest. Easy. Once you've tried it you'll wonder how you ever got along without it.
 
