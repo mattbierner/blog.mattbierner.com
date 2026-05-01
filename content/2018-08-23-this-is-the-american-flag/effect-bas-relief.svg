@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1100 650" style="enable-background:new 0 0 1100 650;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#ffffff;}
-	.st1{fill:#333333;}
-</style>
-<g id="bg">
-	<g>
-		<rect x="1" y="1" style="fill:#f7f7f7;" width="1098" height="648"/>
-		<path class="st1" d="M1098,2v646H2V2H1098 M1100,0H0v650h1100V0L1100,0z"/>
-	</g>
-</g>
-<image style="overflow:visible;" width="2090" height="1100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACCoAAARMCAYAAABV4uBKAAAACXBIWXMAABYlAAAWJQFJUiTwAAAK
+<svg enable-background="new 0 0 1100 650" viewBox="0 0 1100 650" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="m1 1h1098v648h-1098z" fill="#f7f7f7"/><path d="m1098 2v646h-1096v-646zm2-2h-1100v650h1100z" fill="#333"/><image height="1100" overflow="visible" transform="matrix(.5 0 0 .5 27.5 50)" width="2090" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACCoAAARMCAYAAABV4uBKAAAACXBIWXMAABYlAAAWJQFJUiTwAAAK
 p2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0w
 TXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRh
 LyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDAgNzkuMTYwNDUxLCAyMDE3LzA1LzA2
@@ -1383,6 +1369,4 @@ ACAbRQUAAAAAAAAAIBtFBQAAAAAAAAAgG0UFAAAAAAAAACAbRQUAAAAAAAAAIBtFBQAAAAAAAAAg
 G0UFAAAAAAAAACAbRQUAAAAAAAAAIBtFBQAAAAAAAAAgG0UFAAAAAAAAACAbRQUAAAAAAAAAIBtF
 BQAAAAAAAAAgG0UFAAAAAAAAACAbRQUAAAAAAAAAIBtFBQAAAAAAAAAgG0UFAAAAAAAAACAbRQUA
 AAAAAAAAIBtFBQAAAAAAAAAgG0UFAAAAAAAAACAbRQUAAAAAAAAAIBtFBQAAAAAAAAAgm/8HC+ea
-98tl2oUAAAAASUVORK5CYII=" transform="matrix(0.5 0 0 0.5 27.5 50)">
-</image>
-</svg>
+98tl2oUAAAAASUVORK5CYII="/></svg>
