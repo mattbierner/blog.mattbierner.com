@@ -8,12 +8,12 @@ titleImage:
     file: 'logo.svg'
     replaceListingTitle: true
     replacePageTitle: true
+links:
+  - title: "Try it out"
+    url: "https://mattbierner.github.io/blueframe/"
+  - title: "Source"
+    url: "https://github.com/mattbierner/blueframe"
 ---
-
-**Links**
-
-- [Try it out][site]
-- [Source](https://github.com/mattbierner/blueframe)
 
 *blueframe* is a small experiment that splices single frames of pornography into gifs. The added frame flashes by so quickly as almost to be subliminal.
 
@@ -24,5 +24,4 @@ Rather appropriately, *blueframe* was inspired by an obscure bit of pop culture 
 While this style of remixing is certainly darkly comedic, a digital take on Tyler's hobby also seemed like a good way to explore some rather interesting topics that are even more relevant in the gif age. *blueframe* comes from the place where the cats are always nyaning and the cage is forever burning, where Max Headroom and Max Hardcore live next to each other in the search suggestions, and where the meme text rolls on and where it's all just pornography.
 
 
-[site]: https://mattbierner.github.io/blueframe/
 [dot-gif]: /series/gif

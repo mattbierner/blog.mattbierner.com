@@ -5,18 +5,21 @@ date: '2016-11-13'
 description: 'git commit -am "go west"'
 titleImage:
     file: "blame.png"
+links:
+  - title: "Game repo"
+    url: "https://github.com/art-dot-git/zork-dot-git"
+    description: "Where the game is played"
+  - title: "Code and Instructions"
+    url: "https://github.com/art-dot-git/zork-client/"
+    description: "How to play and code used for running the game"
+  - title: "Game off entry"
+    url: "https://github.com/mattbierner/game-off-2016/"
+    description: "Entry for game off"
 ---
 
 {% include image.html file="blame.png" %}
 
 [GitHub Game Off 2016](http://gameoff.github.com/) is upon us, and this year's theme of "hacking, modding and/or augmenting" seemed right up my alley. But not content with using Github to *merely* store the source code *for* a game, I decided to meta it up with something far, far more literal: using git to play a game itself. So allow me to introduce the most git of games: *Zork.git*.
-
-**Links**
-
-- [Game repo][game] - Where the game is played
-- [Code and Instructions][src] – How to play and code used for running the game
-- [Game off entry][gameoff] – Entry for game off
-
 
 # About
 *Zork.git* uses a git repo and Github to play the classic interactive fiction game [Zork][zork].
@@ -86,7 +89,6 @@ Please [report any issues you run into][issues] (the bot is almost certainly goi
 [issues]: https://github.com/art-dot-git/zork-client/issues
 [src]: https://github.com/art-dot-git/zork-client/
 
-[gameoff]:        https://github.com/mattbierner/game-off-2016/
 
 
 [tetris]: /stupid-template-tricks-super-template-tetris

@@ -7,13 +7,14 @@ titleImage:
     file: 'title.gif'
 titleVideo:
     file: 'title.mp4'
+links:
+  - title: "Get VoxelizeAR on the App Store"
+    url: "https://apps.apple.com/us/app/voxelizear/id1575681728"
+  - title: "Support"
+    url: "https://github.com/mattbierner/voxelizeAR-support"
 ---
 
 [VoxelizeAR][app] is a new augmented reality app for iOS that lets you convert the real world into [voxels](https://en.wikipedia.org/wiki/Voxel).
-
-**Links**
-- [Get VoxelizeAR on the App Store][app]
-- [Support][docs]
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/3t8PqWGsGC4"  %}
 
@@ -30,5 +31,4 @@ It's unfortunate that not all devices support because the ability to just stroll
 [Give voxelizeAR a try][app] and let me know what you think! It's a free app too, so if you enjoy it be sure to leave a review to help others find it.
 
 [app]: https://apps.apple.com/us/app/voxelizear/id1575681728
-[docs]: https://github.com/mattbierner/voxelizeAR-support
 

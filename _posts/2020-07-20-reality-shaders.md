@@ -5,6 +5,12 @@ description: 'Example project about applying shaders to real world surfaces usin
 series: modded-reality
 titleImage:
     file: 'demo.gif'
+links:
+  - title: "Source"
+    url: "https://github.com/mattbierner/reality-shaders-example"
+  - title: "In The Walls"
+    url: "/in-the-walls"
+    description: "app from the video"
 ---
 
 For the past month or so, I've been working on an iOS AR app that lets you push your face out from behind real world walls as if they were made of a stretchy material. A video is probably worth a thousand words here:
@@ -14,11 +20,6 @@ For the past month or so, I've been working on an iOS AR app that lets you push 
 > **Update**: [Here's the app][walls] from the video
 
 When I shared a preview of this app in action, a few developers were curious about how I achieved the effect. So I've put together a [small example project][source] I'm calling "Reality Shaders" which demonstrates how I distort real world surfaces in AR using shaders.
-
-**Links**:
-
-- [Source][source]
-- [In The Walls][walls] (app from the video)
 
 The project includes a couple of simple demos:
 

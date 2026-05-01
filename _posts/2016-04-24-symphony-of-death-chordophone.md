@@ -5,6 +5,13 @@ date: '2016-04-24'
 description: "Creating an interactive musical instrument from the kills of Halo 5 multiplayer matches"
 titleImage:
     file: "logo.png"
+links:
+  - title: "Website"
+    url: "http://mattbierner.github.io/Symphony-of-Death"
+  - title: "Chordophone"
+    url: "http://mattbierner.github.io/Symphony-of-Death/chordophone"
+  - title: "Source"
+    url: "https://github.com/mattbierner/Symphony-of-Death"
 ---
 
 {% include image.html file="logo.png" description="Through golden visors,<br>their eyes met. Two warriors,<br>bound solely by death." %}
@@ -12,12 +19,6 @@ titleImage:
 When 343 Industries announced a [public data API for *Halo 5*](https://www.halowaypoint.com/en-us/community/blog-posts/halo-api-hackathon), I got pretty excited. Now mind you, while I cracked my share of skulls at *Blood Gulch* back in the day (and let me tell you kids, back then, we were happy just to get 50 pixels apiece in splitscreen mode), I've never actually played *Halo 5*. Or *Halo 4*. Or 3 for that matter! But data be data, and after [my experiment using *Spelunky* keyboard input to draw Etch-a-Sketch style][spelunky], I've been itching to explore other interesting ways to visualize videogameplay. Thus was born *Symphony of Death*. The title is corny as hell, but what else would you expect from someone who busts terrible haikus about good ol' Master Chief.
 
 *Symphony of Death* is an experiment translating Halo 5 match events into interactive musical instruments using WebGL and Web Audio. I'm planning to explore a few different ways of doing this, but thought I would share the first one of these experiments: *Chordophone*.
-
-**Links**
-
-* [Website][site]
-* [Chordophone][Chordophone]
-* [Source][source]
 
 (One quick note: I do work at Microsoft, but this was an entirely personal project. I generally follow Costanza's Worlds Theory regarding work and personal projects. All expression and work on this blog is purely my own, and you'll just have to take my word that I undertook this project because I thought it would be cool. And so it was.)
 
@@ -49,6 +50,4 @@ Look for more  *Symphony of Death* experiments in the future.
 
 [spelunky]: /sketchy-keylogger/
 
-[site]:http://mattbierner.github.io/Symphony-of-Death
 [source]: https://github.com/mattbierner/Symphony-of-Death
-[chordophone]: http://mattbierner.github.io/Symphony-of-Death/chordophone

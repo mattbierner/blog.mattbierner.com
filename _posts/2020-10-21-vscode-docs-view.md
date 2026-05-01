@@ -4,14 +4,14 @@ title: "VS Code Docs View"
 description: VS Code extension that displays documentation in the sidebar or panel.
 titleImage:
     file: 'title.png'
+links:
+  - title: "Extension"
+    url: "https://marketplace.visualstudio.com/items?itemName=bierner.docs-view"
+  - title: "Source"
+    url: "https://github.com/mattbierner/vscode-docs-view"
 ---
 
 The [Docs View][extension] extension for VS Code displays documentation for the symbol at your current cursor position in the sidebar or panel.
-
-**Links**
-
-- [Extension][extension]
-- [Source](https://github.com/mattbierner/vscode-docs-view)
 
 {% include image.html file="title.png" description="Docs in a view" %}
 

@@ -3,6 +3,9 @@ layout: post
 title: "Yield Not"
 date: '2016-05-01'
 description: "A look at optimizing ES6 Iterator based tree traversal"
+links:
+  - title: "Benchmark source"
+    url: "https://github.com/mattbierner/javascript-tree-traversal-iterator-optimization"
 ---
 
 Hark! [Node 6 is out now][node6] and bringing the ES6 like never before. With so many great new features on tap, allow me to offer a case study in performance for just one new area: [iterators][] and [generators][].
@@ -10,11 +13,6 @@ Hark! [Node 6 is out now][node6] and bringing the ES6 like never before. With so
 While authoring a small [directed acyclic word graph (DAWG) library for Javascript][dawg-set] recently, I needed an ES6 iterator to traverse a tree. I found that, as with most things, you can have elegance or you can have performance, but not both. There was an 80x performance difference between my initial, generator based implementation and what I was able to come up with after a few optimizations. 
 
 Now this post isn't actually going to be about writing the fastest tree traversal iterator, but the case hopefully offers some general performance and optimization insights. Let's take a look.
-
-**Links**
-
-* [Benchmark source][source]
-
 
 # The Players 
 Consider a generic k-ary tree:

@@ -29,6 +29,70 @@
     padding-bottom: 0.4em;
 }
 
+.post-links {
+    border-top: 1px solid $lighterGray;
+    border-bottom: 1px solid $lighterGray;
+    color: $lightGray;
+    font-size: 0.95em;
+    margin: 0 auto 2em auto;
+    max-width: 32rem;
+    padding: 0.65em 0;
+    text-align: center;
+
+    .post-links-title {
+        color: $gray;
+        display: block;
+        font-size: 0.85em;
+        font-weight: bold;
+        line-height: 1.35;
+        margin-bottom: 0.3em;
+    }
+
+    .post-links-list {
+        display: inline;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .post-links-item {
+        display: inline;
+        line-height: 1.35;
+        margin: 0;
+    }
+
+    .post-links-item + .post-links-item:before {
+        color: $lightGray;
+        content: "·";
+        margin: 0 0.65em;
+    }
+
+    .post-links-link {
+        font-weight: normal;
+    }
+
+    .post-links-description {
+        color: $gray;
+        display: inline;
+        font-size: 0.92em;
+    }
+
+    .post-links-description:before {
+        content: " (";
+    }
+
+    .post-links-description:after {
+        content: ")";
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .post-links {
+        font-size: 0.9em;
+        max-width: none;
+    }
+}
+
 // Header
 .post-header {
     text-align: center;
@@ -72,6 +136,11 @@
     & > * {
         margin-left: 40px;
         margin-right: 40px;
+    }
+
+    & > .post-links {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     figure {

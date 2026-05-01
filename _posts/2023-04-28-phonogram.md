@@ -6,14 +6,14 @@ titleImage:
     file: 'title.png'
 titleVideo:
     file: 'title.mp4'
+links:
+  - title: "Get Phonogram for iOS and iPad"
+    url: "https://apps.apple.com/us/app/phonogramAR/id1612192523"
+  - title: "Documentation"
+    url: "https://github.com/mattbierner/phongram-support"
 ---
 
 Today I'm excited to announce Phonogram, a new augmented reality app for iOS that lets you create and share short audio messages paired with unique AR effects. The app is available for free in the App Store:
-
-**Links**
-
-- [Get Phonogram for iOS and iPad][app]
-- [Documentation][support]
 
 Phonogram lets you quickly record an audio message, select and customize an augmented reality effect for it, and then send it off to a friend or family member. The unique AR effects change in response to the audio.
 
@@ -39,5 +39,4 @@ You can [get Phonogram in the App Store][app]. It runs on iPhones and iPads. If 
 
 
 [app]: https://apps.apple.com/us/app/phonogramAR/id1612192523
-[support]: https://github.com/mattbierner/phongram-support
 [beatsy]: https://apps.apple.com/us/app/beatsy/id1543162330

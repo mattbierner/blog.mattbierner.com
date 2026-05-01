@@ -4,6 +4,11 @@ title: "Urban Dictionary Neural Network"
 date: '2016-03-13'
 description: "Building an Urban Dictionary dataset and using it to train our future AI overlords"
 series: "machine-learn-me"
+links:
+  - title: "Urban Dictionary word list dataset"
+    url: "https://github.com/mattbierner/urban-dictionary-word-list"
+  - title: "Urban Dictionary complete entry dataset"
+    url: "https://github.com/mattbierner/urban-dictionary-entry-collector"
 ---
 
 Urban Dictionary. Do you know how many potential startup and project names this site has ruined for me?
@@ -13,11 +18,6 @@ I'll spend hours trawling Wiktionary for that perfect name—navigating Latin an
 So, to avoid such pitfalls, I recently downloaded the [Urban Dictionary](http://urbandictionary.com/) dataset for easy offline access. I've also got a few projects in mind that will make good use of this data.
 
 But I quickly realized that this dataset alone would not be enough. A word may not be in Urban Dictionary today, but what's to stop someone from defining it in the future? So, in the second half of this post, I try to train a computer to generate new Urban Dictionary definitions using a character level recurrent neural network.
-
-**Links**
-
-* [Urban Dictionary word list dataset][word_list]
-* [Urban Dictionary complete entry dataset][entry-collector]
 
 # Word List
 Urban dictionary has about 1.4 million entries, each with multiple user provided definition. So, as a first step, I collected the entry names themselves. [You can find the resulting 16mb dataset on GitHub][word_list].

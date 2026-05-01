@@ -3,16 +3,18 @@ layout: post
 title: "The Beatsy app clip program for augmented aural excellence"
 description: Calling all musicians
 series: arr
+links:
+  - title: "Beatsy app clip code guide"
+    url: "https://github.com/mattbierner/beatsy-app-clip-codes#beatsy-app-clip-codes"
+  - title: "Contact me about creating a code"
+    url: "/about"
+  - title: "Beatsy"
+    url: "https://apps.apple.com/us/app/beatsy/id1543162330"
 ---
 
 Calling all musicians! [Beatsy][beatsy] App Clip codes are now available to everyone. This makes it easy to create unique augmented reality effects that respond to your music, and share them in the real world using scannable codes.
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/5iWi_Kd7rfw" description="An app clip code in action" %}
-
-**Links**
-- [Beatsy app clip code guide][guide]
-- [Contact me about creating a code][contact]
-- [Beatsy][beatsy]
 
 App clip codes link a physical code to little app experiences. The neat thing is they don't require downloading an app ahead of time: all a user needs to do is scan a code with their iPhone. This launches Beatsy and starts playing a linked song, with augmented reality distortion applied around the physical location of the code itself.
 

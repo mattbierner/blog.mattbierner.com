@@ -5,6 +5,11 @@ date: '2017-05-29'
 description: "Visualizing how a person's Wikipedia changes after they die"
 titleImage:
     file: "lead.png"
+links:
+  - title: "Site"
+    url: "https://mattbierner.github.io/post-mortem/"
+  - title: "Source"
+    url: "https://github.com/mattbierner/post-mortem"
 ---
 
 {% include image.html file="lead.png" href="https://mattbierner.github.io/post-mortem/" %}
@@ -16,11 +21,6 @@ Never being one for binaries, David Bowie spent the next twenty minutes or so tr
 With all the notable deaths recently, I got to wondering how a person's Wikipedia page is revised after they die: what content is added or removed, and how does the language of the article change? What does the process of going from present tense to past tense look?
 
 *Post Mortem* is a small experiment that explores this. It presents revisions of various people's wikipedia pages in the week following their deaths. The revisions are shown as inline diffs against the pre-death contents of the page, and you can scrub through the revisions to see how the page evolved over time.
-
-**Links**
-
-- [Site][site]
-- [Source][source]
 
 For example, Wikipedia first recorded Bowie's death at 6:38 a.m., but at that point his article was still entirely in the present tense. It took another few minutes before some parts of the article were moved into the past tense, and these changes were quickly reverted because his death hadn't been officially confirmed yet. The first day after Bowie died saw nearly 500 revisions in total, and its interesting to look at how the article after 7 days differs from the original. It's actually more similar than I expected.
 

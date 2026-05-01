@@ -6,18 +6,18 @@ description: "Flattening animated gifs to a single image and generating a slit-s
 series: gif
 titleImage:
     file: "cat.gif"
+links:
+  - title: "Site"
+    url: "https://mattbierner.github.io/scanline-gif/"
+  - title: "Documentation"
+    url: "https://github.com/mattbierner/scanline-gif/blob/gh-pages/documentation/about.md"
+  - title: "Source"
+    url: "https://github.com/mattbierner/scanline-gif"
 ---
 
 {% include image.html file="cat.gif" %}
 
 *[scanline.gif][site]* is an experiment flattening gifs so that multiple frames of animation are shown in a single image. These images themselves can be pretty interesting, but we can also then replay the original animation to generate fun new gifs. The resulting effect is kind of like [slit-scan photography](https://en.wikipedia.org/wiki/Slit-scan_photography).
-
-**Links**
-
-* [Site][site]
-* [Documentation][documentation]
-* [Source][source]
-
 
 # Concept
 The original idea behind *scanline.gif* was to explore rendering every frame of an animated gif in a single (still) image. This is accomplished by breaking the final image into non-overlapping slices and rendering each frame of the animation into different slices. For example, the left side of the final image may show the first frame of the animation, while the middle section may show frame seven. It's easier to show this than explain.
@@ -60,5 +60,4 @@ Besides the basic column rendering showing above, *scanline.gif* provides a few 
 
 
 [site]: https://mattbierner.github.io/scanline-gif/
-[source]: https://github.com/mattbierner/scanline-gif
 [documentation]: https://github.com/mattbierner/scanline-gif/blob/gh-pages/documentation/about.md

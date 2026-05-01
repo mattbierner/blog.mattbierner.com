@@ -7,13 +7,14 @@ titleImage:
     file: 'title.gif'
 titleVideo:
     file: 'title.mp4'
+links:
+  - title: "Get Reality Filters on the App Store"
+    url: "https://apps.apple.com/us/app/reality-filters/id1582341494"
+  - title: "Support and issues"
+    url: "https://github.com/mattbierner/reality-filters-support"
 ---
 
 [Reality Filters][app] is a new iOS app that lets you paint image filters onto the world around you. Turn the world into a giant coloring book or shift the colors of objects in your room.
-
-**Links**
-- [Get Reality Filters on the App Store][app]
-- [Support and issues][docs]
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/RjqUXWXFix0" %}
 
@@ -30,5 +31,4 @@ Meanwhile some of the filters themselves can be traced all the way back to [I'm 
 For now, [Give Reality Filters a try][app] and let me know what you think! It's a free app too, so if you enjoy it be sure to leave a review to help others find it.
 
 [app]: https://apps.apple.com/us/app/reality-filters/id1582341494
-[docs]: https://github.com/mattbierner/reality-filters-support
 

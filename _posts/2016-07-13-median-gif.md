@@ -6,18 +6,18 @@ description: "Median blending gifs"
 series: gif
 titleImage:
     file: "main.gif"
+links:
+  - title: "Site"
+    url: "https://mattbierner.github.io/median-gif/"
+  - title: "Documentation"
+    url: "https://github.com/mattbierner/median-gif/blob/gh-pages/documentation/about.md"
+  - title: "Source"
+    url: "https://github.com/mattbierner/median-gif"
 ---
 
 {% include image.html file="main.gif" %}
 
 *[median.gif][site]* is an experiment blending multiple frames of animated gifs using [median blending][median]. Similar to *[scanline.gif][scanline]*, this allows viewing the entire animation in a single image, or you can play around with the rendering settings to generate new gifs.
-
-**Links**
-
-* [Site][site]
-* [Documentation][documentation]
-* [Source][source]
-
 
 *median.gif* combines multiple frames on an animation by averaging the pixel values of each frame. This produces an image that captures the movement of objects in the scene, as well as which objects are stationary.
 
@@ -39,7 +39,6 @@ The tool also includes a number of [settings][documentation] for tweaking how fr
 [scanline]: /scanline-gif
 
 [site]: https://mattbierner.github.io/median-gif/
-[source]: https://github.com/mattbierner/median-gif
 [documentation]: https://github.com/mattbierner/median-gif/blob/gh-pages/documentation/about.md
 
 [median]: http://petapixel.com/2013/05/29/a-look-at-reducing-noise-in-photographs-using-median-blending/

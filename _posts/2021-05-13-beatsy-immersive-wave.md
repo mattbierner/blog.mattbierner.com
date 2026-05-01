@@ -7,13 +7,14 @@ titleImage:
     file: 'title.gif'
 titleVideo:
     file: 'title.mp4'
+links:
+  - title: "Get Beatsy for iOS"
+    url: "https://apps.apple.com/us/app/beatsy/id1543162330"
+  - title: "Support and documentation"
+    url: "https://github.com/mattbierner/beatsy-support"
 ---
 
 What if the world could dance along to your music? That's always been the core idea behind [Beatsy][beatsy], and today I'm excited to share the new Immersive Wave visualizer which brings this vision one big step closer to being realized.
-
-**Links**
-- [Get Beatsy for iOS][beatsy]
-- [Support and documentation][docs]
 
 The Immersive Wave visualizer sends three dimensional waves rippling through the world in response to music or microphone input. Here's a video of the new visualizer in action:
 
@@ -36,5 +37,4 @@ Beatsy is available for free [in the App Store][beatsy]. If you enjoy the app, b
 Looking forward to seeing what you create using this new immersive effect!
 
 [beatsy]: https://apps.apple.com/us/app/beatsy/id1543162330
-[docs]: https://github.com/mattbierner/beatsy-support
 

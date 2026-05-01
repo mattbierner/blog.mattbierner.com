@@ -36,6 +36,22 @@ layout: default
         </div>
     </header>
 
+    {% if page.links %}
+        <aside class="post-links" aria-labelledby="post-links-title">
+            <div class="post-links-title" id="post-links-title">Links</div>
+            <ul class="post-links-list">
+                {% for link in page.links %}
+                    <li class="post-links-item">
+                        <a class="post-links-link" href="{{ link.url }}">{{ link.title }}</a>
+                        {% if link.description %}
+                            <span class="post-links-description">{{ link.description }}</span>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </aside>
+    {% endif %}
+
     {{ content }}
 
     <footer class="post-footer">

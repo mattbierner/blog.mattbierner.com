@@ -4,16 +4,18 @@ title: Keep on HustliN'
 description: Railing against the H word
 titleImage:
     file: 'title.png'
+links:
+  - title: "Site"
+    url: "https://mattbierner.github.io/Keep-on-HustliN/"
+  - title: "Source"
+    url: "https://github.com/mattbierner/Keep-on-HustliN/"
+  - title: "Hustle forever"
+    url: "https://mattbierner.github.io/Keep-on-HustliN/forever"
 ---
 
 {% include image.html file="title.png" %}
 
 *Keep on HustliN'* is a website that plays Van McCoy's *Keep on Hustlin'* whenever someone uses the word "hustle" on [Hacker News](http://news.ycombinator.com).
-
-**Links**
-- [Site](https://mattbierner.github.io/Keep-on-HustliN/)
-- [Source](https://github.com/mattbierner/Keep-on-HustliN/)
-- [Hustle forever][forever]
 
 While for some the word *hustle* may recall summer afternoons spent chasing the ol' pig skin, and while others may associate *hustling* with the famed Wall Street furry-fests of the late 1980s, the image the word brings to my mind is decidedly less positive. To me, *hustle* suggests something slimy, slightly devious and underhanded. Dirty. And a hustle is small. It is not a heist or a scheme or a swindle, rather it is altogether pathetic when dragged out in the light. Shady salesmen, pickup artists, Martin Shkreli; those are people who hustle.
 

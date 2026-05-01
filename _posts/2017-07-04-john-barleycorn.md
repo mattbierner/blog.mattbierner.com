@@ -5,17 +5,16 @@ date: '2017-07-04'
 description: 'Turning the text of John Barleycorn by Jack London into a drinking game'
 titleImage:
     file: 'top.png'
+links:
+  - title: "Try it out"
+    url: "https://mattbierner.github.io/john-barleycorn-challenge/"
+  - title: "Source"
+    url: "https://github.com/mattbierner/john-barleycorn-challenge"
 ---
 
 {% include image.html file="top.png" href="https://mattbierner.github.io/john-barleycorn-challenge/" %}
 
 *The John Barleycorn Challenge* is a playful look at Jack London's writing about alcoholism in his novel [*John Barleycorn*](https://www.gutenberg.org/ebooks/318). The project examines what would happen if one were to treat the text of *John Barleycorn* as a drinking game, taking a dose of alcohol every time the words "John Barleycorn" appear. Spoiler alert: this usually does not end well.
-
-**Links**
-
-- [Try it out][site]
-- [Source](https://github.com/mattbierner/john-barleycorn-challenge)
-
 
 Now while I love *Jack London*—and while I certainly don't wish to make light of his alcoholism or alcoholism more broadly—I do enjoy looking at text from different perspectives, be it [translating *Moby-Dick* to into color][moby-dick] or plotting the [number of exclamation points in Upton Sinclair's *The Jungle*][jungle]. And reading *John Barleycorn*, after a few chapters I began to notice just how often the words "John Barleycorn" appear. "Hmm," thought I, "wouldn’t it be deliciously ironic if I were to take a shot of whisky every time our good grainy friend here drops in for a visit?"
 

@@ -7,15 +7,17 @@ titleImage:
     file: 'title.gif'
 titleVideo:
     file: 'title.mp4'
+links:
+  - title: "Get the App"
+    url: "https://apps.apple.com/us/app/id1522257130"
+  - title: "Reality shaders example project"
+    url: "/reality-shaders"
+    description: "Xcode project that shows the basic technique I use in this app"
 ---
 
 [*In The Walls*][appstore] is an iOS augmented reality app that lets you push your face out from behind real world walls. Here's what that looks like:
 
 {% include video.html file="title.mp4" poster="title-poster.png" %}
-
-**Links**:
-- [Get the App][appstore]
-- [Reality shaders example project](/reality-shaders) (Xcode project that shows the basic technique I use in this app)
 
 # About
 

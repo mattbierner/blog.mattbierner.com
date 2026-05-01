@@ -7,14 +7,17 @@ titleImage:
     file: 'title.gif'
 titleVideo:
     file: 'title.mp4'
+links:
+  - title: "View the Fire-Toolz &#124;ØFF&#124; 2 Łos† Vagus experience"
+    url: "https://c.beatsy.app/1/ft-vagus"
+    description: "requires a device running iOS 14.5+"
+  - title: "Fire-toolz"
+    url: "http://fire-toolz.bandcamp.com"
+  - title: "Get Beatsy"
+    url: "https://apps.apple.com/us/app/beatsy/id1543162330"
 ---
 
 Today I'm excited to announce the new Fire-Toolz augmented reality musical experience for [Beatsy][beatsy]! This experience was created in collaboration with [Fire-Toolz][firetoolz] and features AR effects designed for a song off of [her latest album](https://fire-toolz.bandcamp.com/album/eternal-home).
-
-**Links**
-- [View the Fire-Toolz &#124;ØFF&#124; 2 Łos† Vagus experience][link] (requires a device running iOS 14.5+)
-- [Fire-toolz][firetoolz]
-- [Get Beatsy][beatsy]
 
 {% include video.html file="demo-720.mp4" poster="demo-720-poster.jpg" attrs="loop controls" description="Demo" %}
 

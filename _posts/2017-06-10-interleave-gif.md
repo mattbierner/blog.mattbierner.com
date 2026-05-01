@@ -6,15 +6,16 @@ series: gif
 description: "Interleaving the frames of two gifs"
 titleImage:
     file: "shark.gif"
+links:
+  - title: "Try it out"
+    url: "https://mattbierner.github.io/interleave-gif/"
+  - title: "Documentation"
+    url: "https://github.com/mattbierner/interleave-gif/blob/gh-pages/documentation/about.md"
+  - title: "Source"
+    url: "https://github.com/mattbierner/interleave-gif"
 ---
 
 {% include image.html file="logo.svg" href="https://mattbierner.github.io/interleave-gif/" %}
-
-**Links**
-
-- [Try it out][site]
-- [Documentation][docs]
-- [Source](https://github.com/mattbierner/interleave-gif)
 
 *interleave.gif* is a small experiment in interleaving the frames of two gifs. The resulting gifs are usually pretty strobe but sometimes the effect can be fun.
 
@@ -38,6 +39,5 @@ And although this experiment is not nearly as interesting as I had hoped—espec
 Check out [blueframe](/blueframe) for the other take on interleaving mentioned at the end of this post.
 
 
-[site]: https://mattbierner.github.io/interleave-gif/
 [docs]: https://github.com/mattbierner/interleave-gif/blob/gh-pages/documentation/about.md
 [dot-gif]: /series/gif

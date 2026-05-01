@@ -5,14 +5,14 @@ description: 'VS Code extension that adds a play/pause button and scrubber to gi
 series: gif
 titleImage:
     file: 'example.gif'
+links:
+  - title: "Extension"
+    url: "https://marketplace.visualstudio.com/items?itemName=bierner.gif-player"
+  - title: "Source"
+    url: "https://github.com/mattbierner/vscode-gif-player"
 ---
 
 In what is without doubt the most practical [`.gif` post](/series/gif) yet, allow me to introduce [Gif Player][extension]: a VS Code extension that adds a play/pause button and scrubber to any gif you open in VS Code.
-
-**Links**
-
-- [Extension][extension]
-- [Source](https://github.com/mattbierner/vscode-gif-player)
 
 {% include image.html file="example.gif" description="Using Gif Player in VS Code" %}
 

@@ -5,16 +5,18 @@ date: '2016-06-13'
 description: "Visualizing Katamari Damacy gameplay input"
 titleImage:
   file: "main.png"
+links:
+  - title: "Site"
+    url: "http://mattbierner.github.io/na-naa-na-na-na-na-naa-naa-naa-na/"
+  - title: "Documentation"
+    url: "https://github.com/mattbierner/na-naa-na-na-na-na-naa-naa-naa-na/blob/gh-pages/documentation/about.md"
+  - title: "Source"
+    url: "https://github.com/mattbierner/na-naa-na-na-na-na-naa-naa-naa-na"
+  - title: "Playstation 2 Input collector"
+    url: "https://github.com/mattbierner/ps2_controller_collector"
 ---
 
 {% include image.html file="main.png" %}
-
-**Links**
-
-* [Site][site]
-* [Documentation][documentation]
-* [Source][source]
-* [Playstation 2 Input collector][collector]
 
 *Katamari Damacy* is more than a game, it's the best argument I know against  anger and hatred. *Katamari Damacy* brings us together. *Katamari Damacy* reminds us that, in the end, we're all just stardust.
 

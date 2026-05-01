@@ -5,15 +5,16 @@ date: '2016-05-16'
 description: "A tool for exploring history in terms of generations instead of years"
 titleImage:
     file: "logo.svg"
+links:
+  - title: "Forward Propagation"
+    url: "http://mattbierner.github.io/forward-propagation/"
+  - title: "Source code"
+    url: "https://github.com/mattbierner/forward-propagation"
+  - title: "all-of-human-history npm package"
+    url: "https://github.com/mattbierner/all-of-human-history"
 ---
 
 {% include image.html file="logo.svg" %}
-
-**Links**
-
-* [Forward Propagation][forward]
-* [Source code][source]
-* [all-of-human-history npm package][history]
 
 Seventy five years separate the end of the American Civil War and the start of the Second World War. Seventy five years... One lifetime... To ride in with *Sherman's March to the Sea* and out again with the *Enola Gay* turning away from Hiroshima...
 
@@ -54,4 +55,3 @@ PS: To feed *Forward Propagation*, I also created a [small npm package with data
 
 [forward]: http://mattbierner.github.io/forward-propagation/
 [history]: https://github.com/mattbierner/all-of-human-history
-[source]: https://github.com/mattbierner/forward-propagation

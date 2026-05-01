@@ -6,6 +6,13 @@ description: "Finding Urban Dictionary entries in text"
 series: newspeak
 titleImage:
     file: "graph.png"
+links:
+  - title: "Vernacular"
+    url: "http://mattbierner.github.io/vernacular/"
+  - title: "Interactive Version"
+    url: "http://mattbierner.github.io/vernacular/interactive"
+  - title: "Source"
+    url: "https://github.com/mattbierner/vernacular"
 ---
 
 > My life fades. All that remain are memories. I remember a time of language... of text... of words. Gone now...<br><br>
@@ -19,12 +26,6 @@ Faux-eighties movie intros aside, this so-called *phrasing singularity* is proba
 Personally, I blame Shakespeare for inventing English to begin with, and much preferred the good old days, when everyone [talk-screeched at each other in some sub-human, mock-sophisticated language of incessant insult](/dubious-wikipedia/).
 
 So recently, I created a tool called *Vernacular* to monitor the spread of this disease. The project builds on my work [downloading an *Urban Dictionary* dataset][ud-data] and is similar in spirit to *[One Thesaurical Motherfucker][otm]*, which transformed text using synonyms. Let's take a look.
-
-**Links**
-
-* [Vernacular][site]
-* [Interactive Version][interactive]
-* [Source][src]
 
 # Vernacular
 *Vernacular* is a tool that takes text and finds all occurrences of *Urban Dictionary* entries in that text. Simple. This often alters the meaning of the original text in ways the author (probably) never could have imagined. 

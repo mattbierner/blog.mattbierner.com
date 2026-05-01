@@ -7,12 +7,12 @@ titleImage:
     file: 'title.gif'
 titleVideo:
     file: 'title.mp4'
+links:
+  - title: "Try the lens"
+    url: "https://www.snapchat.com/unlock/?type=SNAPCOaDE&uuid=eb67a72d3aff4997ac1a1f683523138a&metadata=01"
 ---
 
 I just published my first Snapchat lens: [Ferro Music Viz][lens]. This recreates a version of [Beatsy's][beatsy] 'Ferro' music visualizer for Snapchat.
-
-**Links**
-- [Try the lens][lens]
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/zWy_RNvqVJg" %}
 

@@ -5,13 +5,14 @@ description: "Collection of 308 NFTs, each representing a unique block of two ul
 titleImage:
     file: 'title.png'
     replaceListingTitle: true
+links:
+  - title: "View the collection on Open Sea"
+    url: "https://opensea.io/collection/non-flesh-tokens"
+  - title: "Browse the collection visually"
+    url: "https://nonfleshtokens.com"
 ---
 
 [Non-Flesh Tokens][site] is a collection of 308 image NFTs. Each image is a 512x512 pixel block from two full-body, ultra-high resolution portraits—one of a man and one of a woman. There is one NFT for every segment of these two portraits. The entire collection can be seamlessly reassembled into the original portraits.
-
-**Links**
-- [View the collection on Open Sea][opensea]
-- [Browse the collection visually][site]
 
 The individual NFTs have been listed in a seven day auction with the same starting bid. In my view, this auction and the longer term evolution of the collection are the real artwork. The act of buying, selling, and exchange, all that jazz.
 
