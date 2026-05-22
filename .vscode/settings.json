@@ -2,7 +2,6 @@
 {
     "files.exclude": {
         "_site/": true,
-        ".sass-cache/": true,
         "support/": true
     },
     "cSpell.words": [
@@ -10,5 +9,6 @@
     ],
     "markdown.copyFiles.destination": {
         "/_posts/**/*": "/content/${documentBaseName}/${fileName}"
-    }
+    },
+    "markdown.editor.filePaste.videoSnippet": "{% include video.html file=\"${src}\" poster=\"\" description=\"\" %}"
 }

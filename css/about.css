@@ -1,0 +1,23 @@
+#about-page {
+  text-align: center;
+  max-width: 460px;
+}
+#about-page h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+#about-page h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+#about-page > * {
+  margin-bottom: 3em;
+}
+
+#about-contact .section {
+  margin: 3rem 0;
+}
+
+#about-links a {
+  display: block;
+}

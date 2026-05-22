@@ -2,20 +2,19 @@
    Page Footer
    ========================================================================== */
 .footer-links {
-    margin-bottom: 1.5em;
-
-    & > * {
-        display: block;
-        margin-bottom: 0.4em;
-    }
+  margin-bottom: 1.5em;
+}
+.footer-links > * {
+  display: block;
+  margin-bottom: 0.4em;
 }
 
 .footer-post {
-    display: inline-block;
-    font-size: 0.85em;
-    max-width: 30em;
+  display: inline-block;
+  font-size: 0.85em;
+  max-width: 30em;
 }
 
 .footer-post > * {
-    display: block;
+  display: block;
 }
