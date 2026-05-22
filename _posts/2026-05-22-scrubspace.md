@@ -5,7 +5,7 @@ description: Exploring audio as a 2D space you move through to play it back
 titleImage:
     file: 'title.png'
 links:
-  - title: "Scrubspace"
+  - title: "Try the Scrubspace web app"
     url: "https://scrubspace.mattbierner.com/"
 ---
 
