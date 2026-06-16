@@ -78,7 +78,7 @@ There are advantages to having your eyes on the end of a stick however. Say some
 
 While the [Pale Man, hands for eyes setup I previously explored][hands] was a rather acquired taste, using the selfie stick is comparably approachable and accessible. The stick is comfortable to hold for one, and makes it easy to tilt and angle the view. It's also hard to forget that you are holding the stick, which somewhat helps cut down on unexpected camera movements.
 
-And no post on modded reality would be complete without a discussion of nausea. In this regard, I'd say that selfie reality ranks somewhere between the exorcist inducing [partner mounted camera system briefly explored previously][partner], and the [quite usable body-cam system][body]. While the motion of the camera is generally smooth, with the selfie stick, the camera moves in much broader sweeps that were a little disorienting at time. It's not terrible, but even after some experience with this and other similar devices, I started feeling a little unwell after around twenty minutes or so of continuous use.
+And no post on modded reality would be complete without a discussion of nausea. In this regard, I'd say that selfie reality ranks somewhere between the exorcist inducing [partner mounted camera system briefly explored previously][partner], and the [quite usable body-cam system][body]. While the motion of the camera is generally smooth, with the selfie stick, the camera moves in much broader sweeps that were a little disorienting at times. It's not terrible, but even after some experience with this and other similar devices, I started feeling a little unwell after around twenty minutes or so of continuous use.
 
 
 # Over the Shoulder

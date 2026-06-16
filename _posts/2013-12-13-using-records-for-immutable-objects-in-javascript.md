@@ -379,7 +379,7 @@ Records using custom ctors perform the same as regular objects while auto genera
 
 # Closing Thoughts
 
-Working with immutable objects in Atum, I found the value of using records far outweighs the performance hit. Records allow code to be written and updated code faster, and are much easier to maintain.
+Working with immutable objects in Atum, I found the value of using records far outweighs the performance hit. Records allow code to be written and updated faster, and are much easier to maintain.
 
  
 

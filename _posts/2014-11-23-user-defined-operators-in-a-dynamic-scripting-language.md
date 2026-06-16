@@ -63,7 +63,7 @@ All three classes of Javascript operators follow two grammatical guidelines:
 #### Precedence
 Infix operator [precedence][precedence] determines the grouping of subexpressions, and therefore their order of evaluation, in an expression consisting of multiple terms connected by multiple operators.
 
-Precedence is a relative property. To parse an expression of three terms connected by two operators, such as `a + b * c`, the relative precedences of `*` and `+` determines grouping and order of evaluation. Lower precedence operator expressions are evaluated first: 
+Precedence is a relative property. To parse an expression of three terms connected by two operators, such as `a + b * c`, the relative precedences of `*` and `+` determine grouping and order of evaluation. Lower precedence operator expressions are evaluated first: 
 
 ```js
 // Given the input

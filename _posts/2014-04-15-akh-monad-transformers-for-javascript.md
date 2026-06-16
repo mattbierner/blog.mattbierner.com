@@ -61,7 +61,7 @@ Any change to the structure is going to be painful. Want to branch the stateful 
 It is also impossible to reuse a monolithic structure like `StateAndError` for a different application with slightly different requirements because `StateAndError` hardcodes the composition of State and Error in a way that can not easily be modified.
 
 ## Monad Transformers
-[Monad transformers][monad-transformers] let programers compose monads while maintaining separation of concerns. A transformer takes an inner monad, and outputs a new monad with some specific functionality or properties. The `StateT` transformer outputs a monad that passes state value pairs through the inner monad, the `ListT` transformer outputs a list of results in the inner monad. Most common monads can be easily rewritten to a monad transformer applied to the identity monad.
+[Monad transformers][monad-transformers] let programmers compose monads while maintaining separation of concerns. A transformer takes an inner monad, and outputs a new monad with some specific functionality or properties. The `StateT` transformer outputs a monad that passes state value pairs through the inner monad, the `ListT` transformer outputs a list of results in the inner monad. Most common monads can be easily rewritten to a monad transformer applied to the identity monad.
 
 ```js
 /// A branchable state computation

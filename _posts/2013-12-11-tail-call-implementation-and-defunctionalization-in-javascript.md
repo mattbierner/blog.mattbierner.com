@@ -117,7 +117,7 @@ const facArray = (function() {
 })()
 ```
 
-This further increases performance [by about 1.5x][external-tail-calls]. This two call `trampolineArray` is the best general purpose approach I could develop to invoke tail calls. Using different a storage object however offers one final performance improvement. 
+This further increases performance [by about 1.5x][external-tail-calls]. This two call `trampolineArray` is the best general purpose approach I could develop to invoke tail calls. Using a different storage object however offers one final performance improvement. 
 
 ## Tail Call Object
 Instead of storing tail call data in a specially marked array, they can be stored in a tail call object. `Tail` contains the same elements from the Smarter Array Storage.

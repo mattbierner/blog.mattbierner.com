@@ -332,7 +332,7 @@ var newPrompt = function(k) {
 };
 ```
 
-`pushPrompt` delimites the stack. It pushes `prompt` onto the stack and evaluates computation `c` with the new stack.
+`pushPrompt` delimits the stack. It pushes `prompt` onto the stack and evaluates computation `c` with the new stack.
 
 ```js
 var pushPrompt = function(prompt, c) {

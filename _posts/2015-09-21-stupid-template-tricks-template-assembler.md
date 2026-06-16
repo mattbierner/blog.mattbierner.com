@@ -73,7 +73,7 @@ ASM(
     ...);
 ```
 
-Both approaches are forms of a domain specific language and produce the exact same compiletime result. But whereas the pure template approach uses templates exclusively to built up a computation, the metaprogram built with the embedded domain specific language can use C++ language syntax, such as operators and operator overloading. Values are only used to shuttle around the types. Using C++ language features makes the language more familiar and more expressive. 
+Both approaches are forms of a domain specific language and produce the exact same compiletime result. But whereas the pure template approach uses templates exclusively to build up a computation, the metaprogram built with the embedded domain specific language can use C++ language syntax, such as operators and operator overloading. Values are only used to shuttle around the types. Using C++ language features makes the language more familiar and more expressive. 
 
 As the syntax of the targeted language becomes more complicated, the benefits of the embedded language become much more clear. Trying to write good looking memory addressing in pure template code for example is a bit of a nightmare, but it's easy when we can overload the subscript operator and the `+` and `*` operators. 
 

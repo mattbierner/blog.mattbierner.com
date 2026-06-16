@@ -47,7 +47,7 @@ InputElementRegExp ::
     RegularExpressionLiteral
 ```
 
-Some of the rational behind this bizarre decision is touched on in an old [Mozilla Javascript 2 design document][mozilla-rational].
+Some of the rationale behind this bizarre decision is touched on in an old [Mozilla Javascript 2 design document][mozilla-rational].
 
 ## No Single Valid Top Level Lexing
 In consequence, the tokenization of ECMAScript code can only be determined by parsing the code to detect the context of `/` symbols. This unnecessarily complicates the language implementer’s work. The lexer and parser must be tightly integrated or, at the very least, the lexer must use additional logic to guess the context when it encounters `/` symbols.

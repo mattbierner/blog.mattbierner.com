@@ -14,7 +14,7 @@ You pay Amazon $4 for a rental. Amazon! Get it!?! Just like poster lady! An abso
 
 It doesn't matter because you've already pressed play. If this is how you go, so be it.
 
-A list of bands flash across the screen: Cheap Trick! Black Sabbath!! DEVO!!! Yes, flipping DEVO!!! You try to prepare yourself for what in all likelihood will be single greatest piece of art you have ever or will ever have the privilege of bearing witness to.
+A list of bands flash across the screen: Cheap Trick! Black Sabbath!! DEVO!!! Yes, flipping DEVO!!! You try to prepare yourself for what in all likelihood will be the single greatest piece of art you have ever or will ever have the privilege of bearing witness to.
 
 It starts in space because of course that's how it has to begin. Space. So vast. So empty. Makes you think, doesn't it?
 
@@ -76,7 +76,7 @@ IT MUST BE GOOD! It simply must be! Mustn't it?
 
 So you keep watching. So you keep hoping. And sure there are some bright spots, a few all too brief moments where the animation and action and music all come together. In one story, robotic Micky Mouse seduces a woman. Come to think of it, is it really seduction if the woman is written so that she can only say yes to men (and male robots)? But at least there is a good sequence with some tubes. That lasts ten seconds maybe. Plus robot Micky's spaceship looks pretty amazing. Not much of a plot. Or characters. Or point. Why are you watching this thing again?
 
-The other segments are slogs that you forget as soon as the next one begins. Stiff and awkward action. The female character exist only to flash a bit of flesh. And whenever the rock music does kick in, it feels completely detached from what's going on on screen.
+The other segments are slogs that you forget as soon as the next one begins. Stiff and awkward action. The female character exists only to flash a bit of flesh. And whenever the rock music does kick in, it feels completely detached from what's going on on screen.
 
 By the time the last segment finally starts, you've resigned yourself to the fact that there's not going to be any giant chicken awesomeness today. And indeed, the last segment also doesn't look anything like the poster. 
 

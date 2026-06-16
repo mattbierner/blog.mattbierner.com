@@ -15,7 +15,7 @@ The general benefits of functional programming are already well documented. For 
 Interpreter functions explicitly express their [side effects][side-effects], so in composing functions to build more powerful language operations, we can ensure these too behave as expected. Explicit control of state is extremely helpful in programming language implementation and also enables richer tooling.
 
 ## Immutable Data Structures
-The entire program state to be inspected, saved, and transformed without affecting other computations. The program state can even be extracted from a computation and run it in different computations without affecting the original. 
+The entire program state can be inspected, saved, and transformed without affecting other computations. The program state can even be extracted from a computation and run it in different computations without affecting the original. 
 
 
 # Atum
@@ -30,7 +30,7 @@ Atum is the core part of a project building a complete ECMAScript implementation
 As an academic project, performance is a low priority (Atum may even be the slowest Javascript implementation ever).
 
 ## Prototyping
-Atum allows prototyping new language features at a high level of abstraction, and new programming languages can even be build by composing Atum interpreter functions.
+Atum allows prototyping new language features at a high level of abstraction, and new programming languages can even be built by composing Atum interpreter functions.
 
 Consider a transactional try statement; that is a try statement that restores the original state if the try body fails. The details of this example are not important, but note how transactional try uses composition and a regular try statement and how the entire operation is expressed abstractly with few implementation details.
 

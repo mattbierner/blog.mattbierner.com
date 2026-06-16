@@ -8,7 +8,7 @@ Question: what color is *Moby-Dick*? No, not the white whale, but the text itsel
 
 {% include image.html file="turk1.png" description="Boom! You just read Moby-Dick." %}
 
-In this post, I'll overview my work translating *Moby-Dick* to a stream of colors for use on Blot're. I didn't want to just encode *Moby-Dick* to set of randomly assigned colors either, that would be boring. I wanted to capture the color associations found throughout the book. Basically, what *Moby-Dick* would look like to someone with super strong color synesthesia, so strong that they could no longer perceive words at all, just a pure stream of colors?
+In this post, I'll overview my work translating *Moby-Dick* to a stream of colors for use on Blot're. I didn't want to just encode *Moby-Dick* to a set of randomly assigned colors either, that would be boring. I wanted to capture the color associations found throughout the book. Basically, what *Moby-Dick* would look like to someone with super strong color synesthesia, so strong that they could no longer perceive words at all, just a pure stream of colors?
 
 Starting from the raw text, I'll walk through the entire process translating the text to color. From tokenization and identifying possible color words with Apache [OpenNLP][], to crowd sourcing color associations on [Mechanical Turk][mturk], to generating some neat image representations of the novel, and finally posting the color stream up to [Blot're][blotre].
 

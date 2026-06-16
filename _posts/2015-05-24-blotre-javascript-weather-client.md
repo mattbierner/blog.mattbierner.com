@@ -9,7 +9,7 @@ Hooking shit up to [Blot're][blotre] just got easier thanks to [Blot're.js][blot
 The best way to learn is by doing, so let's use Blot're.js to create a simple weather application for Blot're. This app will display the current temperature in a user's stream. You can find the complete source for this example [here][src].
 
 ###### Update - June 6, 2015
-I've create a Javascript [helper framework](http://github.com/mattbierner/blotre-cl-framework) that greatly simplifies creating command line, disposable client applications.
+I've created a Javascript [helper framework](http://github.com/mattbierner/blotre-cl-framework) that greatly simplifies creating command line, disposable client applications.
 
 # Getting Started
 [Blot're.js][blotre-js] is registered as `'blotre'` on npm. 
@@ -105,7 +105,7 @@ var client = Blotre.create({
 
 The client still has no credentials yet, but now it does have a means of obtaining user authorization.
 
-As the first authorization step, we must direct the user to visit an authrozation confirmation page on `https://blot.re`. `getAuthorizationUrl` returns the url of the page that the user should visit to authorize our client.
+As the first authorization step, we must direct the user to visit an authorization confirmation page on `https://blot.re`. `getAuthorizationUrl` returns the url of the page that the user should visit to authorize our client.
 
 ```js
 client.getAuthorizationUrl();

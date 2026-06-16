@@ -263,13 +263,13 @@ Now say I were perchance to flash forward five years, to December 8th, 2023. Wha
 
 All the five year spans ahead: 2023, 2028, 2033, 2038, 2043... Shit and I would only be like fifty then. How am I supposed to keep it up that long? (though I hear they may have pills for that by then!) It's presumptuous to think I have even another five years. Tomorrow I may die in a car accident or in some kind of telegraphy based erotic electrostimulation incident. Whatever.
 
-It's not time that scares me but stagnation; getting complacent. And what this has already begun? As much as my work over the past five years have challenged and changed me, in some respects I've played it safe. I've never forced myself to rely on an audience or on feedback. And in doing so, maybe I've missed some vital signals. 
+It's not time that scares me but stagnation; getting complacent. And what this has already begun? As much as my work over the past five years has challenged and changed me, in some respects I've played it safe. I've never forced myself to rely on an audience or on feedback. And in doing so, maybe I've missed some vital signals. 
 
 So where do I go from here?
 
 Well short-term, I've got to write up the stupid paper tape project I've been hinting at. It was supposed to go out on December 8th as a capstone of sorts, something that would nicely close out the past five years. Ran out of time. No, that's a lie. It's more like I got sad when I realized the only person I was creating it for was me. And so I played through *Hollow Knight*... Damnit.
 
-And I've got to find space for this DNA printing project. Who would have have thought that finding a popup commercial space to rent for a week or two would be so difficult.
+And I've got to find space for this DNA printing project. Who would have thought that finding a popup commercial space to rent for a week or two would be so difficult.
 
 Always have few other projects in the queue too. 
 

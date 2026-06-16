@@ -20,7 +20,7 @@ While also reverting to a one column layout for smaller screen sizes.
 {% include image.html file="Screen-Shot-2014-12-15-at-8-05-19-PM.png" description="Smaller screen view of the same site" %}
 
 
-I've set up [a simple Github page][page] that describes how to create a two column, while also demonstrating use of the layout itself. Building on the example, it is trivial to change the dimensions of the columns, change the type of content displayed in either column, or add more elaborate styling.
+I've set up [a simple Github page][page] that describes how to create a two column layout, while also demonstrating use of the layout itself. Building on the example, it is trivial to change the dimensions of the columns, change the type of content displayed in either column, or add more elaborate styling.
 
 Check out the [documentation page][page] or the complete [example source][src], and feel free to report any problems or suggest improvements.
 

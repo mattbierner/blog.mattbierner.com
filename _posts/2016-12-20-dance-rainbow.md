@@ -59,7 +59,7 @@ I explored some more advanced shader effects this time around, and also experime
 # Dancing with Myself
 {% include image.html file="blur6.jpg" %}
 
-With the basic hardware and software in place, my first experiment was a very literal take on "I'm Only Dancing so that I Can See the Rainbow". The basic promise of this initial experiment is perhaps best described as *Pleasantville* with a dash of *Footloose*: the world starts out as a dreary place wholly lacking color, and only by dancing do the colors begin to fade in, bringing the world back to its normal hues, and then beyond into some technicolor utopia... (whoa, do you think it could be like an allegory or something?)
+With the basic hardware and software in place, my first experiment was a very literal take on "I'm Only Dancing so that I Can See the Rainbow". The basic premise of this initial experiment is perhaps best described as *Pleasantville* with a dash of *Footloose*: the world starts out as a dreary place wholly lacking color, and only by dancing do the colors begin to fade in, bringing the world back to its normal hues, and then beyond into some technicolor utopia... (whoa, do you think it could be like an allegory or something?)
 
 To make matters a little more interesting, I delegated responsibility for each of the world's primary colors (red, green, blue) to a different body part, with my right hand controlling the reds, my left hand controlling the greens, and my feet controlling the blues. This means you've really got to put your whole body into it if you want to see the rainbow.
  

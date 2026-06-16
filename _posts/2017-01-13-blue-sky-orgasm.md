@@ -122,7 +122,7 @@ Growing more adventurous, and tiring of the prudish reds, I panned over the rest
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/dypfEtxlELc" description="" %}
 
-While the vibrations were quite pronounced, none of it was really arousing. The device certainly wasn't not-stimulating, but I hardly found it stimulating either. And even after further experimentation, adjustments, and prolonged wear, this unfortunately remained the case. I just don't think the *Hush* was designed for this sort of application. It's not a prostate massager or anything of that nature, leading me to believe that it's primary use case is enhancing more traditional sexual activity. So, despite the aspirational title of this experiment, I personally found it quite impossible to reach orgasm using this device alone.
+While the vibrations were quite pronounced, none of it was really arousing. The device certainly wasn't not-stimulating, but I hardly found it stimulating either. And even after further experimentation, adjustments, and prolonged wear, this unfortunately remained the case. I just don't think the *Hush* was designed for this sort of application. It's not a prostate massager or anything of that nature, leading me to believe that its primary use case is enhancing more traditional sexual activity. So, despite the aspirational title of this experiment, I personally found it quite impossible to reach orgasm using this device alone.
 
 The device isn't without appeal however. Using it as I did, the *Hush* really becomes less of a sex toy and more like having a controllable phone vibrator in your nether regions. This opens up some interesting possibilities for everything from notifications, to gaming, to augmenting your senses.
 

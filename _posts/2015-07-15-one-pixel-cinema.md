@@ -31,9 +31,9 @@ So, run this roughly 230,000 times to extract every frame in *Eyes Wide Shut* an
 
 Well I quickly ran into performance problems extracting frames one at a time. For one, ffmpeg has to start and load basic information about the video file for each and every frame. Not too efficient. And not all frames are created equal. 
 
-Greatly simplified, the majority of frames do not store an 1920 x 1080 array of pixels, but instead store change information from the previous frame. Only certain frames, called [I-Frames](https://en.wikipedia.org/wiki/MPEG-1#I-frames) in MPEG, can be decoded without reading any additional frames. Reading a non-I-frame requires decoding multiple prior frames, so extracting frames one at a time is very inefficient since the same frame may end up being decoded up to fifteen times.
+Greatly simplified, the majority of frames do not store a 1920 x 1080 array of pixels, but instead store change information from the previous frame. Only certain frames, called [I-Frames](https://en.wikipedia.org/wiki/MPEG-1#I-frames) in MPEG, can be decoded without reading any additional frames. Reading a non-I-frame requires decoding multiple prior frames, so extracting frames one at a time is very inefficient since the same frame may end up being decoded up to fifteen times.
 
-I could have avoid these inefficiencies by extracting every frame of the video with a single FFmpeg command:
+I could have avoided these inefficiencies by extracting every frame of the video with a single FFmpeg command:
 
 ```
 $ ffmpeg -i "Eyes Wide Shut.mkv" frame%d.png

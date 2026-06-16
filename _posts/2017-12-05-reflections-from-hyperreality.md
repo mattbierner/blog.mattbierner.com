@@ -287,7 +287,7 @@ But now, I think that, even if this is all fake, that doesn't make it any less r
 
 <hr class="bullets">
 
-When most people put on one of these modded reality headsets for the first time. they typically only last thirty seconds or so. A few tries later, maybe they've worked up to a few minutes immersion but still don't trust the view enough to actually move about. Even I, after all these experiments, still don't do so with complete confidence.
+When most people put on one of these modded reality headsets for the first time, they typically only last thirty seconds or so. A few tries later, maybe they've worked up to a few minutes immersion but still don't trust the view enough to actually move about. Even I, after all these experiments, still don't do so with complete confidence.
 
 Meanwhile Juliette and Riley here are still going at it. I'd only shown them the setup for the first time ten minutes ago, and now here on their first outing they already have: entered the shot by walking to the bed, snuggled, somehow removed their clothing, and were now busy engaging in various sexual activities. That's just plain showing off.
 

@@ -39,7 +39,7 @@ These images can be pretty cool but, for even more fun, you can then replay the 
 
 
 # Other Settings
-Besides the basic column rendering showing above, *scanline.gif* provides a few different modes for placing the image slices. [The documentation][documentation] explains these in more detail, along with the other rendering settings, but here's a few quick examples ([original gif used for these examples](https://media2.giphy.com/media/jb5WFJTgSSonu/giphy.gif)):
+Besides the basic column rendering shown above, *scanline.gif* provides a few different modes for placing the image slices. [The documentation][documentation] explains these in more detail, along with the other rendering settings, but here's a few quick examples ([original gif used for these examples](https://media2.giphy.com/media/jb5WFJTgSSonu/giphy.gif)):
 
 
 {% include image.html file="cat-columns.gif" description="Columns - Equal width columns, one for each frame of the animation" %}

@@ -7,7 +7,7 @@ Building Atum using monads makes it easy to add new features to the interpreter 
 
 In this post, I add state to the [delimited continuation monad][mb-decont], and define a small set of operations for working with state.
 
-*[Monad Transformers and Modular Interpreters][modular-interpreters]* details an  elegant approach to interpreter design in a purely functional language. Atum is inspired by this work, but makes some compromises that I feel work better for Javascript (In this case, I believe you probably want to would use the [delimited control transformer][cct] `CCT` over a state monad).
+*[Monad Transformers and Modular Interpreters][modular-interpreters]* details an  elegant approach to interpreter design in a purely functional language. Atum is inspired by this work, but makes some compromises that I feel work better for Javascript (In this case, I believe you probably want to use the [delimited control transformer][cct] `CCT` over a state monad).
 
 # Adding State to the Interpreter Monad
 Adding state to a monad requires the monad to thread state through computation along with values. Building on the delimited continuation monad, state also needs to be threaded through the continuations. A small set of operations will allow computations to get and set the state.
@@ -189,7 +189,7 @@ var extractComputeContext = function(f) {
 ```
 
 # Next
-We now have an interpreter with state and can start defining stateful computations. I'll build on this work next time to add memory and references to the interpreter, while still using persistant data structures.
+We now have an interpreter with state and can start defining stateful computations. I'll build on this work next time to add memory and references to the interpreter, while still using persistent data structures.
 
 
 [atum]: https://github.com/mattbierner/atum

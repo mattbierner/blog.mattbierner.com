@@ -402,7 +402,7 @@ struct Printer<Cell<CellState::Snake, weight, direction>>
 ```
 
 # Game World
-That coves the basic types, so let's move on to implementing the game world. The world is just a fixed size grid. The initial world has a single snake cell some where in it. A food cell will also be placed in the world, but this will be handled later.
+That covers the basic types, so let's move on to implementing the game world. The world is just a fixed size grid. The initial world has a single snake cell somewhere in it. A food cell will also be placed in the world, but this will be handled later.
 
 ```cpp
 constexpr const size_t worldSize = 10;
@@ -427,7 +427,7 @@ using is_in_bounds =
         pos::x < world::size && pos::y < world::size>;
 ```
 
-`is_empty` checks if a position is the game world is unoccupied. Because of [weird short circuiting with templates][short-circuit], we must use `logical_and` to avoid attempting to query out of bounds grid cells. `logical_and` ensures that its second argument will only be evaluated if `is_in_bounds` is true.
+`is_empty` checks if a position in the game world is unoccupied. Because of [weird short circuiting with templates][short-circuit], we must use `logical_and` to avoid attempting to query out of bounds grid cells. `logical_and` ensures that its second argument will only be evaluated if `is_in_bounds` is true.
 
 ```cpp
 template <typename cell, typename pos, typename world>
@@ -452,7 +452,7 @@ struct is_food :
         Thunk<is_type, FoodCell, pos, world>> { };
 ```
 
-`is_free` checks if the snake can move to a given position. The snake can more onto any empty or food cell.
+`is_free` checks if the snake can move to a given position. The snake can move onto any empty or food cell.
 
 ```cpp
 template <typename pos, typename world>

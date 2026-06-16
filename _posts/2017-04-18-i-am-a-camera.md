@@ -162,7 +162,7 @@ While getting used to the reality, I also began the photoshoot in earnest. This 
 
 {% include image.html file="shot1.jpg" href="https://twitter.com/mattbierner/status/843567666614874112" description="Ooh, so artsy! Should have shot in black and white though" %}
 
-You can find the [complete set of images on Twitter][twitter]. With the exception of one or two prototype shots, all of the stills were captured by me as a camera with no post-processing or editing. The camera lacked orientation detection, so some of the shots may be off. Looking over the resulting images, I feel that the scenes looked far better in my head then they do on film, but a few shots are interesting. And that's pretty much par for the course when it comes to photography anyways.
+You can find the [complete set of images on Twitter][twitter]. With the exception of one or two prototype shots, all of the stills were captured by me as a camera with no post-processing or editing. The camera lacked orientation detection, so some of the shots may be off. Looking over the resulting images, I feel that the scenes looked far better in my head than they do on film, but a few shots are interesting. And that's pretty much par for the course when it comes to photography anyways.
 
 As I snapped away, I even imagined that my little experiment must be pretty cutting edge. "It's like I'm living in the future!" I most cocksurely thought to myself, "I must be the first human to ever experience the world as a camera." So just imagine how crushing it was when I took off my goggles and observed countless small groups of tourists dutifully marching from sculpture to sculpture, phones in hand, eager to capture the day's next sight. After that, camera reality seemed pretty mundane.
 

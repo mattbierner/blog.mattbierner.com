@@ -5,7 +5,7 @@ date: '2014-04-10'
 ---
 [Khepri][khepri] V0.22 adds slice unpacks for unpacking a range of values to an array. Here I briefly cover slice unpacks. You can find the Khepri [language documentation here][documentation].
 
-## Rational
+## Rationale
 Functions that take an arbitrary number of arguments are common in Javascript, but writing such variadic functions is fairly confusing and requires a lot of boilerplate code.
 
 ```js

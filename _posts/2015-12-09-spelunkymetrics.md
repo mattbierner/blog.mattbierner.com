@@ -22,7 +22,7 @@ My rush to complete those first few mine levels has led to no end of [YASDs](htt
 At nearly 250 times the length, the longest recorded run lasted 588.439 seconds (one of the two winning runs). Considering that the gold time achievement in Spelunky is unlocked by beating the game in under ten minutes, even this run was pretty fast for normal play. This speed is nothing to boast about however, since the fastest speed runs are closer to the two minute mark. 
 
 ## Sprinting
-Even though I know that I've gotten better at Spelunky, I can't help but feel that I also die a whole lot more than I used to. Sprinting may be partly to blame. Many a game have I begun with the utmost confidence, only to send the poor spelunker sprinting headlong into an arrow, which sends his limp body hurling through the air into a bat, before he bounces off a ledge into pit, falls several hundred feet, and comes to a comfortable repose atop a bed of spikes, all within the first five seconds of gameplay. 
+Even though I know that I've gotten better at Spelunky, I can't help but feel that I also die a whole lot more than I used to. Sprinting may be partly to blame. Many a game have I begun with the utmost confidence, only to send the poor spelunker sprinting headlong into an arrow, which sends his limp body hurling through the air into a bat, before he bounces off a ledge into a pit, falls several hundred feet, and comes to a comfortable repose atop a bed of spikes, all within the first five seconds of gameplay. 
 
 {% include image.html file="spelunky-percent-sprinting.png" %}
 

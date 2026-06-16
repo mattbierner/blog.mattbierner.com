@@ -8,7 +8,7 @@ titleImage:
 
 Some of my earliest memories are of looking out up through a car window. I was small enough that I couldn't see the road, cars, or really anything at ground level, so my world was one of clouds, treetops, telephone lines, poles, overpasses, and of course the beautiful blue sky.
 
-The memories are just flashes really: the trees of my street forming a canopy; the twisting of that interstate exchange we sometimes took to go see family in other state; the soft roar of the road. All filled with a liminal sort of wonder, a kind of knowing there was something more out there while also not really knowing.
+The memories are just flashes really: the trees of my street forming a canopy; the twisting of that interstate exchange we sometimes took to go see family in another state; the soft roar of the road. All filled with a liminal sort of wonder, a kind of knowing there was something more out there while also not really knowing.
 
 {% include image.html file="title.jpg" %}
 

@@ -20,7 +20,7 @@ Inspired by this effort, I recently created a small collection of gifs that each
 {% include image.html file="array.png" %}
 
 
-First up, *rainbow-array.gif* ([view](https://mattbierner.github.io/allthecolors.gif/rainbow-array), [file](https://dl.dropboxusercontent.com/s/skuaud9x4ss447m/rainbow-array.gif?dl=0)). Each frame of this gif is 16 by 16 pixels, allowing 256 unique colors per frame. To hit all 16,777,216 colors,  the animation contains 65535 frames, each lasting 4 hundredths of a second (25fps) for a total run time of around 44 minutes. This is orders of magnitude faster than the 160 odd years will @wholerainbow require to achieve a similar feat. 
+First up, *rainbow-array.gif* ([view](https://mattbierner.github.io/allthecolors.gif/rainbow-array), [file](https://dl.dropboxusercontent.com/s/skuaud9x4ss447m/rainbow-array.gif?dl=0)). Each frame of this gif is 16 by 16 pixels, allowing 256 unique colors per frame. To hit all 16,777,216 colors,  the animation contains 65535 frames, each lasting 4 hundredths of a second (25fps) for a total run time of around 44 minutes. This is orders of magnitude faster than the 160 odd years @wholerainbow will require to achieve a similar feat. 
 
 The colors increase by counting from `0x000000` to `0xffffff`, working left to right in each frame. File size is about 70MB.
 

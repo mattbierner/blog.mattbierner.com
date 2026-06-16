@@ -14,7 +14,7 @@ The flow of a single interactive Nibbler game step will be:
 
 1. Compile time - Load and deserialize the current game state.
 2. Compile time - Take one player input.
-3. Compile time - For the given input and current game state, advanced the world one step.
+3. Compile time - For the given input and current game state, advance the world one step.
 4. Run time - Print display of world type to `stdout`.
 5. Run time - Write serialized world type to file.
 
@@ -412,7 +412,7 @@ Interactive Nibbler gets player input from C preprocessor macros specified on th
 This code replaces the `/* get input */` block in the `main` function above.
 
 ## Example Game
-Brining it all together, here’s an example game of interactive Nibbler. It runs around half a FPS, which, considering, is really not too bad. 
+Bringing it all together, here’s an example game of interactive Nibbler. It runs around half a FPS, which, considering, is really not too bad. 
 
 Using the clang compiler, we provide input using a compiler flag (`-D UP`, `-D DOWN`, `-D LEFT`, or `-D RIGHT`), and compile the current game to `snake`. The `snake` program is executed, which both prints out the new game board and also serializes it to a file. Recompiling continues on with the next step.
 

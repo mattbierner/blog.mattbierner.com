@@ -308,7 +308,7 @@ Object.prototype.getEnumerableProperties = function() {
 ```
 
 ## Property Descriptors
-ECMAScript objects store their properties using property descriptors ([ECMAScript5.1 8.10][ecma51]). A property descriptor may hold a property's value, but it also manages property metadata and can can define accessors that decouple a property from a memory value .  
+ECMAScript objects store their properties using property descriptors ([ECMAScript5.1 8.10][ecma51]). A property descriptor may hold a property's value, but it also manages property metadata and can define accessors that decouple a property from a memory value .  
 
 ```js
 define("atum/value/property", [
@@ -329,7 +329,7 @@ var Property = record.declare(null, [
 exports.Property = Property;
 ```
 
-There are two general categories of property descriptors: data descriptors directly hold a value, while accessor descriptors uses getter and setter functions to access a value. Both types have `enumerable` and `configurable` flags.
+There are two general categories of property descriptors: data descriptors directly hold a value, while accessor descriptors use getter and setter functions to access a value. Both types have `enumerable` and `configurable` flags.
 
 ```
 var createValueProperty = function(value, enumerable, writable, configurable) {

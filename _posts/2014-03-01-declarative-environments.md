@@ -336,7 +336,7 @@ var dereferenceFrom = function(c, f) {
 # Environment References
 An `EnvironmentReference` is an internal reference to a value held in an environment ([source](https://github.com/mattbierner/atum/blob/master/lib/context/environment_reference.js)).
 
-During interpretation, when an identifier is encountered, it is not deference to a value immediately. Instead, an `EnvironmentReference` is created for the identifier, with the identifier name referencing a binding in the current environment. This binding may not actually exist, but we won't know this until the `EnvironmentReference` is dereferenced.
+During interpretation, when an identifier is encountered, it is not dereferenced to a value immediately. Instead, an `EnvironmentReference` is created for the identifier, with the identifier name referencing a binding in the current environment. This binding may not actually exist, but we won't know this until the `EnvironmentReference` is dereferenced.
 
 An unresolvable reference is created when no binding exists for `name` in any environment. This creates an `EnvironmentReference` without a `base`.
 

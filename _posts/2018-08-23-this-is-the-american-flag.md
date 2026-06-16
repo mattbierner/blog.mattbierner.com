@@ -148,9 +148,9 @@ titleImage:
 {% include image.html file="red-shape.svg" description="This is the American flag covered in blood" %}
 {% include image.html file="red-shape.svg" description="This is the American flag covered in fake blood" %}
 {% include image.html file="red-shape.svg" description="This is the American flag covered in pig's blood" %}
-{% include image.html file="red-shape.svg" description="This is the American flag covered in the blood of heros" %}
-{% include image.html file="red-shape.svg" description="This is the American flag covered in mensural blood" %}
-{% include image.html file="red-shape.svg" description="This is the American flag covered in the mensural blood of heros" %}
+{% include image.html file="red-shape.svg" description="This is the American flag covered in the blood of heroes" %}
+{% include image.html file="red-shape.svg" description="This is the American flag covered in menstrual blood" %}
+{% include image.html file="red-shape.svg" description="This is the American flag covered in the menstrual blood of heroes" %}
 
 {% include image.html file="symbol-firework.svg" description="This is the American flag with a fireworks emoji" %}
 {% include image.html file="symbol-rocket.svg" description="This is the American flag with a rocket emoji" %}

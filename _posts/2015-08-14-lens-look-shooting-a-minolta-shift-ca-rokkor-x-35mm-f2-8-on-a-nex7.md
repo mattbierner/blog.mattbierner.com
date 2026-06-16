@@ -26,7 +26,7 @@ Pick up a Shift CA and the first thing you'll notice is a large disk, just above
 
 {% include image.html file="DSC9103.jpg" %}
 
-Contrast the Minolta Shift CA with Olympus' superb Zuiko 24mm shift lens, pictured left. While the Zuiko is undoubtably heavier and physically larger, it tapers from the massive front optic to the mounting plate, and therefore feels much smaller in the hand or mounted a camera. And that's compared to a 24mm shift lens. The comparable Olympus 35mm shift Zuiko is practically petite next to the Shift CA and far more enjoyable to shoot with (the 35mm Zuiko is superior in almost every way to the Minolta Shift CA and is cheaper too).
+Contrast the Minolta Shift CA with Olympus' superb Zuiko 24mm shift lens, pictured left. While the Zuiko is undoubtably heavier and physically larger, it tapers from the massive front optic to the mounting plate, and therefore feels much smaller in the hand or mounted on a camera. And that's compared to a 24mm shift lens. The comparable Olympus 35mm shift Zuiko is practically petite next to the Shift CA and far more enjoyable to shoot with (the 35mm Zuiko is superior in almost every way to the Minolta Shift CA and is cheaper too).
 
 This is a lens made for the tripod; there are simply too many pieces to adjust for practical handheld shooting. When adapting the Shift CA to a modern mirrorless system, given its heft, I recommend against using your camera's tripod mount. Instead find a tripod mount that sits on the lens adapter itself. I use a Novoflex MD to E-Mount adapter, plus the compatible tripod mount.
 
