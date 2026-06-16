@@ -42,7 +42,7 @@ Clearly running `reallyExpensiveParser` is really expensive, so we should minimi
 But consider what happens if the first `reallyExpensiveParser` succeeds and then the input `'b'` is encountered. When the `character 'a'` parser fails, `attempt` backtracks and the second choice of the `either` is run. This runs `reallyExpensiveParser` again with the same input to get the same value.
 
 ## Issues with Argument Based Memoization
-Standard memoization memoizes a function on its input, mapping arguments to cached values. But this wont work for the inner continuation functions used in Bennu's implementation.
+Standard memoization memoizes a function on its input, mapping arguments to cached values. But this won't work for the inner continuation functions used in Bennu's implementation.
 
 ```js
 always = \x ->
@@ -83,16 +83,16 @@ either = \p q ->
         p(state, m, cok, cerr, eok, peerr);
 ```
 
-Top level calls to parsers are free to pass in an existing memoization table or provide a empty one.
+Top level calls to parsers are free to pass in an existing memoization table or provide an empty one.
 
 ## Memoization Key
 
-Using the argument set as the memoization table lookup will not work, so what should the memoizer use for keys? `m` is shared between all parsers, so one part of the key must identify the target parser. The other part must be the state, since the state contains all the information that could effect the parser's output: position, input stream, and user data.
+Using the argument set as the memoization table lookup will not work, so what should the memoizer use for keys? `m` is shared between all parsers, so one part of the key must identify the target parser. The other part must be the state, since the state contains all the information that could affect the parser's output: position, input stream, and user data.
 
 
 ## What To Store
 
-The memoize a parser, unlike a regular function, we can't cache the returned result of a parser in the memo table. Parsers are continuation based, and evaluating a continuation will evaluate the rest of the program:
+To memoize a parser, unlike a regular function, we can't cache the returned result of a parser in the memo table. Parsers are continuation based, and evaluating a continuation will evaluate the rest of the program:
 
 ```js
 always = \x ->
@@ -180,7 +180,7 @@ Memoer.update = \m key val -> new Memoer(key, val, m);
 
 ## Tree Storage
 
-One problem with the simple memoization table is that lookups are linear. Lookup performance can be improved by storing entries in a ordered tree. Position is the obvious choice for sorting the tree data, with each node containing a key, value map. 
+One problem with the simple memoization table is that lookups are linear. Lookup performance can be improved by storing entries in an ordered tree. Position is the obvious choice for sorting the tree data, with each node containing a key, value map. 
 
 Bennu uses [Seshet][seshet] for this tree. Seshet stores data in an immutable [AVL tree][avltree]. A self balancing tree is especially important for parsers because position is constantly increasing and an unbalanced tree would quickly degrade into a linked list.  
 

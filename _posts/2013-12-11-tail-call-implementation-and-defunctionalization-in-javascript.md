@@ -5,7 +5,7 @@ date: '2013-12-11'
 ---
 [Tail calls][tail-calls] are a necessary tool for functional-style Javascript. Without language support, tail calls are not an optimization, but  tail calls allow using recursion without worrying about stack size. 
 
-I explore several tail call implementations and their relative performance. Even small optimizations can have big a performance impact. I start with the most simple solution, working up to one with 4x faster. Then a more drastic transformation, defunctionalization, is used to achieve 10x performance over the original. 
+I explore several tail call implementations and their relative performance. Even small optimizations can have a big performance impact. I start with the most simple solution, working up to one with 4x faster. Then a more drastic transformation, defunctionalization, is used to achieve 10x performance over the original. 
 
 The base recursive factorial function should be familiar. I've written it to explicitly show the tail call: 
 
@@ -117,10 +117,10 @@ const facArray = (function() {
 })()
 ```
 
-This further increases performance [by about 1.5x][external-tail-calls]. This two call `trampolineArray` is best general purpose approach I could develop to invoke tail calls. Using different a storage object however offers one final performance improvement. 
+This further increases performance [by about 1.5x][external-tail-calls]. This two call `trampolineArray` is the best general purpose approach I could develop to invoke tail calls. Using different a storage object however offers one final performance improvement. 
 
 ## Tail Call Object
-Instead of storing tail call data in an specially marked array, they can be stored in a tail call object. `Tail` contains the same elements from the Smarter Array Storage.
+Instead of storing tail call data in a specially marked array, they can be stored in a tail call object. `Tail` contains the same elements from the Smarter Array Storage.
 
 ```js
 const Tail = function(f, args) {
@@ -179,7 +179,7 @@ const trampolineDefun = (k) => {
 const facDefun = n => trampolineDefun(facDefunImp(n, 1))
 ```
 
-Defunctionalization is a much more destructive transform than the other tail call approches. It requires inlines and splits the factorial function's logic. For larger, more complex programs, defunctionalization will be really ugly.
+Defunctionalization is a much more destructive transform than the other tail call approaches. It requires inlines and splits the factorial function's logic. For larger, more complex programs, defunctionalization will be really ugly.
 
 Performance is [about 10x][defunctionalized-tail-calls] the original bind tail call approach.
 

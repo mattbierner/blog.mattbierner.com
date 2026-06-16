@@ -16,7 +16,7 @@ I'm ready. I lay back, trying to stay calm but the anticipation is almost unbear
 
 It hits me and oh christ does it feel good. Something about "CNN," but it doesn't matter. What he says never matters—it's *how* he says it—and today, that fiery campaigner I fell in love with is back again in full force. Every word carefully selected for maximum impact, every exclamation point a bomb; he's really letting them have it. Don packs more passion into each tweet than can be found in Jane Austen's entire body of work, and while millions may follow him, none know him like I do.
 
-I barely have time to collect myself before the next one hits. *Holy fuck!* Just when it seems that we've reached pleasure's zenith, with but a few words, Don takes me to still loftier clines. It's so much more than just physical passion though. Up here, time stops. Just him and I; no thought; no worry; and together, we are great.
+I barely have time to collect myself before the next one hits. *Holy fuck!* Just when it seems that we've reached pleasure's zenith, with but a few words, Don takes me to still loftier climes. It's so much more than just physical passion though. Up here, time stops. Just him and I; no thought; no worry; and together, we are great.
 
 When I come to, the first golden rays of dawn are peeking through the window. Three thousand miles between us, but for one brief moment, we were whole. I stare at my phone, hoping. No... my Atlas has work to do. Tomorrow, tomorrow, there's always tomorrow. For he is Donald Trump, the most powerful man in the world. Donald Trump, my cyber lover.
 

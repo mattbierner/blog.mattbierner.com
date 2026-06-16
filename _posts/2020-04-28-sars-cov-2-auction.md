@@ -16,7 +16,7 @@ Also: free shipping!
 
 {% include image.html file="roll-1.jpg" %}
 
-The genome was printed using the same paper tape machine and encoding that I used for [my attempt to print the human genome](/dna-print). Compared the human genome though, SARS-CoV-2 is a sneaky little bastard with only [30,000 bases](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512). Even with a very inefficient encoding that punches one base per line, the tape is only around 250 feet long (75 meters) stretched out and 5 inches (12 cm) in diameter when rolled up. <!-- the roll is roughly one million times larger than an actual virus! -->
+The genome was printed using the same paper tape machine and encoding that I used for [my attempt to print the human genome](/dna-print). Compared to the human genome though, SARS-CoV-2 is a sneaky little bastard with only [30,000 bases](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512). Even with a very inefficient encoding that punches one base per line, the tape is only around 250 feet long (75 meters) stretched out and 5 inches (12 cm) in diameter when rolled up. <!-- the roll is roughly one million times larger than an actual virus! -->
 
 So yeah, finally you can get yourself COVID-19 over the internet! Stick it in an airtight display case. Shower it in Lysol. Burn it. Whatever. It's for a good cause.
 

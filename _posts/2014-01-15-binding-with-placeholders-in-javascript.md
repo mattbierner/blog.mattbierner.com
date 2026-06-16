@@ -42,7 +42,7 @@ placeholder(dot10xs, 5)(4, null, 2); // dot2(10, 5, 10, 4, null, 2) // 120
 ```
 
 # Implementation
-`placeholder` takes a function `f` and a set of bound arguments. The bound arguments map argument indices to bound values, and may contains holes. For example, we can bind arguments at index 0 and 2, but leave index 1 open (along implicitly with all indices greater than 2). `placeholder` returns a function that fills in unbound arguments and forwards all arguments to `f`.
+`placeholder` takes a function `f` and a set of bound arguments. The bound arguments map argument indices to bound values, and may contain holes. For example, we can bind arguments at index 0 and 2, but leave index 1 open (along implicitly with all indices greater than 2). `placeholder` returns a function that fills in unbound arguments and forwards all arguments to `f`.
 
 Bound arguments are provided as initial arguments to `placeholder`. The index of a bound argument in the call to `placeholder` determines the index of the argument in `f` being bound.
 
@@ -89,7 +89,7 @@ var placeholder = function(f /*, ...*/) {
 ## Performance
 [This JSPerf][jsperf] shows `placeholder` has high overhead compared to manually forwarding arguments. Every call to a function using `placeholder` requires two function calls and a lot of iteration, array manipulation, and allocation.
 
-Therefore, `placeholder` is probably not a good solution for small math functions like `dot2`. But for more substantial interfaces, `placeholder` can make code cleaner and eliminate a lot manual argument forwarding.
+Therefore, `placeholder` is probably not a good solution for small math functions like `dot2`. But for more substantial interfaces, `placeholder` can make code cleaner and eliminate a lot of manual argument forwarding.
 
 
 [c++ placeholder]: http://en.cppreference.com/w/cpp/utility/functional/bind

@@ -25,11 +25,11 @@ The result is magical. Capture a selfie and step away, and your shadow remains f
 
 {% include video.html file="scene.mp4" poster="scene-poster.jpg" attrs="controls" description="My shadowgraphery skills are a bit lacking..." %}
 
-If you can't tell, I'm excited. It's great when a project comes together so nicely. But as always, a nagging thought: There's a lot of flashy stuff happening in the AR/VR space right now and sometimes I wonder if there's even space for little projects like this. Why should anyone get all worked up about what is essentially using a very high-tech flashlight to casting shadowy dog shapes with your hands? It's like a baby's toy.
+If you can't tell, I'm excited. It's great when a project comes together so nicely. But as always, a nagging thought: There's a lot of flashy stuff happening in the AR/VR space right now and sometimes I wonder if there's even space for little projects like this. Why should anyone get all worked up about what is essentially using a very high-tech flashlight to cast shadowy dog shapes with your hands? It's like a baby's toy.
 
 Or maybe that's not such a bad thing.
 
-In many ways, this little prototype embodies what I love about augmented reality and values at the heart of [Rare Realities](https://rarerealities.com/). AR should be magical. It should let you play with and delight in the world around you. It should be open ended and invite creative exploration on your terms. And if the skilled shadowgraphers of old could bring to life creatures, people, and entires fantasies using just their hands, a candle, and perhaps a few bits of scrap, imagine what they could create using something like this? Imagine what *you* could create?
+In many ways, this little prototype embodies what I love about augmented reality and values at the heart of [Rare Realities](https://rarerealities.com/). AR should be magical. It should let you play with and delight in the world around you. It should be open ended and invite creative exploration on your terms. And if the skilled shadowgraphers of old could bring to life creatures, people, and entire fantasies using just their hands, a candle, and perhaps a few bits of scrap, imagine what they could create using something like this? Imagine what *you* could create?
 
 {% include video.html file="title.mp4" poster="title-poster.jpg" attrs="loop controls" %}
 

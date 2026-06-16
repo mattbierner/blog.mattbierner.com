@@ -16,9 +16,9 @@ links:
 
 *The John Barleycorn Challenge* is a playful look at Jack London's writing about alcoholism in his novel [*John Barleycorn*](https://www.gutenberg.org/ebooks/318). The project examines what would happen if one were to treat the text of *John Barleycorn* as a drinking game, taking a dose of alcohol every time the words "John Barleycorn" appear. Spoiler alert: this usually does not end well.
 
-Now while I love *Jack London*—and while I certainly don't wish to make light of his alcoholism or alcoholism more broadly—I do enjoy looking at text from different perspectives, be it [translating *Moby-Dick* to into color][moby-dick] or plotting the [number of exclamation points in Upton Sinclair's *The Jungle*][jungle]. And reading *John Barleycorn*, after a few chapters I began to notice just how often the words "John Barleycorn" appear. "Hmm," thought I, "wouldn’t it be deliciously ironic if I were to take a shot of whisky every time our good grainy friend here drops in for a visit?"
+Now while I love *Jack London*—and while I certainly don't wish to make light of his alcoholism or alcoholism more broadly—I do enjoy looking at text from different perspectives, be it [translating *Moby-Dick* into color][moby-dick] or plotting the [number of exclamation points in Upton Sinclair's *The Jungle*][jungle]. And reading *John Barleycorn*, after a few chapters I began to notice just how often the words "John Barleycorn" appear. "Hmm," thought I, "wouldn’t it be deliciously ironic if I were to take a shot of whisky every time our good grainy friend here drops in for a visit?"
 
-It turns out that "John Barleycorn" appears some 212 times in the novel's 65,000 or so words, with a fairly even distribution throughout—although there are certainly a few sprees and dry spells. Using [the The John Barleycorn Challenge website][site], you can explore how just such a scenario would play out. The site allows you to configure:
+It turns out that "John Barleycorn" appears some 212 times in the novel's 65,000 or so words, with a fairly even distribution throughout—although there are certainly a few sprees and dry spells. Using [The John Barleycorn Challenge website][site], you can explore how just such a scenario would play out. The site allows you to configure:
 
 - Reading rate
 - Reader weight and sex

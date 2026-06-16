@@ -116,7 +116,7 @@ No, I knew the only way I could realize my vision would be to work within the ad
 
 So I tried reaching out to several adult video production companies about the idea. Never heard anything back. Maybe I didn't present the idea well. After all, I was sick the day they covered this scenario in *Professional Communications 101*. Or maybe these studios are used to fan mail asking to "help out with a great project idea." Or maybe they thought the idea sucked. Can't say I blame them. Even I was pretty sure the resulting video wouldn't be good in any traditional sense.
 
-An article in *The Guardian* is what eventually made this project possible. The article spotlight the world of professionally produced, custom fetish videos. Apparently that is a thing, and it actually sounded exactly like what I needed: people who I could work with to make my weird project a reality. I could even pretend to have have a VR headset fetish if that's what it would take. Or perhaps an eyeball fetish... 
+An article in *The Guardian* is what eventually made this project possible. The article spotlighted the world of professionally produced, custom fetish videos. Apparently that is a thing, and it actually sounded exactly like what I needed: people who I could work with to make my weird project a reality. I could even pretend to have a VR headset fetish if that's what it would take. Or perhaps an eyeball fetish... 
 
 <hr class="bullets">
 
@@ -176,7 +176,7 @@ In hindsight, this terminological confusion was sometimes pretty entertaining. T
 
 <hr class="bullets">
 
-I'm quiet by nature, but when I'm nervous I tend to talk a lot. We had about half and hour to setup before Riley and Juliette showed up, and the whole time I was prattling on about some of my other projects, asking questions about what to expect, and generally interrogating Dan and Rhiannon about the history of Anatomik and their experiences in the adult entertainment industry.
+I'm quiet by nature, but when I'm nervous I tend to talk a lot. We had about half an hour to setup before Riley and Juliette showed up, and the whole time I was prattling on about some of my other projects, asking questions about what to expect, and generally interrogating Dan and Rhiannon about the history of Anatomik and their experiences in the adult entertainment industry.
 
 I really was interested too. I love learning about people and what they do, especially when it's so unfamiliar. And the adult entertainment industry itself fascinates me. Not for any salacious reasons, but for what it is, and what this content and how we relate to it says about us. America is certainly an interesting case in that last regard at least.
 
@@ -289,7 +289,7 @@ But now, I think that, even if this is all fake, that doesn't make it any less r
 
 When most people put on one of these modded reality headsets for the first time. they typically only last thirty seconds or so. A few tries later, maybe they've worked up to a few minutes immersion but still don't trust the view enough to actually move about. Even I, after all these experiments, still don't do so with complete confidence.
 
-Meanwhile Juliette and Riley here are still going at it. I'd only shown them the setup for the first time ten minutes ago, and now here on their first outing they already have: entered the shot by walking to the bed, snuggled, somehow remove their clothing, and were now busy engaging in various sexual activities. That's just plain showing off.
+Meanwhile Juliette and Riley here are still going at it. I'd only shown them the setup for the first time ten minutes ago, and now here on their first outing they already have: entered the shot by walking to the bed, snuggled, somehow removed their clothing, and were now busy engaging in various sexual activities. That's just plain showing off.
 
 Heck, they had already even well surpassed me. Not that this was difficult mind you. 
 
@@ -339,7 +339,7 @@ And is this even me? Is this my voice? Why am I even writing this?
 
 <hr class="bullets">
 
-<blockquote class="big-quote">Is that you John Wanye?</blockquote>
+<blockquote class="big-quote">Is that you John Wayne?</blockquote>
 
 <hr class="bullets">
 
@@ -389,7 +389,7 @@ While I certainly found using the setup to be entertaining, it was also very awk
 
 <hr class="bullets">
 
-But technology brings it's own complications. Example: during one intimate moment, Riley quite literally was blinded when iOS 11 decided that now would be the perfect time to configure *Do Not Disturb While Driving*. Dear Apple, I appreciate that you are trying to save lives and all, but seriously! I also imagine that the bug report for this incident would have been highly entertaining. 
+But technology brings its own complications. Example: during one intimate moment, Riley quite literally was blinded when iOS 11 decided that now would be the perfect time to configure *Do Not Disturb While Driving*. Dear Apple, I appreciate that you are trying to save lives and all, but seriously! I also imagine that the bug report for this incident would have been highly entertaining. 
 
 Sex is already complicated enough and now we're going to throw software updates and notifications and adverts and ransomware and fake news into the mix? The future will be interesting indeed. 
 

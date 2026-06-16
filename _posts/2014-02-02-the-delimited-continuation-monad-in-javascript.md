@@ -186,7 +186,7 @@ It also keeps the details of how continuations are implemented out of the abstra
 
 # Delimited Continuations
 
-Regular continuations are powerful enough to implement most programming languages, but they have some importantly limitations.
+Regular continuations are powerful enough to implement most programming languages, but they have some important limitations.
 
 The regular continuation represents the remainder of a computation in its entirety, evaluation is all or nothing. True first class continuations (but not CPS) cannot even return values. How could they? Evaluating the continuation evaluates the rest of the program, so where would the value be returned? This greatly restricts the usefulness of continuations. 
 
@@ -199,10 +199,10 @@ The [Scheme wiki][scheme-wiki] has a good introduction to delimited continuation
 
 Atum uses delimited computations with a monadic interface for control flow. The Atum code and examples given here are based on *[A Monadic Framework for Delimited Continuations][monadic-framework]*.
 
-This implementation uses prompts to delimit computations in a control stack. Four basic operation define the delimitated continuation API.
+This implementation uses prompts to delimit computations in a control stack. Four basic operations define the delimited continuation API.
 
 ## The Control Stack
-The control stack is a ordered list of control segments and prompts that delimit the stack. 
+The control stack is an ordered list of control segments and prompts that delimit the stack. 
 
 ```js
 /// Control segment
@@ -233,7 +233,7 @@ var pushSeg = function(f, k) {
 var pushSeq = stream.append;
 ```
 
-`splitSeq` is what gives deliminated continuations their power. It takes a control stack `k` and some prompt `t`, and splits the stack around prompt `t`. The result is two control stacks: that occurring before `t` and that occurring after.
+`splitSeq` is what gives delimited continuations their power. It takes a control stack `k` and some prompt `t`, and splits the stack around prompt `t`. The result is two control stacks: that occurring before `t` and that occurring after.
 
 ```js
 var empty = stream.NIL;

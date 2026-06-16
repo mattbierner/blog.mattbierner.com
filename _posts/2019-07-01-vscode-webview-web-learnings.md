@@ -19,7 +19,7 @@ Webview content is rendered in an isolated context. Scripts inside of webviews c
 The intent here is not to defend against malicious extensions but against insecure extensions that create webviews vulnerable to script injections or other attacks. Our goal is defense in depth; even if an attacker can get malicious scripts running inside a webview, they should never be able to read arbitrary files from the disk or interfere with the main VS Code editor.
 
 #### Isolated from each other
-Webviews should not be able to effect each other. Even multiple webviews created by the same extension should never be able to effect each other or directly share state.
+Webviews should not be able to affect each other. Even multiple webviews created by the same extension should never be able to affect each other or directly share state.
 
 #### Controlled loading of local resources
 VS Code's webviews can load resources from the local workspace or from the disk, but only under paths that extensions specify. Again, this restriction is in place so that even if a webview is compromised, it should not be able to read arbitrary files from the system.
@@ -33,7 +33,7 @@ We expose an API to webview content that lets them communicate with VS Code usin
 We register custom handlers inside of webviews to intercept clicks and other actions. When a user clicks a `https` link in a webview for example, we want to open that in the default browser and not inside the current webview or inside VS Code itself.
 
 #### Disabling scripts
-Script are disabled by default in webview content but can be re-enabled.
+Scripts are disabled by default in webview content but can be re-enabled.
 
 #### Themeable
 We specify a baseline css style and some css variables from the current VS Code theme. This lets extensions style their webviews in a way that is consistent with the rest of the current VS Code theme.
@@ -83,7 +83,7 @@ The custom [`vscode-resource:` protocol](https://code.visualstudio.com/api/exten
 
 So as a starting point to get loading of resources working, we'll need to rewrite any `vscode-resource:` uris in webview html to use a standard `https:` uri. But where exactly should this uri point?
 
-The obvious solution would be to setup a VS Code server endpoint that serves up resource from the workspace and extensions. And while that could work, it would require some fairly complicated logic: the server would have to know the current workspace, which extensions a user has loaded, and which folders within that environment the requesting webview should or should not have access to. Ugh. But what if we could use the same logic that the VS Code web client already uses to load and display files and images in the browser?
+The obvious solution would be to setup a VS Code server endpoint that serves up resources from the workspace and extensions. And while that could work, it would require some fairly complicated logic: the server would have to know the current workspace, which extensions a user has loaded, and which folders within that environment the requesting webview should or should not have access to. Ugh. But what if we could use the same logic that the VS Code web client already uses to load and display files and images in the browser?
 
 ## Creating a virtual server with service workers
 After a bit of experimentation, I realized that [service workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) would let us do just that. Service workers are usually discussed in the context of caching or offline features, but for VS Code's purposes their relevant capabilities are:
@@ -119,7 +119,7 @@ If you've followed this far, you may be asking: *What's so difficult? Can't you 
 
 And yes, to get VS Code's webviews working in browsers, iframes are really the only viable solution. But, as noted in the opening section, VS Code's webviews also have some important features and restrictions beyond what off the shelf iframes offer. That won't stop us, but it does require some caution.
 
-First off, and perhaps most importantly, we need to ensure that webview content is run inside an isolated context. Webviews should never be able to effect the rest of the VS Code client.
+First off, and perhaps most importantly, we need to ensure that webview content is run inside an isolated context. Webviews should never be able to affect the rest of the VS Code client.
 
 In practice, that means that we must serve the webview iframe in a separate [origin](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) from the main VS Code editor. This prevents iframe content from accessing the state (cookies, local storage, service workers, etc.) of the main VS Code client, and it will also block the webview from using `window.top` to gain access to the top level editor DOM.
 
@@ -143,7 +143,7 @@ Now the problem. If you recall, VS Code uses nested iframes to implement its web
 DOMException: Blocked a frame with origin "null" from accessing a cross-origin frame.
 ```
 
-Furthermore, you can't register a service worker inside a iframe with a unique origin. This makes sense if you consider service workers were in large part designed to enable caching and offline behavior, neither of which are relevant for a unique origin that will be used once. But this is a key limitation because, as we just saw, service workers offer a nice clean way to load local resources inside webviews.
+Furthermore, you can't register a service worker inside an iframe with a unique origin. This makes sense if you consider service workers were in large part designed to enable caching and offline behavior, neither of which are relevant for a unique origin that will be used once. But this is a key limitation because, as we just saw, service workers offer a nice clean way to load local resources inside webviews.
 
 ## `srcdoc` or data uri
 I next tried to workaround these limitations by serving up the iframe in a slightly different way that would allow safely enabling `allow-same-origin`. Rather than serving the iframe content from a file on the server, I tried using the `srcdoc` attribute or a `data:` uri to serve the static webview content inline. 
@@ -171,7 +171,7 @@ The requirements around content security policy, service workers, and nested ifr
 </iframe>
 ```
 
-We have to set the `allow-same-origin` flag in order to support service workers inside the iframe and our nested iframes. However, since the iframe content is served from a different origin from the editor page, it should not be able to break out and effect the editor itself.
+We have to set the `allow-same-origin` flag in order to support service workers inside the iframe and our nested iframes. However, since the iframe content is served from a different origin from the editor page, it should not be able to break out and affect the editor itself.
 
 One downside to this approach is that it requires setting up a separate server endpoint for the static iframe content, which in practice is just a few static html and JavaScript files. Not the end of the world, but annoying.
 
@@ -194,7 +194,7 @@ If I could wave a magic wand, here's what I wish was possible though:
 
 * `srcdoc` sandboxed iframes should be able to create iframes that share the same origin. 
 
-While there's still a lot of work to be done<!--and science!-->, I've learned quite a lot getting to this point. I look forward the point when all this becomes available for you to test.
+While there's still a lot of work to be done<!--and science!-->, I've learned quite a lot getting to this point. I look forward to the point when all this becomes available for you to test.
 
 [Let me know](https://twitter.com/mattbierner) if you see any flaws in the current approach or have thoughts on addressing some of its limitations.
 

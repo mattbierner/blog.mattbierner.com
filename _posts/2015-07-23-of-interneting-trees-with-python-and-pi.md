@@ -15,7 +15,7 @@ This post provides a quick introduction to Blot're.py by example. We'll hook a p
 This post is more focused on the software side of things, but let me quickly overview the hardware I used for a simple soil moisture sensor. I'm not a hardware expert by any means, but even I was able to cobble together a working sensor just fine using a few tutorials.  
 
 ## Components
-The basic component list comes [from this tutorial][hardware-tut], with a few substations and subtractions.
+The basic component list comes [from this tutorial][hardware-tut], with a few substitutions and subtractions.
 
 * Raspberry Pi 2.
 * Pi Cobbler+.
@@ -77,7 +77,7 @@ client.get_streams({ 'query': 'moby' })
 If a request fails, it raises a `blotre.RestError`. This object has the status code of the response, along with the `error` and `error_description` fields returned by Blot're.
 
 ## Authorization and Authorization Code Flow
-Authorization is required for create, update, and delete operations. If you already have credentials, you can manually provides them when you create a new client instance.
+Authorization is required for create, update, and delete operations. If you already have credentials, you can manually provide them when you create a new client instance.
 
 ```python
 client = blotre.Blotre({}, creds = {
@@ -88,7 +88,7 @@ client = blotre.Blotre({}, creds = {
 
 But if your app needs to obtain credentials, you have two options: the OAuth2 authorization code flow or using a [Blot're disposable clients][blotre-disposable]. We'll use a disposable client, but let's take a quick look at the authorization code flow first.
 
-The empty `{}` we've been passing to the `Blotre` constructor is the client metadata. [Register a client app on Blot're][blotre-register] and then use this provided values to create a new instance:
+The empty `{}` we've been passing to the `Blotre` constructor is the client metadata. [Register a client app on Blot're][blotre-register] and then use these provided values to create a new instance:
 
 ```python
 client = blotre.Blotre({
@@ -106,7 +106,7 @@ print client.get_authorization_url()
 >>> https://blot.re/v0/oauth2/authorize?redirect_uri=http%3A%2F%2Flocalhost%3A50000&response_type=code&client_id=55614f0630042c617481d7c3
 ```
 
-Once you obtain the code, call `redeem_authorization_code` to get credentials. Any of the token endpoint requests may raise an `blotre.TokenEndpointError` if the request fails.
+Once you obtain the code, call `redeem_authorization_code` to get credentials. Any of the token endpoint requests may raise a `blotre.TokenEndpointError` if the request fails.
 
 ```python
 try:
@@ -232,7 +232,7 @@ while True:
 On the first run, you'll be prompted to redeem the code. After that though, if everything goes right, this script should continue to run forever, with Blot're.py silently exchanging the refresh token for new credentials behind the scenes.
 
 ## Starting on Boot
-If you are interested in using Blot're.py for sensors, it's helpful to running your scripts as daemons and starting them on boot. I've included a sample init.d script in [the source][src] based on [this post](http://blog.scphillips.com/posts/2013/07/getting-a-python-script-to-run-in-the-background-as-a-service-on-boot/).
+If you are interested in using Blot're.py for sensors, it's helpful to run your scripts as daemons and starting them on boot. I've included a sample init.d script in [the source][src] based on [this post](http://blog.scphillips.com/posts/2013/07/getting-a-python-script-to-run-in-the-background-as-a-service-on-boot/).
 
 ```bash
 !/bin/sh
@@ -297,7 +297,7 @@ To use this script be sure to:
 
 * Update `DIR` to point to where your copy of `main.py` lives.
 * Copy it into `/etc/init`
-* Make sure both all scripts are executable.
+* Make sure all scripts are executable.
 * Run `sudo update-rc.d plantre.init.d.sh defaults` to register script to be run at init.
 
 Start or stop the script by running:
@@ -311,7 +311,7 @@ Here's the [stream from my tree](https://blot.re/s/matt/mr+tree) using this scri
 
 {% include image.html file="_DSC7976.jpg" description="Featuring production ready tupperware enclosure." %}
 
-Be sure to checkout the rest of the [example source][src] and please report any bug you find in [Blot're.py][blotre-py].
+Be sure to check out the rest of the [example source][src] and please report any bug you find in [Blot're.py][blotre-py].
 
 [blotre]: https://blot.re
 [blotre-py]: https://github.com/mattbierner/blotre-py

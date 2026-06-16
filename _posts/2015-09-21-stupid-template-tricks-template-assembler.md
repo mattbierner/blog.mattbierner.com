@@ -24,7 +24,7 @@ Asm<int>(
 );
 ```
 
-Feel free to checkout the complete source [on Github][src]. It's far from complete, but it supports many basic operations. 
+Feel free to check out the complete source [on Github][src]. It's far from complete, but it supports many basic operations. 
 
 {% include image.html file="BigBroadcast_attackdog.jpg" description="I hear it's gonna be a good time yo, and you're gonna like it." %}
 
@@ -54,10 +54,10 @@ auto func = (fptr)return4;
 func(); // 4
 ```
 
-We'll use the same basic approach to write the machine code our assembler generates back into the program, and to invoke this machine code at runtime. This does limit the assembly program to being a function, but that's no so bad. Functions even let us pass in arbitrary data in as arguments.
+We'll use the same basic approach to write the machine code our assembler generates back into the program, and to invoke this machine code at runtime. This does limit the assembly program to being a function, but that's not so bad. Functions even let us pass in arbitrary data as arguments.
 
 ## Embedded Language
-Most previous *Stupid Template Tricks* have been run your of the mill template metaprogramming, so what do we gain by writing an *embedded* domain specific language to express the assembly? Well consider the following:
+Most previous *Stupid Template Tricks* have been run of the mill template metaprogramming, so what do we gain by writing an *embedded* domain specific language to express the assembly? Well consider the following:
 
 ```cpp
 // What a pure template approach may look like.
@@ -73,7 +73,7 @@ ASM(
     ...);
 ```
 
-Both approches are forms of a domain specific language and produce the exact same compiletime result. But whereas the pure template approach uses templates exclusively to built up a computation, the metaprogram built with the embedded domain specific language can use C++ language syntax, such operators and operator overloading. Values are only used to shuttle around the types. Using C++ language features makes the language more familiar and more expressive. 
+Both approaches are forms of a domain specific language and produce the exact same compiletime result. But whereas the pure template approach uses templates exclusively to built up a computation, the metaprogram built with the embedded domain specific language can use C++ language syntax, such as operators and operator overloading. Values are only used to shuttle around the types. Using C++ language features makes the language more familiar and more expressive. 
 
 As the syntax of the targeted language becomes more complicated, the benefits of the embedded language become much more clear. Trying to write good looking memory addressing in pure template code for example is a bit of a nightmare, but it's easy when we can overload the subscript operator and the `+` and `*` operators. 
 
@@ -108,7 +108,7 @@ template <typename x>
 using to_bytes = typename ToBytes<x>::type;
 ```
 
-## Combing Byte Strings
+## Combining Byte Strings
 Machine code is made up of individual instructions, and each instruction is made up of a number of [components](http://www.c-jump.com/CIS77/CPU/x86/lecture.html#X77_0020_encoding_overview): prefixes, the operator, and operand data. Each of these components may be further broken into bit level meanings, but all of our encoding logic will operate on bytes. 
 
 `bytes_add` is the base function that combines two byte strings.
@@ -144,7 +144,7 @@ using bytes_join = typename BytesJoin<args...>::type;
 ```
 
 ## Integers to Bytes
-One final useful opperation is converting an integer to it's byte string representation. `IntToBytes` takes an integer`x` and the number of bytes to generate, and returns a byte string
+One final useful operation is converting an integer to its byte string representation. `IntToBytes` takes an integer `x` and the number of bytes to generate, and returns a byte string
 
 ```cpp
 template <size_t bytes, long long x>
@@ -174,7 +174,7 @@ struct GeneralPurposeRegister {
 };
 ```
 
-On a 32bit machine, here's the eight top level general purpose registers. 
+On a 32bit machine, here are the eight top level general purpose registers. 
 
 ```cpp
 constexpr auto eax = GeneralPurposeRegister<4, 0>{};
@@ -187,7 +187,7 @@ constexpr auto esi = GeneralPurposeRegister<4, 6>{};
 constexpr auto edi = GeneralPurposeRegister<4, 7>{};
 ```
 
-The complete source also defines 16bit, 8bit, and 64 bit registers. Segment registers and SIMD regiters are currently not supported. 
+The complete source also defines 16bit, 8bit, and 64 bit registers. Segment registers and SIMD registers are currently not supported. 
 
 # Immediates
 Immediates are constant values, such as `0` or `-42`. We'll only worry about integer immediate values for now. All the actual instruction encoding will be implemented using templates, so we have to find a way to encode a value like `-42` as a type.
@@ -207,7 +207,7 @@ struct Immediate {
 };
 ```
 
-We can borrow the much of the compiler's arithmetic logic by overloading operators on `Immediate`.
+We can borrow much of the compiler's arithmetic logic by overloading operators on `Immediate`.
 
 ```cpp
 template <typename L, L lx, typename R, R rx>
@@ -262,7 +262,7 @@ constexpr auto operator ""_q() {
 
 
 # Memory
-x86 memory addressing is complex, both in range of addressing modes the instruction set supports as well as how these addressing modes are encoding. Let's start by considering a few valid forms of memory addressing:
+x86 memory addressing is complex, both in range of addressing modes the instruction set supports as well as how these addressing modes are encoded. Let's start by considering a few valid forms of memory addressing:
 
 * `[0x1234]` - Direct
 * `[esi]` - Base 
@@ -286,7 +286,7 @@ The form `[esi + ebx * 2 + 8]` is the most complex of the lot, with all other mo
 
 All of these components are optional and may appear in any combination. The scale is limited to either 1, 2, 4, or 8 (the default is 1 if not specified), while the displacement may be a signed 8, 32, or 64 bit number.
 
-Since memory addresses are all subsets of a single form, we'll use a single type, `Memory`, to encode all memory address. Differences in type of address will be handled during encoding.
+Since memory addresses are all subsets of a single form, we'll use a single type, `Memory`, to encode all memory addresses. Differences in type of address will be handled during encoding.
 
 The additional `size` parameter of `Memory` is the size in bytes of the memory targeted (typically 1, 2, 4, or 8) and is used to select the correct overload for certain instructions.
 
@@ -377,7 +377,7 @@ constexpr auto operator-(
 The [source][src] also includes flipped versions of all these overloads, so you can write addresses like: `_[2_b + ebx - 8_b]`.
 
 ## Scaling
-[Scaled index](https://courses.engr.illinois.edu/ece390/books/artofasm/CH04/CH04-3.html#HEADING3-49) part of a memory address consists of a index register and a scaling factor. The scaling factor is just a constant value, either 1, 2, 4, or 8. Scaling factors are created with `*` in NASM assembly syntax, so we'll overload the `*` operator in C++ on a register and an `Immediate` scaling factor
+[Scaled index](https://courses.engr.illinois.edu/ece390/books/artofasm/CH04/CH04-3.html#HEADING3-49) part of a memory address consists of an index register and a scaling factor. The scaling factor is just a constant value, either 1, 2, 4, or 8. Scaling factors are created with `*` in NASM assembly syntax, so we'll overload the `*` operator in C++ on a register and an `Immediate` scaling factor
 
 ```cpp
 template <size_t size, size_t index, typename T, T x>
@@ -417,7 +417,7 @@ constexpr auto operator+(
 }
 ```
 
-These overload allow us to write forms like `_[esi + ebx]`, `_[esi + ebx * 2_b]`, and `_[esi + 8_b + ebx * 2_b]` while also producing compiler error for invalid memory addresses like `_[eax + ebx + ebp]` or `_[eax * 2 + eax * 4]`.
+These overloads allow us to write forms like `_[esi + ebx]`, `_[esi + ebx * 2_b]`, and `_[esi + 8_b + ebx * 2_b]` while also producing compiler errors for invalid memory addresses like `_[eax + ebx + ebp]` or `_[eax * 2 + eax * 4]`.
 
 
 # Double Assembled for Twice the Assembly
@@ -449,7 +449,7 @@ using SymbolTable = List<elements...>;
 using empty_symbol_table = List<>;
 ```
 
-A more comprehensive symbol table implementation might support [forward and backward symbol lookup](http://docs.oracle.com/cd/E18752_01/html/817-5477/eqbsx.html), but let's just keep thinks super simple and disallow redefining symbols all together. `symbol_table_add` inserts a new entry into the symbol table, explicitly checking that no entry currently exists.
+A more comprehensive symbol table implementation might support [forward and backward symbol lookup](http://docs.oracle.com/cd/E18752_01/html/817-5477/eqbsx.html), but let's just keep things super simple and disallow redefining symbols altogether. `symbol_table_add` inserts a new entry into the symbol table, explicitly checking that no entry currently exists.
 
 ```cpp
 template <typename name>
@@ -514,7 +514,7 @@ struct BaseState {
 };
 ```
 
-In pass one, we expect forward reference symbol lookups to fail. These failure are perfectly acceptable; pass one only generates the symbol table, the symbol values themselves are not needed until pass two. Any undefined lookups return `None`, which will not treated as an error during pass one.
+In pass one, we expect forward reference symbol lookups to fail. These failures are perfectly acceptable; pass one only generates the symbol table, the symbol values themselves are not needed until pass two. Any undefined lookups return `None`, which will not be treated as an error during pass one.
 
 ```cpp
 template <size_t lc, typename _labels>
@@ -558,10 +558,10 @@ Additionally, `add_label` is a noop in pass two.
 # You're Nobody 'Til Somebody Assembles You
 An assembly program is just a list of instructions and assembly directives. No nesting, syntax trees, or anything like that. And the only (sort-of) directives we care for our simple assembler are program labels. Labels and instructions go in, machine code comes out. 
 
-As we've seen with the symbol table, the assembler must be able to thread state through the top level units during assembly, very much like the state monad in Haskell. Think of each unit of the assembly as a function, a function that that takes an input state and returns an output state along with some generated machine code. Simple instructions may return constant machine code and only increment the instruction counter of the state, whereas a label may update the state but not generate any machine code. 
+As we've seen with the symbol table, the assembler must be able to thread state through the top level units during assembly, very much like the state monad in Haskell. Think of each unit of the assembly as a function, a function that takes an input state and returns an output state along with some generated machine code. Simple instructions may return constant machine code and only increment the instruction counter of the state, whereas a label may update the state but not generate any machine code. 
 
 ## Instruction
-`Instruction` is the base unit that we'll use for all x86 instructions. It encodes the 1 to 15 byte machine code for a single x86 instruction, such as `MOV` or `JMP`. `components` is a list of `ByteStrings` or objects that can be converted to `ByteStrings`. During assembly, after simple rewriting pass, `Instruction` joins these components together into the final machine code for the entire instruction. 
+`Instruction` is the base unit that we'll use for all x86 instructions. It encodes the 1 to 15 byte machine code for a single x86 instruction, such as `MOV` or `JMP`. `components` is a list of `ByteStrings` or objects that can be converted to `ByteStrings`. During assembly, after a simple rewriting pass, `Instruction` joins these components together into the final machine code for the entire instruction. 
 
 ```cpp
 template <typename... components>
@@ -633,7 +633,7 @@ constexpr auto MOV(GeneralPurposeRegister<1, a>, byte<b>) {
 };
 ```
 
-This supports instructions overloads easily, and also makes the language somewhat more palatable: `MOV(eax, 1_d)`. As for actually generating all those instructions, I used a simple Javascript program to transform a x86 specification XML file into C++ source code. The coder generator is pretty horrific code, even by Javascript standards:
+This supports instruction overloads easily, and also makes the language somewhat more palatable: `MOV(eax, 1_d)`. As for actually generating all those instructions, I used a simple Javascript program to transform an x86 specification XML file into C++ source code. The code generator is pretty horrific code, even by Javascript standards:
 
 ```js
 var code = `template <${parameters.join(', ')}>
@@ -642,7 +642,7 @@ constexpr auto ${name}(${special.join(', ')}) {
 };`;
 ```
 
-But it gets the job done. The xml file specifies the encoding of each instruction as well. Instruction encodings share many components, such as [REX prefixes](rex prefix encoding) and [ModR/M and SIB bytes](http://wiki.osdev.org/X86-64_Instruction_Encoding#ModR.2FM_and_SIB_bytes). The actual logic for generating the encoding is mixed between C++ and the Javascript. The Javascript may know that a REX byte of modrm byte is required for example:
+But it gets the job done. The xml file specifies the encoding of each instruction as well. Instruction encodings share many components, such as [REX prefixes](rex prefix encoding) and [ModR/M and SIB bytes](http://wiki.osdev.org/X86-64_Instruction_Encoding#ModR.2FM_and_SIB_bytes). The actual logic for generating the encoding is mixed between C++ and the Javascript. The Javascript may know that a REX byte or modrm byte is required for example:
 
 ```cpp
 /// Example output from Javascript program
@@ -659,7 +659,7 @@ But logic like `make_rex` and `modrm` are implemented in normal C++. Again, the 
 
 
 ## Labels
-Labels are the other top level units of assembly code. A label attaches a symbol to an address in the the assembly code itself and are purely an assembly language construct, they generate no code, and indeed machine code has no real concept of labels at all.
+Labels are the other top level units of assembly code. A label attaches a symbol to an address in the assembly code itself and are purely an assembly language construct, they generate no code, and indeed machine code has no real concept of labels at all.
 
 During assembly, labels update the state to map the label symbol to the current instruction counter with `add_label` on the state object. 
 
@@ -715,7 +715,7 @@ constexpr auto block(x, xs...) {
 # I am given birth to nothing but machine code
 {% include image.html file="TFTM_Junkions.JPG" %}
 
-Bringing everything together, `assemble` converts an assembly program into machine code at compile time. Pass one is run first on the program to generate symbol table, then pass two is run with the resulting symbol table. The result of `assemble` is a `ByteString` of machine code.
+Bringing everything together, `assemble` converts an assembly program into machine code at compile time. Pass one is run first on the program to generate the symbol table, then pass two is run with the resulting symbol table. The result of `assemble` is a `ByteString` of machine code.
 
 ```cpp
 template <typename program>
@@ -724,7 +724,7 @@ using assemble = typename call<
     pass2state<typename call<program, pass1state>::first>>::second;
 ```
 
-As for actually evaluating the machine code at runtime, `AsmProgram` wraps the machine code in a functor of return type `R` and forward arguments to it.
+As for actually evaluating the machine code at runtime, `AsmProgram` wraps the machine code in a functor of return type `R` and forwards arguments to it.
 
 ```cpp
 template <typename R, typename P>
@@ -822,7 +822,7 @@ Again, using C++ directly gets us a lot for free.
 # Conclusion
 
 
-C++ templates metaprogramming enables the development of fairly powerful embedded domain specific languages and can make templates metaprograms much more expressive. x86 assembly may not be the most practical application of this, but I feel that this is an interesting little project and, with a little work, we could probably make our simple assembler more portable and support a pretty good subset of x86 assembly language.
+C++ template metaprogramming enables the development of fairly powerful embedded domain specific languages and can make template metaprograms much more expressive. x86 assembly may not be the most practical application of this, but I feel that this is an interesting little project and, with a little work, we could probably make our simple assembler more portable and support a pretty good subset of x86 assembly language.
 
 Check out the [complete source][src] and send a pull request or open a bug if you would like a new instruction supported or find a bug (there are plenty of them).
 

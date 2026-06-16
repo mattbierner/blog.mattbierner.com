@@ -53,7 +53,7 @@ The error message in the third example could be improved. A more complete librar
 ## Optional
 Another common application of parser choice is optional parsing. An integer parser for example would parse an optional minus sign before parsing the whole number.
 
-The `optional` parser tries to run parer `p`, or returns a constant value `def`.
+The `optional` parser tries to run parser `p`, or returns a constant value `def`.
 
 ``` cpp
 template <typename p, typename def = None>
@@ -84,7 +84,7 @@ struct fold {
 };
 ```
 
-When two or more parameters are in the list, `fold` applies `f` to the first two (`z` and `x`) to produce a new accumulated value. This is fed back into `fold`, along with the rest of the parmeter list `xs`.
+When two or more parameters are in the list, `fold` applies `f` to the first two (`z` and `x`) to produce a new accumulated value. This is fed back into `fold`, along with the rest of the parameter list `xs`.
 
 ``` cpp
 template <typename f, typename z, typename x, typename... xs>
@@ -206,7 +206,7 @@ We repeat this process, constructing the list from front to back, until `p` even
 
 So as we step out of each recursive call to `many`, we cons elements onto the result list, back to front, to build the final result list. If we can implement a parser that conses elements together, implementing `many` will be easy.
 
-The cons parser takes two parsers, `p` and `q`. It runs parser `p` first to get the head of the list and stores this off somewhere. Then it run parser `q` to get the rest of the list. After both the results of `p` and `q` are available, the head from `p` is consed onto the rest of the list from `q` to build the result list.
+The cons parser takes two parsers, `p` and `q`. It runs parser `p` first to get the head of the list and stores this off somewhere. Then it runs parser `q` to get the rest of the list. After both the results of `p` and `q` are available, the head from `p` is consed onto the rest of the list from `q` to build the result list.
 
 `liftM2` generalizes the combinator of two parsers using a function such as cons. It combines the results of parsers `p` and `q` with binary metafunction `f` by nesting `bind` parsers to create closures. 
 
@@ -295,7 +295,7 @@ run_parser<p, decltype("a,aa"_stream)>; // List of: 'a', 'a'
 run_parser<p, decltype("a,x"_stream)>; // List of: 'a'
 ```
 
-`sepBy` expect at zero or more values.
+`sepBy` expects zero or more values.
 
 ``` cpp
 template <typename sep, typename p>
@@ -517,14 +517,14 @@ Add the missing paren and the result is, `'Format string is valid'`.
 
 
 # Limitations and Further Work
-This post only outlines a basic parser combinator library. Many important simplications have been made, including two key ones relevant to validating visual format strings.
+This post only outlines a basic parser combinator library. Many important simplifications have been made, including two key ones relevant to validating visual format strings.
 
 ## Compile Time Error Messaging.
 In the above program, the parsing and validation of the visual format string all happens at compiletime, but printing the error message happens at runtime. Obviously, this is not the desired behavior.
 
 We could easily add a `static_assert` that checks that if a parser completed successfully. But that still leaves outputting our meaningful error message. For some reason entirely beyond my comprehension, `static_assert` only takes string literals. We can't even pass in a `constexpr`.
 
-A more complete implementation would check that the the visual format parser completed successfully or print an error message at compile time indicating why parsing failed. We would basically implement another specialization similar to `Printer` that constructs compile time strings and then output these strings somehow. I'm still not sure what the most readable approach to outputting the error message as a compiler error would be.  
+A more complete implementation would check that the visual format parser completed successfully or print an error message at compile time indicating why parsing failed. We would basically implement another specialization similar to `Printer` that constructs compile time strings and then output these strings somehow. I'm still not sure what the most readable approach to outputting the error message as a compiler error would be.  
 
 ## Representation Construction
 Another big simplification is that we only check if the format string is valid. No representations of the contents of the format string are constructed.

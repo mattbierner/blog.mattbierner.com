@@ -20,7 +20,7 @@ Naturally, C++ templates offer a perfectly reasonable solution: parse the litera
 
 {% include image.html file="worldoshit.jpg" description="In other words, it's a huge shit sandwich, and we're all gonna have to take a bite." %}
 
-This post overviews the implementation of a user defined literal for `std::integral_constant`. The result support binary, octal, and hex literals, along with the `'` digit separator. You can find the complete code [on Github][src].
+This post overviews the implementation of a user defined literal for `std::integral_constant`. The result supports binary, octal, and hex literals, along with the `'` digit separator. You can find the complete code [on Github][src].
 
 # Why?
 `std::integral_constant` nicely augments [expression templates](expression templates c++ tutorial) and empowers embedded domain specific languages. Consider this toy example:
@@ -40,14 +40,14 @@ constexpr auto operator*(Expression e, std::integral_constant<T, 0> v) {
 
 `std::integral_constant` allows us to play the Haskeller and pattern matching on values themselves instead of just on their types. This in turn allows the overloads to return different result types based on argument values, something that is not otherwise possible with `constexpr` and integer arguments.
 
-But for us lazy metaprogramers, typing out `std::integral_constant<int, 5>` is a chore, and the prefix notation of even shortened forms is still somewhat off-putting.
+But for us lazy metaprogrammers, typing out `std::integral_constant<int, 5>` is a chore, and the prefix notation of even shortened forms is still somewhat off-putting.
 
 ```cpp
 template <int x>
 using lit = std::integral_constant<int, x>;
 ```
 
-Much more natural to write `5_lit`. And that's where this post come in.
+Much more natural to write `5_lit`. And that's where this post comes in.
 
 # What's in a Literal
 For an integer literal, we've seen that the `_lit` operator from the top of this post does not work. Thankfully the C++ standard committee recognized this oversight and provided an alternative user defined literal form, the [raw user defined integer literal][ud-literal], which takes the characters that make up the literal as template arguments.
@@ -79,7 +79,7 @@ std::is_same<
     std::integer_sequence<char, '5', '\'', '9'>>; 
 ```
 
-The compiler does ensure that only valid characters are included in a given integer literal, so you can't ever encounter a `9` in an octal literal or a `2` inside of binary literal. But if we want to support the standard correctly, we'll have to support all of these literal forms.
+The compiler does ensure that only valid characters are included in a given integer literal, so you can't ever encounter a `9` in an octal literal or a `2` inside of a binary literal. But if we want to support the standard correctly, we'll have to support all of these literal forms.
 
 # Computing the Base and Getting the Digit Values
 First off, let's get the raw literal characters into a more standardized format. Every integer literal is just a series of individual digits with integer values, along with the base of the numeral system being targeted.
@@ -114,7 +114,7 @@ template <char... digits>
 struct ParseNumber<'0', 'B', digits...> : BaseAndDigits<2, digits...> { };
 ```
 
-This gets rid of the prefix, but the digits may still be hex characters or contain `'` digit separators. Here's where the `GetDigits` function comes in. `GetDigits` maps the raw character digits of the literal to a sequence of unsigned integer values. Separator characters are ignored while all other characters are converted numbers with `digit_to_value`.
+This gets rid of the prefix, but the digits may still be hex characters or contain `'` digit separators. Here's where the `GetDigits` function comes in. `GetDigits` maps the raw character digits of the literal to a sequence of unsigned integer values. Separator characters are ignored while all other characters are converted to numbers with `digit_to_value`.
 
 ```cpp
 constexpr unsigned digit_to_value(char c) {
@@ -213,7 +213,7 @@ struct ConstantFromString {
 
 And that's it.
 
-We can use `ConstantFromString` to write a user defined operators for any kind of `std::integral_constant`:
+We can use `ConstantFromString` to write user defined operators for any kind of `std::integral_constant`:
 
 ```cpp
 template <int8_t x>

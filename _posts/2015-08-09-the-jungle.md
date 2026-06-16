@@ -19,10 +19,10 @@ Yes!
 
 > **Sinclair** - Well, yeah, you know... it was a VERY comfortable bench.
 
-So today, I humbly present my discovery of a inverse correlation between exclamation point density and novel quality in *The Jungle*. You can find the simple source code used in this project [on GitHub][source]. 
+So today, I humbly present my discovery of an inverse correlation between exclamation point density and novel quality in *The Jungle*. You can find the simple source code used in this project [on GitHub][source]. 
 
 # Occurrences
-*The Jungle* features an astounding 801 exclamation points in its 31 fun filled chapters. For comparison, the same text has 5401 periods and 519 question marks. Assuming that every sentence ends with a period, question mark, or exclamation point, this means that around 13.5% of all sentences in the *The Jungle* end with an exclamation point (some exclamation points do occur inside of quotes though). And unlike that late master of expressive writing, the prepubescent texter, Sinclair restrains himself to a single exclamation point at the end a sentence, making this statistic all the more impressive!
+*The Jungle* features an astounding 801 exclamation points in its 31 fun filled chapters. For comparison, the same text has 5401 periods and 519 question marks. Assuming that every sentence ends with a period, question mark, or exclamation point, this means that around 13.5% of all sentences in the *The Jungle* end with an exclamation point (some exclamation points do occur inside of quotes though). And unlike that late master of expressive writing, the prepubescent texter, Sinclair restrains himself to a single exclamation point at the end of a sentence, making this statistic all the more impressive!
 
 I was curious to see where these 801 exclamation points occurred in *The Jungle*. Would exclamation point density correlate with the quality of the book? 
 
@@ -62,12 +62,12 @@ Thus, this chart is proof of an inverse correlation between exclamation point de
 # By Chapter Analysis
 There are degrees of shittiness to the second half of *The Jungle* though. Hobo Jurgis or Tramp Jurgis is much more palatable than Socialist Jurgis or Boss Jurgis. And some chapters are just astoundingly bad, such as the insufferable chapter 24, wherein the soulless husk formally known as Jurgis encounters the young, wealthy, and very drunk Master Frederick. 
 
-But chapter 27 trumps it all, with Tramp Jurgis learning that not only is Marija a callous whore (and BTW callousaur is a AMAZING dinosaur name) but also that Little Stanislovas was eaten by rats. An aside: the phrase, "eaten by rats" is similar to "jumping the shark", and can be used when something terrible happens to a character for stupid, unrealistic reasons invented by the author and entirely unrelated to plot or character development. Basically, having a character "eaten by rats" causes the reader to think that the author is an asshole.
+But chapter 27 trumps it all, with Tramp Jurgis learning that not only is Marija a callous whore (and BTW callousaur is an AMAZING dinosaur name) but also that Little Stanislovas was eaten by rats. An aside: the phrase, "eaten by rats" is similar to "jumping the shark", and can be used when something terrible happens to a character for stupid, unrealistic reasons invented by the author and entirely unrelated to plot or character development. Basically, having a character "eaten by rats" causes the reader to think that the author is an asshole.
 
 And let's not even talk about chapters 28 onwards, which give up all novelistic pretense for glibbering socialist speeches. Could exclamation point density similarly be used to identify these highlights of awfulness? Let's find out.
 
 ## Counts
-Given that much of *The Jungle* was publish serially, it makes sense that each chapter has a fairly constant number of words.
+Given that much of *The Jungle* was published serially, it makes sense that each chapter has a fairly constant number of words.
 
 {% include image.html file="Words-per-chapter.png" %}
 
@@ -80,14 +80,14 @@ To compensate for the different chapter lengths, I also computed the exclamation
 
 {% include image.html file="rate-per-chapter.png" %}
 
-Things start off at a reasonable 0.3% exclamation point rate, with one out of every 330 words an exclamation point, before spiking at chapter 15 and again at chapters 18 and 24. With text like this its not hard to see why:
+Things start off at a reasonable 0.3% exclamation point rate, with one out of every 330 words an exclamation point, before spiking at chapter 15 and again at chapters 18 and 24. With text like this it's not hard to see why:
 
 > Yes; it had been gray and now it was yellow! The trimmings around the windows had been red, and now they were green! It was all newly painted! How strange it made it seem! - The Jungle, Chapter 18
 
 Chapter 18 and 24 in particular reach exclamation point rates of around 1.7%, with one out of every 60 words an exclamation point. Impressive!
 
 ## Removing Quotes
-But not all exclamation points are created equal. Exclamation points in quotes are somewhat more acceptable, whereas exclamation points in normal text are almost always excessive. That was a pretty clear problem with my initial approach, but accounting for quotes turns out not to effect the results all that much.
+But not all exclamation points are created equal. Exclamation points in quotes are somewhat more acceptable, whereas exclamation points in normal text are almost always excessive. That was a pretty clear problem with my initial approach, but accounting for quotes turns out not to affect the results all that much.
 
 For the second pass, I removed all quoted text. After doing this, there were  457 exclamation points left. After taking the density of each chapter, we end up with a familiar story:
 
@@ -96,7 +96,7 @@ For the second pass, I removed all quoted text. After doing this, there were  45
 Sadly, by far the biggest change is in chapter 24, which drops to almost zero exclamation points from its previous high of like 100. The rate of Chapter 17 also increases once all the quotes are removed, but chapter 18 and 28 still are clear outliers.
 
 # Conclusion
-This work conclusively demonstrates an inverse correlation between exclamation points density and quality of *The Jungle*. The exact nature of this relationship is still unclear. Did an overabundance of exclamation points cause the drop in quality of *The Jungle*'s second half, or did the weakened second half allow in more exclamation points? An interesting subject for future investigation.
+This work conclusively demonstrates an inverse correlation between exclamation point density and quality of *The Jungle*. The exact nature of this relationship is still unclear. Did an overabundance of exclamation points cause the drop in quality of *The Jungle*'s second half, or did the weakened second half allow in more exclamation points? An interesting subject for future investigation.
 
 
 [source]: https://github.com/mattbierner/The-Jungle-Exclamation-Point

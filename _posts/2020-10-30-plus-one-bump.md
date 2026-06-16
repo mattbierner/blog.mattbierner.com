@@ -105,7 +105,7 @@ Then you can bump, then you can version bump!
 
 So, there it is.
 
-I briefly investigated hiring someone to record the *Plus One Bump*, but wasn't sure where to find a singer who could impersonate someone impersonating Boris Karloff. <!-- plus Spelunky 2... --> But hey, if you've feeling up for recording an extremely nerdy take on an already pretty square song, give it a shot. Someone really should put together some appropriate dance moves too...
+I briefly investigated hiring someone to record the *Plus One Bump*, but wasn't sure where to find a singer who could impersonate someone impersonating Boris Karloff. <!-- plus Spelunky 2... --> But hey, if you're feeling up for recording an extremely nerdy take on an already pretty square song, give it a shot. Someone really should put together some appropriate dance moves too...
 
 And remember kids: don't be a plus one bumper! If you see any plus one bumping going on, send the party over this way so that they can learn, just like Codi did, that: plus one bad! PR good! PR GOOD!!!
 

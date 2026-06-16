@@ -6,7 +6,7 @@ date: '2014-10-11'
 ---
 When I  came across [this Stack Overflow question][so] about reversing a c++ `std::tuple` type, naturally I wondered if the same could be done to templated types besides `std::tuple`, i.e. for a templated type `T`, converting `T<P1, P2, ..., Pn>` to `T<Pn, Pn-1, ..., P1>`.
 
-Not that I have any practically application for type reversal mind you. But I was curious.
+Not that I have any practical application for type reversal mind you. But I was curious.
 
 {% include image.html file="Claude_Cat_angel.jpg" %}
 
@@ -70,7 +70,7 @@ Foo<int, unsigned, std::string>; // invalid
 Foo<unsigned, std::string, int>; // reversal is also valid
 ```
 
-Although our ultimate goal is to determine the revered type permutation, the most simple type reversal logic requires a number of intermediate combination types, all of which must be valid, to calculate the final reversed types.  
+Although our ultimate goal is to determine the reversed type permutation, the most simple type reversal logic requires a number of intermediate combination types, all of which must be valid, to calculate the final reversed types.  
 
 # Easy Case - Reversing Tuple-Like Types
 We'll therefore start by reversing a `std::tuple`. This way, we don't have to worry about invalid type combinations and permutations. The second part of this post will apply reversal to any templated type.

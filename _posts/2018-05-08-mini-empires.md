@@ -18,7 +18,7 @@ By capturing a screenshot of the minimap every few seconds, we can create a time
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/gXhEp-VWtDc" %}
 
-Here's the same match with the background removed. Reminds of me bacteria fighting it out in a petri dish:
+Here's the same match with the background removed. Reminds me of bacteria fighting it out in a petri dish:
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/L7Ogv2rxAlc" %}
 
@@ -34,7 +34,7 @@ To better show movement and action, I also tried looking only at the visual diff
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/rhdahHBC5gE" %}
 
-And here's a visual representation of the each color's coverage:
+And here's a visual representation of each color's coverage:
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/OzytodYre5c" description="Color coverage of the map. Played at 2x the speed as the other examples" %}
 
@@ -84,7 +84,7 @@ Things improve again when we move to four player matches. In these, the fourth p
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/qkeu3aIYWDo" %}
 
-I captured most of these matches by letting them run overnight. Most lasted an hour or two, but a few stabilized into stalemates. In four player match below for example, things started out exciting before the AI seems to have gotten stuck. Having exploited all land resources, blue and yellow just gave up while red continued happily fishing away forever.
+I captured most of these matches by letting them run overnight. Most lasted an hour or two, but a few stabilized into stalemates. In the four player match below for example, things started out exciting before the AI seems to have gotten stuck. Having exploited all land resources, blue and yellow just gave up while red continued happily fishing away forever.
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/xOCoR7cEg68" %}
 
@@ -135,6 +135,6 @@ Finally, by taking a 2D through the slices of the volume, we can look at individ
 
 # End
 
-While the 3D projections are neat, I still find the simple time-lapses the most interesting. The minimap is very much a petri dish view of the game with each side reduced to a splotch of colored pixels, and somehow it's fascinating to watch to watch the colors surge, retreat, and conquer. Maybe that's what all combat looks like from high enough up.
+While the 3D projections are neat, I still find the simple time-lapses the most interesting. The minimap is very much a petri dish view of the game with each side reduced to a splotch of colored pixels, and somehow it's fascinating to watch the colors surge, retreat, and conquer. Maybe that's what all combat looks like from high enough up.
 
-You can find the scripts used for this project [here](https://github.com/mattbierner/mini-empire/tree/master/example). They are super rough so your milage with them may vary. It might be fun to apply these same techniques to other games, and are surely plenty of other neat ways to look at data like this too. Let me know if you create anything interesting. 
+You can find the scripts used for this project [here](https://github.com/mattbierner/mini-empire/tree/master/example). They are super rough so your mileage with them may vary. It might be fun to apply these same techniques to other games, and there are surely plenty of other neat ways to look at data like this too. Let me know if you create anything interesting. 

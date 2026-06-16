@@ -70,7 +70,7 @@ I've explored using git in non-standard ways before, including last year's *[80x
 
 This time around, I thought it would be interesting to explore the branching nature of games using git, and interactive fiction is a perfect fit. Each command and its result are stored in the commit graph, and you can branch off the graph at any point to explore choices and consequences of these choices. Similar to 80x40, the current state of the game / README is not the real product, rather the repo itself is the product.
 
-Git doesn't lend itself well to all game types, but there is a lot of potential beyond interactive fiction, and turn based game specifically are a natural fit for the git model. It's easy to imagine setting up a game of chess or Go or checkers that has two players submitting automatically merged PRs against a repo, and I firmly believe that it's only a matter of time before we see *DwarfFortress.git* and, of course, *Pokemon.git*. Make it happen.
+Git doesn't lend itself well to all game types, but there is a lot of potential beyond interactive fiction, and turn based games specifically are a natural fit for the git model. It's easy to imagine setting up a game of chess or Go or checkers that has two players submitting automatically merged PRs against a repo, and I firmly believe that it's only a matter of time before we see *DwarfFortress.git* and, of course, *Pokemon.git*. Make it happen.
 
 
 # Try It Out

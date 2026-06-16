@@ -17,7 +17,7 @@ Both sides use vertical samples, which means that as you move left to right you 
 
 {% include image.html file="overview.png" %}
 
-This was my first attempt at designing any piece of clothing, and—while nothing revolutionary—the blue side top looks half decent in my humble opinion. I'm less certain about the black on the bottom piece, and the seam on the white side is pretty obvious because I had no clue what I was doing. A nuke scan hat or t-shirt probably would have been easier and more practical, but the bikini connection just was to perfect to pass up.
+This was my first attempt at designing any piece of clothing, and—while nothing revolutionary—the blue side top looks half decent in my humble opinion. I'm less certain about the black on the bottom piece, and the seam on the white side is pretty obvious because I had no clue what I was doing. A nuke scan hat or t-shirt probably would have been easier and more practical, but the bikini connection just was too perfect to pass up.
 
 {% include image.html file="white-close.jpg" %}
 

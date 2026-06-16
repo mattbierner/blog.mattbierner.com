@@ -9,7 +9,7 @@ I designed [Khepri][khepri] with function inlining in mind, but inlining support
 
 
 # The Need For Inlining 
-The functional programer solves a complex problem by composing the solutions of its independent subproblems. With the function as the base unit of computation, this approach produces lots of tiny functions, each of which does a simple computation or composes other computations.
+The functional programmer solves a complex problem by composing the solutions of its independent subproblems. With the function as the base unit of computation, this approach produces lots of tiny functions, each of which does a simple computation or composes other computations.
 
 Given the importance of functions and function application, it is very important that the overhead of calling a function be minimized. While modern Javascript runtimes can perform many millions of function calls per-second, each call still adds noticeable overhead, overhead that can far outweigh the cost of evaluating the body of a small function. 
 
@@ -60,17 +60,17 @@ For a total of one function call per call to `f` (the example with `compose` wil
 
 
 # Khepri Inlining
-The Khepri compiler can inline small function calls to eliminated call overhead. This section details when a function can or cannot be inlined, and how code may be effected by inlining. 
+The Khepri compiler can inline small function calls to eliminate call overhead. This section details when a function can or cannot be inlined, and how code may be affected by inlining. 
 
 {% include image.html file="crowbar_36335_lg.gif" description="Work safe, work smart. Your future depends on it." %}
 
-The compiler attempts to optimize code without effecting its visible behavior, but does make a few important exceptions for inlining. [Khepri's inlining documentation](https://github.com/mattbierner/khepri/wiki/inlining) has more comprehensive inlining documentation.
+The compiler attempts to optimize code without affecting its visible behavior, but does make a few important exceptions for inlining. [Khepri's inlining documentation](https://github.com/mattbierner/khepri/wiki/inlining) has more comprehensive inlining documentation.
 
 ## Lambda Functions
 Any call to a lambda function may be inlined. Lambda functions are functions that:
 
 * Have an expression body. Functions with block bodies cannot be inlined at this time.
-* Does not use a [fat arrow unpack](https://github.com/mattbierner/khepri/wiki/functions#fat-arrows-this-unpacks).
+* Do not use a [fat arrow unpack](https://github.com/mattbierner/khepri/wiki/functions#fat-arrows-this-unpacks).
 
 ```js
 // These are lambda functions
@@ -140,7 +140,7 @@ math.sqr(3); // 4
 ```
 
 ## Function Call to Let Expression Expansion
-Khepri inlines a function call by expanding it to let expression. Let expressions have very little overhead and can be further optimized by later compiler stages.
+Khepri inlines a function call by expanding it to a let expression. Let expressions have very little overhead and can be further optimized by later compiler stages.
 
 ```js
 var add := \x y -> x + y;
@@ -165,7 +165,7 @@ mid(a(), b(), c(), d());
 let mid = [b(), c()] in mid;
 ```
 
-Regular function calls evaluate all arguments, even those that are never used, before evaulating the body. This difference is intentional and, I believe, justified. There are far more cases where it is highly beneficial to remove such unnecessary calculations then there are cases where code depends on evaluation of unused arguments.
+Regular function calls evaluate all arguments, even those that are never used, before evaluating the body. This difference is intentional and, I believe, justified. There are far more cases where it is highly beneficial to remove such unnecessary calculations than there are cases where code depends on evaluation of unused arguments.
 
 # Other Differences and Limitations
 
@@ -224,7 +224,7 @@ s = stream(1, s);
 ## No Linking
 Khepri can currently only inline functions in a file, and therefore cannot inline calls to any imported function. 
 
-Implementing cross file inlining is challenging. To inline an imported function in another file, expansion must rewriting closure variables to resolve to the function's source package. And in many cases, these closure variables are not exported from the source package.
+Implementing cross file inlining is challenging. To inline an imported function in another file, expansion must rewrite closure variables to resolve to the function's source package. And in many cases, these closure variables are not exported from the source package.
 
 
 # Conclusion and Limitations

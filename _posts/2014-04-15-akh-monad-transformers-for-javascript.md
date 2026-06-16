@@ -3,12 +3,12 @@ layout: post
 title: Akh - Monad Transformers for Javascript
 date: '2014-04-15'
 ---
-Akh is a small Javascript library of monad transformers and structures. This post briefly covers why monad transformers are useful in Javascript, and offers a very high level look at the monad transformer Akh offers and their interface.
+Akh is a small Javascript library of monad transformers and structures. This post briefly covers why monad transformers are useful in Javascript, and offers a very high level look at the monad transformers Akh offers and their interface.
 
 {% include image.html file="CC1279-Welcome-to-Wackyland-DX.jpg" description="Akh - A large flightless bird native to Fantasy Land" %}
 
 # Why Monad Transformers are Useful in Javascript
-Even in untyped, non-functional language like Javascript, monads are an extremely useful abstraction. It is fairly trivial to define and use monads like the state, error, and list monads in Javascript.
+Even in untyped, non-functional languages like Javascript, monads are an extremely useful abstraction. It is fairly trivial to define and use monads like the state, error, and list monads in Javascript.
 
 But beyond toy examples, real world problems often require functionality from one or more of these structures. A networked application may require both error handling and IO, or an algorithm implementation may use state, error handling, and continuation control. The question is how to compose a set of simple structures together in a maintainable and flexible way.
 
@@ -17,7 +17,7 @@ One potentially tempting approach is to define a big structure that has every fu
 
 {% include image.html file="2001-last-monolith.jpg" description="My god it's full of state ... and error too" %}
 
-Say we need state and error handling. Why not just define a new struture that does both? 
+Say we need state and error handling. Why not just define a new structure that does both? 
 
 ```js
 var StateAndError = function \run =self-> {
@@ -54,21 +54,21 @@ StateAndError.fail = \x ->
         ({state: s, value: {error: true, value: x}});
 ```
 
-The state operations have know about error handling and the error handling operation must know about state and how to thread state though computations. 
+The state operations have to know about error handling and the error handling operation must know about state and how to thread state through computations. 
 
 Any change to the structure is going to be painful. Want to branch the stateful computations from `StateAndError` using `List`.  Get ready to rewrite every non-derived operation and spend some quality time tracking down subtle bugs.
 
 It is also impossible to reuse a monolithic structure like `StateAndError` for a different application with slightly different requirements because `StateAndError` hardcodes the composition of State and Error in a way that can not easily be modified.
 
 ## Monad Transformers
-[Monad transformers][monad-transformers] let programers compose monads while maintaining separation of concerns. A transformer takes an inner monad, and outputs a new monad with some specific functionality or properties. The `StateT` transformer outputs a monad that passes state value pairs though the inner monad, the `ListT` transformer outputs a list of results in the inner monad. Most common monads can be easily rewritten to a monad transformer applied to the identity monad.
+[Monad transformers][monad-transformers] let programers compose monads while maintaining separation of concerns. A transformer takes an inner monad, and outputs a new monad with some specific functionality or properties. The `StateT` transformer outputs a monad that passes state value pairs through the inner monad, the `ListT` transformer outputs a list of results in the inner monad. Most common monads can be easily rewritten to a monad transformer applied to the identity monad.
 
 ```js
 /// A branchable state computation
 var M = StateT (List);
 ```
 
-Multiple transformers can be used to build stack of monad transformers. Each layer in such a stack knows only how transform an opaque base monad and how to lift an operation from the base monad into the result monad.
+Multiple transformers can be used to build a stack of monad transformers. Each layer in such a stack knows only how to transform an opaque base monad and how to lift an operation from the base monad into the result monad.
 
 ```js
 // Khepri compiler Lexical check monad, demonstrating
@@ -88,10 +88,10 @@ var up = M.lift (M.inner.up);
 var getState = M.lift (M.inner.lift (M.inner.inner.get));
 ```
 
-In short, monad transformers allow us to compose simples structures with a single well defined function (such as state or error handling), using a set of abstract operations, all without having to understand how the structures or the composition is implemented. 
+In short, monad transformers allow us to compose simple structures with a single well defined function (such as state or error handling), using a set of abstract operations, all without having to understand how the structures or the composition is implemented. 
  
 ## Problems With Existing Implementations
-A brief search turned up a few existing Javascript monad transformer implementations scattered across NPMJS and Github. However, I could not find a complete set of transformers, and many existing existing implementations are only useful for toy problems.
+A brief search turned up a few existing Javascript monad transformer implementations scattered across NPMJS and Github. However, I could not find a complete set of transformers, and many existing implementations are only useful for toy problems.
 
 Javascript's limited stack size and lack of tail call elimination is a major issue for monads, specifically in the Cont and State monads.
 
@@ -259,7 +259,7 @@ addCheck@'VariableDeclarator' <| seq(
     checkChild 'init');
 ```
 
-The details are unimportant. What this example shows is how Akh monad transformers allow building a library of operations that using the different capabilities of each layer in the stack. Complex but maintainable programs can be expressed at a high level though the composition of these well-defined monad stack operations.
+The details are unimportant. What this example shows is how Akh monad transformers allow building a library of operations that use the different capabilities of each layer in the stack. Complex but maintainable programs can be expressed at a high level through the composition of these well-defined monad stack operations.
 
 
 [Stream-m](https://github.com/mattbierner/stream-m) is a transformer for lazy, potentially infinite [Nu][nu] streams. This is closer to Haskell's `ListT` than `akh::trans::list`, which uses Javascript arrays.

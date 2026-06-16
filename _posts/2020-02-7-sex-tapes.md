@@ -152,7 +152,7 @@ Now I'm here trying to tell you what happened between that night late last sprin
 
 But no; actually it's not going to be like that either.
 
-*Sex Tapes* began as just another one of my fun projects. Maybe you know the sort. I planned to post a few pictures of it, maybe write a few paragraph about creating it. The typical. But at some point while working on all that, I realized that the project just wasn't all that interesting. Yes, even with a great punny name like *Sex Tapes*.
+*Sex Tapes* began as just another one of my fun projects. Maybe you know the sort. I planned to post a few pictures of it, maybe write a few paragraphs about creating it. The typical. But at some point while working on all that, I realized that the project just wasn't all that interesting. Yes, even with a great punny name like *Sex Tapes*.
 
 So I changed things up. Instead of presenting *Sex Tapes*, I'd decided to try telling the story of how *Sex Tapes* went down. I guess we can call that story *Sex Tapes V2*. And, for a while at least, *Sex Tapes V2* seemed to be shaping up nicely. It really had it all: comedy, action, romance, plus some unreal punnage.
 
@@ -317,11 +317,11 @@ Naturally, my first thought was to connect the punch machines up to vibrators. N
 
 Maybe I'm getting a little ahead of myself. After all, I still wasn't even sure about the casting. For although an evening alone with Monsieur Punch could undoubtedly be romantic, I admittedly am a traditionalist in my belief that a proper sex tape requires two or more human participants, just like it says in the Bible God damn it!
 
-Still, it was tempting to take myself out of the equation entirely. I knew I could find two progressional participants and stage a performance. Ideally a performance at the *Museum of Communications* in Seattle. The two actors would each have their own tape machine that was linked to their partner's vibrator, and they'd play out a sexual encounter entirely by feeding different tape patterns into their machines. Oh yeah, getting kinky again!
+Still, it was tempting to take myself out of the equation entirely. I knew I could find two professional participants and stage a performance. Ideally a performance at the *Museum of Communications* in Seattle. The two actors would each have their own tape machine that was linked to their partner's vibrator, and they'd play out a sexual encounter entirely by feeding different tape patterns into their machines. Oh yeah, getting kinky again!
 
 Yet on second thought, maybe it really should be a video instead of a performance. I could see it: the actors wearing outfits straight out of a music video by *Devo* or *The Residents* to create a surreal porno from a retro-styled future. A little erotic perhaps but not explicit. The ultimate sex tape!
 
-It sure sounded great in my head. Maybe too great. And perhaps still a little too safe too. I'd done something like that before, which  was fun, but now I wanted to try something new. A performance, but not one on the stage. No actors. Not set. No coordination. Just an event out in the real world. Or no, not an event: a hookup! The ultimate hookup!!!
+It sure sounded great in my head. Maybe too great. And perhaps still a little too safe too. I'd done something like that before, which  was fun, but now I wanted to try something new. A performance, but not one on the stage. No actors. No set. No coordination. Just an event out in the real world. Or no, not an event: a hookup! The ultimate hookup!!!
 
 And finding a second human for this newfangled ménage à trois would prove to be the chief difficulty of this little adventure.
 
@@ -370,13 +370,13 @@ Look: I know this is like the seventh time (or something) I've connected strange
 
 Not that there's anything wrong with that mind you. For if you've got a thing for vacuum tube erotica or stock ticker bondage or hardcore core memory wiring, great! It's just that I feel the whole fetish angle oversimplifies what *Sex Tapes* was all about.
 
-For first consider what a fetish is. While the sexual connotation of the word is what you are likely familiar with, the word fetish is not all gimps and gags; it has anthropological roots. Colonial European scholars for example write of tribal fetishism, in which an object like an amulet is imbued with a supernatural powers, say the power to protect its owner. Neither is Christianity above fetishization either, with its granting of special significance to crucifixes, fragments of the supposed bones of saints, and even water.
+For first consider what a fetish is. While the sexual connotation of the word is what you are likely familiar with, the word fetish is not all gimps and gags; it has anthropological roots. Colonial European scholars for example write of tribal fetishism, in which an object like an amulet is imbued with supernatural powers, say the power to protect its owner. Neither is Christianity above fetishization either, with its granting of special significance to crucifixes, fragments of the supposed bones of saints, and even water.
 
 The key is belief. The fetish object does not have special powers. Science cannot prove that the water of Lourdes can cure cancer, nor can a crucifix perform miracles or even ward off vampires. And, just as importantly, a fetish is learned. As far as I know, humans are not instinctively drawn to crucifixes.
 
 Sexual fetishes have many of the same characteristics. I doubt for example that anyone is born hardwired to fancy leather or smoking or whatever; those objects and activities are imbued with their perceived powers through learned association. Nor, no matter what the fetishists may claim, do those objects and activities have any real power.
 
-I find some of [Freud's theories on sexual fetishes](https://cpb-us-w2.wpmucdn.com/portfolio.newschool.edu/dist/9/3921/files/2015/03/Freud-Fetishism-1927-2b52v1u.pdf) plausible. No, not the part where he concludes that, "we may say that the normal prototype of fetishes is a man’s penis, just as the normal prototype of inferior organs is a woman’s real small penis, the clitoris." (Indeed that point of view seems more like an expression of a certain someone's penis fetish than anything else.) But Freud also argues that sexual fetishization often take something uncomfortable—perhaps the subconsciously uncomfortable—and makes it manageable, makes it safer. Fetishization is almost a form of domestication: taking scary, savage realities and transferring them to much more manageable objects and activities. And if transference is not enough, a fetish can be built around embracing the uncomfortable itself—e.g. humiliation, domination, various bodily fluids, and so on—yet again, always in a controlled manner. And from this vantage, can you not begin to sympathize? For say one cannot come to terms with the uncomfortably bestial nature of sexual attraction and of the sexual act itself, why then getting all gussied up in your finest furs and chasing *vulpes vulpes* is actually a quite cultured, perhaps downright civilized, solution to an intractable existential quandary.
+I find some of [Freud's theories on sexual fetishes](https://cpb-us-w2.wpmucdn.com/portfolio.newschool.edu/dist/9/3921/files/2015/03/Freud-Fetishism-1927-2b52v1u.pdf) plausible. No, not the part where he concludes that, "we may say that the normal prototype of fetishes is a man’s penis, just as the normal prototype of inferior organs is a woman’s real small penis, the clitoris." (Indeed that point of view seems more like an expression of a certain someone's penis fetish than anything else.) But Freud also argues that sexual fetishization often takes something uncomfortable—perhaps the subconsciously uncomfortable—and makes it manageable, makes it safer. Fetishization is almost a form of domestication: taking scary, savage realities and transferring them to much more manageable objects and activities. And if transference is not enough, a fetish can be built around embracing the uncomfortable itself—e.g. humiliation, domination, various bodily fluids, and so on—yet again, always in a controlled manner. And from this vantage, can you not begin to sympathize? For say one cannot come to terms with the uncomfortably bestial nature of sexual attraction and of the sexual act itself, why then getting all gussied up in your finest furs and chasing *vulpes vulpes* is actually a quite cultured, perhaps downright civilized, solution to an intractable existential quandary.
 
 But back to the matter at hand.
 
@@ -469,7 +469,7 @@ It doesn't matter.
 
 It's a well known fact that hooking up in Seattle can be challenging even in the best of times. Nor would I claim to be an expert on such matters, for although I receive hundreds upon hundreds of emails every week from hot and horny singles in my area, I have never replied. Their loss. Add to this the fact that *Sex Tapes* would require a very special type of hookup—specifically one at 600baud—and you begin to get some sense of the challenge. 
 
-As if this were not enough, I could not but feel that a general sprit of chivalry would be required on this most quixotic of quests. This saddled the project with some additional requirements:
+As if this were not enough, I could not but feel that a general spirit of chivalry would be required on this most quixotic of quests. This saddled the project with some additional requirements:
 
 — Organic. I wanted to create something out in the real world. No hiring professionals, no coordinating with friends; just a man and his tape machine on a quest to discover the true meaning of love in our modern age.
 
@@ -479,7 +479,7 @@ As if this were not enough, I could not but feel that a general sprit of chivalr
 
 Faced with all these challenges, I decided to do what many a nervous quester had done before me: try online dating. Yes, I would put myself—and *Sex Tapes*—out there and let people invite themselves in if they so chose. It was my hope that someone somewhere would be willing to take a chance.
 
-It sounded so easy too. Just create a profile watch the DMs role in. Indeed I began practicing how I would  gently inform eager participants that, although their interest was greatly appreciated, there was simply not enough punch for everyone. And I began to fantasize of great masquerade debaucheries involving reel after reel of the most steamy tapes...
+It sounded so easy too. Just create a profile watch the DMs roll in. Indeed I began practicing how I would  gently inform eager participants that, although their interest was greatly appreciated, there was simply not enough punch for everyone. And I began to fantasize of great masquerade debaucheries involving reel after reel of the most steamy tapes...
 
 </section>
 <section markdown="1">
@@ -686,7 +686,7 @@ But then the sensation started growing stronger. It began to spread up my right 
 
 Not so much fun now.
 
-This whole body sensation had actually happened to me a few years back. That time I had played around with a very soft blanket after enjoying an overly THC laden browny. It was pretty great. Just add some music for a truly amazing trip. I know that sounds super lame so just trust me.
+This whole body sensation had actually happened to me a few years back. That time I had played around with a very soft blanket after enjoying an overly THC laden brownie. It was pretty great. Just add some music for a truly amazing trip. I know that sounds super lame so just trust me.
 
 We eventually made it back to the car and although my legs got better within a few hours, the numbness in my hands stuck around for a week. I couldn't open doors. I couldn't even use pockets, they simply confounded my VR hands! Plus I was downright dangerous around soft fabrics, wires, hair... Touching, manipulating, or squeezing these materials was super fun but if I gave into the temptation, the sensation would start growing stronger and I was really scared of messing myself up again.
 
@@ -697,7 +697,7 @@ Being vulnerable like that really made me viscerally realize that is what bullie
 </section>
 <section markdown="1">
 
-There were probably fifteen people in the immediate area of the train car while all this was happening. No one did anything until a woman in the seat behind me stepped in. She saw my tripod and started a deliberate conversation with me about photography, even as the man continued trying to engage me. And after a minute or two, he got board and got off at the next stop.
+There were probably fifteen people in the immediate area of the train car while all this was happening. No one did anything until a woman in the seat behind me stepped in. She saw my tripod and started a deliberate conversation with me about photography, even as the man continued trying to engage me. And after a minute or two, he got bored and got off at the next stop.
 
 Obviously what she did is a classic anti-bullying strategy. It was amazingly effective. Plus, after the man left the train, two young women a few seats up let me know they had reported him to security and that he had already been picked up.
 
@@ -842,13 +842,13 @@ What was I afraid of?
 
 *Extreme DV At Used Car Prices* has aged poorly in some respects. Not even 20 years old and already most of the websites it mentions are dead; the software it details is deprecated or unrecognizable (hi Final Cut!); and the hardware it talks about is ancient. And "used car prices"? All you need these days to create and distribute a film is your phone.
 
-But all that is beside the point, because when Rick starts gets into his approach to filmmaking and storytelling, the book is just as radical and relevant as ever. He talks about how you can start creating a film without meticulously planning it out in advance. Indeed, that moving beyond storyboards—embracing spontaneity and being reactive during filming—can produce far more unique and honest results. He talks about breaking free from movie cliches that you didn't even realize were cliches, such as story arcs and character tropes. And Rick covers how if you want to tell a story that truly matters to you, you shouldn't let anything hold you back. You can tell a unique story without much in the way of equipment, actors, props, sets, money, and filmmaking experience. That's only become more in the past 20 years.
+But all that is beside the point, because when Rick starts getting into his approach to filmmaking and storytelling, the book is just as radical and relevant as ever. He talks about how you can start creating a film without meticulously planning it out in advance. Indeed, that moving beyond storyboards—embracing spontaneity and being reactive during filming—can produce far more unique and honest results. He talks about breaking free from movie cliches that you didn't even realize were cliches, such as story arcs and character tropes. And Rick covers how if you want to tell a story that truly matters to you, you shouldn't let anything hold you back. You can tell a unique story without much in the way of equipment, actors, props, sets, money, and filmmaking experience. That's only become more in the past 20 years.
 
 In short: the book described a rather punk style of film making and story telling. I liked it. Those were the same characteristics I loved about *Emerald Cities*, what made it feel so unique, so authentic. The film was clearly a labor of love that wasn't aiming to be something mainstream but instead to express something that I'm still trying to figure out. Or maybe the key is that you don't need to figure it out. The film was an experience.
 
-*Extreme DV At Used Car Prices* made me realize I had been trying to tell a traditional story with *Sex Tapes*: the young hero is called to make a sex tape, faces many trials, but ultimately prevails and returns, VHS in hand—like Moses coming down from the mountain—having learned something about themselves and with a valuable message for society. And maybe that could have been  be entertaining. Maybe that could have made you smile or laugh or even think a little. But it was also the safe option. I'd done it before.
+*Extreme DV At Used Car Prices* made me realize I had been trying to tell a traditional story with *Sex Tapes*: the young hero is called to make a sex tape, faces many trials, but ultimately prevails and returns, VHS in hand—like Moses coming down from the mountain—having learned something about themselves and with a valuable message for society. And maybe that could have been entertaining. Maybe that could have made you smile or laugh or even think a little. But it was also the safe option. I'd done it before.
 
-Now I wanted to try something new, even it meant making a mess.
+Now I wanted to try something new, even if it meant making a mess.
 
 </section>
 <section class="sex-tapes-chat" markdown="1">
@@ -884,7 +884,7 @@ So why was it so difficult to admit that it's just not my thing? Why does all th
 </section>
 <section markdown="1">
 
-I remember when I first heard about Tinder. Back then it still had this mystique! Like it was an invite into a world of *Eyes Wide Shut* balls and all sorts of craziness! Sure people nowadays use it for more traditional dating, but I still remember female friends (along with many of my male ones too) always insetting the qualifying, "Yeah but I only signed up as a joke! Ha Ha Ha!" Yet something in their hearty har hars often struck me as a bit empty. 
+I remember when I first heard about Tinder. Back then it still had this mystique! Like it was an invite into a world of *Eyes Wide Shut* balls and all sorts of craziness! Sure people nowadays use it for more traditional dating, but I still remember female friends (along with many of my male ones too) always inserting the qualifying, "Yeah but I only signed up as a joke! Ha Ha Ha!" Yet something in their hearty har hars often struck me as a bit empty. 
 
 So naturally my first profile was on Tinder, but I only signed up to create *Sex Tapes*. Ha Ha Ha!
 
@@ -918,7 +918,7 @@ And with a click, *Sex Tapes* was live! Me and my tape machine were out there in
 </section>
 <section markdown="1">
 
-Ok, so maybe if I was getting a hundred shiggies a year sex would just become routine. No big deal. Just another form of entertainment, like a another hit of social media or Netflix... Maybe that last part is not the best analogy.
+Ok, so maybe if I was getting a hundred shiggies a year sex would just become routine. No big deal. Just another form of entertainment, like another hit of social media or Netflix... Maybe that last part is not the best analogy.
 
 The more I think about that though, the more depressing that outcome seems. Because sex matters to me. Not just physically but emotionally. Perhaps even spiritually. I need to be able to trust and value and love my partner, and know they feel the same way about me. Maybe hormone crazed teenage me didn't care about that as much but less hormone crazed and slightly more domesticated adult me definitely does.
 
@@ -926,7 +926,7 @@ And I feel like a bit of a chump to admit that. You know, for thinking so much a
 
 I know that much of this is perception. If I could talk honestly with more people about this all, I suspect that I wouldn't feel like an outlier.
 
-And I also know that viewing sex as special doesn't make me some outmoded abstinence-only nutter. I know that sex-positivity is not about orgies or sleeping with hundreds of different partners a year, it's about unshackling sex so that people can explorer their sexual identity. And sure, for some people maybe that means orgies, but for a long time, all I could see was the flashy, promiscuous side things. That left me struggling with how to reconcile the part of me that is interested in exploring interesting takes on sexuality with projects like *Sex Tapes*, and the part of me that deeply values real sex and secretly desires a rather boring partnership.
+And I also know that viewing sex as special doesn't make me some outmoded abstinence-only nutter. I know that sex-positivity is not about orgies or sleeping with hundreds of different partners a year, it's about unshackling sex so that people can explore their sexual identity. And sure, for some people maybe that means orgies, but for a long time, all I could see was the flashy, promiscuous side of things. That left me struggling with how to reconcile the part of me that is interested in exploring interesting takes on sexuality with projects like *Sex Tapes*, and the part of me that deeply values real sex and secretly desires a rather boring partnership.
 
 The real kicker is that this struggle was almost entirely self-imposed. No one in what we might loosely term sex-positive discussions or situations has ever made me feel unwelcome or pressured me in any way. I pretty much did it all to myself (although perhaps with a little help from media).
 
@@ -1112,11 +1112,11 @@ Flower analogies have always weirded me out. I know they are supposed to be poet
 
 And another thing:
 
-*Boobs* is my vote for worst word in the English language. People are always pushing *moist* but I’m not sold. Personally, I find *fetus* to be a much uglier word vocally than *moist*. Probably says a lot about me. All things things considered though, I think *boobs* takes the cake. 
+*Boobs* is my vote for worst word in the English language. People are always pushing *moist* but I’m not sold. Personally, I find *fetus* to be a much uglier word vocally than *moist*. Probably says a lot about me. All things considered though, I think *boobs* takes the cake. 
 
-To begin with, *boobs* is just a stupid word. Try saying it aloud. "Booooooobbbbbbbs". Ugh! The "ooooo" forces your month into a big dumb O shape like some calf getting ready to suckle. It is a word that isn't so much as spoken as plops out of the mouth, landing with a wet thud in any conversation. You cannot help but sound stupid saying it. *Boobs* implies boob.
+To begin with, *boobs* is just a stupid word. Try saying it aloud. "Booooooobbbbbbbs". Ugh! The "ooooo" forces your mouth into a big dumb O shape like some calf getting ready to suckle. It is a word that isn't so much as spoken as plops out of the mouth, landing with a wet thud in any conversation. You cannot help but sound stupid saying it. *Boobs* implies boob.
 
-But the true crime is that this word, this most vile and debased of words, does not content itself with merely being crude, its entire goal is to take something pure, something wonderful, something heavenly and pull it down in to the muck. For real women do not have *boobs*, they have breasts! Breasts nourish! Breasts stimulate! Breast bring pleasure! In short: breasts are the best! *Boobs* on the other hand are detached blobs of flesh ogled by horny thirteen year olds who don’t even know what being horny means.
+But the true crime is that this word, this most vile and debased of words, does not content itself with merely being crude, its entire goal is to take something pure, something wonderful, something heavenly and pull it down in to the muck. For real women do not have *boobs*, they have breasts! Breasts nourish! Breasts stimulate! Breasts bring pleasure! In short: breasts are the best! *Boobs* on the other hand are detached blobs of flesh ogled by horny thirteen year olds who don’t even know what being horny means.
 
 And while a word such as *tits* (in context, generally understood to mean much the same thing as *boobs*) is also plenty crude, at least *tits* is unapologetically so. That's not to say I advocate its usage mind you—for, in my view at least, real men speak about "breasts", or "areolae" and "nipples" if they wish to get more specific—however people generally don't go around blabbering about *tits* at family events. Yet in America at least, the word *boobs* is often used as a socially acceptable euphemism for *breasts*. Christ! If there were ever a single word that captures everything wrong with the American conception of sexuality, it is *boobs*: immature, crude, and ashamed. Then we go and make *boobs* the national fetish, and by doing so once again drag a living part of heaven down into our depravity and helmet ourselves with it. 
 
@@ -1172,13 +1172,13 @@ So there's that.
 
 (Side note: *The Denial of Death* would really make a terrible religion in practice. Good luck trying to sustain a belief system for 2000+ years if that belief system doesn't claim God wants you to beget more little believers.)
 
-Our undervaluing of sex doesn't stop with reproduction. For consider that sexual activity is one of the only times outside of select sports where we truly physically interact with other humans. So much of our lives are intellectual; sex forces us to confront the fact that we are physical beings. Physical being who are drawn to other physical beings. And, no matter what the poets say, that's not always pretty aesthetically or existentially.
+Our undervaluing of sex doesn't stop with reproduction. For consider that sexual activity is one of the only times outside of select sports where we truly physically interact with other humans. So much of our lives are intellectual; sex forces us to confront the fact that we are physical beings. Physical beings who are drawn to other physical beings. And, no matter what the poets say, that's not always pretty aesthetically or existentially.
 
-In fact, I have to admit that even all these years after reading *The Denial of Death*, I still have not entirely come to terms with the idea of being alive, of being mortal, of being an animal. Would it not be preferable to either live entirely in the intellectual sphere or entirely in the animal one? Instead I'm just intellectual enough to understand my animalistic nature in Ernest's piss and shit terms and just self-aware enough to be embarrassed by it all. This may actually be a common ailment, given that many human activity attempt to fetishize some of the very things that most remind us of the beast in us: food, scents, our bodies, dance, sex...
+In fact, I have to admit that even all these years after reading *The Denial of Death*, I still have not entirely come to terms with the idea of being alive, of being mortal, of being an animal. Would it not be preferable to either live entirely in the intellectual sphere or entirely in the animal one? Instead I'm just intellectual enough to understand my animalistic nature in Ernest's piss and shit terms and just self-aware enough to be embarrassed by it all. This may actually be a common ailment, given that many human activities attempt to fetishize some of the very things that most remind us of the beast in us: food, scents, our bodies, dance, sex...
 
 A strange situation, isn't it? To find yourself alive I mean.
 
-So if we get right down to it, I'm do have to admit that I'm still not entirely comfortable with sex, but for very different reasons than you usually hear about. Perhaps that's also why I value it so much though. For, right from the start, sex for me implicitly involves trust. Trust that I can show my partner this physical side of my being that I am not entirely comfortable with and that they will still love me afterwards. The odd bit is that sex is one of the only times I feel it's all ok. That I'm doing exactly what I was meant to as a silly little mortal creature and that it's all ok.
+So if we get right down to it, I do have to admit that I'm still not entirely comfortable with sex, but for very different reasons than you usually hear about. Perhaps that's also why I value it so much though. For, right from the start, sex for me implicitly involves trust. Trust that I can show my partner this physical side of my being that I am not entirely comfortable with and that they will still love me afterwards. The odd bit is that sex is one of the only times I feel it's all ok. That I'm doing exactly what I was meant to as a silly little mortal creature and that it's all ok.
 
 So although I may not be fully comfortable with it, you know what? I still love you, even if you are full of piss and shit. After all, I am too.
 
@@ -1346,7 +1346,7 @@ So why does writing about it make me so uncomfortable? And for that matter, why 
 
 <section markdown="1">
 
-Every other month or so I come across a new article that explains how boys grow up to be toxic men. Maybe bad role male models are to blame. Maybe it's the lack of male role models. Maybe there's too much fake sex everywhere. Maybe there's not enough real sex anywhere. Maybe it's music. Maybe it's advertising. Maybe it's porn.
+Every other month or so I come across a new article that explains how boys grow up to be toxic men. Maybe bad male role models are to blame. Maybe it's the lack of male role models. Maybe there's too much fake sex everywhere. Maybe there's not enough real sex anywhere. Maybe it's music. Maybe it's advertising. Maybe it's porn.
 
 Many of these articles are well written. They identify real problems. And it's appealing to hear that, "well if we can just fix ____, then we'll be cranking out XY feminists in no time!"
 
@@ -1354,7 +1354,7 @@ Yet, as enticing as such narratives are, I can never fully relate to them. I was
 
 So now, in a classic dude move, I'm going to tell you my story in a way that makes it seem very important. I don't even care if you don't want to hear it!
 
-To start with, I actually had a lot of great male role models growing up. These were men who defied stereotypes: from uncles who loved Jazz and College Football, to uncles who were flamboyant hairdressers. And while they were not perfect—they could have shown more emotion for one—they also were passionate and cared deeply in their own ways. The men in my life were always respected women and showed me that true strength is in caring for others. What I saw in them mattered a whole lot more than what I saw in the media.
+To start with, I actually had a lot of great male role models growing up. These were men who defied stereotypes: from uncles who loved Jazz and College Football, to uncles who were flamboyant hairdressers. And while they were not perfect—they could have shown more emotion for one—they also were passionate and cared deeply in their own ways. The men in my life always respected women and showed me that true strength is in caring for others. What I saw in them mattered a whole lot more than what I saw in the media.
 
 And I also had a strong female role model in my mom. She wasn't traditionally feminine and she certainly wasn't a traditional mom. She was the type of mom who brought home owl palettes to dissect and played with circuits with me. And if you're wondering where I got my love of B-movies from, it was her. She introduced me to old Godzilla films when I was young, and later we laughed through many bad Sci-Fi channel originals together.
 
@@ -1369,7 +1369,7 @@ I remember a conversation I overheard in a store recently.
 
 A transwoman and a man were talking. She must have transitioned recently because the man asked her how it had been going. She said, "Great". But then she said something along the lines of (and I'm paraphrasing using my own words because I can't remember the exact ones), "You know, until transitioning I never realized how much shit men have to put up with. As a woman though, people are just nicer. Even strangers. Like when I go to a restaurant, the staff is a lot more friendly." 
 
-Which was an interesting thing to hear! The perspective from both side I mean.
+Which was an interesting thing to hear! The perspective from both sides I mean.
 
 Really made me think too. Part of me is still wondering if maybe it's true. Then I remember that there's a whole world of bullshit that women have to put up with every single day that I'm not even aware of.
 
@@ -1512,7 +1512,7 @@ Also old slashers.
 <div class="a">
 Well yes, I guess if you put it in those terms. But it's not like that.
 <br><br>
-I like them because they are trash. You don't enjoy them directly. Well I guess maybe some people do but those people are messed up! Like when Freddy says, "Welcome to primetime bitch" and then kills a woman by slamming her into his TV body. It's funny not because the joke itself is funny, but because someone even made such as stupid joke. You have to watch them on sort of a meta level.
+I like them because they are trash. You don't enjoy them directly. Well I guess maybe some people do but those people are messed up! Like when Freddy says, "Welcome to primetime bitch" and then kills a woman by slamming her into his TV body. It's funny not because the joke itself is funny, but because someone even made such a stupid joke. You have to watch them on sort of a meta level.
 <br><br>
 Ok, I should probably stop. Just digging myself in deeper.
 </div></div>
@@ -1531,11 +1531,11 @@ To explain this conundrum, you need to understand a bit of how the site works. B
 
 When someone likes you, they show up in your feed. Here's the thing though: that feed also contains random other people who the site thinks you may like. And as far as I know, there's no indication why you are seeing a given profile in your feed unless the person who liked you also made an introduction. Just a simple "star" and you're out of luck. (I believe you can also pay for a subscription to see all your stargazers. See that's how they get you!)
 
-While this works well enough for normal dating purposes, remember with *Sex Tapes* I had taken a vow of chivalry. What this meant in practice was that the women would have to initiate things. Presumably such a move would indicated that they knew what I was trying to accomplish with the project and were ok with something kind of different, at which point I would happily provide further information.
+While this works well enough for normal dating purposes, remember with *Sex Tapes* I had taken a vow of chivalry. What this meant in practice was that the women would have to initiate things. Presumably such a move would indicate that they knew what I was trying to accomplish with the project and were ok with something kind of different, at which point I would happily provide further information.
 
 So now my conundrum should be more clear: if someone liked my profile but failed to include an introduction, I could not find them through the site without risking reaching out to the wrong person and weirding them the fuck out as they wonder what this dude with a tape machine is all about.
 
-And unfortunately, for the first star, whoever liked me did not included a message. I had no way to follow up.
+And unfortunately, for the first star, whoever liked me did not include a message. I had no way to follow up.
 
 Talk about crushed dreams. 
 
@@ -1578,13 +1578,13 @@ So given all that mostly positive background, where did things go wrong?
 
 I remember a conversation I overheard once while riding the "L" in Chicago.
 
-The train car was fairly full. Two men were talking with each other a few seats up. Loudly. Seemed to be in their 40s. Sports, work, life. The usual. You could sort of tell that some of the other people in the car were half listening too. It was hard not too frankly. The men either didn't notice this or didn't care.
+The train car was fairly full. Two men were talking with each other a few seats up. Loudly. Seemed to be in their 40s. Sports, work, life. The usual. You could sort of tell that some of the other people in the car were half listening too. It was hard not to frankly. The men either didn't notice this or didn't care.
 
 Their conversation eventually turned to romance, and at this point I started to get curious about where things were headed. Because, given that the train car had already heard all about financial troubles, health issues, and family members with addiction problems, these guys did not seem to be holding much back.
 
 One of the guys started telling about this date or something. He and a woman had apparently gone back to someone's apartment, when the woman had passed out. Which doesn't seem entirely normal, now does it? And then the narrator stated to his friend in a completely matter of fact way, "You know, I guess I could have raped her." Which itself is a pretty terrible thing to overhear on the train, but what really got me is the way he said it: he said it as if to imply that he was actually a really good guy because he didn't!
 
-I mean, Christ! at least he didn't, but is that the standard us men are going to hold ourselves too? If someone passes out with you and you are sober enough to remember the ordeal, how does raping them even cross your mind? And ok, let's say such a thought did happen to pop into your head for some reason. How can you feel it's ok to loudly talk about that on a train with a bunch of women sitting all around you!?!
+I mean, Christ! at least he didn't, but is that the standard us men are going to hold ourselves to? If someone passes out with you and you are sober enough to remember the ordeal, how does raping them even cross your mind? And ok, let's say such a thought did happen to pop into your head for some reason. How can you feel it's ok to loudly talk about that on a train with a bunch of women sitting all around you!?!
 
 Of course I didn't say anything but I did spend the next hour imagining many scenarios in which I did. I guess I could have killed him too. I didn't though. 
 
@@ -1619,7 +1619,7 @@ I remember one time on a school trip, all us boys were crowded together in one h
 
 God that felt shitty. It felt shitty even then when I didn't know exactly why it felt shitty.
 
-Then in high school, I learned that being a man meant sexual conquest. It was about trying to score blow jobs off the easy girl. It was all those awkward conversations were we'd sit around and try to shoot the shit like real men, saying real manly things like, "God, don't you just love boobs!" (Which sadly, while not perhaps a direct quote, does capture the general sprit of things.)
+Then in high school, I learned that being a man meant sexual conquest. It was about trying to score blow jobs off the easy girl. It was all those awkward conversations where we'd sit around and try to shoot the shit like real men, saying real manly things like, "God, don't you just love boobs!" (Which sadly, while not perhaps a direct quote, does capture the general spirit of things.)
 
 And more than anything, I look back now and see all that went unsaid. They taught us about babies, STDs, and even consent but never about what women wanted. No one talked about that. I honestly can't recall any male my age ever even hinting at that back then. Sex was something done to them.
 
@@ -1701,11 +1701,11 @@ My first real date was in college. I guess that makes me kind of a nerd. Still a
 
 In the cliche internet narrative, stuff like that probably should have made me all angry and bitter towards women. Instead, as I grew older, I just grew pissed at men. Not specific men, more like men in the abstract. More like the entire concept of masculinity that I felt was being foisted on me.
 
-Over the years, masculinity had slowly transformed in my eyes from something noble and natural into this oppressive, corrupting force. I had started to question. Why did it feel so dirty to hear some men make comments on women's bodies? Why did those male driven sex comedies always feel off? Why on the news was it almost always men doing horrible things? Where most men secretly sex-crazed, pedophiliac losers like Chris Hansen seemed to prove over and over again every week? 
+Over the years, masculinity had slowly transformed in my eyes from something noble and natural into this oppressive, corrupting force. I had started to question. Why did it feel so dirty to hear some men make comments on women's bodies? Why did those male driven sex comedies always feel off? Why on the news was it almost always men doing horrible things? Were most men secretly sex-crazed, pedophiliac losers like Chris Hansen seemed to prove over and over again every week? 
 
 Here's the truly ironic bit though: my negative view of masculinity mostly came from men themselves, from their actions and behaviors, from examples in the media of how men were supposed to behave. There was no secret feminist plot. If you think otherwise, look in the mirror.
 
-It left me feeling lost. My parents had given me this idea of what being a man meant—of what love and sex were all about—but the world had muddied everything up. I was still attracted to women and wanted more than anything to be with them, yet if my only choices were to emulate what I now saw as a toxic, cliched vision of manliness or pretend that I was asexual, the latter started seeming like pretty reasonable choice. And yet why then did I still feel so broken? Why did I feel like a loser for not being something I didn't want to be?
+It left me feeling lost. My parents had given me this idea of what being a man meant—of what love and sex were all about—but the world had muddied everything up. I was still attracted to women and wanted more than anything to be with them, yet if my only choices were to emulate what I now saw as a toxic, cliched vision of manliness or pretend that I was asexual, the latter started seeming like a pretty reasonable choice. And yet why then did I still feel so broken? Why did I feel like a loser for not being something I didn't want to be?
 
 </section>
 <section markdown="1">
@@ -1890,9 +1890,9 @@ Sometimes I feel I'm not smart enough to tell this story the right way. There sh
 
 If I were smarter, I would show instead of telling. I would argue my points using a dialog between Socrates and The Serpent (aka his penis). Or maybe the story would all be told using a fictional social app call "M2M", which would be a reference to the ticking of a Doomsday Clock. If I was smarter, I would tell this story using hyperlinks and hypermedia and the now, not using boring old text with a few photos and songs thrown in. Didn't even include a single emoji or image meme like a proper millennial.
 
-And there I would be: the heroic narrator! Authoritative yet cooly detached. Accomplished yet still relatable. Plus a sexual tyrannosaur too boot!
+And there I would be: the heroic narrator! Authoritative yet cooly detached. Accomplished yet still relatable. Plus a sexual tyrannosaur to boot!
 
-But I can't. I don't know that I even want to anymore. Because in many ways, I'm board with it.
+But I can't. I don't know that I even want to anymore. Because in many ways, I'm bored with it.
 
 It disturbs me that much of what I find most exciting happened decades ago. The art, the writing, the music. I look at a shit happening these days and think: well this is just incredibly lame. All too safe. All too full of winks and wanks. Sometimes when I peek outside my little bubble all I see is branding and boasting and bullshit.
 
@@ -1965,9 +1965,9 @@ Porn is commonly blamed for corrupting young men. And I get it! There is a lot o
 
 But blaming porn seems like a cop-out. That stuff doesn't just exist in a vacuum after all. And besides, just look at me. I turned out ok! I definitely don't make projects called *Sex Tapes* or anything... ok well, I mean if you're really looking for someone to blame for who I am, blame Ernest Becker.
 
-Although maybe there's a important and rather Freudian point that could perhaps explain that along with a whole lot of things: (TMI time!) I have never watched pornography that includes a man. Like ever. Not even as a teenager who was curious about what whole male, female thing could look like. Hell, even a plastic penis is pretty borderline. The only reason I ever have is for projects (no joke).
+Although maybe there's an important and rather Freudian point that could perhaps explain that along with a whole lot of things: (TMI time!) I have never watched pornography that includes a man. Like ever. Not even as a teenager who was curious about what the whole male, female thing could look like. Hell, even a plastic penis is pretty borderline. The only reason I ever have is for projects (no joke).
 
-Our dear Austrian friend would probably have a good deal to say about that, however that point of view may also be too simplistic. I think it largely goes back to the whole negative idea of masculine sexuality I developed growing up. A lot of pornography that features a man on the screen men sadly does play into those ideas. Plus, back then I had trouble seeing even potentially ok expressions of male sexuality as positive. Not that pornography with only women is necessarily some progressive paragon mind you! Because obviously it is still made for men, and all too often by men too. However I can't help but feel that scenes with women are generally a bit more reciprocal and romantic and perhaps even respectful. At least they are about female pleasure, even if much of it is acting. I'd even go as far as to argue that all female scenes are usually more sensual too, as they are usually more than just a bunch of cumshots.
+Our dear Austrian friend would probably have a good deal to say about that, however that point of view may also be too simplistic. I think it largely goes back to the whole negative idea of masculine sexuality I developed growing up. A lot of pornography that features a man on the screen sadly does play into those ideas. Plus, back then I had trouble seeing even potentially ok expressions of male sexuality as positive. Not that pornography with only women is necessarily some progressive paragon mind you! Because obviously it is still made for men, and all too often by men too. However I can't help but feel that scenes with women are generally a bit more reciprocal and romantic and perhaps even respectful. At least they are about female pleasure, even if much of it is acting. I'd even go as far as to argue that all female scenes are usually more sensual too, as they are usually more than just a bunch of cumshots.
 
 So here's how it went down: as a teenager, instead of watching videos of a man banging a woman and fantasizing about being the man, as I feel I was probably supposed to be doing, I watched videos of women caressing and kissing each other while fantasizing about being one of them. A bit of a plot twist! (I guess the more standard explanation of the appeal of videos with two women to men is that the man watches and desires both of the women. Which, while us men may indeed sometimes have monkey brains, it does seem a bit insulting to imply that for men it's all as simple as: one woman = good, so two women = double good!)
 
@@ -1975,7 +1975,7 @@ But I should make it clear that the fantasy was never about literally being a wo
 
 I still struggle with those things all these years later. I still doubt that my partners can find my body as attractive as I find theirs. I still feel somewhat uncomfortable with even healthy expressions of male sexuality. I still wonder what women see in us.
 
-Also, for the record, and at risk at making myself seem very foolish or at the very least highlighting how good I am at fooling myself, I'm pretty convinced that porn actually made me love, respect, and value real women even more. I'm guessing that would not have been the case if it'd been weaned on blowjobs and whatnot, though it's impossible to say without a time machine of course. Having said that, I'm still more than a little uncomfortable to admit all this because, like I said, that stuff also has more than its share of negatives and because probably around half the women I know happen to be gay.
+Also, for the record, and at risk of making myself seem very foolish or at the very least highlighting how good I am at fooling myself, I'm pretty convinced that porn actually made me love, respect, and value real women even more. I'm guessing that would not have been the case if I'd been weaned on blowjobs and whatnot, though it's impossible to say without a time machine of course. Having said that, I'm still more than a little uncomfortable to admit all this because, like I said, that stuff also has more than its share of negatives and because probably around half the women I know happen to be gay.
 
 </section>
 <section markdown="1">
@@ -2083,11 +2083,11 @@ What are you looking for?
 
 Most of my relationships have just sort of faded away. No big blow up, no "it's not you, it's me", no scandals. The daily messages turn into weekly messages, then every other week, until one day I realize that I don't remember the last time I saw her. It usually ends with me sitting in the dark staring at her name on the screen, knowing it's been too long to say I'm sorry. (Maybe at the very end, I should also make a whimpering sound or something...)
 
-I know the pattern well enough now to know when it is happening. That's the worse part. To know that it is happening yet to still do nothing. The last real time, I always knew the relationship was never going to be forever and yet still, why did I let it end like that?
+I know the pattern well enough now to know when it is happening. That's the worst part. To know that it is happening yet to still do nothing. The last real time, I always knew the relationship was never going to be forever and yet still, why did I let it end like that?
 
-I know it's such a god damned cliche, but I think I'm scared of getting too close. While there isn't a single root cause, once upon a time, someone very close to me betrayed my trust. I was a teenager when that happened, and although there were certainly lot of other things going on during that time, ever since I've found it difficult to let myself get too close to anyone.
+I know it's such a god damned cliche, but I think I'm scared of getting too close. While there isn't a single root cause, once upon a time, someone very close to me betrayed my trust. I was a teenager when that happened, and although there were certainly a lot of other things going on during that time, ever since I've found it difficult to let myself get too close to anyone.
 
-So here's how it usually plays out: at some point in a relationship, I'll start growing increasing concerned that I'm letting my partner down, thus setting myself up for them to hurt me. I still feel this even though I've never had anyone ever hurt me like that. Still, it's easier to let it all just fade away, or just to never put myself out there in the first place. I guess the problem is that those solutions leave me feeling pretty shitty.
+So here's how it usually plays out: at some point in a relationship, I'll start growing increasingly concerned that I'm letting my partner down, thus setting myself up for them to hurt me. I still feel this even though I've never had anyone ever hurt me like that. Still, it's easier to let it all just fade away, or just to never put myself out there in the first place. I guess the problem is that those solutions leave me feeling pretty shitty.
 
 </section>
 <section markdown="1">
@@ -2120,7 +2120,7 @@ When the lead singer started screaming and the crowd (mostly dressed in shades o
 
 Ha! Like I should be talking.
 
-Fun music though. Repetitive but at least you can dance to it, even if it's just banging all about. Plus there was an impromptu acoustic show after the main even where the band members were playing around while also making coffee in the stage area. So damn punk.
+Fun music though. Repetitive but at least you can dance to it, even if it's just banging all about. Plus there was an impromptu acoustic show after the main event where the band members were playing around while also making coffee in the stage area. So damn punk.
 
 </section>
 <section class="sex-tapes-chat" markdown="1">
@@ -2373,7 +2373,7 @@ But on the other hand, maybe that whole argument is bullshit too. For if how you
 
 I don't know but that's not the type of bullshit I'm advocating for.
 
-Bringing it all back: I know there are men who really identify with a stereotypical version of masculinity. It means a great deal to them. And you know what, I can respect that! As long as that their actions are not hurting other people, they have thought it through, and they are truly happy being that, great! 
+Bringing it all back: I know there are men who really identify with a stereotypical version of masculinity. It means a great deal to them. And you know what, I can respect that! As long as their actions are not hurting other people, they have thought it through, and they are truly happy being that, great! 
 
 What bothers me is knowing that a lot of men were pressured into accepting a restrictive definition. And, even of those men who happily accepted this definition, how many of them have tried to understand all the ways in which it is bullshit before deciding independently that they still want to believe in it. How many men have felt free to make it their own? I'm speaking from personal experience here. Growing up, I felt like my only choices were to be: a man, a gay man, or a dweeb. The definitions of each were kind of set in stone. There was nothing for me to own. That was bullshit.
 
@@ -2401,7 +2401,7 @@ So I slowly started to experiment. Not as in dying my hair purple or becoming bi
 
 It's taken me almost a decade to get to this place. Lots of small steps. Besides, you know how much procrastination you can fit into ten years? Probably almost five whole Ken Burns series worth! Plus, I didn't have anyone to follow. That's how it had to be though. I had to do it for myself.
 
-My projects exploring sexuality also certainly had role too. They were almost forcing functions. The first one for example just tasked me to write anything about sexuality. Later ones introduced new personal challenges while letting me express and explore my ideas.
+My projects exploring sexuality also certainly had a role too. They were almost forcing functions. The first one for example just tasked me to write anything about sexuality. Later ones introduced new personal challenges while letting me express and explore my ideas.
 
 Looking back, the biggest thing I've come to understand is how masculine cliches hurt everyone. Both women and men. And we don't talk about the male side enough. How much is lost by reducing male emotion to a small set of simple states: happy, angry, drunk, horny, ...? By reducing male motivations to generic terms such as power, honor, or respect? By reducing male sexuality to purely physical terms?
 
@@ -2411,7 +2411,7 @@ One bit of irony: for me, rejecting the restrictive vision of masculinity I lear
 
 Still, even though I know I've come a long way, I am self-conscious recounting my story. Because it all seems so small and silly compared to the stories I see celebrated in the media. It's not some grand celebration of a sexual awakening. It's not a story from someone who has been overlooked for far too long. It's not even a good romance. I mean, you know that the most sensual experience I've ever had involved fake VR and party balloons? God, compared to the stories Hemingway or those French writers tell...? But then again, I can still hear the soundtrack and it's got some absolutely killer synths. I wouldn't want it any other way.
 
-And this is not the end of the story either. For one thing I still haven't really figured out: how am I supposed to express myself beyond projects like *Sex Tapes*. How can I show you the type of man I am when I look like all the rest? How can I show you how much you mean to me when I'm so wary of making you uncomfortable that I hesitant to even hint how much I care? I guess what I really need here is your help.
+And this is not the end of the story either. For one thing I still haven't really figured out: how am I supposed to express myself beyond projects like *Sex Tapes*. How can I show you the type of man I am when I look like all the rest? How can I show you how much you mean to me when I'm so wary of making you uncomfortable that I hesitate to even hint how much I care? I guess what I really need here is your help.
 
 Plus, something about helping out my fellow man and all that...
 
@@ -2587,7 +2587,7 @@ I am looking for... I am looking for someone.
 <br><br>
 I am looking for someone whose hand to hold while watching the sunset. Someone who thinks a fun New Year's Eve is bouldering in the dark at Joshua Tree. Someone who thinks an adventure is spending the day looking for a ghost town in the desert and never finding it. Someone to watch bad movies with. Someone to cry hysterically with while listening to <i>The Midnight</i> after taking ecstasy. Someone to print letterpress cards for. Someone to cook quiche for. Someone who I can bring physical pleasure to. Someone whose body I can worship because it is theirs. Someone who I can delight intellectually. Someone who I can make smile with my puns and snarky comments and obscure references. Someone who has interests and passions and a life of their own that I can support and yet who will also play along with stupid projects like this. And I'm looking for so, so much more.
 <br><br>
-I am looking for a life partner who I can love unconditionally and who can love me back despite of all my faults. Because I am lost without you. Lost in ways that I can't even express.
+I am looking for a life partner who I can love unconditionally and who can love me back despite all my faults. Because I am lost without you. Lost in ways that I can't even express.
 <br><br>
 And I know it's too much. I know that I am looking for someone that never existed and will never exist. And yet I still know that I should be out there searching anyways. But I just can't, because I'm so scared of going through my whole life without ever finding you that sometimes I can't make myself look anymore.
 <br><br>
@@ -2612,11 +2612,11 @@ Why keep pretending I still care about telling that story?
 
 This was never an easy project for me. I designed it that way. 
 
-But you what know scared me even more? Admitting that I was actually interested in *Sex Tapes* in the first place.
+But you know what scared me even more? Admitting that I was actually interested in *Sex Tapes* in the first place.
 
 For although I've built my own identity and my own vision of what it means to be a man, I also recognize that this project—along with some of the ways I creatively express myself more broadly—do share superficialities with that shallow, stereotypical version of masculinity that I struggled to overcome for so long. I get that *Sex Tapes* could be problematic. And I get that I've made some bad jokes and double entendres in this write-up. But understand: I really enjoy this stuff! This feels honest to me, even if honesty meant admitting some things here that were probably better left unsaid. Because when you get right down to it, they actually aren't bad things. All of this is just bits of who I am. And yes, I still laugh at very non-progressive movies like *New Year's Evil* and *Olga's House of Shame*. And I still love the *Loaded with Love* EP from *Nightstop* musically and I love how trashy its cleavage album cover is. And I still like letterpressing posters with explosions and footballs on them. And I still like looking at women. And I still think about being with them all the time. I do not deny it. I am not ashamed of it.
 
-And yet I am also far, far more than what I fear those things may imply to those who do not know me, those who want to see me only in their terms. And while I perhaps haven't done the best job arguing my case here, that's besides the point! Even though I know who I am, part of me is still scared of being dismissed as just another toxic male. I am still scared of being labeled something that I've been trying to escape much of my adult life.
+And yet I am also far, far more than what I fear those things may imply to those who do not know me, those who want to see me only in their terms. And while I perhaps haven't done the best job arguing my case here, that's beside the point! Even though I know who I am, part of me is still scared of being dismissed as just another toxic male. I am still scared of being labeled something that I've been trying to escape much of my adult life.
 
 So in short, why did *Sex Tapes* scare me? I was scared of being seen as one of *those* dudes. You know, the kind of dude who would create a project called *Sex Tapes*. 
 

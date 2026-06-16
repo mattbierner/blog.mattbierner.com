@@ -45,7 +45,7 @@ The result is a path on a sphere that approximates the player's requested Katama
 
 {% include image.html file="translate.gif" %}
 
-Besides basic movement, the sphere the marker draws on slowly expands over time. The path starts on a 0.05m sphere, which expands to an 1m sphere by the end of the run. This expansion helps visualize time and adds interesting interior details to the shape.
+Besides basic movement, the sphere the marker draws on slowly expands over time. The path starts on a 0.05m sphere, which expands to a 1m sphere by the end of the run. This expansion helps visualize time and adds interesting interior details to the shape.
 
 The path is drawn progressively, with a default playback speed of 8x realtime. Skip to the end of the game to see the full path.
 
@@ -57,10 +57,10 @@ A set of options for configuring the visualization are also provided. [Try playi
 
 Now let's dive a bit into the implementation. I'm going to focus more on the high-level considerations of the project, instead of code dumping or tutorializing or anything like that. [All the code is open source][source], so feel free to check it out, open issues, ask questions, or submit PRs.
 
-My goal was to capture controller input playing *Katamari Damacy* on a physical Playstation 2, without effecting the gameplay experience. An emulator would be easier to work with, but less authentic and less interesting. And after a bit of trial and error, I was able to hack together something workable with an Arduino and a prayer.
+My goal was to capture controller input playing *Katamari Damacy* on a physical Playstation 2, without affecting the gameplay experience. An emulator would be easier to work with, but less authentic and less interesting. And after a bit of trial and error, I was able to hack together something workable with an Arduino and a prayer.
 
 ## Physical Setup
-The Playstation 2 talks to it's controllers using a slightly modified [SPI protocol](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus). So, by paralleling onto a few of the wires between the console and the controller, we can NSA the console to controller communications.
+The Playstation 2 talks to its controllers using a slightly modified [SPI protocol](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus). So, by paralleling onto a few of the wires between the console and the controller, we can NSA the console to controller communications.
 
 While it is possible to hook onto the Playstation 2 controller connector pins, I found it easier to sacrifice a controller by cutting through its cord to expose nine tiny wires; a veritable *Royal Rainbow*.
 
@@ -77,7 +77,7 @@ Since the Arduino is in parallel with the console -> controller, input to the ga
 Time to start collecting some data.
 
 ## Ones and Zeros
-Players use both analog sticks to steer the titular Katamari. There are a few other controls for cameras, and some button based controls that effect Katamari movement – such as pressing R3 and L3 to flip the Katamari over – but I decided to ignore these. This simplified movement model meant I only needed to poll the position of the two analog sticks during gameplay.
+Players use both analog sticks to steer the titular Katamari. There are a few other controls for cameras, and some button based controls that affect Katamari movement – such as pressing R3 and L3 to flip the Katamari over – but I decided to ignore these. This simplified movement model meant I only needed to poll the position of the two analog sticks during gameplay.
 
 With all the wiring correctly hooked up and the Arduino configured as an SPI slave, we receive about 60 binary messages like this per second:
 
@@ -105,10 +105,10 @@ ff:73:5a:ff:ff:89:7e:88:87
 ## Normalization
 Each analog stick axis value ranges from 0 to 255, so one may expect to see a value of 128 when the analog stick is not being used. This is rarely the case. Typical dead input values for my 15 year old PS2 controller's analog sticks were between 110 and 145, and *Katamari Damacy* itself only starts handling inputs below around 90 or above around 170. This is a pretty sizable deadzone, albeit one that I've rarely noticed in actual gameplay. 
 
-To simplify working the controller data, it was normalize by:
+To simplify working the controller data, it was normalized by:
 
 * Pushing all the input values that fell within the deadzone to zero.
-* Subtracted the deadzone out from from the remaining inputs.
+* Subtracted the deadzone out from the remaining inputs.
 * And then scaling the input values to between `[-1, 1]`.
 
 I also tacked on some additional metadata to each poll and dumped the whole game log to json. The data normalization script is in `process_data/main.js` [in the main repo][source]. 
@@ -298,7 +298,7 @@ To avoid this, I changed the marker to start drawing on a small sphere that slow
 The result is a much more interesting three dimensional shape, that also better captures the progression of a game. It also mirrors the ever expanding nature of a Katamari. You can disable this expansion in the configuration menu by setting `inner radius` to 100.
 
 ## Movement Scaling
-Another parameter I experimented with is the damping of movements on the sphere. This effects the distance the marker moves at each step; less damping means that the marker moves further each step.
+Another parameter I experimented with is the damping of movements on the sphere. This affects the distance the marker moves at each step; less damping means that the marker moves further each step.
 
 Increasing the damping takes us from this:
 

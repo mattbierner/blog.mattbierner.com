@@ -26,7 +26,7 @@ Even though I know that I've gotten better at Spelunky, I can't help but feel th
 
 {% include image.html file="spelunky-percent-sprinting.png" %}
 
-I've played the mine levels so many damn times that I often try to rush through them at speeds that outpace my ability. The mines are certainly somewhat better suited to sprinting than other areas, especially when compared to the ice caves, but that alone does explain why twice the amount of time is spent sprinting in the mines compared to any of the other levels, boss battle excluded. I think a big part of this differences is that, in later sections of the game, I start to play more cautiously, having already invested some time and effort. 
+I've played the mine levels so many damn times that I often try to rush through them at speeds that outpace my ability. The mines are certainly somewhat better suited to sprinting than other areas, especially when compared to the ice caves, but that alone does not explain why twice the amount of time is spent sprinting in the mines compared to any of the other levels, boss battle excluded. I think a big part of this difference is that, in later sections of the game, I start to play more cautiously, having already invested some time and effort. 
 
 ## Time Per Level
 The average time it took to complete a level was a little over twenty seconds:
@@ -48,7 +48,7 @@ Breaking out individual runs into a histogram reveals a few points hidden in the
 
 {% include image.html file="spelunky-level-time-histogram.png" %}
 
-This histogram buckets level completion times using three second intervals. The data is normalized, so each bar represents the percent of runs in that area there were completed within that period of time.
+This histogram buckets level completion times using three second intervals. The data is normalized, so each bar represents the percent of runs in that area that were completed within that period of time.
 
 One interesting point: a relatively large percentage of ice cave levels were beaten in under twelve seconds, with a long tail stretching out to the sixty second mark. There is a simple explanation for this. In about half of the runs where I reached the ice caves, I had acquired either a jetpack or a cape, two items which allow beating these levels very quickly.
 
@@ -78,7 +78,7 @@ The duration of each movement keypress remains fairly consistent over the entire
 
 {% include image.html file="spelunky-movement-duration.png" %}
 
-The two outlier actions are sprinting and the down arrow. The sprint key is held down slightly longer in the mine levels, but significantly longer on the boss level. Meanwhile, the down arrow key is held down for less time on mines – closer in duration to just tapping the button to pick up an item – while longer on the jungle and especially the ice caves. Holding the down arrow key to peek at a lower area of the level takes around a second to engage, so it makes sense that levels the require more peeking have longer down arrow holds.
+The two outlier actions are sprinting and the down arrow. The sprint key is held down slightly longer in the mine levels, but significantly longer on the boss level. Meanwhile, the down arrow key is held down for less time on mines – closer in duration to just tapping the button to pick up an item – while longer on the jungle and especially the ice caves. Holding the down arrow key to peek at a lower area of the level takes around a second to engage, so it makes sense that levels that require more peeking have longer down arrow holds.
 
 ## Action Rate
 Finally, here's how often the various actions were used.

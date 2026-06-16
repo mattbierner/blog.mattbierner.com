@@ -16,7 +16,7 @@ And then I sat there. And sat there. And the world was zipping by around me. And
 
 *There must be something wrong*, thought I after the so-called ride was over, *Perhaps this app was just developed by the same incompetents who created Universal Studios Theme Parks Adventure. Never mind that it had been on the front page...*
 
-So I tried another. This one had like 4+ stars too so it must be good. Same deal. And another (there are surprising number of rollercoaster apps). More of the same.
+So I tried another. This one had like 4+ stars too so it must be good. Same deal. And another (there are a surprising number of rollercoaster apps). More of the same.
 
 *How did they make rollercoasters so dull!* I lamented, *Watching people ride the rollercoasters in Rollercoaster tycoon 1 was far more fun than this.*
 
@@ -36,11 +36,11 @@ If anything, the semi-immersion made it all the worse. A 2D film of a car race f
 
 A lot of content misconstrues immersion with being placed in a scene. Just being there is *not* immersive. Immersion needs to convey experience: the sights, sounds, sensations. Not literally of course. Books can create breathtakingly beautiful worlds without visuals, just as movies can convey all the pleasures of life through the eyes. (And, personally, I've experienced some truly amazing alternate realities just by closing my eyes and letting go to some *Mannheim Steamroller*.)
 
-Nor is this problem limited to the Go. It is not a technical problem. I've tried 6 DOF and room scale VR, and still there's very little content that uses VR effectively. That will change of course. But how long will it take? And what will these brave new realities look like? Well, if the Go is indication, the future of VR is: consumption, consumption, consumption. 
+Nor is this problem limited to the Go. It is not a technical problem. I've tried 6 DOF and room scale VR, and still there's very little content that uses VR effectively. That will change of course. But how long will it take? And what will these brave new realities look like? Well, if the Go is any indication, the future of VR is: consumption, consumption, consumption. 
 
 These days, I often find myself wishing that social media had ended up being more like Second Life than like Facebook. Because Second Life was, for all its failings, a beautiful mess. It was a world built by its users and it showed, from the handcrafted oases to the sudden storms of dicks. A strange and wonderful and chaotic and sometimes disturbing place sure, but it was ours. The tools to build it were right there.
 
-And so now it's round two and we are in danger of loosing VR the same way. The Oculus Go *is* the Facebook of VR: clean and sterile. You can contribute content *into* this world but you cannot create the world, just as you don't build Disneyland, you just visit it. Everything neatly framed, made safe so that even when you do stumble across some offensive content or a particularly trolly user, the most offensive part is how banal it has become in this setting. 
+And so now it's round two and we are in danger of losing VR the same way. The Oculus Go *is* the Facebook of VR: clean and sterile. You can contribute content *into* this world but you cannot create the world, just as you don't build Disneyland, you just visit it. Everything neatly framed, made safe so that even when you do stumble across some offensive content or a particularly trolly user, the most offensive part is how banal it has become in this setting. 
 
 Maybe I just didn't try the right apps. Maybe we just need to give the ecosystem time to develop. After all, when the iOS app store first launched it was probably 10% fart apps. Took a few years before we started to see content creation start to emerge and now many people don't need a regular computer anymore.
 

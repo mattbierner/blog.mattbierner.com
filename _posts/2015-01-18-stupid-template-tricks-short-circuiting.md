@@ -4,7 +4,7 @@ title: 'Short-Circuiting'
 series: stupid_template_tricks
 date: '2015-01-18'
 ---
-C++ templates make it remarkably easy to shoot yourself in the foot. Case in point, this seemly innocent template function:
+C++ templates make it remarkably easy to shoot yourself in the foot. Case in point, this seemingly innocent template function:
 
 ```cpp
 template <unsigned val>

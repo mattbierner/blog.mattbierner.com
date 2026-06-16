@@ -91,7 +91,7 @@ Now for some color. Let's start simple by using one of the [CGA](https://en.wiki
 
 {% include image.html file="cga-mario3.png" %}
 
-Different lossless encoding techniques are also possible, along with lossy encoding. Here's what it looks like if encode each pixel from a byte, using a mask to discard all but the lowest two bits:
+Different lossless encoding techniques are also possible, along with lossy encoding. Here's what it looks like if we encode each pixel from a byte, using a mask to discard all but the lowest two bits:
 
 {% include image.html file="cga-mario3-mask.png" description="Data has been lost here; it is no longer possible to recover the memory snapshot from the image." %}
 
@@ -109,7 +109,7 @@ We run into a bit of trouble though for palettes with 8, 32, 64, or 128 colors, 
 
 Memory structures are usually byte aligned at a minimum, so sampling across bytes can obscure patterns in the memory. Take the Sega *Master System* palette and its 64 colors. Now each pixel encodes six bits:
 
-{% include image.html file="mastersystem-mario3.png" description="Surely looking at NES games with a Sega palette would have gotten me burned at the stake back in the day. I will go one step further however, and declare that the *Master System* palette is far better looking then the NES palette" %}
+{% include image.html file="mastersystem-mario3.png" description="Surely looking at NES games with a Sega palette would have gotten me burned at the stake back in the day. I will go one step further however, and declare that the *Master System* palette is far better looking than the NES palette" %}
 
 Not terrible but there's a lot more noise, especially around the edges of the larger blocks. At least some of this noise is because some pixels sample more than one byte.
 
@@ -167,7 +167,7 @@ There's no avoiding it: the NES palette is pretty damn ugly. No matter what samp
 
 
 # Further Mappings
-A number of addition data to color mappings are also possible. Just a few examples:
+A number of additional data to color mappings are also possible. Just a few examples:
 
 {% include image.html file="luminance-32x64.png" description="Luminance maps each byte to one of 256 grayscale colors" %}
 

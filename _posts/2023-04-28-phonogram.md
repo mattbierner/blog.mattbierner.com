@@ -25,7 +25,7 @@ I built Phonogram around a few core ideas:
 
 **Voice**. Phonogram is for sharing audio, specifically voice. Voice has an innate intimacy that text lacks. I've also experienced the power of voice firsthand, be it in Podcast, apps like Clubhouse, or even in dating apps that let you record voice notes to stand out to potential partners. You can also quickly fire off a voice recording without taking yourself out of the moment to poke around at a keyboard. (Voice also is a great fit for devices where typing isn't as natural, hint hint...)
 
-**Immersive Sharing**. When you share a Phonogram, you share the AR effect, not images or videos of the effects. To play back a recording, you place the AR effect in the world. You can think of the AR effect as being almost like a fancy little virtual speaker. Again brining recordings into your personal space makes them feel more intimate and unique.
+**Immersive Sharing**. When you share a Phonogram, you share the AR effect, not images or videos of the effects. To play back a recording, you place the AR effect in the world. You can think of the AR effect as being almost like a fancy little virtual speaker. Again bringing recordings into your personal space makes them feel more intimate and unique.
 
 **Not a social network**. Phonogram doesn't include a feed, stories, or like counts. Instead the focus is personal communication. I largely wanted to leave it up to you how you use Phonogram. Send personal birthday notes or holiday greetings. Fire off sweet little nothings to a lover throughout the day. Share a snippet of a new song you've been working on. Or just have fun.
 
@@ -34,7 +34,7 @@ Phonogram also aims to integrate into your existing apps instead of being a plat
 While these design decisions may not be the most fashionable, with Phonogram I wanted to build an app that I would actually want to use and would also be a great foundation for future AR experiments.
 
 
-You can [get Phonogram in the App Store][app]. It runs on iPhones and iPads. If you enjoy Phonogram, the best way to support it is buy leaving a positive review to help others discover it too.
+You can [get Phonogram in the App Store][app]. It runs on iPhones and iPads. If you enjoy Phonogram, the best way to support it is by leaving a positive review to help others discover it too.
 
 
 

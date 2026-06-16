@@ -192,7 +192,7 @@ Initial results using the generator are disappointing: slower than the stack bas
 ## Iterator
 Despair not! Perhaps the linked list is a retiring fellow who only reveals its true grace among more classy company.
 
-Here's the same logic, rewriten as an iterator:
+Here's the same logic, rewritten as an iterator:
 
 ```js
 function LinkedListIterator(root) {
@@ -238,7 +238,7 @@ function* (root) {
 }
 ```
 
-The generator result show promise at 1.7 times the regular linked list based generator. Does the same hold for the iterator?
+The generator result shows promise at 1.7 times the regular linked list based generator. Does the same hold for the iterator?
 
 ```js
 function ModifiedListIterator(root) {
@@ -263,7 +263,7 @@ ModifiedListIterator.prototype.next = function () {
 
 Alas! We find the same, or even slightly worse, performance over the regular linked list iterator.
 
-The linked list iterator at 80 time baseline was the best I was able to achieve, although you can boost things a few more points through aggressive micro optimizations, plus even more points if you perform the traversal in any order.
+The linked list iterator at 80 times baseline was the best I was able to achieve, although you can boost things a few more points through aggressive micro optimizations, plus even more points if you perform the traversal in any order.
 
 
 # Continuations

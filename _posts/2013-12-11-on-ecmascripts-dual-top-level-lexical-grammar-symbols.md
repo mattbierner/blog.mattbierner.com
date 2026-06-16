@@ -72,7 +72,7 @@ There are a lot of cases to cover and elements like whitespace, line terminators
 ## Composed Parser and Lexer
 Working with parser combinators, instead of building separate parsers for the lexer and parser, we can compose the lexer parsers to build the parser parsers. The resulting parsers take a stream of characters and output an AST. 
 
-This composition is easy for simple languages. Take an example languages consisting of three elements: single letter identifiers, division expressions, and regular expressions literals with optional flags. The composed parsers are:
+This composition is easy for simple languages. Take an example language consisting of three elements: single letter identifiers, division expressions, and regular expression literals with optional flags. The composed parsers are:
 
 ```js
 // Complete code available:
@@ -118,13 +118,13 @@ The token stream can be recovered by modifying the parsers to save tokens into t
 
 Correctly and efficiently composing the lexers and parsers is challenging. Whitespace and line terminators must be handled, and it is more difficult to generate meaningful error messages. A naive implementation backtracks excessively. 
 
-One small example is discriminating between keyword `true`, keyword `try`, and identifier `try2`. `true` and `try` require lexing `tr` twice, and without additional checks, the try statement parser may match `try` in `try2` and then fail, even though statements like `try2 + 2;` are valid. It is much easier to identify and handle these cases with separate lexers operating on characters and parses operating on tokens.
+One small example is discriminating between keyword `true`, keyword `try`, and identifier `try2`. `true` and `try` require lexing `tr` twice, and without additional checks, the try statement parser may match `try` in `try2` and then fail, even though statements like `try2 + 2;` are valid. It is much easier to identify and handle these cases with separate lexers operating on characters and parsers operating on tokens.
 
 ## Lazily Generated Streams of Tokens 
 [Parse-ECMA][parse-ecma] solves the problem by running parsers against a lazily constructed token stream. Parsers take a character stream and use a custom `ParserState` to retrieve tokens on demand. Parsing assumes a division context, and the context can be manually switched for specific productions.
 
 #### Tokenization
-The `tokenizer` parser takes a character stream and outputs the first useful token resulting from parser `token`. Whitespace, line terminators, and comments are striped: 
+The `tokenizer` parser takes a character stream and outputs the first useful token resulting from parser `token`. Whitespace, line terminators, and comments are stripped: 
 
 ```js
 var tokenizer = \token -> let

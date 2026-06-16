@@ -9,9 +9,9 @@ I hopped the wrong bus in Liechtenstein. Entire country probably has two buses t
 
 I never planned to visit Liechtenstein; it sounded like a fun place so I just took the next train heading there from Näfels Switzerland. I had been in Näfels for a two week long letterpress poster design course and was still recovering from a pair of almost all-night printing sessions. That moment when you re-discover LCD Soundsystem at three in the morning, quietly swaying about and sort of hallucinating from exhaustion while typesetting 14pt Futura. Good times.
 
-I'd learned about that program while taking letterpress courses Seattle. And what better place than Switzerland to learn some typography and graphic design? Plus, half of my work team was based in Zurich, so I could work with them for a few weeks. Nice coincidence. I'd even taken German in school. Never imagined it would actually be useful. 
+I'd learned about that program while taking letterpress courses in Seattle. And what better place than Switzerland to learn some typography and graphic design? Plus, half of my work team was based in Zurich, so I could work with them for a few weeks. Nice coincidence. I'd even taken German in school. Never imagined it would actually be useful. 
 
-I was taking my second letterpress class in Seattle when I saw the poster advertising the Switzerland program. At that time, I was working on some black on black impressions for the Theremin-X project, plus a collection of [waveforms from Anwar al-Awlaki's speeches](/anwar-wave). That latter project was the reason I'd started learning letterpress in the first place. It took me some time to learn enough to actually be able to pull it off, during which time I discovered that I sort of liked printing too. I don't remember where that waveform idea came though. Still had some of his lectures on my phone riding that bus in Liechtenstein. I bet Anwar never thought this is what he'd inspire! Radical. 
+I was taking my second letterpress class in Seattle when I saw the poster advertising the Switzerland program. At that time, I was working on some black on black impressions for the Theremin-X project, plus a collection of [waveforms from Anwar al-Awlaki's speeches](/anwar-wave). That latter project was the reason I'd started learning letterpress in the first place. It took me some time to learn enough to actually be able to pull it off, during which time I discovered that I sort of liked printing too. I don't remember where that waveform idea came from though. Still had some of his lectures on my phone riding that bus in Liechtenstein. I bet Anwar never thought this is what he'd inspire! Radical. 
 
 And finally, end of the line. Little alpine ski town in a steep bowl of a valley. Green meadows; gray rock; blue skies. There was a chairlift right outside the bus stop and it looked like it was heading somewhere interesting, so I hopped on without asking where. Almost had a panic attack after take off. While I'd rarely fallen off chairs in day-to-day life, zipping along fifty feet off the ground, I really started to doubt my sitting ability. Didn't help that I was heading off to who knows where from a town whose name I didn't know. 
 
@@ -59,7 +59,7 @@ So six months passed with no new posts. I was tired. I wanted something new. And
 
 [*Stupid Template Tricks*](/series/stupid_template_tricks) grew out of writing C++ for Office. From the start, it was always part informative, part parody, part just stupid fun. It swept away any pretense of seriousness.
 
-*Stupid Template Tricks* is still my most popular series of posts. I sort of wonder what people think when they start on [C++ Tetris](/stupid-template-tricks-super-template-tetris) and click through too see more recent posts and find butt reality or whatever. Keeping at anything too long though tends to bore me, even if it's something as complex as C++ template meta-programming or as free form as a bunch of memes.
+*Stupid Template Tricks* is still my most popular series of posts. I sort of wonder what people think when they start on [C++ Tetris](/stupid-template-tricks-super-template-tetris) and click through to see more recent posts and find butt reality or whatever. Keeping at anything too long though tends to bore me, even if it's something as complex as C++ template meta-programming or as free form as a bunch of memes.
 
 Once again though, the writing part of the posts eventually grew to dominate my interest. No good writing but fun. Over time, the writing got pushed towards being almost surrealistic; the puns and jokes and references stopped making sense and totally took away from the content but I just kept going with them. Why not? Like *Pride and Parser Combinators*. Simple memes weren't enough. 
 
@@ -67,9 +67,9 @@ The focus on writing was cemented with the [Halloween Template Trilogy](/series/
 
 Next came [Blot're](https://blot.re). (The name Blot're is a domain hack that uses an apostrophe instead of a period. It's pronounced "blotter" or "blot are", being derived from contractions like *we're* or *they're*. The name "blotter" of course has a few different meanings—police blotter, blotting paper, blot out, blotters—some of which are mirrored in the site. The slogan "Be Color" is sort of a translation of "blot are" and was inspired by Health's "Get Color". I'd always found "get color" to be a really evocative phrase for some reason. Good album too and it seemed to fit.)
 
-If *Stupid Template Tricks* is what happens when I get board writing C++, Blot're is what happens when I try learning Scala. It's still one of my favorite projects. Built the whole website and then created a personality around it. Blot're even let me try developing a new voice and exploring new forms of humor.
+If *Stupid Template Tricks* is what happens when I get bored writing C++, Blot're is what happens when I try learning Scala. It's still one of my favorite projects. Built the whole website and then created a personality around it. Blot're even let me try developing a new voice and exploring new forms of humor.
 
-Of all the things I've created, Blot're is the one I wish I could give more attention too. Like *Stupid Template Tricks* and my JavaScript blogging before that, it just sort of trickled off as I shifted my focus on the the next project. That's a shame. If I had the time and resources, I really wish I could make Blot're "real": create a real company that is actually an absurdist performance piece. Even just keeping up with the [Blot're blog](http://blog.blot.re) would have been nice: from the Blot'chain, to hacking scandals, to Blot're bros getting caught up in *me too*. As it stands though, Blot're is just an inside joke built for one. It's hard to keep enthusiasm for that up (even if Blot're was hating on Big Social before it was cool).
+Of all the things I've created, Blot're is the one I wish I could give more attention to. Like *Stupid Template Tricks* and my JavaScript blogging before that, it just sort of trickled off as I shifted my focus on the next project. That's a shame. If I had the time and resources, I really wish I could make Blot're "real": create a real company that is actually an absurdist performance piece. Even just keeping up with the [Blot're blog](http://blog.blot.re) would have been nice: from the Blot'chain, to hacking scandals, to Blot're bros getting caught up in *me too*. As it stands though, Blot're is just an inside joke built for one. It's hard to keep enthusiasm for that up (even if Blot're was hating on Big Social before it was cool).
 
 Oh, and back on *Stupid Template Tricks* for a moment: between part two and three of the Halloween trilogy, I contemplated a post about implementing Scheme in C++ templates. This was actually hinted at in the stories but writing part three wore me out. It was time to move on. If I ever go back to C++, I'd really like to create a surreal tutorial series called "120 Days of C++" that starts out all "hello world" and serious and bla bla bla, and then slowly devolves into cultist rituals and unspeakable template debauchery. I worry people may think I'm serious though. I mean, we've had efforts to scrub the word "slave" from technical documentation and here I am proposing going all Salò on SFINAE (even though I'd never bring something like that into the actual technical sphere). If you don't understand, well it's not for you. It doesn't make any sense. It's trash. That's the point.
 
@@ -89,7 +89,7 @@ Although my [first modded reality post](/tenome) suggested that the idea of hav
 > <br>
 > — Sex Trigger, Pictureplane
 
-But that intro rift! And yeah, that's where *modded reality* came from.
+But that intro riff! And yeah, that's where *modded reality* came from.
 
 That first piece on *modded reality* was a meandering, ten thousand word slog (with section titles inspired by Mark Twain's travel novels). I doubt few people ever read any of it. It was the first time though that I truly put some of myself in a piece. Whereas *Stupid Template Tricks* had abounded in pop culture references and whatnot, modded reality was, by its nature, all about subjective experience. Even with the jokes and writing style to hide behind, writing about what I felt and experienced—and especially with regards to sexuality—was very stressful. That post must have gone through ten major revisions. It shows.
 
@@ -99,7 +99,7 @@ Modded reality was also the first time I could share something that I had create
 
 {% include image.html file="mr-christmas.jpg" description="Sharing modded reality at Christmas" %}
 
-While writing about sexual experiences was difficult, it was [*We are our own pornography*](/we-are-our-own-pornography) that made me seriously consider if what I was creating might adversely effect my life. Was it really worth risking friendships, relationships, and professional opportunities over? Which sounds all melodramatic, and I know it probably sounds like I'm making a big deal over nothing, but you have to realize that *We are our own pornography* was like a really, really big step for me, both creatively and personally.
+While writing about sexual experiences was difficult, it was [*We are our own pornography*](/we-are-our-own-pornography) that made me seriously consider if what I was creating might adversely affect my life. Was it really worth risking friendships, relationships, and professional opportunities over? Which sounds all melodramatic, and I know it probably sounds like I'm making a big deal over nothing, but you have to realize that *We are our own pornography* was like a really, really big step for me, both creatively and personally.
 
 Here's a fun fact: after filming, I was so incapable of facing it all that I literally played through the entire *Bioshock* series rather than start editing the footage. I'd take a peek and have to close the window after ten seconds. Too embarrassing. Too much of me in the damn thing, and I wasn't even in it! Not even an audience to hide behind. So back to drilling junkies in an underwater free-market dystopia! Literally.
 
@@ -123,7 +123,7 @@ Still, that didn't make it any easier to tell my dad. Not that I ever thought he
 
 It was early Fall and my dad and I were visiting Yellowstone and Grand Teton National Parks. That gave me a little over a week to find the right time to tell him. That was the goal of the trip. Superficially though, the goal of the trip was to see a bull moose. This sort of thing has become a running joke on our family trips; we've always got some new animal that we're hoping to see out in the wild, be it marmots or moose or porcupines. A porcupine is the dream, not because it'd be super interesting or anything, but because we've just never seen one. Even a big rodent can become mythic after a while. And while we'd aimed for moose before, Grand Teton was our best shot.
 
-It was getting pretty late in the trip and still no luck. Not for lack of trying. We'd gotten up early to go hiking through wetlands and along lakes, scope out some prime moose hangouts, and always kept an eye pealed while driving. Must have driven Moose–Wilson road in Grand Teton a dozen times or more. A road name like that sets some big expectations. Bears, deer, elk, pronghorn. No bull. 
+It was getting pretty late in the trip and still no luck. Not for lack of trying. We'd gotten up early to go hiking through wetlands and along lakes, scope out some prime moose hangouts, and always kept an eye peeled while driving. Must have driven Moose–Wilson road in Grand Teton a dozen times or more. A road name like that sets some big expectations. Bears, deer, elk, pronghorn. No bull. 
 
 It was along Moose–Wilson road before sunrise one of those mornings that I finally worked up the courage to say, "So Dad, I'm going to be heading to Los Angeles in a few weeks..."
 
@@ -151,7 +151,7 @@ Soon, building on that initial wave of social media success, I hatched another b
 
 {% include image.html file="jello.jpg" description="Whereas once I could share misadventures like trying to cast vibrators in Jello cones, I don't anymore. Not worth the trouble." %}
 
-Sometimes I feel I should create a persona: a Ziggy Stardust or Sunglasses Kid. I mean I've probably gone through at least hundred different online identities—yet never committed; never given myself over to one. It sounds like a lot of work.
+Sometimes I feel I should create a persona: a Ziggy Stardust or Sunglasses Kid. I mean I've probably gone through at least a hundred different online identities—yet never committed; never given myself over to one. It sounds like a lot of work.
 
 It's not the desire to be someone else. Roleplaying has never appealed for some reason. There's always gonna be that uncanny moment where the Civil War re-enactor or dominatrix or whoever drives up in their Prius and breaks the whole illusion. And frankly, paint a lightning bolt across my face or stick me in a leather jacket, and maybe I could try acting the part but it'd still be me. I'd know it was just an act.
 
@@ -197,7 +197,7 @@ More often though, it's frustrating. The day after capturing *We are our own por
 
 Not just that, I didn't even know where to share the project online. Where does it fit? Too risqué for some communities, too pretentious for others. There are subcultures online for everything from template meta-programming to Lovecraftian fanfic, but what about parody Lovecraftian fanfic about template meta-programming? Where my people at? 
 
-I didn't make the same mistake for the [Theremin-X project](/theremin-x). This time I made sure to spend a bit more time in Los Angele, gather some alternative stories to tell. Well that and it seemed sort of absurd that the only way I knew the city was traveling there for these two projects. Never even been to Disneyland damnit!
+I didn't make the same mistake for the [Theremin-X project](/theremin-x). This time I made sure to spend a bit more time in Los Angeles, gather some alternative stories to tell. Well that and it seemed sort of absurd that the only way I knew the city was traveling there for these two projects. Never even been to Disneyland damnit!
 
 I spent two days on the Channel Islands before Theremin-X. That way, if someone asked what I'd been up to, I could just talk about that. And let me tell you: the Channel Islands delivered. 
 
@@ -229,15 +229,15 @@ So now I'm sort of running along to avoid the birds while holding a water bottle
 
 When I finally made it to the viewpoint, I couldn't stop laughing. Here I was glancing around nervously for gulls and covered in bird splotches and I still had another three hours on the island. Beautiful view though.
 
-A few minuets later, I watched a woman run the gauntlet with some water bottle headgear too. She made it out cleaner than I had. We decided to stick together from then on, and stay on the safe parts of the island. Still lots of squawking and some menacing hovering, but nothing close to that first go. So remember, if the ranger tells you to bring a buddy, you should bring a buddy because those birds aren't messing around.
+A few minutes later, I watched a woman run the gauntlet with some water bottle headgear too. She made it out cleaner than I had. We decided to stick together from then on, and stay on the safe parts of the island. Still lots of squawking and some menacing hovering, but nothing close to that first go. So remember, if the ranger tells you to bring a buddy, you should bring a buddy because those birds aren't messing around.
 
 {% include image.html file="anacapa.jpg" %}
 
-Shit, in retrospect that gull story is probably pretty shitty. Al told it better. May as well bore you with stories about driving down the California coast and finding a Polaris missile right as you're about to turn back. I didn't make up that missile story as some sort of really obvious psychosexual metaphor; after filming *We are our own pornography*, that's literally what happened. And I was super paranoid about loosing the footage too, so I was touring the missile garden and going out exploring tide-pools and all that with a big old backpack stuffed with a laptop, router, and pair of iPhones + VR headsets. You had to be there.
+Shit, in retrospect that gull story is probably pretty shitty. Al told it better. May as well bore you with stories about driving down the California coast and finding a Polaris missile right as you're about to turn back. I didn't make up that missile story as some sort of really obvious psychosexual metaphor; after filming *We are our own pornography*, that's literally what happened. And I was super paranoid about losing the footage too, so I was touring the missile garden and going out exploring tide-pools and all that with a big old backpack stuffed with a laptop, router, and pair of iPhones + VR headsets. You had to be there.
 
 And you know, while being stuck on a hot, smelly, mile-long hunk of rock with zero trees and ten billion brooding, shit-bombing, murdering gulls who screech uncontrollably if you come within twenty feet of them may not be everyone's ideal vacation, it was memorable. It was ridiculous. It was fun. It was something to talk about when I got back. And it helped distract me before filming Theremin-X. Filming was its own adventure. Turned out pretty good though. Plus this time around I only played through *Yooka-Laylee* before I could edit the video. Much better.
 
-This is the kind stuff you never see: all the work, all the failure, all the doubt; the victories and the ridiculousness. Like how I've spent the last few years with a big painting made out of Monopoly money next to my bed. Can't bring myself to finish it for some reason. One day. Maybe I'll *In Profile* that.
+This is the kind of stuff you never see: all the work, all the failure, all the doubt; the victories and the ridiculousness. Like how I've spent the last few years with a big painting made out of Monopoly money next to my bed. Can't bring myself to finish it for some reason. One day. Maybe I'll *In Profile* that.
 
 But why try to lift back the veil, even just a little? What is the point of writing all this?
 

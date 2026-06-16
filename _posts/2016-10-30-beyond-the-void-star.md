@@ -73,7 +73,7 @@ The holotube clunks to life.
 
 I almost don't recognize the face on the screen at first. More of a corpse really. But then it strikes me: it's Mandus. Gotta be. Hasn't appeared publicly for years now and, looking like that I can't say I blame him, although I guess anything looks good at his supposed age. I always assumed he was dead. 
 
-"...the need for complete secrecy," Mandus' voice is frail, but there's still something in it that smacks of the chair throwing CEO I'd heard about back in the day. "You must understand that I could not risk telling you the details until know. We cannot rule out any threats, external or internal."
+"...the need for complete secrecy," Mandus' voice is frail, but there's still something in it that smacks of the chair throwing CEO I'd heard about back in the day. "You must understand that I could not risk telling you the details until now. We cannot rule out any threats, external or internal."
 
 "I selected you for this mission. It is of the highest importance to The Company... and to me personally."
 
@@ -111,7 +111,7 @@ And, by now, they've heard the story. Everyone has. With someone as high profile
 
 It wasn't a lie. The company doesn't lie. Oh no, not them. They make the truth. And why not? they make everything else.
 
-The Suit told me that they *had* lost contact with Kurtz, and, to the best of The Company's knowledge, there *had* been an equipment malfunctioned, and that Kurtz *was* stranded somewhere. Hell of a malfunction... Must explain those transmissions he showed me. It wasn't even code towards the end... But that must just have been a malfunction, garbling up the transmission. And then the transmissions just stopped. Nothing.
+The Suit told me that they *had* lost contact with Kurtz, and, to the best of The Company's knowledge, there *had* been an equipment malfunction, and that Kurtz *was* stranded somewhere. Hell of a malfunction... Must explain those transmissions he showed me. It wasn't even code towards the end... But that must just have been a malfunction, garbling up the transmission. And then the transmissions just stopped. Nothing.
 
 But that was all nearly two years ago, not six months. How they even managed to keep it secret that long is beyond me.
 
@@ -181,7 +181,7 @@ I'd know that clacking sound any day: Shops. They usually set up in areas like t
 
 I glance inside a few as I hurry past. Same as always. Same as it always will be. There they sit, their unmoving faces pressed almost right up against the ancient holotubes. Flashes of unintelligible code; copy and pasted together and littered with GO TO, like some bastardized assembly language. I don't think I've ever seen one them use a function or subroutine. Paid by the line and to XLAT maintainability.
 
-"Hey sir! You there!" a skinny man in a dirty suits yells, grabbing my arm. "You get linked? You qualified!!!" 
+"Hey sir! You there!" a skinny man in a dirty suit yells, grabbing my arm. "You get linked? You qualified!!!" 
 
 I break free from him, but see more of his type up ahead. They call out as I rush past: "Real great job, just for you!" "Best linking around!" "Free link when you start!" "No pressure, no pressure!", "Leave any time!".
 
@@ -197,7 +197,7 @@ The Main. How could I ever stand it here? Where to go? Where to go?
 
 They're all about me now, whispering, eyeing me. Do they know about the mission? Do they know about Kurtz? Don't look at them. They know you. Don't let them see. Keep walking and keep your head down.
 
-Something grabs me. I twist around and see him. White eyes stare out blankly into space, the face contorted in an pathetic, pleading expression.
+Something grabs me. I twist around and see him. White eyes stare out blankly into space, the face contorted in a pathetic, pleading expression.
 
 "You, you," the voice is quiet and raspy. The orange stained lips don't even seem to move as he talks. "Please..."
 
@@ -279,7 +279,7 @@ A thousand's pretty reasonable for almost a hundred frames. Enough for a few wee
 
 I turn my back to him but can feel him greedily trying to catch a glimpse as I carefully count them out. His eyes grow wide when I lay the wad  on the table. He quickly reaches out, but I know his moves and rest my hand atop the little pile.
 
-"Talk first for half, then frames for the rest – ok? And thrown in an extra frame beforehand to tide me over..."
+"Talk first for half, then frames for the rest – ok? And throw in an extra frame beforehand to tide me over..."
 
 Hollerbak gives me a questioning look, but he's seen the money now.
 
@@ -289,13 +289,13 @@ He reaches down to get a stack from somewhere behind the desk, plucks off two, a
 
 "An extra on the house," he smiles. "Looks like you need it, and who knows..."
 
-I almost loose it at the sight of those frames, but Hollerbak's watching expectantly, so I try to hold it together.
+I almost lose it at the sight of those frames, but Hollerbak's watching expectantly, so I try to hold it together.
 
 "Alright," I mutter, popping one and reluctantly sliding the other into my pocket. In this state, one won't do much but it's better than nothing. "What else you got for me?"
 
 Hollerbak looks furtively around the room. Just a bunch of shorters, same as always, but Hollerbak's always gotta put on a big show. Satisfied, he gestures me in close. 
 
-"About a year ago," he whispers, "some real interesting code started leaking onto the markets. Real exotic, real expensive stuff. Got lot's of people talking. They said it could do *things*, impossible *things*. Vendors said it was from some fringe group of Algolytes, but wise ol' Hollerbak thought otherwise."
+"About a year ago," he whispers, "some real interesting code started leaking onto the markets. Real exotic, real expensive stuff. Got lots of people talking. They said it could do *things*, impossible *things*. Vendors said it was from some fringe group of Algolytes, but wise ol' Hollerbak thought otherwise."
 
 "So I start feeling around, see if anyone knows a little something they'd like to share, if I made it worth their while... And, turns out, a supplier had overheard one of the SysOps bragging about some new source of his"
 
@@ -319,7 +319,7 @@ Hollerbak turns himself with a slight groan, fumbles with one of the computers, 
 
 "I don't understand... This path stops out in deep C-Space... What's out there?"
 
-"That's not where he stopped," Hollerbak continues. "Yhat's where the tracker died... As to where he actually went... I don't know."
+"That's not where he stopped," Hollerbak continues. "That's where the tracker died... As to where he actually went... I don't know."
 
 "Anyways, the problem sorted itself out soon enough. The supply dried up a few months ago, right after..."
 
@@ -333,7 +333,7 @@ Hollerbak turns himself with a slight groan, fumbles with one of the computers, 
 
 I'll believe that actually. Hollerbak is arrogant but he isn't a fool, and messing with a SysOp is a good way to get yourself killed on Fort Ran.
 
-"Here, take a look," Hollerbak says, opening up a few files on the computer. Code flashes by quickly on the florescent green screen. It looks familiar, but there something about it... I've only seen this sort of thing once before: the transmissions The Suit showed me.
+"Here, take a look," Hollerbak says, opening up a few files on the computer. Code flashes by quickly on the fluorescent green screen. It looks familiar, but there something about it... I've only seen this sort of thing once before: the transmissions The Suit showed me.
 
 "What the hell is it? Does it *even* compile?"
 
@@ -459,7 +459,7 @@ The faint twinkle of stars. A swirl of orange dust. We disappear in the night.
 
 "What are they like?" Bexxel asks as we crowd together to look out the window. The cratered surface of New Hyrd shimmers below. On the horizon, plumes of yellow dust rise high into the thin atmosphere. 
 
-"It's been a while," replies Psye, ans there's something in her voice.
+"It's been a while," replies Psye, and there's something in her voice.
 
 "Don't worry there Bexxel," Axel offers cheerfully, "They're all bloodthirsty cannibals of course, but really quite friendly..."
 
@@ -505,7 +505,7 @@ She pauses for a moment.
 
 "Ok, launch when ready."
 
-As I sit there, I try to imagine a young Psye, or young Kurtz even. If I squint hard enough, I can almost see him out there in the desert, fighting against the wind. He must have been a real fucking Mary Sue. But I don't think if he was ever really young.
+As I sit there, I try to imagine a young Psye, or young Kurtz even. If I squint hard enough, I can almost see him out there in the desert, fighting against the wind. He must have been a real fucking Mary Sue. But I don't think he was ever really young.
 
 My hand is shaking. That image of Kurtz. Where is he going? Did he know?
 
@@ -513,7 +513,7 @@ The airlock closes.
 
 "Ok, here we go," Axel calls out. His voice is echoey and distant.
 
-The ship separates. Damn harness is too tight. Can't breethe in here. I close my eyes and struggle to reach my pocket...
+The ship separates. Damn harness is too tight. Can't breathe in here. I close my eyes and struggle to reach my pocket...
 
 Then I feel her take my hand.
 
@@ -533,7 +533,7 @@ Dex notices that I'm awake.
 
 "Yeah... thanks. Always hated that part."
 
-"Looks pretty empty from up here," Axel calls back has we circle the settlement. "You sure anyone still lives in this dump?"
+"Looks pretty empty from up here," Axel calls back as we circle the settlement. "You sure anyone still lives in this dump?"
 
 "Probably not many," Psye tells him, "but the true believers will still be here, you can count on that."
 
@@ -541,7 +541,7 @@ Axel sets the SC down at one of the port's crumbling stations. Clouds of dust ki
 
 "How you want to play this?" Psye asks me as we suit up.
 
-"I ran a few jobs for these guys a while back," I tell her, "probably fifteen years ago now. Let's see it that's still worth anything."
+"I ran a few jobs for these guys a while back," I tell her, "probably fifteen years ago now. Let's see if that's still worth anything."
 
 "What kind of *jobs*?" Dex questions.
 
@@ -627,7 +627,7 @@ Dex: "But that's from over four months ago..."
 >
 > The last ship heads out in about an hour. If it were up to me, we wouldn't even wait that long. There's nothing left for us here.
 > 
-> There's some talk going on about how this is the "end of The Collective," but this is just the beginning of something far greater than our founders could have ever imagined. So much more than just a new way of coding, a entirely new way of being...
+> There's some talk going on about how this is the "end of The Collective," but this is just the beginning of something far greater than our founders could have ever imagined. So much more than just a new way of coding, an entirely new way of being...
 >
 > Anyways, time to sign off. He's waiting.
 
@@ -689,7 +689,7 @@ That first mission. Near the end of his fifteen year plan. He set out promising 
 
 Nearly a year with no contact. Everyone thought he was dead.
 
-And then some traders find him, floating alone out there near the boarder and almost dead. No sign of the other crew members. But that didn't matter because Kurtz was ok.
+And then some traders find him, floating alone out there near the border and almost dead. No sign of the other crew members. But that didn't matter because Kurtz was ok.
 
 And he had found it out there – he had seen a future where anything was possible – or at least that's what he said, and you couldn't help but believe him.
 
@@ -697,7 +697,7 @@ The Company nearly bankrupted themselves building up stations out by The Void St
 
 "I don't know they went out there," I say, "but that's where we're heading."
 
-Psye: "Fine, I guess if that's what you say... but Ebps isn't going to like it. Dangerous space out there, been a no-go for The Company even since then."
+Psye: "Fine, I guess if that's what you say... but Ebps isn't going to like it. Dangerous space out there, been a no-go for The Company ever since then."
 
 "Good thing he doesn't have to like it. Dex, you good to go?"
 
@@ -746,7 +746,7 @@ But I don't think so, Ebps. You hear about this sort of thing happening sometime
 
 "EXPANSION! EXPANSION! EXPANSION!" chants the crowd in the background.
 
-Yeah, it's them all right: Pragma Pete and his marry band of Preprocessor Pirates, godless scourge of C-Space. We're fucked.
+Yeah, it's them all right: Pragma Pete and his merry band of Preprocessor Pirates, godless scourge of C-Space. We're fucked.
 
 ***
 

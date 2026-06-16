@@ -20,7 +20,7 @@ So, to avoid such pitfalls, I recently downloaded the [Urban Dictionary](http://
 But I quickly realized that this dataset alone would not be enough. A word may not be in Urban Dictionary today, but what's to stop someone from defining it in the future? So, in the second half of this post, I try to train a computer to generate new Urban Dictionary definitions using a character level recurrent neural network.
 
 # Word List
-Urban dictionary has about 1.4 million entries, each with multiple user provided definition. So, as a first step, I collected the entry names themselves. [You can find the resulting 16mb dataset on GitHub][word_list].
+Urban dictionary has about 1.4 million entries, each with multiple user provided definitions. So, as a first step, I collected the entry names themselves. [You can find the resulting 16mb dataset on GitHub][word_list].
 
 Entry names are stored alphabetically in twenty six text files, bucketed by first letter. There's one entry name per line, which makes further processing easy:
 
@@ -62,7 +62,7 @@ I've also [posted the script used to gather this data on Github][entry-collector
 
 
 # Recurrent Neural Network
-After reading enough Urban Dictionary, it all starts blending together into a jumble of various orifices, male teenage angst, misspellings, bodily fluids, and slang. Offensive to some perhaps, but boring and predictable to me. Don't get me wrong, there are some truly great definitions to be found on Urban Dictionary, but I usually find the meta aspects of site to be far more entertaining.
+After reading enough Urban Dictionary, it all starts blending together into a jumble of various orifices, male teenage angst, misspellings, bodily fluids, and slang. Offensive to some perhaps, but boring and predictable to me. Don't get me wrong, there are some truly great definitions to be found on Urban Dictionary, but I usually find the meta aspects of the site to be far more entertaining.
 
 The site definitely has its own culture concerning: what types of things are defined, formatting, fascinations and taboos, gender roles, and commonly used slang. There are also some interesting memes, such as the not insignificant number of entries for first names (almost always female first names) of the form:
 

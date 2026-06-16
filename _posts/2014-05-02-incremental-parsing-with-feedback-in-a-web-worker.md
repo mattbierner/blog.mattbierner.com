@@ -8,7 +8,7 @@ I [previously described][mb-inc] running [Bennu][bennu] parsers incrementally. H
 ## Example Overview
 I'm going to develop a simple word count application that uses a Bennu parser run in a web worker. For demonstration purposes, the main thread simulates an asynchronous event source to pass chunks of data to a parser web worker.
 
-Example code is written in [Khepri][khepri]. You can can find the complete code [on Github](https://github.com/mattbierner/bennu-webworker-example), including the HTML and other less important parts of the example application. A [live version of the demo](http://mattbierner.github.io/bennu-webworker-example/) is also available. 
+Example code is written in [Khepri][khepri]. You can find the complete code [on Github](https://github.com/mattbierner/bennu-webworker-example), including the HTML and other less important parts of the example application. A [live version of the demo](http://mattbierner.github.io/bennu-webworker-example/) is also available. 
 
 ## Goals
 * Run parsing routines on the web worker without blocking the main thread, even for very large inputs.
@@ -20,7 +20,7 @@ Example code is written in [Khepri][khepri]. You can can find the complete code 
 # Main Thread
 The main thread initializes the parser web worker, feeds chunked data to the parser, and receives updates and results from the parser.
 
-The demo application gets text input from an HTML field, and simulates an async data source using `setInterval`. Input is broken into chunks and feed to a word count parser web worker.
+The demo application gets text input from an HTML field, and simulates an async data source using `setInterval`. Input is broken into chunks and fed to a word count parser web worker.
 
 After feeding a chunk to the parser, the main thread requests a status update on parsing, which will get the current word count for the input consumed so far. Once all input has been provided, the main thread is notified of the final word count result.
 
@@ -124,7 +124,7 @@ var begin := \i -> {
 
 #### Finish
 
-`finish` signals that parser worker that no more input is coming.  
+`finish` signals the parser worker that no more input is coming.  
 
 ```js
 var finish := \ -> {
@@ -171,10 +171,10 @@ worker.onmessage = (.data) \> JSON.parse \> \x -> {
 # Worker Thread
 The worker thread defines the word count parser, handles messages from the main thread, and sends parsing results back to the main thread.
 
-This worker use an incremental Bennu parser to feed chunks of data from the main thread to a parser, and extract working results from this parser. Parsing may either succeed or fail with a result value.
+This worker uses an incremental Bennu parser to feed chunks of data from the main thread to a parser, and extract working results from this parser. Parsing may either succeed or fail with a result value.
 
 ## Initialization
-Bennu uses AMD to define its packages and import dependancies. After loading an AMD module loader using `importScripts`, we configure it for Bennu and its dependancies. A standard `require` block  can then load Bennu.
+Bennu uses AMD to define its packages and import dependencies. After loading an AMD module loader using `importScripts`, we configure it for Bennu and its dependencies. A standard `require` block  can then load Bennu.
 
 
 ```js
@@ -229,7 +229,7 @@ require @ [
 ## Result Messaging
 Parsing may either succeed with a result or fail with an error. Parsers run using Bennu's `run*` methods fail by throwing an exception, but in a web worker we don't want to throw an error in the worker thread itself. Instead the worker should pass both success and error results back to the main thread.
 
-To avoid throwing errors, the parses is run with two custom completion functions: `ok` for success and `err` for failure. These callbacks pass data back to the main thread and are triggered when `finish` is called on the parser (which may be well after the actual parsing has completed).
+To avoid throwing errors, the parser is run with two custom completion functions: `ok` for success and `err` for failure. These callbacks pass data back to the main thread and are triggered when `finish` is called on the parser (which may be well after the actual parsing has completed).
 
 ```js
 // Callbacks
@@ -288,7 +288,7 @@ var provide := \input -> {
 ```
 
 #### Finish
-`finish` completes parsing. The parser result is passed though one of the two callbacks we set up with `parseInc`. We could invalidate the internal parser state as well, but this example does not.
+`finish` completes parsing. The parser result is passed through one of the two callbacks we set up with `parseInc`. We could invalidate the internal parser state as well, but this example does not.
 
 ```js
 var finish := \ ->

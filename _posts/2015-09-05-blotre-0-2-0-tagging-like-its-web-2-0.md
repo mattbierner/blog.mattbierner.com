@@ -14,7 +14,7 @@ Tags show up under the stream name. You can also search for streams with a given
 
 Tagging also introduces the concept of a shared stream collection. Each tag is conceptually a collection of streams, add a tag to a stream and it automatically becomes a child of that tag. The tag's set of children is dynamic and shared between all Blot're users, introducing fun new collaborative opportunities.
 
-Status updates on the stream are automatically broadcast to the parent tag, who maintains an set of children ordered by last update time. This is very similar to how existing streams and child streams work currently.
+Status updates on the stream are automatically broadcast to the parent tag, who maintains a set of children ordered by last update time. This is very similar to how existing streams and child streams work currently.
 
 # For Developers
 The Blot're [APIs][api] have also been updated to support tags.
@@ -41,7 +41,7 @@ Stream data now includes a list of tags in the `tags` field:
 Each stream can have up to six unique tags of between one and thirty two characters each. Tags follow the same rules as stream names, but cannot contain spaces and tags are always normalized to lowercase in the system.
 
 ## With the REST and Socket Response APIs
-Both the [REST][] and [Websocket Response][response] APIs now support querying and changing tags. Here's a quick overview of the five new calls using the websocket APIs, but the REST tag API is nearly identical (REST operates on stream ids instead of urls and only return the relevant Json data instead of wrapping things in a JSON message.)
+Both the [REST][] and [Websocket Response][response] APIs now support querying and changing tags. Here's a quick overview of the five new calls using the websocket APIs, but the REST tag API is nearly identical (REST operates on stream ids instead of urls and only returns the relevant Json data instead of wrapping things in a JSON message.)
 
 #### GetTags
 Gets the tags of a stream.
@@ -162,7 +162,7 @@ Additionally, any regular stream subscriptions will now receive `ParentAdded` an
 
 
 # Looking Forward
-Both [Blot're.js][blotre.js] and [Blot're.py][blotre.py] have been updated to support the new APIS.
+Both [Blot're.js][blotre.js] and [Blot're.py][blotre.py] have been updated to support the new APIs.
 
 Inspired by a certain TPP (not of trans-pacific variety), I'm also working on a little project that uses the shared nature of Blot're tags to crowdsource control of something. The number 2600 may also be involved. More details to come shortly.
 

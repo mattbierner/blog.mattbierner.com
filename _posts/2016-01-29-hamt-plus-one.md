@@ -30,7 +30,7 @@ const map = hamt.mutate(map => {
 }, hamt.empty);
 ``` 
 
-A Hamt+ map can be made mutable at any time, and the mutations are guaranteed not to effect any existing references to the immutable data structure:
+A Hamt+ map can be made mutable at any time, and the mutations are guaranteed not to affect any existing references to the immutable data structure:
 
 ```js
 const h = hamt.set('a', 1, hamt.make());

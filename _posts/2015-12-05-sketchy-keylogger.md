@@ -129,7 +129,7 @@ Splitting the events so that there is no overlap allows drawing the gameplay in-
 ## Visualization With Turtles
 I wanted to treat gameplay keypresses as input to what amounts to a digital Etch-a-Sketch. Naturally Python, being Python, had a standard library for this: [`turtle`][turtle]. 
 
-Player movement would move the the turtle about the screen. Moving left with the left arrow would draw a line to the left, while holding both the up and right arrows would draw a diagonal line towards the upper right. The length of the line would be determined by how long the keys were pressed.
+Player movement would move the turtle about the screen. Moving left with the left arrow would draw a line to the left, while holding both the up and right arrows would draw a diagonal line towards the upper right. The length of the line would be determined by how long the keys were pressed.
 
 `turtle` makes it super easy to get something up on the screen quickly. Here's the basic drawing logic to draw the entirety of a run:
 
@@ -182,11 +182,11 @@ Actions are plotted individually as little dots:
 
 Somewhat surprisingly for a library targeted at beginners, the `turtle` canvas itself is not interactive, so no zooming or panning. If your drawing is too small, too large, or too off-center, you have to adjust the drawing code itself to scale and shift things so that they show on screen correctly. `turtle` also [doesn't support colors with alpha](https://bugs.python.org/issue20920), a minor annoyance, but come on! 
 
-I also wrote a script to draw gameplay using [MatPlotLib][]. The plots look pretty much the same, but the drawing is interactive and use partially transparent colors. Any of the better looking visualization, or zoomed-in visualizations, were created with MatPlotLib.
+I also wrote a script to draw gameplay using [MatPlotLib][]. The plots look pretty much the same, but the drawing is interactive and uses partially transparent colors. Any of the better looking visualizations, or zoomed-in visualizations, were created with MatPlotLib.
 
 
 # Areas
-Spelunky levels are randomly generated, so, while it does not make sense to try to compare input for individual levels, we can look at how the different areas of the game effect gameplay. 
+Spelunky levels are randomly generated, so, while it does not make sense to try to compare input for individual levels, we can look at how the different areas of the game affect gameplay. 
 
 Now, I'm fairly good at Spelunky (normal good, not speedrun good), but I still die a lot.  
 
@@ -202,7 +202,7 @@ Here's what the average death rate looks like for each area:
 
 This falloff means that there is far less data on later sections of the game than earlier sections. For example, while I have around 420 plays of mine levels recorded, I only reached the temple at all on ten runs, leaving just 22 temple level play throughs. 
 
-With that limitation in mind, let's take a look what movement in each area looks like.
+With that limitation in mind, let's take a look at what movement in each area looks like.
 
 ## Mine
 (Until the day I die, the mine level music will be forever looping in some deep recess of my mind.)
@@ -293,9 +293,9 @@ With this project, I wanted to examine the input used to play a computer game, w
 
 {% include image.html file="spelunky-closing.png" %}
 
-Some elements of gameplay are captured in these visualization, but they are also very abstract. And, appropriately enough, keypresses of individual runs do end up creating something that resembles a cave system.
+Some elements of gameplay are captured in these visualizations, but they are also very abstract. And, appropriately enough, keypresses of individual runs do end up creating something that resembles a cave system.
 
-I'd be interested to see a similar approach applied to different games as well, such as an 2D RPG like Pokemon Yellow or even a more mouse based game. And who knows, maybe there is even a market for visualizations of player input for particularly epic speed runs. Overlay a few more gameplay details and the result could be pretty Etsy-tacular.
+I'd be interested to see a similar approach applied to different games as well, such as a 2D RPG like Pokemon Yellow or even a more mouse based game. And who knows, maybe there is even a market for visualizations of player input for particularly epic speed runs. Overlay a few more gameplay details and the result could be pretty Etsy-tacular.
 
 But profit was never my goal. Really, this whole project was all just a big excuse to play more Spelunky.
 

@@ -19,7 +19,7 @@ links:
 
 *[median.gif][site]* is an experiment blending multiple frames of animated gifs using [median blending][median]. Similar to *[scanline.gif][scanline]*, this allows viewing the entire animation in a single image, or you can play around with the rendering settings to generate new gifs.
 
-*median.gif* combines multiple frames on an animation by averaging the pixel values of each frame. This produces an image that captures the movement of objects in the scene, as well as which objects are stationary.
+*median.gif* combines multiple frames of an animation by averaging the pixel values of each frame. This produces an image that captures the movement of objects in the scene, as well as which objects are stationary.
 
 {% include image.html file="sample-all.png" description="Blending all frames to a single image" %}
 

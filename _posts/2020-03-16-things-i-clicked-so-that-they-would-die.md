@@ -20,13 +20,13 @@ And some more!
 
 See, I've long wondered what the gameplay of a first person shooter would look like if you only saw the exact frame when the player pressed the fire button. Would this capture any humorous scenes? Would there be any patterns? Would it provide any insights? And given that most everything in Seattle has been canceled in recent days, I decided now was as good a time as any to finally answer this most pressing question.
 
-So over the weekend, I played through the *Halo: Combat Evolved* remaster on PC using simple script that captures a 600 pixel square in the middle of the screen for each mouse click. I played through the game twice: first on easy and then on legendary.
+So over the weekend, I played through the *Halo: Combat Evolved* remaster on PC using a simple script that captures a 600 pixel square in the middle of the screen for each mouse click. I played through the game twice: first on easy and then on legendary.
 
-On easy, the campaign required some 5,750 clicks. I found it to be a mostly run forward and click things affair, with only handful of deaths (mostly self inflicted). Combining all these images into a montage presents a more or less complete view of all things you click on during a linear campaign play through.
+On easy, the campaign required some 5,750 clicks. I found it to be a mostly run forward and click things affair, with only a handful of deaths (mostly self inflicted). Combining all these images into a montage presents a more or less complete view of all things you click on during a linear campaign play through.
 
 {% include image.html file="easy-small.png"  description="Playthough on easy" %}
 
-Legendary on the other hand required some 13,700 clicks (almost 250% more clicks than easy!). On that difficulty, the game is still just as punishing as I remember and I died a lot. Probably a quarter of this play through was spent on the second half of *Truth and Reconciliation* (represented by the purple tinged areas near the top) because God damn that level! This means that composite image captures me playing through the same difficult sections over and over again.
+Legendary on the other hand required some 13,700 clicks (almost 250% more clicks than easy!). On that difficulty, the game is still just as punishing as I remember and I died a lot. Probably a quarter of this play through was spent on the second half of *Truth and Reconciliation* (represented by the purple tinged areas near the top) because God damn that level! This means that the composite image captures me playing through the same difficult sections over and over again.
 
 {% include image.html file="legendary-small.png" description="Play through on Legendary" %}
 
@@ -38,7 +38,7 @@ The Legendary play through also made me realize a quirk of Halo's death animatio
 
 I mention this not just to be humorous but because this was a real problem; I probably had to filter out a few hundred images like the above.
 
-Back on topic, I like how the composite images capture the shifting color palette as you move through the game. This is most clear when the image are reduced down to a single pixel per frame.
+Back on topic, I like how the composite images capture the shifting color palette as you move through the game. This is most clear when the images are reduced down to a single pixel per frame.
 
 {% include image.html file="legendary-single.png" description="Legendary play through with 1px per shot" %}
 

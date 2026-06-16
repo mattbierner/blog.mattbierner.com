@@ -13,7 +13,7 @@ Hash tries are [tries] that use a *h* bit hash as the key. Each hash is split in
 Assuming there are no collisions, lookup and update performance depends only on the number of bits in the hash and the number of buckets for each internal node. Persistence is achieved by path copying.
 
 ## Example trie
-For `h=8` and `n=2` the hash trie has 4 levels. Each internal node contains all possible mappings for a 2 bit hash fragment: `00, 01, 10, 11`. The path from the root to a leaf is the compete hash of that entry.
+For `h=8` and `n=2` the hash trie has 4 levels. Each internal node contains all possible mappings for a 2 bit hash fragment: `00, 01, 10, 11`. The path from the root to a leaf is the complete hash of that entry.
 
 ```
 {root
@@ -127,7 +127,7 @@ The empty leaf node `empty`, is used in the implementation and to represent an e
 empty = null;
 ```
 
-`InternalNode` manages a set of one or more children, addressable by hash fragment offsets into a sparsely populated array. Only children that actual exist are set in the array.
+`InternalNode` manages a set of one or more children, addressable by hash fragment offsets into a sparsely populated array. Only children that actually exist are set in the array.
 
 ```js
 var InternalNode = function \count children =self-> {
@@ -143,7 +143,7 @@ var InternalNode = function \count children =self-> {
 Looking up an entry is straightforward; simply descend a path of internal nodes using progressive hash fragments until a leaf is found. Since the trie only expands leaf nodes to internal nodes as needed, this leaf may not match the query.
 
 ## Nothing
-When a entry does not exist in the trie, we will return an internal `nothing` value.
+When an entry does not exist in the trie, we will return an internal `nothing` value.
 
 ```js
 var nothing = ({});
@@ -232,9 +232,9 @@ has = \k m ->
 
 
 # Updates
-Updates take a hash trie and return a new hash trie with the update applied. Like lookup, updates walk a path of internal nodes until finding a leaf. But instead of returning a value, updates edit the Leaf and then reconstruct all node on the path back to the root in reverse order.
+Updates take a hash trie and return a new hash trie with the update applied. Like lookup, updates walk a path of internal nodes until finding a leaf. But instead of returning a value, updates edit the Leaf and then reconstruct all nodes on the path back to the root in reverse order.
 
-Rather than use separate routines to edit, insert, and delete nodes, a single `alter` function will handle everything. `alter` takes a `shift`, function `f` which maps the current node value to a new node value, target hash `h`, traget key `k`, and node `n`.
+Rather than use separate routines to edit, insert, and delete nodes, a single `alter` function will handle everything. `alter` takes a `shift`, function `f` which maps the current node value to a new node value, target hash `h`, target key `k`, and node `n`.
 
 ```js
 var alter = \shift f h k n ->

@@ -4,7 +4,7 @@ title: 'Snake Part 2 - Interactive Nibbler'
 series: stupid_template_tricks
 date: '2015-01-22'
 ---
-Compile time Nibbler, man. We gotta get this sucker done. [Last time][part1], we got so caught in metaprogramming that we ended up with a state machine. To play a game, you had enter all of the commands ahead of time. That's pathetic. Is that what you want to do with your life? Type `Input::Up` and `Input::Left` into a compiler so that you can guide a bunch of triangles into asterisks? That's senseless! But that's what happens, man.
+Compile time Nibbler, man. We gotta get this sucker done. [Last time][part1], we got so caught in metaprogramming that we ended up with a state machine. To play a game, you had to enter all of the commands ahead of time. That's pathetic. Is that what you want to do with your life? Type `Input::Up` and `Input::Left` into a compiler so that you can guide a bunch of triangles into asterisks? That's senseless! But that's what happens, man.
 
 {% include image.html file="1198440-scooty_puff_sr.png" %}
 
@@ -29,7 +29,7 @@ Let’s assume that we have some way to pass text data across compiler runs. We�
 Yet we need look no further than C++ itself. Yes, perhaps the best serialization of a C++ template data structure is to C++ source code for that template data structure. This is not as crazy as it sounds, since we get compile time deserialization for free. Just `#include` the save file and the compiler does the rest.
 
 ## Type Serialization
-We [previously][part1] used a `Print` interface to print out visual representations of our compile time data structures at runtime. Serialization will basically do the same, but output C++ source code the represents the data structure itself. 
+We [previously][part1] used a `Print` interface to print out visual representations of our compile time data structures at runtime. Serialization will basically do the same, but output C++ source code that represents the data structure itself. 
 
 The `Serialize` interface defines a `Write` operation which writes a C++ representation of the target type to a stream. The write operation itself will be executed at runtime (For both `Print` and `Serialize`, you could instead output to a `template<char...>` if you really wanted to).
 
@@ -82,7 +82,7 @@ struct Serialize<SerializableValue<T, x>>
 };
 ```
 
-The main limitation to this approach that you have manually wrap value types in a `SerializableValue` when serializing them:
+The main limitation to this approach is that you have to manually wrap value types in a `SerializableValue` when serializing them:
 
 ```cpp
 // This does not compile
@@ -347,7 +347,7 @@ State<PlayerState::Alive,Position<5,5>,Direction::Right,Grid<List<List<Cell<Cell
 
 That’s not very human readable, but it is perfectly valid C++. So let’s return to the problem of saving game state across compiler runs.
 
-## Persistance
+## Persistence
 State persistence saves the game state in a format that can be deserialized at compile time. Unfortunately, the persistence itself must be handled at runtime using files (I believe you could possibly get around using runtime here by instead serializing the game state to a compiler error message, and then passing the error message into the next compiler run as a macro. But that's a whole lot of work just to prove a rather silly point).
  
 When the Nibbler program is executed at the end of each game step, we'll write the state to a file called `"current_game.h"`. This is handled by the `serialize_game` function, which outputs text that binds the state to the name `”state”` with a `using` statement.

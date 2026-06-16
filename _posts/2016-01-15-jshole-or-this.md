@@ -111,7 +111,7 @@ After switching over all of HAMT's APIs to use combined definitions, I eventuall
 
 **Update - Feb 13, 2016**
 
-See the [Funcualizer library](/jshole-funcualizer/) for a more complete implementation of `free` and ways to eliminate some of it's overhead. It still involves more function calls than `|| this`, but is much more flexible and will perform well enough for the vast majority of cases.
+See the [Funcualizer library](/jshole-funcualizer/) for a more complete implementation of `free` and ways to eliminate some of its overhead. It still involves more function calls than `|| this`, but is much more flexible and will perform well enough for the vast majority of cases.
 
 [hamt]: https://github.com/mattbierner/hamt
 [benchmark]: http://jsperf.com/method-version-of-free-function/3

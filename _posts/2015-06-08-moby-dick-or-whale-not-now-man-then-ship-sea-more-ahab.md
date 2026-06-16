@@ -8,14 +8,14 @@ Question: what color is *Moby-Dick*? No, not the white whale, but the text itsel
 
 {% include image.html file="turk1.png" description="Boom! You just read Moby-Dick." %}
 
-In this post, I'll overview my work translating *Moby-Dick* to a stream of colors for use on Blot're. I didn't want to just encode *Moby-Dick* to set of randomly assigned colors either, that would be boring. I wanted to capture the color associations found throughout the book. Basically, what *Moby-Dick* would look like to someone with super strong color synesthesia, so strong that they could longer perceive words at all, just a pure stream of colors?
+In this post, I'll overview my work translating *Moby-Dick* to a stream of colors for use on Blot're. I didn't want to just encode *Moby-Dick* to set of randomly assigned colors either, that would be boring. I wanted to capture the color associations found throughout the book. Basically, what *Moby-Dick* would look like to someone with super strong color synesthesia, so strong that they could no longer perceive words at all, just a pure stream of colors?
 
 Starting from the raw text, I'll walk through the entire process translating the text to color. From tokenization and identifying possible color words with Apache [OpenNLP][], to crowd sourcing color associations on [Mechanical Turk][mturk], to generating some neat image representations of the novel, and finally posting the color stream up to [Blot're][blotre].
 
 Now, you may be wondering about the practical applications of all this. Please let me assure you, there are none. And all the better. But I found it an interesting project and I hope you agree.
 
 # Initial Data
-My goal was map each word in *Moby-Dick* to a color. Sounds easy enough, but there's a lot of room for interpretation. *Moby-Dick* contains over two hundred thousand words and, since this project's inception, I knew that humans, not computers, would source the color mappings. Asking people to map two hundred thousand words seemed too daunting, so I scoped things down a bit to a more reasonable problem.
+My goal was to map each word in *Moby-Dick* to a color. Sounds easy enough, but there's a lot of room for interpretation. *Moby-Dick* contains over two hundred thousand words and, since this project's inception, I knew that humans, not computers, would source the color mappings. Asking people to map two hundred thousand words seemed too daunting, so I scoped things down a bit to a more reasonable problem.
 
 I decided to use a dictionary approach. This would allow me to map every distinct word to a color just once, even if that word appeared multiple times in the text. As a result, I decided that each word would be considered on its own, independent of its grammatical context and independent of any symbolism or larger meaning in the text.
 
@@ -48,7 +48,7 @@ How could I turn something all englishy like *that* into something more computer
 
 I began by breaking the text into easily identifiable components, a process called [tokenization][]. [Apache OpenNLP][opennlp] helped me transform and analyze the source text.
 
-OpenNLP includes three tokenizers: a whitespace tokenizer, a simple tokenizer, and a learnable tokenizer, the last being, "A maximum entropy tokenizer, detects token boundaries based on probability model". Maximum entropy! Probability models! Now were getting scientific! So you can imagine which tokenizer I tried first.
+OpenNLP includes three tokenizers: a whitespace tokenizer, a simple tokenizer, and a learnable tokenizer, the last being, "A maximum entropy tokenizer, detects token boundaries based on probability model". Maximum entropy! Probability models! Now we're getting scientific! So you can imagine which tokenizer I tried first.
 
 ```bash
 $ opennlp TokenizerME en-token.bin < moby_dick.txt
@@ -74,7 +74,7 @@ $ opennlp SimpleTokenizer < moby_dick.txt
 
 Again, not perfect. But I didn't need perfect. And for my purposes, the simple tokenizer's results were actually preferable to the learnable tokenizer's. There's a token for each word, and sometimes more than one token too! Hyphenated words such as `rose-bud`, were tokenized as `rose` and `bud`.)
 
-I feed the entire book through the simple tokenizer, minus the etymology and extracts, from, "Call me Ishmael" to, "found another orphan." There are about 260,000 tokens in *Moby-Dick*, and roughly 19,000 distinct tokens.
+I fed the entire book through the simple tokenizer, minus the etymology and extracts, from, "Call me Ishmael" to, "found another orphan." There are about 260,000 tokens in *Moby-Dick*, and roughly 19,000 distinct tokens.
 
 ## Normalization
 The most common tokens are pretty much what you would expect, a bunch of punctuation and small common words:
@@ -83,9 +83,9 @@ The most common tokens are pretty much what you would expect, a bunch of punctua
 [',', 'the', '.', 'of', 'and', 'a', 'to', ';', 'in', 'that', '"', "'", '-', 'his', 'it', 'I', '!', 's', 'is', 'he', 'with', 'was', '--', 'as', 'all', 'for', 'this', 'at', 'by', 'but', 'not', 'him', 'from', 'be', '?', ...]
 ```
 
-For this project, I was only interested in words that could have some color association. And while I wanted these color association to be subjective, words like `the` or `and` are a bit too open ended. And 19,000 words were still too many for me to colorize easily. So I set out to prune down the number of words I had to work with.
+For this project, I was only interested in words that could have some color association. And while I wanted these color associations to be subjective, words like `the` or `and` are a bit too open ended. And 19,000 words were still too many for me to colorize easily. So I set out to prune down the number of words I had to work with.
 
-Normalizing all word to lowercase eliminated around two thousand distinct words. Further gains became more difficult.
+Normalizing all words to lowercase eliminated around two thousand distinct words. Further gains became more difficult.
 
 Eliminating one and two letter words, usually conjunctions which I assumed didn't have a color association, removed one hundred more, while removing punctuators using a simple `\w+` regular expression shaved off another fifty words or so.
 
@@ -104,7 +104,7 @@ for token in tokens:
     word_counts[key] = word_counts.get(key, 0) + 1
 ```
 
-Inflect isn't prefect, especially with words that are not nouns, such as its singularization of `this` to `thi`, but it can handle some complex plurals, like  `oarsmen` to `oarsman`. Again, I wasn't too concerned if a few words got messed up at this stage since the project was about the text as a whole, not individual words.
+Inflect isn't perfect, especially with words that are not nouns, such as its singularization of `this` to `thi`, but it can handle some complex plurals, like  `oarsmen` to `oarsman`. Again, I wasn't too concerned if a few words got messed up at this stage since the project was about the text as a whole, not individual words.
 
 Down to 14,500 words now. Still too many. And the top words are still not all that meaningful.
 
@@ -113,7 +113,7 @@ Down to 14,500 words now. Still too many. And the top words are still not all th
 ```
 
 ## Color Word Identification
-But what kind of words can have a color associations? Well, words for things and words that qualify things for starters. So nouns, adjectives, and adverbs. I decided to limit my project to those.
+But what kind of words can have color associations? Well, words for things and words that qualify things for starters. So nouns, adjectives, and adverbs. I decided to limit my project to those.
 
 I ran the OpenNLP part of speech (POS) tagger on *Moby-Dick* to identify every noun, adjective, and adverb. Here's some example output:
 
@@ -223,7 +223,7 @@ def get_color(word, current):
 Interesting but monochromatic. Let's bring in some color.
 
 ## Color Words
-*Moby-Dick* uses very colorful language. Hell, the word 'white' alone appears more than three hundred time, 'black' and 'green' around one hundred times each, and 'red' around fifty times. So what would the book look like if you visualized its color words?
+*Moby-Dick* uses very colorful language. Hell, the word 'white' alone appears more than three hundred times, 'black' and 'green' around one hundred times each, and 'red' around fifty times. So what would the book look like if you visualized its color words?
 
 To see, I started with the CSS3 list of color names. I split up compound names, like 'RebeccaPurple', creating entries for 'rebecca' and 'purple' (regular 'purple' overwrites the 'purple' from 'RebeccaPurple'.) Then, I ran the image building script again, this time without any decay function:
 
@@ -256,14 +256,14 @@ As hoped, 'yellow' was mapped to an almost perfect yellow (`#fbf655`), 'bone' to
 
 {% include image.html file="cetology.png" description="cetology - A branch of zoology concerned with the cetaceans" %}
 
-Workers colorized fourteen hundred of the fifteen hundred words. And, of those remaining one hundred words, most were words like 'macrocephalus' or 'stunsail' or 'zoroaster', which, even having dictionary at hand, probably don't have color associations for most people.
+Workers colorized fourteen hundred of the fifteen hundred words. And, of those remaining one hundred words, most were words like 'macrocephalus' or 'stunsail' or 'zoroaster', which, even having a dictionary at hand, probably don't have color associations for most people.
 
 Here's the result of running the image generation script again using the first fourteen hundred crowd sourced mappings.
 
 {% include image.html file="turk1-1.png" %}
 
 # Blot're
-The whole goal of this project was to encode a book for use on [Blot're][blotre]. But this was perhaps the easiest part of the whole process. You can find the stream of Moby-Dick stream [here](https://blot.re/s/matt/moby+dick).
+The whole goal of this project was to encode a book for use on [Blot're][blotre]. But this was perhaps the easiest part of the whole process. You can find the stream of Moby-Dick [here](https://blot.re/s/matt/moby+dick).
 
 ## Setup
 I wrote the client application in Node using the [Blot're CL framework][blotre-cl]. This framework handles registering a new [disposable][blotre-disposable] client with `https://blot.re`, displaying the redemption code to the user, obtaining an access token for the user who redeemed the code, and persisting the credentials in four lines of code:
@@ -324,7 +324,7 @@ var openBlotreSocket = function(client) {
 };
 ```
 
-The actual update function simply iterates though the list of colors in order, posting up a new color every 250ms.
+The actual update function simply iterates through the list of colors in order, posting up a new color every 250ms.
 
 ```js
 var startMobyUpdates = function(client, targetStream, data) {

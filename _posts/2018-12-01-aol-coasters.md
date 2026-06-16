@@ -8,7 +8,7 @@ titleImage:
 
 {% include image.html file="over-1.jpg" %}
 
-Commemorate your cyberversary and celebrate the genesis of our modern Internet with some limited edition, [custom printed AOL disk coasters][etsy]! The prefect gift for the holidays or for that special millennial in your life.
+Commemorate your cyberversary and celebrate the genesis of our modern Internet with some limited edition, [custom printed AOL disk coasters][etsy]! The perfect gift for the holidays or for that special millennial in your life.
 
 Each pack comes with four unique coasters. See the [Etsy page][etsy] for more details.
 

@@ -19,7 +19,7 @@ The entire article is full of amazing (for further entertainment, check out *[Lo
 
 Now, while that excerpt is great on its own, what really struck me was `[dubious]`. Just imagine: somebody wrote the above, and then an editor came along, read that, and [added `[dubious]`](https://en.wikipedia.org/w/index.php?title=Low_comedy&diff=prev&oldid=602505195). And the word *dubious* is just *so* Wikipedia too. 
 
-But this got me wondering: where else is `[dubious]` used on Wikipedia? The query `hastemplate:"dubious"` answers the question, but that requires a lot manual browsing. So I decided to write a script to extract every sentence marked `[dubious]` on Wikipedia.
+But this got me wondering: where else is `[dubious]` used on Wikipedia? The query `hastemplate:"dubious"` answers the question, but that requires a lot of manual browsing. So I decided to write a script to extract every sentence marked `[dubious]` on Wikipedia.
 
 The resulting script is [on Github][src], along with a set of initial results. Even in this condensed form, it's far too much data to fully read through, but here's a taste of what's been found so far.
 

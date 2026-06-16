@@ -25,13 +25,13 @@ So instead, I decided to play Wonka and create a homemade lollipop. This way the
 
 {% include image.html file="pop3.jpg" %}
 
-The [candy recipe](https://www.thespruce.com/lollipops-521375) that I followed called for heating two parts sugar with one part light corn syrup—with a dash of water thrown in for good measure—until the mixture reaches about 300 degrees Fahrenheit. For the sake of clarity, I opted not to add any dyes or flavorings. The mixing and heating went smoothly, although the temperature seemed rather high. "Won't the molten sugar just melt the plastic lens of the camera or even destroye the whole endoscope?" I wondered. Probably, but that seemed like a problem for future me to worry about.
+The [candy recipe](https://www.thespruce.com/lollipops-521375) that I followed called for heating two parts sugar with one part light corn syrup—with a dash of water thrown in for good measure—until the mixture reaches about 300 degrees Fahrenheit. For the sake of clarity, I opted not to add any dyes or flavorings. The mixing and heating went smoothly, although the temperature seemed rather high. "Won't the molten sugar just melt the plastic lens of the camera or even destroy the whole endoscope?" I wondered. Probably, but that seemed like a problem for future me to worry about.
 
 My mould was simple, just a hemisphere out of aluminum foil, and this is the main area where I could have done a better job. My mould was far from smooth, which left the lolly with very poor optics. A proper mould—perhaps even one of a more gem-like shape—would be interesting, and the field of sucrose optics seems ripe with possibility.
 
 {% include image.html file="mould.jpg" %}
 
-After carefully doling the hot sugar mixture into the mould and sticking in the endoscope, I set it aside for a few hours to cool. By this point, the remaining sugar in the pan had hardened into an glass-like substance that was very difficult to clean up without near boiling water. This seemed promising. 
+After carefully doling the hot sugar mixture into the mould and sticking in the endoscope, I set it aside for a few hours to cool. By this point, the remaining sugar in the pan had hardened into a glass-like substance that was very difficult to clean up without near boiling water. This seemed promising. 
 
 After around four hours of cooling, I carefully unwrapped the lollipop and examined my creation. The first thing that came to mind was an adult pacifier. This makes sense given that the lolly was built around a *Ring Pop*, which is pretty much just a candy pacifier to begin with.<!--This also was a good finding from purely business perspective. Clearly this device will have a builtin market with endoscope voyeurs of the adult baby community. Now off to Shark Tank...--> The candy itself was a clear, slightly yellowish glassy material. The foil left lots of little wrinkles and dents in the surface, but these were smoothed out by a quick dunk in a bath of hot water. The candy was also surprisingly tough, much more so even than a normal lollipop. It was almost like a hunk of glass.
 
@@ -68,7 +68,7 @@ This effectively left *pop reality* a stationary experience, similar to *Job Sim
 
 Like a regular Yuri Gagarin, I now prepared myself physically and mentally to cross over into inner space. Tongue extended, I slowly brought the lollipop capsule closer and closer to my mouth before cautiously giving it a lick. *Sweet Jesus!* It's difficult to describe the mix of horror and delight that filled me as I ran my tongue over myself for the first time. <!--real quality writing, that-->
 
-The licking itself was more of a indistinct blur across my vision, with few tongue details really visible. Perhaps the more interesting views came from the preparatory phase, as here I could at least make out some of my face and my gaping maw.
+The licking itself was more of an indistinct blur across my vision, with few tongue details really visible. Perhaps the more interesting views came from the preparatory phase, as here I could at least make out some of my face and my gaping maw.
 
 Not content with superficialities, I next stuck the entire lolly into my mouth. This proved to be fairly uneventful, at least when compared to my [initial oral foray][oral]. Gone was the thrill of nearly choking to death—along with all accompanying wrenching and gagging—and the view was far more abstract as well. Even after adjusting the endoscope light, I could barely make out any details.
 

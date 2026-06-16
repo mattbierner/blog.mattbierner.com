@@ -39,7 +39,7 @@ Now it must be said that if you're trying to replicate a modern photography expe
 # Attempt One: Digital Back
 With the camera chosen, my next task was to find a way to capture video that more or less matched what the camera would normally record to film. I wanted to capture the unique views offered by mounting any of Minolta's old Rokkor lenses on the SR-T 101, as well as image effects such as focus and depth of field.
 
-My first thought was to create a poor-man's digital-back by swapping out the film for a digital sensor. While this sounded great in theory, realizing it on the cheapproved problematic.
+My first thought was to create a poor-man's digital-back by swapping out the film for a digital sensor. While this sounded great in theory, realizing it on the cheap proved problematic.
 
 To begin, I stripped down an [ELP fisheye USB webcam][elp] to remove its built-in optics and other such accoutrements, leaving the sensor directly exposed. I then mounted the sensor roughly where the film would go in the SR-T 101.
 
@@ -128,7 +128,7 @@ Most of my previous experiments transmitted video from the Pi to the iPhone over
 
 My wireless streaming approach again makes use of the iPhone's personal hotspot feature, and getting started was incredibly simple: I just configured `wpa_supplicant` on the Pi to connect to my iPhone's personal hotspot. Once the Pi connects, it can then be accessed from any other device on the hotspot by IP address, which will fall somewhere in the range: `172.20.10.x`. Using the IP, I could ssh into the Pi from my phone to initiate streaming, as well as connect to the mjpeg stream itself. (I wasn't able to get hostname resolution working properly however, so I always had to use the IP.)
 
-{% include image.html file="tripod1.jpg" description="While I forgot to add a tripod mounting screw hole, it this was nothing a little gaffer tape couldn't fix" %}
+{% include image.html file="tripod1.jpg" description="While I forgot to add a tripod mounting screw hole, this was nothing a little gaffer tape couldn't fix" %}
 
 For all the usability benefits of wireless streaming, there are some pretty major downsides, not the least of which is latency. Even with a very low resolution stream, the lowest glass-to-glass latency I saw using wireless streaming on the personal hotspot was somewhere around 200ms, roughly double that of the wired connection. The latency also tends to be spiky. Increasing the resolution or framerate of the stream only makes these problems worse. 720p at 30fps proved to be the limit of acceptable performance, and I chose to go with a 640x480 stream at 48fps for reliability. Sure the resolution sucks, but the latency is consistently lower.
 
@@ -158,7 +158,7 @@ It was difficult to even place myself within my surroundings. There was no longe
 
 I actually adapted to this new reality much more quickly than I did to having my eyes on my hands however, at least partially because I naturally kept the camera close to my body near the center of my chest. This fixed position made the experience closer to the chest mounted camera setup that I experimented with. But I had only ever toyed around the hand cameras and body cam setups the relative safety of my apartment; out in the wide world, walking the rusted passages of this *Berzerk* style maze, I had to be much more cautious, lest I bowl over some small humanoid or—even worse—bump into the artwork.
 
-While getting used to the reality, I also began the photoshoot in ernest. This proved to be an interesting mix between live-streaming and traditional social media photo-sharing. When I pressed the shutter button, there was no chance for editing or reviewing or even confirming before the image went public—the image went directly from my eyes up to the internet. Unlike live-streaming however, the camera still allowed me to construct and present specific images instead of capturing every moment.
+While getting used to the reality, I also began the photoshoot in earnest. This proved to be an interesting mix between live-streaming and traditional social media photo-sharing. When I pressed the shutter button, there was no chance for editing or reviewing or even confirming before the image went public—the image went directly from my eyes up to the internet. Unlike live-streaming however, the camera still allowed me to construct and present specific images instead of capturing every moment.
 
 {% include image.html file="shot1.jpg" href="https://twitter.com/mattbierner/status/843567666614874112" description="Ooh, so artsy! Should have shot in black and white though" %}
 

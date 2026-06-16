@@ -9,13 +9,13 @@ Last year, I began development of [Atum][atum], an [ECMAScript 5.1][ecma51] inte
 
 # Why Functional Style?
 
-The general benefits functional programming are already well documented. For programming language implementation specifically, functional-style programming makes sides effects explicit and allows complex behaviors to be build though composition.
+The general benefits of functional programming are already well documented. For programming language implementation specifically, functional-style programming makes side effects explicit and allows complex behaviors to be built through composition.
 
 ## Composition and Side Effects
 Interpreter functions explicitly express their [side effects][side-effects], so in composing functions to build more powerful language operations, we can ensure these too behave as expected. Explicit control of state is extremely helpful in programming language implementation and also enables richer tooling.
 
 ## Immutable Data Structures
-The entire program state to be inspected, saved, and transformed without effecting other computations. The program state can even be extracted from a computation and run it in different computations without effecting the original. 
+The entire program state to be inspected, saved, and transformed without affecting other computations. The program state can even be extracted from a computation and run it in different computations without affecting the original. 
 
 
 # Atum
@@ -55,7 +55,7 @@ Even expansive language changes or additions, like lazy evaluation or probabilis
 ## Tooling
 Atum provides a rich source of data on running programs and their state. A  program's entire state is captured in a single object, and all data structures are immutable. States can be safely saved and restored or transformed. 
 
-Expressions can be evaluated without effecting a running program and programs can easily be paused and resumed. Such capabilities make Atum a powerful base on which tools like debuggers and development environments can be built. 
+Expressions can be evaluated without affecting a running program and programs can easily be paused and resumed. Such capabilities make Atum a powerful base on which tools like debuggers and development environments can be built. 
 
 
 

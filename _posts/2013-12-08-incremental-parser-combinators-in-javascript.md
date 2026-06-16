@@ -19,14 +19,14 @@ Besides allowing parsers to be run incrementally, the implementation allows a fe
 
 * Cache partially completed incremental parser states.
 * Branch incremental parsers by feeding a state different inputs.
-* Access the working output value of a incremental parser.
+* Access the working output value of an incremental parser.
 
 #### Links
 * [Parse][parse] - Base parser combinator library and complete incremental parsing implementation.
 * [Khepri][khepri] - ECMAScript derived language used for implementation.
 
 # Problem Overview
-Incremental parsing require solving two subproblems: creating resuming parsers and expressing incremental streams. 
+Incremental parsing requires solving two subproblems: creating resuming parsers and expressing incremental streams. 
 
 ## Incrementally Applying Parse Parsers
 Behind its monadic parser combinator interface, [Parse][parse] parsers are implemented with continuations. A parser takes four continuations, and calls one based on its completion condition: `cok` when input is consumed and the parser succeeds, `cerr` when input is consumed and the parser fails, `eok` when no input is consumed and the parser succeeds, and `cerr` when input is consumed and the parser fails.
@@ -77,7 +77,7 @@ partial(); // [‘a’, undefined, ‘b’]
 The other continuations can be captured the same way, although `eok` is the most useful.
 
 ## Incremental Input
-Parse.js parsers operates on [Nu][nu] streams of input. [Nu streams consist][nu-stream-api] of a head value and a function that generates the rest of the stream, allowing  lazily generated, potential infinite streams to be defined.
+Parse.js parsers operate on [Nu][nu] streams of input. [Nu streams consist][nu-stream-api] of a head value and a function that generates the rest of the stream, allowing  lazily generated, potentially infinite streams to be defined.
 
 ```js
 // Stream of [1, 2, 3]
@@ -87,7 +87,7 @@ var s =
             stream(3, \() -> NIL)));
 ```
 
-However, this definition requires every element of a valid Nu stream be accessible at construction. There is no way to define a Nu stream of something like user input because the stream cannot refer to values that do not yet exist (the keys a users will enter) when creating the initial stream. It is not clear what the head value should be, and updating the stream in response to user input would require mutation.
+However, this definition requires every element of a valid Nu stream be accessible at construction. There is no way to define a Nu stream of something like user input because the stream cannot refer to values that do not yet exist (the keys a user will enter) when creating the initial stream. It is not clear what the head value should be, and updating the stream in response to user input would require mutation.
 
 A good functional language can interface such streams with a parser (see the [CC-delcont resumable parsing example][delcont-resumable-parsing]), but I did not find any of these approaches suitable for Javascript. I wanted the incremental parsing API to be clear and easy to use with common Javascript programming patterns.
 
@@ -96,14 +96,14 @@ Incremental input streams consist of two parts: a stream of available data and s
 
 The most simple incremental stream is a standard Nu stream. For a stream `s`, the available data is `s` and the remainder is the empty stream.
 
-Incremental parsers run on the available section. In the simple stream case, this requires waiting until the entire input stream is available before any parsing takes place, which is how Parse normally operate.
+Incremental parsers run on the available section. In the simple stream case, this requires waiting until the entire input stream is available before any parsing takes place, which is how Parse normally operates.
 
 #### Chunks
-Instead of requiring the entire stream be available before starting parsing, we can break the stream it into chunks. As chunks become available, we shift them from remainder to the available stream and run the parser against chunks as they become available. (The idea for chunking the input was adapted from [A Parsing Trifecta][a-parsing-trifecta] with influences from [CC-delcont resumable parsing][delcont-resumable-parsing]).
+Instead of requiring the entire stream be available before starting parsing, we can break the stream into chunks. As chunks become available, we shift them from remainder to the available stream and run the parser against chunks as they become available. (The idea for chunking the input was adapted from [A Parsing Trifecta][a-parsing-trifecta] with influences from [CC-delcont resumable parsing][delcont-resumable-parsing]).
 
 A chunk is a complete Nu stream of zero or more elements. Chunk size may vary and can be determined by data availability or desired behavior. The input stream consists of zero or more chunks, each uniquely identifiable by an id. 
 
-Given a chunk id, the incremental parsers must be able to determine the chunk of id of the next chunk in the sequence. A simple counter is used for this.
+Given a chunk id, the incremental parsers must be able to determine the chunk id of the next chunk in the sequence. A simple counter is used for this.
 
 #### Backtracking
 Backtracking presents one complication. Consider the parser:
@@ -120,7 +120,7 @@ var aa_or_ab = either(
 
 `attempt` ensures that input like `’ab’` is handled correctly by saving and restoring the parser state. Without `attempt`, input `’ab’` would fail since some input is consumed before the first option in `either` fails. 
 
-If two chunks are feed to the parser:
+If two chunks are fed to the parser:
 
 ```js
 // Begin parsing
@@ -138,10 +138,10 @@ finish(r3); // ‘b’
 
 the parser backtracks when `’b’` is encountered. This restores a parser state at chunk 0. Instead of requesting another chunk 1 be provided, the parser should use the chunk 1 that was provided to complete the parsing.
 
-Therefore, a chunk map must be stored external to the parser state to ensure the input stream is consistent even when backtracking. Otherwise, the incremental parser would require a new chunk 1 values for each backtracking.
+Therefore, a chunk map must be stored external to the parser state to ensure the input stream is consistent even when backtracking. Otherwise, the incremental parser would require a new chunk 1 value for each backtracking.
  
 # Implementation Overview
-A custom parser state for incremental parsing chunked input is defined. The incremental state tracks the id of the working chunk. When it runs out of data for a chunk, it reifies the current parser execution and abortively returns a request for the next chunk. An `Session` data structure stores chunks. The `provide` operation provides chunks for requests while `finish` signals the end of file.
+A custom parser state for incremental parsing chunked input is defined. The incremental state tracks the id of the working chunk. When it runs out of data for a chunk, it reifies the current parser execution and abortively returns a request for the next chunk. A `Session` data structure stores chunks. The `provide` operation provides chunks for requests while `finish` signals the end of file.
 
 #### Structures
 `IncrementalState` - `ParserState` used for incremental parsing. Wraps an internal `ParserState` state.

@@ -24,7 +24,7 @@ The Theremini outputs two streams of midi messages, one for volume and one for p
 The Hue rest API seems to be limited to around 10 updates per second, which currently limits how many lights you can control in realtime.
 
 # Next Steps
-Controlling light and color lets you create artificial synesthesias, exploring relationships between physical position, sound, and visuals. This same basic setup could also be used to build much more creative color mappings, perhaps altering the colors based on relative change instead of absolute position or even varying the mapping in accordance with a larger musical piece like at a EDM concert. And with multiple lights, you can create even more dynamic experiences.
+Controlling light and color lets you create artificial synesthesias, exploring relationships between physical position, sound, and visuals. This same basic setup could also be used to build much more creative color mappings, perhaps altering the colors based on relative change instead of absolute position or even varying the mapping in accordance with a larger musical piece like at an EDM concert. And with multiple lights, you can create even more dynamic experiences.
 
 And controlling lights is only one example application. Midi means that you can very easily hookup just about anything in order to create new interactive experiences and, even when you turn off the sound, theremins are just a cool interface. The possibilities are endless.
 

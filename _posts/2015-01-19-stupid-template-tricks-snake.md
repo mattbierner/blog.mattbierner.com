@@ -8,7 +8,7 @@ date: '2015-01-19'
 
 {% include image.html file="206838120946081003_42d04362ada6-2.png" description="I don't need to wear one of those helmets for metaprogramming - Famous last words." %}
 
-The variant of Snake that we'll implement is a simplified version of [Nibbler][nibbler]. In Nibbler, the player guides a snake about a grid by choosing a direction for the snake's next movement: turn left, turn right, or continue straight. Trailing behind the snake's head are a number of body sections. These body section cells stay occupied until the entire snake has moved over that cell, so that the head of the snake alway moves forward by one while the tail of the snake always shrinks by one.
+The variant of Snake that we'll implement is a simplified version of [Nibbler][nibbler]. In Nibbler, the player guides a snake about a grid by choosing a direction for the snake's next movement: turn left, turn right, or continue straight. Trailing behind the snake's head are a number of body sections. These body section cells stay occupied until the entire snake has moved over that cell, so that the head of the snake always moves forward by one while the tail of the snake always shrinks by one.
 
 The goal of Nibbler is to consume randomly placed food, which increases your score but also makes the snake grow one segment longer, increasing the difficulty. You lose when the snake's head collides with a wall or existing body section.
 
@@ -87,7 +87,7 @@ using gen_t = typename gen<N, element>::type;
 ```
 
 ## Element Access
-Nibble will address individual tiles in the game grid cells using a absolute positions, consisting of a x and y coordinate. `get` and `set` on `List` are the basis for this two dimensional absolute positioning system.
+Nibble will address individual tiles in the game grid cells using absolute positions, consisting of an x and y coordinate. `get` and `set` on `List` are the basis for this two dimensional absolute positioning system.
 
 `get` looks up the Nth value in a list.
 
@@ -295,7 +295,7 @@ using MakeSnakeCell = Cell<CellState::Snake, weight, direction>;
 ```
 
 ## Weight and Decay
-Weight is the the number of turns it takes for the snake cell to expire. Think of the snake as just a head moving about a grid. As it moves, the head lays down body cells of a fixed weight. For a three section long snake, the head lays down cells with a weight of three.
+Weight is the number of turns it takes for the snake cell to expire. Think of the snake as just a head moving about a grid. As it moves, the head lays down body cells of a fixed weight. For a three section long snake, the head lays down cells with a weight of three.
 
 Each game step, snake body sections decay by one. When their weight reaches zero, the cell becomes an empty cell (Really, we don't even need an explicit empty cell type, but it makes code a bit more readable).
 
@@ -325,7 +325,7 @@ For a snake of length three:
 
 When the snake consumes food, we skip the decay step and increment the head weight by one.
 
-The decay function itself is a noop for Empty, Food, and Collision cells. For Snake cells, it reduced the weight by one. The snake cell becomes an empty cell when its weight reaches zero.
+The decay function itself is a noop for Empty, Food, and Collision cells. For Snake cells, it reduces the weight by one. The snake cell becomes an empty cell when its weight reaches zero.
 
 ```cpp
 template <typename cell>
@@ -355,7 +355,7 @@ enum class Direction : unsigned
 };
 ```
 
-We'll also later use `Direction` to store the direction a snake is moving so we can preserve it's heading when no player input is entered.
+We'll also later use `Direction` to store the direction a snake is moving so we can preserve its heading when no player input is entered.
 
 ## Printing
 The three basic cells always print the same value.

@@ -42,7 +42,7 @@ Highlights:
 
 # Development
 
-*In The Walls* was inspired by [a scene](https://youtu.be/1mXQ2axpQcc) in the original *Nightmare on Elm Street* in which Freddy pushes his face and gloves out from behind the wall above a sleeping Nancy Thompson. In the film, the wall distorts as if it were made of a stretchy material. It's a neat effect and I like the simplicity of the practical effect behind it: just a taught sheet of spandex and good lighting. It also got me wondering: could I create a similar effect in real life? Seemed like it just might be possible using the power of ~~imagination~~ augmented reality.
+*In The Walls* was inspired by [a scene](https://youtu.be/1mXQ2axpQcc) in the original *Nightmare on Elm Street* in which Freddy pushes his face and gloves out from behind the wall above a sleeping Nancy Thompson. In the film, the wall distorts as if it were made of a stretchy material. It's a neat effect and I like the simplicity of the practical effect behind it: just a taut sheet of spandex and good lighting. It also got me wondering: could I create a similar effect in real life? Seemed like it just might be possible using the power of ~~imagination~~ augmented reality.
 
 <!-- The app name comes from Lovecraft's *The Rats In The Walls*, which, yeah... some real *great* inspirations for such a seemingly family friendly app! -->
 
@@ -54,11 +54,11 @@ So I finally decided to try something really stupid: recreate the spandex sheet 
 
 {% include video.html file="example-2.mp4" poster="example-2-poster.png" %}
 
-I've extracted a [small example project](/reality-shaders) that documents the basic AR techniques I use to make it look like the face is distorting real world walls. The key is placing a virtual plane in the AR scene and texturing the plane with the real world texture of the area it covers. You can then apply vertex and fragment shader to the plane, which makes it look like you are applying those shaders to the real world surface.
+I've extracted a [small example project](/reality-shaders) that documents the basic AR techniques I use to make it look like the face is distorting real world walls. The key is placing a virtual plane in the AR scene and texturing the plane with the real world texture of the area it covers. You can then apply vertex and fragment shaders to the plane, which makes it look like you are applying those shaders to the real world surface.
 
 I worked with a freelancer to take my prototype and get it into a shippable state. [Vlad L. over on Upwork](https://www.upwork.com/freelancers/~011e9d9a27c22e07ea) did an amazing job building a UI, polishing the AR experience, designing the app's icon and identity, and creating a 3D explainer for it. If you are looking for an iOS developer, I highly recommend him!
 
-As for what coming up for *In The Walls*? Well, we'll see. If there's enough interest in the app, I have a few ideas about extending it. I definitely also want to explore 'reality shaders' further too.
+As for what's coming up for *In The Walls*? Well, we'll see. If there's enough interest in the app, I have a few ideas about extending it. I definitely also want to explore 'reality shaders' further too.
 
 
 But until then, [give *In The Walls* a try][appstore]. [Let me know](https://twitter.com/mattbierner) if you have any feature requests too!

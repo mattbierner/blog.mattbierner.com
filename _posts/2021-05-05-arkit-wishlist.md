@@ -33,13 +33,13 @@ That's certainly not ideal, but if you were deploying to the web, your app could
 
 [In the Walls](/in-the-walls) for example is built around face tracking. However because I can't restrict my app to just devices with a TrueDepth camera, I had to put in significant extra work to deliver a pared back experience on older devices. Even though this fallback experience is now pretty solid, I still don't feel it lives up to what my app advertises. The demo videos in the app store are all about face tracking and some users are inevitably disappointed when they learn it isn't supported on their device. I also estimate that at least half the development time and budget for *In the Walls* went towards developing this fallback experience. That's pretty crazy!
 
-In other cases, I've simply not shipped an app because trying to develope an acceptable fallback would be so time consuming and compromise the vision of the app so much. [Face Drop](/face-drop) for example would very likely already be in the App Store if I could use required device capabilities to limit it to devices that have a TrueDepth camera.  
+In other cases, I've simply not shipped an app because trying to develop an acceptable fallback would be so time consuming and compromise the vision of the app so much. [Face Drop](/face-drop) for example would very likely already be in the App Store if I could use required device capabilities to limit it to devices that have a TrueDepth camera.  
 
 While I'm sure that Apple has its reasons, as an outsider it seems to me that the current situation is bad for developers, bad for consumers, and bad for Apple. The lack of finer grained required device capabilities means that developers have to do extra work and can't build apps around the latest and greatest hardware. Users for their part end up being disappointed by apps that can't deliver what they advertise. And shouldn't Apple want to push users to buy the latest hardware? If someone creates a killer app that requires a LiDAR sensor, that seems like a good way to prod people to buy the more expensive device that can run it.
 
 I'm inclined to say that the decision of what hardware to support should be left up to developers (at least at a high level, such as requiring a specific type of camera). Apple shouldn't need to enforce this compatibility when there's already a good intrinsic motivator in place: more supported devices == more users == more sales.
 
-All this is probably far more about "required device capabilities" than you ever wanted to hear, but if I could wave a magic wand and fix one thing about iOS development today, I'd add required device capabilities for: having a TrueDepth font facing camera, having a back facing LiDAR camera, and for supporting the various `ARConfiguration` options (`supportsSceneReconstruction`, `supportsUserFaceTracking`, etc.). This may sound small, but I believe it would be a big win for developers and result in more innovative, boundary pushing AR apps for consumers.
+All this is probably far more about "required device capabilities" than you ever wanted to hear, but if I could wave a magic wand and fix one thing about iOS development today, I'd add required device capabilities for: having a TrueDepth front facing camera, having a back facing LiDAR camera, and for supporting the various `ARConfiguration` options (`supportsSceneReconstruction`, `supportsUserFaceTracking`, etc.). This may sound small, but I believe it would be a big win for developers and result in more innovative, boundary pushing AR apps for consumers.
 
 # Accessing front and back camera simultaneously
 
@@ -59,7 +59,7 @@ I opened a feature request against Apple for this feature half a year or so ago,
 
 # AirTags API
 
-AirTags fascinate me, which is odd because I have pretty much zero interest in them as a consumer product. However the precise location tracking technology in them is really cool! I'd love for Apple (or another manufacture) to make this functionality available to developers.
+AirTags fascinate me, which is odd because I have pretty much zero interest in them as a consumer product. However the precise location tracking technology in them is really cool! I'd love for Apple (or another manufacturer) to make this functionality available to developers.
 
 For augmented reality, the ideal usage of AirTags would be as anchors for virtual content. Imagine being able to anchor a virtual hat to an AirTag for example, and then being able to try on the hat by placing the tag on your head. 
 
@@ -76,7 +76,7 @@ Within the Apple hype-sphere, it is more or less accepted as fact that Apple wil
 
 Apple's AR APIs certainly seem to be slowly converging towards what you'd need for a proper augmented reality headset, what with the recent focus on features such as spatial audio, body occlusion, and shared experiences. We can also look at the APIs the other way around though. What new APIs would be required for a headset vs a phone? I'm of the opinion that hand and finger tracking support would be pretty near the top of this list.
 
-Admittedly, using your hands with phone based AR is an awkward affair, requiring you to grip your phone with one hand while reaching out with the other. However that's not to say that you can't create neat experiences that use hands for interaction. Both [WatAR](/watar-1-1) and [WarpAR](/warpar-1-1) for example let you distort the world using your hands. A few apps have gone even farther and implemented their own finger gesture detection solutions, which varying degrees of success.
+Admittedly, using your hands with phone based AR is an awkward affair, requiring you to grip your phone with one hand while reaching out with the other. However that's not to say that you can't create neat experiences that use hands for interaction. Both [WatAR](/watar-1-1) and [WarpAR](/warpar-1-1) for example let you distort the world using your hands. A few apps have gone even farther and implemented their own finger gesture detection solutions, with varying degrees of success.
 
 Built-in hand/finger tracking would lower the bar to trying out this type of interaction and help get developers thinking about a Tom Cruise-ish future where you won't be clutching a screen all the time. A high level API to help recognize specific gestures would be even more useful, although I'm not keeping my fingers crossed on that one. 
 
@@ -85,15 +85,15 @@ Built-in hand/finger tracking would lower the bar to trying out this type of int
 
 I have a bit of a love/hate relationship with SceneKit. On one hand, it's enabled me to quickly create some really unique augmented reality experiences. On the other, I'm still haunted by blank documentation pages and weeks spent banging my head against my keyboard trying to figure out why my shader modifiers wouldn't work.
 
-For its part, Apple seems somewhat eager to forget about SceneKit as well, given that much of their recent augmented reality material has focused hard on RealityKit. However RealityKit not a SceneKit replacement, at least not yet. At the moment, RealityKit doesn't even support custom object shaders. It's still like the kids version of SceneKit, which is pretty bad given that SceneKit is already like the kids version of a real game engine.
+For its part, Apple seems somewhat eager to forget about SceneKit as well, given that much of their recent augmented reality material has focused hard on RealityKit. However RealityKit is not a SceneKit replacement, at least not yet. At the moment, RealityKit doesn't even support custom object shaders. It's still like the kids version of SceneKit, which is pretty bad given that SceneKit is already like the kids version of a real game engine.
 
 Part of me is afraid that when iOS 15 or 16 is announced, SceneKit will quietly be deprecated, leaving developers to choose between using the ultra high level RealityKit API and using Metal directly. While SceneKit is far from perfect, it's builtin and a decent enough middle ground: high level enough that you can throw together simple apps somewhat easily once you understand the basics, while also exposing customization options for more advanced users. In my opinion, it just needs a bit of love.
 
-Top on my list for SceneKit modernization would be a docs overhaul. The SceneKit doc pages are often woefully vague and many APIs could benefit from code examples. I found this especially painful when getting started, but I still run to the problem. Just this last week for example, I failed to figure out how to use [`SCNGeometryTessellator`](https://developer.apple.com/documentation/scenekit/scngeometrytessellator) because it lacks documentation. What is an `insideTessellationFactor`? What does `isAdaptive` mean? I can guess but could not get the result I was after. Even a Github search turned up a scant single page of swift results.
+Top on my list for SceneKit modernization would be a docs overhaul. The SceneKit doc pages are often woefully vague and many APIs could benefit from code examples. I found this especially painful when getting started, but I still run into the problem. Just this last week for example, I failed to figure out how to use [`SCNGeometryTessellator`](https://developer.apple.com/documentation/scenekit/scngeometrytessellator) because it lacks documentation. What is an `insideTessellationFactor`? What does `isAdaptive` mean? I can guess but could not get the result I was after. Even a Github search turned up a scant single page of swift results.
 
 While `SCNGeometryTessellator` is admittedly a pretty niche API, the extremely vague [shader modifier](https://developer.apple.com/documentation/scenekit/scnshadable) docs cost me entire weeks of work. I eventually gave up using shader modifiers entirely because the docs were so unclear and debugging them was such a nightmare.
 
-After tackling the documentation problem and adding more code examples, in my opinion the rest of SceneKit mainly just needs a bit of polish. For example, there are things that require zero or one lines of code with RealityKit that are complicated SceneKit, such as using LiDAR data to add scene physics or adding motion blur to AR. Some part of the API could also benefit from an overhaul, such as `SCNTechnique` which uses an untyped dictionary for configuration and relies heavily on magic string identifiers.
+After tackling the documentation problem and adding more code examples, in my opinion the rest of SceneKit mainly just needs a bit of polish. For example, there are things that require zero or one lines of code with RealityKit that are complicated in SceneKit, such as using LiDAR data to add scene physics or adding motion blur to AR. Some part of the API could also benefit from an overhaul, such as `SCNTechnique` which uses an untyped dictionary for configuration and relies heavily on magic string identifiers.
 
 As a stretch, I'd love to see a few more rendering features from more advanced game engines. For example, I've been working on a little project that needs to render flesh, and had a heck of a time getting it to look alive. Support for subsurface scattering would probably help significantly.
 
@@ -110,7 +110,7 @@ I'd also like a 3D mesh that approximates the user's real world body, if for no 
 
 # Closing Thoughts
 
-Ever since I started seriously exploring AR on iOS around a year or so ago, I've been constantly surprised by what I can creating. Apple does a great job exposing some solid basic building blocks and data streams that you can use to assemble some really neat experiences.
+Ever since I started seriously exploring AR on iOS around a year or so ago, I've been constantly surprised by what I can create. Apple does a great job exposing some solid basic building blocks and data streams that you can use to assemble some really neat experiences.
 
 Still, there are certainly areas where Apple's AR ecosystem could improve. At the very top of my personal wishlist are some basics, such as finer grained required device capabilities and improved documentation. After that, there's a few API additions and enhancements that I feel could open up some interesting creative options: such as an AirTag API and access to data from both cameras. However I'd be delighted by something completely unexpected too that opens up options that I haven't even considered yet.
 

@@ -56,7 +56,7 @@ const statementOfFetishObj = pep.declare(() =>
 
 One tradeoff of embedding Apep grammars in Javascript is that the syntax is a bit more messy looking – the commas are especially annoying – but it's not bad really, and the power of writing in Javascript directly should be pretty clear.
 
-Here's one sample of the output. This was a direct port, so all credit for the grammer goes to Lisa Wray.
+Here's one sample of the output. This was a direct port, so all credit for the grammar goes to Lisa Wray.
 
 > He stalks gracefully forward. My mouth goes dry. I worry, again, that I'm not enough for him. That paddle! We've never used a paddle before. His fingers brush the paddle, and everything south of my waist tightens deliciously. 
 >
@@ -70,7 +70,7 @@ Here's one sample of the output. This was a direct port, so all credit for the g
 >
 > Moving suddenly, he shoves me against the wall. He holds me against his hips, and I groan loudly, panting. His fingertips run down my neck. How can he do this to me?
 
-*Fifty Shades of Gray* is around 100,000 words long, and Apep can 100,000 words worth of these excerpts in half a second. You can find the [port on Github](https://github.com/mattbierner/fifty-shades-of-dyspepsia/).
+*Fifty Shades of Gray* is around 100,000 words long, and Apep can generate 100,000 words worth of these excerpts in half a second. You can find the [port on Github](https://github.com/mattbierner/fifty-shades-of-dyspepsia/).
 
 
 # Post-Apeptide
@@ -127,7 +127,7 @@ The subject is contextualised into a Derridaist hyperreality that includes narra
 
 The formatting could be improved, but you get the point.
 
-Here's the [source code for the Apep post modernism generator port](https://github.com/mattbierner/post-apeptide). I've got a few original grammers in progress as well.
+Here's the [source code for the Apep post modernism generator port](https://github.com/mattbierner/post-apeptide). I've got a few original grammars in progress as well.
 
 And as always, any contributions to Apep are welcome and please report any bugs you encounter.
 

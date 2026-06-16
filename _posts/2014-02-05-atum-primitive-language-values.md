@@ -5,7 +5,7 @@ date: '2014-02-05'
 ---
 Here I cover the primitive language values and operations used in [Atum][atum]. Although not too exciting, there are a few important points about property descriptors and how Atum handles objects.
 
-Atum minimizes the interface between the host and hosted languages. Implementing ECMAScript in ECMAScript, this design choice results in some unnecessary code, but it also allows the the behavior of the hosted language to be easily modified.
+Atum minimizes the interface between the host and hosted languages. Implementing ECMAScript in ECMAScript, this design choice results in some unnecessary code, but it also allows the behavior of the hosted language to be easily modified.
 
 # Basic Language Values
 [Section 8 of ECMAScript 5.1][ecma51] defines the basic ECMAScript language values types.
@@ -13,7 +13,7 @@ Atum minimizes the interface between the host and hosted languages. Implementing
 ## Types
 ECMAScript language values may be one of six types: `Undefined`, `Null`, `Boolean`, `String`, `Number`, or `Object`.
 
-Atum defines an enum of for these six types in `atum::value::type`. All primitive value objects have a `type` property set to one of these values
+Atum defines an enum for these six types in `atum::value::type`. All primitive value objects have a `type` property set to one of these values
 
 ```js
 define("atum/value/type", ['exports'], function(exports) {
@@ -249,7 +249,7 @@ Objects are a special case in Atum. Internally, ECMAScript objects consist of:
 * An extensible flag.
 * A map of properties.
 
-Atum meta object are simply subclasses of `Object` that implement the required interface. The properties are stored in a map of host strings to property descriptors. 
+Atum meta objects are simply subclasses of `Object` that implement the required interface. The properties are stored in a map of host strings to property descriptors. 
 
 ## Object Value
 The base Atum Object record contains fairly little logic.

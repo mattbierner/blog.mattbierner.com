@@ -5,7 +5,7 @@ date: '2015-07-29'
 series: camerrah
 description: "Yes, all those optics really do something"
 ---
-I [repair manual focus camera lenses][youtube] and recently got stuck on a  particularly complicated repair. One and a half hours of locking things into different positions and making minute adjustments, and infinity focus was still a blurry mess. About to give up, I noticed a small blob of black edged glass, no larger than a dime, off in the corner of my workspace. Pop open the back optic and, sure enough, the piece fit perfectly in place. A few minor adjustments and the reassembled lens was tack sharp again. Lens manufactures aren't slackers. You really do need all those optics for a lens to work properly.
+I [repair manual focus camera lenses][youtube] and recently got stuck on a  particularly complicated repair. One and a half hours of locking things into different positions and making minute adjustments, and infinity focus was still a blurry mess. About to give up, I noticed a small blob of black edged glass, no larger than a dime, off in the corner of my workspace. Pop open the back optic and, sure enough, the piece fit perfectly in place. A few minor adjustments and the reassembled lens was tack sharp again. Lens manufacturers aren't slackers. You really do need all those optics for a lens to work properly.
 
 But this got me awondering: what would it be like to shoot a lens with optical elements intentionally removed? So when a fungus-ridden [Minolta MC W.Rokkor-NL 21mm f2.8 lens][rokkor21] came my way, it was clearly time to find out.
 
@@ -17,7 +17,7 @@ The optical complexity of the lens was actually an advantage for this project. I
 
 {% include image.html file="DSC8085.jpg" %}
 
-For this project, I took 17 pictures total: one photo with the fully assembled lens, worked though the front seven stages (removing elements front to back), one photo with no optics at all, and then working though the stages again in reverse order (adding elements front to back). This last stage was the most difficult, as all the front optics had to be removed every time to add the next element behind them. All photographs where at f5.6 with the same focus and exposure.
+For this project, I took 17 pictures total: one photo with the fully assembled lens, worked through the front seven stages (removing elements front to back), one photo with no optics at all, and then working through the stages again in reverse order (adding elements front to back). This last stage was the most difficult, as all the front optics had to be removed every time to add the next element behind them. All photographs were at f5.6 with the same focus and exposure.
 
 {% include image.html file="contact.png" %}
 
@@ -25,7 +25,7 @@ So yeah, looks like a bad driver's license photo. But the series is pretty cool 
 
 {% include image.html file="back1.png" description="Best selfie ever" %}
 
-And while it may not always be practical to take a lens apart while shooting, wouldn't it be interesting to shoot other subjects or try types of photography with a partially disassembled lenses? Hell, at least it's not more of the same generic bullshit. And even on the 21mm Minolta, I skipped a whole lot of optical combinations some of which could be fun. And who know what other lenses may produce.
+And while it may not always be practical to take a lens apart while shooting, wouldn't it be interesting to shoot other subjects or try types of photography with a partially disassembled lens? Hell, at least it's not more of the same generic bullshit. And even on the 21mm Minolta, I skipped a whole lot of optical combinations some of which could be fun. And who knows what other lenses may produce.
 
 {% include image.html file="extreme-closeup-small.gif" description="Extreme close-up! WHOOOOOAAAAAAAAAAAA!!!!" %}
 

@@ -8,7 +8,7 @@ With a [monad defined][mb-decont] and a small library of [primitive operations][
 I'll demonstrate how and why [Atum][atum] lifts primitive operations to computations in the delimited continuation monad. The result is the first version of an ECMAScript interpreter: a very simple calculator. 
 
 # Lifting and Composition
-I previously defined a small library of [primitive hosted value types and operations][mb-atum-prims]. But those function have no concept of delimited control and cannot be used directly with the delimited continuation monad. A few higher-order functions handle this problem.
+I previously defined a small library of [primitive hosted value types and operations][mb-atum-prims]. But those functions have no concept of delimited control and cannot be used directly with the delimited continuation monad. A few higher-order functions handle this problem.
 
 ## From
 `from` takes an n-ary function `f` and composes it with `just`.
@@ -44,7 +44,7 @@ run(
 ```
 
 ## Lift
-`lift` takes a unary function `f` and returns a new function that performs `f` in the monadic context. The result of `lift` is a unary function takes a monadic value `m` as its argument, and returns a monadic result of `f` applied to the result of the input computation.
+`lift` takes a unary function `f` and returns a new function that performs `f` in the monadic context. The result of `lift` is a unary function that takes a monadic value `m` as its argument, and returns a monadic result of `f` applied to the result of the input computation.
 
 ```js
 var lift = function(f) {
@@ -115,7 +115,7 @@ We can now start building up a library of ECMAScript computations by applying `l
 ## Number Operations
 All of the binary number value operations convert both of their arguments to numbers.
 
-`_binaryOperation` lifts a primitive number operations and convert its arguments using two type conversion computations.
+`_binaryOperation` lifts a primitive number operation and converts its arguments using two type conversion computations.
 
 ```js
 var _binaryOperation = function(op, leftType, rightType) {
@@ -211,7 +211,7 @@ var mapSemantics = function(node) {
 };
 ```
 
-Computations are evaluated by `evaluate` with a outermost continuation `k`. 
+Computations are evaluated by `evaluate` with an outermost continuation `k`. 
 
 ```js
 var evaluate = function(c, k) {
@@ -266,9 +266,9 @@ pausedComputation(number.create(2)); // logs number 6
 
 Even though none of the number computations definitions above ever mention continuations, this computation just works.
 
-Behind the interface of `just` and `bind`, the delimited continuation monad implements delimited control to apply and sequence continuations. But computations and higher-order function only need to know about `just` and `bind` and not about delimited control.
+Behind the interface of `just` and `bind`, the delimited continuation monad implements delimited control to apply and sequence continuations. But computations and higher-order functions only need to know about `just` and `bind` and not about delimited control.
 
-The other benefit is that it becomes easy to add functionality to the interpreter by changing the underling monad. In fact, I'll demonstrate this in the next post by adding state to the interpreter, and all the computations defined here will continue to work fine.
+The other benefit is that it becomes easy to add functionality to the interpreter by changing the underlying monad. In fact, I'll demonstrate this in the next post by adding state to the interpreter, and all the computations defined here will continue to work fine.
 
 
 [Atum]: https://github.com/mattbierner/atum

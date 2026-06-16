@@ -11,14 +11,14 @@ Neith is a Javascript library that supports zippers for hierarchical, lazy, pote
 Neith supports zippers for any tree-like data structure. One important restriction on the data structures is that every element in a zippered data structure must be identifiable by a unique implicit or explicit path. Graphs therefore cannot be zippered using Neith. 
  
 ## The Zipper Context
-Zippers work by decomposing a data structures into a focus element and a representation of its location in the larger data structure; which together form a context. All zipper operations take a context and output either a new context or some information extracted from the context.
+Zippers work by decomposing a data structure into a focus element and a representation of its location in the larger data structure; which together form a context. All zipper operations take a context and output either a new context or some information extracted from the context.
 
 Without a type system, it is also necessary to store metadata about the zipper itself. Neith splits the zipper context into two [Amulet][amulet] data records: `Context` and `Loc`.
 
 #### Context
-`Context` holds the top level context object, consisting of the a `Loc` data structure context and the metadata defining a zipper.
+`Context` holds the top level context object, consisting of a `Loc` data structure context and the metadata defining a zipper.
 
-Neith zippers are defined with two functions: `children` maps an data structure element to its child elements and `constructNode` reconstructs elements, mapping an element and its children to an new element with those children. 
+Neith zippers are defined with two functions: `children` maps a data structure element to its child elements and `constructNode` reconstructs elements, mapping an element and its children to a new element with those children. 
 
 ```js
 var Context = declare(null, [

@@ -4,11 +4,11 @@ title: "Heavy Metal: A Review"
 description: "In which you watch the 1981 cult classic Heavy Metal"
 ---
 
-The poster is what draws you in. Just [look at it](https://image.tmdb.org/t/p/original/h7j6uKamzHH9p7muvIYnln621IE.jpg)! The mostly naked warrior woman sits astride a crazy chicken-bird flying over a burning sci-fi cityscape. She holds a golden sword aloft while her blond hair frizzes out like she's just been struck by lighting. Now *that* is a poster! The chicken-bird screams with an expression that perfectly captures the unbridled excitement now welling up inside you. YES! Your only remaining aspiration in life is to be that chicken-bird, and—barring that—to see whatever exceptional film this most exceptional of posters advertises.
+The poster is what draws you in. Just [look at it](https://image.tmdb.org/t/p/original/h7j6uKamzHH9p7muvIYnln621IE.jpg)! The mostly naked warrior woman sits astride a crazy chicken-bird flying over a burning sci-fi cityscape. She holds a golden sword aloft while her blond hair frizzes out like she's just been struck by lightning. Now *that* is a poster! The chicken-bird screams with an expression that perfectly captures the unbridled excitement now welling up inside you. YES! Your only remaining aspiration in life is to be that chicken-bird, and—barring that—to see whatever exceptional film this most exceptional of posters advertises.
 
 Then there's the title: "Heavy Metal". Now is that not the most perfect movie title you've ever heard? Not since "Laser Blast" have two words more perfectly captured the very essence of awesomeness. And it's printed in chrome! CHROME!!! Perfect. Absolutely perfect. Because clearly a film with a poster like this could only be titled "Heavy Metal" printed in chrome text.
 
-You need this film inside you eyeballs this very instant.
+You need this film inside your eyeballs this very instant.
 
 You pay Amazon $4 for a rental. Amazon! Get it!?! Just like poster lady! An absolute bargain too seeing as your $4 will surely be a ticket to a richly animated feature length heavy metal music video filled to the brim with ultra violences and unspeakable titillations. The only question is, will your body be able to handle it? 
 
@@ -32,7 +32,7 @@ The Corvette sort of plops down to the ground. Hmm? Could have landed on the sid
 
 Another moment of doubt. Because again, the animation? Well truthfully it is a little awkward. Floaty. Something about it reminds you of a 80s children's animated TV show. Different than the poster. But that's ok. That's ok. That part must come later. They're just getting warmed up here.
 
-The Corvette pulls up to a house. A regular house. Hmm. You would have made it a castle. A castle made out of lasers! Yes! A laser castle filled with devil brutes surround by a lava moat full of robotic nazi sharks! Or maybe...! Maybe this is the house where poster woman lives!?! Could The Stig be her lover! Oooooh, imagine that...
+The Corvette pulls up to a house. A regular house. Hmm. You would have made it a castle. A castle made out of lasers! Yes! A laser castle filled with devil brutes surrounded by a lava moat full of robotic nazi sharks! Or maybe...! Maybe this is the house where poster woman lives!?! Could The Stig be her lover! Oooooh, imagine that...
 
 But no. Because now there's a little girl. What's this about? And why is she so... horrifying? Like some contorted gremlin with the most lifeless eyes. Is she supposed to look like that?
 
@@ -84,7 +84,7 @@ But hey now! What's this? A warrior woman? Could it be? Could it finally be her 
 
 But no. Of course not. Gotcha again! The film only threw her in to tease you. To remind you of what could have been.
 
-Which is all the more frustrating because you can see the potential. You can see the bones of the that film you imagined. It's there if you just squint hard enough. Maybe so hard that your eyes are shut.
+Which is all the more frustrating because you can see the potential. You can see the bones of that film you imagined. It's there if you just squint hard enough. Maybe so hard that your eyes are shut.
 
 It's over. At last. You sit there for a while, trying to make sense of what you just saw.
 
@@ -100,6 +100,6 @@ Heavy Metal though? Bad trash. The kind of trash that leaves you feeling dirty a
 
 At least one thing is clear now though: the warrior woman on the poster? She's pissed. Pissed at being used as prop to sell such dull little fantasies. Pissed at a society that gives men millions to bring such infantile fantasies to life. Can you blame her?
 
-And you there! You thought were different? You thought all this was ok because you were only having a bit of fun? Yet when it comes right down to it, here you are, using her just like all the others.
+And you there! You thought you were different? You thought all this was ok because you were only having a bit of fun? Yet when it comes right down to it, here you are, using her just like all the others.
 
 Cock-a-doodle-doo.

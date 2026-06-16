@@ -148,7 +148,7 @@ Environment.prototype.deleteBinding = function(ref, name) { };
 Declarative environments store their bindings in an environment record object (ECMA 10.2.1). Environment records map (string) identifiers to values ([source](https://github.com/mattbierner/atum/blob/master/lib/context/environment_record.js)).
 
 ## Binding
-Atum environment record bindings are stored in a `Binding` object. For immutable values like strings and numbers, the binding will be the value object. A bindings to a mutable value, like an object, stores a reference to the object.
+Atum environment record bindings are stored in a `Binding` object. For immutable values like strings and numbers, the binding will be the value object. A binding to a mutable value, like an object, stores a reference to the object.
 
 ```js
 var Binding = record.declare(null,[
@@ -247,7 +247,7 @@ DeclarativeEnvironment.prototype.deleteBinding = function(ref, name) {
 ```
 
 ## Creation
-Declarative environments are stored in the computation context memory with [iref references][references]. All references to environments must go though the iref indirection. Otherwise, you end up in a situation like the immutable binding environment demonstrated before, where an inner environment can not change the value of a binding in an outer environment.
+Declarative environments are stored in the computation context memory with [iref references][references]. All references to environments must go through the iref indirection. Otherwise, you end up in a situation like the immutable binding environment demonstrated before, where an inner environment can not change the value of a binding in an outer environment.
 
 ```js
 var createDeclativeEnvironment = function(outer) {
@@ -263,7 +263,7 @@ Now we can start using declarative environments in the interpreter. The `Declara
 ## Execution Context
 We added state to the interpreter [in a previous post][state] using a `ComputeContext` object. But `ComputeContext` only holds general computation state. 
 
-Atum stores ECMAScript specific state in a `ExecutionContext` (ECMA 10.3), stored in the `ComputeContext` `userData` field.  The `ExecutionContext` holds all state information required to evaluate ECMAScript source, and the initial execution context will be very basic ([source](https://github.com/mattbierner/atum/blob/master/lib/context/execution_context.js)).
+Atum stores ECMAScript specific state in an `ExecutionContext` (ECMA 10.3), stored in the `ComputeContext` `userData` field.  The `ExecutionContext` holds all state information required to evaluate ECMAScript source, and the initial execution context will be very basic ([source](https://github.com/mattbierner/atum/blob/master/lib/context/execution_context.js)).
 
 ```js
 var ExecutionContext = record.declare(null, [
@@ -276,7 +276,7 @@ ExecutionContext.empty = ExecutionContext.create(
 ```
 
 ## Changing Execution Environment
-The `lexicalEnvironment` field holds a reference to the current environment. A small set of operations get and changes the current environment.
+The `lexicalEnvironment` field holds a reference to the current environment. A small set of operations gets and changes the current environment.
 
 ```js
 var getEnvironment = compute.extract(function(ctx) {

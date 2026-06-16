@@ -116,7 +116,7 @@ Defining Record `R` with three data members (`a`, `b`, `c`) and creating an inst
     Object.keys(x); // ['a', 'b', 'c']
 ```
 
-Using a custom construtor:
+Using a custom constructor:
 
 ```js
 var R = declare(null, ['a', 'b', 'c'], function\a, b, c =self-> {
@@ -132,7 +132,7 @@ x.b; // 4
 x.c; // 6
 ```
 
-Inheriting from a existing class:
+Inheriting from an existing class:
 
 ```js
 var A = function() { };
@@ -152,7 +152,7 @@ x.x; // 40
 
 ## Record.create
 
-Javascript constructors are weird. Some people even [consider them harmful][new-harmful]. Constructor in Javascript are regular functions that, when invoked using `new`, create a new object. But treating constructors like functions can lead to some interesting bugs:
+Javascript constructors are weird. Some people even [consider them harmful][new-harmful]. Constructors in Javascript are regular functions that, when invoked using `new`, create a new object. But treating constructors like functions can lead to some interesting bugs:
 
 ```js
 var R = record.declare(null, ['a']);
@@ -213,7 +213,7 @@ x.a; // 1
 
 The greatest value of records is automatically generating methods for transforming immutable objects. As the Atum motivating example demonstrates, this eliminates a lot of boilerplate code. Setter transforms demonstrated here, but other transforms are easy to add.
 
-Two helper methods for safely "setting" properties on an immutable object are defined. `setProperty` takes on object `obj`, property name `name`, and value `value` and returns a copy of that object with property `name` set to `value`
+Two helper methods for safely "setting" properties on an immutable object are defined. `setProperty` takes an object `obj`, property name `name`, and value `value` and returns a copy of that object with property `name` set to `value`
  
 ```js
 var copyProps = \obj -> {
@@ -250,7 +250,7 @@ var propertyCase = \name ->
         .join('');
 ```
 
-Finally, declare is updated to automatically generate setters on both the instances and the Record. Instances setters take a single value while Record setters take an object and a value: 
+Finally, declare is updated to automatically generate setters on both the instances and the Record. Instance setters take a single value while Record setters take an object and a value: 
 
 ```
 var declare = let

@@ -18,7 +18,7 @@ template <bool... bits>
 using bitset = std::integer_sequence<bool, bits...>;
 ```
 
-`bitset` stores its most significant bit in the first (leftmost) position. The structure of `bitset` makes implementing the LSFR easy, but we'll also provide a way to convert a `bitset` to an integer values for more practical use.
+`bitset` stores its most significant bit in the first (leftmost) position. The structure of `bitset` makes implementing the LSFR easy, but we'll also provide a way to convert a `bitset` to an integer value for more practical use.
 
 The `to_int` accumulator converts a `bitset` to a value of `T`. For each bit, from most significant to least significant, it shifts the accumulated value left by one and ors the next bit on in the least significant position. 
 
@@ -131,7 +131,7 @@ using take_t = typename take<N, T>::type;
 ```
 
 # The LFSR
-The Linear feedback shift register itself has two components: a `bitset` state and an `indices` of taps. `value` converts the current state to a integer value of type `T`.
+The Linear feedback shift register itself has two components: a `bitset` state and an `indices` of taps. `value` converts the current state to an integer value of type `T`.
 
 `next` advances the state by one. First, the new most significant bit is calculated using `get_next` on the current state. This new value is consed onto the head of new state. Then, to complete the shift, we trim the last value off the end of the state, leaving a bitset of the same length as the original with its contents shifted down by one.
 

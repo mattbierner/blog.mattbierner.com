@@ -17,7 +17,7 @@ series: letterpress
 
 {% include image.html file="printing.jpg" %}
 
-The design is derived from a movie poster for the film *Arctic Heat* (also known as *Born American*). As is often the case, the movie cannot live up to its poster despite staring Mike Norris, son of Chuck Norris—although the movie's slogan is surprisingly relevant. The letterpress print has less vibrant and clean look than the poster.
+The design is derived from a movie poster for the film *Arctic Heat* (also known as *Born American*). As is often the case, the movie cannot live up to its poster despite starring Mike Norris, son of Chuck Norris—although the movie's slogan is surprisingly relevant. The letterpress print has less vibrant and clean look than the poster.
 
 {% include image.html file="movie.jpg" description="Inspiration" %}
 

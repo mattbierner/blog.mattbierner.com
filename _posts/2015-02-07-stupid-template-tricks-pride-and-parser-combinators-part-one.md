@@ -16,7 +16,7 @@ If we could parse the format string at compile time, we could determine the type
 This post covers the first part of a simplified, but fairly powerful, library of compile time [parser combinators][parsercomb]. From a small set of core parser combinators, complex parsers can be constructed and run at compile time against programmer defined strings. The complete code is [available on Github][src] (including a sneak peek at part 2).
 
 # Presenting the Parser Combinator
-The C++ template system is a functional language, albeit one masked by layers or hideous syntax, so it makes sense to choose a functional approach to parsing. [Parser combinators][parser combinators] fit our needs perfectly. They are easy to implement, yet powerful and flexible, and they can provide good error reporting to boot. 
+The C++ template system is a functional language, albeit one masked by layers of hideous syntax, so it makes sense to choose a functional approach to parsing. [Parser combinators][parser combinators] fit our needs perfectly. They are easy to implement, yet powerful and flexible, and they can provide good error reporting to boot. 
 
 So, before descending into the madness that is C++ template metaprogramming, it may help to very briefly review the concepts behind parser combinators. Most of this post is based on [Bennu][bennu], a parser combinator library I wrote in Javascript, which itself is heavily based on [Parsec][parsec]. Check out either of those projects for more examples.
 
@@ -61,7 +61,7 @@ parser ParseChar(character) {
 }
 ```
 
-Parser combinators may also operate on parsers themselves, composing one or more parers together to create a parser with new behavior. The `Next` combinator for example runs parser `a`, then parser `b` if `a` succeeded.
+Parser combinators may also operate on parsers themselves, composing one or more parsers together to create a parser with new behavior. The `Next` combinator for example runs parser `a`, then parser `b` if `a` succeeded.
 
 ```javascript
 parser Next(a, b) {
@@ -77,11 +77,11 @@ parser Next(a, b) {
 ```
  
 ## It's Functions All the Way Down
-All this is not intended teach you everything you'll ever need to know about parsers and parser combinators, there are plenty of good tutorials out there that attempt that. The point is that parser combinators are not scary. They are just functions. But that's also what makes them so powerful.
+All this is not intended to teach you everything you'll ever need to know about parsers and parser combinators, there are plenty of good tutorials out there that attempt that. The point is that parser combinators are not scary. They are just functions. But that's also what makes them so powerful.
 
 
 # The Data Structures of the Fabulous Parser Combinator
-Let's begin the process of translating the parser combinators concepts outlined above into a C++ metaprogram. And before even writing our first parser, we need to define a few template data structures for for the parse state, parse errors, and the input steam itself. 
+Let's begin the process of translating the parser combinators concepts outlined above into a C++ metaprogram. And before even writing our first parser, we need to define a few template data structures for the parse state, parse errors, and the input stream itself. 
 
 {% include image.html file="1991-134-2_w.jpg" description="I always picture Mr. Darcy wearing these glasses, preferably also with the popped collar for maximum d-baggery." %}
 
@@ -319,7 +319,7 @@ Printer<result>::Print(std::cout) // 3
 ```
 
 ## Bind
-Now let's implement our first combinator. We'll implement a monadic interface for our core parser combinators, and there some are advantages and disadvantages to this decision. The sequencing monadic `bind` operation is more powerful than we need in most cases, but it is easy to work with.
+Now let's implement our first combinator. We'll implement a monadic interface for our core parser combinators, and there are some advantages and disadvantages to this decision. The sequencing monadic `bind` operation is more powerful than we need in most cases, but it is easy to work with.
 
 `bind` takes a parser `p` and a metafunction `f`.
 
@@ -409,7 +409,7 @@ struct next : bind<p, constant<q>> { };
 ```
 
 # Consumption
-You may have noticed that none the parsers defined so far actually parse anything. They are really more of generic computations. To start actually matching and consuming input, we need the `token` primitive.
+You may have noticed that none of the parsers defined so far actually parse anything. They are really more of generic computations. To start actually matching and consuming input, we need the `token` primitive.
 
 {% include image.html file="Thomson-PP17-1.jpg" description="The plumage and mating habits of the common yahoo." %}
 
@@ -418,7 +418,7 @@ You may have noticed that none the parsers defined so far actually parse anythin
 
 `token` tests the head character of the input stream using a predicate function. When this predicate returns true, we advance the input stream by one and return the previous head of the stream. When it returns false, we do not touch the parser state and instead produce an error result. 
 
-The implementation of `token`  takes two parameters, `test` and `error`. `test` is the metapredicate that tests if the token at the head of input stream should be consumed. `error` is meta function invoked with the head of the input stream when `test` fails, returning a human readable error message describing why the match failed.
+The implementation of `token`  takes two parameters, `test` and `error`. `test` is the metapredicate that tests if the token at the head of input stream should be consumed. `error` is a meta function invoked with the head of the input stream when `test` fails, returning a human readable error message describing why the match failed.
  
 ```cpp
 template <typename test, typename error>

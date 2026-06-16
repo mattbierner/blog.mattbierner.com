@@ -52,7 +52,7 @@ One last note: I added screen recording functionality to the [simple iOS app](ht
 
 I began with an exploration of traditional, head-on selfie stick perspectives, the sort everyone knows and loves.
 
-Starting with the stick at its shortest length,  my first look back at myself was a little bizarre, but quiet similar to my hands for eyes experiment. Again, although the selfie stick perspective is now familiar in videos and photos, it's very odd to watch yourself in realtime this way, especially when you're decked out like a proper cyborg.
+Starting with the stick at its shortest length,  my first look back at myself was a little bizarre, but quite similar to my hands for eyes experiment. Again, although the selfie stick perspective is now familiar in videos and photos, it's very odd to watch yourself in realtime this way, especially when you're decked out like a proper cyborg.
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/ICG3kakE6R8" %}
 
@@ -90,7 +90,7 @@ For an over the shoulder perspective, I kept the stick at its shortest length an
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/zIo3lx8hhgE" %}
 
-The wide angle view allowed me to see and interact with the world pretty well, although it was sometimes difficult to understand where my dominant hand was. For one, my head was annoyingly blocking much of my vision on that side of the frame. The overall perspective and the distortion from the fisheye lens also make judging depth and absolute position challenging. So while was easy enough to reach out to open a door or grab something from a table, I did jam my hand into a wall a few times. Tilting the camera upwards or further away from my head often helped me to get a better take on things.
+The wide angle view allowed me to see and interact with the world pretty well, although it was sometimes difficult to understand where my dominant hand was. For one, my head was annoyingly blocking much of my vision on that side of the frame. The overall perspective and the distortion from the fisheye lens also make judging depth and absolute position challenging. So while it was easy enough to reach out to open a door or grab something from a table, I did jam my hand into a wall a few times. Tilting the camera upwards or further away from my head often helped me to get a better take on things.
 
 Another benefit of the over the shoulder perspective is that the stick only extends at most a foot behind you, meaning that it's far less likely to accidentally smash into something while you turn about. 
 
@@ -100,7 +100,7 @@ With the stick extended two feet and centered behind me, my head, shoulders, and
 
 This view also has pretty major visibility limitations however. My body blocked everything directly in front of me, leaving me to blindly grope around.
 
-Extending the stick to it's maximum length of four feet, and resting it at my side instead of over my shoulder, produces a more standard action/adventure game perspective. My entire upper body was now in the frame, although visibility was much worse, as an even larger area in front of me was occluded by my body. 
+Extending the stick to its maximum length of four feet, and resting it at my side instead of over my shoulder, produces a more standard action/adventure game perspective. My entire upper body was now in the frame, although visibility was much worse, as an even larger area in front of me was occluded by my body. 
 
 {% include youtube.html width="560" height="315" src="https://www.youtube.com/embed/F7FDzQcpW-A" %}
 

@@ -16,7 +16,7 @@ I recently spent another evening down among Seattle's shipping yards and cement 
 
 {% include image.html file="tanks.jpg" href="http://photography.mattbierner.com/Seattle-Industrial-District-Jan/i-HPGQt6j/A" %}
 
-When I first got into photography, I mostly took landscapes and was fond of creating panoramas to better capture the entirety of the natural beauty around me. Yet the results often felt like pale imitations. The experience of being out in nature is hard improve upon, and perhaps this one reason that I've been increasingly drawn to shooting industry and bridges and other more unconventional subjects. You may not understand this—and some people may even find these subjects ugly, both ascetically and in what they reveal about society—but I see a deeper and far more profound beauty in them. This duality captivates me.
+When I first got into photography, I mostly took landscapes and was fond of creating panoramas to better capture the entirety of the natural beauty around me. Yet the results often felt like pale imitations. The experience of being out in nature is hard to improve upon, and perhaps this is one reason that I've been increasingly drawn to shooting industry and bridges and other more unconventional subjects. You may not understand this—and some people may even find these subjects ugly, both aesthetically and in what they reveal about society—but I see a deeper and far more profound beauty in them. This duality captivates me.
 
 The Industrial District south of Seattle—of SoDo and Harbor Island and the land along the Duwamish River—is a perfect example of this aesthetic. These places were not created with beauty in mind, and yet they are simply marvelous. It's no Cleveland, but these patches of industry in Seattle have an unpretentious visual rawness that I love.
 
@@ -30,13 +30,13 @@ As my taste in subjects has evolved, I've also moved to shooting in portrait ori
 
 {% include image.html file="cranes.jpg" href="http://photography.mattbierner.com/Seattle-Industrial-District-Jan/i-PFK6Ckw/A" %}
 
-While I normally shoot at a 2:3 aspect ratio, I've also explored a few less standard ratios using the Minolta's Shift CA. This is a interesting lens, and one that I've written about [before][concrete]. The lens is a bit of a nightmare from a purely functional point of view: bulky, finicky, and optically temperamental. What I use it most for though is shooting vertical panoramas. These combine two or three shots shifted vertically to create high resolution images with aspect ratios of anywhere between 9:16 to 5:16, with 7:16 or 1:2 being my current preferences. 
+While I normally shoot at a 2:3 aspect ratio, I've also explored a few less standard ratios using the Minolta's Shift CA. This is an interesting lens, and one that I've written about [before][concrete]. The lens is a bit of a nightmare from a purely functional point of view: bulky, finicky, and optically temperamental. What I use it most for though is shooting vertical panoramas. These combine two or three shots shifted vertically to create high resolution images with aspect ratios of anywhere between 9:16 to 5:16, with 7:16 or 1:2 being my current preferences. 
 
 {% include image.html file="dome.jpg" href="http://photography.mattbierner.com/Seattle-Industrial-District-Jan/i-3qvjKkm/A" %}
 
 I almost always prefer a 7:16 image to its 2:3 crop, even when all the action is in the middle. Let me see what is happening around the focus, give me a large field of asphalt or dirt in the lower third of the frame and a beautiful expanse of sky in the upper third, and leave the middle to stand proudly between. Such framing would be counterproductive in landscape orientations, yet I find it gives these vertical shots a far more immersive feeling.
 
-Besides the appealing aspect ratio, I've also come to enjoy the process of creating these panoramas. It requires slowing down to select and compose shots, and I find this let's me better experience the environment. The process also adds back some sense of mystery. You can check that each individual shot is focused or exposed correctly, but are never completely sure what the stitched together result will look like until later.
+Besides the appealing aspect ratio, I've also come to enjoy the process of creating these panoramas. It requires slowing down to select and compose shots, and I find this lets me better experience the environment. The process also adds back some sense of mystery. You can check that each individual shot is focused or exposed correctly, but are never completely sure what the stitched together result will look like until later.
 
 {% include image.html file="tanks4.jpg" href="http://photography.mattbierner.com/Seattle-Industrial-District-Jan/i-gssfKPJ/A" %}
 

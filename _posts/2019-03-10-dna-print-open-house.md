@@ -26,7 +26,7 @@ Free!
 
 **What?**
 
-The *DNA Print* project is an attempt to print human genome on paper tape. See the [project overview][src] more information.
+The *DNA Print* project is an attempt to print the human genome on paper tape. See the [project overview][src] for more information.
 
 The two punches have been running off-and-on for a few weeks now, and we've printed a little over 1% of the human genome. There's been good progress on chromosomes one and four, plus some initial work on everyone's favorite chromosome: X.
 

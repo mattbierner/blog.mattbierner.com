@@ -24,4 +24,4 @@ This visage, with its long skull and highly evolved philtrum, surely does Mr. G
 
 {% include image.html file="mask-wear.jpg" description="Now about that hair color..." %}
 
-Yes, being great has never been easier, and the *Great Race* has never looked better either, all thanks to shining luminaries such as Mr. Grant and bit a bleach. So if you too believe that some humans are born special, and you also just totally coincidentally happen to be one of those humans, then pour yourself another glass of Clorox's finest and join Mr. Grant in toasting your own greatness.
+Yes, being great has never been easier, and the *Great Race* has never looked better either, all thanks to shining luminaries such as Mr. Grant and a bit of bleach. So if you too believe that some humans are born special, and you also just totally coincidentally happen to be one of those humans, then pour yourself another glass of Clorox's finest and join Mr. Grant in toasting your own greatness.

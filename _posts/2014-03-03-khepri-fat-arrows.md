@@ -80,7 +80,7 @@ var o = new C(10);
 o.getXGetter()(); // 10
 ```
 
-`getXGetter` is pretty contrived, but explicitly binding `this` is an extremly common Javascript pattern.
+`getXGetter` is pretty contrived, but explicitly binding `this` is an extremely common Javascript pattern.
 
 ## This as a Parameter
 I think of `this` as an additional parameter supplied to functions. Python method definitions for example take an explicit `self` parameter.
@@ -102,7 +102,7 @@ I believe that ECMAScript language syntax for `this` should also model `this` as
 ## ECMAScript 6
 [ECMAScript 6][ecmascript6draft] arrow functions are more than a shorter function syntax, they are semantically different from functions defined with the `function` keyword. Among the differences, arrow functions use lexical this scoping. They do not introduce a `this` binding.
 
-In an arrow function, `this` is resolves using lexical scoping rules to the first `this` object from a regular `function` function.
+In an arrow function, `this` is resolved using lexical scoping rules to the first `this` object from a regular `function` function.
 
 ```js
 C.prototype.getXGetter = function() { // normal function
@@ -116,7 +116,7 @@ o.getXGetter()(); // 10
 
 ECMAScript 6 is designed around backwards compatibility with ECMAScript 5, and, while arrow functions are a big language improvement, I feel they are in many ways a missed opportunity.
 
-Specially, `this` is still a magic keyword instead of a parameter. And in heavily nested functions, you still have to bind `this` to a local variable to get correct the behavior.
+Specially, `this` is still a magic keyword instead of a parameter. And in heavily nested functions, you still have to bind `this` to a local variable to get the correct behavior.
 
 ```js
 var Model = function() {
@@ -142,7 +142,7 @@ var o = new C(10);
 o.getXGetter()(); // 10
 ```
 
-Fat arrow functions behave like ECMAScript 6 arrow function, but are functionally closer to calling `Function.prototype.bind` with `this`. 
+Fat arrow functions behave like ECMAScript 6 arrow functions, but are functionally closer to calling `Function.prototype.bind` with `this`. 
 
 ```js
 C.prototype.getXGetter = function() {
@@ -166,7 +166,7 @@ C.prototype.getXGetter = function() {
 ``` 
 
 # Khepri
-A Khepri function may optionally unpack the object it is called on with a this unpack. This unpacks explicitly bind `this` to an identifier, and also allow values to be extracted from the `this` object using the same [unpack patterns][unpacks] as parmeters. 
+A Khepri function may optionally unpack the object it is called on with a this unpack. This unpacks explicitly bind `this` to an identifier, and also allow values to be extracted from the `this` object using the same [unpack patterns][unpacks] as parameters. 
 
 ```js
 // Khepri fat arrow
@@ -207,7 +207,7 @@ var o = new C(10);
 o.getXGetter()(); // 10
 ```
 
-Like other parameters, a this unpacks may conflict with previous bindings or hide outer bindings.
+Like other parameters, a this unpack may conflict with previous bindings or hide outer bindings.
 
 ```js
 // Error, self already bound for scope. 
@@ -236,7 +236,7 @@ Any identifier pattern, as pattern, array pattern, or object pattern can be used
 var f = \x ={z}-> x + z;
 ```
 
-You can go bit crazy:
+You can go a bit crazy:
 
 ```js
 \args(f z)=self#{children#{length} count}-> ...

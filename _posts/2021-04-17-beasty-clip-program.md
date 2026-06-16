@@ -26,7 +26,7 @@ Beatsy app clip codes let you create any of the visualizer effects found [in the
 
 You can also control the size of the visualizer effect. A sticker may use a small visualizer that is 0.25m across, while an effect placed on a large wall could scale the AR distortion up to fill the entire surface!
 
-In addition to Beatsy's built-in visualizers, you can also create fully customize effects with a displacement video. This uses a [displacement map](https://en.wikipedia.org/wiki/Displacement_mapping) to distort the surface, enabling arbitrary visual effects.
+In addition to Beatsy's built-in visualizers, you can also create fully customized effects with a displacement video. This uses a [displacement map](https://en.wikipedia.org/wiki/Displacement_mapping) to distort the surface, enabling arbitrary visual effects.
 
 Each pixel in the displacement video specifies how far that part of the surface will be shifted upwards by the AR effect. Parts of the plane under black pixels will have zero displacement, while parts under white pixels will be displaced to the maximum visualizer height. Grey pixels will have intermediate levels of displacement.
 
@@ -38,7 +38,7 @@ You can create these videos by hand or using a 3D rendering program. The video a
 
 ## Get in touch
 
-If linking your music to physical codes that trigger unique augmented reality effects sound interesting, please [get in touch][contact]. These codes are free to create and you can use them however you'd like: sell them as stickers or cards (or even temporary tattoos) as a fun way to physically distribute music; plaster them around town to hype an upcoming event or release; or design a unique audio and visual experience for a specific physical location. It's up to you.
+If linking your music to physical codes that trigger unique augmented reality effects sounds interesting, please [get in touch][contact]. These codes are free to create and you can use them however you'd like: sell them as stickers or cards (or even temporary tattoos) as a fun way to physically distribute music; plaster them around town to hype an upcoming event or release; or design a unique audio and visual experience for a specific physical location. It's up to you.
 
 The [Beatsy app clip guide][guide] has more details on what you can create and how to get started. Don't hesitate to [reach out][contact] too if you are interested in creating a code or have any questions about getting started.
 

@@ -15,7 +15,7 @@ There is something wonderfully absurd about taking a nice little mirrorless came
 # Lens
 {% include image.html file="DSC9121.jpg" %}
 
-The 35mm Shift CA is the only shift lens that Minolta ever produced. There were four subtly different version of this lens: the Shift CA reviewed is the Rokkor-X edition, the earliest and IMO best looking, but there was an almost identical plain Rokkor version, and three slightly different MD versions (just Shift CA, no Rokkor or Rokkor-X). This is a specialty lens (i.e. expensive), not all that common, but not particularly rare either.
+The 35mm Shift CA is the only shift lens that Minolta ever produced. There were four subtly different versions of this lens: the Shift CA reviewed is the Rokkor-X edition, the earliest and IMO best looking, but there was an almost identical plain Rokkor version, and three slightly different MD versions (just Shift CA, no Rokkor or Rokkor-X). This is a specialty lens (i.e. expensive), not all that common, but not particularly rare either.
 
 ## Design
 The lens is quite bulky, a good deal larger than a normal 35mm Rokkor, which is to be expected given that it is basically a medium format lens. But it's the distribution of this bulk that is unfortunate. 
@@ -26,7 +26,7 @@ Pick up a Shift CA and the first thing you'll notice is a large disk, just above
 
 {% include image.html file="DSC9103.jpg" %}
 
-Contrast the Minolta Shift CA with Olympus' superb Zuiko 24mm shift lens, pictured left. While the Zuiko is undoubtably heavier and physically larger, it tapers from the massive front optic to the mounting plate, and therefore feels much smaller in the hand or mounted acamera. And that's compared to a 24mm shift lens. The comparable Olympus 35mm shift Zuiko is practically petite next to the Shift CA and far more enjoyable to shoot with (the 35mm Zuiko is superior in almost every way to the Minolta Shift CA and is cheaper too).
+Contrast the Minolta Shift CA with Olympus' superb Zuiko 24mm shift lens, pictured left. While the Zuiko is undoubtably heavier and physically larger, it tapers from the massive front optic to the mounting plate, and therefore feels much smaller in the hand or mounted a camera. And that's compared to a 24mm shift lens. The comparable Olympus 35mm shift Zuiko is practically petite next to the Shift CA and far more enjoyable to shoot with (the 35mm Zuiko is superior in almost every way to the Minolta Shift CA and is cheaper too).
 
 This is a lens made for the tripod; there are simply too many pieces to adjust for practical handheld shooting. When adapting the Shift CA to a modern mirrorless system, given its heft, I recommend against using your camera's tripod mount. Instead find a tripod mount that sits on the lens adapter itself. I use a Novoflex MD to E-Mount adapter, plus the compatible tripod mount.
 
@@ -75,7 +75,7 @@ The most obvious application of this lens is architectural photography. On an AP
 
 {% include image.html file="DSC8417.jpg" %}
 
-But by far my favorite application of this lens is taking panoramas. Multiple shifted images can be combined to create normal aspect ratio photographs (such as 3x2 or 4x3) with a higher resolution that would otherwise be possible in a single shot. This is accomplished by shifting in the opposite direction of the camera's orientation. I shot Seattle entirely with the camera in portrait orientation, and so produced this type of high resolution photo by shifting the lens vertically (the horizontal shift from the photographer's point of view).
+But by far my favorite application of this lens is taking panoramas. Multiple shifted images can be combined to create normal aspect ratio photographs (such as 3x2 or 4x3) with a higher resolution than would otherwise be possible in a single shot. This is accomplished by shifting in the opposite direction of the camera's orientation. I shot Seattle entirely with the camera in portrait orientation, and so produced this type of high resolution photo by shifting the lens vertically (the horizontal shift from the photographer's point of view).
 
 {% include image.html file="DSC8652-Edit.jpg" %}
 
@@ -105,11 +105,11 @@ The optical coating seems pretty solid, even shooting into light and for fairly 
 # Conclusion
 {% include image.html file="DSC9014-Edit-1.jpg" %}
 
-I have mixed feelings about the Minolta 35mm Shift CA. It is a bit of a nightmare in design and handling. The shift mechanism is bulky, heavy, and far more annoying to operate the Olympus' friction based shift lenses. Long term, I'm also concerned about its durability with extensive use. And even the basic operations, like reading the current aperture or focusing to infinity, are more annoying than they should be. 
+I have mixed feelings about the Minolta 35mm Shift CA. It is a bit of a nightmare in design and handling. The shift mechanism is bulky, heavy, and far more annoying to operate than the Olympus' friction based shift lenses. Long term, I'm also concerned about its durability with extensive use. And even the basic operations, like reading the current aperture or focusing to infinity, are more annoying than they should be. 
 
-But I still really enjoyed shooting with the lens and quite like some of the pictures it produced. Besides perspective control, the lens is great for shooting high resolution stitched images and distortion free panorama with interesting aspect ratios (7x16 photos can be pretty damn cool). The complexity and time required to shoot with a manual shift lens will turn off some photographers, but the benefit of all this complexity is control. Sometimes it's fun to really just get in the zone and spend a lot of time working with your camera to produce that perfect shot.
+But I still really enjoyed shooting with the lens and quite like some of the pictures it produced. Besides perspective control, the lens is great for shooting high resolution stitched images and distortion free panoramas with interesting aspect ratios (7x16 photos can be pretty damn cool). The complexity and time required to shoot with a manual shift lens will turn off some photographers, but the benefit of all this complexity is control. Sometimes it's fun to really just get in the zone and spend a lot of time working with your camera to produce that perfect shot.
 
-Still, there is no getting around the fact that the Minolta Shift CA is not the best, old, 35mm shift lens you can get for the money, unless of course you are shooting with an old Minolta camera. Especially for mirrorless, there are better 35mm shift lenses out there. I'm most experienced with the Olympus 35mm shift Zuiko. At less than half the price, it offers superior handling and performs better in my limited testing, the only really loss being the VFC. The Shift CA is certainly a good overall lens as well, but perhaps a better collectors item.
+Still, there is no getting around the fact that the Minolta Shift CA is not the best, old, 35mm shift lens you can get for the money, unless of course you are shooting with an old Minolta camera. Especially for mirrorless, there are better 35mm shift lenses out there. I'm most experienced with the Olympus 35mm shift Zuiko. At less than half the price, it offers superior handling and performs better in my limited testing, the only real loss being the VFC. The Shift CA is certainly a good overall lens as well, but perhaps a better collector's item.
 
 {% include image.html file="DSC8640.jpg" %}
 

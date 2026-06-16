@@ -10,7 +10,7 @@ Recently I wanted to take a self-portrait. So I got out a camera and composed ev
 
 Although, on second thought, rather conventional. So I took a phone and aimed it at the camera's screen, making sure it was focused on the LCD good and proper.
 
-Next, to really ensure that any faces in the photo would be detected correctly, I took another phone and pointed it at the first phone's screen. And, for a bit of vintage flair, I next dusted off a iPhone X/2, and threw it into the series.
+Next, to really ensure that any faces in the photo would be detected correctly, I took another phone and pointed it at the first phone's screen. And, for a bit of vintage flair, I next dusted off an iPhone X/2, and threw it into the series.
 
 Then, to counteract the low resolution of this last element, I took an iPad and aimed it at the screen of the last phone. Such large format photography was really quite an improvement.
 

@@ -27,7 +27,7 @@ struct List {
 };
 ```
 
-One possible alternative is to instead encode meta-functions a regular types, types that contain an `apply` templated type that invokes the meta-function to produce a result:
+One possible alternative is to instead encode meta-functions as regular types, types that contain an `apply` templated type that invokes the meta-function to produce a result:
 
 ``` cpp
 template <typename head, typename get_rest>
@@ -71,7 +71,7 @@ template <typename x, typename l>
 using cons = List<x, constant<l>::template apply>; 
 ```
  
-Constructing a list from `cons` still requires a fair bit of typing. `ListFrom` behaves like `list` is Lisp, building a list from its arguments 
+Constructing a list from `cons` still requires a fair bit of typing. `ListFrom` behaves like `list` in Lisp, building a list from its arguments 
 
 ``` cpp
 template <typename...>

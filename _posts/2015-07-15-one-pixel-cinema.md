@@ -7,7 +7,7 @@ date: '2015-07-15'
 
 {% include image.html file="color-weave-zoom2.png" description="You will never see the whole picture, and it's all you own fault." %}
 
-Ever since converting *[Moby-Dick][moby-dick]* to a color stream for [Blot're][blotre], I've been thinking about converting other media as well. Film is an obvious fit. Movie are already streams, a new frame every one twenty-fourth of a second. All that's required is a bit of downscaling.
+Ever since converting *[Moby-Dick][moby-dick]* to a color stream for [Blot're][blotre], I've been thinking about converting other media as well. Film is an obvious fit. Movies are already streams, a new frame every one twenty-fourth of a second. All that's required is a bit of downscaling.
 
 # Methodology 
 My 1080p copy of *Eyes Wide Shut* weighed in at 14GB, about 159 minutes. At 24 frames per second that's roughly 230,000 frames. And with each frame a hefty 1920 by 1080, that's a whole lot of pixels, around four hundred and seventy five billion worth actually.
@@ -56,7 +56,7 @@ While I was at it, I also scaled the resulting images down to a more manageable 
 $ ffmpeg -ss 00:05:00 -i "Eyes Wide Shut.mkv" -to 60 -vf scale=480:-1 frame%d.png
 ```
 
-Reasonable amounts of scaling should not effect the dominant color of an image much. And given that some of the libraries I used to extract dominant colors still took around a second to process the scaled down images, this scaling was pretty much required.
+Reasonable amounts of scaling should not affect the dominant color of an image much. And given that some of the libraries I used to extract dominant colors still took around a second to process the scaled down images, this scaling was pretty much required.
 
 
 # Determining Dominant Color  
@@ -68,7 +68,7 @@ I tried five approaches, using three Python libraries to determine the dominant 
 * Kmeans Colorweave.
 * [ColorCube library][colorcube].
 
-Of those, only the average, ColorThief, and normal Colorweave produced anything worthwhile. I may have been using ColorCube wrong, but it just could not handle the images I passing in, especially dark frames. 
+Of those, only the average, ColorThief, and normal Colorweave produced anything worthwhile. I may have been using ColorCube wrong, but it just could not handle the images I was passing in, especially dark frames. 
 
 {% include image.html file="img-colorcube.png" description="It does look like shit." %}
 
@@ -90,7 +90,7 @@ The three libraries produced pretty similar results with this one. ColorWeave se
 ## Frame Two
 {% include image.html file="eyes-example-tom-gets-doxed.png" description="Masquerade! Paper faces on parade!" %}
 
-It's pretty clear that red dominants this frame, taking up the entire center, but there's a good deal of black from the cloaks as well. 
+It's pretty clear that red dominates this frame, taking up the entire center, but there's a good deal of black from the cloaks as well. 
 
 {% include image.html file="samples-eyes-cer.png" description="Left to right: Average - #421823, ColorThief - #b63359, ColorWeave - #ba3066" %}
 
@@ -99,7 +99,7 @@ ColorThief and ColorWeave both identified the red carpet as the dominant color, 
 ## Frame Three
 {% include image.html file="eyes-example-gotta-get-a-grip.png" description="GOTTA GET A GRIP!" %}
 
-One last sample, this time an interesting mix of blue foreground and yellow background. For humans, blue dominants the frame because you are immediately drawn to Nicole Kidman's face. Visually though, I would say the yellowish background actually takes up more space. 
+One last sample, this time an interesting mix of blue foreground and yellow background. For humans, blue dominates the frame because you are immediately drawn to Nicole Kidman's face. Visually though, I would say the yellowish background actually takes up more space. 
 
 {% include image.html file="sample-eyes-grip.png" description="Left to right: average - #5b433f, ColorThief - #6e504b, ColorWeave - #846465" %}
 
@@ -109,7 +109,7 @@ This frame highlights the limitation of my approach though: perception. The perc
 
 {% include image.html file="blue-eye.jpg" description="It's funny how the colors of the real world only seem really real when you viddy them on the screen." %}
 
-If you only look at area, gray dominants the above image. But blue is the perceived color, at least for me. The centered, blue eye contrasts with the gray surroundings, making it stand out even more, and humans are naturally drawn to shapes such as eyes and faces. I did not find any libraries that tried to determine the perceived dominant color of images, but it would be interesting to investigate this further.
+If you only look at area, gray dominates the above image. But blue is the perceived color, at least for me. The centered, blue eye contrasts with the gray surroundings, making it stand out even more, and humans are naturally drawn to shapes such as eyes and faces. I did not find any libraries that tried to determine the perceived dominant color of images, but it would be interesting to investigate this further.
 
 # All Together Now
 I ran each method against every frame in *Eyes Wide Shut* to extract the 230,000 dominant colors of the film. I saved this data as Json and used the script from my *[Moby-Dick][moby-dick]* post to convert the data into images, one pixel per frame, left-to-right, eight hundred pixels wide and about three hundred pixels tall.
@@ -124,7 +124,7 @@ I'm not a fan of what ColorThief produced. The library seemed to lock into certa
 ## ColorWeave
 {% include image.html file="img-colorweave.png" %}
 
-Colorweave has much more noise and variation that ColorThief, producing an even more pixeled appearing result. But I actually find this much more attractive, especially when zoomed in so that you can see the individual pixels/frames. 
+Colorweave has much more noise and variation than ColorThief, producing an even more pixeled appearing result. But I actually find this much more attractive, especially when zoomed in so that you can see the individual pixels/frames. 
 
 {% include image.html file="colorweave-zoom1.png" %}
 
@@ -169,7 +169,7 @@ BlotreCl({
 
 This uses saved client data or registers a new disposable client app with Blot're. New clients prompt the user to redeem a one time code. Once the user has redeemed this code on Blot're, the client app is authorized and can exchange its credentials for an access token. Blot're-cl handles all these steps internally, returning a promise to a fully authorized client application.
 
-`start` reads the Json color data for *Eyes Wide Shut*. The data is stored in RGB array which must be converted to hex for Blot're.
+`start` reads the Json color data for *Eyes Wide Shut*. The data is stored in an RGB array which must be converted to hex for Blot're.
 
 ```js
 var start = function(client) {
@@ -202,7 +202,7 @@ var getTargetStream = function(client) {
 ```
 
 ## Streaming Updates
-`post` opens a [send/response websocket][blotre-response] to Blot're and starts streaming colors over it. Again, the logic is almost identical to the function I used in *[Moby-Dick][]*. Since that post however, I added the `getWebsocketUrl` method to the [Node Blot're.js library][blotre-js] to get the correct websocked Url based on configuration.
+`post` opens a [send/response websocket][blotre-response] to Blot're and starts streaming colors over it. Again, the logic is almost identical to the function I used in *[Moby-Dick][]*. Since that post however, I added the `getWebsocketUrl` method to the [Node Blot're.js library][blotre-js] to get the correct websocket Url based on configuration.
 
 ```js
 var post = function(client, target, data) {

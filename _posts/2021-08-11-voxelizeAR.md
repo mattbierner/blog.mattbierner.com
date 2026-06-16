@@ -26,7 +26,7 @@ Voxelizer works best on devices with a LiDAR sensor—such as the iPhone 12 Pro 
 
 {% include video.html file="big.mp4" poster="big-poster.jpg" description="Adjust the size of the voxels to change the visual effect" %}
 
-It's unfortunate that not all devices support because the ability to just stroll around the world instantly turning parts of it into voxels is really pretty great! I've got a few of other app ideas that may make use of this technology too. <!-- Next stop: 41°23′16″N 93°16′7″W! -->
+It's unfortunate that not all devices support it because the ability to just stroll around the world instantly turning parts of it into voxels is really pretty great! I've got a few other app ideas that may make use of this technology too. <!-- Next stop: 41°23′16″N 93°16′7″W! -->
 
 [Give voxelizeAR a try][app] and let me know what you think! It's a free app too, so if you enjoy it be sure to leave a review to help others find it.
 

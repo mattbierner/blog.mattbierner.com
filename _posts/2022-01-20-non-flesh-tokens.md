@@ -59,7 +59,7 @@ The final stage was listing the resulting 308 blocks as NFTs [on Open Sea][opens
 
 Non-Flesh Tokens is a project that I've been thinking about for a long time. The idea of auctioning off abstract blocks of flesh (albeit in image form) just struck me as an interesting and rather humorous way to look at objectification and image culture. Which parts of the bodies would be most valued for example? Would an eye fetch a higher price than say a nipple? Would a dastardly cabal of foot fetishizing oligarchs drive the price of toes through the roof? However I wasn't sure how to bring this idea to life.
 
-Initially I considered printing physical copies of each block and then auctioning these prints off. However this would both be expensive and would depend on drumming up enough interest to make the initial auction a success. Furthermore, an auction would be a one time event. I really wanted to track the long-term prices of these blocks. And here, NFTs turned to be just the solution I was looking for.
+Initially I considered printing physical copies of each block and then auctioning these prints off. However this would both be expensive and would depend on drumming up enough interest to make the initial auction a success. Furthermore, an auction would be a one time event. I really wanted to track the long-term prices of these blocks. And here, NFTs turned out to be just the solution I was looking for.
 
 Choosing to engage with NFTs at all will doubtless prove controversial in certain circles. And I get it! To put my thoughts on the subject in the politest terms possible: I do not feel most of what is happening in the NFT space deserves the level of attention it has received. What is art's place in a hyper image saturated world where almost anything can be cheaply reproduced? I don't know, but encoding crusty old ideas of scarcity, authenticity, and ownership is not the answer. If you care about art, support artists. You don't need blockchains to do that.
 
@@ -73,7 +73,7 @@ I am eternally grateful to Patrick and Greg for helping to realize this project 
 
 But now Non-Flesh Tokens is live. What will the interest be like? Will people understand the underlying ideas? Will any of the pieces even sell? Maybe. All I know is that my role here is done. What happens next is out of my hands.
 
-By the bye, if you'd like a hand, check out [Male (2, -7)](https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/15445115341978895749400258717831267901175031190841581355540862008050107547649) or [Female (1, -12)](https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/15445115341978895749400258717831267901175031190841581355540861795844363386881). Bidding start at 0.02Eth.
+By the bye, if you'd like a hand, check out [Male (2, -7)](https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/15445115341978895749400258717831267901175031190841581355540862008050107547649) or [Female (1, -12)](https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/15445115341978895749400258717831267901175031190841581355540861795844363386881). Bidding starts at 0.02Eth.
 
 [site]: https://nonfleshtokens.com
 [opensea]: https://opensea.io/collection/non-flesh-tokens

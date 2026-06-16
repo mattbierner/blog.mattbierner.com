@@ -22,11 +22,11 @@ Matt reached forward again, cautiously seeking out the strange object that he ha
 
 Again his hand met the cool, unfamiliar mass. He gingerly ran his fingers across its surface. The right side of his vision quivered and Matt paused, afraid that another whirl of disorientation was imminent. When his vision stabilized again, he continued his examination.
 
-The object at his side was a sphere of perhaps of eight inches in diameter. Its surface was lightly textured although generally smooth, with one or two rough spots. On the far side of the sphere, facing away from him, there was a small aperture. When his hand passed in front of this aperture, one side of his vision dimmed.
+The object at his side was a sphere of perhaps eight inches in diameter. Its surface was lightly textured although generally smooth, with one or two rough spots. On the far side of the sphere, facing away from him, there was a small aperture. When his hand passed in front of this aperture, one side of his vision dimmed.
 
 The realization hit him all at once. Now he knew what the object was. He slowly raised a hand to his face, afraid to look even though he knew what he would see. Even with his hand just inches away, he could not see it. *Oh God*, he thought, pulling the covers over his head, *it has finally happened!*
 
-After years of joking about removing his eyeballs with melon-ballers and countless late-night meditations on externalizing his various sensory organs, Matt's eyes had fallen out of his head, and now one of them was laying at his side Where his other eye had gotten too was anyone's guess. To make matters worse, the eye beside him was not the soft, squishy, and comfortably organic eye that had once filled one of his sockets, but a cold, metallic eye of unfortunate proportions. There would be no slipping it back in. Matt could even make out the grid of tiny pixels that now made up his vision. His eyeballs had gone digital.
+After years of joking about removing his eyeballs with melon-ballers and countless late-night meditations on externalizing his various sensory organs, Matt's eyes had fallen out of his head, and now one of them was laying at his side. Where his other eye had gotten to was anyone's guess. To make matters worse, the eye beside him was not the soft, squishy, and comfortably organic eye that had once filled one of his sockets, but a cold, metallic eye of unfortunate proportions. There would be no slipping it back in. Matt could even make out the grid of tiny pixels that now made up his vision. His eyeballs had gone digital.
 
 Again and again, he shut his eyes hoping the world would be normal when he opened them again. Again and again, the same distorted and pixelated view of reality mockingly greeted him. *What sort of silly creature can't even keep its eyes in its own head*, Matt moped as he sank deeper into depression, *even crabs and snails have eyestalks, but here I am, with one eye loose in my nest and the other who knows where!* He pulled the covers tighter.
 
@@ -51,7 +51,7 @@ Matt clutched his eye with both hands and lifted it up to the center of his ches
 
 He even managed to lefty out a response: "Good just woke." As far as his friend would ever know, Matt's eyes were still squarely in Matt's skull where they belonged.
 
-Still, while he had gotten a hand on using his right eye, Matt couldn't help but wonder where his left eyeball had gotten too. He panned his eye over the room but it occurred to Matt that he was unsure what to look for. You see, despite living in close proximity to his eyes and looking through them for almost a quarter century, Matt realized that he had never actually *seen* them before. And with his right eye so enlarged and transformed, who knew what his eyes currently looked like anyways.
+Still, while he had gotten a hand on using his right eye, Matt couldn't help but wonder where his left eyeball had gotten to. He panned his eye over the room but it occurred to Matt that he was unsure what to look for. You see, despite living in close proximity to his eyes and looking through them for almost a quarter century, Matt realized that he had never actually *seen* them before. And with his right eye so enlarged and transformed, who knew what his eyes currently looked like anyways.
 
 Nothing stood out in the room, but when his vision fell on a brown haired man, it took Matt a moment to realize that he was looking at himself. He stared. The man stared back. Matt turned his head to one side. The man turned his head the opposite way. Matt stuck out his tongue. The man stuck out his.
 
@@ -78,7 +78,7 @@ He had mostly recovered now. He wasn't in any pain and, despite all the exciteme
 
 It seems that when Matt landed on the edge of the laundry basket, his left eyeball had been catapulted clear across the room. Thankfully the wall put a quick stop to his left eye's avian ambitions and now Matt had both of his eyes back in his possession.
 
-Back on the bed, he examine his left eye. Remarkably, it was unscathed and he could see out of it just fine.
+Back on the bed, he examined his left eye. Remarkably, it was unscathed and he could see out of it just fine.
 
 *See*, Matt thought, *there are advantages to having metal eyes. I very much doubt that my old, organic peepers would be up for such an adventure*.
 
@@ -103,7 +103,7 @@ Preparing for his morning toilet, Matt faced a rather delicate question: what sh
 
 *No*, thought Matt, *best to play it safe and keep my eyes dry for now. I can always give them a quick spritz if they start to smell after a few days*.
 
-Matt was about to step into the shower when he realized that he was still dressed. He'd had been so focused on his eyes, that he'd almost forgotten about his body.
+Matt was about to step into the shower when he realized that he was still dressed. He'd been so focused on his eyes, that he'd almost forgotten about his body.
 
 *Always one thing or the other*, sighed Matt as he began to disrobe.
 
@@ -140,7 +140,7 @@ Matt turned his eye the other way and started look for something on the counter.
 
 A good day starts with a good breakfast. Matt knew this. Everyone knew this. It had been proven using science by the Kellogg Company. And when you wake up to find that your eyes have fallen out of your head, a good breakfast is only the more essential.
 
-Matt's preferred workdays breakfast was chocolate granola. It was mostly sugar, but then again, most good breakfasts are. Chocolate granola was also a good choice since it did not involve knifes, stoves, scalding water, blenders, or any other potential kitchen hazards.
+Matt's preferred workdays breakfast was chocolate granola. It was mostly sugar, but then again, most good breakfasts are. Chocolate granola was also a good choice since it did not involve knives, stoves, scalding water, blenders, or any other potential kitchen hazards.
 
 Chocolate granola requires three ingredients: chocolate granola, yogurt, and raspberries. The chocolate granola was in the cabinet, the yogurt was in the fridge, and the raspberries were in the freezer. Matt resolved to fix this terribly inefficient storage scheme the next chance he had, but first the raspberries.
 
@@ -215,9 +215,9 @@ The apartment was stuffy too. It was suffocating him. He hadn't been outside all
 
 The sky was an orgasmic blue. A flash of pixels on the street below. Someone out walking their dog perhaps? Matt imagined walking down the street with his eyeballs on a leash.
 
-And he had a dull headache too. This was around the time at work that Matt usually grabbed his afternoon coffee. This was usually the third coffee of the day. Today though, Matt hadn't even had a first coffee of the day. *That may explain this headache,* he thought, *and coffee sounds pretty good right now.* But then Matt remember that he did not have a coffee maker. If he wanted coffee, he was going to have to venture outside.
+And he had a dull headache too. This was around the time at work that Matt usually grabbed his afternoon coffee. This was usually the third coffee of the day. Today though, Matt hadn't even had a first coffee of the day. *That may explain this headache,* he thought, *and coffee sounds pretty good right now.* But then Matt remembered that he did not have a coffee maker. If he wanted coffee, he was going to have to venture outside.
 
-*No, that's impossible*, Matt told himself. He returned to the laptop and tried to put the idea of his mind. But he couldn't focus. He had coffee on the brain. He checked to see if Amazon offered hot coffee delivery. No luck. It was either nothing or going to a coffeeshop. And so he began to concoct a plan.
+*No, that's impossible*, Matt told himself. He returned to the laptop and tried to put the idea out of his mind. But he couldn't focus. He had coffee on the brain. He checked to see if Amazon offered hot coffee delivery. No luck. It was either nothing or going to a coffeeshop. And so he began to concoct a plan.
 
 As Matt saw it, there were two main things that would bring him unwanted attention: the large size of his eyes and that his eyes had fallen out of his head. And while there wasn't much that could be done on the first account, he might just be able to conceal his unfortunate ocular dislocation.
 
@@ -231,7 +231,7 @@ He had done it countless times before. What could possibly go wrong?
 
 # VIII
 
-Matt pretended the read the menu on the wall. He already knew what he was going to order and there wasn't anyone in line. And it's not like he could make out what the menu said from this distance anyways.
+Matt pretended to read the menu on the wall. He already knew what he was going to order and there wasn't anyone in line. And it's not like he could make out what the menu said from this distance anyways.
 
 As he stood there, he ran through the plan again and again: the casual smile, the order, the motion required to pull out his phone.... 
 
@@ -291,15 +291,15 @@ As Matt waited for his coffee, he replayed the preceding scene over in his head.
 
 "Excuse me... Excuse me..."
 
-Matt felt a tap on his shoulder and spun around. It was the man that he had bumped into in line. The man was pointing towards there counter. There was a cup sitting there. The barista was busy preparing something else. In a daze, Matt grabbed the cup from the counter and shuffled off to grab a seat, completely forgetting his originally planned rapid exit.
+Matt felt a tap on his shoulder and spun around. It was the man that he had bumped into in line. The man was pointing towards the counter. There was a cup sitting there. The barista was busy preparing something else. In a daze, Matt grabbed the cup from the counter and shuffled off to grab a seat, completely forgetting his originally planned rapid exit.
 
 The coffeeshop was empty except for a few people typing away at their computers and a couple chatting over in the corner. He picked out a seat over by the fake fireplace, just far enough away from the others to avoid seeming creepy but close enough so that it didn't look like he had anything to hide. He'd tried sipping the coffee but it was too hot. He'd forgotten to get sugar too.
 
-His left arm was getting tire. Two eyes are heavy. There isn't any good way to hold them. He placed his coffee on the table, glanced around to see if anyone was looking, and then quickly switched to his right arm.
+His left arm was getting tired. Two eyes are heavy. There isn't any good way to hold them. He placed his coffee on the table, glanced around to see if anyone was looking, and then quickly switched to his right arm.
 
 Matt tried to distract himself as he waited for his coffee to cool. He pulled up the news and scrolled through the headlines: Seattle was getting ready to elect a new mayor; North Korea had tested an intercontinental ballistic missile; the eclipse was coming... He scrolled through his timeline: the jokes, the baby photos, the irony, the memes, the barely concealed brags, the self-serving outrage and compassion... And it all seemed so unreal, so distant.
 
-He adjusted his eyes and tried taking another sip. Just as the cup came to his lips, there was an awful ripping sound, a whirl, a sickening thud, and the left side of his vision went black. His hand shot to his face. Where his left eye should had been, there was nothing.
+He adjusted his eyes and tried taking another sip. Just as the cup came to his lips, there was an awful ripping sound, a whirl, a sickening thud, and the left side of his vision went black. His hand shot to his face. Where his left eye should have been, there was nothing.
 
 The deception was up! His left eye had fallen out and gone rolling away to who knows where. He lunged forward, feeling about wildly and no longer trying to conceal what was now all too obvious.
 
@@ -326,7 +326,7 @@ It was dark now. Matt hadn't turned on any lights. A bus roared past on the stre
 
 The office building across the street was made of glass. The lights were always on. At night you could look across the street and see what was going on inside. The office was mostly empty but there were still a few people typing away silently. Matt's apartment was made of glass too. He wondered what the view was like from over there.
 
-Matt signed and pulled out his phone. Nothing.
+Matt sighed and pulled out his phone. Nothing.
 
 He wanted to be with someone. *But who could ever love me like this*, he moped.
 
@@ -356,7 +356,7 @@ Some motion caught his attention. Matt shut his right eye and strained to make o
 
 The image updated and now the shadow was closer. It was a pair of legs. The pair of legs was wearing jeans, slightly rolled up at the base. The pair of legs stood on woolen lounging shoes.
 
-Then the image refreshed again and Matt was face to face at an unfamiliar bearded man. The man seemed to be kneeling down to look into Matt's eye. The man had a puzzled look.
+Then the image refreshed again and Matt was face to face with an unfamiliar bearded man. The man seemed to be kneeling down to look into Matt's eye. The man had a puzzled look.
 
 Another, and now Matt was looking at the front of a phone.
 

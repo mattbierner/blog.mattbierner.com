@@ -9,7 +9,7 @@ titleImage:
 
 {% include image.html file="title.jpg" %}
 
-Volumetric painting breaks painting out of the canvas and into the third dimension. In their studies of the unseen, volumetric paintings challenge the viewer with the unknowableness of all artistic expression and also forces them to contemplate the spaces within that we all inhibit.
+Volumetric painting breaks painting out of the canvas and into the third dimension. In their studies of the unseen, volumetric paintings challenge the viewer with the unknowableness of all artistic expression and also force them to contemplate the spaces within that we all inhabit.
 
 The profile below spotlights a prolific volumetric painter and shows them at work on their newest piece: "Diffusion".
 

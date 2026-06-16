@@ -8,7 +8,7 @@ Every 2nd grader knows that the [C++ template system is Turing complete](http://
 
 {% include image.html file="LarsonLaBrea.jpeg" %}
 
-It turns out that I'm [not the first person](https://github.com/knome/metabrainfuck/blob/master/bf.cpp) who learned me some  metaprogramming and thought it would be a good laugh to implement Brainfuck with C++ templates. But in going though this admitidly pointless exercise, what struck me is how similar a Brainfuck C++ template evaluator is to [one implemented in a functional-style](https://github.com/mattbierner/neith-brainfuck/blob/master/lib/bf.kep).
+It turns out that I'm [not the first person](https://github.com/knome/metabrainfuck/blob/master/bf.cpp) who learned me some  metaprogramming and thought it would be a good laugh to implement Brainfuck with C++ templates. But in going through this admittedly pointless exercise, what struck me is how similar a Brainfuck C++ template evaluator is to [one implemented in a functional-style](https://github.com/mattbierner/neith-brainfuck/blob/master/lib/bf.kep).
 
 In just around 200 LOC, you can create a fairly reasonable and clear Brainfuck implementation using C++ templates. And, while implementing Brainfuck is certainly not very practical, metaprogramming in the same vein actually [does have some interesting applications](http://www.boost.org/doc/libs/1_56_0/doc/html/xpressive.html).
 
@@ -22,7 +22,7 @@ Let's get started.
 # I/O Buffers
 Before expressing language semantics, we need to encode a compile time character buffer. These buffers will be used as both the actual Brainfuck I/O buffers, and also to hold program source code.  
 
-Our buffer type will encode specific characters sequence as unique types. The C++14 addition `std::integer_sequence` does exactly this, encoding a variadic parameter list of values as a type.
+Our buffer type will encode specific character sequences as unique types. The C++14 addition `std::integer_sequence` does exactly this, encoding a variadic parameter list of values as a type.
 
 ``` cpp
 using iochar = char;
@@ -36,7 +36,7 @@ using one_char = char_string<'x'>;
 using abc = char_string<'a', 'b', 'c'>;
 ```
 
-`std::integer_sequence` is pretty bare-bones list. It's useful for unpacks, but inconvenient for our purposes. So let's write some lisp style style `car` and `cdr` operations for `std::integer_sequence`. 
+`std::integer_sequence` is a pretty bare-bones list. It's useful for unpacks, but inconvenient for our purposes. So let's write some lisp style `car` and `cdr` operations for `std::integer_sequence`. 
 
 ``` cpp
 template <typename>
@@ -70,7 +70,7 @@ seq_car<typename seq_cdr<abc>::type>::value; // 'b'
 seq_car<typename seq_cdr<typename seq_cdr<abc>::type>::type>::value; // 'c'
 ```
 
-`std::integer_sequence` is fundamentally an immuable list of values, so we also need a way to transform a `std::integer_sequence`. Lisp uses the `cons` operations for this, which prepends an element onto the head of a list.
+`std::integer_sequence` is fundamentally an immutable list of values, so we also need a way to transform a `std::integer_sequence`. Lisp uses the `cons` operation for this, which prepends an element onto the head of a list.
 
 ``` cpp
 /// Note the reverse argument order vs. `cons` in lisp.
@@ -111,7 +111,7 @@ seq_append<typename seq_cdr<xy>::type>::value; // 'y'
 # Memory Cells
 Brainfuck models program memory as an infinite list of cells. Each cell stores a fixed bit number and is initialized to 0. There is [no standard cell size](http://en.wikipedia.org/wiki/Brainfuck#Cell_size), but one byte is the most common.
 
-The `Cell` type encodes a Brainfuck memory cell storing an eight bit number as a type. A few helpers on the `Cell` type allow transforming's cells.
+The `Cell` type encodes a Brainfuck memory cell storing an eight bit number as a type. A few helpers on the `Cell` type allow transforming cells.
 
 ``` cpp
 using memval = unsigned char;
@@ -215,7 +215,7 @@ using initial_state = State<Memory, char_string<input...>, char_string<>>;
 # Basic Semantics
 With our data structures and operations defined, we can now express the semantics of Brainfuck.
 
-The `Semantics` type maps program source code to a `eval` templated type that encodes the semantics of the input program. The `eval` template type takes a `state` and outputs a new `state`.
+The `Semantics` type maps program source code to an `eval` templated type that encodes the semantics of the input program. The `eval` template type takes a `state` and outputs a new `state`.
 
 `Semantics<>` is the specialization for empty program input, with `eval` acting as the identity function.
 

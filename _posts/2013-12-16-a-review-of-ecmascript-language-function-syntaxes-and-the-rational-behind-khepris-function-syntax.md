@@ -37,7 +37,7 @@ var fac = n => {
 Fat arrows are very concise and require only two characters for every function. [Coffeescript][coffeescript] and many other *script languages use similar syntax (Khepri 0.0.0 - 0.2.0 also used this). 
 
 #### Conflict with Expression 
-I find fat arrow syntax is inconsistent. There is not no symbol to identify the start of a arrow function expression, so without additional grammar productions it is imposible to distinguish fat arrow parameters from expressions.
+I find fat arrow syntax is inconsistent. There is no symbol to identify the start of an arrow function expression, so without additional grammar productions it is impossible to distinguish fat arrow parameters from expressions.
 
 Expressions like `n` or `(p1, p2, p3)` are valid on their own, so a left to right parsing would be ambiguous until `=>` is hit.
 
@@ -51,7 +51,7 @@ var lots_of_args = (p1, p2, /*.....*/, p1000) => 1;
 The spec handles this problem with the `CoverParenthesisedExpressionAndArrowParameterList` production. That name alone should signal something is wrong.
 
 #### Fat Arrow is Not a Standard Binary Operator
-We could consider `=>` an infix binary operator, but `=>` works completely differently than those. Normal binary operators take a left and right expression and apply an operation to them, but `=>` effects the parsing of the expression on its lefthand side. When `=>` is encountered, the lefthand side is taken as a list of symbols, not the expression's value.
+We could consider `=>` an infix binary operator, but `=>` works completely differently than those. Normal binary operators take a left and right expression and apply an operation to them, but `=>` affects the parsing of the expression on its lefthand side. When `=>` is encountered, the lefthand side is taken as a list of symbols, not the expression's value.
 
 #### Worked Into a Corner
 ECMAScript 6 introduces syntax for binding patterns in parameter lists, but limits patterns to regular function expressions. To see why, consider:
@@ -102,7 +102,7 @@ var constant = \x -> \() -> x;
 var add = \x y -> x + y;
 ```
 
-Another way to think about this is that `\` is a prefix for a parameter list literal and `->` is an infix operator that creates a lambda function that maps a parameter list to a expression.
+Another way to think about this is that `\` is a prefix for a parameter list literal and `->` is an infix operator that creates a lambda function that maps a parameter list to an expression.
 
 Lambda Functions can also map to block statements
 
@@ -176,7 +176,7 @@ I generally follow these rules for deciding which form to use:
 
 
 # Closing Thoughts
-Khepri's syntax for function is brief, consistant, and avoids some of the pitfalls that I feel exist in other solutions. It has allowed functions to be significantly augmented with complex patterns and lets commas be optional. 
+Khepri's syntax for function is brief, consistent, and avoids some of the pitfalls that I feel exist in other solutions. It has allowed functions to be significantly augmented with complex patterns and lets commas be optional. 
 
 
 [khepri]: https://github.com/mattbierner/khepri

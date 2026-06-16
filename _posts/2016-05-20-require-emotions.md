@@ -79,7 +79,7 @@ This provides 100% coverage of the human experience.
 
 
 # Use Cases
-Here's a few example uses cases for the `emotions` package.
+Here's a few example use cases for the `emotions` package.
 
 ## Add Emotional Subtlety to Human Computer Interaction
 Most new programmers start by writing:

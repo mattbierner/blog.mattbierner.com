@@ -21,7 +21,7 @@ $ npm install blotre
 ## Empty Client
 Blot're.js exports a class that handles all communication with `https://blot.re`. This class also maintains client state, such as credentials and client info.
 
-We create a empty client using `new` or the `.create()` static method.
+We create an empty client using `new` or the `.create()` static method.
 
 ```js
 var Blotre = require('blotre').
@@ -131,7 +131,7 @@ client.redeemAuthorizationCode('ZTdmMWMyYjAtYWNmZS00Y2FlLTg2YzAtMDUxZDc5NWYxYmI0
 `redeemAuthorizationCode` itself does not update our client's credentials, so be sure to call `setCreds` if the request completes successfully. Now any future requests will automatically attach the acquired credentials.
 
 ## Disposable Client
-The authorization code flow has at least one big drawback for our weather app, the redirect_uri to which the authorization code is sent much be publicly reachable by the user agent. That'll require some kind of server and sounds like a lot of work for such as simple app. All we really want to do is talk to Blot're on behalf of a single user. And that's precisely what the [Blot're disposable client authorization flow][blotre-disposable] was designed for.
+The authorization code flow has at least one big drawback for our weather app, the redirect_uri to which the authorization code is sent must be publicly reachable by the user agent. That'll require some kind of server and sounds like a lot of work for such a simple app. All we really want to do is talk to Blot're on behalf of a single user. And that's precisely what the [Blot're disposable client authorization flow][blotre-disposable] was designed for.
 
 A disposable client looks and behaves much like a regular Blot're client, except that it can be authorized by at most one user. `createDisposable` creates a new disposable client. The `name` and `blurb` parameters must be provided and will be shown to the user during the authorization confirmation flow.
 
@@ -187,7 +187,7 @@ var tryRedeem = function(client, callback) {
 Any user can redeem the code generated for a disposable client, although the code may only be redeemed once. If the code expires without having been redeemed, we must create a new disposable client and prompt the user again. But if everything worked as expected, our new client should now have credentials be authorized to talk to Blot're on the user's behalf. 
 
 ## Persisting and Using Existing Credentials
-Authorized clients hold their credentials in memory and can continue to make authorized requests until they are shut down. For our weather app, we'll need to   persist these credentials so that the user does not need to authorize our app every time it is restrated.
+Authorized clients hold their credentials in memory and can continue to make authorized requests until they are shut down. For our weather app, we'll need to   persist these credentials so that the user does not need to authorize our app every time it is restarted.
 
 The `creds` property of a client contains the current credentials:
 
@@ -296,7 +296,7 @@ Additionally, if the access token expires but a refresh token is present, Blot'r
 
 
 ## Creating the weather stream
-Let's setup a new substream that our weather app. `updateWeatherStream` create or updates the `'Weather'` stream for the current user.
+Let's setup a new substream that our weather app. `updateWeatherStream` creates or updates the `'Weather'` stream for the current user.
 
 ```js
 var updateWeatherStream = function(client, color) {
@@ -340,7 +340,7 @@ var getWeather = function(zip) {
 };
 ```
 
-We extract the temperature from the returned data. The temperature is in Kelvin so we'll also convert it to Celcius
+We extract the temperature from the returned data. The temperature is in Kelvin so we'll also convert it to Celsius
 
 ```js
 var toC = function(temp) {
@@ -360,7 +360,7 @@ Directly basing our stream color on temperature value, such as `30C === 0x00001e
 
 We want something more like a thermometer display, red for hot and blue for cold, so let's use a simple mapping function to convert the temperature to a representative color.
 
-`colour-me-life` allows us to define a and sample a spectrum of colors.
+`colour-me-life` allows us to define and sample a spectrum of colors.
 
 ```js
 var weatherSpectrum = new (require('colour-me-life'))();
@@ -368,7 +368,7 @@ weatherSpectrum.setSpectrum('blue', 'green', 'red');
 weatherSpectrum.setNumberRange(0.0, 1.0);
 ```
 
-Our temperature conversation scales temperatures to between 0C (#0000ff) and 37C (#ff0000) degrees celcius for samlpling.
+Our temperature conversion scales temperatures to between 0C (#0000ff) and 37C (#ff0000) degrees celsius for sampling.
 
 ```js
 var tempToColor = function(temp) {
@@ -379,7 +379,7 @@ var tempToColor = function(temp) {
 };
 ```
  
-Let's checkout out the weather of `92328`:
+Let's check out the weather of `92328`:
  
 ```js
 var ZIP = "92328";
@@ -461,7 +461,7 @@ BlotreCl({
 ```
 
 # Conclusion
-You should now be able to view your new Weather stream on Blot're. Hopefully this walkthough  deomonstrates how easy it is to integrate simple applications with Blot're.
+You should now be able to view your new Weather stream on Blot're. Hopefully this walkthrough demonstrates how easy it is to integrate simple applications with Blot're.
 
 [Checkout the source][src] for this demo and the [documentation for Blot're.js][documentation].
 

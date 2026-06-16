@@ -4,13 +4,13 @@ title: 'The Life Comonadic'
 series: stupid_template_tricks
 date: '2014-11-03'
 ---
-A [Brainfuck evaluator][brainfuck] is interesting and all, but far too one-dimensional. Lets's kick things up a dimension, it's time for C++ template compile-time [Conway's Game of Life][life]. 
+A [Brainfuck evaluator][brainfuck] is interesting and all, but far too one-dimensional. Let's kick things up a dimension, it's time for C++ template compile-time [Conway's Game of Life][life]. 
 
 {% include image.html file="larsonevolution.jpg" %}
 
 This post translates a [Haskell comonad based Life implementation][void] into a C++ template meta-program. Much like with the [Brainfuck evaluator][brainfuck], once you get over the syntax, C++ templates turn out to be a fairly competent functional language.
 
-I'll start by defining the data structures and operations that will be used to implement Life. The [lazy, compile-time list previously defined][list] will be used heavily. A row of the world is encoded as [zipper][zipper] of cells, with the world grid is simply a zipper of rows. Comonads for both one dimensional and two dimensional zippers make it easy to define and implement the rules of Life.
+I'll start by defining the data structures and operations that will be used to implement Life. The [lazy, compile-time list previously defined][list] will be used heavily. A row of the world is encoded as a [zipper][zipper] of cells, with the world grid simply a zipper of rows. Comonads for both one dimensional and two dimensional zippers make it easy to define and implement the rules of Life.
 
 Complete source code can be found [here][source].
 
@@ -69,7 +69,7 @@ struct Zipper {
 };
 ```
 
-Unbound helper functions that take a zipper are also helpful since they reduce the need using the `template` and `typename` keywords. This makes the similarities between C++ templates and more traditional functional languages clearer.
+Unbound helper functions that take a zipper are also helpful since they reduce the need for using the `template` and `typename` keywords. This makes the similarities between C++ templates and more traditional functional languages clearer.
 
 ``` cpp
 template <typename z>
@@ -122,7 +122,7 @@ struct Functor<Zipper<l, x, r>> {
 };
 ```
 
-This approach is a bit more verbose, but may make interfaces more clear and explicit. It greatly benefits from the use of helper function that calls `fmap` by automatically wrapping the callee in a `Functor`.
+This approach is a bit more verbose, but may make interfaces more clear and explicit. It greatly benefits from the use of a helper function that calls `fmap` by automatically wrapping the callee in a `Functor`.
 
 ``` cpp
 template <template<typename> class f, typename x>
@@ -195,9 +195,9 @@ using extend = fmap<f, duplicate<z>>;
 ```
 
 # Plane Zipper
-The zipper is a one dimensional data structure while we need a two-dimensional grid for life. So, much like how you can use an arrays of arrays in C to create a 2D matrix, we'll use a zipper of zippers to build an infinite grid.
+The zipper is a one dimensional data structure while we need a two-dimensional grid for life. So, much like how you can use an array of arrays in C to create a 2D matrix, we'll use a zipper of zippers to build an infinite grid.
 
-`PlaneZipper` take a zipper of zippers `z`.
+`PlaneZipper` takes a zipper of zippers `z`.
 
 ``` cpp
 template<typename z>
@@ -248,7 +248,7 @@ struct PlaneZipper {
 };
 ```
 
-`PlaneZipper` also is a [Functor][functor]. Mapping a function `f` over a plane zipper applies `f` to every value in the grid, building a new grid from the results. For each row in zipper `z`, we `fmap` the outer zipper first with a functor `do_fmap`. `do_fmap` is applied to every row in the grid and is basically a manually curring of the `fmap` function, fmapping the row with function `f`.
+`PlaneZipper` also is a [Functor][functor]. Mapping a function `f` over a plane zipper applies `f` to every value in the grid, building a new grid from the results. For each row in zipper `z`, we `fmap` the outer zipper first with a functor `do_fmap`. `do_fmap` is applied to every row in the grid and is basically a manual currying of the `fmap` function, fmapping the row with function `f`.
 
 ``` cpp
 template<typename z>
@@ -274,7 +274,7 @@ struct PlaneZipper {
 ```
 
 ## Plane Zipper Comonad
-The `PlaneZipper` comonad already implements `extend` as `get`. `duplicate` is implemented by creating a grid of plane zippers focused at each value. `vertical` create the vertical shift components of this grid, while `horizontal` creates the rows.
+The `PlaneZipper` comonad already implements `extend` as `get`. `duplicate` is implemented by creating a grid of plane zippers focused at each value. `vertical` creates the vertical shift components of this grid, while `horizontal` creates the rows.
 
 ``` cpp
 template <typename z>
@@ -300,7 +300,7 @@ using extendPlane = fmap<F, duplicatePlane<z>>;
 ```
 
 # Life
-After establishing all of our data structures and operations, implementing life turns out to the easiest part of the whole process.
+After establishing all of our data structures and operations, implementing life turns out to be the easiest part of the whole process.
 
 {% include image.html file="Evolution_of_the_Stick_Man-1.gif" %}
 

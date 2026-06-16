@@ -9,7 +9,7 @@ titleImage:
 date: '2018-02-14'
 ---
 
-Happy Valentines Day! Has it really been a year already? How times flies...
+Happy Valentines Day! Has it really been a year already? How time flies...
 
 And so, it is my great pleasure to announce that LOVETHEDON is [now available for iOS][appstore], an exciting new app that connects your favorite sex toys to President Trump's twitter account.
 

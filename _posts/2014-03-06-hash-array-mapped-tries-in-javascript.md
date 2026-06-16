@@ -8,7 +8,7 @@ The [hash array mapped trie (HAMT)][wiki-hamt] is a [hash trie][mb-hashtrie] sto
 The example code is written in [Khepri][khepri] and taken from the [hamt][hamt] library. HAMT is based on [Clojure's PersistentHashMap](https://github.com/clojure/clojure/blob/master/src/jvm/clojure/lang/PersistentHashMap.java).
 
 # Overview
-A HAMT is a [hash trie][mb-hashtrie] where internal node store dense child arrays. A *h* bit hash is the trie key, and each hash is split into sections of *m* bits. Internal nodes contain at most *2^m* entries for a section of the hash, and the trie has at most *h/m* levels.
+A HAMT is a [hash trie][mb-hashtrie] where internal nodes store dense child arrays. A *h* bit hash is the trie key, and each hash is split into sections of *m* bits. Internal nodes contain at most *2^m* entries for a section of the hash, and the trie has at most *h/m* levels.
 
 ## Hash Trie Storage Inefficiency
 An internal node may have up to *2^m* children, but they usually are only partially full. In a regular hash trie, internal nodes get their children by offset in a *2^m* array. Every internal node, even those with a single entry, must maintain this *2^m* children array.
@@ -86,7 +86,7 @@ var SIZE = 5;
 var BUCKET_SIZE = Math.pow(2, SIZE); // 32
 ```
 
-Once indexed node reaches a set capacity, they will be converted to an array. An array node  is a [hash trie][mb-hashtrie] style internal node with a sparse child array. Our indexed nodes will contain at most 16 entries and use a 32 bit bitmap. Array Nodes will contain at most 32 entries.
+Once indexed nodes reach a set capacity, they will be converted to an array. An array node  is a [hash trie][mb-hashtrie] style internal node with a sparse child array. Our indexed nodes will contain at most 16 entries and use a 32 bit bitmap. Array Nodes will contain at most 32 entries.
 
 ```
 // Size when we convert an indexed node to an array node
@@ -177,7 +177,7 @@ var InternalNode = function \mask children =self-> {
 };
 ```
 
-`ArrayNode` is the same as the [hash trie][mb-hashtrie] `InternalNode`. It manages an array children, addressable by hash fragment offsets into a sparsely populated array. Only children that actual exist are set in the array.
+`ArrayNode` is the same as the [hash trie][mb-hashtrie] `InternalNode`. It manages an array of children, addressable by hash fragment offsets into a sparsely populated array. Only children that actually exist are set in the array.
 
 ```js
 var ArrayNode = function \count children =self-> {
@@ -274,7 +274,7 @@ has = \k m ->
 # Updates
 Updates take a hash trie and return a new hash trie with the update applied. Like lookup, updates walk a path of internal nodes until finding a leaf. But instead of returning a value, updates edit the leaf and then reconstruct all nodes on the path back to the root in reverse order.
 
-HAMT update logic is much the same as [hash trie][mb-hashtrie]. A single `alter` function handles updates, deletes, and modifications. `alter` takes a node `n`, `shift`, function `f` which maps the current node value to a new node value, target hash `h`, traget key `k`.
+HAMT update logic is much the same as [hash trie][mb-hashtrie]. A single `alter` function handles updates, deletes, and modifications. `alter` takes a node `n`, `shift`, function `f` which maps the current node value to a new node value, target hash `h`, target key `k`.
 
 ```js
 var alter = \n shift f h k ->

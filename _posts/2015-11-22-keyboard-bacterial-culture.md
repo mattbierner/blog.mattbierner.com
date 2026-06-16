@@ -38,7 +38,7 @@ Contamination was my main concern during preparation, and working out of an apar
 
 Once the agar solidified, I carefully removed the cover and gently pressed my Apple keyboard down in the middle of the dish. I left it there for about a minute and applied gentle pressure over the back of the keyboard to make sure every key came in contact with the growth medium. Then I lifted the keyboard out, sealed the dish back up with lots of tape, and turned the entire dish upside down so that condensation would collect on the lid and not on the agar. This whole mess went into a garbage bag placed over by the heater. The keyboard was back in use not five minutes later.
 
-I'm almost certain that there was some contamination, but hopefully it did not effect things too much. The growth environment was also less than ideal, with temperatures more around 70 degrees F than body temperature.
+I'm almost certain that there was some contamination, but hopefully it did not affect things too much. The growth environment was also less than ideal, with temperatures more around 70 degrees F than body temperature.
 
 For such a hacked together setup though, and having zero clue what I was doing, the results came out better than I expected.
 

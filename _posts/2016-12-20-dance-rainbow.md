@@ -37,7 +37,7 @@ Additionally, this system only collects movement data from four points on the pe
 
 {% include image.html file="back.jpg" %}
 
-Yet, despite all these limitations, the hardware was good enough to power the  experiments I was after. Going in, my goal was not to recreate a dance powered version of *Tilt Brush* (although that may be a worthy future endeavor) but to only roughly track movement of each limb independently. The system was definitely constraining, and it meant that I had to somewhat adopt my visualizations to work with the system instead of the other way around, but it also made everything very easy to throw together. And, although I'm biased of course, I feel that you can still create some pretty cool shit.
+Yet, despite all these limitations, the hardware was good enough to power the  experiments I was after. Going in, my goal was not to recreate a dance powered version of *Tilt Brush* (although that may be a worthy future endeavor) but to only roughly track movement of each limb independently. The system was definitely constraining, and it meant that I had to somewhat adapt my visualizations to work with the system instead of the other way around, but it also made everything very easy to throw together. And, although I'm biased of course, I feel that you can still create some pretty cool shit.
 
 # Vision
 
@@ -45,9 +45,9 @@ Yet, despite all these limitations, the hardware was good enough to power the  e
 
 The VR headset setup is very similar to that used in my [heartbeat visualization experiment][blood], with a camera mounted to the front of a Google Cardboard headset to emulate normal human vision. I'm using the stereoscopic camera from the [selfie stick experiment][selfie] this time around, which visually provides a slightly more immersive experience to the wearer and also gives you a much less cyclopean, and generally more friendly, outward appearance.
 
-One other noteworthy improvement to the headgear: I finally got around to creating a proper head mount. Up until now, I had been holding the Cardboard in place with a single strap fastened around the back of the head. This strap often proved to be pain to put on correctly and was not stable enough for running or other quick movements (most cheap, non-google versions of Cardboard also use the same single strap setup and therefore suffer from the same problems).
+One other noteworthy improvement to the headgear: I finally got around to creating a proper head mount. Up until now, I had been holding the Cardboard in place with a single strap fastened around the back of the head. This strap often proved to be a pain to put on correctly and was not stable enough for running or other quick movements (most cheap, non-google versions of Cardboard also use the same single strap setup and therefore suffer from the same problems).
 
-For the improved head mount, I connected two straps to front of the cardboard unit in an X shape, looping them over the top of the head and around the sides to create a loose helmet that can be easily slipped on and off. This takes some of the weight of the cardboard off your nose and face, and allows for much more vigorous head movement.
+For the improved head mount, I connected two straps to the front of the cardboard unit in an X shape, looping them over the top of the head and around the sides to create a loose helmet that can be easily slipped on and off. This takes some of the weight of the cardboard off your nose and face, and allows for much more vigorous head movement.
 
 {% include image.html file="headset.jpg" description="Why the hell didn't I do this back in August?" %}
 
@@ -59,7 +59,7 @@ I explored some more advanced shader effects this time around, and also experime
 # Dancing with Myself
 {% include image.html file="blur6.jpg" %}
 
-With the basic hardware and software in place, my first experiment was a very literal take on "I'm Only Dancing so that I Can See the Rainbow". The basic promise of this initial experiment is perhaps best described as *Pleasantville* with a dash of *Footloose*: the world starts out as a dreary place wholly lacking color, and only by dancing do the colors begin to fade in, bringing the world back to it's normal hues, and then beyond into some technicolor utopia... (whoa, do you think it could be like an allegory or something?)
+With the basic hardware and software in place, my first experiment was a very literal take on "I'm Only Dancing so that I Can See the Rainbow". The basic promise of this initial experiment is perhaps best described as *Pleasantville* with a dash of *Footloose*: the world starts out as a dreary place wholly lacking color, and only by dancing do the colors begin to fade in, bringing the world back to its normal hues, and then beyond into some technicolor utopia... (whoa, do you think it could be like an allegory or something?)
 
 To make matters a little more interesting, I delegated responsibility for each of the world's primary colors (red, green, blue) to a different body part, with my right hand controlling the reds, my left hand controlling the greens, and my feet controlling the blues. This means you've really got to put your whole body into it if you want to see the rainbow.
  
@@ -108,7 +108,7 @@ The system's far more rapid response made me much more aware of how I was moving
 
 {% include image.html file="footloose.jpg" description="Sadly, even after all this dancing, my butt is not nearly as cute as Kevin Bacon's" %}
 
-Even using basic hardware and software, the resulting experiences were a lot of fun. Each one is unique and hints at the enumerable ways that a system like this could be used or expanded upon to create novel interactive experiences. As mentioned, a more comprehensive suite of sensors would really open things up, and I didn't even try applying this system to actual choreographed dancing. Most of concepts map to more traditional VR and AR as well.
+Even using basic hardware and software, the resulting experiences were a lot of fun. Each one is unique and hints at the enumerable ways that a system like this could be used or expanded upon to create novel interactive experiences. As mentioned, a more comprehensive suite of sensors would really open things up, and I didn't even try applying this system to actual choreographed dancing. Most of the concepts map to more traditional VR and AR as well.
 
 Check out the [source code][src] if you're interested in exploring how this was all implemented, and [let me know](/about) if you have any fun ideas for other dancing experiences that could be created using this system.
 

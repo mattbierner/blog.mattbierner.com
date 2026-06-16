@@ -96,7 +96,7 @@ date: '2016-01-03'
 Bak're is the world's first IoTo (internet of toaster ovens) communications platform...
 ```
 
-But writing out `/content/2016-01-03-introducing-bak-re/` every time is no good. An `image.html` template let's us instead use just the file name:
+But writing out `/content/2016-01-03-introducing-bak-re/` every time is no good. An `image.html` template lets us instead use just the file name:
 
 ```html
 {% raw %} 
@@ -156,7 +156,7 @@ I was initially afraid that the cost of migrating from Ghost to Jekyll would be 
 
 Overall, blogging with Jekyll is an improvement in almost every way. Not only does it eliminate all the concerns of hosting, but, in its simplicity, it actually makes writing and publishing content far easier. And, although I've been busting pretty hard on ol' Ghost here, the same arguments apply to pretty much every other piece of blogging software out there.
 
-Feel free to check out the [source of this blog on Github][src] if you are interested in how it is setup, or want a slightly more complete starting point than Jekyll-Now offers (or if you just just want to open a bug about some horrific grammar failure).
+Feel free to check out the [source of this blog on Github][src] if you are interested in how it is setup, or want a slightly more complete starting point than Jekyll-Now offers (or if you just want to open a bug about some horrific grammar failure).
 
 [ghost]: http://ghost.org/
 [jekyll]: http://jekyllrb.com/

@@ -6,7 +6,7 @@ date: '2014-04-10'
 [Khepri][khepri] V0.22 adds slice unpacks for unpacking a range of values to an array. Here I briefly cover slice unpacks. You can find the Khepri [language documentation here][documentation].
 
 ## Rational
-Functions that take an arbitrary number of arguments are common in Javascript, but writing such variadic function is fairly confusing and requires a lot of boilerplate code.
+Functions that take an arbitrary number of arguments are common in Javascript, but writing such variadic functions is fairly confusing and requires a lot of boilerplate code.
 
 ```js
 // Example only, using `reduce` would be better
@@ -38,7 +38,7 @@ first_and_last(1); // 2
 ```
 
 ## Slice Unpacks Intro
-Khepri's slice unpacks standardizes the expression and implementation of variadic functions. 
+Khepri's slice unpacks standardize the expression and implementation of variadic functions. 
 
 ```js
 var sumArgs = \args(x ...xs) ->
@@ -47,7 +47,7 @@ var sumArgs = \args(x ...xs) ->
         :0;
 ```
 
-Slice unpacks expand in a function to capture zero or more values as an array. They also enable arguments at relative indicies to be consistently expressed and used.
+Slice unpacks expand in a function to capture zero or more values as an array. They also enable arguments at relative indices to be consistently expressed and used.
 
 ```js
 var first_and_last = \f (...) l -> f + l;
@@ -112,7 +112,7 @@ The value of a slice unpack will always be a Javascript array. This behavior can
 ## Relative Unpacks
 Many languages require slice style unpacks to be the last element of a parameter list. Khepri slice unpacks may appear anywhere in the parameter list,  and this allows unpacking relative values.
 
-Any unpacks that appears after the slice unpack are taken relative to the end of the array.
+Any unpacks that appear after the slice unpack are taken relative to the end of the array.
 
 ```js
 var last := \[(...) l] -> l;
@@ -124,7 +124,7 @@ var last_two := \[(...) s l] -> [s, l];
 last_two [1, 2, 3, 4]; // [3, 4]
 ```
 
-Khepri's handling of relative values differs somewhat from other scripting languages, such as [LiveScript][livescript]. In `first_and_last`, some languages take `l` to be last element of the arguments array. For a small input array, this may result in multiple parameters referencing the same value.
+Khepri's handling of relative values differs somewhat from other scripting languages, such as [LiveScript][livescript]. In `first_and_last`, some languages take `l` to be the last element of the arguments array. For a small input array, this may result in multiple parameters referencing the same value.
 
 ```js
 // Behavior of relative values in LiveScript

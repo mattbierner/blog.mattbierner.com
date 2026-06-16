@@ -37,9 +37,9 @@ h.next.value; // 10
 Implementing a memory system for the interpreter requires solving two problems: how to represent references and how to implement a memory system to dereference and update referenced values.
 
 ## Handles
-The first step to separate the reference from the referenced value. The reference itself will be a [handle][handle], an immutable and opaque structure that uniquely identifies a referenced object (two equivalent handles always refer to the same object).
+The first step is to separate the reference from the referenced value. The reference itself will be a [handle][handle], an immutable and opaque structure that uniquely identifies a referenced object (two equivalent handles always refer to the same object).
 
-Using handles in data structures is straightforward; every ECMAScript object reference to an updatable object is replaced by a handle that referes to the updatable object. We also need a mechanism to allocate unique handles.
+Using handles in data structures is straightforward; every ECMAScript object reference to an updatable object is replaced by a handle that refers to the updatable object. We also need a mechanism to allocate unique handles.
 
 ```js
 //pseudo-code of handles applied to list
@@ -99,7 +99,7 @@ var values = extract(function(ctx) {
 });
 ```
 
-## Getting and Settings Values
+## Getting and Setting Values
 `getValue` gets the stored memory value for handle `key`. In this case, handles are simply strings.
 
 ```js
@@ -121,7 +121,7 @@ var setValue = function(key, x) {
 ```
 
 ## Simple Computation Using References
-The linked list example can be rewritten to used handles and the memory. More powerful computations combinators can be also be written using `getValue` and `setValue`.
+The linked list example can be rewritten to use handles and the memory. More powerful computation combinators can also be written using `getValue` and `setValue`.
 
 ```js
 var dereference = function(key, f) {
@@ -154,7 +154,7 @@ run(
 ```
 
 # References
-Atum does not use handles directly, instead handles are hidden behind another layer of abstraction. Many referenced objects are not stored directly in the memory, so the `Reference` interface hides the different refernce implementations. There are a few classes of references that implement this interface, but I'm going to focus on references to objects stored in the memory for now.
+Atum does not use handles directly, instead handles are hidden behind another layer of abstraction. Many referenced objects are not stored directly in the memory, so the `Reference` interface hides the different reference implementations. There are a few classes of references that implement this interface, but I'm going to focus on references to objects stored in the memory for now.
 
 ## The Reference Interface
 ```js
@@ -203,7 +203,7 @@ Iref.prototype.getValue = function() {
 };
 ```
 
-`setValue` updates the memory map and returns the immutable Iref object is was called on.
+`setValue` updates the memory map and returns the immutable Iref object it was called on.
 
 ```js
 Iref.prototype.setValue = function(x) {

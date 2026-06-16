@@ -39,7 +39,7 @@ Now consider a question titled, "How do I  remove the blue borders on my homepag
 
 Many Stack Overflow members however are all too likely to treat these two questions the same way: -5 and closed. This is unfortunate and likely scares away many inexperienced users before they have a chance to learn how to ask better questions or even how the site works.
 
-Truly bad questions aren't worth wasting time on, but we have to assume that those users asking not good question are not intentionally asking not good questions. They want to ask good questions and just don't know how to. If we blindly penalize beginners without engaging or providing feedback, how are they ever supposed to learn?
+Truly bad questions aren't worth wasting time on, but we have to assume that those users asking not good questions are not intentionally asking not good questions. They want to ask good questions and just don't know how to. If we blindly penalize beginners without engaging or providing feedback, how are they ever supposed to learn?
 
 # Asking a good question does not guarantee an answer
 
@@ -51,9 +51,9 @@ The chance of a question being answered also rapidly falls off as time goes on. 
 
 I get a handful of downvotes every month for what I'll term unpopular answers. These are answers that essentially say, "this is the way it's currently designed," or, "this is not possible because of reason X," or, "this is a bug that needs to be fixed upstream." The thing is, in all of these cases, it's not like someone has posted a solution or even a good workaround. Instead what I suspect is happening is that someone doesn't like what answer says, so they downvote it. And I understand that, but that also doesn't mean it's not correct.
 
-The inverse is also true of course: good answers do not necessarily tell you what you want to hear. Some of the best answers address the original question but then go on cover alternative ways of thinking about the problem. Sometimes I'll even answer a user's original question and then post a big write-up on why what they are trying to do is a bad idea. 
+The inverse is also true of course: good answers do not necessarily tell you what you want to hear. Some of the best answers address the original question but then go on to cover alternative ways of thinking about the problem. Sometimes I'll even answer a user's original question and then post a big write-up on why what they are trying to do is a bad idea. 
 
-Any time expression is simplified to up/down votes or like buttons, you're going to lose important distinctions. It's a common problem on the internet. How many many social apps can distinguish, "I support this," and, "I think this is well put even if I don't like or agree with it."? Overall though, despite those few downvotes every month, I feel the Stack Overflow community does a pretty good job in voting objectively. Let's try to keep it that way.
+Any time expression is simplified to up/down votes or like buttons, you're going to lose important distinctions. It's a common problem on the internet. How many social apps can distinguish, "I support this," and, "I think this is well put even if I don't like or agree with it."? Overall though, despite those few downvotes every month, I feel the Stack Overflow community does a pretty good job in voting objectively. Let's try to keep it that way.
 
 # I almost never ask questions on Stack Overflow
 
@@ -76,7 +76,7 @@ As a follow up on that last point: a fair number of the VS Code questions I run 
 
 For example, a Stack Overflow question titled, "Why does VS Code crash when I do X?" is actually a bug report; VS Code should not crash when you do pretty much anything. Posting answers to bug report questions can be counterproductive, as the asker may be happy with the workaround and never file a proper bug report against the product. In these cases, I usually leave a comment telling the user to file a bug report over on Github.
 
-Other times, the distinction is more subtile. Consider a question titled, "Why doesn't JavaScript IntelliSense work in VS Code?". Depending on precisely how JavaScript IntelliSense is not working, this question technically could fall into any of the three buckets:
+Other times, the distinction is more subtle. Consider a question titled, "Why doesn't JavaScript IntelliSense work in VS Code?". Depending on precisely how JavaScript IntelliSense is not working, this question technically could fall into any of the three buckets:
 
 - If it's a user configuration issue, then this is a real question that belongs on Stack Overflow.
 - If we expect IntelliSense to work in this case but it doesn't, then it's a bug report.
@@ -150,11 +150,11 @@ That's not to say that reputation doesn't mean anything, just that it doesn't me
 
 - One about some obscure graph theory work. Maybe a hundred people in the entire world can answer it. I post a few paragraphs and some example code that explains what the issue is and how to solve it.
 
-Over five years, the first answer gets viewed five million times and accumulates 2000 upvotes. The second meanwhiles gets 300 views and two measly upvotes.
+Over five years, the first answer gets viewed five million times and accumulates 2000 upvotes. The second meanwhile gets 300 views and two measly upvotes.
 
 This feels deeply unfair in some sense. Why reward what is essentially being in the right place at the right time? (Not that it's all luck mind you; understanding the game is a huge leg up too.) On the other hand, the first question actually helped a heck of a lot more people than the second ever did. Perhaps we should recognize that in some way, although is the correct recognition really a heaping of "reputation"? 
 
-That's why I consider Stack Overflow's "reputation" to be more a measure of impact. Real reputation can't be measured in a simple points based system, reputation emerges from the community. Who's advice do I listen to, who do I see helping others, who do I trust? That's probably going to be different people too depending on whether I'm working on PHP vs iOS.
+That's why I consider Stack Overflow's "reputation" to be more a measure of impact. Real reputation can't be measured in a simple points based system, reputation emerges from the community. Whose advice do I listen to, who do I see helping others, who do I trust? That's probably going to be different people too depending on whether I'm working on PHP vs iOS.
 
 Having said that, I'm not sure what Stack Overflow should do about this. Would users be as motivated if they only earned "Tricky Dick Fun Points" instead of "reputation"? Would they still engage as much if there were no points system at all? Honestly, probably not. And the myth that Stack Overflow's "reputation" equals real reputation does not just benefit Stack Overflow but also its most active users. Who doesn't like boosting their reputation after all? Only Spock.
 

@@ -15,7 +15,7 @@ Following up on my [overview of Neith's Javascript zippers][neith-blog-1], here 
 * Support lazily generated, potentially infinite trees.
 
 ## Problem With Standard Neith Zippers
-The core Neith zipper has no concept of edges, but as the full binary tree zipper previous presented demonstrates, it is still fully possible to define and use zippers on trees without considering edges:
+The core Neith zipper has no concept of edges, but as the full binary tree zipper previously presented demonstrates, it is still fully possible to define and use zippers on trees without considering edges:
 
 ```js
 var Binary = declare(null, ['value', 'left', 'right']);
@@ -48,7 +48,7 @@ var binaryMoveToRight = down \> right;
 Many operations, such as renaming or reordering edges, are completely impossible using this hardcoded approach.
 
 # Generic Zipper for k-ary Trees With Labeled Edges
-A ordered labeled tree zipper can be expressed as an ordered unlabeled tree zipper where each element is an edge, node pair.
+An ordered labeled tree zipper can be expressed as an ordered unlabeled tree zipper where each element is an edge, node pair.
 
 ```js
 var Pair = \key value -> ({'key': key, 'value': value});

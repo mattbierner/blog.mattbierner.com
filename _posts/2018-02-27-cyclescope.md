@@ -24,7 +24,7 @@ Made it maybe ten feet on the first shove off. I'd thought it would be easy. Jus
 
 I could see well enough. That wasn't the problem. There was me down front and center like a regular CJ, only a few curbs and the occasional lamp pole to avoid.
 
-But when my feet left the ground it was like I'd never ridden a bike before in my life. I wasn't even seated and I felt that I was falling, and the hell if I knew what to do about that. I wasn't event sure which way the handlebars were facing.
+But when my feet left the ground it was like I'd never ridden a bike before in my life. I wasn't even seated and I felt that I was falling, and the hell if I knew what to do about that. I wasn't even sure which way the handlebars were facing.
 
 The second try was more successful. The next a little farther. Before I knew it I was tackling turns and hitting a blistering 10mph on the straightaways.
 

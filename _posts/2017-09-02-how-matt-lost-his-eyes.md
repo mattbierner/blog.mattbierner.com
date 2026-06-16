@@ -26,7 +26,7 @@ But such a project needed the right presentation. While *I Am A Camera* could ha
 
 So with the one year mark of my exploration of [modded reality][mr] approaching, I decided to bring things full circle, returning to an idea that I joked about in the opening paragraph of [*Tenome*][tenome]: relocating my eyeballs. Wouldn't it be interesting if you could pop your eyes out of your head and carry them about, bowl them along the floor, toss them into the air, or hand them off to someone? 
 
-After completing the eyeballs though, my personal experience using them inspired *Anschauung*. I'm not sure how successful the story was, and it turned about to be less about the device than anticipated. The eyeballs are actually quite fun to use. But first a word on how they were created.
+After completing the eyeballs though, my personal experience using them inspired *Anschauung*. I'm not sure how successful the story was, and it turned out to be less about the device than anticipated. The eyeballs are actually quite fun to use. But first a word on how they were created.
 
 {% include image.html file="hold2.jpg" %}
 
@@ -69,7 +69,7 @@ As with all most of my modded reality projects, the hardware and the software ar
 
 The experience and challenges of using the eyes are similar to what I describe in the first part of [*Tenome*][tenome]. Unless the eyes are almost perfectly aligned, your brain combines the image from each eye into a weird new scene that blends elements of each image. When you do line up the eyes properly, a stereoscopic image suddenly snaps into place.
 
-The biggest difference with this experiment compared to *Tenome* is that the eyes are wireless. You can hold them however you want, set one down and walk away, or even toss them up in the air. This is all great fun. I did find it difficult to hold onto both eyes at the same time, but awkward aspects like this are what make the experience. And of managing two eyes is too difficult, you can always set one down or cover it up with your hand. You'll see me doing this a few times in the demo videos.
+The biggest difference with this experiment compared to *Tenome* is that the eyes are wireless. You can hold them however you want, set one down and walk away, or even toss them up in the air. This is all great fun. I did find it difficult to hold onto both eyes at the same time, but awkward aspects like this are what make the experience. And if managing two eyes is too difficult, you can always set one down or cover it up with your hand. You'll see me doing this a few times in the demo videos.
 
 When holding the eyes out at arm's length, the view reminded me of my [selfie stick experiment][selfie]. I also had fun spinning my eyes around and bowling them along the floor, although they don't roll too well.
 

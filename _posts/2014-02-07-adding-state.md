@@ -10,12 +10,12 @@ In this post, I add state to the [delimited continuation monad][mb-decont], and 
 *[Monad Transformers and Modular Interpreters][modular-interpreters]* details an  elegant approach to interpreter design in a purely functional language. Atum is inspired by this work, but makes some compromises that I feel work better for Javascript (In this case, I believe you probably want to would use the [delimited control transformer][cct] `CCT` over a state monad).
 
 # Adding State to the Interpreter Monad
-Adding state to a monad requires the monad to thread state though computation along with values. Building on the delimited continuation monad, state also need to be threaded though the continuations. A small set operations will allow computations to get and set the state.
+Adding state to a monad requires the monad to thread state through computation along with values. Building on the delimited continuation monad, state also needs to be threaded through the continuations. A small set of operations will allow computations to get and set the state.
 
 ## ComputeContext
 Atum breaks the state into two records:
 
-`ComputeContext` is the top level state object passed though computations and continuations. It records data required by core computations and operations, but doesn't know anything specific about the target language being evaluated.
+`ComputeContext` is the top level state object passed through computations and continuations. It records data required by core computations and operations, but doesn't know anything specific about the target language being evaluated.
 
 The user state holds the ECMAScript interpreter state, storing things like current environment and source location of executing code. The user state is stored inside the `ComputeContext`. 
 
@@ -34,11 +34,11 @@ ComputeContext.empty = ComputeContext.create(null, 1);
 ```
 
 ## Basic Operations
-The [StateT transformer][statet] adds state to a monad by making the value passed though continuations a pair of value and state. For Atum, I find it clearer to explicitly thread a state object though computations instead of using a pair.
+The [StateT transformer][statet] adds state to a monad by making the value passed though continuations a pair of value and state. For Atum, I find it clearer to explicitly thread a state object through computations instead of using a pair.
 
 `just` and `bind` from the delimited continuation monad are updated to take an additional state parameter `ctx` along with the continuation `k`. The continuations themselves take two arguments: a value and a state.
 
-`just` sets the value while passing the state though.
+`just` sets the value while passing the state through.
  
 ```js
 var just = function(x) {
@@ -48,7 +48,7 @@ var just = function(x) {
 };
 ```
 
-`bind` passes the input state to `c`, and threads the state resulting from `c` though to the result of `f`. Function `f` only operates on the value result of `c`.
+`bind` passes the input state to `c`, and threads the state resulting from `c` through to the result of `f`. Function `f` only operates on the value result of `c`.
 
 ```js
 var bind = function(c, f) {    
@@ -58,7 +58,7 @@ var bind = function(c, f) {
 };
 ```
 
-The updated version of `appk` threads the state though the continuations.
+The updated version of `appk` threads the state through the continuations.
 
 ```js
 var appk = function(k, x, ctx) {
@@ -77,7 +77,7 @@ var appk = function(k, x, ctx) {
 ```
 
 ## Continuation Operations
-The [four primitive delimited continuation operations][mb-decont] also have to be updated to thread state along with a value though computations and continuations. `pushPrompt`, `withSubCont`, and `pushSubCont` all simply pass state though.
+The [four primitive delimited continuation operations][mb-decont] also have to be updated to thread state along with a value through computations and continuations. `pushPrompt`, `withSubCont`, and `pushSubCont` all simply pass state though.
 
 ```js
 var pushPrompt = function(prompt, c) {
@@ -120,7 +120,7 @@ var run = function(c, ctx, k) {
 };
 ```
 
-Running a [previously defined][mb-lift] computations demonstrates that previous non-stateful computations continue to work.:
+Running a [previously defined][mb-lift] computation demonstrates that previous non-stateful computations continue to work:
 
 ```js
 run(

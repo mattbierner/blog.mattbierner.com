@@ -31,14 +31,14 @@ One minor detail that I'm nevertheless quite proud of: the text for the lyrics c
 
 Augmented reality music video style experiences like this are neat because they are interactive and shaped by your environment. You can view the Fire-Toolz effect from any angle and walk around it like it is really there in physical space. I also had a fun time going around Seattle finding interesting surfaces to distort using it. 
 
-Fans can also easily use these AR musical experiences in their own creative work. You can capture photos and videos of Fire-Toolz experience in action using the [full Beatsy App][beatsy]. It's all much more interactive and personal feeling that a traditional music video.
+Fans can also easily use these AR musical experiences in their own creative work. You can capture photos and videos of Fire-Toolz experience in action using the [full Beatsy App][beatsy]. It's all much more interactive and personal feeling than a traditional music video.
 
 One final note: if you enjoy the Fire-Toolz experience, share it with your friends over iMessage by tapping the share icon in the app (you can also just share the link <https://c.beatsy.app/1/ft-vagus>). When your friend receives the message, they will be able to launch the experience directly from iMessage without having to install Beatsy first. Neat!
 
 
 So give the new Fire-Toolz AR experience [a try][link]. If you enjoy it, the best way to support us so that we can continue making stuff like this is to share Beatsy with your friends. If you're feeling extra generous, App Store reviews always help too!
 
-PS This experience is just the first of what will hopefully be many more Beatsy musical collaborations. If you are an musician and wish to showcase your work using Beatsy, please [get in touch](matt@rarerealities.com).
+PS This experience is just the first of what will hopefully be many more Beatsy musical collaborations. If you are a musician and wish to showcase your work using Beatsy, please [get in touch](matt@rarerealities.com).
 
 [beatsy]: https://apps.apple.com/us/app/beatsy/id1543162330
 [firetoolz]: http://fire-toolz.bandcamp.com

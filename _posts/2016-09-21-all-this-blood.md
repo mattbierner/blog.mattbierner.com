@@ -24,7 +24,7 @@ The high level design was this:
 
 * Capture realtime video using a camera mounted in front of the eyes.
 * Also collect realtime heartbeat data using a sensor.
-* Stream both the video and heartbeat data to webpage a loaded on a phone. The phone is mounted inside a [Google Cardboard VR headset](https://vr.google.com/cardboard/).
+* Stream both the video and heartbeat data to a webpage loaded on a phone. The phone is mounted inside a [Google Cardboard VR headset](https://vr.google.com/cardboard/).
 * Using WebGL, modulate the video stream using heartbeat events.
 * Wear the headset and see what happens.
 <!--* Kill Hitler.-->
@@ -59,7 +59,7 @@ To accomplish this, I opted to use the aptly named [Pulse Sensor][pulse]. This s
 
 {% include image.html file="sensor.jpg" description="Needs more tape" %}
 
-Now, as Apple cynically omitted a breadboard from recent iPhones (and wouldn't adding a breadboard be true courage my fine fruity friends?) I also hooked the Pulse Sensor up the Raspberry Pi. The Pulse sensor is analog so its signal is feed through an [mcp3008 analog to digital converter][mcp3008].
+Now, as Apple cynically omitted a breadboard from recent iPhones (and wouldn't adding a breadboard be true courage my fine fruity friends?) I also hooked the Pulse Sensor up to the Raspberry Pi. The Pulse sensor is analog so its signal is fed through an [mcp3008 analog to digital converter][mcp3008].
 
 The entire setup is wired up on a full-sized breadboard taped to the Raspberry Pi, because why not. 
 
@@ -101,9 +101,9 @@ My first experiment visualized heartbeats as rushes of blood.
 
 Beats are shown as a red vignette on the screen, which quickly fades out before the next beat, an effect not unlike which some video games use to indicate low health. (It also strikes me that it would be interesting to build a real life version of Amnesia's ["sanity"](http://amnesia.wikia.com/wiki/Sanity) using biosignals.)
 
-After slipping the headset on, it took the pulse sensor around ten seconds or so to stabilize and start picking up my heart beat reliably. The rate was a little under once a second, around 80bmp.
+After slipping the headset on, it took the pulse sensor around ten seconds or so to stabilize and start picking up my heart beat reliably. The rate was a little under once a second, around 80bpm.
 
-The red flashing did capture my attention for a moment, but then faded from notice while the beeping became part of the background noise. You would naturally expected that it would be very hard to see much of anything through all that red—just as you would expect that all that incessant pumping of blood and throbbing of organs would, given their vital nature, dominate one's concerns—but, such matters quickly took a back seat as I began to explore and observe the world about me. 
+The red flashing did capture my attention for a moment, but then faded from notice while the beeping became part of the background noise. You would naturally expect that it would be very hard to see much of anything through all that red—just as you would expect that all that incessant pumping of blood and throbbing of organs would, given their vital nature, dominate one's concerns—but, such matters quickly took a back seat as I began to explore and observe the world about me. 
 
 Walking about and interacting with the world was fairly easy and familiar, since the camera perspective at least somewhat matches normal vision. The latency however is noticeable, especially when I quickly turned my head.
 
