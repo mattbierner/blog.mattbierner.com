@@ -10,7 +10,7 @@ links:
   - title: "Get Phonogram for iOS and iPad"
     url: "https://apps.apple.com/us/app/phonogramAR/id1612192523"
   - title: "Documentation"
-    url: "https://github.com/mattbierner/phongram-support"
+    url: "https://github.com/mattbierner/phonogram-support"
 ---
 
 Today I'm excited to announce Phonogram, a new augmented reality app for iOS that lets you create and share short audio messages paired with unique AR effects. The app is available for free in the App Store:
