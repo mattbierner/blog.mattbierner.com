@@ -21,5 +21,5 @@ The [*Just the Links* site][jtl] has many more details, or you can [download *Ju
 
 
 [jtl]: http://mattbierner.github.io/just-the-links/
-[download]: hhttps://chrome.google.com/webstore/detail/just-the-links/mbfccghgfekfafnjhlkfkfiolbplafpa
+[download]: https://chrome.google.com/webstore/detail/just-the-links/mbfccghgfekfafnjhlkfkfiolbplafpa
 [src]: https://github.com/mattbierner/just-the-links

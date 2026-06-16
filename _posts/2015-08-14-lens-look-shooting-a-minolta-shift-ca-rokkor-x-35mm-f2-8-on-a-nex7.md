@@ -100,7 +100,7 @@ The Shift CA performs great even on modern hardware. It is sharp, especially uns
 
 Most lenses are much more forgiving. It greatly helps to use a magnified image preview while focusing, but focusing handheld or on a moving object is difficult.
 
-The optical coating seems pretty solid, even shooting into light and for fairly contrasty scenes. Being able to mount filters is a big plus in my book as well. And, while the name Shift CA may suggest otherwise, images had little chromatic abrasion.
+The optical coating seems pretty solid, even shooting into light and for fairly contrasty scenes. Being able to mount filters is a big plus in my book as well. And, while the name Shift CA may suggest otherwise, images had little chromatic aberration.
 
 # Conclusion
 {% include image.html file="DSC9014-Edit-1.jpg" %}

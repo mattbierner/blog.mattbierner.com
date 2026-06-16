@@ -55,7 +55,7 @@ concat([1], [2, 3]);
 ## Javascript Operator Syntax
 But Javascript operators are in one important way more than just sugary function calls. Operators have special grammatical rules that determine how operator expressions parsed and the order of evaluation of their terms.
 
-All three classes of Javascript pperators follow two grammatical guidelines:
+All three classes of Javascript operators follow two grammatical guidelines:
 
 * Unary operators use prefix notation and are right associative: `!a`, `void ~ a` (the exception being the postfix `++` and `--` ops). All unary operators have the same precedence, with lower precedence than function calls.
 * Binary operators use infix notation: `a + b`, `a + b * c`. Like in mathematics, Javascript evaluates infix operator expressions according to operator associativity and precedence rules.

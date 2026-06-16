@@ -50,7 +50,7 @@ a barney
 
 The repo also includes a Python script that scrapes Urban Dictionary to collect entry names.
 
-# Entires
+# Entries
 I then looked up the top ten Urban Dictionary definitions for each entry. This dataset is too large for Github, so I've posted the result as four Google Fusion Tables:
 
 * [Part One][part1]

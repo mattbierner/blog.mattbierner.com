@@ -21,7 +21,7 @@ const book = ["The", "Time", "Traveller", "for", "so", "it", "will", "be", "conv
 // Build count of words in `book`
 const map = hamt.mutate(map => {
     // The map can be mutated within this block, but these mutations
-    // cannot leak outsite of the block.
+    // cannot leak outside of the block.
 
     // Note how we don't have to assign the value of `map` to the result
     // because `map` is mutated.

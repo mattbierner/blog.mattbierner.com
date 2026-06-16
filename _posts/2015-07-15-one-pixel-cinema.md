@@ -44,7 +44,7 @@ But 230,000 frames converted to 1920x1080 PNGs take up a hell of a lot more spac
 ## Batch Processing
 I decided to process the movie in one minute batches to keep the storage requirements low while still using FFmpeg more efficiently.
 
-This comamnd extracts the 1439 frames (as the frame rate is actually 23.976) in one minute of video. 
+This command extracts the 1439 frames (as the frame rate is actually 23.976) in one minute of video. 
 
 ```
 $ ffmpeg -ss 00:05:00 -i "Eyes Wide Shut.mkv" -to 60 frame%d.png

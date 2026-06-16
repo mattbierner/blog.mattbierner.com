@@ -211,7 +211,7 @@ M.liftInner.liftInner (M.inner.inner.get);
 ```
 
 ## Examples and 3rd Party transformers
-The [Khepri compiler][khepri-compile] demonstrates some of coding the benifits of using Akh monad transformers to structure computations.
+The [Khepri compiler][khepri-compile] demonstrates some of the benefits of using Akh monad transformers to structure computations.
 
 ```
 // Excerpts from the Khepri lexical scoping stage 

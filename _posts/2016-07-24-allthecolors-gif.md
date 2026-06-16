@@ -22,7 +22,7 @@ Inspired by this effort, I recently created a small collection of gifs that each
 
 First up, *rainbow-array.gif* ([view](https://mattbierner.github.io/allthecolors.gif/rainbow-array), [file](https://dl.dropboxusercontent.com/s/skuaud9x4ss447m/rainbow-array.gif?dl=0)). Each frame of this gif is 16 by 16 pixels, allowing 256 unique colors per frame. To hit all 16,777,216 colors,  the animation contains 65535 frames, each lasting 4 hundredths of a second (25fps) for a total run time of around 44 minutes. This is orders of magnitude faster than the 160 odd years will @wholerainbow require to achieve a similar feat. 
 
-The colors increase by counting from `0x000000` to `0xffffff`, working left to right in each frame. File size is abut 70MB.
+The colors increase by counting from `0x000000` to `0xffffff`, working left to right in each frame. File size is about 70MB.
 
 
 # rainbow-stack.gif
@@ -32,7 +32,7 @@ The colors increase by counting from `0x000000` to `0xffffff`, working left to r
 
 In this gif, each frame is 2 by 1 pixels, with two colors per frame. Why two colors instead of one? Well, the minimum size of a gif local color table is two, so using only one color per frame would be downright wasteful.
 
-The entire gif has 8,388,608 frames, each lasting 4 hundredths of a second (25fps). The animation lasts around 93 hours and is best viewed in a single sitting. Colors on the left side count up `0x000000` to `0x800000`, while the colors on the right side count down from `0xffffff` to `0x800000`. The resulting gif is abut 250MB.
+The entire gif has 8,388,608 frames, each lasting 4 hundredths of a second (25fps). The animation lasts around 93 hours and is best viewed in a single sitting. Colors on the left side count up `0x000000` to `0x800000`, while the colors on the right side count down from `0xffffff` to `0x800000`. The resulting gif is about 250MB.
 
 
 # rainbow-stack-walk.gif

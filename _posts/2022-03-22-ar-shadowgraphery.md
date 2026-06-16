@@ -11,7 +11,7 @@ titleVideo:
 
 I remember making shadow figures on the walls and ceiling with my hands when I was younger. Even though I never progressed much beyond dopey looking dogs or misshapen lumps with rabbit ears, it was captivating to watch these creatures emerge and evolve as I subtly shifted around my hands in front of the light.
 
-I guess you're supposed to outgrow such childish things. Hand shadows seems so quaint compared to the vast universe of entertainment now available at my fingertips. Yet even today, when a light is positioned just right and I see a nice shadow go flickinging across the wall, I'll be damned if I don't throw up a lumpy wolf and a blobby bunny or two. And you know what? It's still cool!
+I guess you're supposed to outgrow such childish things. Hand shadows seem so quaint compared to the vast universe of entertainment now available at my fingertips. Yet even today, when a light is positioned just right and I see a nice shadow go flickering across the wall, I'll be damned if I don't throw up a lumpy wolf and a blobby bunny or two. And you know what? It's still cool!
 
 But what if you could create those shadow animals anywhere? What if you didn't need a light or just the right surface? And what if those shadow creatures could go on living long after you'd put your hands down?
 

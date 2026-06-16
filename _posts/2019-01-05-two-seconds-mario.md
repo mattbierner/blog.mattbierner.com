@@ -8,7 +8,7 @@ titleImage:
 
 {% include image.html file="binders.jpg" %}
 
-This is two seconds of *Super Marios Bros. 3* for the Nintendo Entertainment System. Each three inch binder contains a complete list of operations executed by the system's CPU over forty frames of gameplay. The operations were collected in stage 1-1.
+This is two seconds of *Super Mario Bros. 3* for the Nintendo Entertainment System. Each three inch binder contains a complete list of operations executed by the system's CPU over forty frames of gameplay. The operations were collected in stage 1-1.
 
 {% include image.html file="binders-2.jpg" %}
 {% include image.html file="page.jpg" %}

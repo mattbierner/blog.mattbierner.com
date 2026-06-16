@@ -70,7 +70,7 @@ This is also an opportunity to provide a zipper definition interface more suited
 
 * `edges` - Map a node to a [Nu][nu] lazy stream of edge labels.
 * `getChild` - Map a node and edge label to a child node.
-* `constructNode` - Take a node, stream of edge node pairs, and function returning a Javascript map/object of edges to child nodes and returns a reconstructed node. The map is only for connivence and is not required .
+* `constructNode` - Take a node, stream of edge node pairs, and function returning a Javascript map/object of edges to child nodes and returns a reconstructed node. The map is only for convenience and is not required .
 
 The tree zipper module expresses the core `children` and `constructNode` functions using the tree specific `edge`, `getChild`, and `constructNode` functions while also mapping to and from `Pair`.
 

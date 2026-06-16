@@ -11,7 +11,7 @@ I've recently been trying out a Minolta UW Rokkor-PG 18mm f9.5 on my Nex-7 and t
 
 {% include image.html file="DSC7104-1.jpg" %}
 
-The UW Rokkor-PG was originally released in 1966 and was Minolta's first fisheye Rokkor. Spec junkies will immediatly notice the len's slow f9.5 minimum aperture, especially when compared to the later 16mm Rokkor-OK fisheye lens. The lens is fixed focused around 10ft and lacks coupling to the camera, not an issue when shooting on mirrorless.
+The UW Rokkor-PG was originally released in 1966 and was Minolta's first fisheye Rokkor. Spec junkies will immediately notice the lens' slow f9.5 minimum aperture, especially when compared to the later 16mm Rokkor-OK fisheye lens. The lens is fixed focused around 10ft and lacks coupling to the camera, not an issue when shooting on mirrorless.
 
 {% include image.html file="DSC7105.jpg" %}
 
@@ -35,7 +35,7 @@ Like shooting with any fisheye lens, you really have to consider the visual line
 
 I shot around Seattle from late afternoon though the evening. The lens performed best in shadows and lower contrast scenes facing away from the sun. In direct sunlight, images became too washed out, even when light was not directly falling on the front element. The lens coating is pretty poor to boot, so any direct light on the front optic tended to produce flair.
 
-I shot mostly by hand throughout the evening, a f11, and the slow aperture was much less of an issue that I anticipated. The fixed focusing was somewhat nice too, as it allowed me to consentrate more on composition. For most shots I just anchored the camera on something sturd and shot around 1/10s - 1/20s, between 100 and 400 iso, but I did break out a tripod later in the evening.
+I shot mostly by hand throughout the evening, a f11, and the slow aperture was much less of an issue that I anticipated. The fixed focusing was somewhat nice too, as it allowed me to concentrate more on composition. For most shots I just anchored the camera on something sturdy and shot around 1/10s - 1/20s, between 100 and 400 iso, but I did break out a tripod later in the evening.
 
 {% include image.html file="DSC7013.jpg" %}
 

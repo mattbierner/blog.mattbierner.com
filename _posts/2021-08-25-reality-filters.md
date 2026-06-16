@@ -26,7 +26,7 @@ The Coloring Book filter for example renders the world like a pencil drawing, wi
 
 The app also draws on a few of my previous projects. The AR painting tech for example first debuted in [VoxelizeAR](/voxelizeAR). While that app is neat enough in its own right, it was always intended to mostly be a technical stepping stone for Reality Filters.
 
-Meanwhile some of the filters themselves can be traced all the way back to [I'm Only Dancing So That I Can See the Rainbow](/dance-rainbow). Looking back over that now almost five year old project sent me spiraling into a mild existential crisis to be honest. Reality Filters just feels so... commercial in comparison. Don't get me wrong: turning the world into a giant coloring book is pretty damn magical and I'm excited to continue creating new effect for Reality Filters, but it also made me wonder if focusing so much on publishing apps has limited how experimental I can be. But all that's a matter for another time.
+Meanwhile some of the filters themselves can be traced all the way back to [I'm Only Dancing So That I Can See the Rainbow](/dance-rainbow). Looking back over that now almost five year old project sent me spiraling into a mild existential crisis to be honest. Reality Filters just feels so... commercial in comparison. Don't get me wrong: turning the world into a giant coloring book is pretty damn magical and I'm excited to continue creating new effects for Reality Filters, but it also made me wonder if focusing so much on publishing apps has limited how experimental I can be. But all that's a matter for another time.
 
 For now, [Give Reality Filters a try][app] and let me know what you think! It's a free app too, so if you enjoy it be sure to leave a review to help others find it.
 

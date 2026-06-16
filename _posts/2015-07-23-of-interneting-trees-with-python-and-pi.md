@@ -29,7 +29,7 @@ The Tuts+ moisture sensor tutorial was written for a Raspberry Pi Model B, so to
 
 {% include image.html file="raspberry_pi_pi_volume_knob_bb.png" %}
 
-I wried up the moisture sensor to pin 0 on the MCP3008. The Adafruit tutorial also had some helpful Python code for reading integer values from the MCP3008 that I'll reference, but won't cover in any detail. The [example source][src] includes all that if you're interested.
+I wired up the moisture sensor to pin 0 on the MCP3008. The Adafruit tutorial also had some helpful Python code for reading integer values from the MCP3008 that I'll reference, but won't cover in any detail. The [example source][src] includes all that if you're interested.
 
 {% include image.html file="wire-ratking.png" description="I must admit that my wiring was actually closer to this." %}
 

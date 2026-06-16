@@ -116,7 +116,7 @@ Computations are run by passing in an initial state `ctx` along with the outermo
 
 ```js
 var run = function(c, ctx, k) {
-    reutrn c(ctx, cont.push(k, cont.empty));
+    return c(ctx, cont.push(k, cont.empty));
 };
 ```
 

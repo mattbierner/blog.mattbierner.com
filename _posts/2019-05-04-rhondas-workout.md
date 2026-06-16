@@ -8,7 +8,7 @@ titleImage:
 series: letterpress
 ---
 
-So I letterpressed [another](/aerobicide-print) *Aerobicide* poster. Look: it's not like this is an obsession or anything. I can stop anytime I want too, it's just that I got this hot pink paper that was just screaming out for some zebra print... Plus, printing on pink paper was an interesting challenge.
+So I letterpressed [another](/aerobicide-print) *Aerobicide* poster. Look: it's not like this is an obsession or anything. I can stop anytime I want to, it's just that I got this hot pink paper that was just screaming out for some zebra print... Plus, printing on pink paper was an interesting challenge.
 
 {% include image.html file="title.jpg" %}
 

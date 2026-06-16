@@ -30,7 +30,7 @@ As my taste in subjects has evolved, I've also moved to shooting in portrait ori
 
 {% include image.html file="cranes.jpg" href="http://photography.mattbierner.com/Seattle-Industrial-District-Jan/i-PFK6Ckw/A" %}
 
-While I normally shoot at a 2:3 aspect ratio, I've also explored a few less standard ratios using the Minolta's Shift CA. This is a interesting lens, and one that I've written about [before][concrete]. The lens is a bit a of a nightmare from a purely functional point of view: bulky, finicky, and optically temperamental. What I use it most for though is shooting vertical panoramas. These combine two or three shots shifted vertically to create high resolution images with aspect ratios of anywhere between 9:16 to 5:16, with 7:16 or 1:2 being my current preferences. 
+While I normally shoot at a 2:3 aspect ratio, I've also explored a few less standard ratios using the Minolta's Shift CA. This is a interesting lens, and one that I've written about [before][concrete]. The lens is a bit of a nightmare from a purely functional point of view: bulky, finicky, and optically temperamental. What I use it most for though is shooting vertical panoramas. These combine two or three shots shifted vertically to create high resolution images with aspect ratios of anywhere between 9:16 to 5:16, with 7:16 or 1:2 being my current preferences. 
 
 {% include image.html file="dome.jpg" href="http://photography.mattbierner.com/Seattle-Industrial-District-Jan/i-3qvjKkm/A" %}
 

@@ -146,7 +146,7 @@ I collected ten samples from *We ♥ Katamari* using the hacked together Playsta
   * Goal: roll up 100 items as fast as possible.
   * Time: ~2.2 minutes
     * Starting size: 8cm
-  * Ending size: 20cmcm
+  * Ending size: 20cm
   
 * `friends (many)`: Dog
   * Goal: roll up as many friends (animals) as possible.

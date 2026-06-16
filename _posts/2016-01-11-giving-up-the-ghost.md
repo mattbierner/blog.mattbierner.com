@@ -34,7 +34,7 @@ The Unix style design of Jekyll integrates into existing workflows far better th
 
 Now, here's my workflow to publish a post with Jekyll:
 
-1. Wite the post using whatever you want. Jekyll doesn't care. (You can also collaborate however you want).
+1. Write the post using whatever you want. Jekyll doesn't care. (You can also collaborate however you want).
 2. Run the blog locally using `jekyll serve -w` and see exactly what the post will look like once it is published.
 3. `git commit` the new post and `git push` to publish it.
 4. And it's all in git so backup is easy.
@@ -47,7 +47,7 @@ But enough fawning. Let's take a look at the process of actually porting a Ghost
 Migrating content is surprisingly easy, but I don't think there's a good story for porting over a Ghost theme. That'll take some manual work. [Jekyll-Now](https://github.com/barryclark/jekyll-now) is a great starting point at least.
 
 ## Migrating Text
-First, export your Ghost blog by following [these instructions](http://support.ghost.org/import-and-export-my-ghost-blog-settings-and-data/). Then run the [Jekyll Ghost importer script](hhttps://github.com/eloyesp/jekyll_ghost_importer) on the exported data to generate the `_posts`. These two steps take care of a good deal of the migration, but there are still a few problems.
+First, export your Ghost blog by following [these instructions](http://support.ghost.org/import-and-export-my-ghost-blog-settings-and-data/). Then run the [Jekyll Ghost importer script](https://github.com/eloyesp/jekyll_ghost_importer) on the exported data to generate the `_posts`. These two steps take care of a good deal of the migration, but there are still a few problems.
 
 With Ghost, I used [Google's code prettifier](https://github.com/google/code-prettify) for clientside syntax highlighting, but Jekyll does not understand these fenced code block annotations:
 

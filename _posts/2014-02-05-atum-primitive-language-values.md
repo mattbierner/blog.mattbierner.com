@@ -111,7 +111,7 @@ exports.FALSE = Boolean.create(false);
 
 /// Host Operations
 exports.create = function(x) {
-    reutrn (x ? TRUE : FALSE);
+    return (x ? TRUE : FALSE);
 };
 
 exports.isTrue = function(x) {

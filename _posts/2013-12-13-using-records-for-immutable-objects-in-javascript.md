@@ -69,7 +69,7 @@ var ExecutionContext = record.declare(null, [
     'metadata']);
 ```
 
-These two implementations are eqivilent for most purposes. Across the entire Atum codebase, switching to records eliminated well over 500 lines of code. 
+These two implementations are equivalent for most purposes. Across the entire Atum codebase, switching to records eliminated well over 500 lines of code. 
 
 ## Caveat
 These are not going to be truly immutable objects. Immutability is guaranteed using the supported interfaces, including object accessors and the generated transform operations, but the objects can be mutated easily intentionally or by mistake.

@@ -46,7 +46,7 @@ const all = (pred, map) => {
 
 // Kind of silly to short circuit for a map of this size but,
 // for large maps, this ability is important.
-let h = hamt.emtpy
+let h = hamt.empty
     .set('a', 4)
     .set('b', 84)
 
